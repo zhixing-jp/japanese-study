@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Living Japanese｜日本生活会話</title>
+  <style>
+    :root {
+      --bg:        #F5F2ED;
+      --surface:   #FFFFFF;
+      --text:      #1C1C2E;
+      --muted:     #8B7D6B;
+      --line:      #E8E2D9;
+      --accent:    #C23B35;
+      --accent-bg: #FBF0EF;
+      --indigo:    #2D3561;
+      --indigo-lt: #EEF0F8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(245,242,237,0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner { max-width: 780px; margin: 0 auto; padding: 10px 14px; }
+    .header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .site-title { font-size: 17px; font-weight: 800; letter-spacing: .03em; }
+    .site-subtitle { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+
+    .search-wrap { position: relative; margin-bottom: 8px; }
+    .search-wrap svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+    #searchInput {
+      width: 100%; padding: 8px 32px 8px 34px;
+      border: 1.5px solid var(--line); border-radius: 10px;
+      font-size: 15px; background: var(--surface); color: var(--text); outline: none;
+      transition: border-color .15s;
+    }
+    #searchInput:focus { border-color: var(--accent); }
+    #searchClear {
+      position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+      background: none; border: none; cursor: pointer; color: var(--muted);
+      font-size: 17px; display: none; padding: 2px 4px; line-height: 1;
+    }
+
+    /* controls — two rows on mobile */
+    .controls { display: flex; gap: 5px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 13px; font-weight: 600; border-radius: 8px;
+      border: 1.5px solid var(--line); padding: 6px 10px;
+      background: var(--surface); color: var(--text);
+      cursor: pointer; white-space: nowrap; min-height: 34px;
+      transition: background .12s, border-color .12s, color .12s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { opacity: .75; }
+    .btn:hover { background: var(--indigo-lt); border-color: var(--indigo); }
+    .btn.primary { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+    .btn.primary:hover { background: #222854; }
+    .btn.danger { color: var(--accent); border-color: #F5C5C3; }
+    .btn.danger:hover { background: var(--accent-bg); }
+    .btn.toggled { background: var(--accent-bg); color: var(--accent); border-color: var(--accent); }
+    select.btn {
+      appearance: none; -webkit-appearance: none; padding-right: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%238B7D6B' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 7px center;
+      background-color: var(--surface);
+    }
+
+    /* ── MAIN ── */
+    main { max-width: 780px; margin: 0 auto; padding: 18px 14px 80px; }
+
+    /* TOC */
+    .toc { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; margin-bottom: 22px; }
+    .toc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .toc-label { font-size: 11px; font-weight: 700; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
+    .toc-line { flex: 1; height: 1px; background: var(--line); }
+    .toc-grid { display: grid; grid-template-columns: 1fr; gap: 5px; }
+    @media(min-width:600px){ .toc-grid { grid-template-columns: 1fr 1fr; } }
+    .toc-item {
+      display: flex; align-items: center; gap: 8px;
+      text-decoration: none; color: var(--text);
+      padding: 10px 12px; border-radius: 10px;
+      border: 1px solid var(--line); background: var(--bg);
+      transition: background .12s, border-color .12s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .toc-item:hover { background: var(--indigo-lt); border-color: var(--indigo); }
+    .toc-item.active-section { background: var(--accent-bg); border-color: var(--accent); }
+    .toc-cat { font-size: 10px; font-weight: 700; letter-spacing: .07em; color: var(--accent); background: var(--accent-bg); padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+    .toc-title-text { font-size: 13px; font-weight: 600; flex: 1; }
+    .toc-count { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+
+    /* SECTION */
+    .section-block { margin-bottom: 32px; scroll-margin-top: 20px; }
+    .section-head { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+    .section-accent-bar { width: 3px; min-height: 42px; background: var(--accent); border-radius: 2px; flex-shrink: 0; margin-top: 3px; }
+    .section-meta { flex: 1; }
+    .section-cat { font-size: 10px; font-weight: 700; letter-spacing: .1em; color: var(--accent); text-transform: uppercase; margin-bottom: 1px; }
+    .section-title { font-size: 18px; font-weight: 800; letter-spacing: .01em; }
+    .section-progress { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .section-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; padding-left: 15px; }
+
+    /* CARD */
+    .card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 14px; padding: 14px 14px 11px;
+      margin-bottom: 8px; border-left: 3px solid transparent;
+      transition: border-left-color .15s, box-shadow .15s;
+      position: relative;
+    }
+    .card:hover { box-shadow: 0 3px 14px rgba(28,28,46,.07); }
+    .card.speaking { border-left-color: var(--accent); background: var(--accent-bg); }
+    .card-num { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: .06em; margin-bottom: 4px; }
+
+    .jp-text { font-size: 21px; font-weight: 700; letter-spacing: .02em; line-height: 2; margin-bottom: 3px; }
+    .jp-text ruby { ruby-align: center; }
+    .jp-text rt { font-size: 10px; font-weight: 400; color: var(--muted); }
+    body.hide-ruby rt { visibility: hidden; }
+
+    .zh-text { font-size: 15px; color: var(--muted); margin-bottom: 10px; }
+    .card-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+    .card-actions .btn { font-size: 12px; padding: 4px 10px; min-height: 30px; }
+
+    .freq { position: absolute; top: 12px; right: 12px; display: flex; gap: 2px; }
+    .freq-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
+    .freq-dot.on { background: var(--accent); }
+
+    /* SEARCH */
+    .search-header { font-size: 13px; color: var(--muted); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .search-section-label { font-size: 11px; font-weight: 700; color: var(--accent); letter-spacing: .08em; text-transform: uppercase; margin: 16px 0 6px; }
+    mark { background: #FFF0B0; color: var(--text); border-radius: 2px; padding: 0 1px; }
+
+    /* BACK TO TOP */
+    #backTop {
+      position: fixed; bottom: 24px; right: 18px;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--indigo); color: #fff; border: none;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 14px rgba(45,53,97,.3);
+      opacity: 0; transform: translateY(8px);
+      transition: opacity .2s, transform .2s; z-index: 90;
+    }
+    #backTop.visible { opacity: 1; transform: translateY(0); }
+
+    /* TOAST */
+    #toast {
+      position: fixed; bottom: 76px; left: 50%;
+      transform: translateX(-50%) translateY(6px);
+      background: var(--text); color: #fff;
+      font-size: 13px; font-weight: 600;
+      padding: 8px 18px; border-radius: 20px;
+      opacity: 0; transition: opacity .2s, transform .2s;
+      pointer-events: none; z-index: 200; white-space: nowrap;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    #loading { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 15px; }
+    footer { text-align: center; font-size: 12px; color: var(--muted); padding: 20px 14px 40px; letter-spacing: .04em; }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="header-top">
+      <span class="site-title">Living Japanese</span>
+      <span class="site-subtitle" id="subtitle">日本生活会話</span>
+    </div>
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input id="searchInput" type="search" placeholder="日本語または中国語で検索…" autocomplete="off">
+      <button id="searchClear" onclick="clearSearch()">×</button>
+    </div>
+    <div class="controls">
+      <button class="btn primary" onclick="speakAll()">▶ 朗読</button>
+      <button class="btn" id="btnPause" onclick="pauseOrResume()">⏸</button>
+      <button class="btn danger" onclick="stopSpeech()">■ 停止</button>
+      <button class="btn" id="btnRuby" onclick="toggleRuby()">振仮名</button>
+      <button class="btn" onclick="goToc()">目次</button>
+      <button class="btn" onclick="showAll()">全て</button>
+      <select class="btn" id="mode">
+        <option value="jp">日本語のみ</option>
+        <option value="jp_zh">日→中</option>
+        <option value="repeat" selected>日→中→日</option>
+      </select>
+      <select class="btn" id="rate">
+        <option value="0.7">かなりゆっくり</option>
+        <option value="0.8">ゆっくり</option>
+        <option value="0.9" selected>少し遅め</option>
+        <option value="1.0">標準</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="loading">データを読み込んでいます…</div>
+  <nav class="toc" id="toc" style="display:none">
+    <div class="toc-header">
+      <span class="toc-label">目次</span>
+      <div class="toc-line"></div>
+    </div>
+    <div class="toc-grid" id="tocGrid"></div>
+  </nav>
+  <div id="content"></div>
+</main>
+
+<footer>Living Japanese｜日本生活会話データベース v2.0</footer>
+
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+<div id="toast"></div>
+
+<script>
+const DATA_FILES = ['data/sentences_core.json'];
+
+let allSections = [];
+let flat = [];
+let shouldStop = false;
+let rubyVisible = true;
+let currentSection = -1;
+let previousSection = -1; // 搜索前记住的场景
+
+// ── KANJI CHECK ──
+function isKanji(ch) {
+  const c = ch.codePointAt(0);
+  return (c >= 0x4E00 && c <= 0x9FFF) || (c >= 0x3400 && c <= 0x4DBF) || (c >= 0xF900 && c <= 0xFAFF);
+}
+
+function buildRubyHtml(jp, furigana) {
+  if (!furigana || furigana === jp) return esc(jp);
+  const segs = [];
+  let i = 0;
+  while (i < jp.length) {
+    const ch = jp[i];
+    if (isKanji(ch)) {
+      let k = i;
+      while (k < jp.length && isKanji(jp[k])) k++;
+      segs.push({ text: jp.slice(i, k), kanji: true });
+      i = k;
+    } else {
+      let k = i;
+      while (k < jp.length && !isKanji(jp[k])) k++;
+      segs.push({ text: jp.slice(i, k), kanji: false });
+      i = k;
+    }
+  }
+  let fPos = 0, html = '';
+  for (let s = 0; s < segs.length; s++) {
+    const seg = segs[s];
+    if (!seg.kanji) {
+      const idx = furigana.indexOf(seg.text, fPos);
+      if (idx !== -1) fPos = idx + seg.text.length;
+      html += esc(seg.text);
+    } else {
+      let fEnd = furigana.length;
+      if (s + 1 < segs.length) {
+        const idx = furigana.indexOf(segs[s+1].text, fPos);
+        if (idx !== -1) fEnd = idx;
+      }
+      const reading = furigana.slice(fPos, fEnd);
+      fPos = fEnd;
+      html += reading
+        ? `<ruby>${esc(seg.text)}<rt>${esc(reading)}</rt></ruby>`
+        : esc(seg.text);
+    }
+  }
+  return html;
+}
+
+// ── LOAD ──
+async function loadData() {
+  try {
+    const results = await Promise.all(DATA_FILES.map(f => fetch(f).then(r => r.json())));
+    results.forEach(d => { allSections = allSections.concat(d.sections); });
+    buildFlat();
+    renderToc();
+    renderContent(-1);
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('toc').style.display = 'block';
+    document.getElementById('subtitle').textContent = `日本生活会話 ${flat.length}文`;
+  } catch(e) {
+    document.getElementById('loading').textContent =
+      'データの読み込みに失敗しました。data/sentences_core.json を確認してください。';
+  }
+}
+
+function buildFlat() {
+  flat = [];
+  allSections.forEach((sec, si) => {
+    sec.items.forEach((item, ii) => flat.push({ si, ii, item }));
+  });
+}
+
+// ── TOC ──
+function renderToc() {
+  document.getElementById('tocGrid').innerHTML = allSections.map((sec, si) => `
+    <a class="toc-item" href="#" onclick="showSection(${si}); return false;" id="toc-${si}">
+      <span class="toc-cat">${esc(sec.category)}</span>
+      <span class="toc-title-text">${esc(sec.title)}</span>
+      <span class="toc-count">${sec.items.length}文</span>
+    </a>`).join('');
+}
+
+function updateTocActive(si) {
+  document.querySelectorAll('.toc-item').forEach((el, i) => {
+    el.classList.toggle('active-section', i === si);
+  });
+}
+
+function goToc() {
+  // 回到目录：显示全部内容，滚动到目录位置
+  if (currentSection !== -1) {
+    renderContent(-1);
+  }
+  setTimeout(() => {
+    document.getElementById('toc').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 50);
+}
+
+// ── CONTENT ──
+function renderContent(filterSi) {
+  currentSection = filterSi;
+  const content = document.getElementById('content');
+  let globalNum = 1;
+  const nums = [];
+  allSections.forEach((sec, si) => {
+    sec.items.forEach((item, ii) => { nums.push({ si, ii, n: globalNum++ }); });
+  });
+
+  const sectionsToShow = filterSi === -1
+    ? allSections.map((s, i) => ({ sec: s, si: i }))
+    : [{ sec: allSections[filterSi], si: filterSi }];
+
+  content.innerHTML = sectionsToShow.map(({ sec, si }) => {
+    const cards = sec.items.map((item, ii) => {
+      const entry = nums.find(x => x.si === si && x.ii === ii);
+      const n = entry ? entry.n : '';
+      const freqDots = [1,2,3,4,5].map(d =>
+        `<span class="freq-dot${d <= (item.frequency||5) ? ' on' : ''}"></span>`).join('');
+      return `
+        <div class="card" id="card-${si}-${ii}">
+          <div class="card-num">${n}</div>
+          <div class="freq">${freqDots}</div>
+          <div class="jp-text">${buildRubyHtml(item.jp, item.furigana)}</div>
+          <div class="zh-text">${esc(item.zh)}</div>
+          <div class="card-actions">
+            <button class="btn" onclick="speakItem(${si},${ii})">▶ 朗読</button>
+            <button class="btn" onclick="speakJpOnly(${si},${ii})">▶ 日本語のみ</button>
+          </div>
+        </div>`;
+    }).join('');
+    return `
+      <div class="section-block" id="section-${si}">
+        <div class="section-head">
+          <div class="section-accent-bar"></div>
+          <div class="section-meta">
+            <div class="section-cat">${esc(sec.category)}</div>
+            <div class="section-title">${esc(sec.title)}</div>
+            <div class="section-progress">${sec.items.length} 文</div>
+          </div>
+        </div>
+        <div class="section-btns">
+          <button class="btn primary" onclick="speakSection(${si})">▶ この章を朗読</button>
+          <button class="btn" onclick="goToc()">目次へ</button>
+          <button class="btn danger" onclick="stopSpeech()">■ 停止</button>
+        </div>
+        ${cards}
+      </div>`;
+  }).join('');
+
+  if (filterSi !== -1) {
+    updateTocActive(filterSi);
+  } else {
+    document.querySelectorAll('.toc-item').forEach(el => el.classList.remove('active-section'));
+  }
+}
+
+function showSection(si) {
+  stopSpeech();
+  clearSearchUI();
+  renderContent(si);
+  // 目录点击后：先渲染内容，再滚动到内容区顶部（跳过目录）
+  setTimeout(() => {
+    const contentEl = document.getElementById('content');
+    const firstSection = contentEl.querySelector('.section-block');
+    if (firstSection) {
+      const headerH = document.querySelector('header').offsetHeight;
+      const top = firstSection.getBoundingClientRect().top + window.scrollY - headerH - 12;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  }, 60);
+  showToast(allSections[si].title);
+}
+
+function showAll() {
+  stopSpeech();
+  clearSearchUI();
+  renderContent(-1);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── RUBY ──
+function toggleRuby() {
+  rubyVisible = !rubyVisible;
+  document.body.classList.toggle('hide-ruby', !rubyVisible);
+  const btn = document.getElementById('btnRuby');
+  btn.textContent = rubyVisible ? '振仮名' : '振仮名 OFF';
+  btn.classList.toggle('toggled', !rubyVisible);
+}
+
+// ── SEARCH ──
+document.getElementById('searchInput').addEventListener('input', function() {
+  const q = this.value.trim();
+  document.getElementById('searchClear').style.display = q ? 'block' : 'none';
+  if (!q) { clearSearch(); return; }
+  previousSection = currentSection; // 记住搜索前的场景
+  doSearch(q);
+});
+
+function doSearch(q) {
+  stopSpeech();
+  document.getElementById('toc').style.display = 'none';
+  const lower = q.toLowerCase();
+  let total = 0, html = '';
+  allSections.forEach((sec, si) => {
+    const hits = sec.items.filter(item =>
+      item.jp.includes(q) || item.zh.includes(q) ||
+      (item.furigana && item.furigana.includes(q)) ||
+      item.zh.toLowerCase().includes(lower)
+    );
+    if (!hits.length) return;
+    total += hits.length;
+    html += `<div class="search-section-label">${esc(sec.category)} — ${esc(sec.title)}</div>`;
+    hits.forEach(item => {
+      const ii = sec.items.indexOf(item);
+      html += `
+        <div class="card">
+          <div class="jp-text">${hlText(item.jp, q)}</div>
+          <div class="zh-text">${hlText(item.zh, q)}</div>
+          <div class="card-actions">
+            <button class="btn" onclick="speakItem(${si},${ii})">▶ 朗読</button>
+            <button class="btn" onclick="speakJpOnly(${si},${ii})">▶ 日本語のみ</button>
+          </div>
+        </div>`;
+    });
+  });
+  document.getElementById('content').innerHTML = `
+    <div class="search-header">「${esc(q)}」の検索結果：${total}件</div>
+    ${html || '<p style="color:var(--muted);padding:20px 0">該当する文が見つかりませんでした。</p>'}`;
+}
+
+function hlText(text, q) {
+  const e = esc(text);
+  const eq = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return e.replace(new RegExp(eq, 'gi'), m => `<mark>${m}</mark>`);
+}
+
+function clearSearchUI() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchClear').style.display = 'none';
+  document.getElementById('toc').style.display = 'block';
+}
+
+function clearSearch() {
+  clearSearchUI();
+  // 清除搜索后回到之前的场景
+  renderContent(previousSection);
+  if (previousSection !== -1) {
+    setTimeout(() => {
+      const el = document.getElementById(`section-${previousSection}`);
+      if (el) {
+        const headerH = document.querySelector('header').offsetHeight;
+        const top = el.getBoundingClientRect().top + window.scrollY - headerH - 12;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }, 60);
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+// ── SPEECH ──
+function getRate() { return parseFloat(document.getElementById('rate').value); }
+
+function getModeTexts(item) {
+  const m = document.getElementById('mode').value;
+  if (m === 'jp') return [{ text: item.jp, lang: 'ja-JP' }];
+  if (m === 'jp_zh') return [{ text: item.jp, lang: 'ja-JP' }, { text: item.zh, lang: 'zh-CN' }];
+  return [{ text: item.jp, lang: 'ja-JP' }, { text: item.zh, lang: 'zh-CN' }, { text: item.jp, lang: 'ja-JP' }];
+}
+
+function speakSegments(segs, onEnd) {
+  const synth = window.speechSynthesis;
+  synth.cancel();
+  let i = 0;
+  function next() {
+    if (shouldStop) return;
+    if (i >= segs.length) { if (onEnd) onEnd(); return; }
+    const seg = segs[i++];
+    const u = new SpeechSynthesisUtterance(seg.text);
+    u.lang = seg.lang; u.rate = getRate(); u.pitch = 1;
+    u.onend = () => setTimeout(next, 380);
+    synth.speak(u);
+  }
+  next();
+}
+
+function highlightCard(si, ii) {
+  document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+  const el = document.getElementById(`card-${si}-${ii}`);
+  if (el) { el.classList.add('speaking'); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+}
+
+function speakItem(si, ii) {
+  shouldStop = false;
+  highlightCard(si, ii);
+  speakSegments(getModeTexts(allSections[si].items[ii]));
+}
+
+function speakJpOnly(si, ii) {
+  shouldStop = false;
+  highlightCard(si, ii);
+  speakSegments([{ text: allSections[si].items[ii].jp, lang: 'ja-JP' }]);
+}
+
+function speakSection(si) {
+  shouldStop = false;
+  speakSectionFrom(si, 0);
+}
+
+function speakSectionFrom(si, ii) {
+  if (shouldStop || ii >= allSections[si].items.length) {
+    if (!shouldStop) {
+      // 章节朗读结束提示
+      document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+      showToast('✓ 朗読が終わりました', 2200);
+    }
+    return;
+  }
+  highlightCard(si, ii);
+  speakSegments(getModeTexts(allSections[si].items[ii]), () => {
+    setTimeout(() => speakSectionFrom(si, ii + 1), 450);
+  });
+}
+
+function speakAll() {
+  shouldStop = false;
+  showToast('全文朗読を開始します');
+  const startIndex = currentSection === -1
+    ? 0
+    : flat.findIndex(x => x.si === currentSection);
+  speakFlat(startIndex === -1 ? 0 : startIndex);
+}
+
+function speakFlat(index) {
+  if (shouldStop) return;
+  if (index >= flat.length) {
+    document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+    showToast('✓ 全文朗読が終わりました', 2200);
+    return;
+  }
+  const { si, ii, item } = flat[index];
+  if (currentSection !== -1 && si !== currentSection) {
+    speakFlat(index + 1); return;
+  }
+  highlightCard(si, ii);
+  speakSegments(getModeTexts(item), () => setTimeout(() => speakFlat(index + 1), 450));
+}
+
+function pauseOrResume() {
+  const synth = window.speechSynthesis;
+  const btn = document.getElementById('btnPause');
+  if (synth.speaking && !synth.paused) {
+    synth.pause(); btn.textContent = '▶'; btn.classList.add('toggled');
+  } else if (synth.paused) {
+    synth.resume(); btn.textContent = '⏸'; btn.classList.remove('toggled');
+  }
+}
+
+function stopSpeech() {
+  shouldStop = true;
+  window.speechSynthesis.cancel();
+  document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+  const btn = document.getElementById('btnPause');
+  btn.textContent = '⏸'; btn.classList.remove('toggled');
+}
+
+// ── TOAST ──
+let toastTimer = null;
+function showToast(msg, ms = 1800) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), ms);
+}
+
+// ── BACK TO TOP ──
+window.addEventListener('scroll', () => {
+  document.getElementById('backTop').classList.toggle('visible', window.scrollY > 300);
+});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) window.speechSynthesis.pause();
+});
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+
+loadData();
+</script>
+</body>
+</html>
