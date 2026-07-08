@@ -3,347 +3,707 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>日本語学習短冊｜全文版</title>
+  <title>Living Japanese｜日本生活会話</title>
   <style>
     :root {
-      --bg: #f6f7f9;
-      --card: #ffffff;
-      --text: #172033;
-      --muted: #667085;
-      --line: #e4e7ec;
-      --accent: #2563eb;
-      --accent-dark: #1d4ed8;
-      --accent2: #0f766e;
-      --danger: #dc2626;
-      --toc: #eef4ff;
-      --soft: #f9fafb;
+      --bg:        #F5F2ED;
+      --surface:   #FFFFFF;
+      --text:      #1C1C2E;
+      --muted:     #8B7D6B;
+      --line:      #E8E2D9;
+      --accent:    #C23B35;
+      --accent-bg: #FBF0EF;
+      --indigo:    #2D3561;
+      --indigo-lt: #EEF0F8;
+      --progress:  #E8E2D9;
     }
-    * { box-sizing: border-box; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
+
     body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+                   "Noto Sans JP", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
       -webkit-text-size-adjust: 100%;
+      min-height: 100vh;
     }
+
+    /* ── HEADER ── */
     header {
       position: sticky;
       top: 0;
-      z-index: 20;
-      background: rgba(255,255,255,0.97);
-      backdrop-filter: blur(12px);
+      z-index: 100;
+      background: rgba(245,242,237,0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--line);
-      padding: 12px 12px 10px;
-      box-shadow: 0 1px 8px rgba(16,24,40,0.04);
     }
-    h1 {
-      font-size: 20px;
-      margin: 0 0 8px;
-      letter-spacing: .02em;
-    }
-    .sub {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-    .controls {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-    button, select {
-      font-size: 16px;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      padding: 11px 10px;
-      background: white;
-      color: var(--text);
-      min-height: 44px;
-    }
-    button.primary {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-      font-weight: 700;
-    }
-    button.chapter {
-      background: var(--accent2);
-      color: white;
-      border-color: var(--accent2);
-      font-weight: 700;
-    }
-    button.stop {
-      background: #fff;
-      color: var(--danger);
-      border-color: #fecaca;
-      font-weight: 700;
-    }
-    main {
-      padding: 14px;
-      max-width: 920px;
+
+    .header-inner {
+      max-width: 780px;
       margin: 0 auto;
+      padding: 14px 16px 12px;
     }
-    .notice {
-      background: #fff7ed;
-      border: 1px solid #fed7aa;
-      color: #7c2d12;
-      padding: 10px 12px;
-      border-radius: 12px;
+
+    .header-top {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
       margin-bottom: 12px;
-      font-size: 14px;
     }
-    .toc {
-      background: var(--toc);
-      border: 1px solid #bfdbfe;
-      border-radius: 16px;
-      padding: 12px;
-      margin-bottom: 16px;
-    }
-    .toc-title {
+
+    .site-title {
+      font-size: 18px;
       font-weight: 800;
-      margin-bottom: 8px;
-      font-size: 17px;
+      letter-spacing: .03em;
+      color: var(--text);
     }
+
+    .site-subtitle {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: .04em;
+    }
+
+    /* search bar */
+    .search-wrap {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+    #searchInput {
+      width: 100%;
+      padding: 9px 12px 9px 36px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      font-size: 15px;
+      background: var(--surface);
+      color: var(--text);
+      outline: none;
+      transition: border-color .15s;
+    }
+    #searchInput:focus { border-color: var(--accent); }
+    #searchClear {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1;
+      display: none;
+      padding: 2px 4px;
+    }
+
+    /* controls row */
+    .controls {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1.5px solid var(--line);
+      padding: 7px 12px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .12s, border-color .12s, color .12s;
+      min-height: 36px;
+    }
+    .btn:hover { background: var(--indigo-lt); border-color: var(--indigo); }
+    .btn.primary {
+      background: var(--indigo);
+      color: #fff;
+      border-color: var(--indigo);
+    }
+    .btn.primary:hover { background: #222854; }
+    .btn.danger {
+      background: var(--surface);
+      color: var(--accent);
+      border-color: #F5C5C3;
+    }
+    .btn.danger:hover { background: var(--accent-bg); }
+    .btn.active-toggle {
+      background: var(--accent-bg);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    select.btn {
+      appearance: none;
+      -webkit-appearance: none;
+      padding-right: 28px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B7D6B' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-color: var(--surface);
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 20px 16px 80px;
+    }
+
+    /* TOC */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 24px;
+    }
+    .toc-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .toc-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .toc-line { flex: 1; height: 1px; background: var(--line); }
     .toc-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 8px;
+      gap: 6px;
     }
-    .toc a {
-      display: block;
+    @media(min-width:600px){ .toc-grid { grid-template-columns: 1fr 1fr; } }
+
+    .toc-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       text-decoration: none;
-      color: var(--accent-dark);
-      background: #fff;
-      border: 1px solid #dbeafe;
+      color: var(--text);
       padding: 10px 12px;
-      border-radius: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      transition: background .12s, border-color .12s;
+    }
+    .toc-item:hover {
+      background: var(--indigo-lt);
+      border-color: var(--indigo);
+    }
+    .toc-cat {
+      font-size: 10px;
       font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--accent);
+      background: var(--accent-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
     }
-    .section {
-      margin: 22px 0 30px;
-      scroll-margin-top: 190px;
+    .toc-title-text { font-size: 14px; font-weight: 600; flex: 1; }
+    .toc-count { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+
+    /* SECTION */
+    .section-block {
+      margin-bottom: 36px;
+      scroll-margin-top: 160px;
     }
+
     .section-head {
-      background: #111827;
-      color: #fff;
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .section-accent-bar {
+      width: 3px;
+      min-height: 48px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .section-meta { flex: 1; }
+    .section-cat {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 2px;
     }
     .section-title {
       font-size: 20px;
       font-weight: 800;
-      margin-bottom: 10px;
-    }
-    .section-actions {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-    }
-    .section-actions button {
-      background: #fff;
-      color: #111827;
-      border-color: rgba(255,255,255,.7);
-      font-weight: 700;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 12px;
-      box-shadow: 0 2px 8px rgba(16,24,40,0.04);
-    }
-    .num {
-      font-size: 13px;
-      color: var(--muted);
-      margin-bottom: 6px;
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .jp {
-      font-size: 22px;
-      font-weight: 800;
-      margin-bottom: 4px;
       letter-spacing: .01em;
+      color: var(--text);
     }
-    .zh {
-      font-size: 17px;
-      color: #344054;
-      margin-bottom: 12px;
+    .section-progress {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
     }
-    .row-actions {
+    .section-btns {
       display: flex;
-      gap: 8px;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      padding-left: 17px;
+    }
+
+    /* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 16px 14px;
+      margin-bottom: 8px;
+      border-left: 3px solid transparent;
+      transition: border-left-color .15s, box-shadow .15s, transform .15s;
+      position: relative;
+    }
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(28,28,46,.07);
+    }
+    .card.speaking {
+      border-left-color: var(--accent);
+      background: var(--accent-bg);
+      box-shadow: 0 4px 20px rgba(194,59,53,.12);
+    }
+
+    .card-num {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: .06em;
+      margin-bottom: 6px;
+    }
+
+    /* japanese text with ruby */
+    .jp-text {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.8;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .jp-text ruby { ruby-align: center; }
+    .jp-text rt {
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: .02em;
+    }
+    /* hide furigana when toggled off */
+    body.hide-ruby rt { display: none; }
+
+    .zh-text {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      padding-left: 1px;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 6px;
       flex-wrap: wrap;
     }
-    .row-actions button {
-      flex: 1;
-      min-width: 120px;
+    .card-actions .btn { font-size: 12px; padding: 5px 10px; min-height: 30px; }
+
+    /* freq dots */
+    .freq {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      display: flex;
+      gap: 2px;
     }
-    .active {
-      outline: 3px solid #93c5fd;
-      background: #eff6ff;
+    .freq-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--line);
     }
-    .backtop {
-      display: inline-block;
-      color: #fff;
-      background: rgba(255,255,255,.18);
-      border: 1px solid rgba(255,255,255,.3);
-      border-radius: 999px;
-      padding: 5px 10px;
-      text-decoration: none;
+    .freq-dot.on { background: var(--accent); }
+
+    /* SEARCH RESULTS */
+    .search-results-header {
       font-size: 13px;
-      margin-left: 4px;
-    }
-    footer {
       color: var(--muted);
-      font-size: 13px;
-      padding: 20px 14px 40px;
-      text-align: center;
+      margin-bottom: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
     }
-    @media (min-width: 760px) {
-      .controls { grid-template-columns: repeat(6, 1fr); }
-      .toc-grid { grid-template-columns: repeat(2, 1fr); }
-      .section-actions { grid-template-columns: 1fr 1fr 1fr; }
+    .search-result-section {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .08em;
+      margin-bottom: 6px;
+      margin-top: 16px;
+      text-transform: uppercase;
+    }
+    mark {
+      background: #FFF0B0;
+      color: var(--text);
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+
+    /* BACK TO TOP */
+    #backTop {
+      position: fixed;
+      bottom: 24px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--indigo);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(45,53,97,.3);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity .2s, transform .2s;
+      z-index: 90;
+    }
+    #backTop.visible { opacity: 1; transform: translateY(0); }
+    #backTop:hover { background: #222854; }
+
+    /* STATUS TOAST */
+    #toast {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      background: var(--text);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 20px;
+      opacity: 0;
+      transition: opacity .2s, transform .2s;
+      pointer-events: none;
+      z-index: 200;
+      white-space: nowrap;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* LOADING */
+    #loading {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 20px 16px 40px;
+      letter-spacing: .04em;
     }
   </style>
 </head>
 <body>
-  <header id="top">
-    <h1>日本語学習短冊｜全文版</h1>
-    <div class="sub">全 11 章 / 82 文　音声ファイルなし・iPhone内蔵音声で朗読</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="header-top">
+      <span class="site-title">Living Japanese</span>
+      <span class="site-subtitle">日本生活会話 227文</span>
+    </div>
+
+    <div class="search-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input id="searchInput" type="search" placeholder="日本語または中国語で検索…" autocomplete="off">
+      <button id="searchClear" onclick="clearSearch()" title="クリア">×</button>
+    </div>
+
     <div class="controls">
-      <button class="primary" onclick="speakAll()">▶ 全文朗読</button>
-      <button onclick="openToc()">目次へ</button>
-      <button onclick="pauseOrResume()">⏸ 一時停止/再開</button>
-      <button class="stop" onclick="stopSpeech()">■ 停止</button>
-      <select id="mode">
+      <button class="btn primary" onclick="speakAll()">▶ 全文朗読</button>
+      <button class="btn" onclick="pauseOrResume()" id="btnPause">⏸ 一時停止</button>
+      <button class="btn danger" onclick="stopSpeech()">■ 停止</button>
+      <button class="btn" id="btnRuby" onclick="toggleRuby()">振仮名 ON</button>
+      <button class="btn" onclick="scrollToToc()">目次</button>
+      <select class="btn" id="mode">
         <option value="jp">日本語のみ</option>
-        <option value="jp_zh">日本語 → 中国語</option>
-        <option value="repeat" selected>日本語 → 中国語 → 日本語</option>
+        <option value="jp_zh">日→中</option>
+        <option value="repeat" selected>日→中→日</option>
       </select>
-      <select id="rate">
+      <select class="btn" id="rate">
         <option value="0.7">かなりゆっくり</option>
         <option value="0.8">ゆっくり</option>
-        <option value="0.9" selected>標準より少し遅く</option>
-        <option value="1">標準</option>
+        <option value="0.9" selected>少し遅め</option>
+        <option value="1.0">標準</option>
       </select>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <div class="notice">
-      オフライン朗読するには、iPhoneで「設定 → アクセシビリティ → 読み上げコンテンツ → 声 → 日本語」から日本語音声を本体にダウンロードしてください。HTMLファイルも「このiPhone内」に保存すると安定します。
+<main>
+  <div id="loading">データを読み込んでいます…</div>
+  <nav class="toc" id="toc" style="display:none">
+    <div class="toc-header">
+      <span class="toc-label">目次</span>
+      <div class="toc-line"></div>
     </div>
+    <div class="toc-grid" id="tocGrid"></div>
+  </nav>
+  <div id="content"></div>
+</main>
 
-    <nav class="toc" id="toc">
-      <div class="toc-title">目次</div>
-      <div class="toc-grid" id="tocList"></div>
-    </nav>
+<footer>Living Japanese｜日本生活会話データベース v2.0</footer>
 
-    <div id="content"></div>
-  </main>
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="トップへ">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
-  <footer>
-    日本語学習短冊 WEB版｜作成用データ：日本語学習短冊初級.xlsx
-  </footer>
+<div id="toast"></div>
 
 <script>
-const sections = [{"title": "職場① お客様への基本対応", "items": [{"jp": "いらっしゃいませ。", "zh": "欢迎光临。"}, {"jp": "ありがとうございました。", "zh": "谢谢惠顾。"}, {"jp": "かしこまりました。", "zh": "好的，明白了。"}, {"jp": "少々お待ちください。", "zh": "请稍等。"}, {"jp": "申し訳ございません。", "zh": "非常抱歉。"}, {"jp": "こちらへどうぞ。", "zh": "请到这边来。"}, {"jp": "お預かりします。", "zh": "我帮您保管。"}, {"jp": "お返しします。", "zh": "还给您。"}, {"jp": "レシートはご利用ですか。", "zh": "需要小票吗。"}, {"jp": "袋はご利用ですか。", "zh": "需要袋子吗。"}, {"jp": "現金ですか。", "zh": "现金吗。"}, {"jp": "クレジットカードですか。", "zh": "信用卡吗。"}, {"jp": "電子マネーですか。", "zh": "电子支付吗。"}, {"jp": "お会計は○○円です。", "zh": "一共○○日元。"}]}, {"title": "職場② スーツケース預かり", "items": [{"jp": "お荷物をお預かりします。", "zh": "我帮您寄存行李。"}, {"jp": "何個ですか。", "zh": "几件呢。"}, {"jp": "こちらの番号札をお持ちください。", "zh": "请保管好这个号码牌。"}, {"jp": "お受け取りは何時ごろですか。", "zh": "预计几点来取呢。"}, {"jp": "番号札を見せてください。", "zh": "请出示号码牌。"}, {"jp": "お荷物はこちらです。", "zh": "您的行李在这里。"}]}, {"title": "職場③ お土産販売", "items": [{"jp": "こちらが人気商品です。", "zh": "这是人气商品。"}, {"jp": "試食できます。", "zh": "可以试吃。"}, {"jp": "おすすめはこちらです。", "zh": "推荐这个。"}, {"jp": "こちらは大阪限定です。", "zh": "这是大阪限定商品。"}, {"jp": "在庫があります。", "zh": "有库存。"}, {"jp": "申し訳ございません、売り切れです。", "zh": "不好意思，已经卖完了。"}]}, {"title": "家庭① 毎日使う言葉", "items": [{"jp": "おはよう。", "zh": "早上好。"}, {"jp": "おかえり。", "zh": "回来啦。"}, {"jp": "いただきます。", "zh": "我开动了。"}, {"jp": "ごちそうさまでした。", "zh": "我吃好了。"}, {"jp": "ありがとう。", "zh": "谢谢。"}, {"jp": "大丈夫？", "zh": "没事吧？"}, {"jp": "気をつけてね。", "zh": "路上小心。"}, {"jp": "早く寝よう。", "zh": "早点睡吧。"}]}, {"title": "子供への声掛け", "items": [{"jp": "準備できた？", "zh": "准备好了吗。"}, {"jp": "急がなくていいよ。", "zh": "不用着急。"}, {"jp": "ゆっくりで大丈夫。", "zh": "慢慢来也没关系。"}, {"jp": "ちゃんとできたね。", "zh": "做得很好。"}, {"jp": "頑張ったね。", "zh": "辛苦了。"}, {"jp": "ありがとう。", "zh": "谢谢你。"}, {"jp": "手を洗ってね。", "zh": "去洗手哦。"}, {"jp": "歯を磨こう。", "zh": "来刷牙吧。"}]}, {"title": "幼稚園", "items": [{"jp": "おはようございます。", "zh": "早上好。"}, {"jp": "よろしくお願いします。", "zh": "麻烦您了。"}, {"jp": "ありがとうございました。", "zh": "谢谢老师。"}, {"jp": "今日は元気です。", "zh": "今天精神很好。"}, {"jp": "少し咳があります。", "zh": "有点咳嗽。"}, {"jp": "熱はありません。", "zh": "没有发烧。"}, {"jp": "今日は早迎えです。", "zh": "今天会提前来接。"}, {"jp": "遅れます。", "zh": "会晚一点。"}, {"jp": "忘れ物をしました。", "zh": "忘记带东西了。"}, {"jp": "先生、お時間ありますか。", "zh": "老师，现在方便吗。"}]}, {"title": "スーパー", "items": [{"jp": "これをください。", "zh": "请给我这个。"}, {"jp": "いくらですか。", "zh": "多少钱。"}, {"jp": "どこにありますか。", "zh": "在哪里。"}, {"jp": "ポイントカードがあります。", "zh": "我有积分卡。"}, {"jp": "袋はいりません。", "zh": "不要袋子。"}, {"jp": "袋をお願いします。", "zh": "请给我袋子。"}, {"jp": "レシートをお願いします。", "zh": "请给我小票。"}]}, {"title": "コンビニ", "items": [{"jp": "温めてください。", "zh": "请帮我加热。"}, {"jp": "タバコをください。", "zh": "请给我香烟。"}, {"jp": "宅配便を出したいです。", "zh": "我想寄快递。"}, {"jp": "コピーをしたいです。", "zh": "我想复印。"}]}, {"title": "病院", "items": [{"jp": "予約しています。", "zh": "我有预约。"}, {"jp": "初めてです。", "zh": "第一次来。"}, {"jp": "保険証があります。", "zh": "有医保卡。"}, {"jp": "頭が痛いです。", "zh": "头痛。"}, {"jp": "お腹が痛いです。", "zh": "肚子疼。"}, {"jp": "熱があります。", "zh": "发烧了。"}, {"jp": "薬を飲んでいます。", "zh": "正在吃药。"}, {"jp": "ありがとうございました。", "zh": "谢谢医生。"}]}, {"title": "電車・バス", "items": [{"jp": "○○駅へ行きたいです。", "zh": "我想去○○站。"}, {"jp": "この電車で大丈夫ですか。", "zh": "坐这趟车可以吗。"}, {"jp": "どこで乗り換えますか。", "zh": "在哪里换乘。"}, {"jp": "ありがとうございます。", "zh": "谢谢。"}]}, {"title": "困ったとき", "items": [{"jp": "もう一度お願いします。", "zh": "请再说一次。"}, {"jp": "ゆっくり話してください。", "zh": "请说慢一点。"}, {"jp": "日本語がまだ上手ではありません。", "zh": "我的日语还不太好。"}, {"jp": "少し分かります。", "zh": "能听懂一点。"}, {"jp": "分かりません。", "zh": "听不懂。"}, {"jp": "助けてください。", "zh": "请帮帮我。"}, {"jp": "ありがとうございます。", "zh": "谢谢。"}]}];
+// ── CONFIG ──
+const DATA_FILES = [
+  'data/sentences_core.json',
+  // 'data/sentences_v2.json',  // 新增场景时取消注释
+];
+
+// ── STATE ──
+let allSections = [];
 let flat = [];
 let currentFlatIndex = -1;
 let shouldStop = false;
+let rubyVisible = true;
+let searchActive = false;
 
+// ── LOAD DATA ──
+async function loadData() {
+  try {
+    const results = await Promise.all(
+      DATA_FILES.map(f => fetch(f).then(r => r.json()))
+    );
+    results.forEach(data => {
+      allSections = allSections.concat(data.sections);
+    });
+    buildFlat();
+    renderToc();
+    renderContent();
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('toc').style.display = 'block';
+    // update subtitle
+    document.querySelector('.site-subtitle').textContent =
+      `日本生活会話 ${flat.length}文`;
+  } catch(e) {
+    document.getElementById('loading').textContent =
+      'データの読み込みに失敗しました。data/sentences_core.json を確認してください。';
+  }
+}
+
+// ── FLAT INDEX ──
 function buildFlat() {
   flat = [];
-  sections.forEach((sec, si) => {
+  allSections.forEach((sec, si) => {
     sec.items.forEach((item, ii) => {
-      flat.push({ sectionIndex: si, itemIndex: ii, item });
+      flat.push({ si, ii, item });
     });
   });
 }
 
-function getRate() {
-  return parseFloat(document.getElementById("rate").value || "0.9");
+// ── RUBY ──
+function buildRuby(jp, furigana) {
+  // If furigana === jp (all kana), just return text
+  if (!furigana || furigana === jp) return escHtml(jp);
+  // Simple approach: wrap entire phrase in ruby
+  // For proper per-character ruby, we'd need a mapping — this is clean enough
+  return `<ruby>${escHtml(jp)}<rt>${escHtml(furigana)}</rt></ruby>`;
 }
 
-function getModeTexts(item) {
-  const mode = document.getElementById("mode").value;
-  if (mode === "jp") return [{ text: item.jp, lang: "ja-JP" }];
-  if (mode === "jp_zh") return [
-    { text: item.jp, lang: "ja-JP" },
-    { text: item.zh, lang: "zh-CN" }
-  ];
-  return [
-    { text: item.jp, lang: "ja-JP" },
-    { text: item.zh, lang: "zh-CN" },
-    { text: item.jp, lang: "ja-JP" }
-  ];
+function toggleRuby() {
+  rubyVisible = !rubyVisible;
+  document.body.classList.toggle('hide-ruby', !rubyVisible);
+  const btn = document.getElementById('btnRuby');
+  if (rubyVisible) {
+    btn.textContent = '振仮名 ON';
+    btn.classList.remove('active-toggle');
+  } else {
+    btn.textContent = '振仮名 OFF';
+    btn.classList.add('active-toggle');
+  }
 }
 
-function escapeHtml(str) {
-  return String(str).replace(/[&<>"']/g, s => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
-  }[s]));
-}
-
+// ── RENDER TOC ──
 function renderToc() {
-  const toc = document.getElementById("tocList");
-  toc.innerHTML = sections.map((sec, si) => `
-    <a href="#section-${si}">
-      ${si + 1}. ${escapeHtml(sec.title)}（${sec.items.length}文）
+  const grid = document.getElementById('tocGrid');
+  grid.innerHTML = allSections.map((sec, si) => `
+    <a class="toc-item" href="#section-${si}">
+      <span class="toc-cat">${escHtml(sec.category)}</span>
+      <span class="toc-title-text">${escHtml(sec.title)}</span>
+      <span class="toc-count">${sec.items.length}文</span>
     </a>
-  `).join("");
+  `).join('');
 }
 
+// ── RENDER CONTENT ──
 function renderContent() {
-  const content = document.getElementById("content");
+  const content = document.getElementById('content');
   let globalNum = 1;
-  content.innerHTML = sections.map((sec, si) => {
+  content.innerHTML = allSections.map((sec, si) => {
     const cards = sec.items.map((item, ii) => {
-      const id = `card-${si}-${ii}`;
-      const html = `
-        <section class="card" id="${id}">
-          <div class="num"><span>${globalNum++}</span><span>${escapeHtml(sec.title)}</span></div>
-          <div class="jp">${escapeHtml(item.jp)}</div>
-          <div class="zh">${escapeHtml(item.zh)}</div>
-          <div class="row-actions">
-            <button onclick="speakItem(${si}, ${ii})">▶ この文を朗読</button>
-            <button onclick="speakJapaneseOnly(${si}, ${ii})">▶ 日本語だけ</button>
+      const num = globalNum++;
+      const freqDots = [1,2,3,4,5].map(d =>
+        `<span class="freq-dot${d <= (item.frequency||5) ? ' on' : ''}"></span>`
+      ).join('');
+      return `
+        <div class="card" id="card-${si}-${ii}">
+          <div class="card-num">${num}</div>
+          <div class="freq">${freqDots}</div>
+          <div class="jp-text">${buildRuby(item.jp, item.furigana)}</div>
+          <div class="zh-text">${escHtml(item.zh)}</div>
+          <div class="card-actions">
+            <button class="btn" onclick="speakItem(${si},${ii})">▶ 朗読</button>
+            <button class="btn" onclick="speakJpOnly(${si},${ii})">▶ 日本語のみ</button>
           </div>
-        </section>`;
-      return html;
-    }).join("");
+        </div>`;
+    }).join('');
+
     return `
-      <section class="section" id="section-${si}">
+      <div class="section-block" id="section-${si}">
         <div class="section-head">
-          <div class="section-title">${si + 1}. ${escapeHtml(sec.title)}</div>
-          <div class="section-actions">
-            <button onclick="speakSection(${si})">▶ この章を朗読</button>
-            <button onclick="location.href='#toc'">目次へ戻る</button>
-            <button onclick="stopSpeech()">■ 停止</button>
+          <div class="section-accent-bar"></div>
+          <div class="section-meta">
+            <div class="section-cat">${escHtml(sec.category)}</div>
+            <div class="section-title">${escHtml(sec.title)}</div>
+            <div class="section-progress">${sec.items.length} 文</div>
           </div>
         </div>
+        <div class="section-btns">
+          <button class="btn primary" onclick="speakSection(${si})">▶ この章を朗読</button>
+          <button class="btn" onclick="scrollToToc()">目次へ</button>
+          <button class="btn danger" onclick="stopSpeech()">■ 停止</button>
+        </div>
         ${cards}
-      </section>`;
-  }).join("");
+      </div>`;
+  }).join('');
 }
 
-function openToc() {
-  location.href = "#toc";
-}
-
-function highlight(si, ii) {
-  document.querySelectorAll(".card").forEach(el => el.classList.remove("active"));
-  const el = document.getElementById(`card-${si}-${ii}`);
-  if (el) {
-    el.classList.add("active");
-    el.scrollIntoView({ behavior: "smooth", block: "center" });
+// ── SEARCH ──
+document.getElementById('searchInput').addEventListener('input', function() {
+  const q = this.value.trim();
+  document.getElementById('searchClear').style.display = q ? 'block' : 'none';
+  if (!q) {
+    clearSearch();
+    return;
   }
+  doSearch(q);
+});
+
+function doSearch(q) {
+  searchActive = true;
+  stopSpeech();
+  const content = document.getElementById('content');
+  document.getElementById('toc').style.display = 'none';
+
+  const lower = q.toLowerCase();
+  let totalHits = 0;
+  let html = '';
+
+  allSections.forEach((sec, si) => {
+    const hits = sec.items.filter(item =>
+      item.jp.includes(q) ||
+      item.zh.includes(q) ||
+      (item.furigana && item.furigana.includes(q)) ||
+      item.zh.toLowerCase().includes(lower)
+    );
+    if (!hits.length) return;
+    totalHits += hits.length;
+
+    html += `<div class="search-result-section">${escHtml(sec.category)} — ${escHtml(sec.title)}</div>`;
+    hits.forEach(item => {
+      const jpHl = highlight(item.jp, q);
+      const zhHl = highlight(item.zh, q);
+      const ii = sec.items.indexOf(item);
+      html += `
+        <div class="card">
+          <div class="jp-text">${jpHl}</div>
+          <div class="zh-text">${zhHl}</div>
+          <div class="card-actions">
+            <button class="btn" onclick="speakItem(${si},${ii})">▶ 朗読</button>
+            <button class="btn" onclick="speakJpOnly(${si},${ii})">▶ 日本語のみ</button>
+          </div>
+        </div>`;
+    });
+  });
+
+  content.innerHTML = `
+    <div class="search-results-header">「${escHtml(q)}」の検索結果：${totalHits}件</div>
+    ${html || '<p style="color:var(--muted);padding:20px 0">該当する文が見つかりませんでした。</p>'}`;
+}
+
+function highlight(text, q) {
+  if (!q) return escHtml(text);
+  const escaped = escHtml(text);
+  const escapedQ = escHtml(q);
+  return escaped.replace(new RegExp(escapedQ.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'), 'gi'),
+    m => `<mark>${m}</mark>`);
+}
+
+function clearSearch() {
+  searchActive = false;
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchClear').style.display = 'none';
+  document.getElementById('toc').style.display = 'block';
+  renderContent();
+}
+
+function scrollToToc() {
+  document.getElementById('toc').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ── SPEECH ──
+function getRate() { return parseFloat(document.getElementById('rate').value); }
+
+function getModeTexts(item) {
+  const mode = document.getElementById('mode').value;
+  if (mode === 'jp') return [{ text: item.jp, lang: 'ja-JP' }];
+  if (mode === 'jp_zh') return [
+    { text: item.jp, lang: 'ja-JP' },
+    { text: item.zh, lang: 'zh-CN' }
+  ];
+  return [
+    { text: item.jp, lang: 'ja-JP' },
+    { text: item.zh, lang: 'zh-CN' },
+    { text: item.jp, lang: 'ja-JP' }
+  ];
 }
 
 function speakSegments(segments, onEnd) {
@@ -352,85 +712,120 @@ function speakSegments(segments, onEnd) {
   let i = 0;
   function next() {
     if (shouldStop) return;
-    if (i >= segments.length) {
-      if (onEnd) onEnd();
-      return;
-    }
+    if (i >= segments.length) { if (onEnd) onEnd(); return; }
     const seg = segments[i++];
     const u = new SpeechSynthesisUtterance(seg.text);
     u.lang = seg.lang;
     u.rate = getRate();
     u.pitch = 1;
-    u.onend = () => setTimeout(next, 350);
+    u.onend = () => setTimeout(next, 380);
     synth.speak(u);
   }
   next();
 }
 
-function speakItem(si, ii) {
-  shouldStop = false;
-  highlight(si, ii);
-  speakSegments(getModeTexts(sections[si].items[ii]));
+function highlight_card(si, ii) {
+  document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+  const el = document.getElementById(`card-${si}-${ii}`);
+  if (el) {
+    el.classList.add('speaking');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 }
 
-function speakJapaneseOnly(si, ii) {
+function speakItem(si, ii) {
   shouldStop = false;
-  highlight(si, ii);
-  speakSegments([{ text: sections[si].items[ii].jp, lang: "ja-JP" }]);
+  highlight_card(si, ii);
+  speakSegments(getModeTexts(allSections[si].items[ii]));
+}
+
+function speakJpOnly(si, ii) {
+  shouldStop = false;
+  highlight_card(si, ii);
+  speakSegments([{ text: allSections[si].items[ii].jp, lang: 'ja-JP' }]);
 }
 
 function speakSection(si) {
   shouldStop = false;
-  speakSectionItem(si, 0);
+  speakSectionFrom(si, 0);
 }
 
-function speakSectionItem(si, ii) {
-  if (shouldStop) return;
-  if (ii >= sections[si].items.length) return;
-  highlight(si, ii);
-  speakSegments(getModeTexts(sections[si].items[ii]), () => {
-    setTimeout(() => speakSectionItem(si, ii + 1), 450);
+function speakSectionFrom(si, ii) {
+  if (shouldStop || ii >= allSections[si].items.length) return;
+  highlight_card(si, ii);
+  speakSegments(getModeTexts(allSections[si].items[ii]), () => {
+    setTimeout(() => speakSectionFrom(si, ii + 1), 450);
   });
 }
 
 function speakAll() {
   shouldStop = false;
+  showToast('全文朗読を開始します');
   speakFlat(0);
 }
 
 function speakFlat(index) {
-  if (shouldStop) return;
-  if (index >= flat.length) return;
-  const x = flat[index];
+  if (shouldStop || index >= flat.length) return;
   currentFlatIndex = index;
-  highlight(x.sectionIndex, x.itemIndex);
-  speakSegments(getModeTexts(x.item), () => {
+  const { si, ii, item } = flat[index];
+  highlight_card(si, ii);
+  speakSegments(getModeTexts(item), () => {
     setTimeout(() => speakFlat(index + 1), 450);
   });
 }
 
 function pauseOrResume() {
   const synth = window.speechSynthesis;
+  const btn = document.getElementById('btnPause');
   if (synth.speaking && !synth.paused) {
     synth.pause();
+    btn.textContent = '▶ 再開';
+    btn.classList.add('active-toggle');
   } else if (synth.paused) {
     synth.resume();
+    btn.textContent = '⏸ 一時停止';
+    btn.classList.remove('active-toggle');
   }
 }
 
 function stopSpeech() {
   shouldStop = true;
   window.speechSynthesis.cancel();
-  document.querySelectorAll(".card").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll('.card').forEach(el => el.classList.remove('speaking'));
+  const btn = document.getElementById('btnPause');
+  btn.textContent = '⏸ 一時停止';
+  btn.classList.remove('active-toggle');
 }
 
-document.addEventListener("visibilitychange", () => {
+// ── TOAST ──
+function showToast(msg, duration = 2000) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), duration);
+}
+
+// ── BACK TO TOP ──
+window.addEventListener('scroll', () => {
+  const btn = document.getElementById('backTop');
+  if (window.scrollY > 300) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+
+// ── VISIBILITY ──
+document.addEventListener('visibilitychange', () => {
   if (document.hidden) window.speechSynthesis.pause();
 });
 
-buildFlat();
-renderToc();
-renderContent();
+// ── UTILS ──
+function escHtml(str) {
+  return String(str).replace(/[&<>"']/g, s => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'
+  }[s]));
+}
+
+// ── INIT ──
+loadData();
 </script>
 </body>
 </html>
