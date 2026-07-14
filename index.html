@@ -126,7 +126,7 @@ body {
 #sceneToggle::before { left:14px; }
 #sceneToggle::after  { right:14px; }
 .stoggle-arrow {
-  font-size:9px; color:var(--t4); line-height:1;
+  font-size:22px; color:var(--t4); line-height:1;
   z-index:1; background:var(--bg); padding:0 6px;
 }
 .stag {
@@ -708,10 +708,11 @@ function toggleSceneBar(){
   const arrow=document.getElementById('stoggleArrow');
   wrap.classList.toggle('expanded',sceneBarExpanded);
   arrow.textContent=sceneBarExpanded?'▲':'▼';
-  // 更新header高度
-  const hdr=document.getElementById('header');
-  document.querySelector('main').style.paddingTop=hdr.offsetHeight+'px';
-}
+ // 等动画结束后再更新高度（动画时长320ms）
+  setTimeout(()=>{
+    const hdr=document.getElementById('header');
+    document.querySelector('main').style.paddingTop=hdr.offsetHeight+'px';
+  },350);
 
 function updateSearchPlaceholder(){
   const ph=(CFG.search||{})[currentTab]||'搜索…';
