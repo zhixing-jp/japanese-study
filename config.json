@@ -1,0 +1,47 @@
+{
+  "site": {
+    "title": "Living Japanese",
+    "subtitle": "在日华人日语急救包",
+    "version": "3.0",
+    "url": "https://livingjapanese.app"
+  },
+  "banner": {
+    "eyebrow": "Living Japanese",
+    "title": "语言是第一道墙。",
+    "pills": ["不用背", "用时来查", "10秒找到", "说出来解决"]
+  },
+  "search": {
+    "sos": "搜索日文、中文或场景…",
+    "learn": "搜索词汇或场景…",
+    "medical": "搜索症状、科室或流程…",
+    "community": "搜索话题…"
+  },
+  "tabs": [
+    { "id": "sos",       "label": "急救语句", "icon": "shield"  },
+    { "id": "learn",     "label": "日语学习", "icon": "book"    },
+    { "id": "medical",   "label": "就医指南", "icon": "heart"   },
+    { "id": "community", "label": "社区",     "icon": "chat"    }
+  ],
+  "controls": {
+    "defaultMode": "jp",
+    "defaultRate": "0.75",
+    "modes": [
+      { "id": "jp",     "label": "仅日语"   },
+      { "id": "jp_zh",  "label": "日→中"    },
+      { "id": "repeat", "label": "日→中→日" }
+    ],
+    "rates": [
+      { "id": "0.9",  "label": "普通" },
+      { "id": "0.75", "label": "慢"   },
+      { "id": "0.6",  "label": "更慢" }
+    ]
+  },
+  "sceneBar": {
+    "priorityOrder": [
+      "共通短句", "受診", "買い物", "交通", "飲食",
+      "子供・学校", "手続き", "お金", "住まい", "緊急",
+      "仕事", "外出", "入境・空港", "コンビニサービス",
+      "生活サービス", "ネット購入・配送", "電話", "デジタル"
+    ]
+  }
+}
