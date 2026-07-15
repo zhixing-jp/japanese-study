@@ -765,7 +765,7 @@ function buildFlat(){
 /* ══════════════════════════════════════
    RUBY
 ══════════════════════════════════════ */
-function isKJ(ch){const c=ch.codePointAt(0);return(c>=0x4E00&&c<=0x9FFF)||(c>=0x3400&&c<=0x4DBF)||(c>=0xF900&&c<=0xFAFF);}
+function isKJ(ch){const c=ch.codePointAt(0);return(c>=0x4E00&&c<=0x9FFF)||(c>=0x3400&&c<=0x4DBF)||(c>=0xF900&&c<=0xFAFF)||c===0x3005;}
 function rubyHtml(jp,fg){
   if(!fg||fg===jp)return esc(jp);
   const segs=[];let i=0;
