@@ -74,6 +74,11 @@ function switchTab(name){
 }
 
 /* ── Render Tab Bar ── */
+function renderSiteTitle(cfg){
+  const el = document.getElementById('siteTitle');
+  if(el) el.textContent = cfg.site?.title || 'Living Japanese';
+  document.title = (cfg.site?.title || 'Living Japanese') + ' | ' + (cfg.site?.subtitle || '');
+}
 function renderTabBar(cfg){
   const tabIcons = {shield:'🛡️', book:'📖', heart:'🏥', chat:'💬'};
   document.getElementById('tabBar').innerHTML =
