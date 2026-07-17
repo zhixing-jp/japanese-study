@@ -145,6 +145,7 @@ let CFG = {};
       fetch('data/scene_icons.json').then(r=>r.json()),
     ]);
     CFG = cfg;
+    renderSiteTitle(cfg);
     renderTabBar(cfg);
     initVoices();
     await sosBoot(cfg, icons);
