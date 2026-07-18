@@ -46,7 +46,7 @@ async function sosBoot(cfg, icons){
     }, 100);
 
   } catch(e){
-    document.getElementById('loading').textContent = '加载失败，请检查 data/sentences_core.json';
+    document.getElementById('loading').textContent = '加载失败，请检查 data/sos/sentences_core.json';
     console.error(e);
   }
 }
