@@ -20,7 +20,7 @@ async function sosBoot(cfg, icons){
   loadStorage();
 
   try {
-    const data = await fetch('data/sos/sentences_core.json').then(r=>r.json());
+    const data = await fetch('data/sos/scene_icons.json').then(r=>r.json());
     SECTIONS = data.sections;
 
     // Sort by priority
