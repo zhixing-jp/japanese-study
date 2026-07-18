@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Living Japanese | 日语学习版块场景目录"
+  },
+  "levels": [
+    { "id": "lv1", "star": 1, "label": "入门", "desc": "几乎不需要开口，听懂就好" },
+    { "id": "lv2", "star": 2, "label": "基础", "desc": "需要说1-2句" },
+    { "id": "lv3", "star": 3, "label": "进阶", "desc": "需要简单对话" }
+  ],
+  "scenes": [
+    {
+      "id": "ls01",
+      "file": "data/lessons/ls01.json",
+      "title": "便利店",
+      "title_ja": "コンビニ",
+      "emoji": "🏪",
+      "level": "lv1",
+      "sound": "conbini"
+    },
+    {
+      "id": "ls02",
+      "file": "data/lessons/ls02.json",
+      "title": "超市结账",
+      "title_ja": "スーパー",
+      "emoji": "🛒",
+      "level": "lv1",
+      "sound": "supermarket"
+    },
+    {
+      "id": "ls03",
+      "file": "data/lessons/ls03.json",
+      "title": "坐电车",
+      "title_ja": "電車",
+      "emoji": "🚃",
+      "level": "lv1",
+      "sound": "train"
+    }
+  ]
+}
