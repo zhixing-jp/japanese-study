@@ -11,9 +11,9 @@
     "pills": ["不用背", "用时来查", "10秒找到", "说出来解决"]
   },
   "search": {
-    "sos": "搜索日文、中文或场景…",
-    "learn": "搜索词汇或场景…",
-    "medical": "搜索症状、科室或流程…",
+    "sos":       "搜索日文、中文或场景…",
+    "learn":     "搜索词汇或场景…",
+    "medical":   "搜索症状、科室或流程…",
     "community": "搜索话题…"
   },
   "tabs": [
@@ -21,6 +21,12 @@
     { "id": "learn",     "label": "日语学习", "icon": "book"    },
     { "id": "medical",   "label": "就医指南", "icon": "heart"   },
     { "id": "community", "label": "社区",     "icon": "chat"    }
+  ],
+  "modules": [
+    { "id": "sos",       "css": "css/sos.css",       "js": "js/sos.js"       },
+    { "id": "learn",     "css": "css/learn.css",     "js": "js/learn.js"     },
+    { "id": "medical",   "css": "css/medical.css",   "js": "js/medical.js"   },
+    { "id": "community", "css": "css/community.css", "js": "js/community.js" }
   ],
   "controls": {
     "defaultMode": "jp",

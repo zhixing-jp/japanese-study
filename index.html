@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Living Japanese · 日活 | 在日华人日语急救包</title>
+<title>Living Japanese · 日活</title>
 <meta name="description" content="专为在日华人设计的日语急救工具。18个生活场景，519句实用日语，完全免费。不用背，用时来查，10秒找到，说出来解决问题。">
 <meta name="keywords" content="在日华人,日语急救,在日本生活,日语工具,生活日语,在日语言,日本生活,润日,日活">
 <meta name="author" content="Living Japanese">
@@ -14,7 +14,6 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_CN">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N484C7TXZ0"></script>
 <script>
   window.dataLayer=window.dataLayer||[];
@@ -22,9 +21,8 @@
   gtag('js',new Date()); gtag('config','G-N484C7TXZ0');
 </script>
 
-<!-- CSS -->
+<!-- 只加载共用样式，版块样式由JS动态加载 -->
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/sos.css">
 </head>
 <body>
 
@@ -52,63 +50,10 @@
   </div>
 </div>
 
-<!-- ══ MAIN ══ -->
-<main>
+<!-- ══ MAIN（由JS动态填充）══ -->
+<main></main>
 
-  <!-- Panel: 急救语句 -->
-  <div class="panel on" id="panel-sos">
-    <div id="banner"></div>
-    <div class="content-wrap">
-      <div id="loading">加载中…</div>
-      <div id="content"></div>
-    </div>
-  </div>
-
-  <!-- Panel: 日语学习 -->
-  <div class="panel" id="panel-learn">
-    <div class="ph">
-      <div class="ph-icon">📖</div>
-      <div class="ph-title">轻松日语学习</div>
-      <div class="ph-desc">
-        不是教科书，不考级。<br>
-        用真实场景让你在不知不觉中熟悉日语。<br>
-        每个场景一个对话剧本，演练一遍，下次不慌。
-      </div>
-      <span class="ph-badge">即将上线</span>
-    </div>
-  </div>
-
-  <!-- Panel: 就医指南 -->
-  <div class="panel" id="panel-medical">
-    <div class="ph">
-      <div class="ph-icon">🏥</div>
-      <div class="ph-title">日本就医流程指南</div>
-      <div class="ph-desc">
-        从找医院到取药，<br>
-        图文并茂一步一步带你走。<br>
-        2026实用版，专为在日华人设计。
-      </div>
-      <span class="ph-badge">即将上线</span>
-    </div>
-  </div>
-
-  <!-- Panel: 社区 -->
-  <div class="panel" id="panel-community">
-    <div class="ph">
-      <div class="ph-icon">💬</div>
-      <div class="ph-title">在日华人社区</div>
-      <div class="ph-desc">
-        分享经验，互相帮助。<br>
-        在日生活遇到的问题，<br>
-        这里都有人懂你。
-      </div>
-      <span class="ph-badge">敬请期待</span>
-    </div>
-  </div>
-
-</main>
-
-<!-- ══ CONTROLS BAR ══ -->
+<!-- ══ SOS CONTROLS BAR ══ -->
 <div id="ctrlBar" style="display:none">
   <div class="ctrl-main">
     <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>
@@ -119,6 +64,13 @@
     <button class="ctrl-icon sm-text" onclick="showAll()">全部</button>
   </div>
   <div class="ctrl-settings" id="ctrlSettings"></div>
+</div>
+
+<!-- ══ LEARN CONTROLS BAR ══ -->
+<div id="learnCtrlBar">
+  <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
+  <button class="learn-ctrl-icon" id="learnLoopBtn" onclick="learnToggleLoop()">🔁</button>
+  <button class="learn-ctrl-icon rd" onclick="learnStop()">■</button>
 </div>
 
 <!-- ══ TAB BAR ══ -->
@@ -132,26 +84,40 @@
 </button>
 <div id="toast"></div>
 
-<!-- ══ JS ══ -->
+<!-- ══ 只加载共用JS，版块JS由boot动态加载 ══ -->
 <script src="js/base.js"></script>
-<script src="js/sos.js"></script>
 <script>
 /* ── Boot ── */
 let CFG = {};
 (async ()=>{
   try {
-    const [cfg, icons] = await Promise.all([
-      fetch('config.json').then(r=>r.json()),
-      fetch('data/sos/scene_icons.json').then(r=>r.json()),
-    ]);
-    CFG = cfg;
-    renderSiteTitle(cfg);
-    renderTabBar(cfg);
+    // 1. 加载配置
+    CFG = await fetch('config.json').then(r=>r.json());
+
+    // 2. 渲染基础UI
+    renderSiteTitle(CFG);
+    renderPanels(CFG);
+    renderTabBar(CFG);
     initVoices();
-    await sosBoot(cfg, icons);
+
+    // 3. 动态加载所有版块的CSS和JS
+    await loadModules(CFG.modules || []);
+
+    // 4. 加载图标数据
+    const icons = await fetch('data/sos/scene_icons.json').then(r=>r.json());
+
+    // 5. 依次初始化所有已注册的版块
+    for(const m of (CFG.modules||[])){
+      const mod = window.LJ_MODULES[m.id];
+      if(mod && typeof mod.init === 'function'){
+        await mod.init(CFG, icons);
+      }
+    }
+
   } catch(e){
     console.error('Boot failed:', e);
-    document.getElementById('loading').textContent = '加载失败，请刷新重试。';
+    const el = document.querySelector('main');
+    if(el) el.innerHTML = '<p style="padding:40px;text-align:center;color:#8E8E93">加载失败，请刷新重试。</p>';
   }
 })();
 </script>
