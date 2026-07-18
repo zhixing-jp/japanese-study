@@ -36,6 +36,39 @@ function initVoices(){
 }
 window.speechSynthesis.onvoiceschanged = initVoices;
 
+/* ── Dynamic Module Loader ── */
+function loadCSS(href){
+  return new Promise((resolve, reject)=>{
+    const link = document.createElement('link');
+    link.rel = 'stylesheet'; link.href = href;
+    link.onload = resolve; link.onerror = reject;
+    document.head.appendChild(link);
+  });
+}
+function loadJS(src){
+  return new Promise((resolve, reject)=>{
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = resolve; script.onerror = reject;
+    document.head.appendChild(script);
+  });
+}
+async function loadModules(modules){
+  for(const m of modules){
+    try {
+      await Promise.all([
+        loadCSS(m.css),
+        loadJS(m.js)
+      ]);
+    } catch(e){
+      console.warn(`模块加载失败: ${m.id}`, e);
+    }
+  }
+}
+
+/* ── Module Registry ── */
+window.LJ_MODULES = window.LJ_MODULES || {};
+
 /* ── Tab Switch ── */
 let currentTab = 'sos';
 function switchTab(name){
@@ -50,14 +83,15 @@ function switchTab(name){
   const sbw = document.getElementById('sceneBarWrap');
   const sw  = document.getElementById('searchWrap');
   const cb  = document.getElementById('ctrlBar');
+  const lcb = document.getElementById('learnCtrlBar');
   if(sbw) sbw.style.display = isSos ? '' : 'none';
   if(sw)  sw.style.display  = isSos ? '' : 'none';
   if(cb)  cb.style.display  = isSos ? '' : 'none';
+  if(lcb) lcb.classList.toggle('on', name==='learn');
 
   document.querySelector('main').style.paddingBottom =
     isSos ? `calc(var(--ctrl-h) + var(--tab-h))` : `var(--tab-h)`;
 
-  // 更新搜索框placeholder
   if(window.CFG){
     const ph = (CFG.search||{})[name] || '搜索…';
     const si = document.getElementById('searchInput');
@@ -73,21 +107,32 @@ function switchTab(name){
   if(window.gtag) gtag('event','tab_switch',{tab:name});
 }
 
-/* ── Render Tab Bar ── */
+/* ── Render Site Title ── */
 function renderSiteTitle(cfg){
   const el = document.getElementById('siteTitle');
   if(el) el.textContent = cfg.site?.title || 'Living Japanese';
-  document.title = (cfg.site?.title || 'Living Japanese') + ' | ' + (cfg.site?.subtitle || '');
+  document.title = cfg.site?.title || 'Living Japanese';
 }
+
+/* ── Render Tab Bar ── */
 function renderTabBar(cfg){
   const tabIcons = {shield:'🛡️', book:'📖', heart:'🏥', chat:'💬'};
   document.getElementById('tabBar').innerHTML =
     (cfg.tabs||[]).map(t=>`
-      <button class="tab${currentTab===t.id?' on':''}" id="tab-${t.id}"
-              onclick="switchTab('${t.id}')">
+      <button class="tab${currentTab===t.id?' on':''}"
+              id="tab-${t.id}" onclick="switchTab('${t.id}')">
         <div class="tab-icon">${tabIcons[t.icon]||'●'}</div>
         ${esc(t.label)}
       </button>`).join('');
+}
+
+/* ── Render Panels ── */
+function renderPanels(cfg){
+  const main = document.querySelector('main');
+  const tabs = cfg.tabs || [];
+  main.innerHTML = tabs.map((t,i)=>`
+    <div class="panel${i===0?' on':''}" id="panel-${t.id}"></div>
+  `).join('');
 }
 
 /* ── Scroll ── */

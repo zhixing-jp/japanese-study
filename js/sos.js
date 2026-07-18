@@ -20,7 +20,7 @@ async function sosBoot(cfg, icons){
   loadStorage();
 
   try {
-    const data = await fetch('data/sos/sentences_core.json').then(r=>r.json());
+    const data = await fetch('data/sentences_core.json').then(r=>r.json());
     SECTIONS = data.sections;
 
     // Sort by priority
@@ -46,7 +46,7 @@ async function sosBoot(cfg, icons){
     }, 100);
 
   } catch(e){
-    document.getElementById('loading').textContent = '加载失败，请检查 data/sos/sentences_core.json';
+    document.getElementById('loading').textContent = '加载失败，请检查 data/sentences_core.json';
     console.error(e);
   }
 }
@@ -567,3 +567,18 @@ function stopSpeech(){
   const bs=document.getElementById('btnStop');
   if(bs){ bs.classList.add('stopped'); setTimeout(()=>bs.classList.remove('stopped'),1200); }
 }
+
+/* ── 模块注册 ── */
+window.LJ_MODULES = window.LJ_MODULES || {};
+window.LJ_MODULES['sos'] = {
+  init: async function(cfg, icons){
+    // 渲染SOS版块的HTML结构
+    document.getElementById('panel-sos').innerHTML = `
+      <div id="banner"></div>
+      <div class="content-wrap">
+        <div id="loading">加载中…</div>
+        <div id="content"></div>
+      </div>`;
+    await sosBoot(cfg, icons);
+  }
+};
