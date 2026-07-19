@@ -207,11 +207,19 @@ async function openScene(id){
   document.getElementById('learnCtrlBar').classList.add('on');
   renderSceneDetail();
   playSceneSound(currentScene);
-  // 2秒后自动收起Hero
-  setTimeout(()=>{
-    const hero=document.querySelector('.learn-detail-hero');
-    if(hero)hero.classList.add('collapsed');
-  },2000);
+  // 滚动时隐藏/显示Hero
+  const dialogWrap = document.getElementById('learnDialogWrap');
+  if(dialogWrap){
+  dialogWrap.addEventListener('scroll', function(){
+    const hero = document.querySelector('.learn-detail-hero');
+    if(!hero) return;
+    if(this.scrollTop > 40){
+      hero.classList.add('collapsed');
+    } else {
+      hero.classList.remove('collapsed');
+    }
+  });
+}
 }
 
 function closeScene(){
