@@ -17,9 +17,41 @@ let currentAudio    = null;
 let learnRubyOn     = true;
 let learnMode       = 'jp';
 let learnRate       = '0.75';
+let learnFollowMode = false; // false=连续 true=跟读
 
 const DEFAULT_STAFF_AVATAR = '👨‍💼';
 const DEFAULT_USER_AVATAR  = '🧑';
+
+/* ── 〇〇替换词库 ── */
+const LR = {
+  station: ['大阪','梅田','難波','天王寺','心斎橋','京橋','鶴橋','新大阪'],
+  price:   ['980','1,200','350','2,500','680','1,050'],
+  name:    ['田中','山田','佐藤','鈴木','中村'],
+  time:    ['10時','14時30分','18時','9時半'],
+  date:    ['7月20日','8月1日'],
+  line:    ['1番線','2番線','3番線'],
+  place:   ['道頓堀','心斎橋','天満','本町']
+};
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+function replaceOO(text){
+  if(!text) return text;
+  return text
+    .replace(/○○駅/g,     ()=>pick(LR.station)+'駅')
+    .replace(/○○行き/g,   ()=>pick(LR.station)+'行き')
+    .replace(/○○まで/g,   ()=>pick(LR.station)+'まで')
+    .replace(/○○に行きますか/g, ()=>pick(LR.station)+'に行きますか')
+    .replace(/○○で降ります/g,   ()=>pick(LR.station)+'で降ります')
+    .replace(/○○はまだですか/g, ()=>pick(LR.station)+'はまだですか')
+    .replace(/○○へはどこで/g,   ()=>pick(LR.station)+'へはどこで')
+    .replace(/○○に止まりますか/g,()=>pick(LR.station)+'に止まりますか')
+    .replace(/○番線/g,    ()=>pick(LR.line))
+    .replace(/○○円/g,    ()=>pick(LR.price)+'円')
+    .replace(/○時○分/g,  ()=>pick(LR.time))
+    .replace(/○月○日/g,  ()=>pick(LR.date))
+    .replace(/○○と申します/g, ()=>pick(LR.name)+'と申します')
+    .replace(/○○です。/g,  ()=>pick(LR.name)+'です。')
+    .replace(/○○/g,      ()=>pick(LR.place));
+}
 
 /* ── 振假名 ── */
 function isKJ(ch){
@@ -189,15 +221,11 @@ async function openScene(id){
   // 滚动时隐藏/显示Hero
   const dw=document.getElementById('learnDialogWrap');
   if(dw){
-  let _heroTimer=null;
-  dw.onscroll=function(){
-  const hero=document.querySelector('.learn-detail-hero');
-  if(!hero) return;
-  clearTimeout(_heroTimer);
-  _heroTimer=setTimeout(()=>{
-  hero.classList.toggle('collapsed', dw.scrollTop>40);
-  },80);
-};
+    dw.onscroll=function(){
+      const hero=document.querySelector('.learn-detail-hero');
+      if(!hero) return;
+      hero.classList.toggle('collapsed', this.scrollTop>40);
+    };
   }
 }
 
@@ -328,9 +356,9 @@ function renderDialog(){
     const avatarHtml=d.speaker==='them'
       ?mkAvatar(staffAvatar,DEFAULT_STAFF_AVATAR,`av-${i}`)
       :mkAvatar(userAvatar,DEFAULT_USER_AVATAR,`av-${i}`);
-    
-    const jpRaw=d.jp||'';
-    const fgRaw=d.furigana||'';
+    // 替换〇〇
+    const jpRaw=replaceOO(d.jp)||'';
+    const fgRaw=replaceOO(d.furigana)||'';
     const zhRaw=d.zh||'';
     const jpDisplay=isAction?'':jpHtml(jpRaw,fgRaw);
     const bubbleContent=isAction
@@ -431,6 +459,15 @@ function learnStop(){
   const pb=document.getElementById('learnPlayBtn');
   if(pb) pb.innerHTML='▶ 开始演练';
 }
+function learnToggleFollow(){
+  learnFollowMode=!learnFollowMode;
+  const btn=document.getElementById('learnFollowBtn');
+  if(btn){
+    btn.classList.toggle('on',learnFollowMode);
+    btn.textContent=learnFollowMode?'跟读':'连续';
+  }
+  showToast(learnFollowMode?'跟读模式：留白1.5秒':'连续模式：无留白',1500);
+}
 function learnToggleLoop(){
   learnLoopMode=!learnLoopMode;
   const btn=document.getElementById('learnLoopBtn');
@@ -439,7 +476,7 @@ function learnToggleLoop(){
 }
 
 function getTexts(d){
-  const jp=d.jp||'';
+  const jp=replaceOO(d.jp)||'';
   const zh=d.zh||'';
   if(learnMode==='jp')     return [{t:jp,l:'ja-JP',v:jaVoice}];
   if(learnMode==='jp_zh')  return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice}];
@@ -480,7 +517,7 @@ function playSeq(dialog,idx,session){
     function nextSeg(){
       if(learnShouldStop||learnSession!==session) return;
       if(si>=segs.length){
-        setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||(d.speaker==='you'?600:600));
+        setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||(d.speaker==='you'?2500:1500));
         return;
       }
       const sg=segs[si++];
@@ -564,6 +601,8 @@ window.LJ_MODULES['learn']={
       <div class="learn-ctrl-row2" id="learnCtrlRow2">
         <button class="learn-ctrl-icon sm" id="learnRubyBtn"
                 onclick="learnToggleRuby()">注音</button>
+        <button class="learn-ctrl-icon sm" id="learnFollowBtn"
+                onclick="learnToggleFollow()">连续</button>
         <div class="lseg">
           <button class="btn on" id="lmode-jp"     onclick="learnSetMode('jp')">仅日语</button>
           <button class="btn"    id="lmode-jp_zh"  onclick="learnSetMode('jp_zh')">日→中</button>
