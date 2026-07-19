@@ -4,7 +4,7 @@
   "title_ja": "電車",
   "emoji": "🚃",
   "sound": "train",
-  "image": "assets/scenes/ls03.jpg",
+  "image": "assets/scenes/ls03.webp",
   "sound_file": "assets/sounds/ls03.mp3",
   "staff_avatar": "assets/avatars/staff/ls03.png",
   "description": "你要坐电车去目的地。",
