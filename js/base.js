@@ -56,10 +56,7 @@ function loadJS(src){
 async function loadModules(modules){
   for(const m of modules){
     try {
-      await Promise.all([
-        loadCSS(m.css),
-        loadJS(m.js)
-      ]);
+      await Promise.all([loadCSS(m.css), loadJS(m.js)]);
     } catch(e){
       console.warn(`模块加载失败: ${m.id}`, e);
     }
@@ -73,25 +70,34 @@ window.LJ_MODULES = window.LJ_MODULES || {};
 let currentTab = 'sos';
 function switchTab(name){
   currentTab = name;
+
+  // 保存Tab状态
+  try{ localStorage.setItem('lj_tab', name); }catch(e){}
+
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
   document.getElementById('panel-'+name).classList.add('on');
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
   const tb = document.getElementById('tab-'+name);
   if(tb) tb.classList.add('on');
 
-  const isSos = name === 'sos';
+  const isSos  = name === 'sos';
+  const isLearn = name === 'learn';
   const sbw = document.getElementById('sceneBarWrap');
   const sw  = document.getElementById('searchWrap');
   const cb  = document.getElementById('ctrlBar');
   const lcb = document.getElementById('learnCtrlBar');
+
   if(sbw) sbw.style.display = isSos ? '' : 'none';
   if(sw)  sw.style.display  = isSos ? '' : 'none';
   if(cb)  cb.style.display  = isSos ? '' : 'none';
-  if(lcb) lcb.classList.toggle('on', name==='learn');
+  if(lcb) lcb.classList.toggle('on', isLearn);
 
   document.querySelector('main').style.paddingBottom =
-    isSos ? `calc(var(--ctrl-h) + var(--tab-h))` : `var(--tab-h)`;
+    isSos  ? `calc(var(--ctrl-h) + var(--tab-h))` :
+    isLearn ? `calc(var(--ctrl-h) + var(--tab-h))` :
+    `var(--tab-h)`;
 
+  // 更新搜索框placeholder
   if(window.CFG){
     const ph = (CFG.search||{})[name] || '搜索…';
     const si = document.getElementById('searchInput');
