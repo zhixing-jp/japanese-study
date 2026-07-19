@@ -480,7 +480,7 @@ function playSeq(dialog,idx,session){
     function nextSeg(){
       if(learnShouldStop||learnSession!==session) return;
       if(si>=segs.length){
-        setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||(d.speaker==='you'?1500:600));
+        setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||(d.speaker==='you'?600:600));
         return;
       }
       const sg=segs[si++];
