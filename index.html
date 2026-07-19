@@ -98,6 +98,8 @@ let CFG = {};
     renderSiteTitle(CFG);
     renderPanels(CFG);
     renderTabBar(CFG);
+    const savedTab = localStorage.getItem('lj_tab');
+    if(savedTab && savedTab !== 'sos') switchTab(savedTab);
     initVoices();
 
     // 3. 动态加载所有版块的CSS和JS
