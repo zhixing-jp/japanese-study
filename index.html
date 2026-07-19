@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Living Japanese · 日活</title>
+<title>Living Japanese · 日活 | 在日华人日语急救包</title>
 <meta name="description" content="专为在日华人设计的日语急救工具。18个生活场景，519句实用日语，完全免费。不用背，用时来查，10秒找到，说出来解决问题。">
 <meta name="keywords" content="在日华人,日语急救,在日本生活,日语工具,生活日语,在日语言,日本生活,润日,日活">
 <meta name="author" content="Living Japanese">
@@ -21,7 +21,6 @@
   gtag('js',new Date()); gtag('config','G-N484C7TXZ0');
 </script>
 
-<!-- 只加载共用样式，版块样式由JS动态加载 -->
 <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
@@ -50,7 +49,7 @@
   </div>
 </div>
 
-<!-- ══ MAIN（由JS动态填充）══ -->
+<!-- ══ MAIN ══ -->
 <main></main>
 
 <!-- ══ SOS CONTROLS BAR ══ -->
@@ -84,42 +83,42 @@
 </button>
 <div id="toast"></div>
 
-<!-- ══ 只加载共用JS，版块JS由boot动态加载 ══ -->
+<!-- ══ JS ══ -->
 <script src="js/base.js"></script>
 <script>
 /* ── Boot ── */
 let CFG = {};
 (async ()=>{
   try {
-    // 1. 加载配置
     CFG = await fetch('config.json').then(r=>r.json());
+    const icons = await fetch('data/sos/scene_icons.json').then(r=>r.json());
 
-    // 2. 渲染基础UI
     renderSiteTitle(CFG);
     renderPanels(CFG);
     renderTabBar(CFG);
-    const savedTab = localStorage.getItem('lj_tab');
-    if(savedTab && savedTab !== 'sos') switchTab(savedTab);
     initVoices();
 
-    // 3. 动态加载所有版块的CSS和JS
-    await loadModules(CFG.modules || []);
+    await loadModules(CFG.modules||[]);
+    await sosBoot(CFG, icons);
+    await learnBoot();
 
-    // 4. 加载图标数据
-    const icons = await fetch('data/sos/scene_icons.json').then(r=>r.json());
-
-    // 5. 依次初始化所有已注册的版块
-    for(const m of (CFG.modules||[])){
-      const mod = window.LJ_MODULES[m.id];
-      if(mod && typeof mod.init === 'function'){
-        await mod.init(CFG, icons);
-      }
+    // 恢复上次的Tab
+    const savedTab = localStorage.getItem('lj_tab');
+    if(savedTab && savedTab !== 'sos'){
+      switchTab(savedTab);
     }
+
+    // 动态计算header高度
+    setTimeout(()=>{
+      const hdr = document.getElementById('header');
+      if(hdr) document.querySelector('main').style.paddingTop = hdr.offsetHeight+'px';
+    }, 100);
 
   } catch(e){
     console.error('Boot failed:', e);
     const el = document.querySelector('main');
-    if(el) el.innerHTML = '<p style="padding:40px;text-align:center;color:#8E8E93">加载失败，请刷新重试。</p>';
+    if(el) el.innerHTML =
+      '<p style="padding:40px;text-align:center;color:#8E8E93">加载失败，请刷新重试。</p>';
   }
 })();
 </script>
