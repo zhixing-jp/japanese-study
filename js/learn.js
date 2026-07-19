@@ -435,7 +435,7 @@ function learnToggleLoop(){
 }
 
 function getTexts(d){
-  const jp=replaceOO(d.jp)||'';
+  const jp=d.jp||'';
   const zh=d.zh||'';
   if(learnMode==='jp')     return [{t:jp,l:'ja-JP',v:jaVoice}];
   if(learnMode==='jp_zh')  return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice}];
