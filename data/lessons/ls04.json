@@ -4,7 +4,7 @@
   "title_ja": "バス",
   "emoji": "🚌",
   "sound": "default",
-  "image": "assets/scenes/ls04.jpg",
+  "image": "assets/scenes/ls04.webp",
   "sound_file": "assets/sounds/ls04.mp3",
   "staff_avatar": "assets/avatars/staff/ls04.png",
   "description": "你要坐公交车去目的地。",
