@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   learn.css — 学习版块专用样式 v3
+   learn.css — 学习版块 v4
    Living Japanese v3.0
 ══════════════════════════════ */
 
@@ -65,70 +65,43 @@
 #learnDetail {
   display: none; flex-direction: column;
   height: calc(100dvh - var(--tab-h) - env(safe-area-inset-top));
-  overflow: hidden; position: relative;
+  overflow: hidden;
 }
 #learnDetail.on { display: flex; }
 
 /* Hero大图区 */
 .learn-detail-hero {
-  position: relative; flex-shrink: 0;
+  flex-shrink: 0;
   background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
   overflow: hidden;
   max-height: 160px;
-  transition: max-height .45s cubic-bezier(.4,0,.2,1), opacity .3s ease;
+  transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease;
 }
 .learn-detail-hero.collapsed {
-  max-height: 0; opacity: 0;
+  max-height: 0;
+  opacity: 0;
 }
 .learn-detail-hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-  transition: opacity .4s;
+}
+.learn-detail-hero-wrap {
+  position: relative; height: 160px; overflow: hidden;
+  background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
 }
 .learn-detail-hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.65) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,.15) 0%, rgba(0,0,0,.65) 100%);
 }
 .learn-detail-hero-content {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
-  justify-content: space-between; padding: 12px 14px;
+  justify-content: flex-end; padding: 14px 16px;
 }
-.learn-detail-hero-top {
-  display: flex; align-items: center; justify-content: space-between;
-}
-
-/* 返回按钮 */
-.learn-back-btn {
-  height: 34px; padding: 0 14px;
-  border-radius: 20px;
-  background: rgba(0,0,0,.35);
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-  border: none; cursor: pointer;
-  display: flex; align-items: center; gap: 5px;
-  color: #fff; font-size: 14px; font-weight: 600;
-  transition: background .12s, transform .08s;
-  letter-spacing: -.1px;
-}
-.learn-back-btn:active { transform: scale(.92); }
-
-/* 标记已熟悉按钮 */
-.learn-familiar-btn {
-  height: 34px; padding: 0 14px;
-  border-radius: 20px; border: none;
-  background: rgba(0,0,0,.35);
-  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-  color: rgba(255,255,255,.90);
-  font-size: 14px; font-weight: 600;
-  cursor: pointer; transition: all .15s;
-  display: flex; align-items: center;
-}
-.learn-familiar-btn:active { transform: scale(.92); }
-.learn-familiar-btn.on { background: var(--green); color: #fff; }
-
 .learn-detail-scene-name {
   font-size: 22px; font-weight: 700; color: #fff;
-  letter-spacing: -.3px; text-shadow: 0 2px 8px rgba(0,0,0,.4); margin-bottom: 3px;
+  letter-spacing: -.3px; text-shadow: 0 2px 8px rgba(0,0,0,.4);
+  margin-bottom: 3px;
 }
 .learn-detail-scene-desc {
   font-size: 12px; color: rgba(255,255,255,.75); font-style: italic;
@@ -147,8 +120,6 @@
   cursor: pointer; transition: all .15s; border: 1.5px solid var(--line);
 }
 .learn-basic-btn.on { background: var(--t1); color: #fff; border-color: var(--t1); }
-
-/* 场景扩展分隔线 */
 .learn-ext-divider {
   font-size: 11px; font-weight: 700; color: var(--t4);
   letter-spacing: .06em; margin-bottom: 8px;
@@ -158,7 +129,6 @@
 .learn-ext-divider::after {
   content: ''; flex: 1; height: .5px; background: var(--line);
 }
-
 .learn-ext-bar { display: flex; gap: 6px; flex-wrap: wrap; }
 .learn-ext-btn {
   font-size: 13px; font-weight: 600;
@@ -175,8 +145,6 @@
   padding: 14px; display: flex; flex-direction: column; gap: 12px;
   background: var(--bg);
 }
-
-/* 对话气泡 */
 .dialog-bubble {
   display: flex; align-items: flex-end; gap: 8px;
   animation: bubbleIn .22s ease-out;
@@ -224,6 +192,7 @@
   background: rgba(118,118,128,.10); border-radius: 16px;
   border: 1px dashed var(--line);
 }
+.dialog-bubble.you.alt .bubble-body { background: #5B9AF8; }
 .dialog-bubble.playing .bubble-body {
   box-shadow: 0 0 0 2px var(--blue), 0 4px 16px rgba(0,122,255,.15);
 }
@@ -232,9 +201,12 @@
 }
 .bubble-jp {
   font-size: 15px; font-weight: 600; letter-spacing: -.1px;
-  line-height: 1.55; color: var(--t1); margin-bottom: 2px;
+  line-height: 1.9; color: var(--t1); margin-bottom: 2px;
 }
+.bubble-jp ruby { ruby-align: center; }
+.bubble-jp rt { font-size: 9px; font-weight: 400; color: var(--t4); }
 .dialog-bubble.you .bubble-jp { color: #fff; }
+.dialog-bubble.you .bubble-jp rt { color: rgba(255,255,255,.7); }
 .dialog-bubble.action .bubble-jp {
   color: var(--t3); font-style: italic; font-weight: 500; font-size: 13px;
 }
@@ -247,9 +219,7 @@
   background: rgba(0,122,255,.12); color: var(--blue); border: none;
 }
 .dialog-bubble.you .bubble-option { background: rgba(255,255,255,.2); color: #fff; }
-.bubble-note {
-  font-size: 10px; color: var(--t4); margin-top: 4px; font-style: italic;
-}
+.bubble-note { font-size: 10px; color: var(--t4); margin-top: 4px; font-style: italic; }
 .dialog-bubble.you .bubble-note { color: rgba(255,255,255,.65); }
 
 /* 演练完成 */
@@ -263,7 +233,7 @@
 .learn-done-desc { font-size: 12px; color: var(--t4); margin-bottom: 12px; }
 .learn-done-btns { display: flex; gap: 8px; justify-content: center; }
 
-/* ── 底部控制栏 ── */
+/* ── Controls Bar ── */
 #learnCtrlBar {
   position: fixed; bottom: var(--tab-h); left: 50%; transform: translateX(-50%);
   width: 100%; max-width: 430px; z-index: 200;
@@ -271,9 +241,12 @@
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-top: .5px solid rgba(255,255,255,.10);
-  padding: 10px 14px; display: none; align-items: center; gap: 8px;
+  padding: 10px 14px; display: none; flex-direction: column; gap: 8px;
 }
 #learnCtrlBar.on { display: flex; }
+.learn-ctrl-row1 { display: flex; align-items: center; gap: 8px; }
+.learn-ctrl-row2 { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+
 .learn-play-btn {
   flex: 1; height: 40px; border-radius: var(--r-md);
   background: var(--t1); color: #fff; border: none;
@@ -282,6 +255,7 @@
   transition: background .12s, transform .08s;
 }
 .learn-play-btn:active { transform: scale(.96); }
+
 .learn-ctrl-icon {
   width: 40px; height: 40px; border-radius: var(--r-md);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
@@ -291,21 +265,28 @@
 .learn-ctrl-icon:active { transform: scale(.90); }
 .learn-ctrl-icon.on { background: rgba(0,122,255,.35); color: #5AC8FA; }
 .learn-ctrl-icon.rd { background: rgba(255,59,48,.25); color: #FF6B6B; }
+.learn-ctrl-icon.sm { font-size: 11px; font-weight: 700; }
 
-/* ── Learn Controls Bar v2 ── */
-#learnCtrlBar {
-  position: fixed; bottom: var(--tab-h); left: 50%; transform: translateX(-50%);
-  width: 100%; max-width: 430px; z-index: 200;
-  background: var(--glass-dark);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
-  border-top: .5px solid rgba(255,255,255,.10);
-  padding: 10px 14px 10px;
-  display: none; flex-direction: column; gap: 8px;
+/* 返回按钮（在ctrlbar里） */
+.learn-back-ctrl {
+  height: 40px; padding: 0 14px; border-radius: var(--r-md);
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
+  border: none; font-size: 13px; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center; gap: 5px;
+  transition: all .12s; white-space: nowrap;
 }
-#learnCtrlBar.on { display: flex; }
-.learn-ctrl-main { display: flex; align-items: center; gap: 8px; }
-.learn-ctrl-settings { display: flex; gap: 6px; flex-wrap: wrap; }
+.learn-back-ctrl:active { transform: scale(.94); }
+
+/* 已熟悉按钮（在ctrlbar里） */
+.learn-familiar-ctrl {
+  height: 40px; padding: 0 14px; border-radius: var(--r-md);
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
+  border: none; font-size: 13px; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center; gap: 5px;
+  transition: all .12s; white-space: nowrap;
+}
+.learn-familiar-ctrl:active { transform: scale(.94); }
+.learn-familiar-ctrl.on { background: var(--green); color: #fff; }
 
 /* segmented control in dark bar */
 .lseg {
@@ -322,16 +303,3 @@
   background: rgba(255,255,255,0.20); color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
-
-/* alt气泡样式（备选项） */
-.dialog-bubble.alt .bubble-body {
-  opacity: .85;
-}
-.dialog-bubble.you.alt .bubble-body {
-  background: #5B9AF8;
-}
-.bubble-action-text {
-  font-size: 13px; color: var(--t3);
-  font-style: italic; font-weight: 500;
-}
-.dialog-bubble.you .bubble-action-text { color: rgba(255,255,255,.75); }
