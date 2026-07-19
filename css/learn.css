@@ -135,6 +135,21 @@
   display: flex; align-items: center; justify-content: center;
   font-size: 10px; font-weight: 800; flex-shrink: 0;
 }
+.learn-basic-row {
+  margin-bottom: 8px;
+}
+.learn-ext-divider {
+  font-size: 10px; font-weight: 700;
+  color: var(--t4); letter-spacing: .08em;
+  margin-bottom: 6px;
+  display: flex; align-items: center; gap: 6px;
+}
+.learn-ext-divider::before {
+  content: ''; flex: 1; height: .5px; background: var(--line);
+}
+.learn-ext-divider::after {
+  content: ''; flex: 1; height: .5px; background: var(--line);
+}
 .learn-ext-bar { display: flex; gap: 6px; flex-wrap: wrap; }
 .learn-ext-btn {
   font-size: 13px; font-weight: 600;
