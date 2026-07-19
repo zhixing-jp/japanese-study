@@ -9,14 +9,21 @@
   "basic": {
     "title": "基本结账流程",
     "dialog": [
-      {
-        "id": "ls01-b01",
-        "speaker": "them",
-        "jp": "いらっしゃいませ。",
-        "zh": "欢迎光临。",
-        "note": "点头微笑就好，不需要说话。",
-        "pause": 1500
-      },
+{
+  "id": "ls01-b01",
+  "speaker": "them",
+  "jp": "いらっしゃいませ。",
+  "zh": "欢迎光临。",
+  "pause": 1500
+},
+{
+  "id": "ls01-b01a",
+  "speaker": "you",
+  "jp": "",
+  "zh": "",
+  "note": "点头微笑就好，不需要说话。",
+  "pause": 1500
+},
       {
         "id": "ls01-b02",
         "speaker": "them",
