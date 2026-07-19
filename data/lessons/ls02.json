@@ -4,7 +4,7 @@
   "title_ja": "スーパー",
   "emoji": "🛒",
   "sound": "supermarket",
-  "image": "assets/scenes/ls02.jpg",
+  "image": "assets/scenes/ls02.webp",
   "sound_file": "assets/sounds/ls02.mp3",
   "staff_avatar": "assets/avatars/staff/ls02.png",
   "description": "你在超市买好了东西，走向收银台。",
