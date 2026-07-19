@@ -99,8 +99,14 @@ let CFG = {};
     initVoices();
 
     await loadModules(CFG.modules||[]);
-    await sosBoot(CFG, icons);
-    await learnBoot();
+
+    // 依次初始化所有已注册的版块
+    for(const m of (CFG.modules||[])){
+    const mod = window.LJ_MODULES[m.id];
+    if(mod && typeof mod.init === 'function'){
+    await mod.init(CFG, icons);
+  }
+}
 
     // 恢复上次的Tab
     const savedTab = localStorage.getItem('lj_tab');
