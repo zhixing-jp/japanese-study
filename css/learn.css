@@ -241,48 +241,48 @@
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
   border-top: .5px solid rgba(255,255,255,.10);
-  padding: 10px 14px; display: none; flex-direction: column; gap: 8px;
+  padding: 6px 10px; display: none; flex-direction: column; gap: 5px;
 }
 #learnCtrlBar.on { display: flex; }
-.learn-ctrl-row1 { display: flex; align-items: center; gap: 8px; }
-.learn-ctrl-row2 { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.learn-ctrl-row1 { display: flex; align-items: center; gap: 6px; }
+.learn-ctrl-row2 { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
 
 .learn-play-btn {
-  flex: 1; height: 40px; border-radius: var(--r-md);
+  flex: 1; height: 32px; border-radius: var(--r-sm);
   background: var(--t1); color: #fff; border: none;
-  font-size: 15px; font-weight: 700; cursor: pointer;
-  display: flex; align-items: center; justify-content: center; gap: 6px;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 5px;
   transition: background .12s, transform .08s;
 }
 .learn-play-btn:active { transform: scale(.96); }
 
 .learn-ctrl-icon {
-  width: 40px; height: 40px; border-radius: var(--r-md);
+  width: 32px; height: 32px; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 16px; cursor: pointer;
+  border: none; font-size: 14px; cursor: pointer;
   display: flex; align-items: center; justify-content: center; transition: all .12s;
 }
 .learn-ctrl-icon:active { transform: scale(.90); }
 .learn-ctrl-icon.on { background: rgba(0,122,255,.35); color: #5AC8FA; }
 .learn-ctrl-icon.rd { background: rgba(255,59,48,.25); color: #FF6B6B; }
-.learn-ctrl-icon.sm { font-size: 11px; font-weight: 700; }
+.learn-ctrl-icon.sm { font-size: 12px; font-weight: 700; }
 
-/* 返回按钮（在ctrlbar里） */
+/* 返回按钮 */
 .learn-back-ctrl {
-  height: 40px; padding: 0 14px; border-radius: var(--r-md);
+  height: 32px; padding: 0 10px; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 13px; font-weight: 600;
-  cursor: pointer; display: flex; align-items: center; gap: 5px;
+  border: none; font-size: 12px; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center; gap: 4px;
   transition: all .12s; white-space: nowrap;
 }
 .learn-back-ctrl:active { transform: scale(.94); }
 
-/* 已熟悉按钮（在ctrlbar里） */
+/* 已熟悉按钮 */
 .learn-familiar-ctrl {
-  height: 40px; padding: 0 14px; border-radius: var(--r-md);
+  height: 32px; padding: 0 10px; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 13px; font-weight: 600;
-  cursor: pointer; display: flex; align-items: center; gap: 5px;
+  border: none; font-size: 12px; font-weight: 600;
+  cursor: pointer; display: flex; align-items: center;
   transition: all .12s; white-space: nowrap;
 }
 .learn-familiar-ctrl:active { transform: scale(.94); }
@@ -292,12 +292,12 @@
 .lseg {
   display: inline-flex;
   background: rgba(255,255,255,0.10);
-  border-radius: var(--r-sm); padding: 2px; gap: 1px;
+  border-radius: 8px; padding: 2px; gap: 1px;
 }
 .lseg .btn {
-  background: transparent; border-radius: 8px;
-  font-size: 12px; padding: 5px 9px; min-height: 28px;
-  color: rgba(255,255,255,.60); border: none;
+  background: transparent; border-radius: 6px;
+  font-size: 12px; padding: 3px 8px; min-height: 24px;
+  color: rgba(255,255,255,.60); border: none; font-weight: 600;
 }
 .lseg .btn.on {
   background: rgba(255,255,255,0.20); color: #fff;
