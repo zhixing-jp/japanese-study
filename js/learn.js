@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   learn.js — 学习版块逻辑 v6
+   learn.js — 学习版块逻辑 v7
    Living Japanese v3.0
 ══════════════════════════════ */
 
@@ -10,48 +10,17 @@ let learnFamiliar = {};
 let currentScene  = null;
 let currentDialog = [];
 let currentExtId  = null;
-let learnShouldStop = false;
-let learnSession    = 0;
-let learnLoopMode   = false;
-let currentAudio    = null;
-let learnRubyOn     = true;
-let learnMode       = 'jp';
-let learnRate       = '0.75';
-let learnFollowMode = false; // false=连续 true=跟读
+let learnShouldStop  = false;
+let learnSession     = 0;
+let learnLoopMode    = false;
+let currentAudio     = null;
+let learnRubyOn      = true;
+let learnMode        = 'jp';
+let learnRate        = '0.75';
+let learnFollowMode  = false; // false=连续 true=跟读
 
 const DEFAULT_STAFF_AVATAR = '👨‍💼';
 const DEFAULT_USER_AVATAR  = '🧑';
-
-/* ── 〇〇替换词库 ── */
-const LR = {
-  station: ['大阪','梅田','難波','天王寺','心斎橋','京橋','鶴橋','新大阪'],
-  price:   ['980','1,200','350','2,500','680','1,050'],
-  name:    ['田中','山田','佐藤','鈴木','中村'],
-  time:    ['10時','14時30分','18時','9時半'],
-  date:    ['7月20日','8月1日'],
-  line:    ['1番線','2番線','3番線'],
-  place:   ['道頓堀','心斎橋','天満','本町']
-};
-function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
-function replaceOO(text){
-  if(!text) return text;
-  return text
-    .replace(/○○駅/g,     ()=>pick(LR.station)+'駅')
-    .replace(/○○行き/g,   ()=>pick(LR.station)+'行き')
-    .replace(/○○まで/g,   ()=>pick(LR.station)+'まで')
-    .replace(/○○に行きますか/g, ()=>pick(LR.station)+'に行きますか')
-    .replace(/○○で降ります/g,   ()=>pick(LR.station)+'で降ります')
-    .replace(/○○はまだですか/g, ()=>pick(LR.station)+'はまだですか')
-    .replace(/○○へはどこで/g,   ()=>pick(LR.station)+'へはどこで')
-    .replace(/○○に止まりますか/g,()=>pick(LR.station)+'に止まりますか')
-    .replace(/○番線/g,    ()=>pick(LR.line))
-    .replace(/○○円/g,    ()=>pick(LR.price)+'円')
-    .replace(/○時○分/g,  ()=>pick(LR.time))
-    .replace(/○月○日/g,  ()=>pick(LR.date))
-    .replace(/○○と申します/g, ()=>pick(LR.name)+'と申します')
-    .replace(/○○です。/g,  ()=>pick(LR.name)+'です。')
-    .replace(/○○/g,      ()=>pick(LR.place));
-}
 
 /* ── 振假名 ── */
 function isKJ(ch){
@@ -59,7 +28,7 @@ function isKJ(ch){
   return(c>=0x4E00&&c<=0x9FFF)||(c>=0x3400&&c<=0x4DBF)||
         (c>=0xF900&&c<=0xFAFF)||c===0x3005;
 }
-function buildRuby(jp, fg){
+function buildRuby(jp,fg){
   if(!fg||fg===jp) return esc(jp);
   const segs=[]; let i=0;
   while(i<jp.length){
@@ -86,10 +55,10 @@ function buildRuby(jp, fg){
   }
   return h;
 }
-function jpHtml(jp, fg){
+function jpHtml(jp,fg){
   if(!jp) return '';
   if(!learnRubyOn) return esc(jp);
-  return buildRuby(jp, fg||jp);
+  return buildRuby(jp,fg||jp);
 }
 
 /* ── Web Audio fallback ── */
@@ -184,7 +153,7 @@ function renderLearnList(){
 
 function mkSceneCard(id){
   const sc=LEARN_CACHE[id]||{};
-  if(sc._comingSoon) return `
+  if(sc._comingSoon) return`
     <div class="learn-scene-card no-image" style="opacity:.5;cursor:default">
       <div class="learn-scene-overlay"></div>
       <div class="learn-scene-content">
@@ -221,10 +190,13 @@ async function openScene(id){
   // 滚动时隐藏/显示Hero
   const dw=document.getElementById('learnDialogWrap');
   if(dw){
+    let _ht=null;
     dw.onscroll=function(){
-      const hero=document.querySelector('.learn-detail-hero');
-      if(!hero) return;
-      hero.classList.toggle('collapsed', this.scrollTop>40);
+      clearTimeout(_ht);
+      _ht=setTimeout(()=>{
+        const hero=document.querySelector('.learn-detail-hero');
+        if(hero) hero.classList.toggle('collapsed',dw.scrollTop>40);
+      },80);
     };
   }
 }
@@ -232,52 +204,38 @@ async function openScene(id){
 function closeScene(){
   learnStop();
   if(currentAudio){currentAudio.pause();currentAudio=null;}
-  // 重置Hero
   const hero=document.querySelector('.learn-detail-hero');
   if(hero) hero.classList.remove('collapsed');
-  // 清除滚动监听
   const dw=document.getElementById('learnDialogWrap');
   if(dw) dw.onscroll=null;
   currentScene=null; currentExtId=null; currentDialog=[];
   document.getElementById('learnList').style.display='';
   document.getElementById('learnDetail').classList.remove('on');
-  document.getElementById('learnCtrlBar').classList.add('on');
-  // ctrlbar切回列表模式（隐藏场景内按钮）
   updateCtrlBar(false);
   renderLearnList();
 }
 
-/* ── Controls Bar状态切换 ── */
+/* ── Controls Bar状态 ── */
 function updateCtrlBar(inScene){
-  const row1=document.getElementById('learnCtrlRow1');
-  const row2=document.getElementById('learnCtrlRow2');
-  if(row1) row1.style.display=inScene?'':'none';
-  if(row2) row2.style.display='flex';
+  const r1=document.getElementById('learnCtrlRow1');
+  if(r1) r1.style.display=inScene?'flex':'none';
 }
 
 /* ── 渲染场景详情 ── */
 function renderSceneDetail(){
   if(!currentScene) return;
-  // Hero背景
   const heroBg=document.getElementById('learnHeroBg');
   if(heroBg){
-    if(currentScene.image){
-      heroBg.style.backgroundImage=`url('${currentScene.image}')`;
-    } else {
-      heroBg.style.backgroundImage='';
-    }
+    heroBg.style.backgroundImage=currentScene.image?`url('${currentScene.image}')`:'';
   }
-  // 场景名+说明
   const nameEl=document.getElementById('learnDetailSceneName');
   if(nameEl) nameEl.textContent=currentScene.title||'';
   const descEl=document.getElementById('learnDetailSceneDesc');
   if(descEl) descEl.textContent=currentScene.description||'';
-  // 更新ctrlbar按钮
   updateCtrlBar(true);
   const fb=document.getElementById('learnFamiliarCtrl');
   const isFam=!!learnFamiliar[currentScene.id];
   if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?'✓ 已熟悉':'标记已熟悉';}
-  // 扩展会话
   const extBar=document.getElementById('learnExtBar');
   const extSec=document.getElementById('learnExtSection');
   const exts=currentScene.extensions||[];
@@ -308,7 +266,7 @@ function switchDialog(extId){
   renderDialog();
 }
 
-/* ── 展开对话（备选项拆分+note归属）── */
+/* ── 展开对话 ── */
 function expandDialog(dialog){
   const out=[];
   dialog.forEach(d=>{
@@ -316,26 +274,15 @@ function expandDialog(dialog){
     const zhParts=(d.zh||'').split('／').map(s=>s.trim());
     const fgParts=(d.furigana||'').split('／').map(s=>s.trim());
     if(jpParts.length>1){
-      // 主项
-      out.push({...d, jp:jpParts[0], zh:zhParts[0]||'', furigana:fgParts[0]||''});
-      // 备选项
+      out.push({...d,jp:jpParts[0],zh:zhParts[0]||'',furigana:fgParts[0]||''});
       jpParts.slice(1).forEach((jp,i)=>{
-        out.push({
-          speaker: d.speaker, jp,
-          zh: zhParts[i+1]||'',
-          furigana: fgParts[i+1]||'',
-          pause: d.pause, _isAlt: true
-        });
+        out.push({speaker:d.speaker,jp,zh:zhParts[i+1]||'',
+          furigana:fgParts[i+1]||'',_isAlt:true});
       });
-    } else {
-      out.push({...d});
-    }
-    // 对方说的有note → 自动加你的动作气泡
+    } else { out.push({...d}); }
     if(d.speaker==='them'&&d.note){
-      out.push({
-        speaker:'you', jp:'', zh:'', furigana:'',
-        note:d.note, pause:1500, _isActionOnly:true
-      });
+      out.push({speaker:'you',jp:'',zh:'',furigana:'',
+        note:d.note,_isActionOnly:true});
     }
   });
   return out;
@@ -356,9 +303,8 @@ function renderDialog(){
     const avatarHtml=d.speaker==='them'
       ?mkAvatar(staffAvatar,DEFAULT_STAFF_AVATAR,`av-${i}`)
       :mkAvatar(userAvatar,DEFAULT_USER_AVATAR,`av-${i}`);
-    // 替换〇〇
-    const jpRaw=replaceOO(d.jp)||'';
-    const fgRaw=replaceOO(d.furigana)||'';
+    const jpRaw=d.jp||'';
+    const fgRaw=d.furigana||'';
     const zhRaw=d.zh||'';
     const jpDisplay=isAction?'':jpHtml(jpRaw,fgRaw);
     const bubbleContent=isAction
@@ -377,7 +323,6 @@ function renderDialog(){
 
   const pb=document.getElementById('learnPlayBtn');
   if(pb) pb.innerHTML='▶ 开始演练';
-  // 滚回顶部确保Hero可见
   wrap.scrollTop=0;
 }
 
@@ -387,6 +332,14 @@ function learnToggleRuby(){
   const btn=document.getElementById('learnRubyBtn');
   if(btn) btn.classList.toggle('on',!learnRubyOn);
   if(currentScene) renderDialog();
+}
+
+/* ── 跟读/连续切换 ── */
+function learnToggleFollow(){
+  learnFollowMode=!learnFollowMode;
+  const btn=document.getElementById('learnFollowBtn');
+  if(btn) btn.classList.toggle('on',learnFollowMode);
+  showToast(learnFollowMode?'跟读模式：每句留白':'连续模式：流畅播放',1500);
 }
 
 /* ── 模式/速度 ── */
@@ -459,15 +412,6 @@ function learnStop(){
   const pb=document.getElementById('learnPlayBtn');
   if(pb) pb.innerHTML='▶ 开始演练';
 }
-function learnToggleFollow(){
-  learnFollowMode=!learnFollowMode;
-  const btn=document.getElementById('learnFollowBtn');
-  if(btn){
-    btn.classList.toggle('on',learnFollowMode);
-    btn.textContent=learnFollowMode?'跟读':'连续';
-  }
-  showToast(learnFollowMode?'跟读模式：留白1.5秒':'连续模式：无留白',1500);
-}
 function learnToggleLoop(){
   learnLoopMode=!learnLoopMode;
   const btn=document.getElementById('learnLoopBtn');
@@ -475,14 +419,16 @@ function learnToggleLoop(){
   showToast(learnLoopMode?'循环播放已开启':'循环播放已关闭',1500);
 }
 
+/* ── 获取朗读文本 ── */
 function getTexts(d){
-  const jp=replaceOO(d.jp)||'';
+  const jp=d.jp||'';
   const zh=d.zh||'';
-  if(learnMode==='jp')     return [{t:jp,l:'ja-JP',v:jaVoice}];
-  if(learnMode==='jp_zh')  return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice}];
+  if(learnMode==='jp')    return [{t:jp,l:'ja-JP',v:jaVoice}];
+  if(learnMode==='jp_zh') return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice}];
   return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice},{t:jp,l:'ja-JP',v:jaVoice}];
 }
 
+/* ── 对话播放序列 ── */
 function playSeq(dialog,idx,session){
   if(learnShouldStop||learnSession!==session) return;
   document.querySelectorAll('.dialog-bubble').forEach((el,i)=>{
@@ -505,9 +451,10 @@ function playSeq(dialog,idx,session){
     bubble.classList.add('playing'); bubble.classList.remove('muted');
     bubble.scrollIntoView({behavior:'smooth',block:'center'});
   }
-  // 动作气泡不朗读
+  // 动作气泡不朗读，固定600ms后继续
   if(d._isActionOnly||d.speaker==='action'||(!d.jp&&d.note)){
-    setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||1500); return;
+    setTimeout(()=>playSeq(dialog,idx+1,session),600);
+    return;
   }
   const segs=getTexts(d).filter(s=>s.t);
   window.speechSynthesis.cancel();
@@ -517,14 +464,16 @@ function playSeq(dialog,idx,session){
     function nextSeg(){
       if(learnShouldStop||learnSession!==session) return;
       if(si>=segs.length){
-        setTimeout(()=>playSeq(dialog,idx+1,session),d.pause||(d.speaker==='you'?2500:1500));
+        // ★ 关键：完全忽略d.pause，只用模式判断
+        const pause = learnFollowMode && d.speaker==='you' ? 1500 : 600;
+        setTimeout(()=>playSeq(dialog,idx+1,session), pause);
         return;
       }
       const sg=segs[si++];
       const u=new SpeechSynthesisUtterance(sg.t);
       u.lang=sg.l; u.rate=parseFloat(learnRate); u.pitch=1;
       if(sg.v) u.voice=sg.v;
-      u.onend=()=>setTimeout(nextSeg,300);
+      u.onend=()=>setTimeout(nextSeg,200);
       u.onerror=()=>setTimeout(nextSeg,100);
       window.speechSynthesis.speak(u);
     }
@@ -532,6 +481,7 @@ function playSeq(dialog,idx,session){
   },80);
 }
 
+/* ── 演练完成 ── */
 function showDoneBanner(){
   const wrap=document.getElementById('learnDialogWrap');
   const ex=document.getElementById('learnDoneBanner');
@@ -590,19 +540,22 @@ window.LJ_MODULES['learn']={
       </div>`;
 
     document.getElementById('learnCtrlBar').innerHTML=`
-      <div class="learn-ctrl-row1" id="learnCtrlRow1">
-        <button class="learn-back-ctrl" onclick="closeScene()">← 返回</button>
-        <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
-        <button class="learn-ctrl-icon" id="learnLoopBtn" onclick="learnToggleLoop()">🔁</button>
-        <button class="learn-ctrl-icon rd" onclick="learnStop()">■</button>
-        <button class="learn-familiar-ctrl" id="learnFamiliarCtrl"
-                onclick="toggleFamiliarCtrl()">标记已熟悉</button>
+      <div class="learn-ctrl-row1" id="learnCtrlRow1" style="display:none">
+        <div class="learn-ctrl-row1-left">
+          <button class="learn-back-ctrl" onclick="closeScene()">← 返回</button>
+        </div>
+        <div class="learn-ctrl-row1-mid">
+          <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
+          <button class="learn-ctrl-icon" id="learnLoopBtn" onclick="learnToggleLoop()">🔁</button>
+          <button class="learn-ctrl-icon rd" onclick="learnStop()">■</button>
+          <button class="learn-ctrl-icon sm" id="learnRubyBtn" onclick="learnToggleRuby()">注音</button>
+        </div>
+        <div class="learn-ctrl-row1-right">
+          <button class="learn-familiar-ctrl" id="learnFamiliarCtrl"
+                  onclick="toggleFamiliarCtrl()">标记已熟悉</button>
+        </div>
       </div>
       <div class="learn-ctrl-row2" id="learnCtrlRow2">
-        <button class="learn-ctrl-icon sm" id="learnRubyBtn"
-                onclick="learnToggleRuby()">注音</button>
-        <button class="learn-ctrl-icon sm" id="learnFollowBtn"
-                onclick="learnToggleFollow()">连续</button>
         <div class="lseg">
           <button class="btn on" id="lmode-jp"     onclick="learnSetMode('jp')">仅日语</button>
           <button class="btn"    id="lmode-jp_zh"  onclick="learnSetMode('jp_zh')">日→中</button>
@@ -613,10 +566,22 @@ window.LJ_MODULES['learn']={
           <button class="btn on" id="lrate-0.75" onclick="learnSetRate('0.75')">慢</button>
           <button class="btn"    id="lrate-0.6"  onclick="learnSetRate('0.6')">更慢</button>
         </div>
+        <div class="lseg">
+          <button class="btn on" id="learnFollowOff" onclick="learnSetFollow(false)">连续</button>
+          <button class="btn"    id="learnFollowOn"  onclick="learnSetFollow(true)">跟读</button>
+        </div>
       </div>`;
 
-    // 初始状态：隐藏场景内按钮
-    updateCtrlBar(false);
     await learnBoot();
   }
 };
+
+/* ── 跟读/连续（seg版）── */
+function learnSetFollow(val){
+  learnFollowMode=val;
+  const off=document.getElementById('learnFollowOff');
+  const on=document.getElementById('learnFollowOn');
+  if(off) off.classList.toggle('on',!val);
+  if(on)  on.classList.toggle('on',val);
+  showToast(val?'跟读模式：每句留白1.5秒':'连续模式：流畅播放',1500);
+}

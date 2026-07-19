@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   learn.css — 学习版块 v4
+   learn.css — 学习版块 v5
    Living Japanese v3.0
 ══════════════════════════════ */
 
@@ -72,22 +72,18 @@
 /* Hero大图区 */
 .learn-detail-hero {
   flex-shrink: 0;
-  background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
   overflow: hidden;
   max-height: 160px;
   transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease;
 }
-.learn-detail-hero.collapsed {
-  max-height: 0;
-  opacity: 0;
+.learn-detail-hero.collapsed { max-height: 0; opacity: 0; }
+.learn-detail-hero-wrap {
+  position: relative; height: 160px; overflow: hidden;
+  background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
 }
 .learn-detail-hero-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
-}
-.learn-detail-hero-wrap {
-  position: relative; height: 160px; overflow: hidden;
-  background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
 }
 .learn-detail-hero-overlay {
   position: absolute; inset: 0;
@@ -100,8 +96,7 @@
 }
 .learn-detail-scene-name {
   font-size: 22px; font-weight: 700; color: #fff;
-  letter-spacing: -.3px; text-shadow: 0 2px 8px rgba(0,0,0,.4);
-  margin-bottom: 3px;
+  letter-spacing: -.3px; text-shadow: 0 2px 8px rgba(0,0,0,.4); margin-bottom: 3px;
 }
 .learn-detail-scene-desc {
   font-size: 12px; color: rgba(255,255,255,.75); font-style: italic;
@@ -126,9 +121,7 @@
   display: flex; align-items: center; gap: 8px;
 }
 .learn-ext-divider::before,
-.learn-ext-divider::after {
-  content: ''; flex: 1; height: .5px; background: var(--line);
-}
+.learn-ext-divider::after { content: ''; flex: 1; height: .5px; background: var(--line); }
 .learn-ext-bar { display: flex; gap: 6px; flex-wrap: wrap; }
 .learn-ext-btn {
   font-size: 13px; font-weight: 600;
@@ -154,8 +147,6 @@
   to   { opacity:1; transform:translateY(0); }
 }
 .dialog-bubble.you { flex-direction: row-reverse; }
-
-/* 头像 */
 .bubble-avatar {
   width: 36px; height: 36px; border-radius: 50%;
   flex-shrink: 0; overflow: hidden; background: var(--surface);
@@ -172,8 +163,6 @@
   border-color: var(--green); box-shadow: 0 0 0 3px rgba(52,199,89,.2);
 }
 .dialog-bubble.muted .bubble-avatar { opacity: .45; }
-
-/* 气泡 */
 .bubble-inner { display: flex; flex-direction: column; max-width: 75%; }
 .bubble-label {
   font-size: 10px; font-weight: 700; color: var(--t4);
@@ -185,12 +174,9 @@
   background: var(--surface); border-radius: 4px 16px 16px 16px;
   box-shadow: 0 1px 3px rgba(0,0,0,.08);
 }
-.dialog-bubble.you .bubble-body {
-  background: var(--blue); border-radius: 16px 4px 16px 16px;
-}
+.dialog-bubble.you .bubble-body { background: var(--blue); border-radius: 16px 4px 16px 16px; }
 .dialog-bubble.action .bubble-body {
-  background: rgba(118,118,128,.10); border-radius: 16px;
-  border: 1px dashed var(--line);
+  background: rgba(118,118,128,.10); border-radius: 16px; border: 1px dashed var(--line);
 }
 .dialog-bubble.you.alt .bubble-body { background: #5B9AF8; }
 .dialog-bubble.playing .bubble-body {
@@ -207,18 +193,9 @@
 .bubble-jp rt { font-size: 9px; font-weight: 400; color: var(--t4); }
 .dialog-bubble.you .bubble-jp { color: #fff; }
 .dialog-bubble.you .bubble-jp rt { color: rgba(255,255,255,.7); }
-.dialog-bubble.action .bubble-jp {
-  color: var(--t3); font-style: italic; font-weight: 500; font-size: 13px;
-}
+.dialog-bubble.action .bubble-jp { color: var(--t3); font-style: italic; font-weight: 500; font-size: 13px; }
 .bubble-zh { font-size: 12px; color: var(--t3); line-height: 1.4; }
 .dialog-bubble.you .bubble-zh { color: rgba(255,255,255,.80); }
-.dialog-bubble.action .bubble-zh { color: var(--t4); }
-.bubble-options { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-.bubble-option {
-  font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 12px;
-  background: rgba(0,122,255,.12); color: var(--blue); border: none;
-}
-.dialog-bubble.you .bubble-option { background: rgba(255,255,255,.2); color: #fff; }
 .bubble-note { font-size: 10px; color: var(--t4); margin-top: 4px; font-style: italic; }
 .dialog-bubble.you .bubble-note { color: rgba(255,255,255,.65); }
 
@@ -244,15 +221,33 @@
   padding: 6px 10px; display: none; flex-direction: column; gap: 5px;
 }
 #learnCtrlBar.on { display: flex; }
-.learn-ctrl-row1 { display: flex; align-items: center; gap: 6px; }
-.learn-ctrl-row2 { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
 
+/* 第一行：返回 | 播放 循环 停止 注音 | 已熟悉 */
+.learn-ctrl-row1 {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 0;
+}
+.learn-ctrl-row1-left  { flex-shrink: 0; }
+.learn-ctrl-row1-right { flex-shrink: 0; }
+.learn-ctrl-row1-mid {
+  display: flex; align-items: center; gap: 6px;
+  flex: 1; justify-content: center;
+  padding: 0 8px;
+}
+
+/* 第二行：三组seg两端对齐 */
+.learn-ctrl-row2 {
+  display: flex; align-items: center;
+  justify-content: space-between;
+}
+
+/* 按钮基础样式 */
 .learn-play-btn {
-  flex: 1; height: 32px; border-radius: var(--r-sm);
+  height: 32px; padding: 0 14px; border-radius: var(--r-sm);
   background: var(--t1); color: #fff; border: none;
   font-size: 13px; font-weight: 700; cursor: pointer;
   display: flex; align-items: center; justify-content: center; gap: 5px;
-  transition: background .12s, transform .08s;
+  transition: background .12s, transform .08s; white-space: nowrap;
 }
 .learn-play-btn:active { transform: scale(.96); }
 
@@ -267,7 +262,6 @@
 .learn-ctrl-icon.rd { background: rgba(255,59,48,.25); color: #FF6B6B; }
 .learn-ctrl-icon.sm { font-size: 12px; font-weight: 700; }
 
-/* 返回按钮 */
 .learn-back-ctrl {
   height: 32px; padding: 0 10px; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
@@ -277,7 +271,6 @@
 }
 .learn-back-ctrl:active { transform: scale(.94); }
 
-/* 已熟悉按钮 */
 .learn-familiar-ctrl {
   height: 32px; padding: 0 10px; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
@@ -288,7 +281,7 @@
 .learn-familiar-ctrl:active { transform: scale(.94); }
 .learn-familiar-ctrl.on { background: var(--green); color: #fff; }
 
-/* segmented control in dark bar */
+/* Seg控件（深色背景版）*/
 .lseg {
   display: inline-flex;
   background: rgba(255,255,255,0.10);
@@ -296,10 +289,11 @@
 }
 .lseg .btn {
   background: transparent; border-radius: 6px;
-  font-size: 12px; padding: 3px 8px; min-height: 24px;
+  font-size: 12px; padding: 3px 7px; min-height: 26px;
   color: rgba(255,255,255,.60); border: none; font-weight: 600;
+  white-space: nowrap;
 }
 .lseg .btn.on {
-  background: rgba(255,255,255,0.20); color: #fff;
+  background: rgba(255,255,255,0.22); color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.3);
 }
