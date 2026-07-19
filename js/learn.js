@@ -189,11 +189,15 @@ async function openScene(id){
   // 滚动时隐藏/显示Hero
   const dw=document.getElementById('learnDialogWrap');
   if(dw){
-    dw.onscroll=function(){
-      const hero=document.querySelector('.learn-detail-hero');
-      if(!hero) return;
-      hero.classList.toggle('collapsed', this.scrollTop>40);
-    };
+  let _heroTimer=null;
+  dw.onscroll=function(){
+  const hero=document.querySelector('.learn-detail-hero');
+  if(!hero) return;
+  clearTimeout(_heroTimer);
+  _heroTimer=setTimeout(()=>{
+  hero.classList.toggle('collapsed', dw.scrollTop>40);
+  },80);
+};
   }
 }
 
