@@ -324,9 +324,9 @@ function renderDialog(){
     const avatarHtml=d.speaker==='them'
       ?mkAvatar(staffAvatar,DEFAULT_STAFF_AVATAR,`av-${i}`)
       :mkAvatar(userAvatar,DEFAULT_USER_AVATAR,`av-${i}`);
-    // 替换〇〇
-    const jpRaw=replaceOO(d.jp)||'';
-    const fgRaw=replaceOO(d.furigana)||'';
+    
+    const jpRaw=d.jp||'';
+    const fgRaw=d.furigana||'';
     const zhRaw=d.zh||'';
     const jpDisplay=isAction?'':jpHtml(jpRaw,fgRaw);
     const bubbleContent=isAction
