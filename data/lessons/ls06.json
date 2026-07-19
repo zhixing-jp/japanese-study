@@ -4,7 +4,7 @@
   "title_ja": "レストラン",
   "emoji": "🍜",
   "sound": "default",
-  "image": "assets/scenes/ls06.jpg",
+  "image": "assets/scenes/ls06.webp",
   "sound_file": "assets/sounds/ls06.mp3",
   "staff_avatar": "assets/avatars/staff/ls06.png",
   "description": "你在餐厅用餐，从入店到结账。",
