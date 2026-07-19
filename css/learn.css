@@ -71,9 +71,14 @@
 
 /* Hero大图区 */
 .learn-detail-hero {
-  position: relative; height: 160px; flex-shrink: 0;
+  position: relative; flex-shrink: 0;
   background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
   overflow: hidden;
+  max-height: 160px;
+  transition: max-height .45s cubic-bezier(.4,0,.2,1), opacity .3s ease;
+}
+.learn-detail-hero.collapsed {
+  max-height: 0; opacity: 0;
 }
 .learn-detail-hero-bg {
   position: absolute; inset: 0;
@@ -286,3 +291,47 @@
 .learn-ctrl-icon:active { transform: scale(.90); }
 .learn-ctrl-icon.on { background: rgba(0,122,255,.35); color: #5AC8FA; }
 .learn-ctrl-icon.rd { background: rgba(255,59,48,.25); color: #FF6B6B; }
+
+/* ── Learn Controls Bar v2 ── */
+#learnCtrlBar {
+  position: fixed; bottom: var(--tab-h); left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 430px; z-index: 200;
+  background: var(--glass-dark);
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-top: .5px solid rgba(255,255,255,.10);
+  padding: 10px 14px 10px;
+  display: none; flex-direction: column; gap: 8px;
+}
+#learnCtrlBar.on { display: flex; }
+.learn-ctrl-main { display: flex; align-items: center; gap: 8px; }
+.learn-ctrl-settings { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* segmented control in dark bar */
+.lseg {
+  display: inline-flex;
+  background: rgba(255,255,255,0.10);
+  border-radius: var(--r-sm); padding: 2px; gap: 1px;
+}
+.lseg .btn {
+  background: transparent; border-radius: 8px;
+  font-size: 12px; padding: 5px 9px; min-height: 28px;
+  color: rgba(255,255,255,.60); border: none;
+}
+.lseg .btn.on {
+  background: rgba(255,255,255,0.20); color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+
+/* alt气泡样式（备选项） */
+.dialog-bubble.alt .bubble-body {
+  opacity: .85;
+}
+.dialog-bubble.you.alt .bubble-body {
+  background: #5B9AF8;
+}
+.bubble-action-text {
+  font-size: 13px; color: var(--t3);
+  font-style: italic; font-weight: 500;
+}
+.dialog-bubble.you .bubble-action-text { color: rgba(255,255,255,.75); }
