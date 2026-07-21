@@ -41,19 +41,14 @@
       <input id="searchInput" type="search" autocomplete="off">
     </div>
   </div>
-  <div id="sceneBarWrap">
-    <div id="sceneTagsWrap"></div>
-    <button id="sceneToggle" onclick="toggleSceneBar()">
-      <span class="stoggle-arrow" id="stoggleArrow">▼</span>
-    </button>
-  </div>
+
 </div>
 
 <!-- ══ MAIN ══ -->
 <main></main>
 
 <!-- ══ SOS CONTROLS BAR ══ -->
-<div id="ctrlBar" style="display:none">
+<div id="ctrlBar">
   <div class="ctrl-main">
     <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>
     <button class="ctrl-icon" id="btnPause" onclick="pauseOrResume()">⏸</button>
@@ -98,20 +93,22 @@ let CFG = {};
     renderTabBar(CFG);
     initVoices();
 
+    // 动态加载所有版块CSS和JS
     await loadModules(CFG.modules||[]);
 
-    // 依次初始化所有已注册的版块
+    // 依次初始化所有已注册版块（init负责渲染HTML结构再boot）
     for(const m of (CFG.modules||[])){
-    const mod = window.LJ_MODULES[m.id];
-    if(mod && typeof mod.init === 'function'){
-    await mod.init(CFG, icons);
-  }
-}
+      const mod = window.LJ_MODULES[m.id];
+      if(mod && typeof mod.init === 'function'){
+        await mod.init(CFG, icons);
+      }
+    }
 
     // 恢复上次的Tab
     const savedTab = localStorage.getItem('lj_tab');
     if(savedTab && savedTab !== 'sos'){
       switchTab(savedTab);
+      switchTab(currentTab);
     }
 
     // 动态计算header高度
