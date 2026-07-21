@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.1",
+    "description": "Living Japanese | 日语学习版块场景目录"
+  },
+  "levels": [
+    { "id": "lv1", "star": 1, "label": "入门", "desc": "几乎不需要开口，听懂就好" },
+    { "id": "lv2", "star": 2, "label": "基础", "desc": "需要说1-2句" },
+    { "id": "lv3", "star": 3, "label": "进阶", "desc": "需要简单对话" }
+  ],
+  "scenes": [
+    {
+      "id": "ls01",
+      "file": "data/lessons/ls01.json",
+      "title": "便利店",
+      "title_ja": "コンビニ",
+      "emoji": "🏪",
+      "level": "lv1",
+      "sound": "conbini",
+      "image": "assets/scenes/ls01.webp",
+      "sound_file": "assets/sounds/ls01.mp3",
+      "staff_avatar": "assets/avatars/staff/ls01.png"
+    },
+    {
+      "id": "ls02",
+      "file": "data/lessons/ls02.json",
+      "title": "超市结账",
+      "title_ja": "スーパー",
+      "emoji": "🛒",
+      "level": "lv1",
+      "sound": "supermarket",
+      "image": "assets/scenes/ls02.webp",
+      "sound_file": "assets/sounds/ls02.mp3",
+      "staff_avatar": "assets/avatars/staff/ls02.png"
+    },
+    {
+      "id": "ls03",
+      "file": "data/lessons/ls03.json",
+      "title": "坐电车",
+      "title_ja": "電車",
+      "emoji": "🚃",
+      "level": "lv1",
+      "sound": "train",
+      "image": "assets/scenes/ls03.webp",
+      "sound_file": "assets/sounds/ls03.mp3",
+      "staff_avatar": "assets/avatars/staff/ls03.png"
+    },
+    {
+      "id": "ls04",
+      "file": "data/lessons/ls04.json",
+      "title": "坐公交",
+      "title_ja": "バス",
+      "emoji": "🚌",
+      "level": "lv1",
+      "sound": "default",
+      "image": "assets/scenes/ls04.webp",
+      "sound_file": "assets/sounds/ls04.mp3",
+      "staff_avatar": "assets/avatars/staff/ls04.png"
+    },
+    {
+      "id": "ls05",
+      "file": "data/lessons/ls05.json",
+      "title": "坐出租车",
+      "title_ja": "タクシー",
+      "emoji": "🚕",
+      "level": "lv1",
+      "sound": "default",
+      "image": "assets/scenes/ls05.webp",
+      "sound_file": "assets/sounds/ls05.mp3",
+      "staff_avatar": "assets/avatars/staff/ls05.png"
+    },
+    {
+      "id": "ls06",
+      "file": "data/lessons/ls06.json",
+      "title": "餐厅",
+      "title_ja": "レストラン",
+      "emoji": "🍜",
+      "level": "lv2",
+      "sound": "default",
+      "image": "assets/scenes/ls06.webp",
+      "sound_file": "assets/sounds/ls06.mp3",
+      "staff_avatar": "assets/avatars/staff/ls06.png"
+    }
+  ]
+}

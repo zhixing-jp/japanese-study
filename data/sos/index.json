@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "version": "2.0",
+    "description": "Living Japanese | 急救版块场景目录"
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "file": "data/sos/s00_common.json",
+      "title": "共通短句",
+      "title_zh": "共通短句",
+      "image": "assets/sos/scenes/common.webp",
+      "description": "所有场景都会用到的基础用语。遇到困难时，这里的句子永远有用。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "打招呼",
+          "title_ja": "挨拶"
+        },
+        {
+          "id": "sub02",
+          "title": "感谢与道歉",
+          "title_ja": "感謝・謝罪"
+        },
+        {
+          "id": "sub03",
+          "title": "听不懂怎么办",
+          "title_ja": "聞き取れない時"
+        },
+        {
+          "id": "sub04",
+          "title": "求助",
+          "title_ja": "助けを求める"
+        },
+        {
+          "id": "sub05",
+          "title": "问基本信息",
+          "title_ja": "基本的な質問"
+        }
+      ],
+      "count": 28
+    },
+    {
+      "id": "s01",
+      "file": "data/sos/s01_airport.json",
+      "title": "入境・空港",
+      "title_zh": "入境・机场",
+      "image": "assets/sos/scenes/airport.webp",
+      "description": "刚到日本，在机场入境时用到的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入境审查",
+          "title_ja": "入国審査"
+        },
+        {
+          "id": "sub02",
+          "title": "行李领取",
+          "title_ja": "荷物受取"
+        },
+        {
+          "id": "sub03",
+          "title": "海关申报",
+          "title_ja": "税関申告"
+        },
+        {
+          "id": "sub04",
+          "title": "出机场｜交通",
+          "title_ja": "离开机场"
+        }
+      ],
+      "count": 18
+    },
+    {
+      "id": "s02",
+      "file": "data/sos/s02_outing.json",
+      "title": "外出",
+      "title_zh": "出门",
+      "image": "assets/sos/scenes/outing.webp",
+      "description": "出门在外，问路、找设施、迷路时用到的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "问路",
+          "title_ja": "道を聞く"
+        },
+        {
+          "id": "sub02",
+          "title": "找设施",
+          "title_ja": "施設を探す"
+        },
+        {
+          "id": "sub03",
+          "title": "迷路",
+          "title_ja": "迷子"
+        }
+      ],
+      "count": 19
+    },
+    {
+      "id": "s03",
+      "file": "data/sos/s03_shopping.json",
+      "title": "買い物",
+      "title_zh": "买东西",
+      "image": "assets/sos/scenes/shopping.webp",
+      "description": "超市、便利店、药妆店——无论在哪里买东西，这些句子都用得到。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "找商品",
+          "title_ja": "商品を探す"
+        },
+        {
+          "id": "sub02",
+          "title": "结账",
+          "title_ja": "会計"
+        },
+        {
+          "id": "sub03",
+          "title": "退换货",
+          "title_ja": "返品・交換"
+        },
+        {
+          "id": "sub04",
+          "title": "试穿试用",
+          "title_ja": "試着・試用"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "id": "s04",
+      "file": "data/sos/s04_food.json",
+      "title": "飲食",
+      "title_zh": "吃饭",
+      "image": "assets/sos/scenes/food.webp",
+      "description": "从入店到结账，在餐厅用餐全流程用到的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入店预约",
+          "title_ja": "入店・予約"
+        },
+        {
+          "id": "sub02",
+          "title": "点餐",
+          "title_ja": "注文"
+        },
+        {
+          "id": "sub03",
+          "title": "用餐中",
+          "title_ja": "食事中"
+        },
+        {
+          "id": "sub04",
+          "title": "结账",
+          "title_ja": "会計"
+        }
+      ],
+      "count": 42
+    },
+    {
+      "id": "s05",
+      "file": "data/sos/s05_transport.json",
+      "title": "交通",
+      "title_zh": "坐车",
+      "image": "assets/sos/scenes/transport.webp",
+      "description": "电车、公交、出租车——成功到达目的地所需的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "电车",
+          "title_ja": "電車"
+        },
+        {
+          "id": "sub02",
+          "title": "公交",
+          "title_ja": "バス"
+        },
+        {
+          "id": "sub03",
+          "title": "出租车",
+          "title_ja": "タクシー"
+        },
+        {
+          "id": "sub04",
+          "title": "异常情况",
+          "title_ja": "トラブル"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "id": "s06",
+      "file": "data/sos/s06_medical.json",
+      "title": "受診",
+      "title_zh": "看病",
+      "image": "assets/sos/scenes/medical.webp",
+      "description": "从预约到取药，成功看到医生所需的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "预约",
+          "title_ja": "予約"
+        },
+        {
+          "id": "sub02",
+          "title": "挂号",
+          "title_ja": "受け付け"
+        },
+        {
+          "id": "sub03",
+          "title": "说症状",
+          "title_ja": "症状を伝える"
+        },
+        {
+          "id": "sub04",
+          "title": "问诊结果",
+          "title_ja": "診察結果"
+        },
+        {
+          "id": "sub05",
+          "title": "取药",
+          "title_ja": "お薬"
+        },
+        {
+          "id": "sub06",
+          "title": "儿科",
+          "title_ja": "小児科"
+        }
+      ],
+      "count": 60
+    },
+    {
+      "id": "s07",
+      "file": "data/sos/s07_admin.json",
+      "title": "手続き",
+      "title_zh": "办手续",
+      "image": "assets/sos/scenes/admin.webp",
+      "description": "役所、区役所——成功办完手续，拿到需要的文件。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "到窗口",
+          "title_ja": "窓口へ"
+        },
+        {
+          "id": "sub02",
+          "title": "填写表格",
+          "title_ja": "書類記入"
+        },
+        {
+          "id": "sub03",
+          "title": "确认内容",
+          "title_ja": "内容確認"
+        }
+      ],
+      "count": 23
+    },
+    {
+      "id": "s08",
+      "file": "data/sos/s08_money.json",
+      "title": "お金",
+      "title_zh": "用钱",
+      "image": "assets/sos/scenes/money.webp",
+      "description": "银行、ATM、邮局——成功完成金融和寄送操作。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "银行ATM",
+          "title_ja": "銀行・ATM"
+        },
+        {
+          "id": "sub02",
+          "title": "汇款",
+          "title_ja": "送金"
+        },
+        {
+          "id": "sub03",
+          "title": "邮局",
+          "title_ja": "郵便局"
+        }
+      ],
+      "count": 22
+    },
+    {
+      "id": "s09",
+      "file": "data/sos/s09_housing.json",
+      "title": "住まい",
+      "title_zh": "住房",
+      "image": "assets/sos/scenes/housing.webp",
+      "description": "找房、报修、收快递——成功解决居住相关问题。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "找房",
+          "title_ja": "物件探し"
+        },
+        {
+          "id": "sub02",
+          "title": "报修",
+          "title_ja": "修理依頼"
+        },
+        {
+          "id": "sub03",
+          "title": "收快递",
+          "title_ja": "荷物受取"
+        },
+        {
+          "id": "sub04",
+          "title": "邻里",
+          "title_ja": "近所付き合い"
+        }
+      ],
+      "count": 29
+    },
+    {
+      "id": "s10",
+      "file": "data/sos/s10_kids.json",
+      "title": "子供・学校",
+      "title_zh": "孩子・学校",
+      "image": "assets/sos/scenes/kids.webp",
+      "description": "入学手续、送园接园、和老师沟通——成功处理好孩子的事。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入学手续",
+          "title_ja": "入学手続き"
+        },
+        {
+          "id": "sub02",
+          "title": "日常联络",
+          "title_ja": "日常連絡"
+        },
+        {
+          "id": "sub03",
+          "title": "请假缺席",
+          "title_ja": "欠席連絡"
+        },
+        {
+          "id": "sub04",
+          "title": "和老师沟通",
+          "title_ja": "先生との面談"
+        }
+      ],
+      "count": 35
+    },
+    {
+      "id": "s11",
+      "file": "data/sos/s11_work.json",
+      "title": "仕事",
+      "title_zh": "工作",
+      "image": "assets/sos/scenes/work.webp",
+      "description": "打工面试、日常接待、收银——成功完成工作中的沟通。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "面试",
+          "title_ja": "面接"
+        },
+        {
+          "id": "sub02",
+          "title": "日常接待",
+          "title_ja": "接客"
+        },
+        {
+          "id": "sub03",
+          "title": "收银结账",
+          "title_ja": "レジ"
+        },
+        {
+          "id": "sub04",
+          "title": "职场沟通",
+          "title_ja": "職場での会話"
+        }
+      ],
+      "count": 48
+    },
+    {
+      "id": "s12",
+      "file": "data/sos/s12_conbini.json",
+      "title": "コンビニサービス",
+      "title_zh": "便利店服务",
+      "image": "assets/sos/scenes/conbini.webp",
+      "description": "复印、缴费、买票——便利店里各种服务的操作句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "复印打印",
+          "title_ja": "コピー・印刷"
+        },
+        {
+          "id": "sub02",
+          "title": "缴费买票",
+          "title_ja": "支払い・発券"
+        },
+        {
+          "id": "sub03",
+          "title": "其他服务",
+          "title_ja": "その他サービス"
+        }
+      ],
+      "count": 17
+    },
+    {
+      "id": "s13",
+      "file": "data/sos/s13_life.json",
+      "title": "生活サービス",
+      "title_zh": "生活服务",
+      "image": "assets/sos/scenes/life.webp",
+      "description": "手机、理发、美甲、洗衣——各类生活服务的预约和沟通。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "预约",
+          "title_ja": "予約"
+        },
+        {
+          "id": "sub02",
+          "title": "理发美甲",
+          "title_ja": "美容"
+        },
+        {
+          "id": "sub03",
+          "title": "手机服务",
+          "title_ja": "携帯サービス"
+        },
+        {
+          "id": "sub04",
+          "title": "洗衣",
+          "title_ja": "クリーニング"
+        }
+      ],
+      "count": 29
+    },
+    {
+      "id": "s14",
+      "file": "data/sos/s14_delivery.json",
+      "title": "ネット購入・配送",
+      "title_zh": "网购・配送",
+      "image": "assets/sos/scenes/delivery.webp",
+      "description": "网购收货、配送问题、退货退款——解决网购相关的问题。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "收货",
+          "title_ja": "受け取り"
+        },
+        {
+          "id": "sub02",
+          "title": "配送问题",
+          "title_ja": "配送トラブル"
+        },
+        {
+          "id": "sub03",
+          "title": "退货退款",
+          "title_ja": "返品・返金"
+        }
+      ],
+      "count": 11
+    },
+    {
+      "id": "s15",
+      "file": "data/sos/s15_emergency.json",
+      "title": "緊急",
+      "title_zh": "紧急情况",
+      "image": "assets/sos/scenes/emergency.webp",
+      "description": "丢东西、生病、灾害——在紧急情况下得到帮助。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "丢失物品",
+          "title_ja": "紛失"
+        },
+        {
+          "id": "sub02",
+          "title": "身体不适",
+          "title_ja": "体調不良"
+        },
+        {
+          "id": "sub03",
+          "title": "灾害避难",
+          "title_ja": "災害・避難"
+        },
+        {
+          "id": "sub04",
+          "title": "报警求助",
+          "title_ja": "警察・救助"
+        }
+      ],
+      "count": 33
+    },
+    {
+      "id": "s16",
+      "file": "data/sos/s16_phone.json",
+      "title": "電話",
+      "title_zh": "电话",
+      "image": "assets/sos/scenes/phone.webp",
+      "description": "接电话、打电话、留言——成功应对日语电话，不挂断，不误解。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "接电话",
+          "title_ja": "電話を受ける"
+        },
+        {
+          "id": "sub02",
+          "title": "打电话",
+          "title_ja": "電話をかける"
+        },
+        {
+          "id": "sub03",
+          "title": "留言转接",
+          "title_ja": "伝言・転送"
+        }
+      ],
+      "count": 21
+    },
+    {
+      "id": "s17",
+      "file": "data/sos/s17_digital.json",
+      "title": "デジタル",
+      "title_zh": "数字生活",
+      "image": "assets/sos/scenes/digital.webp",
+      "description": "Wi-Fi、扫码、App——成功完成手机和网络相关的操作。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "Wi-Fi网络",
+          "title_ja": "Wi-Fi・ネット"
+        },
+        {
+          "id": "sub02",
+          "title": "扫码支付",
+          "title_ja": "QRコード・決済"
+        },
+        {
+          "id": "sub03",
+          "title": "App操作",
+          "title_ja": "アプリ操作"
+        }
+      ],
+      "count": 20
+    }
+  ]
+}
