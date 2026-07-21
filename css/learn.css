@@ -263,9 +263,9 @@
 .learn-ctrl-icon.sm { font-size: 12px; font-weight: 700; }
 
 .learn-back-ctrl {
-  height: 32px; padding: 0 10px; border-radius: var(--r-sm);
-  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 12px; font-weight: 600;
+  height: 24px; padding: 0 10px; border-radius: var(--r-sm);
+  background: rgba(255,255,255,0.12); color: rgb(16, 245, 4);
+  border: none; font-size: 16px; font-weight: 600;
   cursor: pointer; display: flex; align-items: center; gap: 4px;
   transition: all .12s; white-space: nowrap;
 }

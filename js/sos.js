@@ -212,7 +212,7 @@ function renderSubcatBar(si){
   bar.style.display='';
   bar.innerHTML=[
     `<button class="sos-subcat-btn${!currentSubcat?' on':''}"
-             onclick="setSubcat(null)">返回>>></button>`
+             onclick="setSubcat(null)">返回</button>`
   ].concat(subcats.map(s=>
     `<button class="sos-subcat-btn${currentSubcat===s.id?' on':''}"
              id="subcat-${s.id}" onclick="setSubcat('${s.id}')">
@@ -575,7 +575,7 @@ window.LJ_MODULES['sos']={
     document.getElementById('ctrlBar').innerHTML=`
       <div class="ctrl-row1">
         <div class="ctrl-row1-left">
-          <button class="ctrl-back" id="btnSosBack" onclick="showSosHome()">←返回</button>
+          <button class="ctrl-back" id="btnSosBack" onclick="showSosHome()">←场景选择</button>
         </div>
         <div class="ctrl-row1-mid">
           <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>

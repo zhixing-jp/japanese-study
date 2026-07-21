@@ -542,7 +542,7 @@ window.LJ_MODULES['learn']={
     document.getElementById('learnCtrlBar').innerHTML=`
       <div class="learn-ctrl-row1" id="learnCtrlRow1" style="display:none">
         <div class="learn-ctrl-row1-left">
-          <button class="learn-back-ctrl" onclick="closeScene()">← 返回</button>
+          <button class="learn-back-ctrl" onclick="closeScene()">←场景选择</button>
         </div>
         <div class="learn-ctrl-row1-mid">
           <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
