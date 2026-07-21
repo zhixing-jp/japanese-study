@@ -212,7 +212,7 @@ function renderSubcatBar(si){
   bar.style.display='';
   bar.innerHTML=[
     `<button class="sos-subcat-btn${!currentSubcat?' on':''}"
-             onclick="setSubcat(null)">全部</button>`
+             onclick="setSubcat(null)">全部场景>>></button>`
   ].concat(subcats.map(s=>
     `<button class="sos-subcat-btn${currentSubcat===s.id?' on':''}"
              id="subcat-${s.id}" onclick="setSubcat('${s.id}')">
