@@ -185,6 +185,7 @@ async function openScene(id){
   document.getElementById('learnList').style.display='none';
   document.getElementById('learnDetail').classList.add('on');
   document.getElementById('learnCtrlBar').classList.add('on');
+  document.querySelector('main').classList.add('has-ctrl');
   renderSceneDetail();
   playSceneSound(currentScene);
   // 滚动时隐藏/显示Hero

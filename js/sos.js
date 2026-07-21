@@ -124,6 +124,7 @@ function showSosHome(){
   document.getElementById('sosHome').style.display='';
   document.getElementById('sosDetail').classList.remove('on');
   document.getElementById('ctrlBar').classList.remove('on');
+  document.querySelector('main').classList.remove('has-ctrl');
   // 隐藏搜索框场景Bar
   const sbw=document.getElementById('sceneBarWrap');
   const sw=document.getElementById('searchWrap');
@@ -137,6 +138,7 @@ function showSosDetail(si){
   currentSosView='content';
   document.getElementById('sosHome').style.display='none';
   document.getElementById('sosDetail').classList.add('on');
+  document.querySelector('main').classList.add('has-ctrl');
   window.scrollTo({top:0,behavior:'smooth'});
   setTimeout(()=>{
     const hdr=document.getElementById('header');

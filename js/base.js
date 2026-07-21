@@ -97,14 +97,15 @@ function switchTab(name){
   if(sw)  sw.style.display = isSos ? '' : 'none';
   if(lcb) lcb.classList.toggle('on', isLearn);
 
-  setTimeout(()=>{
-  const ctrlBar = document.getElementById('ctrlBar');
-  const learnCtrl = document.getElementById('learnCtrlBar');
-  const ctrlH = (ctrlBar && ctrlBar.classList.contains('on')) ? ctrlBar.offsetHeight :
-                (learnCtrl && learnCtrl.classList.contains('on')) ? learnCtrl.offsetHeight : 0;
-  const tabH = document.getElementById('tabBar').offsetHeight;
-  document.querySelector('main').style.paddingBottom = `${ctrlH + tabH + 16}px`;
-}, 100);
+  // 根据是否有ctrlBar切换main的padding
+  const _main = document.querySelector('main');
+  if(_main){
+    if(name === 'sos' || name === 'learn'){
+      _main.classList.add('has-ctrl');
+    } else {
+      _main.classList.remove('has-ctrl');
+    }
+  }
 
   // 更新搜索框placeholder
   if(window.CFG){
