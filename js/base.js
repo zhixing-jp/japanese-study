@@ -97,8 +97,14 @@ function switchTab(name){
   if(sw)  sw.style.display = isSos ? '' : 'none';
   if(lcb) lcb.classList.toggle('on', isLearn);
 
-  document.querySelector('main').style.paddingBottom =
-    (isSos || isLearn) ? `calc(var(--ctrl-h) + var(--tab-h))` : `var(--tab-h)`;
+  setTimeout(()=>{
+  const ctrlBar = document.getElementById('ctrlBar');
+  const learnCtrl = document.getElementById('learnCtrlBar');
+  const ctrlH = (ctrlBar && ctrlBar.classList.contains('on')) ? ctrlBar.offsetHeight :
+                (learnCtrl && learnCtrl.classList.contains('on')) ? learnCtrl.offsetHeight : 0;
+  const tabH = document.getElementById('tabBar').offsetHeight;
+  document.querySelector('main').style.paddingBottom = `${ctrlH + tabH + 16}px`;
+}, 100);
 
   // 更新搜索框placeholder
   if(window.CFG){
