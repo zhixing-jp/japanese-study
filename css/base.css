@@ -178,6 +178,8 @@ body {
 .stag-icon { font-size: 13px; }
 
 /* ── Tab Bar ── */
+main { padding-bottom: 76px; }
+main.has-ctrl { padding-bottom: 158px; }
 #tabBar {
   position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
   width: 100%; max-width: 430px; z-index: 300;
