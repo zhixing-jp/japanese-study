@@ -303,8 +303,8 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   padding: 20px 14px;
 }
 .sos-landing-title {
-  font-size: 26px; font-weight: 700; color: var(--t1);
-  letter-spacing: -.3px; margin-bottom: 6px;
+  font-size: 24px; font-weight: 700; color: var(--t1);
+  letter-spacing: -.3px; margin-bottom: 0px;
 }
 .sos-landing-desc {
   font-size: 13px; color: var(--t4);
@@ -336,7 +336,7 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   border-color: var(--red);
 }
 .sos-landing-btn-title {
-  font-size: 16px; font-weight: 700; color: var(--t1);
+  font-size: 24px; font-weight: 700; color: var(--t1);
   letter-spacing: -.1px;
 }
 .sos-landing-btn-ja {
@@ -346,9 +346,9 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
 }
 .sos-landing-back {
-  height: 40px; padding: 0 14px; border-radius: 20px;
+  height: 36px; padding: 0 14px; border-radius: 20px;
   background: var(--blue); color: #fff;
-  border: none; font-size: 30px; font-weight: 600;
+  border: none; font-size: 24px; font-weight: 600;
   cursor: pointer; white-space: nowrap;
   flex-shrink: 0; display: flex; align-items: center; gap: 4px;
 }
