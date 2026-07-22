@@ -78,6 +78,10 @@ function switchTab(name){
   if(typeof closeScene === 'function') closeScene();
   return;
  }
+  // 切换Tab时停止所有朗读
+  window.speechSynthesis.cancel();
+  if(typeof stopSpeech === 'function') stopSpeech();
+  if(typeof learnStop === 'function') learnStop();
   currentTab = name;
 
   // 保存Tab状态
