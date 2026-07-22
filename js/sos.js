@@ -4,6 +4,23 @@
    三层结构：首页→场景→内容
 ══════════════════════════════ */
 
+/* ── 场景色盘（12色循环）── */
+const SOS_COLORS = [
+  ['#1a3a5c','#1a6aaa'],
+  ['#1a4a2e','#1a8a4e'],
+  ['#3a1a1a','#8a2d2d'],
+  ['#2a1a3a','#6a2d8a'],
+  ['#3a2a1a','#8a6a2d'],
+  ['#1a3a3a','#1a8a8a'],
+  ['#3a1a3a','#8a2d6a'],
+  ['#1a2a3a','#2d5a8a'],
+  ['#2a3a1a','#5a8a2d'],
+  ['#3a2a2a','#8a5a2d'],
+  ['#1a1a3a','#4a2d8a'],
+  ['#2a1a1a','#6a3a2d'],
+];
+function getSosColor(idx){ return SOS_COLORS[idx % SOS_COLORS.length]; }
+
 /* ── State ── */
 let SECTIONS = [], ICONS = {};
 let SOS_INDEX = null;
@@ -84,10 +101,13 @@ function renderSosHome(){
   wrap.innerHTML=SCENE_META.map((sc,si)=>{
     const icon=ICONS[sc.title]||'📖';
     const hasBg=!!sc.image;
-    const bgStyle=hasBg?`background-image:url('${sc.image}')`:'';
-    return`<div class="sos-scene-card${!hasBg?' no-image':''}" onclick="openSosScene(${si})">
-      <div class="sos-scene-bg"${hasBg?` style="${bgStyle}"`:''}></div>
-      <div class="sos-scene-overlay"></div>
+    const [c1,c2]=getSosColor(si);
+    const bgStyle=hasBg
+      ?`background-image:url('${sc.image}')`
+      :`background:linear-gradient(135deg,${c1} 0%,${c2} 100%)`;
+    return`<div class="sos-scene-card" onclick="openSosScene(${si})">
+      <div class="sos-scene-bg" style="${bgStyle}"></div>
+      <div class="sos-scene-overlay"${hasBg?'':' style="display:none"'}></div>
       <div class="sos-scene-content">
         <div class="sos-scene-emoji">${icon}</div>
         <div class="sos-scene-title">${esc(sc.title_zh||sc.title)}</div>
@@ -121,7 +141,10 @@ async function openSosScene(si){
 /* ── 视图切换 ── */
 function showSosHome(){
   currentSosView='home';
-  document.getElementById('sosHome').style.display='';
+  const home=document.getElementById('sosHome');
+  home.style.display='';
+  home.style.animation='none';
+  requestAnimationFrame(()=>{ home.style.animation='fadeIn .2s ease-out'; });
   document.getElementById('sosDetail').classList.remove('on');
   document.getElementById('ctrlBar').classList.remove('on');
   document.querySelector('main').classList.remove('has-ctrl');
@@ -171,13 +194,15 @@ function renderSceneLanding(si){
   if(bar) bar.style.display='none';
   if(!wrap) return;
 
+  const [lc1,lc2]=getSosColor(si);
   wrap.innerHTML=`
     <div class="sos-scene-landing">
-      <div class="sos-landing-header">
-        <button class="sos-landing-back" onclick="showSosHome()">←场景选择</button>
-        <div class="sos-landing-title">${esc(meta.title_zh||meta.title)}</div>
+      <div class="sos-landing-hero" style="background:linear-gradient(135deg,${lc1} 0%,${lc2} 100%)">
+        <button class="sos-landing-back" onclick="showSosHome()">← 场景选择</button>
+        <div class="sos-landing-title-hero">${esc(meta.title_zh||meta.title)}</div>
+        <div class="sos-landing-desc-hero">${esc(meta.description||'')}</div>
       </div>
-      <div class="sos-landing-desc">${esc(meta.description||'')}</div>
+      <div class="sos-landing-desc" style="display:none">${esc(meta.description||'')}</div>
       <div class="sos-landing-grid">
         ${subcats.map(s=>`
           <button class="sos-landing-btn" onclick="selectSubcat('${s.id}',${si})">
@@ -458,9 +483,9 @@ function setSosRate(r){
 
 /* ── 朗读 ── */
 function getModeTexts(item){
-  if(currentMode==='jp')    return [{t:item.jp,l:'ja-JP',v:jaVoice}];
-  if(currentMode==='jp_zh') return [{t:item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice}];
-  return [{t:item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice},{t:item.jp,l:'ja-JP',v:jaVoice}];
+  if(currentMode==='jp')    return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}];
+  if(currentMode==='jp_zh') return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice}];
+  return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice},{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}];
 }
 
 function speak(segs,onEnd,session){
@@ -491,7 +516,8 @@ function hlCard(si,ii){
 function speakOne(si,ii){
   shouldStop=false; speakSession++;
   const s=speakSession; hlCard(si,ii);
-  speak([{t:SECTIONS[si].items[ii].jp,l:'ja-JP',v:jaVoice}],null,s);
+  const item=currentSceneData.items[ii];
+  speak([{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}],null,s);
 }
 
 function speakAll(){

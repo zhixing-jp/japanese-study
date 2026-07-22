@@ -20,6 +20,25 @@ let learnRate        = '0.75';
 let learnFollowMode  = false; // false=连续 true=跟读
 
 const DEFAULT_STAFF_AVATAR = '👨‍💼';
+
+/* ── 场景色盘（12色循环）── */
+const SCENE_COLORS = [
+  ['#1a3a5c','#1a6aaa'],
+  ['#1a4a2e','#1a8a4e'],
+  ['#3a1a1a','#8a2d2d'],
+  ['#2a1a3a','#6a2d8a'],
+  ['#3a2a1a','#8a6a2d'],
+  ['#1a3a3a','#1a8a8a'],
+  ['#3a1a3a','#8a2d6a'],
+  ['#1a2a3a','#2d5a8a'],
+  ['#2a3a1a','#5a8a2d'],
+  ['#3a2a2a','#8a5a2d'],
+  ['#1a1a3a','#4a2d8a'],
+  ['#2a1a1a','#6a3a2d'],
+];
+function getSceneColor(idx){
+  return SCENE_COLORS[idx % SCENE_COLORS.length];
+}
 const DEFAULT_USER_AVATAR  = '🧑';
 
 /* ── 振假名 ── */
@@ -166,10 +185,15 @@ function mkSceneCard(id){
   const sc2=isFam?'familiar':isPrac?'practiced':'';
   const si=isFam?'✓':isPrac?'●':'';
   const hasBg=!!sc.image;
-  return`<div class="learn-scene-card ${sc2}${!hasBg?' no-image':''}" onclick="openScene('${id}')">
+  const scIdx=(LEARN_INDEX.scenes||[]).findIndex(s=>s.id===id);
+  const [c1,c2]=getSceneColor(scIdx);
+  const bgStyle=hasBg
+    ?`background-image:url('${sc.image}')`
+    :`background:linear-gradient(135deg,${c1} 0%,${c2} 100%)`;
+  return`<div class="learn-scene-card ${sc2}" onclick="openScene('${id}')">
     ${si?`<div class="learn-scene-status">${si}</div>`:''}
-    <div class="learn-scene-bg"${hasBg?` style="background-image:url('${sc.image}')"`:''}></div>
-    <div class="learn-scene-overlay"></div>
+    <div class="learn-scene-bg" style="${bgStyle}"></div>
+    <div class="learn-scene-overlay"${hasBg?'':' style="display:none"'}></div>
     <div class="learn-scene-content">
       <div class="learn-scene-emoji">${sc.emoji||'📖'}</div>
       <div class="learn-scene-title">${esc(sc.title||id)}</div>
@@ -183,7 +207,10 @@ async function openScene(id){
   if(!sc||sc._comingSoon) return;
   currentScene=sc; currentExtId=null;
   document.getElementById('learnList').style.display='none';
-  document.getElementById('learnDetail').classList.add('on');
+  const detail=document.getElementById('learnDetail');
+  detail.classList.add('on');
+  detail.style.animation='none';
+  requestAnimationFrame(()=>{ detail.style.animation='fadeIn .2s ease-out'; });
   document.getElementById('learnCtrlBar').classList.add('on');
   document.querySelector('main').classList.add('has-ctrl');
   renderSceneDetail();
@@ -210,7 +237,10 @@ function closeScene(){
   const dw=document.getElementById('learnDialogWrap');
   if(dw) dw.onscroll=null;
   currentScene=null; currentExtId=null; currentDialog=[];
-  document.getElementById('learnList').style.display='';
+  const list=document.getElementById('learnList');
+  list.style.display='';
+  list.style.animation='none';
+  requestAnimationFrame(()=>{ list.style.animation='fadeIn .2s ease-out'; });
   document.getElementById('learnDetail').classList.remove('on');
   updateCtrlBar(false);
   renderLearnList();
@@ -236,7 +266,7 @@ function renderSceneDetail(){
   updateCtrlBar(true);
   const fb=document.getElementById('learnFamiliarCtrl');
   const isFam=!!learnFamiliar[currentScene.id];
-  if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?'✓ 已熟悉':'标记已熟悉';}
+  if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?'✓ 学会了':'学会了';}
   const extBar=document.getElementById('learnExtBar');
   const extSec=document.getElementById('learnExtSection');
   const exts=currentScene.extensions||[];
@@ -364,20 +394,20 @@ function markFamiliar(){
   if(!currentScene) return;
   learnFamiliar[currentScene.id]=true; saveLearnStorage();
   const fb=document.getElementById('learnFamiliarCtrl');
-  if(fb){fb.classList.add('on');fb.textContent='✓ 已熟悉';}
+  if(fb){fb.classList.add('on');fb.textContent='✓ 学会了';}
   const banner=document.getElementById('learnDoneBanner');
   if(banner){
     const btns=banner.querySelector('.learn-done-btns');
     if(btns) btns.innerHTML=`<button class="btn sm" onclick="learnReplay()">▶ 再听一遍</button>`;
   }
-  showToast('✓ 已标记为熟悉',1800);
+  showToast('✓ 学会了',1800);
 }
 function toggleFamiliarCtrl(){
   if(!currentScene) return;
   if(learnFamiliar[currentScene.id]){
     delete learnFamiliar[currentScene.id];
     const fb=document.getElementById('learnFamiliarCtrl');
-    if(fb){fb.classList.remove('on');fb.textContent='标记已熟悉';}
+    if(fb){fb.classList.remove('on');fb.textContent='学会了';}
     saveLearnStorage();
   } else { markFamiliar(); }
 }
@@ -422,7 +452,7 @@ function learnToggleLoop(){
 
 /* ── 获取朗读文本 ── */
 function getTexts(d){
-  const jp=d.jp||'';
+  const jp=d.furigana||d.jp||'';
   const zh=d.zh||'';
   if(learnMode==='jp')    return [{t:jp,l:'ja-JP',v:jaVoice}];
   if(learnMode==='jp_zh') return [{t:jp,l:'ja-JP',v:jaVoice},{t:zh,l:'zh-CN',v:zhVoice}];
@@ -553,7 +583,7 @@ window.LJ_MODULES['learn']={
         </div>
         <div class="learn-ctrl-row1-right">
           <button class="learn-familiar-ctrl" id="learnFamiliarCtrl"
-                  onclick="toggleFamiliarCtrl()">标记已熟悉</button>
+                  onclick="toggleFamiliarCtrl()">学会了</button>
         </div>
       </div>
       <div class="learn-ctrl-row2" id="learnCtrlRow2">

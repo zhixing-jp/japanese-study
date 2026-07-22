@@ -4,7 +4,7 @@
 ══════════════════════════════ */
 
 /* ── 场景列表 ── */
-.learn-wrap { padding: 12px 14px; }
+.learn-wrap { padding: 12px 14px; animation: fadeIn .22s ease-out; }
 .learn-level-group { margin-bottom: 24px; }
 .learn-level-title {
   display: flex; align-items: center; gap: 8px;
@@ -21,10 +21,11 @@
   border-radius: var(--r-md); overflow: hidden;
   cursor: pointer; border: 1.5px solid var(--line);
   transition: all .18s cubic-bezier(.34,1.56,.64,1);
-  position: relative; box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06);
   aspect-ratio: 1; background: var(--surface);
 }
-.learn-scene-card:active { transform: scale(.94); }
+.learn-scene-card:active { transform: scale(.92); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
 .learn-scene-card.practiced { border-color: var(--blue); }
 .learn-scene-card.familiar  { border-color: var(--green); }
 .learn-scene-bg {
@@ -80,6 +81,7 @@
 .learn-detail-hero-wrap {
   position: relative; height: 160px; overflow: hidden;
   background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
+  border-radius: 0 0 var(--r-xl) var(--r-xl);
 }
 .learn-detail-hero-bg {
   position: absolute; inset: 0;
@@ -127,16 +129,20 @@
   font-size: 13px; font-weight: 600;
   padding: 5px 14px; border-radius: 20px;
   background: var(--surface); color: var(--t2);
-  cursor: pointer; transition: all .15s; border: 1.5px solid var(--line);
+  cursor: pointer; transition: all .15s cubic-bezier(.34,1.56,.64,1);
+  border: 1.5px solid var(--line);
+  box-shadow: 0 1px 3px rgba(0,0,0,.07);
 }
-.learn-ext-btn:active { transform: scale(.92); }
-.learn-ext-btn.on { background: var(--blue); color: #fff; border-color: var(--blue); }
+.learn-ext-btn:active { transform: scale(.90); box-shadow: none; }
+.learn-ext-btn.on { background: var(--blue); color: #fff; border-color: var(--blue);
+  box-shadow: 0 2px 8px rgba(0,122,255,.25); }
 
 /* ── 对话区域 ── */
 .learn-dialog-wrap {
   flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch;
   padding: 14px; display: flex; flex-direction: column; gap: 12px;
   background: var(--bg);
+  animation: fadeInFast .18s ease-out;
 }
 .dialog-bubble {
   display: flex; align-items: flex-end; gap: 8px;
@@ -172,7 +178,7 @@
 .bubble-body { border-radius: 16px; padding: 10px 13px; transition: box-shadow .2s; }
 .dialog-bubble.them .bubble-body {
   background: var(--surface); border-radius: 4px 16px 16px 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 1px 6px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06);
 }
 .dialog-bubble.you .bubble-body { background: var(--blue); border-radius: 16px 4px 16px 16px; }
 .dialog-bubble.action .bubble-body {
@@ -214,10 +220,11 @@
 #learnCtrlBar {
   position: fixed; bottom: var(--tab-h); left: 50%; transform: translateX(-50%);
   width: 100%; max-width: 430px; z-index: 200;
-  background: var(--glass-dark);
-  backdrop-filter: saturate(180%) blur(24px);
-  -webkit-backdrop-filter: saturate(180%) blur(24px);
-  border-top: .5px solid rgba(255,255,255,.10);
+  background: rgba(22,22,24,0.88);
+  backdrop-filter: saturate(180%) blur(28px);
+  -webkit-backdrop-filter: saturate(180%) blur(28px);
+  border-top: .5px solid rgba(255,255,255,.14);
+  box-shadow: 0 -1px 0 rgba(255,255,255,.06);
   padding: 6px 10px; display: none; flex-direction: column; gap: 5px;
 }
 #learnCtrlBar.on { display: flex; }
@@ -263,13 +270,14 @@
 .learn-ctrl-icon.sm { font-size: 12px; font-weight: 700; }
 
 .learn-back-ctrl {
-  height: 24px; padding: 0 10px; border-radius: var(--r-sm);
-  background: rgba(255,255,255,0.12); color: rgb(16, 245, 4);
-  border: none; font-size: 16px; font-weight: 600;
+  height: 32px; padding: 0 12px; border-radius: var(--r-sm);
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.90);
+  border: 1px solid rgba(255,255,255,.10);
+  font-size: 13px; font-weight: 600;
   cursor: pointer; display: flex; align-items: center; gap: 4px;
-  transition: all .12s; white-space: nowrap;
+  transition: all .12s cubic-bezier(.34,1.56,.64,1); white-space: nowrap;
 }
-.learn-back-ctrl:active { transform: scale(.94); }
+.learn-back-ctrl:active { transform: scale(.93); background: rgba(255,255,255,.18); }
 
 .learn-familiar-ctrl {
   height: 32px; padding: 0 10px; border-radius: var(--r-sm);

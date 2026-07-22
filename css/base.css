@@ -67,13 +67,14 @@ body {
   align-items: center; justify-content: center; gap: 4px;
   font-size: 13px; font-weight: 600;
   border-radius: var(--r-sm);
-  border: none; padding: 7px 13px; min-height: 32px;
+  border: none; padding: 7px 13px; min-height: 36px;
   background: rgba(118,118,128,0.13);
   color: var(--t2);
   cursor: pointer; white-space: nowrap; letter-spacing: -.1px;
-  transition: background .12s, transform .08s, color .12s;
+  transition: background .15s, transform .1s cubic-bezier(.34,1.56,.64,1), color .15s;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
 }
-.btn:active { transform: scale(.93); }
+.btn:active { transform: scale(.91); box-shadow: none; }
 .btn.dk   { background: var(--t1); color: #fff; }
 .btn.dk:active { background: var(--t2); }
 .btn.rd   { background: var(--red-bg); color: var(--red); }
@@ -204,7 +205,7 @@ main.has-ctrl { padding-bottom: 158px; }
   transition: background .15s, transform .12s; font-size: 18px;
 }
 .tab.on .tab-icon { background: var(--red-bg); transform: scale(1.10); }
-.tab:active .tab-icon { transform: scale(.86); }
+.tab:active .tab-icon { transform: scale(.82); }
 
 /* ── Back to Top ── */
 #backTop {
@@ -249,6 +250,16 @@ main.has-ctrl { padding-bottom: 158px; }
   background: var(--t1); color: #fff;
   font-size: 11px; font-weight: 700;
   padding: 6px 16px; border-radius: 20px; letter-spacing: .04em;
+}
+
+/* ── 页面过渡动画 ── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInFast {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ── Loading ── */
