@@ -6,148 +6,473 @@
   "description": "刚到日本，在机场入境时用到的句子。",
   "items": [
     {
+      "jp": "パスポートをお願いします。",
+      "furigana": "パスポートをおねがいします。",
+      "zh": "请出示护照。",
+      "scene": "入境审查",
+      "id": "s01-001",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "両手の人差し指を置いてください。",
+      "furigana": "りょうてのひとさしゆびをおいてください。",
+      "zh": "请放上双手食指（采集指纹）。",
+      "scene": "入境审查",
+      "id": "s01-002",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "カメラを見てください。",
+      "furigana": "カメラをみてください。",
+      "zh": "请看镜头（拍照）。",
+      "scene": "入境审查",
+      "id": "s01-003",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "今回の来日の目的は何ですか。",
+      "furigana": "こんかいのらいにちのもくてきはなんですか。",
+      "zh": "这次来日本的目的是什么？",
+      "scene": "入境审查",
+      "id": "s01-004",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
       "jp": "観光です。",
       "furigana": "かんこうです。",
       "zh": "来旅游的。",
       "scene": "入境审查",
-      "id": "s01-001",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "留学です。",
-      "furigana": "りゅうがくです。",
-      "zh": "来留学的。",
-      "scene": "入境审查",
-      "id": "s01-002",
-      "subcategory": "sub01"
+      "id": "s01-005",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "仕事です。",
       "furigana": "しごとです。",
       "zh": "来工作的。",
       "scene": "入境审查",
-      "id": "s01-003",
-      "subcategory": "sub01"
+      "id": "s01-006",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "留学です。",
+      "furigana": "りゅうがくです。",
+      "zh": "来留学的。",
+      "scene": "入境审查",
+      "id": "s01-007",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "家族に会いに来ました。",
       "furigana": "かぞくにあいにきました。",
       "zh": "来探亲的。",
       "scene": "入境审查",
-      "id": "s01-004",
-      "subcategory": "sub01"
+      "id": "s01-008",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "上海に住んでいます。",
-      "furigana": "しゃんはいにすんでいます。",
-      "zh": "我住在上海。",
+      "jp": "知人に会いに来ました。",
+      "furigana": "ちじんにあいにきました。",
+      "zh": "来见朋友的。",
       "scene": "入境审查",
-      "id": "s01-005",
-      "subcategory": "sub01"
+      "id": "s01-009",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "10泊します。",
-      "furigana": "10はくします。",
-      "zh": "住10晚。",
+      "jp": "どのくらい滞在しますか。",
+      "furigana": "どのくらいたいざいしますか。",
+      "zh": "要停留多久？",
       "scene": "入境审查",
-      "id": "s01-006",
-      "subcategory": "sub02"
+      "id": "s01-010",
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
-      "jp": "プリンスホテルに泊まります。",
-      "furigana": "プリンスホテルにとまります。",
-      "zh": "住在王子酒店。",
+      "jp": "五日間です。",
+      "furigana": "いつかかんです。",
+      "zh": "5天。",
       "scene": "入境审查",
-      "id": "s01-007",
-      "subcategory": "sub02"
+      "id": "s01-011",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "一週間です。",
+      "furigana": "いっしゅうかんです。",
+      "zh": "一周。",
+      "scene": "入境审查",
+      "id": "s01-012",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "どこに泊まりますか。",
+      "furigana": "どこにとまりますか。",
+      "zh": "住在哪里？",
+      "scene": "入境审查",
+      "id": "s01-013",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "ここに泊まります。",
+      "furigana": "ここにとまります。",
+      "zh": "我住在这里。（出示手机预订单）",
+      "scene": "入境审查",
+      "id": "s01-014",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "帰りの航空券を見せてください。",
+      "furigana": "かえりのこうくうけんをみせてください。",
+      "zh": "请出示回程机票。",
+      "scene": "入境审查",
+      "id": "s01-015",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "はい、これです。",
+      "furigana": "はい、これです。",
+      "zh": "有的，就是这个。（出示电子机票）",
+      "scene": "入境审查",
+      "id": "s01-016",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "荷物が見つかりません。",
+      "furigana": "にもつがみつかりません。",
+      "zh": "找不到我的行李。",
+      "scene": "行李提取",
+      "id": "s01-017",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "荷物が壊れていました。",
+      "furigana": "にもつがこわれていました。",
+      "zh": "行李破损了。",
+      "scene": "行李提取",
+      "id": "s01-018",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "これが荷物の控えです。",
+      "furigana": "これがにもつのひかえです。",
+      "zh": "这是行李托运单。",
+      "scene": "行李提取",
+      "id": "s01-019",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "どこに届けてもらえますか。",
+      "furigana": "どこにとどけてもらえますか。",
+      "zh": "可以送到哪里？",
+      "scene": "行李提取",
+      "id": "s01-020",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "申告書はありますか。",
+      "furigana": "しんこくしょはありますか。",
+      "zh": "有带申报单吗？",
+      "scene": "海关申报",
+      "id": "s01-021",
+      "subcategory": "sub03",
+      "role": "staff"
+    },
+    {
+      "jp": "はい、これです。",
+      "furigana": "はい、これです。",
+      "zh": "有的，就是这个。（出示二维码或纸质单）",
+      "scene": "海关申报",
+      "id": "s01-022",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "申告するものはありません。",
       "furigana": "しんこくするものはありません。",
       "zh": "没有需要申报的。",
       "scene": "海关申报",
-      "id": "s01-008",
-      "subcategory": "sub02"
+      "id": "s01-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "これを申告したいです。",
-      "furigana": "これをしんこくしたいです。",
-      "zh": "我想申报这个。",
+      "jp": "肉製品や果物は持っていますか。",
+      "furigana": "にくせいひんやくだものはもっていますか。",
+      "zh": "有带肉制品或水果吗？",
       "scene": "海关申报",
-      "id": "s01-009",
-      "subcategory": "sub02"
+      "id": "s01-024",
+      "subcategory": "sub03",
+      "role": "staff"
     },
     {
-      "jp": "荷物がまだ出てきません。",
-      "furigana": "にもつがまだでてきません。",
-      "zh": "我的行李还没出来。",
-      "scene": "行李问题",
-      "id": "s01-010",
-      "subcategory": "sub02"
+      "jp": "いいえ、持っていません。",
+      "furigana": "いいえ、もっていません。",
+      "zh": "没有带。",
+      "scene": "海关申报",
+      "id": "s01-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "荷物が見当たりません。",
-      "furigana": "にもつがみあたりません。",
-      "zh": "我的行李不见了。",
-      "scene": "行李问题",
-      "id": "s01-011",
-      "subcategory": "sub03"
+      "jp": "お土産です。",
+      "furigana": "おみやげです。",
+      "zh": "是伴手礼。",
+      "scene": "海关申报",
+      "id": "s01-026",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "荷物が壊れていました。",
-      "furigana": "にもつがこわれていました。",
-      "zh": "行李破损了。",
-      "scene": "行李问题",
-      "id": "s01-012",
-      "subcategory": "sub03"
+      "jp": "服だけです。",
+      "furigana": "ふくだけです。",
+      "zh": "只有衣服。",
+      "scene": "海关申报",
+      "id": "s01-027",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "どこに届けてもらえますか。",
-      "furigana": "どこにとどけてもらえますか。",
-      "zh": "可以送到哪里？",
-      "scene": "行李问题",
-      "id": "s01-013",
-      "subcategory": "sub03"
+      "jp": "スーツケースを開けてください。",
+      "furigana": "スーツケースをあけてください。",
+      "zh": "请打开行李箱。",
+      "scene": "海关申报",
+      "id": "s01-028",
+      "subcategory": "sub03",
+      "role": "staff"
     },
     {
-      "jp": "バス乗り場はどこですか。",
-      "furigana": "バスのりばはどこですか。",
-      "zh": "巴士站在哪里？",
-      "scene": "出机场・交通",
-      "id": "s01-014",
-      "subcategory": "sub03"
+      "jp": "はい、どうぞ。",
+      "furigana": "はい、どうぞ。",
+      "zh": "好的，请便。",
+      "scene": "海关申报",
+      "id": "s01-029",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "タクシー乗り場はどこですか。",
-      "furigana": "タクシーのりばはどこですか。",
-      "zh": "出租车站在哪里？",
-      "scene": "出机场・交通",
-      "id": "s01-015",
-      "subcategory": "sub04"
+      "jp": "電車の駅はどこですか。",
+      "furigana": "でんしゃのえきはどこですか。",
+      "zh": "电车站在哪里？",
+      "scene": "寻找交通",
+      "id": "s01-030",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "ICカードはどこで買えますか。",
-      "furigana": "ICカードはどこでかえますか。",
-      "zh": "IC卡在哪里买？",
-      "scene": "出机场・交通",
-      "id": "s01-016",
-      "subcategory": "sub04"
+      "jp": "バスの切符売り場はどこですか。",
+      "furigana": "バスのきっぷうりばはどこですか。",
+      "zh": "巴士售票处在哪里？",
+      "scene": "寻找交通",
+      "id": "s01-031",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "両替はどこでできますか。",
-      "furigana": "りょうがえはどこでできますか。",
-      "zh": "在哪里可以换钱？",
-      "scene": "出机场・交通",
-      "id": "s01-017",
-      "subcategory": "sub04"
+      "jp": "タクシー乗り場はどちらですか。",
+      "furigana": "タクシーのりばはどちらですか。",
+      "zh": "出租车乘车点在哪里？",
+      "scene": "寻找交通",
+      "id": "s01-032",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "東京駅へはどうやって行けばいいですか。",
-      "furigana": "とうきょうえきへはどうやっていけばいいですか。",
-      "zh": "去东京站怎么走？",
-      "scene": "出机场・交通",
-      "id": "s01-018",
-      "subcategory": "sub04"
+      "jp": "コインロッカーはどこですか。",
+      "furigana": "コインロッカーはどこですか。",
+      "zh": "储物柜在哪里？",
+      "scene": "寻找交通",
+      "id": "s01-033",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "SIMカードはどこで買えますか。",
+      "furigana": "SIMカードはどこでかえますか。",
+      "zh": "哪里可以买SIM卡？",
+      "scene": "寻找交通",
+      "id": "s01-034",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "〇〇駅まで大人一枚お願いします。",
+      "furigana": "〇〇えきまでおとないちまいおねがいします。",
+      "zh": "请给我一张到〇〇站的成人票。",
+      "scene": "乘电车",
+      "id": "s01-035",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "特急券もお願いします。",
+      "furigana": "とっきゅうけんもおねがいします。",
+      "zh": "特快列车券也麻烦来一张。",
+      "scene": "乘电车",
+      "id": "s01-036",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "すみません、改札が開かないんですが。",
+      "furigana": "すみません、かいさつがあかないんですが。",
+      "zh": "不好意思，检票闸机打不开。（递上票卡）",
+      "scene": "乘电车",
+      "id": "s01-037",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "〇〇行きを大人二枚お願いします。",
+      "furigana": "〇〇ゆきをおとなにまいおねがいします。",
+      "zh": "请给我两张去〇〇的车票。",
+      "scene": "乘大巴",
+      "id": "s01-038",
+      "subcategory": "sub06",
+      "role": "user"
+    },
+    {
+      "jp": "次のバスは何時ですか。",
+      "furigana": "つぎのバスはなんじですか。",
+      "zh": "下一班车是几点？",
+      "scene": "乘大巴",
+      "id": "s01-039",
+      "subcategory": "sub06",
+      "role": "user"
+    },
+    {
+      "jp": "どちらまでですか。",
+      "furigana": "どちらまでですか。",
+      "zh": "您到哪里？",
+      "scene": "乘大巴",
+      "id": "s01-040",
+      "subcategory": "sub06",
+      "role": "staff"
+    },
+    {
+      "jp": "お荷物はトランクに入れますか。",
+      "furigana": "おにもつはトランクにいれますか。",
+      "zh": "行李要放进行李舱吗？",
+      "scene": "乘大巴",
+      "id": "s01-041",
+      "subcategory": "sub06",
+      "role": "staff"
+    },
+    {
+      "jp": "〇〇までです。お願いします。",
+      "furigana": "〇〇までです。おねがいします。",
+      "zh": "到〇〇。拜托了。",
+      "scene": "乘大巴",
+      "id": "s01-042",
+      "subcategory": "sub06",
+      "role": "user"
+    },
+    {
+      "jp": "いらっしゃいませ。どちらまでですか。",
+      "furigana": "いらっしゃいませ。どちらまでですか。",
+      "zh": "欢迎乘车。请问去哪里？",
+      "scene": "乘出租车",
+      "id": "s01-043",
+      "subcategory": "sub07",
+      "role": "staff"
+    },
+    {
+      "jp": "ここお願いします。",
+      "furigana": "ここおねがいします。",
+      "zh": "请去这里。（出示手机地图）",
+      "scene": "乘出租车",
+      "id": "s01-044",
+      "subcategory": "sub07",
+      "role": "user"
+    },
+    {
+      "jp": "〇〇ホテルまでお願いします。",
+      "furigana": "〇〇ホテルまでおねがいします。",
+      "zh": "请去〇〇酒店。",
+      "scene": "乘出租车",
+      "id": "s01-045",
+      "subcategory": "sub07",
+      "role": "user"
+    },
+    {
+      "jp": "カードでお願いします。",
+      "furigana": "カードでおねがいします。",
+      "zh": "请刷卡。",
+      "scene": "乘出租车",
+      "id": "s01-046",
+      "subcategory": "sub07",
+      "role": "user"
+    },
+    {
+      "jp": "現金で払います。",
+      "furigana": "げんきんではらいます。",
+      "zh": "用现金付。",
+      "scene": "乘出租车",
+      "id": "s01-047",
+      "subcategory": "sub07",
+      "role": "user"
+    },
+    {
+      "jp": "領収書をいただけますか。",
+      "furigana": "りょうしゅうしょをいただけますか。",
+      "zh": "请给我一张收据。",
+      "scene": "乘出租车",
+      "id": "s01-048",
+      "subcategory": "sub07",
+      "role": "user"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "sub01",
+      "title": "入境审查",
+      "title_ja": "入国審査"
+    },
+    {
+      "id": "sub02",
+      "title": "行李提取",
+      "title_ja": "荷物受取"
+    },
+    {
+      "id": "sub03",
+      "title": "海关申报",
+      "title_ja": "税関申告"
+    },
+    {
+      "id": "sub04",
+      "title": "寻找交通",
+      "title_ja": "交通案内"
+    },
+    {
+      "id": "sub05",
+      "title": "乘电车",
+      "title_ja": "電車に乗る"
+    },
+    {
+      "id": "sub06",
+      "title": "乘大巴",
+      "title_ja": "バスに乗る"
+    },
+    {
+      "id": "sub07",
+      "title": "乘出租车",
+      "title_ja": "タクシーに乗る"
     }
   ]
 }

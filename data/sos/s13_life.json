@@ -9,97 +9,109 @@
       "jp": "SIMカードを買いたいです。",
       "furigana": "SIMカードをかいたいです。",
       "zh": "我想买SIM卡。",
-      "scene": "办手机・SIM卡",
+      "scene": "手机・SIM",
       "id": "s13-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "どのプランがいいですか。",
       "furigana": "どのプランがいいですか。",
       "zh": "哪个套餐比较好？",
-      "scene": "办手机・SIM卡",
+      "scene": "手机・SIM",
       "id": "s13-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "データ通信だけでいいです。",
       "furigana": "データつうしんだけでいいです。",
       "zh": "我只需要数据流量。",
-      "scene": "办手机・SIM卡",
+      "scene": "手机・SIM",
       "id": "s13-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "このスマホで使えますか。",
+      "furigana": "このスマホでつかえますか。",
+      "zh": "这台手机可以用吗？",
+      "scene": "手机・SIM",
+      "id": "s13-004",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "電話番号を変えずに乗り換えたいです。",
+      "furigana": "でんわばんごうをかえずにのりかえたいです。",
+      "zh": "我想保号换运营商。",
+      "scene": "手机・SIM",
+      "id": "s13-005",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "設定を手伝ってもらえますか。",
       "furigana": "せっていをてつだってもらえますか。",
       "zh": "可以帮我设置吗？",
-      "scene": "办手机・SIM卡",
-      "id": "s13-004",
-      "subcategory": "sub01"
+      "scene": "手机・SIM",
+      "id": "s13-006",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "解約したいです。",
       "furigana": "かいやくしたいです。",
       "zh": "我想解约。",
-      "scene": "办手机・SIM卡",
-      "id": "s13-005",
-      "subcategory": "sub01"
+      "scene": "手机・SIM",
+      "id": "s13-007",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "インターネットを申し込みたいです。",
       "furigana": "インターネットをもうしこみたいです。",
       "zh": "我想申请网络。",
       "scene": "办网络",
-      "id": "s13-006",
-      "subcategory": "sub01"
+      "id": "s13-008",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "工事はいつですか。",
       "furigana": "こうじはいつですか。",
       "zh": "施工是什么时候？",
       "scene": "办网络",
-      "id": "s13-007",
-      "subcategory": "sub02"
+      "id": "s13-009",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "インターネットがつながりません。",
       "furigana": "インターネットがつながりません。",
       "zh": "网络连不上。",
       "scene": "办网络",
-      "id": "s13-008",
-      "subcategory": "sub02"
+      "id": "s13-010",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "予約をしたいです。",
       "furigana": "よやくをしたいです。",
       "zh": "我想预约。",
       "scene": "理发・美容院",
-      "id": "s13-009",
-      "subcategory": "sub02"
+      "id": "s13-011",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "カットだけお願いします。",
       "furigana": "カットだけおねがいします。",
       "zh": "我只要剪头发。",
       "scene": "理发・美容院",
-      "id": "s13-010",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "2センチ切ってください。",
-      "furigana": "2センチきってください。",
-      "zh": "请剪掉2厘米。",
-      "scene": "理发・美容院",
-      "id": "s13-011",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "軽くしてください。",
-      "furigana": "かるくしてください。",
-      "zh": "请把发量减薄一些。",
-      "scene": "理发・美容院",
       "id": "s13-012",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "この写真のようにしてください。",
@@ -107,135 +119,212 @@
       "zh": "请按照这张照片来。",
       "scene": "理发・美容院",
       "id": "s13-013",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "2センチ切ってください。",
+      "furigana": "2センチきってください。",
+      "zh": "请剪掉2厘米。",
+      "scene": "理发・美容院",
+      "id": "s13-014",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "整える程度でお願いします。",
+      "furigana": "ととのえるていどでおねがいします。",
+      "zh": "只需要稍微整理一下。",
+      "scene": "理发・美容院",
+      "id": "s13-015",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "前髪を短くしてください。",
+      "furigana": "まえがみをみじかくしてください。",
+      "zh": "请把刘海剪短。",
+      "scene": "理发・美容院",
+      "id": "s13-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "軽くしてください。",
+      "furigana": "かるくしてください。",
+      "zh": "请把发量减薄一些。",
+      "scene": "理发・美容院",
+      "id": "s13-017",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "カラーをしたいです。",
       "furigana": "カラーをしたいです。",
       "zh": "我想染发。",
       "scene": "理发・美容院",
-      "id": "s13-014",
-      "subcategory": "sub02"
+      "id": "s13-018",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "パーマをかけたいです。",
       "furigana": "パーマをかけたいです。",
       "zh": "我想烫发。",
       "scene": "理发・美容院",
-      "id": "s13-015",
-      "subcategory": "sub03"
+      "id": "s13-019",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "予約をしたいです。",
       "furigana": "よやくをしたいです。",
       "zh": "我想预约。",
       "scene": "美甲・医美",
-      "id": "s13-016",
-      "subcategory": "sub03"
+      "id": "s13-020",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "この写真のデザインでお願いします。",
       "furigana": "このしゃしんのデザインでおねがいします。",
       "zh": "请按照这张照片的设计来。",
       "scene": "美甲・医美",
-      "id": "s13-017",
-      "subcategory": "sub03"
+      "id": "s13-021",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "オフもお願いします。",
       "furigana": "オフもおねがいします。",
       "zh": "也请帮我卸甲。",
       "scene": "美甲・医美",
-      "id": "s13-018",
-      "subcategory": "sub03"
+      "id": "s13-022",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "カウンセリングをお願いします。",
-      "furigana": "カウンセリングをおねがいします。",
-      "zh": "我想先咨询一下。",
+      "jp": "相談したいんですが。",
+      "furigana": "そうだんしたいんですが。",
+      "zh": "我想咨询一下。",
       "scene": "美甲・医美",
-      "id": "s13-019",
-      "subcategory": "sub03"
+      "id": "s13-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "副作用はありますか。",
       "furigana": "ふくさようはありますか。",
       "zh": "有副作用吗？",
       "scene": "美甲・医美",
-      "id": "s13-020",
-      "subcategory": "sub03"
+      "id": "s13-024",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "どのくらいで効果が出ますか。",
       "furigana": "どのくらいでこうかがでますか。",
       "zh": "多久会有效果？",
       "scene": "美甲・医美",
-      "id": "s13-021",
-      "subcategory": "sub03"
+      "id": "s13-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "クリーニングをお願いします。",
       "furigana": "クリーニングをおねがいします。",
       "zh": "我想送洗。",
-      "scene": "洗衣店",
-      "id": "s13-022",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "いつできますか。",
-      "furigana": "いつできますか。",
-      "zh": "什么时候可以好？",
-      "scene": "洗衣店",
-      "id": "s13-023",
-      "subcategory": "sub04"
+      "scene": "洗衣",
+      "id": "s13-026",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "シミがあります。",
       "furigana": "シミがあります。",
       "zh": "有污渍。",
-      "scene": "洗衣店",
-      "id": "s13-024",
-      "subcategory": "sub04"
+      "scene": "洗衣",
+      "id": "s13-027",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "デリケートな素材です。",
       "furigana": "デリケートなそざいです。",
       "zh": "是很娇贵的材质。",
-      "scene": "洗衣店",
-      "id": "s13-025",
-      "subcategory": "sub04"
+      "scene": "洗衣",
+      "id": "s13-028",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "縮まないように気をつけてください。",
+      "furigana": "ちぢまないようにきをつけてください。",
+      "zh": "请注意不要缩水。",
+      "scene": "洗衣",
+      "id": "s13-029",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "いつできますか。",
+      "furigana": "いつできますか。",
+      "zh": "什么时候可以好？",
+      "scene": "洗衣",
+      "id": "s13-030",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "スマホの修理をお願いしたいです。",
       "furigana": "スマホのしゅうりをおねがいしたいです。",
       "zh": "我想修理手机。",
-      "scene": "修理・其他服务窗口",
-      "id": "s13-026",
-      "subcategory": "sub04"
+      "scene": "修理",
+      "id": "s13-031",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "データは消えませんか。",
+      "furigana": "データはきえませんか。",
+      "zh": "数据不会消失吗？",
+      "scene": "修理",
+      "id": "s13-032",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "見積もりをお願いします。",
       "furigana": "みつもりをおねがいします。",
       "zh": "请给我一个报价。",
-      "scene": "修理・其他服务窗口",
-      "id": "s13-027",
-      "subcategory": "sub04"
+      "scene": "修理",
+      "id": "s13-033",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "どのくらい時間がかかりますか。",
       "furigana": "どのくらいじかんがかかりますか。",
       "zh": "需要多少时间？",
-      "scene": "修理・其他服务窗口",
-      "id": "s13-028",
-      "subcategory": "sub04"
+      "scene": "修理",
+      "id": "s13-034",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "いつ取りに来ればいいですか。",
       "furigana": "いつとりにくればいいですか。",
       "zh": "什么时候来取比较好？",
-      "scene": "修理・其他服务窗口",
-      "id": "s13-029",
-      "subcategory": "sub04"
+      "scene": "修理",
+      "id": "s13-035",
+      "subcategory": "sub04",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "手机・SIM・网络", "title_ja": "スマホ・SIM・ネット" },
+    { "id": "sub02", "title": "理发・美容院", "title_ja": "美容院・散髪" },
+    { "id": "sub03", "title": "美甲・医美", "title_ja": "ネイル・美容医療" },
+    { "id": "sub04", "title": "洗衣・修理", "title_ja": "クリーニング・修理" }
   ]
 }

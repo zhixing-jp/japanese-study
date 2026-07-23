@@ -6,140 +6,343 @@
   "description": "复印、缴费、买票——便利店里各种服务的操作句子。",
   "items": [
     {
+      "jp": "ポイントカードはお持ちですか。",
+      "furigana": "ポイントカードはおもちですか。",
+      "zh": "您有积分卡吗？",
+      "scene": "结账・支付",
+      "id": "s12-001",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "ポイントカードはありません。",
+      "furigana": "ポイントカードはありません。",
+      "zh": "我没有积分卡。",
+      "scene": "结账・支付",
+      "id": "s12-002",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "キャッシュレスでお願いします。",
+      "furigana": "キャッシュレスでおねがいします。",
+      "zh": "请用无现金支付。",
+      "scene": "结账・支付",
+      "id": "s12-003",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "Suicaで払います。",
+      "furigana": "Suicaではらいます。",
+      "zh": "用Suica付钱。",
+      "scene": "结账・支付",
+      "id": "s12-004",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "これでお願いします。",
+      "furigana": "これでおねがいします。",
+      "zh": "请用这个付钱。（递上现金时）",
+      "scene": "结账・支付",
+      "id": "s12-005",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "お弁当は温めますか。",
+      "furigana": "おべんとうはあたためますか。",
+      "zh": "便当需要加热吗？",
+      "scene": "便当・餐具",
+      "id": "s12-006",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "はい、温めてください。",
+      "furigana": "はい、あたためてください。",
+      "zh": "是的，请帮忙加热。",
+      "scene": "便当・餐具",
+      "id": "s12-007",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "温めなくていいです。",
+      "furigana": "あたためなくていいです。",
+      "zh": "不用加热。",
+      "scene": "便当・餐具",
+      "id": "s12-008",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "袋はいかがでしょうか。",
+      "furigana": "ふくろはいかがでしょうか。",
+      "zh": "需要塑料袋吗？",
+      "scene": "便当・餐具",
+      "id": "s12-009",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "袋は一枚お願いします。",
+      "furigana": "ふくろはいちまいおねがいします。",
+      "zh": "请给我一个袋子。",
+      "scene": "便当・餐具",
+      "id": "s12-010",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "袋は要りません。",
+      "furigana": "ふくろはいりません。",
+      "zh": "不需要袋子。",
+      "scene": "便当・餐具",
+      "id": "s12-011",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "お箸はおつけしますか。",
+      "furigana": "おはしはおつけしますか。",
+      "zh": "需要给您加双筷子吗？",
+      "scene": "便当・餐具",
+      "id": "s12-012",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "お箸を二つお願いします。",
+      "furigana": "おはしをふたつおねがいします。",
+      "zh": "请给我两双筷子。",
+      "scene": "便当・餐具",
+      "id": "s12-013",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "すみません、このから揚げを一つください。",
+      "furigana": "すみません、このからあげをひとつください。",
+      "zh": "不好意思，请给我一个炸鸡。",
+      "scene": "柜台热食・烟",
+      "id": "s12-014",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "レジの横の肉まんを一つお願いします。",
+      "furigana": "レジのよこのにくまんをひとつおねがいします。",
+      "zh": "请给我收银台旁边的肉包一个。",
+      "scene": "柜台热食・烟",
+      "id": "s12-015",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "タバコの7番を一つお願いします。",
+      "furigana": "タバコの7ばんをひとつおねがいします。",
+      "zh": "请给我一包烟，7号。",
+      "scene": "柜台热食・烟",
+      "id": "s12-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "年齢確認のボタンを画面で押してください。",
+      "furigana": "ねんれいかくにんのボタンをがめんでおしてください。",
+      "zh": "请在屏幕上按下确认年龄的按钮。",
+      "scene": "柜台热食・烟",
+      "id": "s12-017",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "揚げ物は、少々お待ちください。今、温めます。",
+      "furigana": "あげものは、しょうしょうおまちください。いま、あたためます。",
+      "zh": "炸物请稍等一下，现在给您加热。",
+      "scene": "柜台热食・烟",
+      "id": "s12-018",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
       "jp": "コピーをしたいです。",
       "furigana": "コピーをしたいです。",
       "zh": "我想复印。",
       "scene": "复印・打印・扫描",
-      "id": "s12-001",
-      "subcategory": "sub01"
+      "id": "s12-019",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "スキャンをしたいです。",
       "furigana": "スキャンをしたいです。",
       "zh": "我想扫描。",
       "scene": "复印・打印・扫描",
-      "id": "s12-002",
-      "subcategory": "sub01"
+      "id": "s12-020",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "印刷をしたいです。",
       "furigana": "いんさつをしたいです。",
       "zh": "我想打印。",
       "scene": "复印・打印・扫描",
-      "id": "s12-003",
-      "subcategory": "sub01"
+      "id": "s12-021",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "カラーコピーをお願いします。",
+      "furigana": "カラーコピーをおねがいします。",
+      "zh": "请彩色复印。",
+      "scene": "复印・打印・扫描",
+      "id": "s12-022",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "A4でお願いします。",
+      "furigana": "A4でおねがいします。",
+      "zh": "请用A4。",
+      "scene": "复印・打印・扫描",
+      "id": "s12-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "使い方を教えてください。",
       "furigana": "つかいかたをおしえてください。",
       "zh": "请告诉我怎么用。",
       "scene": "复印・打印・扫描",
-      "id": "s12-004",
-      "subcategory": "sub01"
+      "id": "s12-024",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "紙が詰まりました。",
       "furigana": "かみがつまりました。",
       "zh": "纸卡住了。",
       "scene": "复印・打印・扫描",
-      "id": "s12-005",
-      "subcategory": "sub01"
+      "id": "s12-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "うまくできません。",
       "furigana": "うまくできません。",
       "zh": "操作不顺利。",
       "scene": "复印・打印・扫描",
-      "id": "s12-006",
-      "subcategory": "sub01"
+      "id": "s12-026",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "この払込票で払えますか。",
+      "furigana": "このはらいこみひょうではらえますか。",
+      "zh": "可以用这张缴费单付款吗？",
+      "scene": "缴费・票务",
+      "id": "s12-027",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "このバーコードで払えますか。",
       "furigana": "このバーコードではらえますか。",
       "zh": "可以用这个条形码付款吗？",
-      "scene": "公共料金支付",
-      "id": "s12-007",
-      "subcategory": "sub02"
+      "scene": "缴费・票务",
+      "id": "s12-028",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "電気代を払いたいです。",
       "furigana": "でんきだいをはらいたいです。",
       "zh": "我想缴电费。",
-      "scene": "公共料金支付",
-      "id": "s12-008",
-      "subcategory": "sub02"
+      "scene": "缴费・票务",
+      "id": "s12-029",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "水道代を払いたいです。",
       "furigana": "すいどうだいをはらいたいです。",
       "zh": "我想缴水费。",
-      "scene": "公共料金支付",
-      "id": "s12-009",
-      "subcategory": "sub02"
+      "scene": "缴费・票务",
+      "id": "s12-030",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "税金を払いたいです。",
       "furigana": "ぜいきんをはらいたいです。",
       "zh": "我想缴税。",
-      "scene": "公共料金支付",
-      "id": "s12-010",
-      "subcategory": "sub02"
+      "scene": "缴费・票务",
+      "id": "s12-031",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "ユニバーサルのチケットを買いたいです。",
-      "furigana": "ゆにばーさるのチケットをかいたいです。",
-      "zh": "我想买环球影城的票。",
-      "scene": "票务购买",
-      "id": "s12-011",
-      "subcategory": "sub02"
+      "jp": "チケットを買いたいです。",
+      "furigana": "チケットをかいたいです。",
+      "zh": "我想买票。",
+      "scene": "缴费・票务",
+      "id": "s12-032",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "新幹線の切符を買えますか。",
       "furigana": "しんかんせんのきっぷをかえますか。",
       "zh": "可以买新干线的票吗？",
-      "scene": "票务购买",
-      "id": "s12-012",
-      "subcategory": "sub02"
+      "scene": "缴费・票务",
+      "id": "s12-033",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "宅配便を出したいです。",
       "furigana": "たくはいびんをだしたいです。",
       "zh": "我想寄快递。",
       "scene": "快递・收件",
-      "id": "s12-013",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "中国の北京まで送りたいです。",
-      "furigana": "ちゅうごくのぺきんまでおくりたいです。",
-      "zh": "我想寄到中国北京。",
-      "scene": "快递・收件",
-      "id": "s12-014",
-      "subcategory": "sub03"
+      "id": "s12-034",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "いくらかかりますか。",
       "furigana": "いくらかかりますか。",
       "zh": "需要多少钱？",
       "scene": "快递・收件",
-      "id": "s12-015",
-      "subcategory": "sub03"
+      "id": "s12-035",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "荷物を受け取りたいです。",
       "furigana": "にもつをうけとりたいです。",
       "zh": "我想取快递。",
       "scene": "快递・收件",
-      "id": "s12-016",
-      "subcategory": "sub03"
+      "id": "s12-036",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "不在票があります。",
       "furigana": "ふざいひょうがあります。",
       "zh": "我有未送达通知单。",
       "scene": "快递・收件",
-      "id": "s12-017",
-      "subcategory": "sub03"
+      "id": "s12-037",
+      "subcategory": "sub04",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "结账・便当・餐具", "title_ja": "会計・弁当・食器" },
+    { "id": "sub02", "title": "柜台热食・烟", "title_ja": "カウンター・タバコ" },
+    { "id": "sub03", "title": "复印・打印・扫描", "title_ja": "コピー・印刷・スキャン" },
+    { "id": "sub04", "title": "缴费・票务・快递", "title_ja": "支払い・チケット・宅配" }
   ]
 }

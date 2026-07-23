@@ -11,7 +11,8 @@
       "zh": "我想应聘。",
       "scene": "面试",
       "id": "s11-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "履歴書を持ってきました。",
@@ -19,7 +20,8 @@
       "zh": "我带来了简历。",
       "scene": "面试",
       "id": "s11-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "日本語はまだ勉強中です。",
@@ -27,183 +29,206 @@
       "zh": "我日语还在学习中。",
       "scene": "面试",
       "id": "s11-003",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "○日から働けます。",
-      "furigana": "○にちからはたらけます。",
-      "zh": "从○日开始可以工作。",
-      "scene": "面试",
-      "id": "s11-004",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "交通費は出ますか。",
       "furigana": "こうつうひはでますか。",
       "zh": "有交通补贴吗？",
       "scene": "面试",
+      "id": "s11-004",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "いつから出勤できますか。",
+      "furigana": "いつからしゅっきんできますか。",
+      "zh": "您从什么时候可以上班？",
+      "scene": "面试",
       "id": "s11-005",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "週に何日働けますか。",
+      "furigana": "しゅうになんにちはたらけますか。",
+      "zh": "一周可以工作几天？",
+      "scene": "面试",
+      "id": "s11-006",
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
       "jp": "本日からお世話になります。",
       "furigana": "ほんじつからおせわになります。",
       "zh": "从今天开始请多关照。",
       "scene": "入职・报到",
-      "id": "s11-006",
-      "subcategory": "sub01"
+      "id": "s11-007",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "わからないことがあったら聞いてもいいですか。",
       "furigana": "わからないことがあったらきいてもいいですか。",
       "zh": "有不懂的地方可以问吗？",
       "scene": "入职・报到",
-      "id": "s11-007",
-      "subcategory": "sub01"
+      "id": "s11-008",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "もう一度教えてもらえますか。",
       "furigana": "もういちどおしえてもらえますか。",
       "zh": "可以再教我一次吗？",
       "scene": "入职・报到",
-      "id": "s11-008",
-      "subcategory": "sub01"
+      "id": "s11-009",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "これはどうやればいいですか。",
+      "furigana": "これはどうやればいいですか。",
+      "zh": "这个怎么做？",
+      "scene": "入职・报到",
+      "id": "s11-010",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "メモを取ってもいいですか。",
       "furigana": "メモをとってもいいですか。",
       "zh": "可以做笔记吗？",
       "scene": "入职・报到",
-      "id": "s11-009",
-      "subcategory": "sub01"
+      "id": "s11-011",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "シフトを確認したいです。",
       "furigana": "シフトをかくにんしたいです。",
       "zh": "我想确认排班。",
       "scene": "排班・请假",
-      "id": "s11-010",
-      "subcategory": "sub01"
+      "id": "s11-012",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "21日は休めますか。",
       "furigana": "21にちはやすめますか。",
       "zh": "21日可以休息吗？",
       "scene": "排班・请假",
-      "id": "s11-011",
-      "subcategory": "sub01"
+      "id": "s11-013",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "体調が悪くて休みたいです。",
       "furigana": "たいちょうがわるくてやすみたいです。",
       "zh": "我身体不舒服想请假。",
       "scene": "排班・请假",
-      "id": "s11-012",
-      "subcategory": "sub01"
+      "id": "s11-014",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "代わりの人を探します。",
       "furigana": "かわりのひとをさがします。",
       "zh": "我去找人替班。",
       "scene": "排班・请假",
-      "id": "s11-013",
-      "subcategory": "sub02"
+      "id": "s11-015",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "遅刻します。30分遅れます。",
       "furigana": "ちこくします。30ふんおくれます。",
       "zh": "我会迟到，晚30分钟。",
       "scene": "排班・请假",
-      "id": "s11-014",
-      "subcategory": "sub02"
+      "id": "s11-016",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "いらっしゃいませ。",
       "furigana": "いらっしゃいませ。",
       "zh": "欢迎光临。",
       "scene": "接待顾客",
-      "id": "s11-015",
-      "subcategory": "sub02"
+      "id": "s11-017",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "こちらへどうぞ。",
       "furigana": "こちらへどうぞ。",
       "zh": "请往这边走。",
       "scene": "接待顾客",
-      "id": "s11-016",
-      "subcategory": "sub02"
+      "id": "s11-018",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "少々お待ちください。",
       "furigana": "しょうしょうおまちください。",
       "zh": "请稍等。",
       "scene": "接待顾客",
-      "id": "s11-017",
-      "subcategory": "sub02"
+      "id": "s11-019",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "お待たせしました。",
       "furigana": "おまたせしました。",
       "zh": "让您久等了。",
       "scene": "接待顾客",
-      "id": "s11-018",
-      "subcategory": "sub02"
+      "id": "s11-020",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "かしこまりました。",
       "furigana": "かしこまりました。",
       "zh": "好的，明白了。",
       "scene": "接待顾客",
-      "id": "s11-019",
-      "subcategory": "sub02"
+      "id": "s11-021",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "申し訳ございません。",
       "furigana": "もうしわけございません。",
       "zh": "非常抱歉。",
       "scene": "接待顾客",
-      "id": "s11-020",
-      "subcategory": "sub02"
+      "id": "s11-022",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "ただいま確認いたします。",
       "furigana": "ただいまかくにんいたします。",
       "zh": "我马上确认一下。",
       "scene": "接待顾客",
-      "id": "s11-021",
-      "subcategory": "sub02"
+      "id": "s11-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "担当の者をお呼びします。",
       "furigana": "たんとうのものをおよびします。",
       "zh": "我去叫负责人来。",
       "scene": "接待顾客",
-      "id": "s11-022",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "320円です。",
-      "furigana": "320えんです。",
-      "zh": "320日元。",
-      "scene": "收银",
-      "id": "s11-023",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "500円お預かりします。",
-      "furigana": "500えんおあずかりします。",
-      "zh": "收您500日元。",
-      "scene": "收银",
       "id": "s11-024",
-      "subcategory": "sub02"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "180円のお返しです。",
-      "furigana": "180えんのおかえしです。",
-      "zh": "找您180日元。",
+      "jp": "ポイントカードはお持ちですか。",
+      "furigana": "ポイントカードはおもちですか。",
+      "zh": "有积分卡吗？",
       "scene": "收银",
       "id": "s11-025",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "袋はご利用ですか。",
@@ -211,183 +236,194 @@
       "zh": "需要袋子吗？",
       "scene": "收银",
       "id": "s11-026",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "ポイントカードはお持ちですか。",
-      "furigana": "ポイントカードはおもちですか。",
-      "zh": "有积分卡吗？",
-      "scene": "收银",
-      "id": "s11-027",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "現金ですか、カードですか。",
       "furigana": "げんきんですか、カードですか。",
       "zh": "现金还是刷卡？",
       "scene": "收银",
-      "id": "s11-028",
-      "subcategory": "sub03"
+      "id": "s11-027",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "タッチ決済もできます。",
-      "furigana": "タッチけっさいもできます。",
-      "zh": "也可以感应支付。",
+      "jp": "320円です。",
+      "furigana": "320えんです。",
+      "zh": "320日元。",
+      "scene": "收银",
+      "id": "s11-028",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "500円お預かりします。",
+      "furigana": "500えんおあずかりします。",
+      "zh": "收您500日元。",
       "scene": "收银",
       "id": "s11-029",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "180円のお返しです。",
+      "furigana": "180えんのおかえしです。",
+      "zh": "找您180日元。",
+      "scene": "收银",
+      "id": "s11-030",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "こちらにタッチしてください。",
       "furigana": "こちらにタッチしてください。",
       "zh": "请点击这里。",
       "scene": "收银",
-      "id": "s11-030",
-      "subcategory": "sub03"
+      "id": "s11-031",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "レシートはご利用ですか。",
       "furigana": "レシートはごりようですか。",
       "zh": "需要收据吗？",
       "scene": "收银",
-      "id": "s11-031",
-      "subcategory": "sub03"
+      "id": "s11-032",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "少々お待ちください。確認してまいります。",
       "furigana": "しょうしょうおまちください。かくにんしてまいります。",
       "zh": "请稍等，我去确认一下。",
       "scene": "突发情况应对",
-      "id": "s11-032",
-      "subcategory": "sub03"
+      "id": "s11-033",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "上の者を呼んでまいります。",
       "furigana": "うえのものをよんでまいります。",
       "zh": "我去叫上级来。",
       "scene": "突发情况应对",
-      "id": "s11-033",
-      "subcategory": "sub03"
+      "id": "s11-034",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "大変申し訳ございません。",
       "furigana": "たいへんもうしわけございません。",
       "zh": "非常非常抱歉。",
       "scene": "突发情况应对",
-      "id": "s11-034",
-      "subcategory": "sub03"
+      "id": "s11-035",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "ただいま対応いたします。",
       "furigana": "ただいまたいおういたします。",
       "zh": "我马上处理。",
       "scene": "突发情况应对",
-      "id": "s11-035",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "確認させていただきます。",
-      "furigana": "かくにんさせていただきます。",
-      "zh": "我来确认一下。",
-      "scene": "突发情况应对",
       "id": "s11-036",
-      "subcategory": "sub03"
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "はい、LivingJapaneseでございます。",
-      "furigana": "はい、LivingJapaneseでございます。",
-      "zh": "您好，这里是LivingJapanese。",
+      "jp": "はい、○○でございます。",
+      "furigana": "はい、○○でございます。",
+      "zh": "您好，这里是○○。",
       "scene": "电话应对",
       "id": "s11-037",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "少々お待ちください。",
-      "furigana": "しょうしょうおまちください。",
-      "zh": "请稍等。",
-      "scene": "电话应对",
-      "id": "s11-038",
-      "subcategory": "sub04"
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "ただいま担当者に代わります。",
       "furigana": "ただいまたんとうしゃにかわります。",
       "zh": "我马上帮您转接负责人。",
       "scene": "电话应对",
-      "id": "s11-039",
-      "subcategory": "sub04"
+      "id": "s11-038",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "担当者は只今席を外しております。",
       "furigana": "たんとうしゃはただいませきをはずしております。",
       "zh": "负责人现在不在位置上。",
       "scene": "电话应对",
-      "id": "s11-040",
-      "subcategory": "sub04"
+      "id": "s11-039",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "折り返しお電話いたします。",
       "furigana": "おりかえしおでんわいたします。",
       "zh": "我们会回电给您。",
       "scene": "电话应对",
-      "id": "s11-041",
-      "subcategory": "sub04"
+      "id": "s11-040",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "お名前とお電話番号をお聞きしてもよろしいですか。",
       "furigana": "おなまえとおでんわばんごうをおききしてもよろしいですか。",
       "zh": "可以告诉我您的姓名和电话号码吗？",
       "scene": "电话应对",
-      "id": "s11-042",
-      "subcategory": "sub04"
+      "id": "s11-041",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "報告があります。",
       "furigana": "ほうこくがあります。",
       "zh": "我有事要汇报。",
       "scene": "向店长汇报",
-      "id": "s11-043",
-      "subcategory": "sub04"
+      "id": "s11-042",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "お客様からクレームがありました。",
       "furigana": "おきゃくさまからクレームがありました。",
       "zh": "有客人投诉。",
       "scene": "向店长汇报",
-      "id": "s11-044",
-      "subcategory": "sub04"
+      "id": "s11-043",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "商品が足りません。",
       "furigana": "しょうひんがたりません。",
       "zh": "商品不够了。",
       "scene": "向店长汇报",
-      "id": "s11-045",
-      "subcategory": "sub04"
+      "id": "s11-044",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "レジが動きません。",
       "furigana": "レジがうごきません。",
       "zh": "收银机出问题了。",
       "scene": "向店长汇报",
+      "id": "s11-045",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "○○さんがまだ来ていません。",
+      "furigana": "○○さんがまだきていません。",
+      "zh": "○○还没来。",
+      "scene": "向店长汇报",
       "id": "s11-046",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "どうすればいいですか。",
-      "furigana": "どうすればいいですか。",
-      "zh": "应该怎么办？",
-      "scene": "向店长汇报",
-      "id": "s11-047",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "野村さんがまだ来ていません。",
-      "furigana": "のむらさんがまだきていません。",
-      "zh": "野村还没来。",
-      "scene": "向店长汇报",
-      "id": "s11-048",
-      "subcategory": "sub04"
+      "subcategory": "sub04",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "面试・入职", "title_ja": "面接・入社" },
+    { "id": "sub02", "title": "排班・请假", "title_ja": "シフト・休暇" },
+    { "id": "sub03", "title": "接待顾客・收银", "title_ja": "接客・レジ" },
+    { "id": "sub04", "title": "突发情况・电话・汇报", "title_ja": "トラブル・電話・報告" }
   ]
 }

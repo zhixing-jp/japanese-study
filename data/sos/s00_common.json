@@ -9,145 +9,163 @@
       "jp": "おはようございます。",
       "furigana": "おはようございます。",
       "zh": "早上好。",
-      "scene": "打招呼・问候",
+      "scene": "打招呼",
       "id": "s00-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "こんにちは。",
       "furigana": "こんにちは。",
       "zh": "你好。",
-      "scene": "打招呼・问候",
+      "scene": "打招呼",
       "id": "s00-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "こんばんは。",
       "furigana": "こんばんは。",
       "zh": "晚上好。",
-      "scene": "打招呼・问候",
+      "scene": "打招呼",
       "id": "s00-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "お疲れ様です。",
+      "furigana": "おつかれさまです。",
+      "zh": "辛苦了。",
+      "scene": "打招呼",
+      "id": "s00-004",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "おじゃまします。",
+      "furigana": "おじゃまします。",
+      "zh": "打扰了。（进入他人场所时）",
+      "scene": "打招呼",
+      "id": "s00-005",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "よろしくお願いします。",
       "furigana": "よろしくおねがいします。",
       "zh": "麻烦您了。",
-      "scene": "打招呼・问候",
-      "id": "s00-004",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "お世話になっております。",
-      "furigana": "おせわになっております。",
-      "zh": "承蒙您关照。",
-      "scene": "打招呼・问候",
-      "id": "s00-005",
-      "subcategory": "sub01"
+      "scene": "打招呼",
+      "id": "s00-006",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "失礼します。",
       "furigana": "しつれいします。",
-      "zh": "打扰了。",
-      "scene": "打招呼・问候",
-      "id": "s00-006",
-      "subcategory": "sub01"
+      "zh": "打扰了。（离开或经过时）",
+      "scene": "打招呼",
+      "id": "s00-007",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "ありがとうございます。",
       "furigana": "ありがとうございます。",
       "zh": "谢谢您。",
-      "scene": "礼貌表达",
-      "id": "s00-007",
-      "subcategory": "sub02"
+      "scene": "感谢与道歉",
+      "id": "s00-008",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "ありがとうございました。",
-      "furigana": "ありがとうございました。",
-      "zh": "非常感谢。",
-      "scene": "礼貌表达",
-      "id": "s00-008",
-      "subcategory": "sub02"
+      "jp": "どうも。",
+      "furigana": "どうも。",
+      "zh": "谢了。（非正式场合）",
+      "scene": "感谢与道歉",
+      "id": "s00-009",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "すみません。",
       "furigana": "すみません。",
       "zh": "不好意思。",
-      "scene": "礼貌表达",
-      "id": "s00-009",
-      "subcategory": "sub02"
+      "scene": "感谢与道歉",
+      "id": "s00-010",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "申し訳ありません。",
       "furigana": "もうしわけありません。",
       "zh": "非常抱歉。",
-      "scene": "礼貌表达",
-      "id": "s00-010",
-      "subcategory": "sub02"
+      "scene": "感谢与道歉",
+      "id": "s00-011",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "大丈夫です。",
       "furigana": "だいじょうぶです。",
       "zh": "没关系。",
-      "scene": "礼貌表达",
-      "id": "s00-011",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "はい。",
-      "furigana": "はい。",
-      "zh": "是的。",
-      "scene": "礼貌表达",
+      "scene": "感谢与道歉",
       "id": "s00-012",
-      "subcategory": "sub03"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "いいえ。",
-      "furigana": "いいえ。",
-      "zh": "不是。",
-      "scene": "礼貌表达",
+      "jp": "お待たせしました。",
+      "furigana": "おまたせしました。",
+      "zh": "让您久等了。",
+      "scene": "感谢与道歉",
       "id": "s00-013",
-      "subcategory": "sub03"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "少々お待ちください。",
-      "furigana": "しょうしょうおまちください。",
-      "zh": "请稍等。",
-      "scene": "礼貌表达",
-      "id": "s00-014",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "日本語がよくわかりません。",
-      "furigana": "にほんごがよくわかりません。",
-      "zh": "我日语不太好。",
+      "jp": "日本語があまり話せません。",
+      "furigana": "にほんごがあまりはなせません。",
+      "zh": "我不太会说日语。",
       "scene": "听不懂时",
-      "id": "s00-015",
-      "subcategory": "sub03"
+      "id": "s00-014",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "もう一度お願いします。",
       "furigana": "もういちどおねがいします。",
       "zh": "请再说一次。",
       "scene": "听不懂时",
-      "id": "s00-016",
-      "subcategory": "sub03"
+      "id": "s00-015",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "ゆっくり話してください。",
-      "furigana": "ゆっくりはなしてください。",
-      "zh": "请说慢一点。",
+      "jp": "ゆっくり話してもらえますか。",
+      "furigana": "ゆっくりはなしてもらえますか。",
+      "zh": "能说慢一点吗？",
+      "scene": "听不懂时",
+      "id": "s00-016",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "漢字で書いてもらえますか。",
+      "furigana": "かんじでかいてもらえますか。",
+      "zh": "能用汉字写吗？",
       "scene": "听不懂时",
       "id": "s00-017",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "書いてもらえますか。",
-      "furigana": "かいてもらえますか。",
-      "zh": "能帮我写下来吗？",
+      "jp": "スマホで見せてもいいですか。",
+      "furigana": "スマホでみせてもいいですか。",
+      "zh": "我可以用手机给您看吗？",
       "scene": "听不懂时",
       "id": "s00-018",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "わかりました。",
@@ -155,7 +173,8 @@
       "zh": "明白了。",
       "scene": "听不懂时",
       "id": "s00-019",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "わかりません。",
@@ -163,71 +182,152 @@
       "zh": "不明白。",
       "scene": "听不懂时",
       "id": "s00-020",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "はい。",
+      "furigana": "はい。",
+      "zh": "是的。",
+      "scene": "听不懂时",
+      "id": "s00-021",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "いいえ。",
+      "furigana": "いいえ。",
+      "zh": "不是。",
+      "scene": "听不懂时",
+      "id": "s00-022",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "日本語が話せません。",
+      "furigana": "にほんごがはなせません。",
+      "zh": "我不会说日语。",
+      "scene": "求助",
+      "id": "s00-023",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "助けてください。",
       "furigana": "たすけてください。",
       "zh": "请帮帮我。",
-      "scene": "请求帮助",
-      "id": "s00-021",
-      "subcategory": "sub04"
+      "scene": "求助",
+      "id": "s00-024",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "中国語が話せる方はいますか。",
+      "furigana": "ちゅうごくごがはなせるかたはいますか。",
+      "zh": "有人会说中文吗？",
+      "scene": "求助",
+      "id": "s00-025",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "通訳を呼んでもらえますか。",
+      "furigana": "つうやくをよんでもらえますか。",
+      "zh": "能帮我叫翻译吗？",
+      "scene": "求助",
+      "id": "s00-026",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "どうすればいいですか。",
       "furigana": "どうすればいいですか。",
       "zh": "应该怎么做？",
-      "scene": "请求帮助",
-      "id": "s00-022",
-      "subcategory": "sub04"
+      "scene": "求助",
+      "id": "s00-027",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "教えてください。",
       "furigana": "おしえてください。",
       "zh": "请告诉我。",
-      "scene": "请求帮助",
-      "id": "s00-023",
-      "subcategory": "sub04"
+      "scene": "求助",
+      "id": "s00-028",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "いくらですか。",
       "furigana": "いくらですか。",
       "zh": "多少钱？",
-      "scene": "数字・时间",
-      "id": "s00-024",
-      "subcategory": "sub05"
+      "scene": "问基本信息",
+      "id": "s00-029",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "何時からですか。",
       "furigana": "なんじからですか。",
       "zh": "从几点开始？",
-      "scene": "数字・时间",
-      "id": "s00-025",
-      "subcategory": "sub05"
+      "scene": "问基本信息",
+      "id": "s00-030",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "何時までですか。",
       "furigana": "なんじまでですか。",
       "zh": "到几点为止？",
-      "scene": "数字・时间",
-      "id": "s00-026",
-      "subcategory": "sub05"
+      "scene": "问基本信息",
+      "id": "s00-031",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "どこですか。",
       "furigana": "どこですか。",
       "zh": "在哪里？",
-      "scene": "数字・时间",
-      "id": "s00-027",
-      "subcategory": "sub05"
+      "scene": "问基本信息",
+      "id": "s00-032",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "何番ですか。",
+      "furigana": "なんばんですか。",
+      "zh": "是几号？（取号、排队时）",
+      "scene": "问基本信息",
+      "id": "s00-033",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "何階ですか。",
+      "furigana": "なんがいですか。",
+      "zh": "在几楼？",
+      "scene": "问基本信息",
+      "id": "s00-034",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "予約は必要ですか。",
+      "furigana": "よやくはひつようですか。",
+      "zh": "需要预约吗？",
+      "scene": "问基本信息",
+      "id": "s00-035",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "何日かかりますか。",
       "furigana": "なんにちかかりますか。",
       "zh": "需要几天？",
-      "scene": "数字・时间",
-      "id": "s00-028",
-      "subcategory": "sub05"
+      "scene": "问基本信息",
+      "id": "s00-036",
+      "subcategory": "sub05",
+      "role": "user"
     }
   ],
   "subcategories": [
@@ -243,7 +343,7 @@
     },
     {
       "id": "sub03",
-      "title": "听不懂怎么办",
+      "title": "听不懂时",
       "title_ja": "聞き取れない時"
     },
     {

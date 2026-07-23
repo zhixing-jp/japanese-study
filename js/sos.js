@@ -48,6 +48,15 @@ async function sosBoot(cfg, icons){
     SOS_INDEX = index;
     SCENE_META = index.scenes;
 
+    // 并行加载所有场景，自动同步count
+    await Promise.all(SCENE_META.map(async (sc, si) => {
+      try {
+        const data = await fetch(sc.file).then(r=>r.json());
+        SOS_CACHE[si] = data;
+        sc.count = data.items.length;
+      } catch(e) { console.warn('场景加载失败:', sc.file); }
+    }));
+
     renderSosBanner(cfg.banner);
     renderSosHome();
     renderCtrlBar(cfg.controls);
@@ -272,13 +281,13 @@ function renderSosContent(si, subcatId){
   const wrap=document.getElementById('sosContentWrap');
   if(!wrap||!sec) return;
 
-  // 过滤：二级分类 + 只看未学
+  // 过滤：二级分类 + 只看未学（staff句始终保留）
   let items=sec.items.map((item,ii)=>({item,ii}));
   if(subcatId){
     items=items.filter(({item})=>item.subcategory===subcatId);
   }
   if(filterUnlearned){
-    items=items.filter(({ii})=>!checkedItems[`${si}-${ii}`]);
+    items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${si}-${ii}`]);
   }
 
   if(!items.length){
@@ -287,14 +296,16 @@ function renderSosContent(si, subcatId){
   }
 
   wrap.innerHTML=items.map(({item,ii})=>{
+    const isStaff=item.role==='staff';
     const isDone=!!checkedItems[`${si}-${ii}`];
-    return`<div class="card${isDone?' done':''}" id="card-${si}-${ii}">
+    return`<div class="card${isDone?' done':''}${isStaff?' is-staff':''}" id="card-${si}-${ii}">
+      ${isStaff?'<span class="staff-label">对方可能会问</span>':''}
       <div class="card-top">
         <div class="card-num">${ii+1}</div>
         <div class="card-btns-top">
-          <button class="card-play-btn" onclick="speakOne(${si},${ii})">▶ 仅日语朗读</button>
-          <button class="lbtn${isDone?' on':''}" id="lb-${si}-${ii}"
-                  onclick="toggleDone(${si},${ii})">${isDone?'✓ 学会了':'学会了'}</button>
+          <button class="card-play-btn${isStaff?' is-staff-btn':''}" onclick="speakOne(${si},${ii})">${isStaff?'🎧 试听':'▶ 仅日语朗读'}</button>
+          ${!isStaff?`<button class="lbtn${isDone?' on':''}" id="lb-${si}-${ii}"
+                  onclick="toggleDone(${si},${ii})">${isDone?'✓ 学会了':'学会了'}</button>`:''}
         </div>
       </div>
       <div class="jp">${rubyHtml(item.jp,item.furigana)}</div>
@@ -527,7 +538,9 @@ function speakAll(){
   if(!sec) return;
   let items=sec.items.map((item,ii)=>({item,ii}));
   if(currentSubcat) items=items.filter(({item})=>item.subcategory===currentSubcat);
-  if(filterUnlearned) items=items.filter(({ii})=>!checkedItems[`${currentSosSection}-${ii}`]);
+  if(filterUnlearned) items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${currentSosSection}-${ii}`]);
+  // 朗读时跳过staff句（对方说的话不朗读给对方听）
+  items=items.filter(({item})=>item.role!=='staff');
   if(!items.length){showToast('没有未学的句子了 🎉',2000);return;}
   speakList(items,0,session);
 }

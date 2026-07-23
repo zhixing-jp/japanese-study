@@ -6,44 +6,49 @@
   "description": "从入店到结账，在餐厅用餐全流程用到的句子。",
   "items": [
     {
-      "jp": "2人です。",
-      "furigana": "ふたりです。",
-      "zh": "2个人。",
+      "jp": "いらっしゃいませ。何名様ですか。",
+      "furigana": "いらっしゃいませ。なんめいさまですか。",
+      "zh": "欢迎光临。请问几位？",
       "scene": "入店・等位",
       "id": "s04-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
-      "jp": "予約しています。董です。",
-      "furigana": "よやくしています。とうです。",
-      "zh": "我有预约，我是董。",
+      "jp": "今日二名ですが、席は空いていますか。",
+      "furigana": "きょうふたりですが、せきはあいていますか。",
+      "zh": "今天两位，请问有位置吗？",
       "scene": "入店・等位",
       "id": "s04-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "予約していません。",
-      "furigana": "よやくしていません。",
-      "zh": "我没有预约。",
+      "jp": "あいにく満席でございます。",
+      "furigana": "あいにくまんせきでございます。",
+      "zh": "不巧，现在客满。",
       "scene": "入店・等位",
       "id": "s04-003",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "禁煙席をお願いします。",
-      "furigana": "きんえんせきをおねがいします。",
-      "zh": "请给我禁烟座位。",
-      "scene": "入店・等位",
-      "id": "s04-004",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
       "jp": "何分くらい待ちますか。",
       "furigana": "なんぷんくらいまちますか。",
       "zh": "大概要等几分钟？",
       "scene": "入店・等位",
+      "id": "s04-004",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "禁煙席をお願いします。",
+      "furigana": "きんえんせきをおねがいします。",
+      "zh": "请给我禁烟座位。",
+      "scene": "入店・等位",
       "id": "s04-005",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "子ども用の椅子はありますか。",
@@ -51,7 +56,8 @@
       "zh": "有儿童椅吗？",
       "scene": "入店・等位",
       "id": "s04-006",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "ベビーカーでも入れますか。",
@@ -59,287 +65,368 @@
       "zh": "推婴儿车可以进吗？",
       "scene": "入店・等位",
       "id": "s04-007",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "予約したいです。",
-      "furigana": "よやくしたいです。",
-      "zh": "我想预约。",
+      "jp": "予約しています。董です。",
+      "furigana": "よやくしています。とうです。",
+      "zh": "我有预约，我是董。",
       "scene": "预约",
       "id": "s04-008",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "21日の20時に6人でお願いします。",
-      "furigana": "21にちの20じに6にんでおねがいします。",
-      "zh": "我想预约21日20点46个人。",
+      "jp": "予約していません。",
+      "furigana": "よやくしていません。",
+      "zh": "我没有预约。",
       "scene": "预约",
       "id": "s04-009",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "予約したいんですが、できますか。",
+      "furigana": "よやくしたいんですが、できますか。",
+      "zh": "我想预约，可以吗？",
+      "scene": "预约",
+      "id": "s04-010",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "予約を変更したいです。",
       "furigana": "よやくをへんこうしたいです。",
       "zh": "我想更改预约。",
       "scene": "预约",
-      "id": "s04-010",
-      "subcategory": "sub01"
+      "id": "s04-011",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "予約をキャンセルしたいです。",
       "furigana": "よやくをキャンセルしたいです。",
       "zh": "我想取消预约。",
       "scene": "预约",
-      "id": "s04-011",
-      "subcategory": "sub02"
+      "id": "s04-012",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "英語のメニューはありますか。",
+      "furigana": "えいごのメニューはありますか。",
+      "zh": "有英文菜单吗？",
+      "scene": "点餐",
+      "id": "s04-013",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "ご注文はお決まりですか。",
+      "furigana": "ごちゅうもんはおきまりですか。",
+      "zh": "请问决定好点什么了吗？",
+      "scene": "点餐",
+      "id": "s04-014",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "注文をお願いします。",
+      "furigana": "ちゅうもんをおねがいします。",
+      "zh": "我要点餐。",
+      "scene": "点餐",
+      "id": "s04-015",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "おすすめは何ですか。",
+      "furigana": "おすすめはなんですか。",
+      "zh": "有什么推荐的吗？",
+      "scene": "点餐",
+      "id": "s04-016",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "これをください。",
       "furigana": "これをください。",
       "zh": "我要这个。",
       "scene": "点餐",
-      "id": "s04-012",
-      "subcategory": "sub02"
+      "id": "s04-017",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "おすすめは何ですか。",
-      "furigana": "おすすめはなんですか。",
-      "zh": "您推荐什么？",
+      "jp": "これと同じものをください。",
+      "furigana": "これとおなじものをください。",
+      "zh": "请给我来一份和这个一样的。",
       "scene": "点餐",
-      "id": "s04-013",
-      "subcategory": "sub02"
+      "id": "s04-018",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "ランチメニューはありますか。",
       "furigana": "ランチメニューはありますか。",
       "zh": "有午餐套餐吗？",
       "scene": "点餐",
-      "id": "s04-014",
-      "subcategory": "sub02"
+      "id": "s04-019",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "お子様メニューはありますか。",
       "furigana": "おこさまメニューはありますか。",
       "zh": "有儿童套餐吗？",
       "scene": "点餐",
-      "id": "s04-015",
-      "subcategory": "sub02"
+      "id": "s04-020",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "ネキ抜きでお願いします。",
+      "jp": "ネギ抜きでお願いします。",
       "furigana": "ねぎぬきでおねがいします。",
       "zh": "请不要放葱。",
       "scene": "点餐",
-      "id": "s04-016",
-      "subcategory": "sub02"
+      "id": "s04-021",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "辛さは控えめにしてください。",
       "furigana": "からさはひかえめにしてください。",
       "zh": "请做得不那么辣。",
       "scene": "点餐",
-      "id": "s04-017",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "お水をください。",
-      "furigana": "おみずをください。",
-      "zh": "请给我水。",
-      "scene": "点餐",
-      "id": "s04-018",
-      "subcategory": "sub02"
+      "id": "s04-022",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "QRコードから注文できますか。",
       "furigana": "QRコードからちゅうもんできますか。",
       "zh": "可以扫码点餐吗？",
       "scene": "点餐",
-      "id": "s04-019",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "モバイルオーダーはありますか。",
-      "furigana": "モバイルオーダーはありますか。",
-      "zh": "有手机点餐吗？",
-      "scene": "点餐",
-      "id": "s04-020",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "卵アレルギーがあります。",
-      "furigana": "たまごアレルギーがあります。",
-      "zh": "我对鸡蛋过敏。",
-      "scene": "过敏・饮食限制",
-      "id": "s04-021",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "唐辛子は入っていますか。",
-      "furigana": "とうがらしははいっていますか。",
-      "zh": "里面有辣椒吗？",
-      "scene": "过敏・饮食限制",
-      "id": "s04-022",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "卵アレルギーがあります。",
-      "furigana": "たまごアレルギーがあります。",
-      "zh": "我对鸡蛋过敏。",
-      "scene": "过敏・饮食限制",
       "id": "s04-023",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "以上でよろしいですか。",
+      "furigana": "いじょうでよろしいですか。",
+      "zh": "这样就可以了吗？",
+      "scene": "点餐",
+      "id": "s04-024",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "卵アレルギーがあります。",
+      "furigana": "たまごアレルギーがあります。",
+      "zh": "我对鸡蛋过敏。",
+      "scene": "过敏・饮食限制",
+      "id": "s04-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "乳製品アレルギーがあります。",
       "furigana": "にゅうせいひんアレルギーがあります。",
       "zh": "我对乳制品过敏。",
       "scene": "过敏・饮食限制",
-      "id": "s04-024",
-      "subcategory": "sub02"
+      "id": "s04-026",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "ナッツアレルギーがあります。",
       "furigana": "ナッツアレルギーがあります。",
       "zh": "我对坚果过敏。",
       "scene": "过敏・饮食限制",
-      "id": "s04-025",
-      "subcategory": "sub02"
+      "id": "s04-027",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "唐辛子は入っていますか。",
+      "furigana": "とうがらしははいっていますか。",
+      "zh": "里面有辣椒吗？",
+      "scene": "过敏・饮食限制",
+      "id": "s04-028",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "豚肉は食べられません。",
       "furigana": "ぶたにくはたべられません。",
       "zh": "我不吃猪肉。",
       "scene": "过敏・饮食限制",
-      "id": "s04-026",
-      "subcategory": "sub03"
+      "id": "s04-029",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "牛肉は食べられません。",
       "furigana": "ぎゅうにくはたべられません。",
       "zh": "我不吃牛肉。",
       "scene": "过敏・饮食限制",
-      "id": "s04-027",
-      "subcategory": "sub03"
+      "id": "s04-030",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "ベジタリアンです。",
       "furigana": "ベジタリアンです。",
       "zh": "我是素食者。",
       "scene": "过敏・饮食限制",
-      "id": "s04-028",
-      "subcategory": "sub03"
+      "id": "s04-031",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "ハラール対応していますか。",
       "furigana": "ハラールたいおうしていますか。",
       "zh": "有清真对应吗？",
       "scene": "过敏・饮食限制",
-      "id": "s04-029",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "すみません。",
-      "furigana": "すみません。",
-      "zh": "不好意思。",
-      "scene": "用餐中",
-      "id": "s04-030",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "生ビールをもう一つください。",
-      "furigana": "なまびーるをもうひとつください。",
-      "zh": "请再给我一杯啤酒。",
-      "scene": "用餐中",
-      "id": "s04-031",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "おしぼりをください。",
-      "furigana": "おしぼりをください。",
-      "zh": "请给我湿毛巾。",
-      "scene": "用餐中",
       "id": "s04-032",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "すみません、追加注文いいですか。",
+      "furigana": "すみません、ついかちゅうもんいいですか。",
+      "zh": "不好意思，可以追加点餐吗？",
+      "scene": "用餐中",
+      "id": "s04-033",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "お水をもう一杯お願いします。",
+      "furigana": "おみずをもういっぱいおねがいします。",
+      "zh": "请再给我加一杯水。",
+      "scene": "用餐中",
+      "id": "s04-034",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "お箸をください。",
+      "furigana": "おはしをください。",
+      "zh": "请给我筷子。",
+      "scene": "用餐中",
+      "id": "s04-035",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "おしぼりをいただけますか。",
+      "furigana": "おしぼりをいただけますか。",
+      "zh": "可以给我一块擦手巾吗？",
+      "scene": "用餐中",
+      "id": "s04-036",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "お会計をお願いします。",
       "furigana": "おかいけいをおねがいします。",
       "zh": "请结账。",
-      "scene": "结账",
-      "id": "s04-033",
-      "subcategory": "sub03"
+      "scene": "结账・外带",
+      "id": "s04-037",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "別々でお願いします。",
-      "furigana": "べつべつでおねがいします。",
-      "zh": "请分开结账。",
-      "scene": "结账",
-      "id": "s04-034",
-      "subcategory": "sub03"
+      "jp": "別々に払えますか。",
+      "furigana": "べつべつにはらえますか。",
+      "zh": "可以分开结账吗？",
+      "scene": "结账・外带",
+      "id": "s04-038",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "一緒でお願いします。",
       "furigana": "いっしょでおねがいします。",
       "zh": "请一起结账。",
-      "scene": "结账",
-      "id": "s04-035",
-      "subcategory": "sub03"
+      "scene": "结账・外带",
+      "id": "s04-039",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "QRコードで払えますか。",
-      "furigana": "QRコードではらえますか。",
-      "zh": "可以用QR码付款吗？",
-      "scene": "结账",
-      "id": "s04-036",
-      "subcategory": "sub04"
+      "jp": "スマホ決済は使えますか。",
+      "furigana": "スマホけっさいはつかえますか。",
+      "zh": "可以用手机支付吗？",
+      "scene": "结账・外带",
+      "id": "s04-040",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "領収書をください。",
-      "furigana": "りょうしゅうしょをください。",
+      "jp": "領収書をいただけますか。",
+      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我发票。",
-      "scene": "结账",
-      "id": "s04-037",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "使い方を教えてください。",
-      "furigana": "つかいかたをおしえてください。",
-      "zh": "请告诉我怎么用。",
-      "scene": "食券机・自助点餐",
-      "id": "s04-038",
-      "subcategory": "sub04"
+      "scene": "结账・外带",
+      "id": "s04-041",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "現金しか使えませんか。",
       "furigana": "げんきんしかつかえませんか。",
       "zh": "只能用现金吗？",
-      "scene": "食券机・自助点餐",
-      "id": "s04-039",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "これでいいですか。",
-      "furigana": "これでいいですか。",
-      "zh": "这样可以吗？",
-      "scene": "食券机・自助点餐",
-      "id": "s04-040",
-      "subcategory": "sub04"
+      "scene": "结账・外带",
+      "id": "s04-042",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "持ち帰りをお願いします。",
       "furigana": "もちかえりをおねがいします。",
       "zh": "我要外带。",
-      "scene": "外带・打包",
-      "id": "s04-041",
-      "subcategory": "sub04"
+      "scene": "结账・外带",
+      "id": "s04-043",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "残りを包んでもらえますか。",
       "furigana": "のこりをつつんでもらえますか。",
       "zh": "可以帮我把剩下的打包吗？",
-      "scene": "外带・打包",
-      "id": "s04-042",
-      "subcategory": "sub04"
+      "scene": "结账・外带",
+      "id": "s04-044",
+      "subcategory": "sub05",
+      "role": "user"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "sub01",
+      "title": "入店・预约",
+      "title_ja": "入店・予約"
+    },
+    {
+      "id": "sub02",
+      "title": "点餐",
+      "title_ja": "注文"
+    },
+    {
+      "id": "sub03",
+      "title": "过敏・饮食限制",
+      "title_ja": "アレルギー・食事制限"
+    },
+    {
+      "id": "sub04",
+      "title": "用餐中",
+      "title_ja": "食事中"
+    },
+    {
+      "id": "sub05",
+      "title": "结账・外带",
+      "title_ja": "会計・持ち帰り"
     }
   ]
 }

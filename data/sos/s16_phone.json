@@ -8,170 +8,277 @@
     {
       "jp": "はい、董です。",
       "furigana": "はい、とうです。",
-      "zh": "您好，我是董。",
+      "zh": "喂，我是董。",
       "scene": "接电话",
       "id": "s16-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "もしもし、聞こえますか。",
+      "furigana": "もしもし、きこえますか。",
+      "zh": "喂，听得到吗？",
+      "scene": "接电话",
+      "id": "s16-002",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "今、少しよろしいですか。",
       "furigana": "いま、すこしよろしいですか。",
       "zh": "现在方便说话吗？",
       "scene": "接电话",
-      "id": "s16-002",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "聞こえますか。",
-      "furigana": "きこえますか。",
-      "zh": "能听到吗？",
-      "scene": "接电话",
       "id": "s16-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "電波が悪いです。",
-      "furigana": "でんぱがわるいです。",
-      "zh": "信号不好。",
+      "jp": "主人に代わります。少々お待ちください。",
+      "furigana": "しゅじんにかわります。しょうしょうおまちください。",
+      "zh": "我让丈夫接电话，请稍等。",
       "scene": "接电话",
       "id": "s16-004",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "すみません、もう一度お願いします。",
-      "furigana": "すみません、もういちどおねがいします。",
-      "zh": "不好意思，请再说一次。",
-      "scene": "听不懂时",
-      "id": "s16-005",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "ゆっくり話してもらえますか。",
-      "furigana": "ゆっくりはなしてもらえますか。",
-      "zh": "可以说慢一点吗？",
-      "scene": "听不懂时",
-      "id": "s16-006",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "日本語があまりわかりません。",
-      "furigana": "にほんごがあまりわかりません。",
-      "zh": "我日语不太好。",
-      "scene": "听不懂时",
-      "id": "s16-007",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "折り返しかけ直してもいいですか。",
       "furigana": "おりかえしかけなおしてもいいですか。",
       "zh": "可以稍后回电吗？",
+      "scene": "接电话",
+      "id": "s16-005",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "日本語が上手ではないので、ゆっくりお願いします。",
+      "furigana": "にほんごがじょうずではないので、ゆっくりおねがいします。",
+      "zh": "我日语不太好，请说慢一点。",
+      "scene": "听不懂时",
+      "id": "s16-006",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "すみません、電波が悪くて聞こえにくいんですが。",
+      "furigana": "すみません、でんぱがわるくてきこえにくいんですが。",
+      "zh": "不好意思，信号不好，听不太清楚。",
+      "scene": "听不懂时",
+      "id": "s16-007",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "もう一度、おっしゃっていただけますか。",
+      "furigana": "もういちど、おっしゃっていただけますか。",
+      "zh": "能请您再说一遍吗？",
       "scene": "听不懂时",
       "id": "s16-008",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "もう少しゆっくり話していただけますか。",
+      "furigana": "もうすこしゆっくりはなしていただけますか。",
+      "zh": "能请您稍微说慢一点吗？",
+      "scene": "听不懂时",
+      "id": "s16-009",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "漢字でどのように書きますか。",
+      "furigana": "かんじでどのようにかきますか。",
+      "zh": "请问用汉字怎么写？",
+      "scene": "听不懂时",
+      "id": "s16-010",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "メモを取るので、少々お待ちください。",
+      "furigana": "メモをとるので、しょうしょうおまちください。",
+      "zh": "我要记一下笔记，请稍等。",
+      "scene": "听不懂时",
+      "id": "s16-011",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "LINEで送ってもらえますか。",
       "furigana": "LINEでおくってもらえますか。",
       "zh": "可以发LINE给我吗？",
       "scene": "听不懂时",
-      "id": "s16-009",
-      "subcategory": "sub02"
+      "id": "s16-012",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "メールで送ってもらえますか。",
       "furigana": "メールでおくってもらえますか。",
       "zh": "可以发邮件给我吗？",
       "scene": "听不懂时",
-      "id": "s16-010",
-      "subcategory": "sub02"
+      "id": "s16-013",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "お忙しいところ、恐れ入ります。",
+      "furigana": "おいそがしいところ、おそれいります。",
+      "zh": "打扰您百忙之中接听，真不好意思。",
+      "scene": "打电话・预约",
+      "id": "s16-014",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "カットの予約をしたいです。",
       "furigana": "かっとのよやくをしたいです。",
       "zh": "我想预约剪头发。",
       "scene": "打电话・预约",
-      "id": "s16-011",
-      "subcategory": "sub02"
+      "id": "s16-015",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "明日、二名で予約したいんですが、できますか。",
+      "furigana": "あした、ふためいでよやくしたいんですが、できますか。",
+      "zh": "我想预约明天两个人，可以吗？",
+      "scene": "打电话・预约",
+      "id": "s16-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "来週の火曜日の十時に、予約をお願いできますか。",
+      "furigana": "らいしゅうのかようびのじゅうじに、よやくをおねがいできますか。",
+      "zh": "可以帮我预约下周二十点吗？",
+      "scene": "打电话・预约",
+      "id": "s16-017",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "22日の15時は空いていますか。",
       "furigana": "22にちの15じはあいていますか。",
       "zh": "22日15点有空档吗？",
       "scene": "打电话・预约",
-      "id": "s16-012",
-      "subcategory": "sub02"
+      "id": "s16-018",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "董と申します。",
       "furigana": "とうともうします。",
       "zh": "我姓董。",
       "scene": "打电话・预约",
-      "id": "s16-013",
-      "subcategory": "sub02"
+      "id": "s16-019",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "口座の件で、お伺いしたいことがあります。",
+      "furigana": "こうざのけんで、おうかがいしたいことがあります。",
+      "zh": "关于账户的事，我有事想咨询一下。",
+      "scene": "打电话・预约",
+      "id": "s16-020",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "確認のためにお電話しました。",
       "furigana": "かくにんのためにおでんわしました。",
       "zh": "我打电话来确认一下。",
       "scene": "打电话・预约",
-      "id": "s16-014",
-      "subcategory": "sub02"
+      "id": "s16-021",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "キャンセルしたいです。",
       "furigana": "キャンセルしたいです。",
       "zh": "我想取消。",
       "scene": "打电话・预约",
-      "id": "s16-015",
-      "subcategory": "sub02"
+      "id": "s16-022",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "変更したいです。",
       "furigana": "へんこうしたいです。",
       "zh": "我想更改。",
       "scene": "打电话・预约",
-      "id": "s16-016",
-      "subcategory": "sub03"
+      "id": "s16-023",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "柳さんはいらっしゃいますか。",
       "furigana": "やなぎさんはいらっしゃいますか。",
       "zh": "柳先生/女士在吗？",
       "scene": "留言",
-      "id": "s16-017",
-      "subcategory": "sub03"
+      "id": "s16-024",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "伝言をお願いできますか。",
       "furigana": "でんごんをおねがいできますか。",
       "zh": "可以帮我留言吗？",
       "scene": "留言",
-      "id": "s16-018",
-      "subcategory": "sub03"
+      "id": "s16-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "王から電話があったとお伝えください。",
       "furigana": "おうからでんわがあったとおつたえください。",
       "zh": "请转告王来电话了。",
       "scene": "留言",
-      "id": "s16-019",
-      "subcategory": "sub03"
+      "id": "s16-026",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "折り返しお電話をお願いします。",
       "furigana": "おりかえしおでんわをおねがいします。",
       "zh": "请回电给我。",
       "scene": "留言",
-      "id": "s16-020",
-      "subcategory": "sub03"
+      "id": "s16-027",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "窓口の方と話したいです。",
       "furigana": "まどぐちのかたとはなしたいです。",
       "zh": "我想和真人通话。",
-      "scene": "自动语音应对",
-      "id": "s16-021",
-      "subcategory": "sub03"
+      "scene": "自动语音",
+      "id": "s16-028",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "わかりました。ありがとうございます。失礼します。",
+      "furigana": "わかりました。ありがとうございます。しつれいします。",
+      "zh": "我明白了，谢谢您，再见。",
+      "scene": "挂电话",
+      "id": "s16-029",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "それでは、よろしくお願いいたします。失礼いたします。",
+      "furigana": "それでは、よろしくおねがいいたします。しつれいいたします。",
+      "zh": "那么，就拜托您了，告辞了。",
+      "scene": "挂电话",
+      "id": "s16-030",
+      "subcategory": "sub03",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "接电话・听不懂", "title_ja": "電話を受ける・聞き取れない" },
+    { "id": "sub02", "title": "打电话・预约", "title_ja": "電話をかける・予約" },
+    { "id": "sub03", "title": "留言・挂电话", "title_ja": "伝言・電話を切る" }
   ]
 }

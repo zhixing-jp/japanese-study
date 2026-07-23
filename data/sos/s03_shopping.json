@@ -6,52 +6,58 @@
   "description": "超市、便利店、药妆店——无论在哪里买东西，这些句子都用得到。",
   "items": [
     {
-      "jp": "すみません、洗顔ふぉーむはどこですか。",
-      "furigana": "すみません、せんがんふぉーむはどこですか。",
-      "zh": "不好意思，洗面奶在哪里？",
+      "jp": "すみません、この商品はどこにありますか。",
+      "furigana": "すみません、このしょうひんはどこにありますか。",
+      "zh": "不好意思，这款商品在哪里？（出示手机图片）",
       "scene": "找商品",
       "id": "s03-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "ラップはありますか。",
-      "furigana": "らっぷはありますか。",
-      "zh": "有保鲜膜吗？",
+      "jp": "これの違うサイズはありますか。",
+      "furigana": "これのちがうサイズはありますか。",
+      "zh": "这个有别的尺码吗？",
       "scene": "找商品",
       "id": "s03-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "別のサイズはありますか。",
-      "furigana": "べつのサイズはありますか。",
-      "zh": "有其他尺码吗？",
+      "jp": "これの違う色はありますか。",
+      "furigana": "これのちがういろはありますか。",
+      "zh": "这个有别的颜色吗？",
       "scene": "找商品",
       "id": "s03-003",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "別の色はありますか。",
-      "furigana": "べつのいろはありますか。",
-      "zh": "有其他颜色吗？",
-      "scene": "找商品",
-      "id": "s03-004",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "在庫はありますか。",
       "furigana": "ざいこはありますか。",
       "zh": "有库存吗？",
       "scene": "找商品",
-      "id": "s03-005",
-      "subcategory": "sub01"
+      "id": "s03-004",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "賞味期限はいつですか。",
-      "furigana": "しょうみきげんはいつですか。",
-      "zh": "保质期到什么时候？",
+      "jp": "おすすめは何ですか。",
+      "furigana": "おすすめはなんですか。",
+      "zh": "有什么推荐的吗？",
+      "scene": "找商品",
+      "id": "s03-005",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "少々お待ちください。確認してきます。",
+      "furigana": "しょうしょうおまちください。かくにんしてきます。",
+      "zh": "请稍等，我去确认一下。",
       "scene": "找商品",
       "id": "s03-006",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
       "jp": "試着してもいいですか。",
@@ -59,207 +65,328 @@
       "zh": "可以试穿吗？",
       "scene": "试穿・试用",
       "id": "s03-007",
-      "subcategory": "sub01"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "試してもいいですか。",
-      "furigana": "ためしてもいいですか。",
-      "zh": "可以试用吗？",
+      "jp": "試着室はどこですか。",
+      "furigana": "しちゃくしつはどこですか。",
+      "zh": "试衣间在哪里？",
       "scene": "试穿・试用",
       "id": "s03-008",
-      "subcategory": "sub01"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "これはいくらですか。",
-      "furigana": "これはいくらですか。",
-      "zh": "这个多少钱？",
-      "scene": "问价格",
+      "jp": "これ、試してもいいですか。",
+      "furigana": "これ、ためしてもいいですか。",
+      "zh": "这个可以试用吗？",
+      "scene": "试穿・试用",
       "id": "s03-009",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "全部でいくらですか。",
-      "furigana": "ぜんぶでいくらですか。",
-      "zh": "一共多少钱？",
-      "scene": "问价格",
+      "jp": "サイズはいかがですか。",
+      "furigana": "サイズはいかがですか。",
+      "zh": "尺码合适吗？",
+      "scene": "试穿・试用",
       "id": "s03-010",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "staff"
     },
     {
-      "jp": "これをください。",
-      "furigana": "これをください。",
-      "zh": "我要这个。",
-      "scene": "结账・支付",
+      "jp": "免税手続きはできますか。",
+      "furigana": "めんぜいてつづきはできますか。",
+      "zh": "可以办理免税吗？",
+      "scene": "免税・优惠・包装",
       "id": "s03-011",
-      "subcategory": "sub02"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "袋はいりません。",
-      "furigana": "ふくろはいりません。",
-      "zh": "不需要袋子。",
-      "scene": "结账・支付",
+      "jp": "パスポートを持っています。",
+      "furigana": "パスポートをもっています。",
+      "zh": "我带了护照。",
+      "scene": "免税・优惠・包装",
       "id": "s03-012",
-      "subcategory": "sub02"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "袋をください。",
-      "furigana": "ふくろをください。",
-      "zh": "请给我袋子。",
-      "scene": "结账・支付",
+      "jp": "クーポンは使えますか。",
+      "furigana": "クーポンはつかえますか。",
+      "zh": "可以使用优惠券吗？",
+      "scene": "免税・优惠・包装",
       "id": "s03-013",
-      "subcategory": "sub02"
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "プレゼント用です。包装をお願いできますか。",
+      "furigana": "プレゼントようです。ほうそうをおねがいできますか。",
+      "zh": "是送礼用的，可以帮忙包装吗？",
+      "scene": "免税・优惠・包装",
+      "id": "s03-014",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "ご自宅用ですか、プレゼント用ですか。",
+      "furigana": "ごじたくようですか、プレゼントようですか。",
+      "zh": "是自己用还是送礼用？",
+      "scene": "免税・优惠・包装",
+      "id": "s03-015",
+      "subcategory": "sub03",
+      "role": "staff"
+    },
+    {
+      "jp": "ポイントカードはお持ちですか。",
+      "furigana": "ポイントカードはおもちですか。",
+      "zh": "您有积分卡吗？",
+      "scene": "结账・支付",
+      "id": "s03-016",
+      "subcategory": "sub04",
+      "role": "staff"
     },
     {
       "jp": "ポイントカードがあります。",
       "furigana": "ポイントカードがあります。",
       "zh": "我有积分卡。",
       "scene": "结账・支付",
-      "id": "s03-014",
-      "subcategory": "sub02"
+      "id": "s03-017",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "ポイントカードはありません。",
       "furigana": "ポイントカードはありません。",
       "zh": "我没有积分卡。",
       "scene": "结账・支付",
-      "id": "s03-015",
-      "subcategory": "sub02"
+      "id": "s03-018",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "クレジットカードは使えますか。",
-      "furigana": "クレジットカードはつかえますか。",
-      "zh": "可以刷信用卡吗？",
+      "jp": "ポイントカードを作りたいです。",
+      "furigana": "ポイントカードをつくりたいです。",
+      "zh": "我想办积分卡。",
       "scene": "结账・支付",
-      "id": "s03-016",
-      "subcategory": "sub02"
+      "id": "s03-019",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "QRコードで払えますか。",
-      "furigana": "QRコードではらえますか。",
-      "zh": "可以用QR码付款吗？",
+      "jp": "袋はご利用ですか。",
+      "furigana": "ふくろはごりようですか。",
+      "zh": "需要袋子吗？",
       "scene": "结账・支付",
-      "id": "s03-017",
-      "subcategory": "sub02"
+      "id": "s03-020",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "袋は一枚お願いします。",
+      "furigana": "ふくろはいちまいおねがいします。",
+      "zh": "请给我一个袋子。",
+      "scene": "结账・支付",
+      "id": "s03-021",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "袋はいりません。",
+      "furigana": "ふくろはいりません。",
+      "zh": "不需要袋子。",
+      "scene": "结账・支付",
+      "id": "s03-022",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "袋は有料ですか。",
+      "furigana": "ふくろはゆうりょうですか。",
+      "zh": "袋子要收费吗？",
+      "scene": "结账・支付",
+      "id": "s03-023",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "お支払いはどのようになさいますか。",
+      "furigana": "おしはらいはどのようになさいますか。",
+      "zh": "请问怎么付款？",
+      "scene": "结账・支付",
+      "id": "s03-024",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "カードでお願いします。",
+      "furigana": "カードでおねがいします。",
+      "zh": "请刷卡。",
+      "scene": "结账・支付",
+      "id": "s03-025",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "スマホ決済は使えますか。",
+      "furigana": "スマホけっさいはつかえますか。",
+      "zh": "可以用手机支付吗？",
+      "scene": "结账・支付",
+      "id": "s03-026",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "タッチ決済できますか。",
       "furigana": "タッチけっさいできますか。",
       "zh": "可以用感应支付吗？",
       "scene": "结账・支付",
-      "id": "s03-018",
-      "subcategory": "sub02"
+      "id": "s03-027",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "現金で払います。",
       "furigana": "げんきんではらいます。",
       "zh": "我用现金付款。",
       "scene": "结账・支付",
-      "id": "s03-019",
-      "subcategory": "sub02"
+      "id": "s03-028",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "カードをこちらにお入れください。",
+      "furigana": "カードをこちらにおいれください。",
+      "zh": "请把卡插在这里。",
+      "scene": "结账・支付",
+      "id": "s03-029",
+      "subcategory": "sub04",
+      "role": "staff"
     },
     {
       "jp": "セルフレジはどこですか。",
       "furigana": "セルフレジはどこですか。",
       "zh": "自助收银台在哪里？",
       "scene": "结账・支付",
-      "id": "s03-020",
-      "subcategory": "sub02"
+      "id": "s03-030",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "レシートをください。",
-      "furigana": "レシートをください。",
-      "zh": "请给我收据。",
+      "jp": "全部でいくらですか。",
+      "furigana": "ぜんぶでいくらですか。",
+      "zh": "一共多少钱？",
       "scene": "结账・支付",
-      "id": "s03-021",
-      "subcategory": "sub03"
+      "id": "s03-031",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "領収書をお願いします。",
-      "furigana": "りょうしゅうしょをおねがいします。",
+      "jp": "領収書をいただけますか。",
+      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我发票。",
       "scene": "结账・支付",
-      "id": "s03-022",
-      "subcategory": "sub03"
+      "id": "s03-032",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "返品したいです。",
-      "furigana": "へんぴんしたいです。",
-      "zh": "我想退货。",
+      "jp": "返品できますか。レシートはこれです。",
+      "furigana": "へんぴんできますか。レシートはこれです。",
+      "zh": "可以退货吗？这是收据。",
       "scene": "退换货",
-      "id": "s03-023",
-      "subcategory": "sub03"
+      "id": "s03-033",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "交換したいです。",
-      "furigana": "こうかんしたいです。",
-      "zh": "我想换货。",
+      "jp": "サイズを交換したいんですが。",
+      "furigana": "サイズをこうかんしたいんですが。",
+      "zh": "我想换个尺码。",
       "scene": "退换货",
-      "id": "s03-024",
-      "subcategory": "sub03"
+      "id": "s03-034",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "壊れていました。",
       "furigana": "こわれていました。",
       "zh": "买回来是坏的。",
       "scene": "退换货",
-      "id": "s03-025",
-      "subcategory": "sub03"
+      "id": "s03-035",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "サイズが合いませんでした。",
-      "furigana": "サイズがあいませんでした。",
-      "zh": "尺码不合适。",
+      "jp": "動かないんですが。",
+      "furigana": "うごかないんですが。",
+      "zh": "这个没办法用。",
       "scene": "退换货",
-      "id": "s03-026",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "レシートがあります。",
-      "furigana": "レシートがあります。",
-      "zh": "我有收据。",
-      "scene": "退换货",
-      "id": "s03-027",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "おつりが出ません。",
-      "furigana": "おつりがでません。",
-      "zh": "找零出不来。",
-      "scene": "自动售货机",
-      "id": "s03-028",
-      "subcategory": "sub04"
-    },
-    {
-      "jp": "商品が出てきません。",
-      "furigana": "しょうひんがでてきません。",
-      "zh": "商品没有出来。",
-      "scene": "自动售货机",
-      "id": "s03-029",
-      "subcategory": "sub04"
+      "id": "s03-036",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "コインロッカーはどこですか。",
       "furigana": "コインロッカーはどこですか。",
       "zh": "投币储物柜在哪里？",
-      "scene": "投币储物柜",
-      "id": "s03-030",
-      "subcategory": "sub04"
+      "scene": "储物柜",
+      "id": "s03-037",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "使い方を教えてください。",
       "furigana": "つかいかたをおしえてください。",
       "zh": "请告诉我怎么用。",
-      "scene": "投币储物柜",
-      "id": "s03-031",
-      "subcategory": "sub04"
+      "scene": "储物柜",
+      "id": "s03-038",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "鍵をなくしました。",
       "furigana": "かぎをなくしました。",
       "zh": "我把钥匙弄丢了。",
-      "scene": "投币储物柜",
-      "id": "s03-032",
-      "subcategory": "sub04"
+      "scene": "储物柜",
+      "id": "s03-039",
+      "subcategory": "sub06",
+      "role": "user"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "sub01",
+      "title": "找商品",
+      "title_ja": "商品を探す"
+    },
+    {
+      "id": "sub02",
+      "title": "试穿・试用",
+      "title_ja": "試着・試用"
+    },
+    {
+      "id": "sub03",
+      "title": "免税・优惠・包装",
+      "title_ja": "免税・割引・包装"
+    },
+    {
+      "id": "sub04",
+      "title": "结账・支付",
+      "title_ja": "会計・支払い"
+    },
+    {
+      "id": "sub05",
+      "title": "退换货",
+      "title_ja": "返品・交換"
+    },
+    {
+      "id": "sub06",
+      "title": "储物柜",
+      "title_ja": "コインロッカー"
     }
   ]
 }

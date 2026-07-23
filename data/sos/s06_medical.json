@@ -11,7 +11,8 @@
       "zh": "我想预约。",
       "scene": "预约",
       "id": "s06-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "○○科を受診したいです。",
@@ -19,23 +20,26 @@
       "zh": "我想看○○科。",
       "scene": "预约",
       "id": "s06-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "初めてです。",
-      "furigana": "はじめてです。",
-      "zh": "我是第一次来。",
+      "jp": "ネットで予約できますか。",
+      "furigana": "ネットでよやくできますか。",
+      "zh": "可以网上预约吗？",
       "scene": "预约",
       "id": "s06-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "何日の何時が空いていますか。",
-      "furigana": "なんにちのなんじがあいていますか。",
-      "zh": "哪天几点有空档？",
+      "jp": "今日、診てもらえますか。",
+      "furigana": "きょう、みてもらえますか。",
+      "zh": "今天可以看诊吗？",
       "scene": "预约",
       "id": "s06-004",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "予約を変更したいです。",
@@ -43,7 +47,8 @@
       "zh": "我想更改预约时间。",
       "scene": "预约",
       "id": "s06-005",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "予約をキャンセルしたいです。",
@@ -51,439 +56,637 @@
       "zh": "我想取消预约。",
       "scene": "预约",
       "id": "s06-006",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "保険証（またはマイナンバーカード）をお願いします。",
+      "furigana": "ほけんしょう（またはマイナンバーカード）をおねがいします。",
+      "zh": "请出示保险证（或My Number卡）。",
+      "scene": "挂号・初诊",
+      "id": "s06-007",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "初めて来ました。",
+      "furigana": "はじめてきました。",
+      "zh": "我是第一次来。",
+      "scene": "挂号・初诊",
+      "id": "s06-008",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "予約しています。李と申します。",
       "furigana": "よやくしています。りともうします。",
       "zh": "我有预约，我姓李。",
       "scene": "挂号・初诊",
-      "id": "s06-007",
-      "subcategory": "sub01"
+      "id": "s06-009",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "保険証はこちらです。",
       "furigana": "ほけんしょうはこちらです。",
       "zh": "这是我的医保卡。",
       "scene": "挂号・初诊",
-      "id": "s06-008",
-      "subcategory": "sub02"
+      "id": "s06-010",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "マイナ保険証です。",
       "furigana": "マイナほけんしょうです。",
       "zh": "这是我的My Number医保卡。",
       "scene": "挂号・初诊",
-      "id": "s06-009",
-      "subcategory": "sub02"
+      "id": "s06-011",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "保険証がありません。",
       "furigana": "ほけんしょうがありません。",
       "zh": "我没有医保卡。",
       "scene": "挂号・初诊",
-      "id": "s06-010",
-      "subcategory": "sub02"
+      "id": "s06-012",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "問診票をご記入ください。",
+      "furigana": "もんしんひょうをごきにゅうください。",
+      "zh": "请填写问诊表。",
+      "scene": "挂号・初诊",
+      "id": "s06-013",
+      "subcategory": "sub02",
+      "role": "staff"
     },
     {
       "jp": "問診票の書き方を教えてください。",
       "furigana": "もんしんひょうのかきかたをおしえてください。",
       "zh": "请告诉我问诊表怎么填。",
       "scene": "挂号・初诊",
-      "id": "s06-011",
-      "subcategory": "sub02"
+      "id": "s06-014",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "名前が呼ばれるまで、待合室でお待ちください。",
+      "furigana": "なまえがよばれるまで、まちあいしつでおまちください。",
+      "zh": "叫到名字前，请在候诊室等待。",
+      "scene": "挂号・初诊",
+      "id": "s06-015",
+      "subcategory": "sub02",
+      "role": "staff"
     },
     {
       "jp": "中国語の通訳はいますか。",
       "furigana": "ちゅうごくごのつうやくはいますか。",
       "zh": "有中文翻译吗？",
       "scene": "挂号・初诊",
-      "id": "s06-012",
-      "subcategory": "sub02"
+      "id": "s06-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "日本語があまり話せません。英語でお願いできますか。",
+      "furigana": "にほんごがあまりはなせません。えいごでおねがいできますか。",
+      "zh": "我日语不太好，可以用英语吗？",
+      "scene": "挂号・初诊",
+      "id": "s06-017",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "どうされましたか。",
+      "furigana": "どうされましたか。",
+      "zh": "您哪里不舒服？",
+      "scene": "说明症状",
+      "id": "s06-018",
+      "subcategory": "sub03",
+      "role": "staff"
     },
     {
       "jp": "ここが痛いです。",
       "furigana": "ここがいたいです。",
       "zh": "这里疼。",
       "scene": "说明症状",
-      "id": "s06-013",
-      "subcategory": "sub03"
+      "id": "s06-019",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "頭が痛いです。",
       "furigana": "あたまがいたいです。",
       "zh": "头痛。",
       "scene": "说明症状",
-      "id": "s06-014",
-      "subcategory": "sub03"
+      "id": "s06-020",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "お腹が痛いです。",
       "furigana": "おなかがいたいです。",
       "zh": "肚子疼。",
       "scene": "说明症状",
-      "id": "s06-015",
-      "subcategory": "sub03"
+      "id": "s06-021",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "胸が痛いです。",
       "furigana": "むねがいたいです。",
       "zh": "胸口疼。",
       "scene": "说明症状",
-      "id": "s06-016",
-      "subcategory": "sub03"
+      "id": "s06-022",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "背中が痛いです。",
       "furigana": "せなかがいたいです。",
       "zh": "背部疼。",
       "scene": "说明症状",
-      "id": "s06-017",
-      "subcategory": "sub03"
+      "id": "s06-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "喉が痛いです。",
       "furigana": "のどがいたいです。",
       "zh": "喉咙痛。",
       "scene": "说明症状",
-      "id": "s06-018",
-      "subcategory": "sub03"
+      "id": "s06-024",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "熱があります。",
       "furigana": "ねつがあります。",
       "zh": "发烧了。",
       "scene": "说明症状",
-      "id": "s06-019",
-      "subcategory": "sub03"
+      "id": "s06-025",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "熱が38度あります。",
+      "furigana": "ねつが38どあります。",
+      "zh": "发烧38度。",
+      "scene": "说明症状",
+      "id": "s06-026",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "咳が止まりません。",
       "furigana": "せきがとまりません。",
       "zh": "咳嗽不停。",
       "scene": "说明症状",
-      "id": "s06-020",
-      "subcategory": "sub03"
+      "id": "s06-027",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "鼻水が出ます。",
       "furigana": "はなみずがでます。",
       "zh": "流鼻涕。",
       "scene": "说明症状",
-      "id": "s06-021",
-      "subcategory": "sub03"
+      "id": "s06-028",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "吐き気がします。",
       "furigana": "はきけがします。",
       "zh": "感到恶心。",
       "scene": "说明症状",
-      "id": "s06-022",
-      "subcategory": "sub03"
+      "id": "s06-029",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "嘔吐しました。",
       "furigana": "おうとしました。",
       "zh": "呕吐了。",
       "scene": "说明症状",
-      "id": "s06-023",
-      "subcategory": "sub03"
+      "id": "s06-030",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "下痢をしています。",
       "furigana": "げりをしています。",
       "zh": "拉肚子。",
       "scene": "说明症状",
-      "id": "s06-024",
-      "subcategory": "sub03"
+      "id": "s06-031",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "めまいがします。",
       "furigana": "めまいがします。",
       "zh": "头晕。",
       "scene": "说明症状",
-      "id": "s06-025",
-      "subcategory": "sub03"
+      "id": "s06-032",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "動悸がします。",
       "furigana": "どうきがします。",
       "zh": "心跳加速。",
       "scene": "说明症状",
-      "id": "s06-026",
-      "subcategory": "sub03"
+      "id": "s06-033",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "息が苦しいです。",
       "furigana": "いきがくるしいです。",
       "zh": "呼吸困难。",
       "scene": "说明症状",
-      "id": "s06-027",
-      "subcategory": "sub03"
+      "id": "s06-034",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "○日前からです。",
-      "furigana": "○にちまえからです。",
-      "zh": "从○天前开始。",
+      "jp": "しびれています。",
+      "furigana": "しびれています。",
+      "zh": "麻木了。",
       "scene": "说明症状",
-      "id": "s06-028",
-      "subcategory": "sub03"
+      "id": "s06-035",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "むくんでいます。",
+      "furigana": "むくんでいます。",
+      "zh": "浮肿了。",
+      "scene": "说明症状",
+      "id": "s06-036",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "血が出ています。",
+      "furigana": "ちがでています。",
+      "zh": "在出血。",
+      "scene": "说明症状",
+      "id": "s06-037",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "昨日の夜から具合が悪いです。",
+      "furigana": "きのうのよるからぐあいがわるいです。",
+      "zh": "从昨天晚上开始身体不舒服。",
+      "scene": "说明症状",
+      "id": "s06-038",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "だんだん悪くなっています。",
       "furigana": "だんだんわるくなっています。",
       "zh": "越来越严重。",
       "scene": "说明症状",
-      "id": "s06-029",
-      "subcategory": "sub03"
+      "id": "s06-039",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "アレルギーがあります。",
-      "furigana": "アレルギーがあります。",
-      "zh": "我有过敏。",
+      "jp": "薬のアレルギーがあります。",
+      "furigana": "くすりのアレルギーがあります。",
+      "zh": "我对药物过敏。",
       "scene": "说明症状",
-      "id": "s06-030",
-      "subcategory": "sub03"
+      "id": "s06-040",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "薬を飲んでいます。",
       "furigana": "くすりをのんでいます。",
       "zh": "我正在吃药。",
       "scene": "说明症状",
-      "id": "s06-031",
-      "subcategory": "sub03"
+      "id": "s06-041",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "持病があります。",
       "furigana": "じびょうがあります。",
       "zh": "我有慢性病。",
       "scene": "说明症状",
-      "id": "s06-032",
-      "subcategory": "sub03"
+      "id": "s06-042",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "妊娠しているかもしれません。",
       "furigana": "にんしんしているかもしれません。",
       "zh": "我可能怀孕了。",
       "scene": "说明症状",
-      "id": "s06-033",
-      "subcategory": "sub03"
+      "id": "s06-043",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "いつからですか。",
+      "furigana": "いつからですか。",
+      "zh": "是从什么时候开始的？",
+      "scene": "问诊中・检查",
+      "id": "s06-044",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "服薬している薬はありますか。",
+      "furigana": "ふくやくしているくすりはありますか。",
+      "zh": "现在在吃什么药吗？",
+      "scene": "问诊中・检查",
+      "id": "s06-045",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "こちらに横になってください。",
+      "furigana": "こちらによこになってください。",
+      "zh": "请躺到这边来。",
+      "scene": "问诊中・检查",
+      "id": "s06-046",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "口を開けてください。",
+      "furigana": "くちをあけてください。",
+      "zh": "请张开嘴。",
+      "scene": "问诊中・检查",
+      "id": "s06-047",
+      "subcategory": "sub04",
+      "role": "staff"
     },
     {
       "jp": "検査が必要ですか。",
       "furigana": "けんさがひつようですか。",
       "zh": "需要做检查吗？",
       "scene": "问诊中・检查",
-      "id": "s06-034",
-      "subcategory": "sub04"
+      "id": "s06-048",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "入院が必要ですか。",
       "furigana": "にゅういんがひつようですか。",
       "zh": "需要住院吗？",
       "scene": "问诊中・检查",
-      "id": "s06-035",
-      "subcategory": "sub04"
+      "id": "s06-049",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "どのくらいで治りますか。",
       "furigana": "どのくらいでなおりますか。",
       "zh": "大概多久能好？",
       "scene": "问诊中・检查",
-      "id": "s06-036",
-      "subcategory": "sub04"
+      "id": "s06-050",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "仕事はできますか。",
-      "furigana": "しごとはできますか。",
-      "zh": "可以上班吗？",
+      "jp": "安静にしていたほうがいいですか。",
+      "furigana": "あんせいにしていたほうがいいですか。",
+      "zh": "应该静养吗？",
       "scene": "问诊中・检查",
-      "id": "s06-037",
-      "subcategory": "sub04"
+      "id": "s06-051",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "次はいつ来ればいいですか。",
       "furigana": "つぎはいつくればいいですか。",
       "zh": "下次什么时候来？",
       "scene": "问诊中・检查",
-      "id": "s06-038",
-      "subcategory": "sub04"
+      "id": "s06-052",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "診断書をお願いできますか。",
       "furigana": "しんだんしょをおねがいできますか。",
       "zh": "可以开诊断书吗？",
       "scene": "问诊中・检查",
-      "id": "s06-039",
-      "subcategory": "sub04"
+      "id": "s06-053",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "保険は使えますか。",
-      "furigana": "ほけんはつかえますか。",
-      "zh": "可以用医保吗？",
+      "jp": "紹介状をお願いできますか。",
+      "furigana": "しょうかいじょうをおねがいできますか。",
+      "zh": "可以开转院介绍信吗？",
+      "scene": "问诊中・检查",
+      "id": "s06-054",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "クレジットカードは使えますか。",
+      "furigana": "クレジットカードはつかえますか。",
+      "zh": "可以刷信用卡吗？",
       "scene": "付款・结账",
-      "id": "s06-040",
-      "subcategory": "sub04"
+      "id": "s06-055",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "領収書をください。",
-      "furigana": "りょうしゅうしょをください。",
+      "jp": "領収書をいただけますか。",
+      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我收据。",
       "scene": "付款・结账",
-      "id": "s06-041",
-      "subcategory": "sub04"
+      "id": "s06-056",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "薬の飲み方を教えてください。",
-      "furigana": "くすりののみかたをおしえてください。",
-      "zh": "请告诉我怎么服药。",
-      "scene": "取药・问用法",
-      "id": "s06-042",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "1日何回ですか。",
-      "furigana": "いちにちなんかいですか。",
-      "zh": "一天几次？",
-      "scene": "取药・问用法",
-      "id": "s06-043",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "食前ですか、食後ですか。",
-      "furigana": "しょくぜんですか、しょくごですか。",
-      "zh": "饭前还是饭后吃？",
-      "scene": "取药・问用法",
-      "id": "s06-044",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "副作用はありますか。",
-      "furigana": "ふくさようはありますか。",
-      "zh": "有副作用吗？",
-      "scene": "取药・问用法",
-      "id": "s06-045",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "子供でも飲めますか。",
-      "furigana": "こどもでものめますか。",
-      "zh": "小孩也可以吃吗？",
-      "scene": "取药・问用法",
-      "id": "s06-046",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "妊娠中でも大丈夫ですか。",
-      "furigana": "にんしんちゅうでもだいじょうぶですか。",
-      "zh": "孕期也可以用吗？",
-      "scene": "取药・问用法",
-      "id": "s06-047",
-      "subcategory": "sub05"
+      "jp": "処方箋はどちらの薬局にお持ちですか。",
+      "furigana": "しょほうせんはどちらのやっきょくにおもちですか。",
+      "zh": "处方笺要拿到哪家药局去？",
+      "scene": "取药・药局",
+      "id": "s06-057",
+      "subcategory": "sub05",
+      "role": "staff"
     },
     {
       "jp": "この処方箋をお願いします。",
       "furigana": "このしょほうせんをおねがいします。",
       "zh": "请帮我配这个处方。",
-      "scene": "药局",
-      "id": "s06-048",
-      "subcategory": "sub05"
+      "scene": "取药・药局",
+      "id": "s06-058",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
-      "jp": "どのくらい待ちますか。",
-      "furigana": "どのくらいまちますか。",
-      "zh": "大概要等多久？",
-      "scene": "药局",
-      "id": "s06-049",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "ジェネリックにできますか。",
-      "furigana": "ジェネリックにできますか。",
-      "zh": "可以换成仿制药吗？",
-      "scene": "药局",
-      "id": "s06-050",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "風邪薬はどこですか。",
-      "furigana": "かぜぐすりはどこですか。",
-      "zh": "感冒药在哪里？",
-      "scene": "药局",
-      "id": "s06-051",
-      "subcategory": "sub05"
-    },
-    {
-      "jp": "解熱剤はありますか。",
-      "furigana": "げねつざいはありますか。",
-      "zh": "有退烧药吗？",
-      "scene": "药局",
-      "id": "s06-052",
-      "subcategory": "sub05"
+      "jp": "お薬手帳はお持ちですか。",
+      "furigana": "おくすりてちょうはおもちですか。",
+      "zh": "您有带用药手册吗？",
+      "scene": "取药・药局",
+      "id": "s06-059",
+      "subcategory": "sub05",
+      "role": "staff"
     },
     {
       "jp": "お薬手帳があります。",
       "furigana": "おくすりてちょうがあります。",
       "zh": "我有用药手册。",
-      "scene": "药局",
-      "id": "s06-053",
-      "subcategory": "sub05"
+      "scene": "取药・药局",
+      "id": "s06-060",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "ジェネリック医薬品をお願いします。",
+      "furigana": "ジェネリックいやくひんをおねがいします。",
+      "zh": "请给我仿制药。",
+      "scene": "取药・药局",
+      "id": "s06-061",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "薬の飲み方を教えてください。",
+      "furigana": "くすりののみかたをおしえてください。",
+      "zh": "请告诉我怎么服药。",
+      "scene": "取药・药局",
+      "id": "s06-062",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "食後に一錠、一日三回飲んでください。",
+      "furigana": "しょくごにいちじょう、いちにちさんかいのんでください。",
+      "zh": "请饭后吃一颗，一天三次。",
+      "scene": "取药・药局",
+      "id": "s06-063",
+      "subcategory": "sub05",
+      "role": "staff"
+    },
+    {
+      "jp": "副作用はありますか。",
+      "furigana": "ふくさようはありますか。",
+      "zh": "有副作用吗？",
+      "scene": "取药・药局",
+      "id": "s06-064",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "子供でも飲めますか。",
+      "furigana": "こどもでものめますか。",
+      "zh": "小孩也可以吃吗？",
+      "scene": "取药・药局",
+      "id": "s06-065",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "妊娠中でも大丈夫ですか。",
+      "furigana": "にんしんちゅうでもだいじょうぶですか。",
+      "zh": "孕期也可以用吗？",
+      "scene": "取药・药局",
+      "id": "s06-066",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "風邪薬はどこですか。",
+      "furigana": "かぜぐすりはどこですか。",
+      "zh": "感冒药在哪里？",
+      "scene": "取药・药局",
+      "id": "s06-067",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "解熱剤はありますか。",
+      "furigana": "げねつざいはありますか。",
+      "zh": "有退烧药吗？",
+      "scene": "取药・药局",
+      "id": "s06-068",
+      "subcategory": "sub05",
+      "role": "user"
     },
     {
       "jp": "子供の診察をお願いします。",
       "furigana": "こどものしんさつをおねがいします。",
       "zh": "请帮孩子看诊。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-054",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-069",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
-      "jp": "3歳です。",
-      "furigana": "3さいです。",
-      "zh": "3岁。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-055",
-      "subcategory": "sub06"
+      "jp": "○歳です。",
+      "furigana": "○さいです。",
+      "zh": "○岁。",
+      "scene": "儿科",
+      "id": "s06-070",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "熱が38度5分あります。",
       "furigana": "ねつが38ど5ぶあります。",
       "zh": "发烧38.5度。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-056",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-071",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "昨夜から熱が下がりません。",
       "furigana": "さくやからねつがさがりません。",
       "zh": "从昨晚开始烧不退。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-057",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-072",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "発疹が出ています。",
       "furigana": "はっしんがでています。",
       "zh": "出疹子了。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-058",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-073",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "食欲がありません。",
       "furigana": "しょくよくがありません。",
       "zh": "没有食欲。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-059",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-074",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "ぐったりしています。",
       "furigana": "ぐったりしています。",
       "zh": "无精打采。",
-      "scene": "儿科・孩子看病",
-      "id": "s06-060",
-      "subcategory": "sub06"
+      "scene": "儿科",
+      "id": "s06-075",
+      "subcategory": "sub06",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "预约", "title_ja": "予約" },
+    { "id": "sub02", "title": "挂号・初诊", "title_ja": "受付・初診" },
+    { "id": "sub03", "title": "说明症状", "title_ja": "症状を伝える" },
+    { "id": "sub04", "title": "问诊・检查・结账", "title_ja": "診察・検査・会計" },
+    { "id": "sub05", "title": "取药・药局", "title_ja": "薬局・お薬" },
+    { "id": "sub06", "title": "儿科", "title_ja": "小児科" }
   ]
 }

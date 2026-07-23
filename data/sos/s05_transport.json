@@ -11,167 +11,188 @@
       "zh": "我想买IC卡。",
       "scene": "买票・充值",
       "id": "s05-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "ICカードにチャージしたいです。",
-      "furigana": "ICカードにチャージしたいです。",
-      "zh": "我想给IC卡充值。",
+      "jp": "梅田駅まで大人一枚お願いします。",
+      "furigana": "うめだえきまでおとないちまいおねがいします。",
+      "zh": "请给我一张到梅田站的成人票。",
       "scene": "买票・充值",
       "id": "s05-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "東京から新大阪まで自由席一枚ください。",
       "furigana": "とうきょうからしんおおさかまでじゆうせきいちまいください。",
-      "zh": "请给我一张东京到新大阪的自由席的票。",
+      "zh": "请给我一张东京到新大阪的自由席票。",
       "scene": "买票・充值",
       "id": "s05-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "ICOCAに千円チャージしたいんですが。",
+      "furigana": "ICOCAにせんえんチャージしたいんですが。",
+      "zh": "我想给ICOCA充值一千日元。",
+      "scene": "买票・充值",
+      "id": "s05-004",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "定期券を買いたいです。",
       "furigana": "ていきけんをかいたいです。",
       "zh": "我想买月票。",
       "scene": "买票・充值",
-      "id": "s05-004",
-      "subcategory": "sub01"
+      "id": "s05-005",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "残高が不足しています。",
+      "furigana": "ざんだかがふそくしています。",
+      "zh": "余额不足。",
+      "scene": "买票・充值",
+      "id": "s05-006",
+      "subcategory": "sub01",
+      "role": "staff"
     },
     {
       "jp": "梅田駅に行きたいです。",
       "furigana": "うめだえきにいきたいです。",
       "zh": "我想去梅田站。",
       "scene": "坐电车・换乘",
-      "id": "s05-005",
-      "subcategory": "sub01"
+      "id": "s05-007",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "この電車は心斎橋駅に止まりますか。",
       "furigana": "このでんしゃはしんさいばしえきにとまりますか。",
       "zh": "这趟电车停心斋桥站吗？",
       "scene": "坐电车・换乘",
-      "id": "s05-006",
-      "subcategory": "sub01"
+      "id": "s05-008",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "どこで乗り換えますか。",
       "furigana": "どこでのりかえますか。",
       "zh": "在哪里换乘？",
       "scene": "坐电车・换乘",
-      "id": "s05-007",
-      "subcategory": "sub01"
+      "id": "s05-009",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "次の駅は乗り換えできますか。",
+      "furigana": "つぎのえきはのりかえできますか。",
+      "zh": "下一站可以换乘吗？",
+      "scene": "坐电车・换乘",
+      "id": "s05-010",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "次は何駅ですか。",
       "furigana": "つぎはなんえきですか。",
       "zh": "下一站是哪里？",
       "scene": "坐电车・换乘",
-      "id": "s05-008",
-      "subcategory": "sub01"
+      "id": "s05-011",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "東京まで何分かかりますか。",
       "furigana": "とうきょうまでなんぷんかかりますか。",
-      "zh": "到东京站要几分钟？",
+      "zh": "到东京要几分钟？",
       "scene": "坐电车・换乘",
-      "id": "s05-009",
-      "subcategory": "sub01"
+      "id": "s05-012",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "終電は何時ですか。",
       "furigana": "しゅうでんはなんじですか。",
       "zh": "末班车是几点？",
       "scene": "坐电车・换乘",
-      "id": "s05-010",
-      "subcategory": "sub01"
+      "id": "s05-013",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "この席は空いていますか。",
       "furigana": "このせきはあいていますか。",
       "zh": "这个座位有人吗？",
       "scene": "坐电车・换乘",
-      "id": "s05-011",
-      "subcategory": "sub01"
+      "id": "s05-014",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "優先席ですか。",
-      "furigana": "ゆうせんせきですか。",
-      "zh": "这是优先座吗？",
+      "jp": "すみません、改札が開かないんですが。",
+      "furigana": "すみません、かいさつがあかないんですが。",
+      "zh": "不好意思，检票闸机打不开。（递上票卡）",
       "scene": "坐电车・换乘",
-      "id": "s05-012",
-      "subcategory": "sub01"
-    },
-    {
-      "jp": "入場記録を取り消したいです。",
-      "furigana": "にゅうじょうきろくをとりけしたいです。",
-      "zh": "我想取消入站记录。",
-      "scene": "出站・异常处理",
-      "id": "s05-013",
-      "subcategory": "sub02"
+      "id": "s05-015",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "間違えて乗ってしまいました。",
       "furigana": "まちがえてのってしまいました。",
       "zh": "我坐错车了。",
-      "scene": "出站・异常处理",
-      "id": "s05-014",
-      "subcategory": "sub02"
+      "scene": "坐电车・换乘",
+      "id": "s05-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "入場記録を取り消したいです。",
+      "furigana": "にゅうじょうきろくをとりけしたいです。",
+      "zh": "我想取消入站记录。",
+      "scene": "坐电车・换乘",
+      "id": "s05-017",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "切符をなくしました。",
       "furigana": "きっぷをなくしました。",
       "zh": "我把票弄丢了。",
-      "scene": "出站・异常处理",
-      "id": "s05-015",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "ICカードが使えません。",
-      "furigana": "ICカードがつかえません。",
-      "zh": "IC卡用不了。",
-      "scene": "出站・异常处理",
-      "id": "s05-016",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "残高が足りません。",
-      "furigana": "ざんだかがたりません。",
-      "zh": "余额不足。",
-      "scene": "出站・异常处理",
-      "id": "s05-017",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "電車が遅れていますか。",
-      "furigana": "でんしゃがおくれていますか。",
-      "zh": "电车晚点了吗？",
-      "scene": "出站・异常处理",
+      "scene": "坐电车・换乘",
       "id": "s05-018",
-      "subcategory": "sub02"
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
-      "jp": "このバスは新宿に行きますか。",
-      "furigana": "このバスはしんじゅくにいきますか。",
-      "zh": "这辆公交车去新宿吗？",
+      "jp": "次、降ります。",
+      "furigana": "つぎ、おります。",
+      "zh": "下一站下车。",
       "scene": "坐公交",
       "id": "s05-019",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "次で降ります。",
-      "furigana": "つぎでおります。",
-      "zh": "我在下站下车。",
+      "jp": "このバスは大阪駅に行きますか。",
+      "furigana": "このバスはおおさかえきにいきますか。",
+      "zh": "这辆公交车去大阪站吗？",
       "scene": "坐公交",
       "id": "s05-020",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "次はどこですか。",
-      "furigana": "つぎはどこですか。",
-      "zh": "下一站是哪里吗？",
+      "jp": "両替お願いします。",
+      "furigana": "りょうがえおねがいします。",
+      "zh": "请帮我换零钱。",
       "scene": "坐公交",
       "id": "s05-021",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "バス停はどこですか。",
@@ -179,87 +200,238 @@
       "zh": "公交车站在哪里？",
       "scene": "坐公交",
       "id": "s05-022",
-      "subcategory": "sub03"
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "整理券をお取りください。",
+      "furigana": "せいりけんをおとりください。",
+      "zh": "请抽取整理券。",
+      "scene": "坐公交",
+      "id": "s05-023",
+      "subcategory": "sub03",
+      "role": "staff"
+    },
+    {
+      "jp": "後ろのドアは自動です。そのままお待ちください。",
+      "furigana": "うしろのドアはじどうです。そのままおまちください。",
+      "zh": "后门是自动的，请在原地稍等。",
+      "scene": "坐出租车",
+      "id": "s05-024",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "いらっしゃいませ。どちらまでですか。",
+      "furigana": "いらっしゃいませ。どちらまでですか。",
+      "zh": "欢迎乘车。请问去哪里？",
+      "scene": "坐出租车",
+      "id": "s05-025",
+      "subcategory": "sub04",
+      "role": "staff"
+    },
+    {
+      "jp": "ここ（この地図の場所）までお願いします。",
+      "furigana": "ここ（このちずのばしょ）までおねがいします。",
+      "zh": "请去这里。（出示手机地图）",
+      "scene": "坐出租车",
+      "id": "s05-026",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "ディズニーランドまでお願いします。",
-      "furigana": "でぃずにーらんどまでおねがいします。",
+      "furigana": "ディズニーランドまでおねがいします。",
       "zh": "请送我去迪士尼乐园。",
       "scene": "坐出租车",
-      "id": "s05-023",
-      "subcategory": "sub03"
+      "id": "s05-027",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
-      "jp": "ここで止めてください。",
-      "furigana": "ここでとめてください。",
-      "zh": "请在这里停车。",
+      "jp": "急いでいます。",
+      "furigana": "いそいでいます。",
+      "zh": "我赶时间。",
       "scene": "坐出租车",
-      "id": "s05-024",
-      "subcategory": "sub03"
+      "id": "s05-028",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "ここで降ろしてください。",
+      "furigana": "ここでおろしてください。",
+      "zh": "请在这里让我下车。",
+      "scene": "坐出租车",
+      "id": "s05-029",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "カードで払います。",
+      "furigana": "カードではらいます。",
+      "zh": "我用卡付款。",
+      "scene": "坐出租车",
+      "id": "s05-030",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "領収書をください。",
       "furigana": "りょうしゅうしょをください。",
       "zh": "请给我收据。",
       "scene": "坐出租车",
-      "id": "s05-025",
-      "subcategory": "sub04"
+      "id": "s05-031",
+      "subcategory": "sub04",
+      "role": "user"
     },
     {
       "jp": "トランクを開けてください。",
       "furigana": "トランクをあけてください。",
       "zh": "请打开后备箱。",
       "scene": "坐出租车",
-      "id": "s05-026",
-      "subcategory": "sub04"
+      "id": "s05-032",
+      "subcategory": "sub04",
+      "role": "user"
+    },
+    {
+      "jp": "電車が止まっていますが、どうすればいいですか。",
+      "furigana": "でんしゃがとまっていますが、どうすればいいですか。",
+      "zh": "电车停运了，我该怎么办？",
+      "scene": "异常・紧急",
+      "id": "s05-033",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "遅延証明書をいただけますか。",
+      "furigana": "ちえんしょうめいしょをいただけますか。",
+      "zh": "可以给我一张延误证明书吗？",
+      "scene": "异常・紧急",
+      "id": "s05-034",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "財布を電車の中に忘れてしまいました。",
+      "furigana": "さいふをでんしゃのなかにわすれてしまいました。",
+      "zh": "我把钱包忘在电车里了。",
+      "scene": "异常・紧急",
+      "id": "s05-035",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "間違えて違う駅に来てしまいました。",
+      "furigana": "まちがえてちがうえきにきてしまいました。",
+      "zh": "我不小心坐错站来到这里了。",
+      "scene": "异常・紧急",
+      "id": "s05-036",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "人身事故のため、運転を見合わせています。",
+      "furigana": "じんしんじこのため、うんてんをみあわせています。",
+      "zh": "因为发生人身事故，目前暂停运行。",
+      "scene": "异常・紧急",
+      "id": "s05-037",
+      "subcategory": "sub05",
+      "role": "staff"
+    },
+    {
+      "jp": "この電車は臨時に行先を変更します。",
+      "furigana": "このでんしゃはりんじにゆきさきをへんこうします。",
+      "zh": "这趟电车将临时变更目的地。",
+      "scene": "异常・紧急",
+      "id": "s05-038",
+      "subcategory": "sub05",
+      "role": "staff"
     },
     {
       "jp": "駐車場はどこですか。",
       "furigana": "ちゅうしゃじょうはどこですか。",
       "zh": "停车场在哪里？",
       "scene": "开车・停车场",
-      "id": "s05-027",
-      "subcategory": "sub04"
+      "id": "s05-039",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "精算機はどこですか。",
       "furigana": "せいさんきはどこですか。",
       "zh": "缴费机在哪里？",
       "scene": "开车・停车场",
-      "id": "s05-028",
-      "subcategory": "sub04"
+      "id": "s05-040",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "精算機の使い方を教えてください。",
       "furigana": "せいさんきのつかいかたをおしえてください。",
       "zh": "请告诉我缴费机怎么用。",
       "scene": "开车・停车场",
-      "id": "s05-029",
-      "subcategory": "sub04"
+      "id": "s05-041",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "自転車置き場はどこですか。",
       "furigana": "じてんしゃおきばはどこですか。",
       "zh": "自行车停放处在哪里？",
       "scene": "骑自行车",
-      "id": "s05-030",
-      "subcategory": "sub04"
+      "id": "s05-042",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "ここに止めていいですか。",
       "furigana": "ここにとめていいですか。",
       "zh": "这里可以停吗？",
       "scene": "骑自行车",
-      "id": "s05-031",
-      "subcategory": "sub04"
+      "id": "s05-043",
+      "subcategory": "sub06",
+      "role": "user"
     },
     {
       "jp": "撤去されました。どうすればいいですか。",
       "furigana": "てっきょされました。どうすればいいですか。",
       "zh": "自行车被移走了，应该怎么办？",
       "scene": "骑自行车",
-      "id": "s05-032",
-      "subcategory": "sub04"
+      "id": "s05-044",
+      "subcategory": "sub06",
+      "role": "user"
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "sub01",
+      "title": "买票・充值",
+      "title_ja": "切符・チャージ"
+    },
+    {
+      "id": "sub02",
+      "title": "坐电车",
+      "title_ja": "電車に乗る"
+    },
+    {
+      "id": "sub03",
+      "title": "坐公交",
+      "title_ja": "バスに乗る"
+    },
+    {
+      "id": "sub04",
+      "title": "坐出租车",
+      "title_ja": "タクシーに乗る"
+    },
+    {
+      "id": "sub05",
+      "title": "异常・紧急",
+      "title_ja": "異常・緊急時"
+    },
+    {
+      "id": "sub06",
+      "title": "开车・自行车",
+      "title_ja": "車・自転車"
     }
   ]
 }

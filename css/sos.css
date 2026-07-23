@@ -197,6 +197,29 @@ body.no-ruby rt { visibility: hidden; }
 /* 中文 */
 .zh { font-size: 13px; color: var(--t3); }
 
+/* ── staff句（对方可能会问）── */
+.card.is-staff {
+  border-left: 4px solid var(--scene-c1, #4a90d9);
+  background: color-mix(in srgb, var(--scene-c1, #4a90d9) 6%, var(--surface));
+  padding-left: 10px;
+}
+.staff-label {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  color: var(--scene-c1, #4a90d9);
+  background: color-mix(in srgb, var(--scene-c1, #4a90d9) 14%, transparent);
+  border-radius: 4px;
+  padding: 1px 7px;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+.card-play-btn.is-staff-btn {
+  background: rgba(255,255,255,0.08);
+  color: var(--t3);
+  border: 1px solid var(--line);
+}
+.card-play-btn.is-staff-btn:active { transform: scale(.90); }
+
 /* 搜索结果 */
 .srch-header {
   font-size: 12px; color: var(--t4); margin-bottom: 12px;

@@ -11,15 +11,17 @@
       "zh": "我想连接Wi-Fi。",
       "scene": "Wi-Fi・网络",
       "id": "s17-001",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
-      "jp": "パスワードを教えてください。",
-      "furigana": "パスワードをおしえてください。",
-      "zh": "请告诉我密码。",
+      "jp": "Wi-Fiの接続パスワードを教えていただけますか。",
+      "furigana": "Wi-Fiのせつぞくパスワードをおしえていただけますか。",
+      "zh": "可以告诉我Wi-Fi的连接密码吗？",
       "scene": "Wi-Fi・网络",
       "id": "s17-002",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "つながりません。",
@@ -27,7 +29,8 @@
       "zh": "连不上。",
       "scene": "Wi-Fi・网络",
       "id": "s17-003",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "Wi-Fiが遅いです。",
@@ -35,135 +38,220 @@
       "zh": "Wi-Fi很慢。",
       "scene": "Wi-Fi・网络",
       "id": "s17-004",
-      "subcategory": "sub01"
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "ネットが急につながらなくなりました。",
+      "furigana": "ネットがきゅうにつながらなくなりました。",
+      "zh": "网络突然连不上了。",
+      "scene": "Wi-Fi・网络",
+      "id": "s17-005",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "ルーターのコンセントを一度抜いて、もう一度挿してみてください。",
+      "furigana": "ルーターのコンセントをいちどぬいて、もういちどさしてみてください。",
+      "zh": "请把路由器的插头拔掉一次，然后再插上试试。",
+      "scene": "Wi-Fi・网络",
+      "id": "s17-006",
+      "subcategory": "sub01",
+      "role": "staff"
+    },
+    {
+      "jp": "家でインターネット（光回線）を使いたいんですが、工事は必要ですか。",
+      "furigana": "いえでインターネット（ひかりかいせん）をつかいたいんですが、こうじはひつようですか。",
+      "zh": "我想在家里用网络（光纤），需要施工吗？",
+      "scene": "Wi-Fi・网络",
+      "id": "s17-007",
+      "subcategory": "sub01",
+      "role": "user"
+    },
+    {
+      "jp": "工事には、どのくらい時間がかかりますか。",
+      "furigana": "こうじには、どのくらいじかんがかかりますか。",
+      "zh": "施工大概需要多长时间？",
+      "scene": "Wi-Fi・网络",
+      "id": "s17-008",
+      "subcategory": "sub01",
+      "role": "user"
     },
     {
       "jp": "QRコードをスキャンしてください。",
       "furigana": "QRコードをスキャンしてください。",
       "zh": "请扫描二维码。",
       "scene": "扫码・二维码",
-      "id": "s17-005",
-      "subcategory": "sub01"
+      "id": "s17-009",
+      "subcategory": "sub02",
+      "role": "staff"
     },
     {
       "jp": "どこでスキャンすればいいですか。",
       "furigana": "どこでスキャンすればいいですか。",
       "zh": "应该在哪里扫？",
       "scene": "扫码・二维码",
-      "id": "s17-006",
-      "subcategory": "sub01"
+      "id": "s17-010",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "うまく読み取れません。",
       "furigana": "うまくよみとれません。",
       "zh": "无法成功读取。",
       "scene": "扫码・二维码",
-      "id": "s17-007",
-      "subcategory": "sub01"
+      "id": "s17-011",
+      "subcategory": "sub02",
+      "role": "user"
     },
     {
       "jp": "QRコードはどこですか。",
       "furigana": "QRコードはどこですか。",
       "zh": "二维码在哪里？",
       "scene": "扫码・二维码",
-      "id": "s17-008",
-      "subcategory": "sub02"
+      "id": "s17-012",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "スクリーンショットを見せてもいいですか。",
+      "furigana": "スクリーンショットをみせてもいいですか。",
+      "zh": "我可以给您看截图吗？",
+      "scene": "扫码・二维码",
+      "id": "s17-013",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "新規でスマホの契約をしたいんですが。",
+      "furigana": "しんきでスマホのけいやくをしたいんですが。",
+      "zh": "我想新办一个手机号。",
+      "scene": "手机・套餐",
+      "id": "s17-014",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "他社から乗り換え（MNP）の手続きをお願いします。",
+      "furigana": "たしゃからのりかえ（MNP）のてつづきをおねがいします。",
+      "zh": "我想办理从其他运营商携号转网（MNP）的手续。",
+      "scene": "手机・套餐",
+      "id": "s17-015",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "料金プランを変更したいんですが。",
+      "furigana": "りょうきんプランをへんこうしたいんですが。",
+      "zh": "我想更改资费套餐。",
+      "scene": "手机・套餐",
+      "id": "s17-016",
+      "subcategory": "sub02",
+      "role": "user"
+    },
+    {
+      "jp": "ご本人様確認書類（在留カードなど）をお出しください。",
+      "furigana": "ごほんにんさまかくにんしょるい（ざいりゅうカードなど）をおだしください。",
+      "zh": "请出示您的身份证明文件（在留卡等）。",
+      "scene": "手机・套餐",
+      "id": "s17-017",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "この商品の在庫はありますか。",
+      "furigana": "このしょうひんのざいこはありますか。",
+      "zh": "这件商品有库存吗？",
+      "scene": "家电量贩店",
+      "id": "s17-018",
+      "subcategory": "sub03",
+      "role": "user"
+    },
+    {
+      "jp": "免税（タックスフリー）の手続きはできますか。",
+      "furigana": "めんぜい（タックスフリー）のてつづきはできますか。",
+      "zh": "可以办理免税手续吗？",
+      "scene": "家电量贩店",
+      "id": "s17-019",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "アカウントを作りたいです。",
       "furigana": "アカウントをつくりたいです。",
       "zh": "我想创建账号。",
-      "scene": "App注册・登录",
-      "id": "s17-009",
-      "subcategory": "sub02"
+      "scene": "App・账号",
+      "id": "s17-020",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "パスワードを忘れました。",
-      "furigana": "パスワードをわすれました。",
-      "zh": "我忘记密码了。",
-      "scene": "App注册・登录",
-      "id": "s17-010",
-      "subcategory": "sub02"
+      "jp": "パスワードを忘れてしまったので、再発行したいです。",
+      "furigana": "パスワードをわすれてしまったので、さいはっこうしたいです。",
+      "zh": "我忘记密码了，想重新获取。",
+      "scene": "App・账号",
+      "id": "s17-021",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "ログインできません。",
       "furigana": "ログインできません。",
       "zh": "无法登录。",
-      "scene": "App注册・登录",
-      "id": "s17-011",
-      "subcategory": "sub02"
+      "scene": "App・账号",
+      "id": "s17-022",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "中国語に変えられますか。",
       "furigana": "ちゅうごくごにかえられますか。",
       "zh": "可以改成中文吗？",
-      "scene": "App注册・登录",
-      "id": "s17-012",
-      "subcategory": "sub02"
+      "scene": "App・账号",
+      "id": "s17-023",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "認証コードが届きません。",
-      "furigana": "にんしょうコードがとどきません。",
-      "zh": "验证码没有收到。",
-      "scene": "验证码・密码问题",
-      "id": "s17-013",
-      "subcategory": "sub02"
-    },
-    {
-      "jp": "SMSが届きません。",
-      "furigana": "SMSがとどきません。",
-      "zh": "短信没有收到。",
-      "scene": "验证码・密码问题",
-      "id": "s17-014",
-      "subcategory": "sub02"
+      "jp": "SMS（ショートメール）の認証コードが届きません。",
+      "furigana": "SMS（ショートメール）のにんしょうコードがとどきません。",
+      "zh": "收不到短信的验证码。",
+      "scene": "验证码・错误",
+      "id": "s17-024",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "何度やってもエラーになります。",
       "furigana": "なんどやってもエラーになります。",
       "zh": "不管做几次都出错。",
-      "scene": "验证码・密码问题",
-      "id": "s17-015",
-      "subcategory": "sub03"
+      "scene": "验证码・错误",
+      "id": "s17-025",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
       "jp": "アカウントがロックされました。",
       "furigana": "アカウントがロックされました。",
       "zh": "账号被锁定了。",
-      "scene": "验证码・密码问题",
-      "id": "s17-016",
-      "subcategory": "sub03"
+      "scene": "验证码・错误",
+      "id": "s17-026",
+      "subcategory": "sub03",
+      "role": "user"
     },
     {
-      "jp": "注文を確認したいです。",
-      "furigana": "ちゅうもんをかくにんしたいです。",
-      "zh": "我想确认订单。",
-      "scene": "网络购物操作",
-      "id": "s17-017",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "注文をキャンセルしたいです。",
-      "furigana": "ちゅうもんをキャンセルしたいです。",
-      "zh": "我想取消订单。",
-      "scene": "网络购物操作",
-      "id": "s17-018",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "支払い方法を変更したいです。",
-      "furigana": "しはらいほうほうをへんこうしたいです。",
-      "zh": "我想更改付款方式。",
-      "scene": "网络购物操作",
-      "id": "s17-019",
-      "subcategory": "sub03"
-    },
-    {
-      "jp": "配送先を変更したいです。",
-      "furigana": "はいそうさきをへんこうしたいです。",
-      "zh": "我想更改配送地址。",
-      "scene": "网络购物操作",
-      "id": "s17-020",
-      "subcategory": "sub03"
+      "jp": "このアプリでクレジットカードの登録エラーが出ます。",
+      "furigana": "このアプリでクレジットカードのとうろくエラーがでます。",
+      "zh": "这个App提示信用卡注册错误。",
+      "scene": "验证码・错误",
+      "id": "s17-027",
+      "subcategory": "sub03",
+      "role": "user"
     }
+  ],
+  "subcategories": [
+    { "id": "sub01", "title": "Wi-Fi・网络", "title_ja": "Wi-Fi・ネット" },
+    { "id": "sub02", "title": "扫码・手机套餐", "title_ja": "QRコード・スマホ契約" },
+    { "id": "sub03", "title": "App・账号・验证码", "title_ja": "アプリ・アカウント・認証" }
   ]
 }
