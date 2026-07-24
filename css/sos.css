@@ -379,6 +379,12 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   border-radius: var(--r-md);
   border: .5px solid var(--line);
   box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  max-height: 180px;
+  overflow: hidden;
+  transition: max-height .3s ease;
+}
+.scene-info.expanded {
+  max-height: none;
 }
 .scene-info-section {
   margin-bottom: 7px;
@@ -398,7 +404,30 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   color: var(--t3);
   line-height: 1.65;
 }
-
+.scene-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.scene-info-table td {
+  padding: 5px 6px;
+  border-bottom: .5px solid var(--line);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.scene-info-table-header td {
+  font-weight: 700;
+  color: var(--t2);
+  border-bottom: 1px solid var(--line);
+}
+.scene-info-toggle {
+  text-align: center;
+  font-size: 11px;
+  color: var(--t4);
+  margin-top: 4px;
+  cursor: pointer;
+}
 .sos-landing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

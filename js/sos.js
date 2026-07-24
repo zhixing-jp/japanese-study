@@ -241,13 +241,31 @@ function renderSceneLanding(si){
       </div>
       <div class="sos-landing-desc" style="display:none">${esc(meta.description||'')}</div>
       ${(meta.info&&meta.info.length)?`
-      <div class="scene-info">
-        ${meta.info.map(sec=>`
-          <div class="scene-info-section">
-            <div class="scene-info-title">${esc(sec.title)}</div>
-            <div class="scene-info-body">${sec.lines.map(l=>esc(l)).join('<br>')}</div>
-          </div>`).join('')}
-      </div>`:''}
+      <div class="scene-info-wrap" onclick="
+        const info=this.querySelector('.scene-info');
+        const btn=this.querySelector('.scene-info-toggle');
+        info.classList.toggle('expanded');
+        btn.textContent=info.classList.contains('expanded')?'∧∧点击折叠∧∧':'∨∨点击打开∨∨';
+      ">
+        <div class="scene-info" id="scene-info-${si}">
+          ${meta.info.map(sec=>`
+            <div class="scene-info-section">
+              <div class="scene-info-title">${esc(sec.title)}</div>
+              <div class="scene-info-body">
+                ${sec.table ? `
+                  <table class="scene-info-table">
+                    ${sec.table.map((row,i)=>`
+                      <tr class="${i===0?'scene-info-table-header':''}">
+                        ${row.map(cell=>`<td>${cell}</td>`).join('')}
+                      </tr>`).join('')}
+                  </table>
+                ` : sec.lines.map(l=>l).join('<br>')}
+              </div>
+            </div>`).join('')}
+        </div>
+        <div class="scene-info-toggle">∨∨点击打开∨∨</div>
+      </div>
+    </div>`:''}
       <div class="sos-landing-grid">
         ${subcats.map(s=>`
           <button class="sos-landing-btn" onclick="selectSubcat('${s.id}',${si})">
