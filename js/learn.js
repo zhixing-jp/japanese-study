@@ -146,6 +146,26 @@ async function learnBoot(){
       }
     }));
     renderLearnList();
+
+    // History API：让浏览器返回键回到场景列表
+    history.replaceState({panel:'learn',view:'home'},'','');
+    window.addEventListener('popstate',(e)=>{
+      const st=e.state;
+      if(!st||st.panel!=='learn') return;
+      if(st.view==='home'){
+        closeScene(true);
+      } else if(st.view==='scene'){
+        // 从extension返回基本会话（如有需要可扩展）
+        if(currentScene&&st.id===currentScene.id){
+          switchDialog(null);
+        } else if(LEARN_CACHE[st.id]){
+          // 极端情况：直接恢复场景
+          currentScene=LEARN_CACHE[st.id];
+          renderSceneDetail();
+        }
+      }
+    });
+
   }catch(e){ console.error('学习版块加载失败',e); }
 }
 
@@ -206,6 +226,7 @@ async function openScene(id){
   const sc=LEARN_CACHE[id];
   if(!sc||sc._comingSoon) return;
   currentScene=sc; currentExtId=null;
+  history.pushState({panel:'learn',view:'scene',id},'','');
   document.getElementById('learnList').style.display='none';
   const detail=document.getElementById('learnDetail');
   detail.classList.add('on');
@@ -229,7 +250,8 @@ async function openScene(id){
   }
 }
 
-function closeScene(){
+function closeScene(fromPopstate){
+  if(!fromPopstate) history.replaceState({panel:'learn',view:'home'},'','');
   learnStop();
   if(currentAudio){currentAudio.pause();currentAudio=null;}
   const hero=document.querySelector('.learn-detail-hero');

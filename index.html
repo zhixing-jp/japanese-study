@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>日活 | 在日华人日语急救工具 · 不会日语也能在日本活得从容</title>
-<meta name="description" content="专为在日华人设计的免费日语急救工具。18个生活场景，519句实用日语。看病说不清楚、坐车听不懂、办手续不知道怎么开口——选场景，找句子，点一下，手机替你说给对方听。无需下载，完全免费。">
+<meta name="description" content="专为在日华人设计的免费日语急救工具。18个生活场景，数百句实用日语。看病说不清楚、坐车听不懂、办手续不知道怎么开口——选场景，找句子，点一下，手机替你说给对方听。无需下载，完全免费。">
 <meta name="keywords" content="在日华人,日语工具,日活,在日本生活,在日本看病,生活日语,免费日语,润日,在日华人app,日语急救,在日本怎么说,日语速查,不会日语在日本,日本生活中文,在日生活工具,在日本医院,在日本坐车,在日本办手续,日本役所,华人在日本,旅日华人">
 <meta name="author" content="日活 Living Japanese">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="日活 | 在日华人日语急救工具">
-<meta property="og:description" content="不会日语，也能在日本活得从容。18场景519句，点击朗读，手机替你开口说。完全免费，无需安装。">
+<meta property="og:description" content="不会日语，也能在日本活得从容。18场景数百句实用日语，点击朗读，手机替你开口说。完全免费，无需安装。">
 <meta property="og:url" content="https://livingjapanese.app">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="日活 Living Japanese">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="日活 | 在日华人日语急救工具">
-<meta name="twitter:description" content="不会日语，也能在日本活得从容。18场景519句，完全免费。">
+<meta name="twitter:description" content="不会日语，也能在日本活得从容。18场景数百句实用日语，完全免费。">
 <meta name="theme-color" content="#FF3B30">
 <link rel="canonical" href="https://livingjapanese.app">
 
@@ -47,31 +47,16 @@
       <input id="searchInput" type="search" autocomplete="off">
     </div>
   </div>
-
 </div>
 
 <!-- ══ MAIN ══ -->
 <main></main>
 
-<!-- ══ SOS CONTROLS BAR ══ -->
-<div id="ctrlBar">
-  <div class="ctrl-main">
-    <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>
-    <button class="ctrl-icon" id="btnPause" onclick="pauseOrResume()">⏸</button>
-    <button class="ctrl-icon rd" id="btnStop" onclick="stopSpeech()">■</button>
-    <button class="ctrl-icon" id="btnLoop" onclick="toggleLoop()">🔁</button>
-    <button class="ctrl-icon sm-text" id="btnRuby" onclick="toggleRuby()">注音</button>
-    <button class="ctrl-icon sm-text" onclick="showAll()">全部</button>
-  </div>
-  <div class="ctrl-settings" id="ctrlSettings"></div>
-</div>
+<!-- ══ SOS CONTROLS BAR（内容由 sos.js 动态写入）══ -->
+<div id="ctrlBar"></div>
 
-<!-- ══ LEARN CONTROLS BAR ══ -->
-<div id="learnCtrlBar">
-  <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
-  <button class="learn-ctrl-icon" id="learnLoopBtn" onclick="learnToggleLoop()">🔁</button>
-  <button class="learn-ctrl-icon rd" onclick="learnStop()">■</button>
-</div>
+<!-- ══ LEARN CONTROLS BAR（内容由 learn.js 动态写入）══ -->
+<div id="learnCtrlBar"></div>
 
 <!-- ══ TAB BAR ══ -->
 <nav id="tabBar"></nav>
@@ -102,7 +87,7 @@ let CFG = {};
     // 动态加载所有版块CSS和JS
     await loadModules(CFG.modules||[]);
 
-    // 依次初始化所有已注册版块（init负责渲染HTML结构再boot）
+    // 依次初始化所有已注册版块
     for(const m of (CFG.modules||[])){
       const mod = window.LJ_MODULES[m.id];
       if(mod && typeof mod.init === 'function'){
@@ -131,7 +116,11 @@ let CFG = {};
   }
 })();
 </script>
-<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+
+<!-- ══ SEO 内容（搜索引擎可读，视觉隐藏）══ -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;">
+
+  <p>日活（Living Japanese）是专为在日华人设计的免费日语急救工具，网址 livingjapanese.app。无需下载，手机浏览器直接打开。18个生活场景，数百句实用日语，选场景找句子，点击让手机替你开口说日语。由在日生活20年以上的华人制作，完全免费。</p>
 
   <h1>日活 Living Japanese — 在日华人日语急救工具</h1>
   <h2>不会日语，也能在日本活得从容</h2>
@@ -154,7 +143,7 @@ let CFG = {};
 
   <h2>核心功能</h2>
   <ul>
-    <li>急救语句：18个场景519句，按场景分类，10秒找到需要的句子，点击朗读</li>
+    <li>急救语句：18个场景数百句实用日语，按场景分类，10秒找到需要的句子，点击朗读</li>
     <li>日语学习：场景对话演练，带中文翻译和振假名注音，支持跟读模式</li>
     <li>搜索功能：直接搜索关键词，快速定位句子</li>
     <li>学习记录：标记已学会的句子，追踪学习进度</li>
@@ -164,22 +153,22 @@ let CFG = {};
   <ul>
     <li>共通短句：打招呼、感谢与道歉、听不懂怎么办、求助、问基本信息</li>
     <li>看病・医院：预约、挂号、说明症状、问诊结果、取药、儿科</li>
-    <li>买东西・购物：找商品、结账、退换货、试穿试用</li>
-    <li>坐电车・交通：买票、乘车、问路、换乘、坐错车处理</li>
-    <li>吃饭・餐厅：入店预约、点餐、特殊需求、结账打包</li>
-    <li>坐公交：找公交站、上车、确认站名、下车</li>
-    <li>坐出租车：叫车、报目的地、行李、付款</li>
-    <li>办手续・役所：窗口沟通、填写表格、确认内容、取号等候</li>
-    <li>用钱・银行ATM：取款、存款、汇款、邮局寄送</li>
-    <li>住房・搬家：找房看房、报修、收快递、邻里沟通</li>
+    <li>买东西・购物：找商品、结账、退换货、试穿试用、免税包装</li>
+    <li>坐车・交通：买票、乘车、问路、换乘、坐错车处理、出租车、公交</li>
+    <li>吃饭・餐厅：入店预约、点餐、过敏饮食限制、结账打包</li>
+    <li>办手续・役所：窗口沟通、填写表格、在留资格、驾照换取</li>
+    <li>用钱・银行ATM：开户、取款、汇款、邮局寄送</li>
+    <li>住房・搬家：找房看房、签约入住、报修、收快递、垃圾分类、退房</li>
     <li>孩子・学校：入学手续、日常联络、请假、家长会</li>
     <li>工作・打工：面试、日常接待、收银、职场沟通</li>
-    <li>便利店服务：复印打印、缴费买票、其他服务</li>
-    <li>生活服务：预约、理发美甲、手机办理、洗衣</li>
-    <li>网购・配送：收货签收、配送问题、退货退款</li>
+    <li>便利店服务：结账支付、便当加热、复印打印、缴费买票</li>
+    <li>生活服务：理发美甲、手机办理、洗衣修理</li>
+    <li>网购・配送：收货签收、再配送、退货退款、取消订单</li>
     <li>紧急情况：丢失物品、身体不适、灾害避难、报警求助</li>
-    <li>电话：接电话、打电话、留言转接、不会说时的应对</li>
-    <li>数字生活：Wi-Fi连接、扫码支付、App操作、数字手续</li>
+    <li>电话：接电话、打电话、留言转接、听不懂时的应对</li>
+    <li>数字生活：Wi-Fi连接、扫码支付、手机套餐办理、App账号操作</li>
+    <li>出门・问路：问路步行、找设施、迷路时、突发状况</li>
+    <li>入境・机场：入境审查、行李提取、海关申报、出机场交通</li>
   </ul>
 
   <h2>适合人群</h2>

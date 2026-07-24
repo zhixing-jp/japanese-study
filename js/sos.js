@@ -62,6 +62,32 @@ async function sosBoot(cfg, icons){
     renderCtrlBar(cfg.controls);
     showSosHome();
 
+    // History API：让浏览器返回键在版块内层级间导航
+    history.replaceState({panel:'sos',view:'home'},'','');
+    window.addEventListener('popstate',(e)=>{
+      // 只处理sos版块的state
+      const st=e.state;
+      if(!st||st.panel!=='sos') return;
+      stopSpeech();
+      if(st.view==='home'){
+        showSosHome(true);
+      } else if(st.view==='scene'){
+        currentSubcat=null;
+        filterUnlearned=false;
+        currentSosSection=st.si;
+        currentSceneData=SOS_CACHE[st.si];
+        showSosDetail(st.si);
+      } else if(st.view==='subcat'){
+        currentSubcat=st.subcatId;
+        currentSosSection=st.si;
+        currentSceneData=SOS_CACHE[st.si];
+        document.getElementById('ctrlBar').classList.add('on');
+        updateCtrlBarMode('content');
+        renderSubcatBar(st.si);
+        renderSosContent(st.si,st.subcatId);
+      }
+    });
+
     document.getElementById('loading').style.display='none';
 
     setTimeout(()=>{
@@ -144,11 +170,13 @@ async function openSosScene(si){
     }
   }
   currentSceneData=SOS_CACHE[si];
+  history.pushState({panel:'sos',view:'scene',si},'','');
   showSosDetail(si);
 }
 
 /* ── 视图切换 ── */
-function showSosHome(){
+function showSosHome(fromPopstate){
+  if(!fromPopstate) history.replaceState({panel:'sos',view:'home'},'','');
   currentSosView='home';
   const home=document.getElementById('sosHome');
   home.style.display='';
@@ -224,6 +252,7 @@ function renderSceneLanding(si){
 
 function selectSubcat(subcatId, si){
   currentSubcat=subcatId;
+  history.pushState({panel:'sos',view:'subcat',si,subcatId},'','');
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('content');
   renderSubcatBar(si);
