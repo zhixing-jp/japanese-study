@@ -240,6 +240,14 @@ function renderSceneLanding(si){
         <div class="sos-landing-desc-hero">${esc(meta.description||'')}</div>
       </div>
       <div class="sos-landing-desc" style="display:none">${esc(meta.description||'')}</div>
+      ${(meta.info&&meta.info.length)?`
+      <div class="scene-info">
+        ${meta.info.map(sec=>`
+          <div class="scene-info-section">
+            <div class="scene-info-title">${esc(sec.title)}</div>
+            <div class="scene-info-body">${sec.lines.map(l=>esc(l)).join('<br>')}</div>
+          </div>`).join('')}
+      </div>`:''}
       <div class="sos-landing-grid">
         ${subcats.map(s=>`
           <button class="sos-landing-btn" onclick="selectSubcat('${s.id}',${si})">

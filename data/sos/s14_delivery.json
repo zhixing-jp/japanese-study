@@ -86,12 +86,21 @@
       "subcategory": "sub02",
       "role": "user"
     },
+      {
+      "jp": "ご希望の日時を教えてください。",
+      "furigana": "ごきぼうのにちじをおしえてください。",
+      "zh": "请告诉我您期望的日期和时间。",
+      "scene": "再配送",
+      "id": "s14-010",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
     {
       "jp": "明日の午前中に届けてもらえますか。",
       "furigana": "あしたのごぜんちゅうにとどけてもらえますか。",
       "zh": "可以请明天上午送来吗？",
       "scene": "再配送",
-      "id": "s14-010",
+      "id": "s14-011",
       "subcategory": "sub02",
       "role": "user"
     },
@@ -100,7 +109,7 @@
       "furigana": "たくはいボックスにいれてください。",
       "zh": "请放进快递柜。",
       "scene": "再配送",
-      "id": "s14-011",
+      "id": "s14-012",
       "subcategory": "sub02",
       "role": "user"
     },
@@ -109,26 +118,18 @@
       "furigana": "おきはいでおねがいします。",
       "zh": "请放在门口。",
       "scene": "再配送",
-      "id": "s14-012",
+      "id": "s14-013",
       "subcategory": "sub02",
       "role": "user"
     },
-    {
-      "jp": "ご希望の日時を教えてください。",
-      "furigana": "ごきぼうのにちじをおしえてください。",
-      "zh": "请告诉我您期望的日期和时间。",
-      "scene": "再配送",
-      "id": "s14-013",
-      "subcategory": "sub02",
-      "role": "staff"
-    },
+  
     {
       "jp": "ネット通販の荷物を受け取りに来ました。",
       "furigana": "ネットつうはんのにもつをうけとりにきました。",
       "zh": "我来取网购的包裹。",
       "scene": "便利店取件",
       "id": "s14-014",
-      "subcategory": "sub02",
+      "subcategory": "sub01",
       "role": "user"
     },
     {
@@ -137,7 +138,7 @@
       "zh": "这是条形码。（出示手机）",
       "scene": "便利店取件",
       "id": "s14-015",
-      "subcategory": "sub02",
+      "subcategory": "sub01",
       "role": "user"
     },
     {
@@ -206,7 +207,7 @@
   ],
   "subcategories": [
     { "id": "sub01", "title": "配送查询・签收", "title_ja": "配送確認・受取" },
-    { "id": "sub02", "title": "再配送・取件", "title_ja": "再配達・受取" },
+    { "id": "sub02", "title": "再配送・物流纠纷", "title_ja": "再配達・受取" },
     { "id": "sub03", "title": "退货・退款・取消", "title_ja": "返品・返金・キャンセル" }
   ]
 }
