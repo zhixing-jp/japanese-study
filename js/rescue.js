@@ -1,11 +1,11 @@
 /* ══════════════════════════════
-   sos.js — 急救版块逻辑 v2
+   rescue.js — 急救版块逻辑 v2
    Living Japanese v3.0
    三层结构：首页→场景→内容
 ══════════════════════════════ */
 
 /* ── 场景色盘（12色循环）── */
-const SOS_COLORS = [
+const RESCUE_COLORS = [
   ['#1a3a5c','#1a6aaa'],
   ['#1a4a2e','#1a8a4e'],
   ['#3a1a1a','#8a2d2d'],
@@ -19,72 +19,68 @@ const SOS_COLORS = [
   ['#1a1a3a','#4a2d8a'],
   ['#2a1a1a','#6a3a2d'],
 ];
-function getSosColor(idx){ return SOS_COLORS[idx % SOS_COLORS.length]; }
+function getRescueColor(idx){ return RESCUE_COLORS[idx % RESCUE_COLORS.length]; }
 
 /* ── State ── */
 let SECTIONS = [], ICONS = {};
-let SOS_INDEX = null;
+let RESCUE_INDEX = null;
 let SCENE_META = [];
-let SOS_CACHE = {};            // 已加载的场景数据缓存
-let currentSosView = 'home';   // home | content
-let currentSosSection = -1;    // 当前场景索引
-let currentSceneData = null;   // 当前场景完整数据
-let currentSubcat = null;      // 当前二级分类ID
+let RESCUE_CACHE = {};
+let currentRescueView = 'home';
+let currentRescueSection = -1;
+let currentSceneData = null;
+let currentSubcat = null;
 let checkedItems = {};
 let filterUnlearned = false;
 let shouldStop = false, loopMode = false, speakSession = 0;
 let rubyOn = true, currentMode = 'jp', currentRate = '0.75';
 
 /* ── Boot ── */
-async function sosBoot(cfg, icons){
+async function rescueBoot(cfg, icons){
   ICONS = icons;
   currentMode = cfg.controls?.defaultMode || 'jp';
   currentRate = cfg.controls?.defaultRate  || '0.75';
-  loadSosStorage();
+  loadRescueStorage();
 
   try{
-    // 加载index.json获取场景目录
-    const index = await fetch('data/sos/index.json').then(r=>r.json());
-    SOS_INDEX = index;
+    const index = await fetch('data/rescue/index.json').then(r=>r.json());
+    RESCUE_INDEX = index;
     SCENE_META = index.scenes;
 
-    // 并行加载所有场景，自动同步count
     await Promise.all(SCENE_META.map(async (sc, si) => {
       try {
         const data = await fetch(sc.file).then(r=>r.json());
-        SOS_CACHE[si] = data;
+        RESCUE_CACHE[si] = data;
         sc.count = data.items.length;
       } catch(e) { console.warn('场景加载失败:', sc.file); }
     }));
 
-    renderSosBanner(cfg.banner);
-    renderSosHome();
+    renderRescueBanner(cfg.banner);
+    renderRescueHome();
     renderCtrlBar(cfg.controls);
-    showSosHome();
+    showRescueHome();
 
-    // History API：让浏览器返回键在版块内层级间导航
-    history.replaceState({panel:'sos',view:'home'},'','');
+    history.replaceState({panel:'rescue',view:'home'},'','');
     window.addEventListener('popstate',(e)=>{
-      // 只处理sos版块的state
       const st=e.state;
-      if(!st||st.panel!=='sos') return;
+      if(!st||st.panel!=='rescue') return;
       stopSpeech();
       if(st.view==='home'){
-        showSosHome(true);
+        showRescueHome(true);
       } else if(st.view==='scene'){
         currentSubcat=null;
         filterUnlearned=false;
-        currentSosSection=st.si;
-        currentSceneData=SOS_CACHE[st.si];
-        showSosDetail(st.si);
+        currentRescueSection=st.si;
+        currentSceneData=RESCUE_CACHE[st.si];
+        showRescueDetail(st.si);
       } else if(st.view==='subcat'){
         currentSubcat=st.subcatId;
-        currentSosSection=st.si;
-        currentSceneData=SOS_CACHE[st.si];
+        currentRescueSection=st.si;
+        currentSceneData=RESCUE_CACHE[st.si];
         document.getElementById('ctrlBar').classList.add('on');
         updateCtrlBarMode('content');
         renderSubcatBar(st.si);
-        renderSosContent(st.si,st.subcatId);
+        renderRescueContent(st.si,st.subcatId);
       }
     });
 
@@ -96,21 +92,21 @@ async function sosBoot(cfg, icons){
     },100);
 
   }catch(e){
-    document.getElementById('loading').textContent='加载失败，请检查 data/sos/index.json';
+    document.getElementById('loading').textContent='加载失败，请检查 data/rescue/index.json';
     console.error(e);
   }
 }
 
 /* ── Storage ── */
-function loadSosStorage(){
+function loadRescueStorage(){
   try{ checkedItems=JSON.parse(localStorage.getItem('lj_checked')||'{}'); }catch(e){ checkedItems={}; }
 }
-function saveSosStorage(){
+function saveRescueStorage(){
   try{ localStorage.setItem('lj_checked',JSON.stringify(checkedItems)); }catch(e){}
 }
 
 /* ── Banner ── */
-function renderSosBanner(b){
+function renderRescueBanner(b){
   b=b||{};
   const total=SCENE_META.reduce((s,sc)=>s+(sc.count||0),0);
   document.getElementById('banner').innerHTML=`
@@ -130,74 +126,70 @@ function renderSosBanner(b){
 }
 
 /* ── 场景首页 ── */
-function renderSosHome(){
-  const wrap=document.getElementById('sosSceneGrid');
+function renderRescueHome(){
+  const wrap=document.getElementById('rescueSceneGrid');
   if(!wrap||!SCENE_META) return;
   wrap.innerHTML=SCENE_META.map((sc,si)=>{
     const icon=ICONS[sc.title]||'📖';
     const hasBg=!!sc.image;
-    const [c1,c2]=getSosColor(si);
+    const [c1,c2]=getRescueColor(si);
     const bgStyle=hasBg
       ?`background-image:url('${sc.image}')`
       :`background:linear-gradient(135deg,${c1} 0%,${c2} 100%)`;
-    return`<div class="sos-scene-card" onclick="openSosScene(${si})">
-      <div class="sos-scene-bg" style="${bgStyle}"></div>
-      <div class="sos-scene-overlay"${hasBg?'':' style="display:none"'}></div>
-      <div class="sos-scene-content">
-        <div class="sos-scene-emoji">${icon}</div>
-        <div class="sos-scene-title">${esc(sc.title_zh||sc.title)}</div>
-        <div class="sos-scene-count">${sc.count}句</div>
+    return`<div class="rescue-scene-card" onclick="openRescueScene(${si})">
+      <div class="rescue-scene-bg" style="${bgStyle}"></div>
+      <div class="rescue-scene-overlay"${hasBg?'':' style="display:none"'}></div>
+      <div class="rescue-scene-content">
+        <div class="rescue-scene-emoji">${icon}</div>
+        <div class="rescue-scene-title">${esc(sc.title_zh||sc.title)}</div>
+        <div class="rescue-scene-count">${sc.count}句</div>
       </div>
     </div>`;
   }).join('');
 }
 
 /* ── 打开场景 ── */
-async function openSosScene(si){
-  currentSosSection=si;
+async function openRescueScene(si){
+  currentRescueSection=si;
   currentSubcat=null;
   filterUnlearned=false;
   stopSpeech();
 
-  // 按需加载场景数据
-  if(!SOS_CACHE[si]){
+  if(!RESCUE_CACHE[si]){
     const meta=SCENE_META[si];
     try{
       const data=await fetch(meta.file).then(r=>r.json());
-      SOS_CACHE[si]=data;
+      RESCUE_CACHE[si]=data;
     }catch(e){
       showToast('场景加载失败',2000); return;
     }
   }
-  currentSceneData=SOS_CACHE[si];
-  history.pushState({panel:'sos',view:'scene',si},'','');
-  showSosDetail(si);
+  currentSceneData=RESCUE_CACHE[si];
+  history.pushState({panel:'rescue',view:'scene',si},'','');
+  showRescueDetail(si);
 }
 
 /* ── 视图切换 ── */
-function showSosHome(fromPopstate){
-  if(!fromPopstate) history.replaceState({panel:'sos',view:'home'},'','');
-  currentSosView='home';
-  const home=document.getElementById('sosHome');
+function showRescueHome(fromPopstate){
+  if(!fromPopstate) history.replaceState({panel:'rescue',view:'home'},'','');
+  currentRescueView='home';
+  const home=document.getElementById('rescueHome');
   home.style.display='';
   home.style.animation='none';
   requestAnimationFrame(()=>{ home.style.animation='fadeIn .2s ease-out'; });
-  document.getElementById('sosDetail').classList.remove('on');
+  document.getElementById('rescueDetail').classList.remove('on');
   document.getElementById('ctrlBar').classList.remove('on');
   document.querySelector('main').classList.remove('has-ctrl');
-  // 隐藏搜索框场景Bar
-  const sbw=document.getElementById('sceneBarWrap');
   const sw=document.getElementById('searchWrap');
-  if(sbw) sbw.style.display='none';
-  if(sw)  sw.style.display='none';
+  if(sw) sw.style.display='none';
   updateCtrlBarMode('home');
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function showSosDetail(si){
-  currentSosView='content';
-  document.getElementById('sosHome').style.display='none';
-  document.getElementById('sosDetail').classList.add('on');
+function showRescueDetail(si){
+  currentRescueView='content';
+  document.getElementById('rescueHome').style.display='none';
+  document.getElementById('rescueDetail').classList.add('on');
   document.querySelector('main').classList.add('has-ctrl');
   window.scrollTo({top:0,behavior:'smooth'});
   setTimeout(()=>{
@@ -209,48 +201,46 @@ function showSosDetail(si){
   const subcats=meta.subcategories||[];
 
   if(subcats.length && !currentSubcat){
-    // 显示场景首页：场景名 + 二级分类大按钮
     document.getElementById('ctrlBar').classList.remove('on');
     updateCtrlBarMode('home');
     renderSceneLanding(si);
   } else {
-    // 直接显示语句列表
     document.getElementById('ctrlBar').classList.add('on');
     updateCtrlBarMode('content');
     renderSubcatBar(si);
-    renderSosContent(si, currentSubcat);
+    renderRescueContent(si, currentSubcat);
   }
 }
 
-/* ── 场景Landing页（场景名+二级分类大按钮）── */
+/* ── 场景Landing页 ── */
 function renderSceneLanding(si){
   const meta=SCENE_META[si]||{};
   const subcats=meta.subcategories||[];
-  const wrap=document.getElementById('sosContentWrap');
-  const bar=document.getElementById('sosSubcatBar');
+  const wrap=document.getElementById('rescueContentWrap');
+  const bar=document.getElementById('rescueSubcatBar');
   if(bar) bar.style.display='none';
   if(!wrap) return;
 
-  const [lc1,lc2]=getSosColor(si);
+  const [lc1,lc2]=getRescueColor(si);
   wrap.innerHTML=`
-    <div class="sos-scene-landing">
-      <div class="sos-landing-hero" style="background:linear-gradient(135deg,${lc1} 0%,${lc2} 100%)">
-        <button class="sos-landing-back" onclick="showSosHome()">← 场景选择</button>
-        <div class="sos-landing-title-hero">${esc(meta.title_zh||meta.title)}</div>
-        <div class="sos-landing-desc-hero">${esc(meta.description||'')}</div>
+    <div class="rescue-scene-landing">
+      <div class="rescue-landing-hero" style="background:linear-gradient(135deg,${lc1} 0%,${lc2} 100%)">
+        <button class="rescue-landing-back" onclick="showRescueHome()">← 场景选择</button>
+        <div class="rescue-landing-title-hero">${esc(meta.title_zh||meta.title)}</div>
+        <div class="rescue-landing-desc-hero">${esc(meta.description||'')}</div>
       </div>
-      <div class="sos-landing-desc" style="display:none">${esc(meta.description||'')}</div>
+      <div class="rescue-landing-desc" style="display:none">${esc(meta.description||'')}</div>
       ${(meta.info&&meta.info.length)?`
       <div class="scene-info-wrap" onclick="
         const info=this.querySelector('.scene-info');
         const btn=this.querySelector('.scene-info-toggle');
         info.classList.toggle('expanded');
-        btn.textContent=info.classList.contains('expanded')?'∧∧点击折叠∧∧':'∨∨点击打开∨∨';
+        btn.textContent=info.classList.contains('expanded')?'∧∧ 点击折叠 ∧∧':'∨∨ 点击打开 ∨∨';
       ">
         <div class="scene-info" id="scene-info-${si}">
           ${meta.info.map(sec=>`
             <div class="scene-info-section">
-              <div class="scene-info-title">${esc(sec.title)}</div>
+              <div class="scene-info-title">${sec.title}</div>
               <div class="scene-info-body">
                 ${sec.table ? `
                   <table class="scene-info-table">
@@ -263,14 +253,14 @@ function renderSceneLanding(si){
               </div>
             </div>`).join('')}
         </div>
-        <div class="scene-info-toggle">∨∨点击打开∨∨</div>
+        <div class="scene-info-toggle">∨∨ 点击打开 ∨∨</div>
       </div>
-    </div>`:''}
-      <div class="sos-landing-grid">
+      `:''}
+      <div class="rescue-landing-grid">
         ${subcats.map(s=>`
-          <button class="sos-landing-btn" onclick="selectSubcat('${s.id}',${si})">
-            <span class="sos-landing-btn-title">${esc(s.title)}</span>
-            <span class="sos-landing-btn-ja">${esc(s.title_ja||'')}</span>
+          <button class="rescue-landing-btn" onclick="selectSubcat('${s.id}',${si})">
+            <span class="rescue-landing-btn-title">${esc(s.title)}</span>
+            <span class="rescue-landing-btn-ja">${esc(s.title_ja||'')}</span>
           </button>`).join('')}
       </div>
     </div>`;
@@ -278,23 +268,18 @@ function renderSceneLanding(si){
 
 function selectSubcat(subcatId, si){
   currentSubcat=subcatId;
-  history.pushState({panel:'sos',view:'subcat',si,subcatId},'','');
+  history.pushState({panel:'rescue',view:'subcat',si,subcatId},'','');
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('content');
   renderSubcatBar(si);
-  renderSosContent(si, subcatId);
-  // 急救版块已激活时再次点击，返回场景首页
-if(name === 'sos' && currentTab === 'sos'){
-  if(typeof showSosHome === 'function') showSosHome();
-  return;
-}
+  renderRescueContent(si, subcatId);
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
 /* ── 二级分类Bar ── */
 function renderSubcatBar(si){
   const meta=SCENE_META[si]||{};
-  const bar=document.getElementById('sosSubcatBar');
+  const bar=document.getElementById('rescueSubcatBar');
   if(!bar) return;
   const subcats=meta.subcategories||[];
   if(!subcats.length){
@@ -302,10 +287,10 @@ function renderSubcatBar(si){
   }
   bar.style.display='';
   bar.innerHTML=[
-    `<button class="sos-subcat-btn${!currentSubcat?' on':''}"
+    `<button class="rescue-subcat-btn${!currentSubcat?' on':''}"
              onclick="setSubcat(null)">返回</button>`
   ].concat(subcats.map(s=>
-    `<button class="sos-subcat-btn${currentSubcat===s.id?' on':''}"
+    `<button class="rescue-subcat-btn${currentSubcat===s.id?' on':''}"
              id="subcat-${s.id}" onclick="setSubcat('${s.id}')">
       ${esc(s.title)}
     </button>`
@@ -314,29 +299,27 @@ function renderSubcatBar(si){
 
 function setSubcat(id){
   if(!id){
-    // 点「全部」返回场景landing
     currentSubcat=null;
     document.getElementById('ctrlBar').classList.remove('on');
     updateCtrlBarMode('home');
-    renderSceneLanding(currentSosSection);
+    renderSceneLanding(currentRescueSection);
     window.scrollTo({top:0,behavior:'smooth'});
     return;
   }
   currentSubcat=id;
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('content');
-  renderSubcatBar(currentSosSection);
-  renderSosContent(currentSosSection, id);
+  renderSubcatBar(currentRescueSection);
+  renderRescueContent(currentRescueSection, id);
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
 /* ── 内容渲染 ── */
-function renderSosContent(si, subcatId){
+function renderRescueContent(si, subcatId){
   const sec=currentSceneData;
-  const wrap=document.getElementById('sosContentWrap');
+  const wrap=document.getElementById('rescueContentWrap');
   if(!wrap||!sec) return;
 
-  // 过滤：二级分类 + 只看未学（staff句始终保留）
   let items=sec.items.map((item,ii)=>({item,ii}));
   if(subcatId){
     items=items.filter(({item})=>item.subcategory===subcatId);
@@ -406,7 +389,7 @@ function toggleRuby(){
   document.body.classList.toggle('no-ruby',!rubyOn);
   const btn=document.getElementById('btnRuby');
   if(btn) btn.classList.toggle('on',!rubyOn);
-  if(currentSosView==='content') renderSosContent(currentSosSection,currentSubcat);
+  if(currentRescueView==='content') renderRescueContent(currentRescueSection,currentSubcat);
 }
 
 /* ── 学会了 ── */
@@ -414,7 +397,7 @@ function toggleDone(si,ii){
   const key=`${si}-${ii}`;
   checkedItems[key]=!checkedItems[key];
   if(!checkedItems[key]) delete checkedItems[key];
-  saveSosStorage();
+  saveRescueStorage();
   const isDone=!!checkedItems[key];
   if(filterUnlearned&&isDone){
     const card=document.getElementById(`card-${si}-${ii}`);
@@ -436,7 +419,7 @@ function toggleFilterUnlearned(){
   filterUnlearned=!filterUnlearned;
   const btn=document.getElementById('btnUnlearned');
   if(btn) btn.classList.toggle('on',filterUnlearned);
-  renderSosContent(currentSosSection,currentSubcat);
+  renderRescueContent(currentRescueSection,currentSubcat);
 }
 
 /* ── 搜索 ── */
@@ -444,15 +427,15 @@ document.addEventListener('DOMContentLoaded',()=>{
   const si=document.getElementById('searchInput');
   if(si) si.addEventListener('input',function(){
     const q=this.value.trim();
-    if(!q){ clearSosSearch(); return; }
-    doSosSearch(q);
+    if(!q){ clearRescueSearch(); return; }
+    doRescueSearch(q);
   });
 });
 
-function doSosSearch(q){
+function doRescueSearch(q){
   stopSpeech();
-  document.getElementById('sosHome').style.display='none';
-  document.getElementById('sosDetail').classList.add('on');
+  document.getElementById('rescueHome').style.display='none';
+  document.getElementById('rescueDetail').classList.add('on');
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('search');
   const lower=q.toLowerCase(); let total=0, html='';
@@ -478,11 +461,11 @@ function doSosSearch(q){
       </div>`;
     });
   });
-  const wrap=document.getElementById('sosContentWrap');
+  const wrap=document.getElementById('rescueContentWrap');
   if(wrap) wrap.innerHTML=`
     <div class="srch-header">「${esc(q)}」的搜索结果：${total}句</div>
     ${html||'<p style="color:var(--t4);padding:20px 0;font-size:13px">没有找到相关句子。</p>'}`;
-  const bar=document.getElementById('sosSubcatBar');
+  const bar=document.getElementById('rescueSubcatBar');
   if(bar) bar.style.display='none';
 }
 
@@ -491,15 +474,15 @@ function hlTxt(t,q){
   return e.replace(new RegExp(eq,'gi'),m=>`<mark>${m}</mark>`);
 }
 
-function clearSosSearch(){
+function clearRescueSearch(){
   const si=document.getElementById('searchInput');
   if(si) si.value='';
-  if(currentSosView==='content'){
-    renderSubcatBar(currentSosSection);
-    renderSosContent(currentSosSection,currentSubcat);
+  if(currentRescueView==='content'){
+    renderSubcatBar(currentRescueSection);
+    renderRescueContent(currentRescueSection,currentSubcat);
     updateCtrlBarMode('content');
   } else {
-    showSosHome();
+    showRescueHome();
   }
 }
 
@@ -509,13 +492,13 @@ function renderCtrlBar(c){
   const modeHtml=`<div class="cseg">
     ${(c.modes||[]).map(m=>
       `<button class="btn${currentMode===m.id?' on':''}" id="smode-${m.id}"
-               onclick="setSosMode('${m.id}')">${esc(m.label)}</button>`
+               onclick="setRescueMode('${m.id}')">${esc(m.label)}</button>`
     ).join('')}
   </div>`;
   const rateHtml=`<div class="cseg">
     ${(c.rates||[]).map(r=>
       `<button class="btn${currentRate===r.id?' on':''}" id="srate-${r.id}"
-               onclick="setSosRate('${r.id}')">${esc(r.label)}</button>`
+               onclick="setRescueRate('${r.id}')">${esc(r.label)}</button>`
     ).join('')}
   </div>`;
   const row2=document.getElementById('ctrlRow2');
@@ -530,17 +513,17 @@ function updateCtrlBarMode(mode){
     cb.classList.remove('on'); return;
   }
   cb.classList.add('on');
-  const backBtn=document.getElementById('btnSosBack');
+  const backBtn=document.getElementById('btnRescueBack');
   if(backBtn) backBtn.style.display= mode==='search'?'none':'';
 }
 
-function setSosMode(m){
+function setRescueMode(m){
   currentMode=m;
   document.querySelectorAll('[id^="smode-"]').forEach(el=>el.classList.remove('on'));
   const el=document.getElementById('smode-'+m);
   if(el) el.classList.add('on');
 }
-function setSosRate(r){
+function setRescueRate(r){
   currentRate=r;
   document.querySelectorAll('[id^="srate-"]').forEach(el=>el.classList.remove('on'));
   const el=document.getElementById('srate-'+r);
@@ -593,8 +576,7 @@ function speakAll(){
   if(!sec) return;
   let items=sec.items.map((item,ii)=>({item,ii}));
   if(currentSubcat) items=items.filter(({item})=>item.subcategory===currentSubcat);
-  if(filterUnlearned) items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${currentSosSection}-${ii}`]);
-  // 朗读时跳过staff句（对方说的话不朗读给对方听）
+  if(filterUnlearned) items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${currentRescueSection}-${ii}`]);
   items=items.filter(({item})=>item.role!=='staff');
   if(!items.length){showToast('没有未学的句子了 🎉',2000);return;}
   speakList(items,0,session);
@@ -613,7 +595,7 @@ function speakList(list,idx,session){
     return;
   }
   const {item,ii}=list[idx];
-  hlCard(currentSosSection,ii);
+  hlCard(currentRescueSection,ii);
   speak(getModeTexts(item),()=>setTimeout(()=>speakList(list,idx+1,session),450),session);
 }
 
@@ -651,27 +633,27 @@ function toggleLoop(){
 
 /* ── 模块注册 ── */
 window.LJ_MODULES=window.LJ_MODULES||{};
-window.LJ_MODULES['sos']={
+window.LJ_MODULES['rescue']={
   init:async function(cfg,icons){
-    document.getElementById('panel-sos').innerHTML=`
-      <div id="sosHome">
+    document.getElementById('panel-rescue').innerHTML=`
+      <div id="rescueHome">
         <div id="banner"></div>
-        <div class="sos-scene-wrap">
-          <div class="sos-scene-grid" id="sosSceneGrid"></div>
+        <div class="rescue-scene-wrap">
+          <div class="rescue-scene-grid" id="rescueSceneGrid"></div>
         </div>
       </div>
-      <div id="sosDetail">
-        <div class="sos-subcat-bar" id="sosSubcatBar" style="display:none"></div>
-        <div class="sos-content-wrap">
+      <div id="rescueDetail">
+        <div class="rescue-subcat-bar" id="rescueSubcatBar" style="display:none"></div>
+        <div class="rescue-content-wrap">
           <div id="loading" style="display:none"></div>
-          <div id="sosContentWrap"></div>
+          <div id="rescueContentWrap"></div>
         </div>
       </div>`;
 
     document.getElementById('ctrlBar').innerHTML=`
       <div class="ctrl-row1">
         <div class="ctrl-row1-left">
-          <button class="ctrl-back" id="btnSosBack" onclick="showSosHome()">←场景选择</button>
+          <button class="ctrl-back" id="btnRescueBack" onclick="showRescueHome()">←场景选择</button>
         </div>
         <div class="ctrl-row1-mid">
           <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>
@@ -686,6 +668,6 @@ window.LJ_MODULES['sos']={
       </div>
       <div class="ctrl-row2" id="ctrlRow2"></div>`;
 
-    await sosBoot(cfg,icons);
+    await rescueBoot(cfg,icons);
   }
 };

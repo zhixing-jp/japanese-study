@@ -1,16 +1,16 @@
 /* ══════════════════════════════
-   sos.css — 急救版块样式 v2
+   rescue.css — 急救版块样式 v2
    Living Japanese v3.0
 ══════════════════════════════ */
 
 /* ── 版块首页 ── */
-#sosHome {
+#rescueHome {
   display: block;
 }
-#sosDetail {
+#rescueDetail {
   display: none;
 }
-#sosDetail.on {
+#rescueDetail.on {
   display: block;
 }
 
@@ -60,11 +60,11 @@
 }
 
 /* ── 场景卡片网格（首页）── */
-.sos-scene-wrap { padding: 4px 14px 12px; }
-.sos-scene-grid {
+.rescue-scene-wrap { padding: 4px 14px 12px; }
+.rescue-scene-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
 }
-.sos-scene-card {
+.rescue-scene-card {
   border-radius: var(--r-md); overflow: hidden;
   cursor: pointer; border: 1.5px solid var(--line);
   transition: all .18s cubic-bezier(.34,1.56,.64,1);
@@ -72,46 +72,46 @@
   box-shadow: 0 2px 8px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06);
   aspect-ratio: 1; background: var(--surface);
 }
-.sos-scene-card:active { transform: scale(.92); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
-.sos-scene-bg {
+.rescue-scene-card:active { transform: scale(.92); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.rescue-scene-bg {
   position: absolute; inset: 0;
   background-size: cover; background-position: center;
   transition: transform .3s;
 }
-.sos-scene-card:active .sos-scene-bg { transform: scale(1.05); }
-.sos-scene-overlay {
+.rescue-scene-card:active .rescue-scene-bg { transform: scale(1.05); }
+.rescue-scene-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(to bottom, rgba(0,0,0,.1) 0%, rgba(0,0,0,.55) 100%);
 }
-.sos-scene-content {
+.rescue-scene-content {
   position: absolute; inset: 0;
   display: flex; flex-direction: column;
   align-items: center; justify-content: flex-end; padding: 8px 6px;
 }
-.sos-scene-emoji { font-size: 22px; margin-bottom: 3px; line-height: 1; }
-.sos-scene-title {
+.rescue-scene-emoji { font-size: 22px; margin-bottom: 3px; line-height: 1; }
+.rescue-scene-title {
   font-size: 11px; font-weight: 700; color: #fff;
   line-height: 1.3; text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-.sos-scene-count {
+.rescue-scene-count {
   font-size: 9px; color: rgba(255,255,255,.6);
   margin-top: 2px;
 }
-.sos-scene-card.no-image {
+.rescue-scene-card.no-image {
   background: linear-gradient(135deg, #2D3561 0%, #1A1A2E 100%);
 }
-.sos-scene-card.no-image .sos-scene-overlay { display: none; }
+.rescue-scene-card.no-image .rescue-scene-overlay { display: none; }
 
 /* ── 内容页顶部：路径式二级菜单 ── */
-.sos-subcat-bar {
+.rescue-subcat-bar {
   padding: 8px 14px 6px;
   border-bottom: .5px solid var(--line);
   background: var(--bg);
   display: flex; flex-wrap: wrap; gap: 4px;
   flex-shrink: 0;
 }
-.sos-subcat-btn {
+.rescue-subcat-btn {
   font-size: 13px; font-weight: 600;
   padding: 5px 12px; border-radius: 20px;
   background: var(--surface); color: var(--t3);
@@ -120,17 +120,17 @@
   white-space: nowrap;
   box-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
-.sos-subcat-btn.on {
+.rescue-subcat-btn.on {
   background: var(--t1); color: #fff; border-color: var(--t1);
 }
-.sos-subcat-btn.on.scene-color {
+.rescue-subcat-btn.on.scene-color {
   background: linear-gradient(135deg, var(--scene-c1,#1C1C1E) 0%, var(--scene-c2,#3A3A3C) 100%);
   border-color: transparent;
 }
-.sos-subcat-btn:active { transform: scale(.92); }
+.rescue-subcat-btn:active { transform: scale(.92); }
 
 /* ── 内容区域 ── */
-.sos-content-wrap { padding: 4px 14px 8px; animation: fadeInFast .18s ease-out; }
+.rescue-content-wrap { padding: 4px 14px 8px; animation: fadeInFast .18s ease-out; }
 
 /* ── 语句卡片（简化版）── */
 .card {
@@ -334,15 +334,15 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
 }
 
 /* ── 场景Landing页 ── */
-.sos-scene-landing {
+.rescue-scene-landing {
   animation: fadeIn .2s ease-out;
 }
-.sos-landing-hero {
+.rescue-landing-hero {
   padding: 14px 16px 20px;
   display: flex; flex-direction: column; gap: 6px;
   border-radius: 0 0 var(--r-xl) var(--r-xl);
 }
-.sos-landing-back {
+.rescue-landing-back {
   align-self: flex-start;
   height: 32px; padding: 0 14px; border-radius: 20px;
   background: rgba(255,255,255,0.20); color: #fff;
@@ -353,20 +353,20 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   transition: all .15s cubic-bezier(.34,1.56,.64,1);
   margin-bottom: 8px;
 }
-.sos-landing-back:active { transform: scale(.92); background: rgba(255,255,255,.30); }
-.sos-landing-title-hero {
+.rescue-landing-back:active { transform: scale(.92); background: rgba(255,255,255,.30); }
+.rescue-landing-title-hero {
   font-size: 26px; font-weight: 700; color: #fff;
   letter-spacing: -.3px; text-shadow: 0 1px 4px rgba(0,0,0,.3);
 }
-.sos-landing-desc-hero {
+.rescue-landing-desc-hero {
   font-size: 13px; color: rgba(255,255,255,.75);
   line-height: 1.5; font-style: italic;
 }
-.sos-landing-title {
+.rescue-landing-title {
   font-size: 24px; font-weight: 700; color: var(--t1);
   letter-spacing: -.3px; margin-bottom: 0px;
 }
-.sos-landing-desc {
+.rescue-landing-desc {
   font-size: 13px; color: var(--t4);
   line-height: 1.6; margin-bottom: 20px;
   font-style: italic;
@@ -428,13 +428,13 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   margin-top: 4px;
   cursor: pointer;
 }
-.sos-landing-grid {
+.rescue-landing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   padding: 16px 16px 20px;
 }
-.sos-landing-btn {
+.rescue-landing-btn {
   background: var(--surface);
   border: 1.5px solid var(--line);
   border-radius: var(--r-md);
@@ -448,16 +448,16 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
   text-align: left;
   box-shadow: 0 1px 4px rgba(0,0,0,.08), 0 1px 1px rgba(0,0,0,.04);
 }
-.sos-landing-btn:active {
+.rescue-landing-btn:active {
   transform: scale(.95);
   background: var(--red-bg);
   border-color: var(--red);
 }
-.sos-landing-btn-title {
+.rescue-landing-btn-title {
   font-size: 16px; font-weight: 700; color: var(--t1);
   letter-spacing: -.1px;
 }
-.sos-landing-btn-ja {
+.rescue-landing-btn-ja {
   font-size: 12px; color: var(--t4); font-weight: 500;
 }
 
