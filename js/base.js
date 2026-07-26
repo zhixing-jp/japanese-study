@@ -67,11 +67,11 @@ async function loadModules(modules){
 window.LJ_MODULES = window.LJ_MODULES || {};
 
 /* ── Tab Switch ── */
-let currentTab = 'sos';
+let currentTab = 'rescue';
 function switchTab(name){
   // 急救版块已激活时再次点击，返回场景首页
-  if(name === 'sos' && currentTab === 'sos'){
-    if(typeof showSosHome === 'function') showSosHome();
+  if(name === 'rescue' && currentTab === 'rescue'){
+    if(typeof showrescueHome === 'function') showrescueHome();
     return;
   }
   if(name === 'learn' && currentTab === 'learn'){
@@ -93,18 +93,18 @@ function switchTab(name){
   const tb = document.getElementById('tab-'+name);
   if(tb) tb.classList.add('on');
 
-  const isSos   = name === 'sos';
+  const isrescue   = name === 'rescue';
   const isLearn = name === 'learn';
   const sw  = document.getElementById('searchWrap');
   const lcb = document.getElementById('learnCtrlBar');
 
-  if(sw)  sw.style.display = isSos ? '' : 'none';
+  if(sw)  sw.style.display = isrescue ? '' : 'none';
   if(lcb) lcb.classList.toggle('on', isLearn);
 
   // 根据是否有ctrlBar切换main的padding
   const _main = document.querySelector('main');
   if(_main){
-    if(name === 'sos' || name === 'learn'){
+    if(name === 'rescue' || name === 'learn'){
       _main.classList.add('has-ctrl');
     } else {
       _main.classList.remove('has-ctrl');

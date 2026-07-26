@@ -52,7 +52,7 @@
 <!-- ══ MAIN ══ -->
 <main></main>
 
-<!-- ══ SOS CONTROLS BAR（内容由 sos.js 动态写入）══ -->
+<!-- ══ rescue CONTROLS BAR（内容由 rescue.js 动态写入）══ -->
 <div id="ctrlBar"></div>
 
 <!-- ══ LEARN CONTROLS BAR（内容由 learn.js 动态写入）══ -->
@@ -77,7 +77,7 @@ let CFG = {};
 (async ()=>{
   try {
     CFG = await fetch('config.json').then(r=>r.json());
-    const icons = await fetch('data/sos/scene_icons.json').then(r=>r.json());
+    const icons = await fetch('data/rescue/scene_icons.json').then(r=>r.json());
 
     renderSiteTitle(CFG);
     renderPanels(CFG);
@@ -97,7 +97,7 @@ let CFG = {};
 
     // 恢复上次的Tab
     const savedTab = localStorage.getItem('lj_tab');
-    if(savedTab && savedTab !== 'sos'){
+    if(savedTab && savedTab !== 'rescue'){
       switchTab(savedTab);
       switchTab(currentTab);
     }

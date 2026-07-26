@@ -1,0 +1,1058 @@
+{
+  "meta": {
+    "version": "2.0",
+    "description": "Living Japanese | 急救版块场景目录"
+  },
+  "scenes": [
+    {
+      "id": "s00",
+      "file": "data/rescue/s00_common.json",
+      "title": "共通短句",
+      "title_zh": "共通短句",
+      "image": "assets/rescue/scenes/common.webp",
+      "description": "所有场景都会用到的基础用语。遇到困难时，这里的句子永远有用。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "打招呼",
+          "title_ja": "挨拶"
+        },
+        {
+          "id": "sub02",
+          "title": "感谢与道歉",
+          "title_ja": "感謝・謝罪"
+        },
+        {
+          "id": "sub03",
+          "title": "听不懂怎么办",
+          "title_ja": "聞き取れない時"
+        },
+        {
+          "id": "sub04",
+          "title": "求助",
+          "title_ja": "助けを求める"
+        },
+        {
+          "id": "sub05",
+          "title": "问基本信息",
+          "title_ja": "基本的な質問"
+        }
+      ],
+      "count": 28
+    },
+    {
+      "id": "s01",
+      "file": "data/rescue/s01_airport.json",
+      "title": "入境・空港",
+      "title_zh": "入境・机场",
+      "image": "assets/rescue/scenes/airport.webp",
+      "description": "刚到日本，在机场入境时用到的句子。",
+      "info": [
+  {
+    "title": "入境流程顺序：",
+    "lines": [
+      "飞机落地 → 入国审查（Immigration）→ 行李提取 → 海关申报（税関）→ 出机场"
+    ]
+  },
+  {
+    "title": "入国审查需要准备：",
+    "lines": [
+      "护照 + 回程机票（电子版即可）",
+      "住宿地址（酒店预订确认书出示手机即可）",
+      "需要按指纹、拍照，配合操作即可",
+      "长居者持在留卡，走专用通道，流程更快"
+    ]
+  },
+  {
+    "title": "海关申报：",
+    "lines": [
+      "提前在「Visit Japan Web」完成电子申报，出示二维码即可",
+      "携带肉制品、水果、超额现金（100万円以上）需申报",
+      "未申报违禁品会被没收，严重者影响入境资格"
+    ]
+  },
+  {
+    "title": "出机场交通：",
+    "lines": [
+      "<strong>电车</strong>：最便宜，关西用南海或JR，关东用成田EX或京成",
+      "<strong>大巴</strong>：直达酒店或主要车站，适合行李多的情况",
+      "<strong>出租车</strong>：最贵，适合深夜或目的地偏远",
+      "建议落地后先购买或激活IC卡（ICOCA / Suica）"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入境审查",
+          "title_ja": "入国審査"
+        },
+        {
+          "id": "sub02",
+          "title": "行李领取",
+          "title_ja": "荷物受取"
+        },
+        {
+          "id": "sub03",
+          "title": "海关申报",
+          "title_ja": "税関申告"
+        },
+        {
+          "id": "sub04",
+          "title": "出机场｜交通",
+          "title_ja": "离开机场"
+        }
+      ],
+      "count": 18
+    },
+    {
+      "id": "s02",
+      "file": "data/rescue/s02_outing.json",
+      "title": "外出",
+      "title_zh": "出门",
+      "image": "assets/rescue/scenes/outing.webp",
+      "description": "出门在外，问路、找设施、迷路时用到的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "问路",
+          "title_ja": "道を聞く"
+        },
+        {
+          "id": "sub02",
+          "title": "找设施",
+          "title_ja": "施設を探す"
+        },
+        {
+          "id": "sub03",
+          "title": "迷路",
+          "title_ja": "迷子"
+        }
+      ],
+      "count": 19
+    },
+    {
+      "id": "s03",
+      "file": "data/rescue/s03_shopping.json",
+      "title": "買い物",
+      "title_zh": "买东西",
+      "image": "assets/rescue/scenes/shopping.webp",
+      "description": "超市、便利店、药妆店——无论在哪里买东西，这些句子都用得到。",
+      "info": [
+  {
+    "title": "消费税与免税：",
+    "lines": [
+      "日本消费税为<strong>10%</strong>，食品・饮料为<strong>8%</strong>",
+      "外国游客在指定店铺购物满<strong>5,000円</strong>（税前）可办理免税",
+      "免税需出示护照，商品须在30天内带出日本",
+      "标有「Tax Free」的店铺可办理，大型药妆店和百货店通常都有"
+    ]
+  },
+  {
+    "title": "退换货规定：",
+    "lines": [
+      "日本各店退换货政策不统一，购买前最好确认",
+      "通常需要保留收据（レシート）和原包装",
+      "食品、内衣、已拆封商品一般不可退换",
+      "有问题的商品（破损、瑕疵）大多数店铺会接受退换"
+    ]
+  },
+  {
+    "title": "支付方式：",
+    "lines": [
+      "现金仍被广泛接受，建议随身携带",
+      "IC卡（Suica / ICOCA）、信用卡、手机支付普遍可用",
+      "部分小店和个人摊贩只收现金",
+      "自助收银机（セルフレジ）越来越普遍，操作语言可切换"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "找商品",
+          "title_ja": "商品を探す"
+        },
+        {
+          "id": "sub02",
+          "title": "结账",
+          "title_ja": "会計"
+        },
+        {
+          "id": "sub03",
+          "title": "退换货",
+          "title_ja": "返品・交換"
+        },
+        {
+          "id": "sub04",
+          "title": "试穿试用",
+          "title_ja": "試着・試用"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "id": "s04",
+      "file": "data/rescue/s04_food.json",
+      "title": "飲食",
+      "title_zh": "吃饭",
+      "image": "assets/rescue/scenes/food.webp",
+      "description": "从入店到结账，在餐厅用餐全流程用到的句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入店预约",
+          "title_ja": "入店・予約"
+        },
+        {
+          "id": "sub02",
+          "title": "点餐",
+          "title_ja": "注文"
+        },
+        {
+          "id": "sub03",
+          "title": "用餐中",
+          "title_ja": "食事中"
+        },
+        {
+          "id": "sub04",
+          "title": "结账",
+          "title_ja": "会計"
+        }
+      ],
+      "count": 42
+    },
+    {
+      "id": "s05",
+      "file": "data/rescue/s05_transport.json",
+      "title": "交通",
+      "title_zh": "坐车",
+      "image": "assets/rescue/scenes/transport.webp",
+      "description": "电车、公交、出租车——成功到达目的地所需的句子。",
+      
+      "info": [
+  {
+    "title": "日本主要交通工具：",
+    "lines": [
+      "<strong>電車・地下鉄</strong>：最常用，准时，覆盖城市主要区域",
+      "<strong>新幹線</strong>：城市间长距离移动，速度快但票价高",
+      "<strong>路線バス</strong>：覆盖电车到不了的区域，后门上车前门下车",
+      "<strong>タクシー</strong>：车门自动开关，适合深夜或行李多时",
+      "<strong>自転車</strong>：短距离移动，注意停放规定，乱停会被移走"
+    ]
+  },
+  {
+    "title": "IC卡（交通卡）：",
+    "lines": [
+      "关西用<strong>ICOCA</strong>，关东用<strong>Suica</strong>，全国大部分交通通用",
+      "便利店、自动售货机也可以使用",
+      "余额不足时在站内充值机充值（チャージ）"
+    ]
+  },
+  {
+    "title": "乘电车注意：",
+    "lines": [
+      "同一条线路有普通、急行、特急之分，停站不同",
+      "坐错方向或坐过站，找站务员说明即可处理",
+      "末班车（終電）时间约23点-24点，各路线不同"
+    ]
+  },
+  {
+    "title": "乘公交注意：",
+    "lines": [
+      "通常后门上车、前门下车，上车时取整理券",
+      "下车前按铃提示司机，下车时付费或刷卡",
+      "部分地区前门上车，规则因地而异"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "电车",
+          "title_ja": "電車"
+        },
+        {
+          "id": "sub02",
+          "title": "公交",
+          "title_ja": "バス"
+        },
+        {
+          "id": "sub03",
+          "title": "出租车",
+          "title_ja": "タクシー"
+        },
+        {
+          "id": "sub04",
+          "title": "异常情况",
+          "title_ja": "トラブル"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "id": "s06",
+      "file": "data/rescue/s06_medical.json",
+      "title": "受診",
+      "title_zh": "看病",
+      "image": "assets/rescue/scenes/medical.webp",
+      "description": "从预约到取药，成功看到医生所需的句子。",
+      "info": [
+    {
+      "title": "在日本看病，有三种方式：",
+      "lines": [
+        "<strong>诊所（クリニック）</strong>：适合轻症，部分可直接去无需预约",
+        "<strong>医院（病院）</strong>：适合慢性病复诊或需要专科检查",
+        "<strong>急诊（救急）</strong>：严重症状拨打119，或前往救急医院"
+      ]
+    },
+    {
+      "title": "常见科室：",
+      "table": [
+        ["科室", "对应症状・说明"],
+        ["<strong>内科</strong>", "发烧、感冒、腹痛等一般症状"],
+        ["<strong>外科</strong>", "外伤、手术（≠中文外科，不含骨科）"],
+        ["<strong>整形外科</strong>", "骨折、关节、肌肉（≠中文整形，是骨科）"],
+        ["<strong>皮膚科</strong>", "皮肤问题"],
+        ["<strong>眼科</strong>", "眼睛问题"],
+        ["<strong>耳鼻咽喉科</strong>", "耳鼻喉问题"],
+        ["<strong>歯科・口腔外科</strong>", "牙齿、口腔问题"],
+        ["<strong>小児科</strong>", "儿童看诊（14岁以下）"],
+        ["<strong>産婦人科</strong>", "妇科、产科"],
+        ["<strong>泌尿器科</strong>", "泌尿系统问题"],
+        ["<strong>循環器科</strong>", "心脏、血管问题"],
+        ["<strong>精神科・心療内科</strong>", "心理、精神健康"]
+      ]
+    },
+    {
+      "title": "就诊流程：",
+      "lines": [
+        "预约（网络或电话）→ 挂号（受付）→ 候诊室等待",
+        "→ 医生问诊 → 缴费 → 凭处方笺去附近药局取药"
+      ]
+    },
+    {
+      "title": "需要准备：",
+      "lines": [
+        "健康保険証（医保卡）或マイナンバーカード",
+        "初诊需填写问诊表（問診票）",
+        "处方笺可在医院附近任意调剂药局使用"
+      ]
+    }
+  ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "预约",
+          "title_ja": "予約"
+        },
+        {
+          "id": "sub02",
+          "title": "挂号",
+          "title_ja": "受け付け"
+        },
+        {
+          "id": "sub03",
+          "title": "说症状",
+          "title_ja": "症状を伝える"
+        },
+        {
+          "id": "sub04",
+          "title": "问诊结果",
+          "title_ja": "診察結果"
+        },
+        {
+          "id": "sub05",
+          "title": "取药",
+          "title_ja": "お薬"
+        },
+        {
+          "id": "sub06",
+          "title": "儿科",
+          "title_ja": "小児科"
+        }
+      ],
+      "count": 60
+    },
+    {
+      "id": "s07",
+      "file": "data/rescue/s07_admin.json",
+      "title": "手続き",
+      "title_zh": "行政手续",
+      "image": "assets/rescue/scenes/admin.webp",
+      "description": "役所、区役所——成功办完手续，拿到需要的文件。",
+      "info": [
+  {
+    "title": "常去的机构：",
+    "lines": [
+      "<strong>市役所・区役所</strong>：住民票、健康保险、搬家登记等日常手续",
+      "<strong>入管局（出入国在留管理局）</strong>：在留资格更新、变更",
+      "<strong>警察署・運転免許センター</strong>：驾照换取、更新",
+      "<strong>年金事務所</strong>：国民年金相关手续"
+    ]
+  },
+  {
+    "title": "去役所前需要准备：",
+    "lines": [
+      "在留卡（ザイリュウカード）或マイナンバーカード",
+      "部分手续需要印章（はんこ），签名也可接受",
+      "不确定需要什么材料，可先电话确认"
+    ]
+  },
+  {
+    "title": "役所的流程：",
+    "lines": [
+      "入口取号（番号札）→ 等待叫号 → 到窗口办理",
+      "填写申请书（申請書）→ 缴费 → 领取证明或等待邮寄"
+    ]
+  },
+  {
+    "title": "在留资格手续（入管局）：",
+    "lines": [
+      "更新或变更在留资格需提前申请，不能逾期",
+      "审查期间约1-3个月，期间可继续居住",
+      "审查通过后收到通知书，带手续费前往领取新在留卡"
+    ]
+  }
+  ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "到窗口",
+          "title_ja": "窓口へ"
+        },
+        {
+          "id": "sub02",
+          "title": "填写表格",
+          "title_ja": "書類記入"
+        },
+        {
+          "id": "sub03",
+          "title": "确认内容",
+          "title_ja": "内容確認"
+        }
+      ],
+      "count": 23
+    },
+    {
+      "id": "s08",
+      "file": "data/rescue/s08_money.json",
+      "title": "お金",
+      "title_zh": "用钱",
+      "image": "assets/rescue/scenes/money.webp",
+      "description": "银行、ATM、邮局——成功完成金融和寄送操作。",
+      "info": [
+  {
+    "title": "在日本开银行账户：",
+    "lines": [
+      "常用银行：<strong>ゆうちょ銀行</strong>（邮政银行）/ <strong>三菱UFJ</strong> / <strong>三井住友</strong> / <strong>みずほ</strong>",
+      "需要准备：在留卡、マイナンバーカード、手机号码",
+      "部分银行要求在日居住满6个月才可开户",
+      "ゆうちょ銀行门槛较低，适合刚到日本的人"
+    ]
+  },
+  {
+  "title": "ATM使用：",
+  "lines": [
+    "便利店ATM（Seven Bank / ローソン / イオン）支持外国卡",
+    "可切换英文界面操作",
+    "深夜・节假日使用可能收取手续费（约110-220円）",
+    "海外发行的银行卡可在标有「国際カード対応」的ATM使用",
+    "跨行取款手续费：平日日间通常免费，其他时段约110円",
+    "国际汇款手续费：各银行不同，通常2,000-3,500円"
+  ]
+},
+  {
+    "title": "日本常用支付方式：",
+    "lines": [
+      "<strong>现金</strong>：日本仍广泛使用，建议随身携带",
+      "<strong>IC卡</strong>（Suica / ICOCA）：便利店、超市、交通通用",
+      "<strong>クレジットカード</strong>：大型店铺普遍接受",
+      "<strong>スマホ決済</strong>（PayPay / LINE Pay）：中小店铺覆盖率高"
+    ]
+  },
+  {
+    "title": "向中国汇款：",
+    "lines": [
+      "可通过银行国际汇款，需要对方账户的SWIFT代码",
+      "<strong>WeChat Pay</strong> / <strong>Alipay</strong>国际版也可转账",
+      "汇款金额较大时银行可能要求说明资金来源"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "银行ATM",
+          "title_ja": "銀行・ATM"
+        },
+        {
+          "id": "sub02",
+          "title": "汇款",
+          "title_ja": "送金"
+        },
+        {
+          "id": "sub03",
+          "title": "邮局",
+          "title_ja": "郵便局"
+        }
+      ],
+      "count": 22
+    },
+    {
+      "id": "s09",
+      "file": "data/rescue/s09_housing.json",
+      "title": "住まい",
+      "title_zh": "住房",
+      "image": "assets/rescue/scenes/housing.webp",
+      "description": "找房、报修、收快递——成功解决居住相关问题。",
+      "info": [
+  {
+    "title": "租房流程：",
+    "lines": [
+      "中介看房 → 申请（申込）→ 审查（约1周）→ 签约 → 缴费 → 入住"
+    ]
+  },
+  {
+    "title": "初期费用（入住时一次性缴纳）：",
+    "table": [
+      ["费用项目", "金额", "是否退还"],
+      ["<strong>敷金</strong>（押金）", "1-2个月房租", "退房后部分退还"],
+      ["<strong>礼金</strong>", "1-2个月房租", "不退还"],
+      ["<strong>仲介手数料</strong>", "1个月房租", "不退还"],
+      ["<strong>火災保険</strong>", "约1-2万円/年", "不退还"]
+    ]
+  },
+  {
+    "title": "租房注意事项：",
+    "lines": [
+      "外国人租房可能需要<strong>保证会社</strong>（担保公司）审查",
+      "合同通常以2年为单位，续签需缴纳更新料",
+      "退房需提前1-2个月通知，具体看合同规定",
+      "搬入时拍照记录房间原状，避免退房时纠纷"
+    ]
+  },
+  {
+    "title": "入住后需要办理：",
+    "lines": [
+      "搬入14天内去<strong>市役所・区役所</strong>办理转入登记（転入届）",
+      "确认垃圾分类规则和收取日期",
+      "了解紧急联系方式（管理会社・大家）"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "找房",
+          "title_ja": "物件探し"
+        },
+        {
+          "id": "sub02",
+          "title": "报修",
+          "title_ja": "修理依頼"
+        },
+        {
+          "id": "sub03",
+          "title": "收快递",
+          "title_ja": "荷物受取"
+        },
+        {
+          "id": "sub04",
+          "title": "邻里",
+          "title_ja": "近所付き合い"
+        }
+      ],
+      "count": 29
+    },
+    {
+      "id": "s10",
+      "file": "data/rescue/s10_kids.json",
+      "title": "子供・学校",
+      "title_zh": "孩子・学校",
+      "image": "assets/rescue/scenes/kids.webp",
+      "description": "入学手续、送园接园、和老师沟通——成功处理好孩子的事。",
+      "info": [
+  {
+    "title": "日本学校体系：",
+    "lines": [
+      "<strong>保育園</strong>：0-5岁，父母工作期间托管，需向市役所申请",
+      "<strong>幼稚園</strong>：3-5岁，教育为主，通常半天",
+      "<strong>小学校</strong>：6-11岁，6年，义务教育",
+      "<strong>中学校</strong>：12-14岁，3年，义务教育",
+      "<strong>高校</strong>：15-17岁，3年，需参加入学考试"
+    ]
+  },
+  {
+    "title": "入学手续：",
+    "lines": [
+      "住民票登记后，市役所会自动发送入学通知（就学通知書）",
+      "转学时需先取得原学校的転学通知書，再向新学校办理",
+      "外国籍儿童同样享有义务教育权利，免费入学"
+    ]
+  },
+  {
+    "title": "日常联络方式：",
+    "lines": [
+      "联络簿（<strong>連絡帳</strong>）：每日书面联络，记录出勤和健康状况",
+      "学校App（C4th等）：部分学校使用，可线上请假和接收通知",
+      "缺席必须在上学前联系学校，不能事后补报"
+    ]
+  },
+  {
+    "title": "午餐与费用：",
+    "lines": [
+      "公立小学・中学提供<strong>給食</strong>（营养午餐），每月缴费约4,000-5,000円",
+      "有过敏的孩子需提前和学校书面说明",
+      "保育園费用根据家庭收入而定，部分情况可免费"
+    ]
+  },
+  {
+  "title": "费用与无偿化政策：",
+  "lines": [
+    "<strong>3-5岁幼儿园・保育园：保育费完全免费</strong>（国家政策，所有家庭适用）",
+    "0-2岁保育园：住民税非课税世帯免费，其他家庭按收入缴费",
+    "小学校・中学校：义务教育，学费免费，給食费每月约4,000-5,000円",
+    "通园交通费、活动费、副食费等不在免费范围内",
+    "第2子半额、第3子以上免费（保育园・幼稚园）"
+  ]
+}
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "入学手续",
+          "title_ja": "入学手続き"
+        },
+        {
+          "id": "sub02",
+          "title": "日常联络",
+          "title_ja": "日常連絡"
+        },
+        {
+          "id": "sub03",
+          "title": "请假缺席",
+          "title_ja": "欠席連絡"
+        },
+        {
+          "id": "sub04",
+          "title": "和老师沟通",
+          "title_ja": "先生との面談"
+        }
+      ],
+      "count": 35
+    },
+    {
+      "id": "s11",
+      "file": "data/rescue/s11_work.json",
+      "title": "仕事",
+      "title_zh": "工作",
+      "image": "assets/rescue/scenes/work.webp",
+      "description": "打工面试、日常接待、收银——成功完成工作中的沟通。",
+      "info": [
+        {
+          "title": "打工前必须确认：",
+          "lines": [
+            "持「留学」「就学」「家族滞在」签证者，打工前须申请<strong>资格外活动许可</strong>",
+            "许可证记载在在留卡背面，未取得许可直接打工属违法",
+            "违规后果：罚款、拘留、强制遣返，并影响签证续签"
+          ]
+        },
+        {
+          "title": "各签证打工限制对比：",
+          "table": [
+            ["签证类型", "每周工时", "行业限制"],
+            ["<strong>留学・就学</strong>", "28小时（长假可放宽）", "严禁风俗业"],
+            ["<strong>家族滞在</strong>", "严格28小时（长假也不变）", "严禁风俗业"],
+            ["<strong>永住者</strong>", "无限制", "任何合法行业"],
+            ["<strong>日本人配偶等</strong>", "无限制", "任何合法行业"],
+            ["<strong>定住者</strong>", "无限制", "任何合法行业"]
+          ]
+        },
+        {
+          "title": "绝对禁止的行业：",
+          "lines": [
+            "任何签证均不可在风俗营业相关场所工作",
+            "包括：陪酒吧、夜总会、柏青哥店、成人相关场所等",
+            "即使是洗碗、清洁等后台岗位也不允许"
+          ]
+        },
+        {
+          "title": "收入与税务：",
+          "lines": [
+            "年收入超过<strong>103万円</strong>须缴纳所得税",
+            "家族滞在者年收超103万円，可能影响主扶养人的扶养津贴",
+            "超过<strong>130万円</strong>须自行加入社会保险",
+            "入职需提交マイナンバー，用于税务申报"
+          ]
+        },
+        {
+          "title": "职场文化：",
+          "lines": [
+            "准时非常重要，迟到须提前联系",
+            "请假需尽早通知，并主动寻找替代人选",
+            "离职通常需提前1个月通知"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "面试",
+          "title_ja": "面接"
+        },
+        {
+          "id": "sub02",
+          "title": "日常接待",
+          "title_ja": "接客"
+        },
+        {
+          "id": "sub03",
+          "title": "收银结账",
+          "title_ja": "レジ"
+        },
+        {
+          "id": "sub04",
+          "title": "职场沟通",
+          "title_ja": "職場での会話"
+        }
+      ],
+      "count": 48
+    },
+    {
+      "id": "s12",
+      "file": "data/rescue/s12_conbini.json",
+      "title": "コンビニサービス",
+      "title_zh": "便利店服务",
+      "image": "assets/rescue/scenes/conbini.webp",
+      "description": "复印、缴费、买票——便利店里各种服务的操作句子。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "复印打印",
+          "title_ja": "コピー・印刷"
+        },
+        {
+          "id": "sub02",
+          "title": "缴费买票",
+          "title_ja": "支払い・発券"
+        },
+        {
+          "id": "sub03",
+          "title": "其他服务",
+          "title_ja": "その他サービス"
+        }
+      ],
+      "count": 17
+    },
+    {
+      "id": "s13",
+      "file": "data/rescue/s13_life.json",
+      "title": "生活サービス",
+      "title_zh": "生活服务",
+      "image": "assets/rescue/scenes/life.webp",
+      "description": "手机、理发、美甲、洗衣——各类生活服务的预约和沟通。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "预约",
+          "title_ja": "予約"
+        },
+        {
+          "id": "sub02",
+          "title": "理发美甲",
+          "title_ja": "美容"
+        },
+        {
+          "id": "sub03",
+          "title": "手机服务",
+          "title_ja": "携帯サービス"
+        },
+        {
+          "id": "sub04",
+          "title": "洗衣",
+          "title_ja": "クリーニング"
+        }
+      ],
+      "count": 29
+    },
+    {
+      "id": "s14",
+      "file": "data/rescue/s14_delivery.json",
+      "title": "ネット購入・配達、配送",
+      "title_zh": "网购・配送",
+      "image": "assets/rescue/scenes/delivery.webp",
+      "description": "网购收货、配送问题、退货退款——解决网购相关的问题。",
+      "info": [
+  {
+    "title": "日本网购主要平台：",
+    "lines": [
+      "<strong>Amazon.co.jp</strong>：品类最全，配送最快，Prime会员次日达",
+      "<strong>楽天市場</strong>：积分返还丰富，适合日常购物",
+      "<strong>Yahoo!ショッピング</strong>：PayPay积分联动",
+      "<strong>メルカリ</strong>：二手交易平台，价格较低"
+    ]
+  },
+  {
+    "title": "配送方式：",
+    "lines": [
+      "普通配送：通常1-3天，有人签收或投入快递柜",
+      "置き配：无接触放在门口，需提前设置",
+      "不在时留下不在票（不在票），可扫码预约再配送",
+      "便利店・快递柜取件：可在购买时指定自取地点"
+    ]
+  },
+  {
+    "title": "退货退款：",
+    "lines": [
+      "各平台退货政策不同，购买前确认退货条件",
+      "商品破损或发错货，拍照留证后联系客服",
+      "退货运费通常由买家承担，商品问题除外",
+      "退款一般在退货确认后3-7个工作日到账"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "收货",
+          "title_ja": "受け取り"
+        },
+        {
+          "id": "sub02",
+          "title": "再配送、物流纠纷",
+          "title_ja": "配送トラブル"
+        },
+        {
+          "id": "sub03",
+          "title": "退货退款",
+          "title_ja": "返品・返金"
+        }
+      ],
+      "count": 11
+    },
+    {
+      "id": "s15",
+      "file": "data/rescue/s15_emergency.json",
+      "title": "緊急",
+      "title_zh": "紧急情况",
+      "image": "assets/rescue/scenes/emergency.webp",
+      "description": "丢东西、生病、灾害——在紧急情况下得到帮助。",
+      "info": [
+  {
+    "title": "紧急电话：",
+    "lines": [
+      "<strong>110</strong>：警察，遇到犯罪、事故、可疑人物时拨打",
+      "<strong>119</strong>：救护车・消防，身体紧急状况或火灾时拨打",
+      "两个号码均免费，可24小时拨打",
+      "日语不好时说「英語（中国語）をお願いします」，会转接翻译"
+    ]
+  },
+  {
+    "title": "交番（派出所）：",
+    "lines": [
+      "遍布全国各地，通常在车站附近",
+      "丢失物品、迷路、遇到麻烦都可以进去寻求帮助",
+      "找到的遗失物品会送到交番，失物可前往询问",
+      "外国人也可以去，态度通常友善"
+    ]
+  },
+  {
+    "title": "物品丢失：",
+    "lines": [
+      "丢失护照：立即联系中国大使馆或领事馆补办",
+      "丢失信用卡：立即致电卡片背面客服挂失",
+      "丢失在留卡：14天内前往入管局申请补发",
+      "日本失物招领率极高，丢失物品有很大概率被找回"
+    ]
+  },
+  {
+    "title": "灾害应对：",
+    "lines": [
+      "地震时：躲到桌下保护头部，不要慌乱跑出室外",
+      "海啸警报时：立即向高处撤离",
+      "避难场所（避難所）通常在学校或公园，事先确认附近位置",
+      "建议下载「Yahoo!防災速報」接收灾害预警通知"
+    ]
+  }
+],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "丢失物品",
+          "title_ja": "紛失"
+        },
+        {
+          "id": "sub02",
+          "title": "身体不适",
+          "title_ja": "体調不良"
+        },
+        {
+          "id": "sub03",
+          "title": "灾害避难",
+          "title_ja": "災害・避難"
+        },
+        {
+          "id": "sub04",
+          "title": "报警求助",
+          "title_ja": "警察・救助"
+        }
+      ],
+      "count": 33
+    },
+    {
+      "id": "s16",
+      "file": "data/rescue/s16_phone.json",
+      "title": "電話",
+      "title_zh": "电话",
+      "image": "assets/rescue/scenes/phone.webp",
+      "description": "接电话、打电话、留言——成功应对日语电话，不挂断，不误解。",
+      "info": [
+        {
+          "title": "电话礼仪因场合而异：",
+          "lines": [
+            "<strong>商务・正式场合</strong>：接听说「はい、○○です」，结束说「失礼いたします」",
+            "<strong>私人・朋友</strong>：接听说「もしもし」即可，随意自然",
+            "<strong>陌生来电・机构电话</strong>：接听说「はい、○○です」报姓名",
+            "打给机构或店铺，开口先说「お忙しいところ恐れ入ります」表示礼貌"
+          ]
+        },
+        {
+          "title": "自动语音应对：",
+          "lines": [
+            "日本很多机构电话接通后是自动语音菜单",
+            "听到「○番を押してください」按对应数字键选择",
+            "想转接真人说「担当者につないでください」",
+            "或直接按「0」，很多系统0键可转接人工"
+          ]
+        },
+        {
+          "title": "听不懂时的应对：",
+          "lines": [
+            "说「日本語があまり話せません」告知对方",
+            "请对方说慢一点「ゆっくり話していただけますか」",
+            "听不清时说「電波が悪くて聞こえにくいんですが」",
+            "重要内容请对方发LINE或邮件「LINEで送ってもらえますか」"
+          ]
+        },
+        {
+          "title": "紧急联系：",
+          "lines": [
+            "<strong>110</strong>：警察",
+            "<strong>119</strong>：救护车・消防",
+            "<strong>#7119</strong>：救急安心センター，不确定是否需要救护车时拨打",
+            "<strong>#8000</strong>：小児救急電話，儿童深夜突发状况时拨打"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "接电话",
+          "title_ja": "電話を受ける"
+        },
+        {
+          "id": "sub02",
+          "title": "打电话",
+          "title_ja": "電話をかける"
+        },
+        {
+          "id": "sub03",
+          "title": "留言转接",
+          "title_ja": "伝言・転送"
+        }
+      ],
+      "count": 21
+    },
+    {
+      "id": "s17",
+      "file": "data/rescue/s17_digital.json",
+      "title": "デジタル",
+      "title_zh": "数字生活",
+      "image": "assets/rescue/scenes/digital.webp",
+      "description": "Wi-Fi、扫码、App——成功完成手机和网络相关的操作。",
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "Wi-Fi网络",
+          "title_ja": "Wi-Fi・ネット"
+        },
+        {
+          "id": "sub02",
+          "title": "扫码支付",
+          "title_ja": "QRコード・決済"
+        },
+        {
+          "id": "sub03",
+          "title": "App操作",
+          "title_ja": "アプリ操作"
+        }
+      ],
+      "count": 20
+    },
+    {
+      "id": "s18",
+      "file": "data/rescue/s18_shipping.json",
+      "title": "荷物を送る",
+      "title_zh": "寄快递・邮寄",
+      "image": "assets/rescue/scenes/shipping.webp",
+      "description": "便利店、邮局、上门取件——成功把包裹寄出去。",
+      "info": [
+        {
+          "title": "在日本寄东西，有三个渠道：",
+          "lines": [
+            "便利店：最方便，随时可去，店员帮你办理",
+            "邮局：价格较低，适合重物或正式文件",
+            "上门取件：电话预约，快递员来取，适合大件"
+          ]
+        },
+        {
+          "title": "三家主要物流公司：",
+          "lines": [
+            "ヤマト運輸（黒猫）/ 佐川急便 / 日本郵政（ゆうパック）",
+            "便利店对应的物流公司因店而异，无法自行选择"
+          ]
+        },
+        {
+          "title": "运费支付方式：",
+          "lines": [
+            "元払い：寄件人付款",
+            "着払い：收件人付款（需对方事先同意）"
+          ]
+        },
+        {
+          "title": "寄件前需要准备：",
+          "lines": [
+            "收件人的姓名・地址・电话号码",
+            "包裹的重量和尺寸决定价格",
+            "易碎物品需要告知",
+            "保留控え（存根）用于追踪查询"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "便利店寄件",
+          "title_ja": "コンビニで送る"
+        },
+        {
+          "id": "sub02",
+          "title": "邮局寄件",
+          "title_ja": "郵便局で送る"
+        },
+        {
+          "id": "sub03",
+          "title": "上门取件",
+          "title_ja": "集荷・宅配便"
+        },
+        {
+          "id": "sub04",
+          "title": "追踪・票据",
+          "title_ja": "追跡・控え"
+        }
+      ],
+      "count": 28
+    }
+  ]
+}

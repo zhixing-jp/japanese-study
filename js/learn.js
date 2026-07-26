@@ -110,9 +110,9 @@ function playSceneSound(scene){
   if(currentAudio){currentAudio.pause();currentAudio=null;}
   if(scene.sound_file){
     const a=new Audio(scene.sound_file); a.volume=0.6;
-    a.play().catch(()=>playBeep(scene.sound||'default'));
+    a.play().catch(()=>{});
     currentAudio=a;
-  } else { playBeep(scene.sound||'default'); }
+  }
 }
 
 /* ── 头像 ── */
@@ -134,7 +134,7 @@ function saveLearnStorage(){
 async function learnBoot(){
   loadLearnStorage();
   try{
-    LEARN_INDEX=await fetch('data/lessons/index.json').then(r=>r.json());
+    LEARN_INDEX=await fetch('data/learn/index.json').then(r=>r.json());
     await Promise.all((LEARN_INDEX.scenes||[]).map(async s=>{
       try{
         const data=await fetch(s.file).then(r=>{
@@ -291,7 +291,9 @@ function renderSceneDetail(){
   if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?'✓ 学会了':'学会了';}
   const extBar=document.getElementById('learnExtBar');
   const extSec=document.getElementById('learnExtSection');
-  const exts=currentScene.extensions||[];
+  // 兼容新格式dialogs和旧格式extensions
+  const exts=(currentScene.dialogs||[]).filter(d=>d.id!=='basic')
+    .concat(currentScene.extensions||[]);
   if(exts.length){
     extSec.style.display='';
     extBar.innerHTML=exts.map(ex=>
@@ -299,6 +301,39 @@ function renderSceneDetail(){
                onclick="switchDialog('${ex.id}')">${esc(ex.title)}</button>`
     ).join('');
   } else { extSec.style.display='none'; }
+  // 渲染info块
+  const dialogWrap=document.getElementById('learnDialogWrap');
+  const existingInfo=document.getElementById('learnInfoBlock');
+  if(existingInfo) existingInfo.remove();
+  if(currentScene.info&&currentScene.info.length){
+    const infoDiv=document.createElement('div');
+    infoDiv.id='learnInfoBlock';
+    infoDiv.className='scene-info-wrap';
+    infoDiv.onclick=function(){
+      const el=this.querySelector('.scene-info');
+      const btn=this.querySelector('.scene-info-toggle');
+      if(el) el.classList.toggle('expanded');
+      if(btn) btn.textContent=el.classList.contains('expanded')?'∧∧ 点击折叠 ∧∧':'∨∨ 点击打开 ∨∨';
+    };
+    infoDiv.innerHTML=`<div class="scene-info" id="learn-scene-info">
+      ${currentScene.info.map(sec=>`
+        <div class="scene-info-section">
+          <div class="scene-info-title">${sec.title}</div>
+          <div class="scene-info-body">${
+            sec.table
+              ? `<table class="scene-info-table">
+                  ${sec.table.map((row,i)=>`<tr class="${i===0?'scene-info-table-header':''}">
+                    ${row.map(cell=>`<td>${cell}</td>`).join('')}
+                  </tr>`).join('')}
+                </table>`
+              : sec.lines.map(l=>l).join('<br>')
+          }</div>
+        </div>`).join('')}
+    </div>
+    <div class="scene-info-toggle">∨∨ 点击打开 ∨∨</div>`;
+    const extSec=document.getElementById('learnExtSection');
+    if(extSec) extSec.parentNode.insertBefore(infoDiv,extSec);
+  }
   switchDialog(null);
 }
 
@@ -310,11 +345,15 @@ function switchDialog(extId){
     const btn=document.getElementById('extbtn-'+extId);
     if(btn) btn.classList.add('on');
     if(basicBtn) basicBtn.classList.remove('on');
-    const ext=(currentScene.extensions||[]).find(e=>e.id===extId);
-    currentDialog=ext?ext.dialog:[];
+    // 兼容新格式dialogs和旧格式extensions
+    const ext=(currentScene.dialogs||[]).find(d=>d.id===extId)
+      ||(currentScene.extensions||[]).find(e=>e.id===extId);
+    currentDialog=ext?.lines||ext?.dialog||[];
   } else {
     if(basicBtn) basicBtn.classList.add('on');
-    currentDialog=currentScene.basic?.dialog||[];
+    // 兼容新格式dialogs和旧格式basic
+    const basicDialog=(currentScene.dialogs||[]).find(d=>d.id==='basic');
+    currentDialog=basicDialog?.lines||currentScene.basic?.dialog||[];
   }
   renderDialog();
 }
@@ -323,6 +362,10 @@ function switchDialog(extId){
 function expandDialog(dialog){
   const out=[];
   dialog.forEach(d=>{
+    // 兼容新格式role字段
+    if(!d.speaker&&d.role){
+      d=Object.assign({},d,{speaker:d.role==='staff'?'them':'you'});
+    }
     const jpParts=(d.jp||'').split('／').map(s=>s.trim()).filter(Boolean);
     const zhParts=(d.zh||'').split('／').map(s=>s.trim());
     const fgParts=(d.furigana||'').split('／').map(s=>s.trim());
@@ -333,7 +376,7 @@ function expandDialog(dialog){
           furigana:fgParts[i+1]||'',_isAlt:true});
       });
     } else { out.push({...d}); }
-    if(d.speaker==='them'&&d.note){
+    if((d.speaker==='them'||d.role==='staff')&&d.note){
       out.push({speaker:'you',jp:'',zh:'',furigana:'',
         note:d.note,_isActionOnly:true});
     }
