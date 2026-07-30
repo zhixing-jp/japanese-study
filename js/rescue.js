@@ -55,12 +55,27 @@ async function rescueBoot(cfg, icons){
       } catch(e) { console.warn('场景加载失败:', sc.file); }
     }));
 
-    renderRescueBanner(cfg.banner);
+    const total = SCENE_META.reduce((s, sc) => s + (sc.count || 0), 0);
+    await renderBanner(CFG.banner, total);
     renderRescueHome();
     renderCtrlBar(cfg.controls);
     showRescueHome();
 
     history.replaceState({panel:'rescue',view:'home'},'','');
+    const _rs = localStorage.getItem('lj_return_state');
+    if(_rs){
+      localStorage.removeItem('lj_return_state');
+      const st = JSON.parse(_rs);
+      if(st.panel==='rescue' && st.view==='scene' && st.si!=null){
+        openRescueScene(st.si);
+      } else if(st.panel==='rescue' && st.view==='subcat' && st.si!=null){
+        openRescueScene(st.si).then(()=>{
+          currentSubcat=st.subcatId;
+          renderSubcatBar(st.si);
+          renderRescueContent(st.si,st.subcatId);
+        });
+      }
+    }
     window.addEventListener('popstate',(e)=>{
       const st=e.state;
       if(!st||st.panel!=='rescue') return;
@@ -105,26 +120,6 @@ function saveRescueStorage(){
   try{ localStorage.setItem('lj_checked',JSON.stringify(checkedItems)); }catch(e){}
 }
 
-/* ── Banner ── */
-function renderRescueBanner(b){
-  b=b||{};
-  const total=SCENE_META.reduce((s,sc)=>s+(sc.count||0),0);
-  document.getElementById('banner').innerHTML=`
-    <div class="banner-inner">
-      <div class="banner-left">
-        <div class="banner-eyebrow">${esc(b.eyebrow||'')}</div>
-        <div class="banner-title">${esc(b.title||'')}</div>
-        <div class="banner-pills">
-          ${(b.pills||[]).map(p=>`<span class="banner-pill">${esc(p)}</span>`).join('')}
-        </div>
-      </div>
-      <div class="banner-right">
-        <div class="banner-stat-num">${total}</div>
-        <div class="banner-stat-label">句・完全免费</div>
-      </div>
-    </div>`;
-}
-
 /* ── 场景首页 ── */
 function renderRescueHome(){
   const wrap=document.getElementById('rescueSceneGrid');
@@ -141,7 +136,7 @@ function renderRescueHome(){
       <div class="rescue-scene-overlay"${hasBg?'':' style="display:none"'}></div>
       <div class="rescue-scene-content">
         <div class="rescue-scene-emoji">${icon}</div>
-        <div class="rescue-scene-title">${esc(sc.title_zh||sc.title)}</div>
+        <div class="rescue-scene-title">${esc(tField(sc,'title')||sc.title)}</div>
         <div class="rescue-scene-count">${sc.count}句</div>
       </div>
     </div>`;
@@ -214,6 +209,7 @@ function showRescueDetail(si){
 
 /* ── 场景Landing页 ── */
 function renderSceneLanding(si){
+  if(!window.currentLang) window.currentLang = detectLang();
   const meta=SCENE_META[si]||{};
   const subcats=meta.subcategories||[];
   const wrap=document.getElementById('rescueContentWrap');
@@ -225,9 +221,9 @@ function renderSceneLanding(si){
   wrap.innerHTML=`
     <div class="rescue-scene-landing">
       <div class="rescue-landing-hero" style="background:linear-gradient(135deg,${lc1} 0%,${lc2} 100%)">
-        <button class="rescue-landing-back" onclick="showRescueHome()">← 场景选择</button>
-        <div class="rescue-landing-title-hero">${esc(meta.title_zh||meta.title)}</div>
-        <div class="rescue-landing-desc-hero">${esc(meta.description||'')}</div>
+        <button class="rescue-landing-back" onclick="showRescueHome()">${t("back")}</button>
+        <div class="rescue-landing-title-hero">${esc(tField(meta,'title')||meta.title)}</div>
+        <div class="rescue-landing-desc-hero">${esc(tField(meta,'description')||meta.description||'')}</div>
       </div>
       <div class="rescue-landing-desc" style="display:none">${esc(meta.description||'')}</div>
       ${(meta.info&&meta.info.length)?`
@@ -235,12 +231,12 @@ function renderSceneLanding(si){
         const info=this.querySelector('.scene-info');
         const btn=this.querySelector('.scene-info-toggle');
         info.classList.toggle('expanded');
-        btn.textContent=info.classList.contains('expanded')?'∧∧ 点击折叠 ∧∧':'∨∨ 点击打开 ∨∨';
+        btn.textContent=info.classList.contains('expanded')?t('click_close'):t('click_open');
       ">
         <div class="scene-info" id="scene-info-${si}">
           ${meta.info.map(sec=>`
             <div class="scene-info-section">
-              <div class="scene-info-title">${sec.title}</div>
+              <div class="scene-info-title">${tField(sec,'title')||sec.title}</div>
               <div class="scene-info-body">
                 ${sec.table ? `
                   <table class="scene-info-table">
@@ -249,18 +245,18 @@ function renderSceneLanding(si){
                         ${row.map(cell=>`<td>${cell}</td>`).join('')}
                       </tr>`).join('')}
                   </table>
-                ` : sec.lines.map(l=>l).join('<br>')}
+                ` : (sec[`lines_${currentLang}`]||sec.lines_en||sec.lines||[]).map(l=>l).join('<br>')}
               </div>
             </div>`).join('')}
         </div>
-        <div class="scene-info-toggle">∨∨ 点击打开 ∨∨</div>
+        <div class="scene-info-toggle">${t('click_open')}</div>
       </div>
       `:''}
       <div class="rescue-landing-grid">
         ${subcats.map(s=>`
           <button class="rescue-landing-btn" onclick="selectSubcat('${s.id}',${si})">
-            <span class="rescue-landing-btn-title">${esc(s.title)}</span>
-            <span class="rescue-landing-btn-ja">${esc(s.title_ja||'')}</span>
+            <span class="rescue-landing-btn-title">${esc(tField(s,'title')||s.title)}</span>
+            <span class="rescue-landing-btn-ja">${esc(tField(s,'title_ja')||s.title_ja||'')}</span>
           </button>`).join('')}
       </div>
     </div>`;
@@ -288,11 +284,11 @@ function renderSubcatBar(si){
   bar.style.display='';
   bar.innerHTML=[
     `<button class="rescue-subcat-btn${!currentSubcat?' on':''}"
-             onclick="setSubcat(null)">返回</button>`
+             onclick="setSubcat(null)">${t('back')}</button>`
   ].concat(subcats.map(s=>
     `<button class="rescue-subcat-btn${currentSubcat===s.id?' on':''}"
              id="subcat-${s.id}" onclick="setSubcat('${s.id}')">
-      ${esc(s.title)}
+      ${esc(tField(s,'title')||s.title)}
     </button>`
   )).join('');
 }
@@ -329,7 +325,7 @@ function renderRescueContent(si, subcatId){
   }
 
   if(!items.length){
-    wrap.innerHTML='<p style="color:var(--t4);padding:20px 0;font-size:13px;text-align:center">🎉 全部已学完！</p>';
+    wrap.innerHTML='<p style="color:var(--t4);padding:20px 0;font-size:13px;text-align:center">${t("all_done")}</p>';
     return;
   }
 
@@ -337,17 +333,17 @@ function renderRescueContent(si, subcatId){
     const isStaff=item.role==='staff';
     const isDone=!!checkedItems[`${si}-${ii}`];
     return`<div class="card${isDone?' done':''}${isStaff?' is-staff':''}" id="card-${si}-${ii}">
-      ${isStaff?'<span class="staff-label">对方可能会问</span>':''}
+      ${isStaff?`<span class="staff-label">${t('staff_label')}</span>`:''}
       <div class="card-top">
         <div class="card-num">${ii+1}</div>
         <div class="card-btns-top">
-          <button class="card-play-btn${isStaff?' is-staff-btn':''}" onclick="speakOne(${si},${ii})">${isStaff?'🎧 试听':'▶ 仅日语朗读'}</button>
+          <button class="card-play-btn${isStaff?' is-staff-btn':''}" onclick="speakOne(${si},${ii})">${isStaff?t('staff_listen'):t('speak_one')}</button>
           ${!isStaff?`<button class="lbtn${isDone?' on':''}" id="lb-${si}-${ii}"
-                  onclick="toggleDone(${si},${ii})">${isDone?'✓ 学会了':'学会了'}</button>`:''}
+                  onclick="toggleDone(${si},${ii})">${isDone?t('learned_done'):t('learned')}</button>`:''}
         </div>
       </div>
       <div class="jp">${rubyHtml(item.jp,item.furigana)}</div>
-      <div class="zh">${esc(item.zh)}</div>
+      <div class="zh">${esc(item[currentLang]||item.zh)}</div>
     </div>`;
   }).join('');
 }
@@ -410,7 +406,7 @@ function toggleDone(si,ii){
     const card=document.getElementById(`card-${si}-${ii}`);
     const lb=document.getElementById(`lb-${si}-${ii}`);
     if(card) card.classList.toggle('done',isDone);
-    if(lb){lb.classList.toggle('on',isDone);lb.textContent=isDone?'✓ 学会了':'学会了';}
+    if(lb){lb.classList.toggle('on',isDone);lb.textContent=isDone?t('learned_done'):t('learned');}
   }
 }
 
@@ -453,7 +449,7 @@ function doRescueSearch(q){
         <div class="card-top">
           <div class="card-num">${ii+1}</div>
           <div class="card-btns-top">
-            <button class="card-play-btn" onclick="speakOne(${si},${ii})">▶ 仅日语朗读</button>
+            <button class="card-play-btn" onclick="speakOne(${si},${ii})">${t('speak_one')}</button>
           </div>
         </div>
         <div class="jp">${hlTxt(item.jp,q)}</div>
@@ -464,7 +460,8 @@ function doRescueSearch(q){
   const wrap=document.getElementById('rescueContentWrap');
   if(wrap) wrap.innerHTML=`
     <div class="srch-header">「${esc(q)}」的搜索结果：${total}句</div>
-    ${html||'<p style="color:var(--t4);padding:20px 0;font-size:13px">没有找到相关句子。</p>'}`;
+    ${html || `<p style="color:var(--t4);padding:20px 0;font-size:13px">${t('no_results')}</p>`}
+  `;
   const bar=document.getElementById('rescueSubcatBar');
   if(bar) bar.style.display='none';
 }
@@ -503,7 +500,7 @@ function renderCtrlBar(c){
   </div>`;
   const row2=document.getElementById('ctrlRow2');
   if(row2) row2.innerHTML=modeHtml+rateHtml+`
-    <button class="ctrl-icon sm" id="btnRuby" onclick="toggleRuby()">注音</button>`;
+    <button class="ctrl-icon sm" id="btnRuby" onclick="toggleRuby()">${t('learn_ruby')}</button>`;
 }
 
 function updateCtrlBarMode(mode){
@@ -532,9 +529,13 @@ function setRescueRate(r){
 
 /* ── 朗读 ── */
 function getModeTexts(item){
+  // 根据当前语言选择朗读语言代码
+  const langMap = {'zh':'zh-CN','zh-TW':'zh-TW','en':'en-US','vi':'vi-VN','ko':'ko-KR'};
+  const ttsLang = langMap[currentLang] || 'zh-CN';
+  const ttsText = tField(item,'zh') || item.zh;
   if(currentMode==='jp')    return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}];
-  if(currentMode==='jp_zh') return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice}];
-  return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:item.zh,l:'zh-CN',v:zhVoice},{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}];
+  if(currentMode==='jp_zh') return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:ttsText,l:ttsLang,v:zhVoice}];
+  return [{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice},{t:ttsText,l:ttsLang,v:zhVoice},{t:item.furigana||item.jp,l:'ja-JP',v:jaVoice}];
 }
 
 function speak(segs,onEnd,session){
@@ -578,7 +579,7 @@ function speakAll(){
   if(currentSubcat) items=items.filter(({item})=>item.subcategory===currentSubcat);
   if(filterUnlearned) items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${currentRescueSection}-${ii}`]);
   items=items.filter(({item})=>item.role!=='staff');
-  if(!items.length){showToast('没有未学的句子了 🎉',2000);return;}
+  if(!items.length){showToast(t('all_done'),2000);return;}
   speakList(items,0,session);
 }
 
@@ -587,11 +588,11 @@ function speakList(list,idx,session){
   if(idx>=list.length){
     document.querySelectorAll('.card.playing').forEach(el=>el.classList.remove('playing'));
     if(loopMode){
-      showToast('🔁 循环播放中…',1500);
+      showToast('🔁 '+t('learn_loop')+'…',1500);
       setTimeout(()=>{
         if(!shouldStop&&speakSession===session) speakList(list,0,session);
       },800);
-    } else { showToast('✓ 朗读完毕',2200); }
+    } else { showToast('✓ '+t('speak_all').replace('▶ ','')+'…',2200); }
     return;
   }
   const {item,ii}=list[idx];
@@ -628,7 +629,7 @@ function toggleLoop(){
   loopMode=!loopMode;
   const btn=document.getElementById('btnLoop');
   if(btn) btn.classList.toggle('on',loopMode);
-  showToast(loopMode?'循环播放已开启':'循环播放已关闭',1500);
+  showToast(loopMode?t('learn_loop')+' ON':t('learn_loop')+' OFF',1500);
 }
 
 /* ── 模块注册 ── */
@@ -653,17 +654,17 @@ window.LJ_MODULES['rescue']={
     document.getElementById('ctrlBar').innerHTML=`
       <div class="ctrl-row1">
         <div class="ctrl-row1-left">
-          <button class="ctrl-back" id="btnRescueBack" onclick="showRescueHome()">←场景选择</button>
+          <button class="ctrl-back" id="btnRescueBack" onclick="showRescueHome()">${t('back')}</button>
         </div>
         <div class="ctrl-row1-mid">
-          <button class="ctrl-play" onclick="speakAll()">▶ 朗读</button>
+          <button class="ctrl-play" onclick="speakAll()">${t('speak_all')}</button>
           <button class="ctrl-icon" id="btnPause" onclick="pauseOrResume()">⏸</button>
           <button class="ctrl-icon rd" id="btnStop" onclick="stopSpeech()">■</button>
           <button class="ctrl-icon" id="btnLoop" onclick="toggleLoop()">🔁</button>
         </div>
         <div class="ctrl-row1-right">
           <button class="ctrl-unlearned" id="btnUnlearned"
-                  onclick="toggleFilterUnlearned()">只看未学</button>
+                  onclick="toggleFilterUnlearned()">${t('unlearned_only')}</button>
         </div>
       </div>
       <div class="ctrl-row2" id="ctrlRow2"></div>`;

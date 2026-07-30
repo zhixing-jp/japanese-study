@@ -3,6 +3,103 @@
    Living Japanese v3.0
 ══════════════════════════════ */
 
+/* ── i18n 国际化核心 ── */
+let currentLang = 'zh';
+let LOCALE = {};
+let CFG = {};
+
+function detectLang(){
+  // 1. URL路径优先
+  const path = window.location.pathname;
+  if(path.startsWith('/en/'))    return 'en';
+  if(path.startsWith('/zh-TW/')) return 'zh-TW';
+  if(path.startsWith('/vi/'))    return 'vi';
+  if(path.startsWith('/ko/'))    return 'ko';
+  if(path.startsWith('/zh/'))    return 'zh';
+
+  // 2. localStorage（用户上次手动选择）
+  const saved = localStorage.getItem('lj_lang');
+  if(saved) return saved;
+
+  // 3. 系统语言自动匹配
+  const sys = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if(sys.startsWith('zh-tw') || sys.startsWith('zh-hk')) return 'zh-TW';
+  if(sys.startsWith('zh'))  return 'zh';
+  if(sys.startsWith('vi'))  return 'vi';
+  if(sys.startsWith('ko'))  return 'ko';
+
+  // 4. 兜底：英文
+  return 'en';
+}
+
+async function loadLocale(lang){
+  try{
+    LOCALE = await fetch(`/locales/${lang}.json`).then(r=>r.json());
+    currentLang = lang;
+    document.documentElement.lang = lang;
+  }catch(e){
+    console.warn(`locale加载失败: ${lang}，使用中文兜底`);
+    LOCALE = await fetch('/locales/zh.json').then(r=>r.json());
+    currentLang = 'zh';
+  }
+}
+
+// 翻译函数：界面文字
+function t(key, vars={}){
+  let str = LOCALE[key] || key;
+  Object.keys(vars).forEach(k=>{
+    str = str.replace(`{${k}}`, vars[k]);
+  });
+  return str;
+}
+
+// 字段翻译函数：场景数据多语言字段
+function tField(obj, field){
+  if(!obj) return '';
+  return obj[`${field}_${currentLang}`]
+    || obj[`${field}_en`]
+    || obj[`${field}_zh`]
+    || obj[field]
+    || '';
+}
+
+// 加载 promotions（为将来广告/引导预留，现阶段不在 banner 显示）
+async function loadPromotions() {
+  try {
+    const res = await fetch('promotions.json');
+    return res.json();
+  } catch(e) {
+    return {};
+  }
+}
+
+async function renderBanner(banner, total) {
+  const b = banner || CFG.banner || {};
+  const title = b[`title_${currentLang}`] || b.title || '';
+  const pills = b[`pills_${currentLang}`] || b.pills || [];
+  document.getElementById('banner').innerHTML = `
+    <div class="banner-inner">
+      <div class="banner-left">
+        <div class="banner-eyebrow">${esc(b.eyebrow || '')}</div>
+        <div class="banner-title">${esc(title)}</div>
+        <div class="banner-pills">
+          ${pills.map(p => `<span class="banner-pill">${esc(p)}</span>`).join('')}
+        </div>
+      </div>
+      <div class="banner-right">
+        <div class="banner-stat-num">${total}</div>
+        <div class="banner-stat-label">${t('banner_stat_label')}</div>
+      </div>
+    </div>`;
+}
+
+function switchLang(lang){
+  if(lang === localStorage.getItem('lj_lang')) return;
+  localStorage.setItem('lj_lang', lang);
+  localStorage.setItem('lj_return_state', JSON.stringify(history.state || {}));
+  window.location.reload();
+}
+
 /* ── Escape HTML ── */
 function esc(s){
   return String(s).replace(/[&<>"']/g, c=>
@@ -162,3 +259,5 @@ window.addEventListener('scroll',()=>{
 document.addEventListener('visibilitychange',()=>{
   if(document.hidden) window.speechSynthesis.pause();
 });
+/* ── 语言切换菜单 ── */
+// 已在index.html里实现toggleLangMenu

@@ -12,7 +12,11 @@
       "scene": "问路・步行",
       "id": "s02-001",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Excuse me, where is ○○?",
+      "zh-TW": "不好意思，○○在哪裡？",
+      "vi": "Xin lỗi, ○○ ở đâu vậy?",
+      "ko": "저기요, ○○은 어디에 있나요?"
     },
     {
       "jp": "この近くに駅はありますか。",
@@ -21,7 +25,11 @@
       "scene": "问路・步行",
       "id": "s02-002",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Is there a train station nearby?",
+      "zh-TW": "這附近有車站嗎？",
+      "vi": "Gần đây có ga tàu không?",
+      "ko": "이 근처에 역이 있나요?"
     },
     {
       "jp": "市役所へはどうやって行けばいいですか。",
@@ -30,7 +38,11 @@
       "scene": "问路・步行",
       "id": "s02-003",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "How do I get to the city hall?",
+      "zh-TW": "去市役所怎麼走？",
+      "vi": "Đi đến tòa thị chính như thế nào?",
+      "ko": "시청은 어떻게 가면 되나요?"
     },
     {
       "jp": "この住所に行きたいんですが、どう行けばいいですか。",
@@ -39,7 +51,11 @@
       "scene": "问路・步行",
       "id": "s02-004",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "I want to go to this address. How do I get there? (showing phone)",
+      "zh-TW": "我想去這個地址，請問怎麼走？（出示手機）",
+      "vi": "Tôi muốn đến địa chỉ này. Đi như thế nào? (Cho xem điện thoại)",
+      "ko": "이 주소로 가고 싶은데요, 어떻게 가면 되나요? (스마트폰 제시)"
     },
     {
       "jp": "歩いてどのくらいかかりますか。",
@@ -48,7 +64,11 @@
       "scene": "问路・步行",
       "id": "s02-005",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "How long does it take on foot?",
+      "zh-TW": "走路大概需要多長時間？",
+      "vi": "Đi bộ mất khoảng bao lâu?",
+      "ko": "걸어서 얼마나 걸려요?"
     },
     {
       "jp": "右ですか、左ですか。",
@@ -57,7 +77,11 @@
       "scene": "问路・步行",
       "id": "s02-006",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Is it on the right or left?",
+      "zh-TW": "是右邊還是左邊？",
+      "vi": "Bên phải hay bên trái?",
+      "ko": "오른쪽인가요, 왼쪽인가요?"
     },
     {
       "jp": "まっすぐ行けばいいですか。",
@@ -66,7 +90,11 @@
       "scene": "问路・步行",
       "id": "s02-007",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Should I just go straight?",
+      "zh-TW": "一直往前走就行嗎？",
+      "vi": "Cứ đi thẳng là được không?",
+      "ko": "쭉 직진하면 되나요?"
     },
     {
       "jp": "ここから遠いですか。",
@@ -75,7 +103,11 @@
       "scene": "问路・步行",
       "id": "s02-008",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Is it far from here?",
+      "zh-TW": "離這裡遠嗎？",
+      "vi": "Có xa đây không?",
+      "ko": "여기서 멀어요?"
     },
     {
       "jp": "お手洗いはどこですか。",
@@ -84,7 +116,11 @@
       "scene": "找设施",
       "id": "s02-009",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the restroom?",
+      "zh-TW": "洗手間在哪裡？",
+      "vi": "Nhà vệ sinh ở đâu?",
+      "ko": "화장실은 어디에 있나요?"
     },
     {
       "jp": "近くにコンビニやATMはありますか。",
@@ -93,7 +129,11 @@
       "scene": "找设施",
       "id": "s02-010",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Is there a convenience store or ATM nearby?",
+      "zh-TW": "附近有便利店或ATM嗎？",
+      "vi": "Gần đây có cửa hàng tiện lợi hoặc ATM không?",
+      "ko": "근처에 편의점이나 ATM이 있나요?"
     },
     {
       "jp": "エレベーターはどこですか。",
@@ -102,7 +142,11 @@
       "scene": "找设施",
       "id": "s02-011",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the elevator?",
+      "zh-TW": "電梯在哪裡？",
+      "vi": "Thang máy ở đâu?",
+      "ko": "엘리베이터는 어디에 있나요?"
     },
     {
       "jp": "エスカレーターはどこですか。",
@@ -111,7 +155,11 @@
       "scene": "找设施",
       "id": "s02-012",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the escalator?",
+      "zh-TW": "手扶梯在哪裡？",
+      "vi": "Thang cuốn ở đâu?",
+      "ko": "에스컬레이터는 어디에 있나요?"
     },
     {
       "jp": "入口はどこですか。",
@@ -120,7 +168,11 @@
       "scene": "找设施",
       "id": "s02-013",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the entrance?",
+      "zh-TW": "入口在哪裡？",
+      "vi": "Lối vào ở đâu?",
+      "ko": "입구는 어디에 있나요?"
     },
     {
       "jp": "出口はどこですか。",
@@ -129,7 +181,11 @@
       "scene": "找设施",
       "id": "s02-014",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the exit?",
+      "zh-TW": "出口在哪裡？",
+      "vi": "Lối ra ở đâu?",
+      "ko": "출구는 어디에 있나요?"
     },
     {
       "jp": "サービスカウンターはどこですか。",
@@ -138,7 +194,11 @@
       "scene": "找设施",
       "id": "s02-015",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the service counter?",
+      "zh-TW": "服務台在哪裡？",
+      "vi": "Quầy dịch vụ ở đâu?",
+      "ko": "서비스 카운터는 어디에 있나요?"
     },
     {
       "jp": "荷物を預けるロッカーはありますか。",
@@ -147,7 +207,11 @@
       "scene": "找设施",
       "id": "s02-016",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Is there a locker where I can store my luggage?",
+      "zh-TW": "有可以寄放行李的儲物櫃嗎？",
+      "vi": "Có tủ khóa để gửi hành lý không?",
+      "ko": "짐을 맡길 수 있는 로커가 있나요?"
     },
     {
       "jp": "ベビーカーで入れますか。",
@@ -156,7 +220,11 @@
       "scene": "找设施",
       "id": "s02-017",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Can I come in with a stroller?",
+      "zh-TW": "推嬰兒車可以進去嗎？",
+      "vi": "Tôi có thể vào với xe đẩy em bé không?",
+      "ko": "유모차를 끌고 들어갈 수 있나요?"
     },
     {
       "jp": "携帯の充電が切れたんですが、ここで充電できますか。",
@@ -165,7 +233,11 @@
       "scene": "找设施",
       "id": "s02-018",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "My phone is out of battery. Can I charge it here?",
+      "zh-TW": "手機沒電了，這裡可以充電嗎？",
+      "vi": "Điện thoại tôi hết pin rồi. Tôi có thể sạc ở đây không?",
+      "ko": "폰 배터리가 없는데, 여기서 충전할 수 있나요?"
     },
     {
       "jp": "写真を撮ってもいいですか。",
@@ -174,7 +246,11 @@
       "scene": "找设施",
       "id": "s02-019",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "May I take photos here?",
+      "zh-TW": "這裡可以拍照嗎？",
+      "vi": "Tôi có thể chụp ảnh ở đây không?",
+      "ko": "여기서 사진 찍어도 되나요?"
     },
     {
       "jp": "道に迷いました。",
@@ -183,7 +259,11 @@
       "scene": "迷路时",
       "id": "s02-020",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "I've gotten lost.",
+      "zh-TW": "我迷路了。",
+      "vi": "Tôi bị lạc rồi.",
+      "ko": "길을 잃었어요."
     },
     {
       "jp": "ここはどこですか。",
@@ -192,7 +272,11 @@
       "scene": "迷路时",
       "id": "s02-021",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Where am I right now?",
+      "zh-TW": "這裡是哪裡？",
+      "vi": "Tôi đang ở đâu vậy?",
+      "ko": "지금 여기가 어디예요?"
     },
     {
       "jp": "スマホの地図を見てほしいのですが、ここはどこですか。",
@@ -201,7 +285,11 @@
       "scene": "迷路时",
       "id": "s02-022",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Could you look at the map on my phone and tell me where I am?",
+      "zh-TW": "能幫我看一下手機地圖嗎，這裡是哪裡？",
+      "vi": "Bạn có thể xem bản đồ trên điện thoại của tôi và cho biết tôi đang ở đâu không?",
+      "ko": "제 폰 지도를 봐주실 수 있나요? 여기가 어디예요?"
     },
     {
       "jp": "〇〇駅はどこですか。",
@@ -210,7 +298,11 @@
       "scene": "迷路时",
       "id": "s02-023",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Where is ○○ Station?",
+      "zh-TW": "○○站在哪裡？",
+      "vi": "Ga ○○ ở đâu vậy?",
+      "ko": "○○역은 어디에 있나요?"
     },
     {
       "jp": "財布をなくしました。交番はどこですか。",
@@ -219,7 +311,11 @@
       "scene": "突发状况",
       "id": "s02-024",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I lost my wallet. Where is the nearest police box?",
+      "zh-TW": "我把錢包弄丟了。派出所在哪裡？",
+      "vi": "Tôi đánh mất ví. Đồn cảnh sát ở đâu?",
+      "ko": "지갑을 잃어버렸어요. 파출소는 어디에 있나요?"
     },
     {
       "jp": "スマホをなくしました。交番はどこですか。",
@@ -228,7 +324,11 @@
       "scene": "突发状况",
       "id": "s02-025",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I lost my phone. Where is the nearest police box?",
+      "zh-TW": "我把手機弄丟了。派出所在哪裡？",
+      "vi": "Tôi đánh mất điện thoại. Đồn cảnh sát ở đâu?",
+      "ko": "스마트폰을 잃어버렸어요. 파출소는 어디에 있나요?"
     },
     {
       "jp": "具合が悪くなりました。近くの病院はどこですか。",
@@ -237,7 +337,11 @@
       "scene": "突发状况",
       "id": "s02-026",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I'm not feeling well. Where is the nearest hospital?",
+      "zh-TW": "我身體不舒服，附近的醫院在哪裡？",
+      "vi": "Tôi không khỏe. Bệnh viện gần nhất ở đâu?",
+      "ko": "몸이 안 좋아요. 근처 병원이 어디에 있나요?"
     },
     {
       "jp": "電車が止まっています。どうすればいいですか。",
@@ -246,29 +350,57 @@
       "scene": "突发状况",
       "id": "s02-027",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "The train has stopped. What should I do?",
+      "zh-TW": "電車停運了，我該怎麼辦？",
+      "vi": "Tàu đã dừng rồi. Tôi phải làm gì bây giờ?",
+      "ko": "전철이 멈췄는데, 어떻게 해야 하나요?"
     }
   ],
   "subcategories": [
     {
       "id": "sub01",
       "title": "问路",
-      "title_ja": "道を聞く"
+      "title_ja": "道を聞く",
+      "title_en": "Asking Directions",
+      "title_zh-TW": "問路",
+      "title_vi": "Hỏi đường",
+      "title_ko": "길 묻기"
     },
     {
       "id": "sub02",
       "title": "找设施",
-      "title_ja": "施設を探す"
+      "title_ja": "施設を探す",
+      "title_en": "Finding Facilities",
+      "title_zh-TW": "找設施",
+      "title_vi": "Tìm cơ sở",
+      "title_ko": "시설 찾기"
     },
     {
       "id": "sub03",
       "title": "迷路时",
-      "title_ja": "迷子になった時"
+      "title_ja": "迷子になった時",
+      "title_en": "When You're Lost",
+      "title_zh-TW": "迷路時",
+      "title_vi": "Khi bị lạc",
+      "title_ko": "길을 잃었을 때"
     },
     {
       "id": "sub04",
       "title": "突发状况",
-      "title_ja": "緊急・トラブル"
+      "title_ja": "緊急・トラブル",
+      "title_en": "Unexpected Situations",
+      "title_zh-TW": "突發狀況",
+      "title_vi": "Tình huống bất ngờ",
+      "title_ko": "돌발 상황"
     }
-  ]
+  ],
+  "title_en": "Getting Around",
+  "title_zh-TW": "出門",
+  "title_vi": "Ra ngoài",
+  "title_ko": "외출",
+  "description_en": "Phrases for asking directions, finding facilities, and dealing with getting lost.",
+  "description_zh-TW": "出門在外，問路、找設施、迷路時用到的句子。",
+  "description_vi": "Câu dùng khi hỏi đường, tìm cơ sở, và khi bị lạc.",
+  "description_ko": "외출 시 길 묻기, 시설 찾기, 길을 잃었을 때 사용하는 표현."
 }

@@ -12,7 +12,11 @@
       "scene": "打招呼",
       "id": "s00-001",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Good morning.",
+      "zh-TW": "早安。",
+      "vi": "Chào buổi sáng.",
+      "ko": "안녕하세요."
     },
     {
       "jp": "こんにちは。",
@@ -21,7 +25,11 @@
       "scene": "打招呼",
       "id": "s00-002",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Hello.",
+      "zh-TW": "你好。",
+      "vi": "Xin chào.",
+      "ko": "안녕하세요."
     },
     {
       "jp": "こんばんは。",
@@ -30,7 +38,11 @@
       "scene": "打招呼",
       "id": "s00-003",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Good evening.",
+      "zh-TW": "晚安。",
+      "vi": "Chào buổi tối.",
+      "ko": "안녕하세요."
     },
     {
       "jp": "お疲れ様です。",
@@ -39,7 +51,11 @@
       "scene": "打招呼",
       "id": "s00-004",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Thanks for your hard work.",
+      "zh-TW": "辛苦了。",
+      "vi": "Cảm ơn bạn đã vất vả.",
+      "ko": "수고하셨습니다."
     },
     {
       "jp": "おじゃまします。",
@@ -48,7 +64,11 @@
       "scene": "打招呼",
       "id": "s00-005",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Pardon the intrusion.",
+      "zh-TW": "打擾了。",
+      "vi": "Xin phép vào.",
+      "ko": "실례합니다."
     },
     {
       "jp": "よろしくお願いします。",
@@ -57,7 +77,11 @@
       "scene": "打招呼",
       "id": "s00-006",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "I'm counting on you.",
+      "zh-TW": "麻煩您了。",
+      "vi": "Nhờ bạn giúp đỡ nhé.",
+      "ko": "잘 부탁드립니다."
     },
     {
       "jp": "失礼します。",
@@ -66,7 +90,11 @@
       "scene": "打招呼",
       "id": "s00-007",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Excuse me.",
+      "zh-TW": "失禮了。",
+      "vi": "Cho tôi xin phép.",
+      "ko": "실례합니다."
     },
     {
       "jp": "ありがとうございます。",
@@ -75,7 +103,11 @@
       "scene": "感谢与道歉",
       "id": "s00-008",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Thank you very much.",
+      "zh-TW": "謝謝您。",
+      "vi": "Cảm ơn bạn rất nhiều.",
+      "ko": "감사합니다."
     },
     {
       "jp": "どうも。",
@@ -84,7 +116,11 @@
       "scene": "感谢与道歉",
       "id": "s00-009",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Thanks.",
+      "zh-TW": "謝了。",
+      "vi": "Cảm ơn.",
+      "ko": "고마워요."
     },
     {
       "jp": "すみません。",
@@ -93,7 +129,11 @@
       "scene": "感谢与道歉",
       "id": "s00-010",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Excuse me.",
+      "zh-TW": "不好意思。",
+      "vi": "Xin lỗi.",
+      "ko": "저기요."
     },
     {
       "jp": "申し訳ありません。",
@@ -102,7 +142,11 @@
       "scene": "感谢与道歉",
       "id": "s00-011",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "I'm so sorry.",
+      "zh-TW": "非常抱歉。",
+      "vi": "Tôi thành thật xin lỗi.",
+      "ko": "정말 죄송합니다."
     },
     {
       "jp": "大丈夫です。",
@@ -111,7 +155,11 @@
       "scene": "感谢与道歉",
       "id": "s00-012",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "No worries.",
+      "zh-TW": "沒關係。",
+      "vi": "Không sao đâu.",
+      "ko": "괜찮아요."
     },
     {
       "jp": "お待たせしました。",
@@ -120,7 +168,11 @@
       "scene": "感谢与道歉",
       "id": "s00-013",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Sorry to keep you waiting.",
+      "zh-TW": "讓您久等了。",
+      "vi": "Xin lỗi đã để bạn chờ.",
+      "ko": "오래 기다리셨습니다."
     },
     {
       "jp": "日本語があまり話せません。",
@@ -129,7 +181,11 @@
       "scene": "听不懂时",
       "id": "s00-014",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "I don't speak much Japanese.",
+      "zh-TW": "我不太會說日語。",
+      "vi": "Tôi không nói được nhiều tiếng Nhật.",
+      "ko": "일본어를 잘 못해요."
     },
     {
       "jp": "もう一度お願いします。",
@@ -138,7 +194,11 @@
       "scene": "听不懂时",
       "id": "s00-015",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Could you say that again?",
+      "zh-TW": "可以再說一次嗎？",
+      "vi": "Bạn có thể nói lại không?",
+      "ko": "다시 한 번 말씀해 주시겠어요?"
     },
     {
       "jp": "ゆっくり話してもらえますか。",
@@ -147,7 +207,11 @@
       "scene": "听不懂时",
       "id": "s00-016",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Could you speak more slowly?",
+      "zh-TW": "可以說慢一點嗎？",
+      "vi": "Bạn có thể nói chậm hơn không?",
+      "ko": "좀 천천히 말씀해 주시겠어요?"
     },
     {
       "jp": "漢字で書いてもらえますか。",
@@ -156,7 +220,11 @@
       "scene": "听不懂时",
       "id": "s00-017",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Could you write it in kanji?",
+      "zh-TW": "可以用漢字寫嗎？",
+      "vi": "Bạn có thể viết bằng chữ Hán không?",
+      "ko": "한자로 써주실 수 있나요?"
     },
     {
       "jp": "スマホで見せてもいいですか。",
@@ -165,7 +233,11 @@
       "scene": "听不懂时",
       "id": "s00-018",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Can I show you on my phone?",
+      "zh-TW": "可以用手機給您看嗎？",
+      "vi": "Tôi có thể cho bạn xem trên điện thoại không?",
+      "ko": "핸드폰으로 보여드려도 될까요?"
     },
     {
       "jp": "わかりました。",
@@ -174,7 +246,11 @@
       "scene": "听不懂时",
       "id": "s00-019",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Got it.",
+      "zh-TW": "明白了。",
+      "vi": "Tôi hiểu rồi.",
+      "ko": "알겠습니다."
     },
     {
       "jp": "わかりません。",
@@ -183,7 +259,11 @@
       "scene": "听不懂时",
       "id": "s00-020",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "I don't understand.",
+      "zh-TW": "我不明白。",
+      "vi": "Tôi không hiểu.",
+      "ko": "잘 모르겠어요."
     },
     {
       "jp": "はい。",
@@ -192,7 +272,11 @@
       "scene": "听不懂时",
       "id": "s00-021",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Yes.",
+      "zh-TW": "是的。",
+      "vi": "Vâng.",
+      "ko": "네."
     },
     {
       "jp": "いいえ。",
@@ -201,7 +285,11 @@
       "scene": "听不懂时",
       "id": "s00-022",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "No.",
+      "zh-TW": "不是。",
+      "vi": "Không.",
+      "ko": "아니요."
     },
     {
       "jp": "日本語が話せません。",
@@ -210,7 +298,11 @@
       "scene": "求助",
       "id": "s00-023",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I can't speak Japanese.",
+      "zh-TW": "我不會說日語。",
+      "vi": "Tôi không biết tiếng Nhật.",
+      "ko": "일본어를 못합니다."
     },
     {
       "jp": "助けてください。",
@@ -219,7 +311,11 @@
       "scene": "求助",
       "id": "s00-024",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Please help me.",
+      "zh-TW": "請幫幫我。",
+      "vi": "Xin hãy giúp tôi với.",
+      "ko": "도와주세요."
     },
     {
       "jp": "中国語が話せる方はいますか。",
@@ -228,7 +324,11 @@
       "scene": "求助",
       "id": "s00-025",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Does anyone here speak Chinese?",
+      "zh-TW": "這裡有人會說中文嗎？",
+      "vi": "Ở đây có ai nói được tiếng Trung không?",
+      "ko": "중국어 하시는 분 계세요?"
     },
     {
       "jp": "通訳を呼んでもらえますか。",
@@ -237,7 +337,11 @@
       "scene": "求助",
       "id": "s00-026",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Could you get an interpreter?",
+      "zh-TW": "能幫我找翻譯嗎？",
+      "vi": "Bạn có thể gọi phiên dịch giúp tôi không?",
+      "ko": "통역을 불러주실 수 있나요?"
     },
     {
       "jp": "どうすればいいですか。",
@@ -246,7 +350,11 @@
       "scene": "求助",
       "id": "s00-027",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "What should I do?",
+      "zh-TW": "我應該怎麼做？",
+      "vi": "Tôi phải làm gì bây giờ?",
+      "ko": "어떻게 하면 되나요?"
     },
     {
       "jp": "教えてください。",
@@ -255,7 +363,11 @@
       "scene": "求助",
       "id": "s00-028",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Could you tell me?",
+      "zh-TW": "可以告訴我嗎？",
+      "vi": "Bạn có thể cho tôi biết không?",
+      "ko": "알려주시겠어요?"
     },
     {
       "jp": "いくらですか。",
@@ -264,7 +376,11 @@
       "scene": "问基本信息",
       "id": "s00-029",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "How much is it?",
+      "zh-TW": "多少錢？",
+      "vi": "Bao nhiêu tiền?",
+      "ko": "얼마예요?"
     },
     {
       "jp": "何時からですか。",
@@ -273,7 +389,11 @@
       "scene": "问基本信息",
       "id": "s00-030",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "What time does it start?",
+      "zh-TW": "幾點開始？",
+      "vi": "Mấy giờ bắt đầu?",
+      "ko": "몇 시부터예요?"
     },
     {
       "jp": "何時までですか。",
@@ -282,7 +402,11 @@
       "scene": "问基本信息",
       "id": "s00-031",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "What time does it close?",
+      "zh-TW": "幾點結束？",
+      "vi": "Mấy giờ kết thúc?",
+      "ko": "몇 시까지예요?"
     },
     {
       "jp": "どこですか。",
@@ -291,7 +415,11 @@
       "scene": "问基本信息",
       "id": "s00-032",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "Where is it?",
+      "zh-TW": "在哪裡？",
+      "vi": "Ở đâu vậy?",
+      "ko": "어디예요?"
     },
     {
       "jp": "何番ですか。",
@@ -300,7 +428,11 @@
       "scene": "问基本信息",
       "id": "s00-033",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "What number is it?",
+      "zh-TW": "是幾號？",
+      "vi": "Số mấy vậy?",
+      "ko": "몇 번이에요?"
     },
     {
       "jp": "何階ですか。",
@@ -309,7 +441,11 @@
       "scene": "问基本信息",
       "id": "s00-034",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "What floor is it on?",
+      "zh-TW": "在幾樓？",
+      "vi": "Ở tầng mấy?",
+      "ko": "몇 층이에요?"
     },
     {
       "jp": "予約は必要ですか。",
@@ -318,7 +454,11 @@
       "scene": "问基本信息",
       "id": "s00-035",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "Do I need a reservation?",
+      "zh-TW": "需要預約嗎？",
+      "vi": "Có cần đặt lịch trước không?",
+      "ko": "예약이 필요한가요?"
     },
     {
       "jp": "何日かかりますか。",
@@ -327,34 +467,66 @@
       "scene": "问基本信息",
       "id": "s00-036",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "How many days will it take?",
+      "zh-TW": "需要幾天？",
+      "vi": "Mất bao nhiêu ngày?",
+      "ko": "며칠이나 걸려요?"
     }
   ],
   "subcategories": [
     {
       "id": "sub01",
       "title": "打招呼",
-      "title_ja": "挨拶"
+      "title_ja": "挨拶",
+      "title_en": "Greetings",
+      "title_zh-TW": "打招呼",
+      "title_vi": "Chào hỏi",
+      "title_ko": "인사"
     },
     {
       "id": "sub02",
       "title": "感谢与道歉",
-      "title_ja": "感謝・謝罪"
+      "title_ja": "感謝・謝罪",
+      "title_en": "Thanks & Apologies",
+      "title_zh-TW": "感謝與道歉",
+      "title_vi": "Cảm ơn & Xin lỗi",
+      "title_ko": "감사 & 사과"
     },
     {
       "id": "sub03",
       "title": "听不懂时",
-      "title_ja": "聞き取れない時"
+      "title_ja": "聞き取れない時",
+      "title_en": "When You Don't Understand",
+      "title_zh-TW": "聽不懂時",
+      "title_vi": "Khi không hiểu",
+      "title_ko": "못 알아들을 때"
     },
     {
       "id": "sub04",
       "title": "求助",
-      "title_ja": "助けを求める"
+      "title_ja": "助けを求める",
+      "title_en": "Asking for Help",
+      "title_zh-TW": "求助",
+      "title_vi": "Nhờ giúp đỡ",
+      "title_ko": "도움 요청"
     },
     {
       "id": "sub05",
       "title": "问基本信息",
-      "title_ja": "基本的な質問"
+      "title_ja": "基本的な質問",
+      "title_en": "Basic Questions",
+      "title_zh-TW": "詢問基本資訊",
+      "title_vi": "Hỏi thông tin cơ bản",
+      "title_ko": "기본 정보 묻기"
     }
-  ]
+  ],
+  "title_en": "Basic Phrases",
+  "title_zh-TW": "共通短句",
+  "title_vi": "Câu cơ bản",
+  "title_ko": "기본 표현",
+  "description_en": "Essential phrases for every situation. When in trouble, these will always help.",
+  "description_zh-TW": "所有場景都會用到的基礎用語。遇到困難時，這裡的句子永遠有用。",
+  "description_vi": "Những câu dùng được trong mọi tình huống. Khi gặp khó khăn, những câu này luôn giúp ích.",
+  "description_ko": "어떤 상황에서도 쓸 수 있는 기본 표현. 곤란할 때 항상 도움이 됩니다."
 }

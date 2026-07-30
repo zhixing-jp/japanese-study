@@ -12,7 +12,11 @@
       "scene": "找商品",
       "id": "s03-001",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Excuse me, where can I find this item? (showing phone)",
+      "zh-TW": "不好意思，這款商品在哪裡？（出示手機圖片）",
+      "vi": "Xin lỗi, mặt hàng này ở đâu vậy? (Cho xem ảnh)",
+      "ko": "저기요, 이 상품이 어디 있나요? (스마트폰 제시)"
     },
     {
       "jp": "これの違うサイズはありますか。",
@@ -21,7 +25,11 @@
       "scene": "找商品",
       "id": "s03-002",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Do you have this in a different size?",
+      "zh-TW": "這個有別的尺碼嗎？",
+      "vi": "Cái này có size khác không?",
+      "ko": "이거 다른 사이즈 있나요?"
     },
     {
       "jp": "これの違う色はありますか。",
@@ -30,7 +38,11 @@
       "scene": "找商品",
       "id": "s03-003",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Do you have this in a different color?",
+      "zh-TW": "這個有別的顏色嗎？",
+      "vi": "Cái này có màu khác không?",
+      "ko": "이거 다른 색상 있나요?"
     },
     {
       "jp": "在庫はありますか。",
@@ -39,7 +51,11 @@
       "scene": "找商品",
       "id": "s03-004",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "Is this in stock?",
+      "zh-TW": "這個有庫存嗎？",
+      "vi": "Còn hàng không?",
+      "ko": "재고 있나요?"
     },
     {
       "jp": "おすすめは何ですか。",
@@ -48,7 +64,11 @@
       "scene": "找商品",
       "id": "s03-005",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "en": "What would you recommend?",
+      "zh-TW": "有什麼推薦的嗎？",
+      "vi": "Bạn có thể gợi ý gì không?",
+      "ko": "추천해 주실 만한 게 있나요?"
     },
     {
       "jp": "少々お待ちください。確認してきます。",
@@ -57,7 +77,11 @@
       "scene": "找商品",
       "id": "s03-006",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "en": "Please wait a moment while I check.",
+      "zh-TW": "請稍等，我去確認一下。",
+      "vi": "Vui lòng chờ một chút, tôi đi kiểm tra.",
+      "ko": "잠시 기다려 주세요, 확인해 보겠습니다."
     },
     {
       "jp": "試着してもいいですか。",
@@ -66,7 +90,11 @@
       "scene": "试穿・试用",
       "id": "s03-007",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "May I try this on?",
+      "zh-TW": "可以試穿嗎？",
+      "vi": "Tôi có thể thử không?",
+      "ko": "입어봐도 될까요?"
     },
     {
       "jp": "試着室はどこですか。",
@@ -75,7 +103,11 @@
       "scene": "试穿・试用",
       "id": "s03-008",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the fitting room?",
+      "zh-TW": "試衣間在哪裡？",
+      "vi": "Phòng thử đồ ở đâu?",
+      "ko": "탈의실은 어디에 있나요?"
     },
     {
       "jp": "これ、試してもいいですか。",
@@ -84,7 +116,11 @@
       "scene": "试穿・试用",
       "id": "s03-009",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "en": "Can I try this?",
+      "zh-TW": "這個可以試用嗎？",
+      "vi": "Tôi có thể dùng thử cái này không?",
+      "ko": "이거 써봐도 될까요?"
     },
     {
       "jp": "サイズはいかがですか。",
@@ -93,7 +129,11 @@
       "scene": "试穿・试用",
       "id": "s03-010",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "en": "How does the size fit?",
+      "zh-TW": "尺碼合適嗎？",
+      "vi": "Size có vừa không?",
+      "ko": "사이즈는 어떠세요?"
     },
     {
       "jp": "免税手続きはできますか。",
@@ -102,7 +142,11 @@
       "scene": "免税・优惠・包装",
       "id": "s03-011",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Can I do the tax-free procedure here?",
+      "zh-TW": "可以辦理免稅嗎？",
+      "vi": "Tôi có thể làm thủ tục miễn thuế ở đây không?",
+      "ko": "면세 수속 가능한가요?"
     },
     {
       "jp": "パスポートを持っています。",
@@ -111,7 +155,11 @@
       "scene": "免税・优惠・包装",
       "id": "s03-012",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "I have my passport with me.",
+      "zh-TW": "我帶了護照。",
+      "vi": "Tôi có mang theo hộ chiếu.",
+      "ko": "여권을 가지고 있어요."
     },
     {
       "jp": "クーポンは使えますか。",
@@ -120,7 +168,11 @@
       "scene": "免税・优惠・包装",
       "id": "s03-013",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "Can I use a coupon?",
+      "zh-TW": "可以使用優惠券嗎？",
+      "vi": "Tôi có thể dùng phiếu giảm giá không?",
+      "ko": "쿠폰 사용할 수 있나요?"
     },
     {
       "jp": "プレゼント用です。包装をお願いできますか。",
@@ -129,7 +181,11 @@
       "scene": "免税・优惠・包装",
       "id": "s03-014",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "en": "It's a gift. Could you gift-wrap it?",
+      "zh-TW": "是送禮用的，可以幫忙包裝嗎？",
+      "vi": "Đây là quà tặng. Bạn có thể gói quà được không?",
+      "ko": "선물용인데요, 포장해 주실 수 있나요?"
     },
     {
       "jp": "ご自宅用ですか、プレゼント用ですか。",
@@ -138,7 +194,11 @@
       "scene": "免税・优惠・包装",
       "id": "s03-015",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "en": "Is it for yourself or as a gift?",
+      "zh-TW": "是自己用還是送禮用？",
+      "vi": "Đây là để dùng hay làm quà tặng?",
+      "ko": "자가용이세요, 선물용이세요?"
     },
     {
       "jp": "ポイントカードはお持ちですか。",
@@ -147,7 +207,11 @@
       "scene": "结账・支付",
       "id": "s03-016",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "en": "Do you have a point card?",
+      "zh-TW": "您有積分卡嗎？",
+      "vi": "Bạn có thẻ tích điểm không?",
+      "ko": "포인트 카드 있으세요?"
     },
     {
       "jp": "ポイントカードがあります。",
@@ -156,7 +220,11 @@
       "scene": "结账・支付",
       "id": "s03-017",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Yes, I have one.",
+      "zh-TW": "我有積分卡。",
+      "vi": "Có, tôi có.",
+      "ko": "네, 있어요."
     },
     {
       "jp": "ポイントカードはありません。",
@@ -165,7 +233,11 @@
       "scene": "结账・支付",
       "id": "s03-018",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I don't have one.",
+      "zh-TW": "我沒有積分卡。",
+      "vi": "Tôi không có.",
+      "ko": "없어요."
     },
     {
       "jp": "ポイントカードを作りたいです。",
@@ -174,7 +246,11 @@
       "scene": "结账・支付",
       "id": "s03-019",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I'd like to get a point card.",
+      "zh-TW": "我想辦積分卡。",
+      "vi": "Tôi muốn làm thẻ tích điểm.",
+      "ko": "포인트 카드 만들고 싶어요."
     },
     {
       "jp": "袋はご利用ですか。",
@@ -183,7 +259,11 @@
       "scene": "结账・支付",
       "id": "s03-020",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "en": "Would you like a bag?",
+      "zh-TW": "需要袋子嗎？",
+      "vi": "Bạn có muốn lấy túi không?",
+      "ko": "봉투 필요하세요?"
     },
     {
       "jp": "袋は一枚お願いします。",
@@ -192,7 +272,11 @@
       "scene": "结账・支付",
       "id": "s03-021",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "One bag, please.",
+      "zh-TW": "請給我一個袋子。",
+      "vi": "Cho tôi một túi.",
+      "ko": "봉투 하나 주세요."
     },
     {
       "jp": "袋はいりません。",
@@ -201,7 +285,11 @@
       "scene": "结账・支付",
       "id": "s03-022",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "No bag needed, thanks.",
+      "zh-TW": "不需要袋子。",
+      "vi": "Không cần túi.",
+      "ko": "봉투 괜찮아요."
     },
     {
       "jp": "袋は有料ですか。",
@@ -210,7 +298,11 @@
       "scene": "结账・支付",
       "id": "s03-023",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Is the bag charged?",
+      "zh-TW": "袋子要收費嗎？",
+      "vi": "Túi có mất phí không?",
+      "ko": "봉투 유료예요?"
     },
     {
       "jp": "お支払いはどのようになさいますか。",
@@ -219,7 +311,11 @@
       "scene": "结账・支付",
       "id": "s03-024",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "en": "How would you like to pay?",
+      "zh-TW": "請問怎麼付款？",
+      "vi": "Bạn muốn thanh toán bằng cách nào?",
+      "ko": "결제는 어떻게 하시겠어요?"
     },
     {
       "jp": "カードでお願いします。",
@@ -228,7 +324,11 @@
       "scene": "结账・支付",
       "id": "s03-025",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "By card, please.",
+      "zh-TW": "請刷卡。",
+      "vi": "Tôi trả bằng thẻ.",
+      "ko": "카드로 부탁드립니다."
     },
     {
       "jp": "スマホ決済は使えますか。",
@@ -237,7 +337,11 @@
       "scene": "结账・支付",
       "id": "s03-026",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Can I pay by phone?",
+      "zh-TW": "可以用手機支付嗎？",
+      "vi": "Tôi có thể thanh toán bằng điện thoại không?",
+      "ko": "스마트폰으로 결제할 수 있나요?"
     },
     {
       "jp": "タッチ決済できますか。",
@@ -246,7 +350,11 @@
       "scene": "结账・支付",
       "id": "s03-027",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Can I pay by contactless?",
+      "zh-TW": "可以用感應支付嗎？",
+      "vi": "Tôi có thể thanh toán không tiếp xúc không?",
+      "ko": "비접촉 결제 되나요?"
     },
     {
       "jp": "現金で払います。",
@@ -255,7 +363,11 @@
       "scene": "结账・支付",
       "id": "s03-028",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "I'll pay cash.",
+      "zh-TW": "我用現金付款。",
+      "vi": "Tôi trả tiền mặt.",
+      "ko": "현금으로 낼게요."
     },
     {
       "jp": "カードをこちらにお入れください。",
@@ -264,7 +376,11 @@
       "scene": "结账・支付",
       "id": "s03-029",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "en": "Please insert your card here.",
+      "zh-TW": "請把卡插在這裡。",
+      "vi": "Vui lòng cắm thẻ vào đây.",
+      "ko": "카드를 여기에 넣어주세요."
     },
     {
       "jp": "セルフレジはどこですか。",
@@ -273,7 +389,11 @@
       "scene": "结账・支付",
       "id": "s03-030",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Where is the self-checkout?",
+      "zh-TW": "自助收銀台在哪裡？",
+      "vi": "Máy thanh toán tự phục vụ ở đâu?",
+      "ko": "셀프 계산대는 어디에 있나요?"
     },
     {
       "jp": "全部でいくらですか。",
@@ -282,7 +402,11 @@
       "scene": "结账・支付",
       "id": "s03-031",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "How much is it in total?",
+      "zh-TW": "一共多少錢？",
+      "vi": "Tổng cộng bao nhiêu?",
+      "ko": "전부 얼마예요?"
     },
     {
       "jp": "領収書をいただけますか。",
@@ -291,52 +415,234 @@
       "scene": "结账・支付",
       "id": "s03-032",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "en": "Could I have a receipt?",
+      "zh-TW": "請給我收據。",
+      "vi": "Cho tôi xin hóa đơn nhé.",
+      "ko": "영수증 주실 수 있나요?"
     },
+
     {
-      "jp": "返品できますか。レシートはこれです。",
-      "furigana": "へんぴんできますか。レシートはこれです。",
-      "zh": "可以退货吗？这是收据。",
+      "jp": "すみません、こちらの商品を返品したいのですが。",
+      "furigana": "すみません、こちらのしょうひんをへんぴんしたいのですが。",
+      "zh": "不好意思，我想退这件商品。",
+      "zh-TW": "不好意思，我想退這件商品。",
+      "en": "Excuse me, I'd like to return this item.",
+      "vi": "Xin lỗi, tôi muốn trả lại sản phẩm này.",
+      "ko": "죄송한데, 이 상품을 반품하고 싶습니다.",
       "scene": "退换货",
-      "id": "s03-033",
+      "id": "s03-sub05-001",
       "subcategory": "sub05",
       "role": "user"
     },
     {
-      "jp": "サイズを交換したいんですが。",
-      "furigana": "サイズをこうかんしたいんですが。",
-      "zh": "我想换个尺码。",
+      "jp": "サイズが合わないので、交換をお願いできますか。",
+      "furigana": "サイズがあわないので、こうかんをおねがいできますか。",
+      "zh": "尺码不合适，可以帮我换一下吗？",
+      "zh-TW": "尺碼不合適，可以幫我換一下嗎？",
+      "en": "The size doesn't fit. Could you exchange it for me?",
+      "vi": "Size không vừa, bạn có thể đổi cho tôi không?",
+      "ko": "사이즈가 맞지 않아서 교환해 주실 수 있나요?",
       "scene": "退换货",
-      "id": "s03-034",
+      "id": "s03-sub05-002",
       "subcategory": "sub05",
       "role": "user"
     },
     {
+      "jp": "レシートと、こちらの元の状態のままお持ちしました。",
+      "furigana": "レシートと、こちらのもとのじょうたいのままおもちしました。",
+      "zh": "这是收据，商品我按原封不动带来了。",
+      "zh-TW": "這是收據，商品我按原封不動帶來了。",
+      "en": "I brought the receipt and the item in its original condition.",
+      "vi": "Tôi mang theo hóa đơn và sản phẩm vẫn còn nguyên trạng.",
+      "ko": "영수증과 함께 상품을 원래 상태 그대로 가져왔습니다.",
+      "scene": "退换货",
+      "id": "s03-sub05-003",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+    {
+      "jp": "家に帰って開けたら、すでに傷がありました。",
+      "furigana": "いえにかえってあけたら、すでにきずがありました。",
+      "zh": "回家打开后，发现已经有划痕了。",
+      "zh-TW": "回家打開後，發現已經有刮痕了。",
+      "en": "When I opened it at home, there was already a scratch on it.",
+      "vi": "Khi về nhà mở ra, tôi thấy đã có vết xước rồi.",
+      "ko": "집에 와서 열어보니 이미 흠집이 있었습니다.",
+      "scene": "退换货",
+      "id": "s03-sub05-004",
+      "subcategory": "sub05",
+      "role": "user"
+    },
+      {
       "jp": "壊れていました。",
       "furigana": "こわれていました。",
       "zh": "买回来是坏的。",
       "scene": "退换货",
       "id": "s03-035",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "en": "It was broken when I got it.",
+      "zh-TW": "買回來是壞的。",
+      "vi": "Khi nhận về thì nó đã bị hỏng rồi.",
+      "ko": "사왔을 때 이미 망가져 있었어요."
     },
+  {
+    "jp": "サイズを間違えて買ってしまったのですが、交換は可能でしょうか。",
+    "furigana": "サイズをまちがえてかってしまったのですが、こうかんはかのうでしょうか。",
+    "zh": "不小心买错尺码了，请问可以换货吗？",
+    "zh-TW": "不小心買錯尺碼了，請問可以換貨嗎？",
+    "en": "I accidentally bought the wrong size. Is it possible to exchange it?",
+    "vi": "Tôi vô tình mua nhầm size, có thể đổi hàng được không?",
+    "ko": "사이즈를 잘못 구매했는데, 교환이 가능한가요?",
+    "scene": "退换货",
+    "id": "s03-sub05-005",
+    "subcategory": "sub05",
+    "role": "user"
+  },
+  {
+    "jp": "イメージと違ったので、返品をお願いしたいのですが。",
+    "furigana": "イメージとちがったので、へんぴんをおねがいしたいのですが。",
+    "zh": "和想象中的不太一样，所以想申请退货。",
+    "zh-TW": "和想像中的不太一樣，所以想申請退貨。",
+    "en": "It's different from what I imagined, so I'd like to return it.",
+    "vi": "Nó khác với những gì tôi tưởng tượng, nên tôi muốn trả lại.",
+    "ko": "상상했던 것과 달라서 반품을 하고 싶습니다.",
+    "scene": "退换货",
+    "id": "s03-sub05-006",
+    "subcategory": "sub05",
+    "role": "user"
+  },
+  {
+    "jp": "返金の場合、現金で戻りますか。",
+    "furigana": "へんきんのばあい、げんきんでもどりますか。",
+    "zh": "如果退款的话，会退现金吗？",
+    "zh-TW": "如果退款的話，會退現金嗎？",
+    "en": "If I get a refund, will it be returned in cash?",
+    "vi": "Nếu hoàn tiền, có trả bằng tiền mặt không?",
+    "ko": "환불의 경우 현금으로 돌려받을 수 있나요?",
+    "scene": "退换货",
+    "id": "s03-sub05-008",
+    "subcategory": "sub05",
+    "role": "user"
+  },
+  {
+    "jp": "返品・交換でございますね。",
+    "furigana": "へんぴん・こうかんでございますね。",
+    "zh": "您是要办理退货或换货对吧。",
+    "zh-TW": "您是要辦理退貨或換貨對吧。",
+    "en": "You'd like to make a return or exchange, correct?",
+    "vi": "Bạn muốn đổi trả hàng, đúng không?",
+    "ko": "반품·교환을 원하시는 거죠?",
+    "scene": "退换货",
+    "id": "s03-sub05-009",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "どのような理由での返品でしょうか。",
+    "furigana": "どのようなりゆうでのへんぴんでしょうか。",
+    "zh": "请问是因为什么原因要退货呢？",
+    "zh-TW": "請問是因為什麼原因要退貨呢？",
+    "en": "May I ask the reason for the return?",
+    "vi": "Cho tôi hỏi lý do bạn muốn trả hàng là gì?",
+    "ko": "반품 이유가 어떻게 되시나요?",
+    "scene": "退换货",
+    "id": "s03-sub05-010",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "レシートはお持ちでしょうか。",
+    "furigana": "レシートはおもちでしょうか。",
+    "zh": "请问您带收据了吗？",
+    "zh-TW": "請問您帶收據了嗎？",
+    "en": "Do you have your receipt?",
+    "vi": "Bạn có mang hóa đơn không?",
+    "ko": "영수증은 가지고 계신가요?",
+    "scene": "退换货",
+    "id": "s03-sub05-011",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "商品の状態を確認させていただきます。少々お待ちください。",
+    "furigana": "しょうひんのじょうたいをかくにんさせていただきます。しょうしょうおまちください。",
+    "zh": "我来确认一下商品的状况，请稍等。",
+    "zh-TW": "我來確認一下商品的狀況，請稍等。",
+    "en": "Let me check the condition of the item. Please wait a moment.",
+    "vi": "Để tôi kiểm tra tình trạng sản phẩm. Vui lòng đợi một chút.",
+    "ko": "상품 상태를 확인하겠습니다. 잠시만 기다려 주세요.",
+    "scene": "退换货",
+    "id": "s03-sub05-012",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "申し訳ございません。開封済みのため、返品・交換ができかねます。",
+    "furigana": "もうしわけございません。かいふうずみのため、へんぴん・こうかんができかねます。",
+    "zh": "非常抱歉。由于商品已开封，无法为您办理退换货。",
+    "zh-TW": "非常抱歉。由於商品已開封，無法為您辦理退換貨。",
+    "en": "I'm very sorry. As the item has been opened, we are unable to process a return or exchange.",
+    "vi": "Rất xin lỗi. Vì sản phẩm đã được mở ra, chúng tôi không thể xử lý đổi trả.",
+    "ko": "죄송합니다. 개봉된 상품이기 때문에 반품·교환이 어렵습니다.",
+    "scene": "退换货",
+    "id": "s03-sub05-013",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "同じ商品の別のサイズに交換いたします。",
+    "furigana": "おなじしょうひんのべつのサイズにこうかんいたします。",
+    "zh": "为您更换同款商品的其他尺码。",
+    "zh-TW": "為您更換同款商品的其他尺碼。",
+    "en": "We'll exchange it for the same item in a different size.",
+    "vi": "Chúng tôi sẽ đổi cho bạn cùng sản phẩm với size khác.",
+    "ko": "같은 상품의 다른 사이즈로 교환해 드리겠습니다.",
+    "scene": "退换货",
+    "id": "s03-sub05-014",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "クレジットカードでお支払いでしたので、返金には数日かかる場合がございます。",
+    "furigana": "クレジットカードでおしはらいでしたので、へんきんにはすうにちかかるばあいがございます。",
+    "zh": "因为您使用信用卡支付，退款可能需要几天时间到账。",
+    "zh-TW": "因為您使用信用卡支付，退款可能需要幾天時間到帳。",
+    "en": "Since you paid by credit card, the refund may take a few days to process.",
+    "vi": "Vì bạn thanh toán bằng thẻ tín dụng, hoàn tiền có thể mất vài ngày.",
+    "ko": "신용카드로 결제하셨기 때문에 환불까지 며칠 걸릴 수 있습니다.",
+    "scene": "退换货",
+    "id": "s03-sub05-015",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+  {
+    "jp": "手続きに少々お時間をいただきます。",
+    "furigana": "てつづきにしょうしょうおじかんをいただきます。",
+    "zh": "手续需要花一点时间，请稍候。",
+    "zh-TW": "手續需要花一點時間，請稍候。",
+    "en": "The procedure will take a little time. Please bear with us.",
+    "vi": "Thủ tục sẽ mất một chút thời gian. Vui lòng chờ một chút.",
+    "ko": "절차에 잠시 시간이 걸립니다. 잠시만 기다려 주세요.",
+    "scene": "退换货",
+    "id": "s03-sub05-016",
+    "subcategory": "sub05",
+    "role": "staff"
+  },
+
     {
-      "jp": "動かないんですが。",
-      "furigana": "うごかないんですが。",
-      "zh": "这个没办法用。",
-      "scene": "退换货",
-      "id": "s03-036",
-      "subcategory": "sub05",
-      "role": "user"
-    },
-    {
-      "jp": "コインロッカーはどこですか。",
-      "furigana": "コインロッカーはどこですか。",
-      "zh": "投币储物柜在哪里？",
+      "jp": "コインロッカーはありますか。",
+      "furigana": "コインロッカーはありますか。",
+      "zh": "有投币储物柜吗？",
       "scene": "储物柜",
       "id": "s03-037",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "en": "Are there coin lockers?",
+      "zh-TW": "投幣儲物櫃在哪裡？",
+      "vi": "Có tủ khóa tiền xu không?",
+      "ko": "코인 로커가 있나요?"
     },
     {
       "jp": "使い方を教えてください。",
@@ -345,7 +651,11 @@
       "scene": "储物柜",
       "id": "s03-038",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "en": "Could you show me how to use it?",
+      "zh-TW": "請告訴我怎麼用。",
+      "vi": "Bạn có thể chỉ cho tôi cách dùng không?",
+      "ko": "사용 방법을 알려주실 수 있나요?"
     },
     {
       "jp": "鍵をなくしました。",
@@ -354,39 +664,76 @@
       "scene": "储物柜",
       "id": "s03-039",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "en": "I've lost my key.",
+      "zh-TW": "我把鑰匙弄丟了。",
+      "vi": "Tôi đánh mất chìa khóa rồi.",
+      "ko": "열쇠를 잃어버렸어요."
     }
+
   ],
   "subcategories": [
     {
       "id": "sub01",
       "title": "找商品",
-      "title_ja": "商品を探す"
+      "title_ja": "商品を探す",
+      "title_en": "Finding Products",
+      "title_zh-TW": "找商品",
+      "title_vi": "Tìm sản phẩm",
+      "title_ko": "상품 찾기"
     },
     {
       "id": "sub02",
       "title": "试穿・试用",
-      "title_ja": "試着・試用"
+      "title_ja": "試着・試用",
+      "title_en": "Fitting Room",
+      "title_zh-TW": "試穿試用",
+      "title_vi": "Thử đồ",
+      "title_ko": "피팅룸"
     },
     {
       "id": "sub03",
       "title": "免税・优惠・包装",
-      "title_ja": "免税・割引・包装"
+      "title_ja": "免税・割引・包装",
+      "title_en": "Tax-Free & Gift Wrapping",
+      "title_zh-TW": "免稅・優惠・包裝",
+      "title_vi": "Miễn thuế & Gói quà",
+      "title_ko": "면세 & 포장"
     },
     {
       "id": "sub04",
       "title": "结账・支付",
-      "title_ja": "会計・支払い"
+      "title_ja": "会計・支払い",
+      "title_en": "Checkout & Payment",
+      "title_zh-TW": "結帳・支付",
+      "title_vi": "Thanh toán",
+      "title_ko": "계산 & 결제"
     },
     {
       "id": "sub05",
       "title": "退换货",
-      "title_ja": "返品・交換"
+      "title_ja": "返品・交換",
+      "title_en": "Returns & Exchanges",
+      "title_zh-TW": "退換貨",
+      "title_vi": "Đổi trả hàng",
+      "title_ko": "환불 & 교환"
     },
     {
       "id": "sub06",
       "title": "储物柜",
-      "title_ja": "コインロッカー"
+      "title_ja": "コインロッカー",
+      "title_en": "Coin Lockers",
+      "title_zh-TW": "儲物櫃",
+      "title_vi": "Tủ khóa",
+      "title_ko": "코인 로커"
     }
-  ]
+  ],
+  "title_en": "Shopping",
+  "title_zh-TW": "買東西",
+  "title_vi": "Mua sắm",
+  "title_ko": "쇼핑",
+  "description_en": "Supermarkets, convenience stores, drugstores — phrases you'll need wherever you shop.",
+  "description_zh-TW": "超市、便利店、藥妝店——無論在哪裡買東西，這些句子都用得到。",
+  "description_vi": "Siêu thị, cửa hàng tiện lợi, hiệu thuốc — những câu cần thiết khi mua sắm ở bất kỳ đâu.",
+  "description_ko": "슈퍼마켓, 편의점, 드럭스토어 — 어디서 쇼핑하든 필요한 표현."
 }

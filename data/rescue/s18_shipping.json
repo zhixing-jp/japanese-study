@@ -1,267 +1,436 @@
 {
   "id": "s18",
-  "title": "荷物を送る",
-  "title_zh": "寄快递・邮寄",
-  "category": "寄快递・邮寄",
-  "description": "便利店、邮局、上门取件——成功把包裹寄出去。",
+  "title": "宅配便・郵送",
+  "title_zh": "快递・配送",
+  "title_en": "Delivery & Shipping",
+  "title_zh-TW": "快遞・配送",
+  "title_vi": "Giao hàng & Vận chuyển",
+  "title_ko": "택배 & 배송",
+  "category": "快递・配送",
+  "description": "寄件、收件、上门取件、追踪——在日本顺利处理快递配送的各类情况。",
+  "description_en": "Sending, receiving, pickup, tracking — handling all delivery situations in Japan.",
+  "description_zh-TW": "寄件、收件、上門取件、追蹤——在日本順利處理快遞配送的各類情況。",
+  "description_vi": "Gửi hàng, nhận hàng, lấy hàng tận nơi, theo dõi — xử lý mọi tình huống giao nhận tại Nhật Bản.",
+  "description_ko": "발송, 수령, 방문 수거, 추적 — 일본에서 택배 배송 관련 모든 상황 처리하기.",
+  "subcategories": [
+    {
+      "id": "sub01",
+      "title": "便利店寄件",
+      "title_ja": "コンビニで送る",
+      "title_en": "Sending from a Convenience Store",
+      "title_zh-TW": "便利店寄件",
+      "title_vi": "Gửi từ cửa hàng tiện lợi",
+      "title_ko": "편의점 발송"
+    },
+    {
+      "id": "sub02",
+      "title": "邮局寄件",
+      "title_ja": "郵便局で送る",
+      "title_en": "Sending from the Post Office",
+      "title_zh-TW": "郵局寄件",
+      "title_vi": "Gửi từ bưu điện",
+      "title_ko": "우체국 발송"
+    },
+    {
+      "id": "sub03",
+      "title": "上门取件",
+      "title_ja": "集荷・宅配便",
+      "title_en": "Pickup Service",
+      "title_zh-TW": "上門取件",
+      "title_vi": "Dịch vụ lấy hàng tận nơi",
+      "title_ko": "방문 수거"
+    },
+    {
+      "id": "sub04",
+      "title": "收件・签收",
+      "title_ja": "受取・再配達",
+      "title_en": "Receiving & Redelivery",
+      "title_zh-TW": "收件・簽收",
+      "title_vi": "Nhận hàng & Giao lại",
+      "title_ko": "수령 & 재배달"
+    },
+    {
+      "id": "sub05",
+      "title": "追踪・问题处理",
+      "title_ja": "追跡・トラブル",
+      "title_en": "Tracking & Issues",
+      "title_zh-TW": "追蹤・問題處理",
+      "title_vi": "Theo dõi & Xử lý sự cố",
+      "title_ko": "추적 & 문제 처리"
+    }
+  ],
   "items": [
     {
+      "id": "s18-001",
+      "subcategory": "sub01",
+      "role": "user",
       "jp": "宅配便を送りたいです。",
       "furigana": "たくはいびんをおくりたいです。",
       "zh": "我想寄快递。",
-      "scene": "便利店寄件",
-      "id": "s18-001",
-      "subcategory": "sub01",
-      "role": "user"
+      "en": "I'd like to send a parcel.",
+      "zh-TW": "我想寄快遞。",
+      "vi": "Tôi muốn gửi bưu kiện.",
+      "ko": "택배를 보내고 싶어요."
     },
     {
+      "id": "s18-002",
+      "subcategory": "sub01",
+      "role": "user",
       "jp": "箱はありますか。",
       "furigana": "はこはありますか。",
       "zh": "有纸箱卖吗？",
-      "scene": "便利店寄件",
-      "id": "s18-002",
-      "subcategory": "sub01",
-      "role": "user"
+      "en": "Do you have any boxes for sale?",
+      "zh-TW": "有紙箱賣嗎？",
+      "vi": "Có hộp carton bán không?",
+      "ko": "박스 파나요?"
     },
     {
+      "id": "s18-003",
+      "subcategory": "sub01",
+      "role": "user",
       "jp": "重さを量ってもらえますか。",
       "furigana": "おもさをはかってもらえますか。",
       "zh": "可以帮我称一下重量吗？",
-      "scene": "便利店寄件",
-      "id": "s18-003",
-      "subcategory": "sub01",
-      "role": "user"
+      "en": "Could you weigh this for me?",
+      "zh-TW": "可以幫我稱一下重量嗎？",
+      "vi": "Bạn có thể cân giúp tôi không?",
+      "ko": "무게를 재주실 수 있나요?"
     },
     {
+      "id": "s18-004",
+      "subcategory": "sub01",
+      "role": "user",
       "jp": "伝票をもらえますか。",
       "furigana": "でんぴょうをもらえますか。",
       "zh": "可以给我一张快递单吗？",
-      "scene": "便利店寄件",
-      "id": "s18-004",
-      "subcategory": "sub01",
-      "role": "user"
+      "en": "Could I have a delivery slip?",
+      "zh-TW": "可以給我一張快遞單嗎？",
+      "vi": "Bạn có thể cho tôi phiếu giao hàng không?",
+      "ko": "송장을 주실 수 있나요?"
     },
     {
+      "id": "s18-005",
+      "subcategory": "sub01",
+      "role": "staff",
       "jp": "伝票にお名前・住所・電話番号をご記入ください。",
       "furigana": "でんぴょうにおなまえ・じゅうしょ・でんわばんごうをごきにゅうください。",
       "zh": "请在快递单上填写姓名、地址、电话。",
-      "scene": "便利店寄件",
-      "id": "s18-005",
-      "subcategory": "sub01",
-      "role": "staff"
+      "en": "Please fill in your name, address, and phone number on the delivery slip.",
+      "zh-TW": "請在快遞單上填寫姓名、地址、電話。",
+      "vi": "Vui lòng điền tên, địa chỉ và số điện thoại vào phiếu giao hàng.",
+      "ko": "송장에 이름, 주소, 전화번호를 기입해 주세요."
     },
     {
-      "jp": "サイズと重さを確認します。",
-      "furigana": "サイズとおもさをかくにんします。",
-      "zh": "我来确认一下尺寸和重量。",
-      "scene": "便利店寄件",
       "id": "s18-006",
       "subcategory": "sub01",
-      "role": "staff"
-    },
-    {
+      "role": "staff",
       "jp": "こちらが控えです。なくさないようにお持ちください。",
       "furigana": "こちらがひかえです。なくさないようにおもちください。",
       "zh": "这是您的存根，请妥善保管。",
-      "scene": "便利店寄件",
-      "id": "s18-007",
-      "subcategory": "sub01",
-      "role": "staff"
+      "en": "Here is your receipt. Please keep it safe.",
+      "zh-TW": "這是您的存根，請妥善保管。",
+      "vi": "Đây là phiếu nhận của bạn. Vui lòng giữ cẩn thận.",
+      "ko": "이것이 고객용 영수증입니다. 잃어버리지 않도록 보관해 주세요."
     },
     {
+      "id": "s18-007",
+      "subcategory": "sub02",
+      "role": "user",
       "jp": "この荷物を送りたいです。",
       "furigana": "このにもつをおくりたいです。",
       "zh": "我想寄这个包裹。",
-      "scene": "邮局寄件",
+      "en": "I'd like to send this package.",
+      "zh-TW": "我想寄這個包裹。",
+      "vi": "Tôi muốn gửi gói hàng này.",
+      "ko": "이 짐을 보내고 싶어요."
+    },
+    {
       "id": "s18-008",
       "subcategory": "sub02",
-      "role": "user"
-    },
-    {
+      "role": "user",
       "jp": "安く送れる方法はどれですか。",
       "furigana": "やすくおくれるほうほうはどれですか。",
-      "zh": "便宜的方法是哪种？",
-      "scene": "邮局寄件",
-      "id": "s18-009",
-      "subcategory": "sub02",
-      "role": "user"
+      "zh": "哪种方式最便宜？",
+      "en": "Which is the cheapest way to send it?",
+      "zh-TW": "哪種方式最便宜？",
+      "vi": "Cách nào gửi rẻ nhất?",
+      "ko": "가장 저렴한 방법이 어떤 건가요?"
     },
     {
+      "id": "s18-009",
+      "subcategory": "sub02",
+      "role": "user",
       "jp": "ゆうパックでお願いします。",
       "furigana": "ゆうパックでおねがいします。",
       "zh": "请用ゆうパック寄。",
-      "scene": "邮局寄件",
-      "id": "s18-010",
-      "subcategory": "sub02",
-      "role": "user"
+      "en": "By Yu-Pack, please.",
+      "zh-TW": "請用ゆうパック寄。",
+      "vi": "Gửi bằng Yu-Pack nhé.",
+      "ko": "유팩으로 부탁드립니다."
     },
     {
+      "id": "s18-010",
+      "subcategory": "sub02",
+      "role": "user",
       "jp": "書留でお願いします。",
       "furigana": "かきとめでおねがいします。",
       "zh": "请用挂号寄。",
-      "scene": "邮局寄件",
-      "id": "s18-011",
-      "subcategory": "sub02",
-      "role": "user"
+      "en": "By registered mail, please.",
+      "zh-TW": "請用掛號寄。",
+      "vi": "Gửi thư đảm bảo nhé.",
+      "ko": "등기로 부탁드립니다."
     },
     {
+      "id": "s18-011",
+      "subcategory": "sub02",
+      "role": "user",
       "jp": "壊れやすいものが入っています。",
       "furigana": "こわれやすいものがはいっています。",
       "zh": "里面有易碎物品。",
-      "scene": "邮局寄件",
+      "en": "There are fragile items inside.",
+      "zh-TW": "裡面有易碎物品。",
+      "vi": "Bên trong có đồ dễ vỡ.",
+      "ko": "안에 깨지기 쉬운 물건이 있어요."
+    },
+    {
       "id": "s18-012",
       "subcategory": "sub02",
-      "role": "user"
-    },
-    {
-      "jp": "追跡はできますか。",
-      "furigana": "ついせきはできますか。",
-      "zh": "可以追踪吗？",
-      "scene": "邮局寄件",
-      "id": "s18-013",
-      "subcategory": "sub02",
-      "role": "user"
-    },
-    {
+      "role": "staff",
       "jp": "中身を教えていただけますか。",
       "furigana": "なかみをおしえていただけますか。",
       "zh": "请告诉我里面装的是什么。",
-      "scene": "邮局寄件",
-      "id": "s18-014",
-      "subcategory": "sub02",
-      "role": "staff"
+      "en": "Could you tell me what's inside?",
+      "zh-TW": "請告訴我裡面裝的是什麼。",
+      "vi": "Bạn có thể cho tôi biết bên trong có gì không?",
+      "ko": "안에 뭐가 들어 있는지 알려주세요."
     },
     {
+      "id": "s18-013",
+      "subcategory": "sub02",
+      "role": "staff",
       "jp": "重さを量ります。",
       "furigana": "おもさをはかります。",
       "zh": "我来称一下重量。",
-      "scene": "邮局寄件",
-      "id": "s18-015",
-      "subcategory": "sub02",
-      "role": "staff"
+      "en": "I'll weigh it.",
+      "zh-TW": "我來稱一下重量。",
+      "vi": "Tôi sẽ cân.",
+      "ko": "무게를 달아보겠습니다."
     },
     {
+      "id": "s18-014",
+      "subcategory": "sub03",
+      "role": "user",
       "jp": "集荷をお願いしたいです。",
       "furigana": "しゅうかをおねがいしたいです。",
       "zh": "我想预约上门取件。",
-      "scene": "上门取件",
-      "id": "s18-016",
-      "subcategory": "sub03",
-      "role": "user"
+      "en": "I'd like to arrange a pickup.",
+      "zh-TW": "我想預約上門取件。",
+      "vi": "Tôi muốn đặt lịch lấy hàng tận nơi.",
+      "ko": "집하를 신청하고 싶어요."
     },
     {
+      "id": "s18-015",
+      "subcategory": "sub03",
+      "role": "user",
       "jp": "明日の午前中にお願いできますか。",
       "furigana": "あしたのごぜんちゅうにおねがいできますか。",
       "zh": "可以明天上午来取吗？",
-      "scene": "上门取件",
-      "id": "s18-017",
-      "subcategory": "sub03",
-      "role": "user"
+      "en": "Could you come tomorrow morning?",
+      "zh-TW": "可以明天上午來取嗎？",
+      "vi": "Bạn có thể đến lấy vào sáng mai không?",
+      "ko": "내일 오전에 와주실 수 있나요?"
     },
     {
+      "id": "s18-016",
+      "subcategory": "sub03",
+      "role": "user",
       "jp": "元払いでお願いします。",
       "furigana": "もとばらいでおねがいします。",
       "zh": "请用预付方式。",
-      "scene": "上门取件",
-      "id": "s18-018",
-      "subcategory": "sub03",
-      "role": "user"
+      "en": "Sender pays, please.",
+      "zh-TW": "請用預付方式。",
+      "vi": "Người gửi trả phí nhé.",
+      "ko": "선불로 부탁드립니다."
     },
     {
+      "id": "s18-017",
+      "subcategory": "sub03",
+      "role": "user",
       "jp": "着払いでお願いします。",
       "furigana": "ちゃくばらいでおねがいします。",
       "zh": "请用到付方式。",
-      "scene": "上门取件",
-      "id": "s18-019",
-      "subcategory": "sub03",
-      "role": "user"
+      "en": "Recipient pays, please.",
+      "zh-TW": "請用到付方式。",
+      "vi": "Người nhận trả phí nhé.",
+      "ko": "착불로 부탁드립니다."
     },
     {
-      "jp": "ワレモノが入っています。",
-      "furigana": "ワレモノがはいっています。",
-      "zh": "里面有易碎物品。",
-      "scene": "上门取件",
-      "id": "s18-020",
+      "id": "s18-018",
       "subcategory": "sub03",
-      "role": "user"
-    },
-    {
+      "role": "staff",
       "jp": "ご依頼主のお名前と電話番号をお願いします。",
       "furigana": "ごいらいぬしのおなまえとでんわばんごうをおねがいします。",
       "zh": "请告诉我寄件人姓名和电话。",
-      "scene": "上门取件",
+      "en": "Could I have the sender's name and phone number?",
+      "zh-TW": "請告訴我寄件人姓名和電話。",
+      "vi": "Cho tôi xin tên và số điện thoại người gửi.",
+      "ko": "발송인 성함과 전화번호를 알려주세요."
+    },
+    {
+      "id": "s18-019",
+      "subcategory": "sub04",
+      "role": "staff",
+      "jp": "宅急便です。お届けにまいりました。",
+      "furigana": "たくきゅうびんです。おとどけにまいりました。",
+      "zh": "是快递，我来送货了。",
+      "en": "This is a delivery. I'm here to drop off your package.",
+      "zh-TW": "是快遞，我來送貨了。",
+      "vi": "Đây là bưu kiện, tôi đến giao hàng.",
+      "ko": "택배입니다. 배달 왔습니다."
+    },
+    {
+      "id": "s18-020",
+      "subcategory": "sub04",
+      "role": "staff",
+      "jp": "受領印（またはサイン）をお願いします。",
+      "furigana": "じゅりょういん（またはサイン）をおねがいします。",
+      "zh": "请签收（盖章或签名）。",
+      "en": "Please sign or stamp here.",
+      "zh-TW": "請簽收（蓋章或簽名）。",
+      "vi": "Vui lòng ký hoặc đóng dấu xác nhận.",
+      "ko": "도장 또는 서명을 부탁드립니다."
+    },
+    {
       "id": "s18-021",
-      "subcategory": "sub03",
-      "role": "staff"
+      "subcategory": "sub04",
+      "role": "user",
+      "jp": "不在票が入っていました。",
+      "furigana": "ふざいひょうがはいっていました。",
+      "zh": "收到了不在通知单。",
+      "en": "A non-delivery notice was left.",
+      "zh-TW": "收到了不在通知單。",
+      "vi": "Có phiếu báo vắng mặt.",
+      "ko": "부재 통지서가 왔어요."
     },
     {
-      "jp": "伝票はこちらに記入してください。",
-      "furigana": "でんぴょうはこちらにきにゅうしてください。",
-      "zh": "请在这张单子上填写。",
-      "scene": "上门取件",
       "id": "s18-022",
-      "subcategory": "sub03",
-      "role": "staff"
+      "subcategory": "sub04",
+      "role": "user",
+      "jp": "再配達をお願いしたいです。",
+      "furigana": "さいはいたつをおねがいしたいです。",
+      "zh": "我想重新预约配送。",
+      "en": "I'd like to arrange a redelivery.",
+      "zh-TW": "我想重新預約配送。",
+      "vi": "Tôi muốn đặt lịch giao lại.",
+      "ko": "재배달을 신청하고 싶어요."
     },
     {
+      "id": "s18-023",
+      "subcategory": "sub04",
+      "role": "user",
+      "jp": "明日の夜間に再配達をお願いします。",
+      "furigana": "あしたのやかんにさいはいたつをおねがいします。",
+      "zh": "请明天晚上重新配送。",
+      "en": "Please redeliver tomorrow evening.",
+      "zh-TW": "請明天晚上重新配送。",
+      "vi": "Vui lòng giao lại vào tối mai.",
+      "ko": "내일 저녁에 재배달 부탁드립니다."
+    },
+    {
+      "id": "s18-024",
+      "subcategory": "sub04",
+      "role": "user",
+      "jp": "宅配ボックスに入れてください。",
+      "furigana": "たくはいボックスにいれてください。",
+      "zh": "请放进快递柜。",
+      "en": "Please put it in the parcel locker.",
+      "zh-TW": "請放進快遞櫃。",
+      "vi": "Vui lòng để vào tủ nhận hàng.",
+      "ko": "택배함에 넣어주세요."
+    },
+    {
+      "id": "s18-025",
+      "subcategory": "sub04",
+      "role": "user",
+      "jp": "玄関前に置いてください。",
+      "furigana": "げんかんまえにおいてください。",
+      "zh": "请放在门口。",
+      "en": "Please leave it at the door.",
+      "zh-TW": "請放在門口。",
+      "vi": "Vui lòng để ở cửa.",
+      "ko": "현관 앞에 두고 가주세요."
+    },
+    {
+      "id": "s18-026",
+      "subcategory": "sub05",
+      "role": "user",
       "jp": "追跡番号を教えてください。",
       "furigana": "ついせきばんごうをおしえてください。",
       "zh": "请告诉我追踪号码。",
-      "scene": "追踪・票据",
-      "id": "s18-023",
-      "subcategory": "sub04",
-      "role": "user"
+      "en": "Could you give me the tracking number?",
+      "zh-TW": "請告訴我追蹤號碼。",
+      "vi": "Cho tôi mã theo dõi.",
+      "ko": "추적 번호를 알려주세요."
     },
     {
+      "id": "s18-027",
+      "subcategory": "sub05",
+      "role": "user",
       "jp": "何日くらいで届きますか。",
       "furigana": "なんにちくらいでとどきますか。",
       "zh": "大概几天能到？",
-      "scene": "追踪・票据",
-      "id": "s18-024",
-      "subcategory": "sub04",
-      "role": "user"
+      "en": "About how many days will it take to arrive?",
+      "zh-TW": "大概幾天能到？",
+      "vi": "Mất khoảng mấy ngày để đến nơi?",
+      "ko": "대략 며칠이면 도착하나요?"
     },
     {
-      "jp": "領収書をいただけますか。",
-      "furigana": "りょうしゅうしょをいただけますか。",
-      "zh": "请给我收据。",
-      "scene": "追踪・票据",
-      "id": "s18-025",
-      "subcategory": "sub04",
-      "role": "user"
-    },
-    {
+      "id": "s18-028",
+      "subcategory": "sub05",
+      "role": "user",
       "jp": "配達済みになっていますが、届いていません。",
       "furigana": "はいたつずみになっていますが、とどいていません。",
       "zh": "显示已送达但我没有收到。",
-      "scene": "追踪・票据",
-      "id": "s18-026",
-      "subcategory": "sub04",
-      "role": "user"
+      "en": "It says delivered, but I haven't received it.",
+      "zh-TW": "顯示已送達但我沒有收到。",
+      "vi": "Hiển thị đã giao nhưng tôi chưa nhận được.",
+      "ko": "배달 완료로 뜨는데 받지 못했어요."
     },
     {
+      "id": "s18-029",
+      "subcategory": "sub05",
+      "role": "user",
       "jp": "荷物が破損していました。補償の申請をしたいです。",
       "furigana": "にもつがはそんしていました。ほしょうのしんせいをしたいです。",
       "zh": "包裹破损了，我想申请赔偿。",
-      "scene": "追踪・票据",
-      "id": "s18-027",
-      "subcategory": "sub04",
-      "role": "user"
+      "en": "The package arrived damaged. I'd like to file a compensation claim.",
+      "zh-TW": "包裹破損了，我想申請賠償。",
+      "vi": "Bưu kiện bị hỏng. Tôi muốn yêu cầu bồi thường.",
+      "ko": "짐이 파손됐어요. 배상 신청을 하고 싶어요."
     },
     {
-      "jp": "いつ返答がもらえますか。",
-      "furigana": "いつへんとうがもらえますか。",
-      "zh": "什么时候可以得到答复？",
-      "scene": "追踪・票据",
-      "id": "s18-028",
-      "subcategory": "sub04",
-      "role": "user"
+      "id": "s18-030",
+      "subcategory": "sub05",
+      "role": "user",
+      "jp": "荷物がまだ届いていません。",
+      "furigana": "にもつがまだとどいていません。",
+      "zh": "包裹还没到。",
+      "en": "The package hasn't arrived yet.",
+      "zh-TW": "包裹還沒到。",
+      "vi": "Bưu kiện vẫn chưa đến.",
+      "ko": "택배가 아직 안 왔어요."
+    },
+    {
+      "id": "s18-031",
+      "subcategory": "sub05",
+      "role": "user",
+      "jp": "領収書をいただけますか。",
+      "furigana": "りょうしゅうしょをいただけますか。",
+      "zh": "请给我收据。",
+      "en": "Could I have a receipt?",
+      "zh-TW": "請給我收據。",
+      "vi": "Cho tôi xin biên lai.",
+      "ko": "영수증 주세요."
     }
-  ],
-  "subcategories": [
-    { "id": "sub01", "title": "便利店寄件", "title_ja": "コンビニで送る" },
-    { "id": "sub02", "title": "邮局寄件", "title_ja": "郵便局で送る" },
-    { "id": "sub03", "title": "上门取件", "title_ja": "集荷・宅配便" },
-    { "id": "sub04", "title": "追踪・票据", "title_ja": "追跡・控え" }
   ]
 }

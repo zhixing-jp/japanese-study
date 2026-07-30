@@ -288,7 +288,7 @@ function renderSceneDetail(){
   updateCtrlBar(true);
   const fb=document.getElementById('learnFamiliarCtrl');
   const isFam=!!learnFamiliar[currentScene.id];
-  if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?'✓ 学会了':'学会了';}
+  if(fb){fb.classList.toggle('on',isFam);fb.textContent=isFam?t('learned_done'):t('learned');}
   const extBar=document.getElementById('learnExtBar');
   const extSec=document.getElementById('learnExtSection');
   // 兼容新格式dialogs和旧格式extensions
@@ -313,7 +313,7 @@ function renderSceneDetail(){
       const el=this.querySelector('.scene-info');
       const btn=this.querySelector('.scene-info-toggle');
       if(el) el.classList.toggle('expanded');
-      if(btn) btn.textContent=el.classList.contains('expanded')?'∧∧ 点击折叠 ∧∧':'∨∨ 点击打开 ∨∨';
+      if(btn) btn.textContent=el.classList.contains('expanded')?t('click_close'):t('click_open');
     };
     infoDiv.innerHTML=`<div class="scene-info" id="learn-scene-info">
       ${currentScene.info.map(sec=>`
@@ -330,7 +330,7 @@ function renderSceneDetail(){
           }</div>
         </div>`).join('')}
     </div>
-    <div class="scene-info-toggle">∨∨ 点击打开 ∨∨</div>`;
+    <div class="scene-info-toggle">${t('click_open')}</div>`;
     const extSec=document.getElementById('learnExtSection');
     if(extSec) extSec.parentNode.insertBefore(infoDiv,extSec);
   }
@@ -418,7 +418,7 @@ function renderDialog(){
   }).join('');
 
   const pb=document.getElementById('learnPlayBtn');
-  if(pb) pb.innerHTML='▶ 开始演练';
+  if(pb) pb.innerHTML=t('learn_play');
   wrap.scrollTop=0;
 }
 
@@ -435,7 +435,7 @@ function learnToggleFollow(){
   learnFollowMode=!learnFollowMode;
   const btn=document.getElementById('learnFollowBtn');
   if(btn) btn.classList.toggle('on',learnFollowMode);
-  showToast(learnFollowMode?'跟读模式：每句留白':'连续模式：流畅播放',1500);
+  showToast(learnFollowMode?t('learn_follow')+' ON':t('learn_continuous')+' ON',1500);
 }
 
 /* ── 模式/速度 ── */
@@ -459,20 +459,20 @@ function markFamiliar(){
   if(!currentScene) return;
   learnFamiliar[currentScene.id]=true; saveLearnStorage();
   const fb=document.getElementById('learnFamiliarCtrl');
-  if(fb){fb.classList.add('on');fb.textContent='✓ 学会了';}
+  if(fb){fb.classList.add('on');fb.textContent=t('learned_done');}
   const banner=document.getElementById('learnDoneBanner');
   if(banner){
     const btns=banner.querySelector('.learn-done-btns');
-    if(btns) btns.innerHTML=`<button class="btn sm" onclick="learnReplay()">▶ 再听一遍</button>`;
+    if(btns) btns.innerHTML=`<button class="btn sm" onclick="learnReplay()">${t('learn_replay')}</button>`;
   }
-  showToast('✓ 学会了',1800);
+  showToast(t('learned_done'),1800);
 }
 function toggleFamiliarCtrl(){
   if(!currentScene) return;
   if(learnFamiliar[currentScene.id]){
     delete learnFamiliar[currentScene.id];
     const fb=document.getElementById('learnFamiliarCtrl');
-    if(fb){fb.classList.remove('on');fb.textContent='学会了';}
+    if(fb){fb.classList.remove('on');fb.textContent=t('learned');}
     saveLearnStorage();
   } else { markFamiliar(); }
 }
@@ -499,7 +499,7 @@ function learnPlay(){
 function learnPause(){
   window.speechSynthesis.pause();
   const pb=document.getElementById('learnPlayBtn');
-  if(pb) pb.innerHTML='▶ 继续';
+  if(pb) pb.innerHTML=t('learn_play');
 }
 function learnStop(){
   learnShouldStop=true; learnSession++;
@@ -534,7 +534,7 @@ function playSeq(dialog,idx,session){
   if(idx>=dialog.length){
     document.querySelectorAll('.dialog-bubble').forEach(el=>el.classList.remove('playing','muted'));
     const pb=document.getElementById('learnPlayBtn');
-    if(pb) pb.innerHTML='▶ 再听一遍';
+    if(pb) pb.innerHTML=t('learn_replay');
     if(learnLoopMode){
       showToast('🔁 循环播放中…',1500);
       setTimeout(()=>{if(!learnShouldStop&&learnSession===session)playSeq(dialog,0,session);},800);
@@ -587,10 +587,10 @@ function showDoneBanner(){
   b.className='learn-done-banner'; b.id='learnDoneBanner';
   b.innerHTML=`
     <div class="learn-done-emoji">🎉</div>
-    <div class="learn-done-title">演练完成！</div>
+    <div class="learn-done-title">${t('learn_done_title')}</div>
     <div class="learn-done-desc">你现在可以独立应对「${esc(currentScene?.title||'')}」了。</div>
     <div class="learn-done-btns">
-      <button class="btn sm" onclick="learnReplay()">▶ 再听一遍</button>
+      <button class="btn sm" onclick="learnReplay()">${t('learn_replay')}</button>
       ${!isFam?`<button class="btn sm gn" onclick="markFamiliar()">✓ 已熟悉</button>`:''}
     </div>`;
   wrap.appendChild(b);
@@ -627,9 +627,9 @@ window.LJ_MODULES['learn']={
         <div class="learn-ext-section" id="learnExtSection">
           <div class="learn-basic-row">
             <button class="learn-basic-btn on" id="learnBasicBtn"
-                    onclick="switchDialog(null)">基本会话</button>
+                    onclick="switchDialog(null)">${t('learn_basic')}</button>
           </div>
-          <div class="learn-ext-divider">＋ 场景扩展</div>
+          <div class="learn-ext-divider">${t('learn_ext_label')}</div>
           <div id="learnExtBar" class="learn-ext-bar"></div>
         </div>
         <div class="learn-dialog-wrap" id="learnDialogWrap"></div>
@@ -641,14 +641,14 @@ window.LJ_MODULES['learn']={
           <button class="learn-back-ctrl" onclick="closeScene()">←场景选择</button>
         </div>
         <div class="learn-ctrl-row1-mid">
-          <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">▶ 开始演练</button>
+          <button class="learn-play-btn" id="learnPlayBtn" onclick="learnPlay()">${t('learn_play')}</button>
           <button class="learn-ctrl-icon" id="learnLoopBtn" onclick="learnToggleLoop()">🔁</button>
           <button class="learn-ctrl-icon rd" onclick="learnStop()">■</button>
-          <button class="learn-ctrl-icon sm" id="learnRubyBtn" onclick="learnToggleRuby()">注音</button>
+          <button class="learn-ctrl-icon sm" id="learnRubyBtn" onclick="learnToggleRuby()">${t('learn_ruby')}</button>
         </div>
         <div class="learn-ctrl-row1-right">
           <button class="learn-familiar-ctrl" id="learnFamiliarCtrl"
-                  onclick="toggleFamiliarCtrl()">学会了</button>
+                  onclick="toggleFamiliarCtrl()">${t('learned')}</button>
         </div>
       </div>
       <div class="learn-ctrl-row2" id="learnCtrlRow2">
@@ -663,8 +663,8 @@ window.LJ_MODULES['learn']={
           <button class="btn"    id="lrate-0.6"  onclick="learnSetRate('0.6')">更慢</button>
         </div>
         <div class="lseg">
-          <button class="btn on" id="learnFollowOff" onclick="learnSetFollow(false)">连续</button>
-          <button class="btn"    id="learnFollowOn"  onclick="learnSetFollow(true)">跟读</button>
+          <button class="btn on" id="learnFollowOff" onclick="learnSetFollow(false)">${t('learn_continuous')}</button>
+          <button class="btn"    id="learnFollowOn"  onclick="learnSetFollow(true)">${t('learn_follow')}</button>
         </div>
       </div>`;
 
@@ -679,5 +679,5 @@ function learnSetFollow(val){
   const on=document.getElementById('learnFollowOn');
   if(off) off.classList.toggle('on',!val);
   if(on)  on.classList.toggle('on',val);
-  showToast(val?'跟读模式：每句留白1.5秒':'连续模式：流畅播放',1500);
+  showToast(val?t('learn_follow')+' ON':t('learn_continuous')+' ON',1500);
 }
