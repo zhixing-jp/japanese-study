@@ -96,7 +96,6 @@ async function renderBanner(banner, total) {
 function switchLang(lang){
   if(lang === localStorage.getItem('lj_lang')) return;
   localStorage.setItem('lj_lang', lang);
-  localStorage.setItem('lj_return_state', JSON.stringify(history.state || {}));
   window.location.reload();
 }
 
@@ -168,7 +167,7 @@ let currentTab = 'rescue';
 function switchTab(name){
   // 急救版块已激活时再次点击，返回场景首页
   if(name === 'rescue' && currentTab === 'rescue'){
-    if(typeof showrescueHome === 'function') showrescueHome();
+    if(typeof showRescueHome === 'function') showRescueHome();
     return;
   }
   if(name === 'learn' && currentTab === 'learn'){

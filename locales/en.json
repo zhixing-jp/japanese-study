@@ -31,12 +31,12 @@
   "all_done": "🎉 All done!",
   "load_fail": "Failed to load. Please refresh.",
 
-  "mode_jp": "JP only",
+  "mode_jp": "Japanese only",
   "mode_jp_zh": "JP → EN",
   "mode_repeat": "JP → EN → JP",
-  "rate_normal": "Normal",
-  "rate_slow": "Slow",
-  "rate_slower": "Slower",
+  "rate_0.9": "Normal",
+  "rate_0.75": "Slow",
+  "rate_0.6": "Slower",
 
   "learn_basic": "Basic Dialogue",
   "learn_ext_label": "+ More Scenarios",

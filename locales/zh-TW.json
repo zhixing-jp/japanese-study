@@ -34,9 +34,9 @@
   "mode_jp": "僅日語",
   "mode_jp_zh": "日→中",
   "mode_repeat": "日→中→日",
-  "rate_normal": "普通",
-  "rate_slow": "慢",
-  "rate_slower": "更慢",
+  "rate_0.9": "正常",
+  "rate_0.75": "慢",
+  "rate_0.6": "更慢",
 
   "learn_basic": "基本會話",
   "learn_ext_label": "+ 場景延伸",

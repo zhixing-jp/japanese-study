@@ -32,11 +32,11 @@
   "load_fail": "Tải thất bại. Vui lòng làm mới trang.",
 
   "mode_jp": "Chỉ tiếng Nhật",
-  "mode_jp_zh": "Nhật → Việt",
-  "mode_repeat": "Nhật → Việt → Nhật",
-  "rate_normal": "Bình thường",
-  "rate_slow": "Chậm",
-  "rate_slower": "Chậm hơn",
+  "mode_jp_zh": "NB → VI",
+  "mode_repeat": "NB → VI → NB",
+  "rate_0.9": "Bình thường",
+  "rate_0.75": "Chậm",
+  "rate_0.6": "Chậm hơn",
 
   "learn_basic": "Hội thoại cơ bản",
   "learn_ext_label": "+ Tình huống mở rộng",

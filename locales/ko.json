@@ -32,11 +32,11 @@
   "load_fail": "로드 실패. 새로고침해 주세요.",
 
   "mode_jp": "일본어만",
-  "mode_jp_zh": "일본어 → 한국어",
-  "mode_repeat": "일본어 → 한국어 → 일본어",
-  "rate_normal": "보통",
-  "rate_slow": "느리게",
-  "rate_slower": "더 느리게",
+  "mode_jp_zh": "일본어→한국어",
+  "mode_repeat": "일→한→일",
+  "rate_0.9": "보통",
+  "rate_0.75": "느리게",
+  "rate_0.6": "더 느리게",
 
   "learn_basic": "기본 회화",
   "learn_ext_label": "+ 추가 상황",

@@ -31,12 +31,13 @@
   "all_done": "🎉 全部已学完！",
   "load_fail": "加载失败，请刷新重试。",
 
-  "mode_jp": "仅日语",
-  "mode_jp_zh": "日→中",
-  "mode_repeat": "日→中→日",
-  "rate_normal": "普通",
-  "rate_slow": "慢",
-  "rate_slower": "更慢",
+"mode_jp": "仅日语",
+"mode_jp_zh": "日→中",
+"mode_repeat": "日→中→日",
+"rate_0.9": "普通",
+"rate_0.75": "慢",
+"rate_0.6": "更慢",
+
 
   "learn_basic": "基本会话",
   "learn_ext_label": "+ 场景扩展",

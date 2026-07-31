@@ -1,7 +1,8 @@
 /* ══════════════════════════════
-   rescue.js — 急救版块逻辑 v2
+   rescue.js — 急救版块逻辑 v3
    Living Japanese v3.0
    三层结构：首页→场景→内容
+   导航：URL hash 模式
 ══════════════════════════════ */
 
 /* ── 场景色盘（12色循环）── */
@@ -35,6 +36,25 @@ let filterUnlearned = false;
 let shouldStop = false, loopMode = false, speakSession = 0;
 let rubyOn = true, currentMode = 'jp', currentRate = '0.75';
 
+/* ── URL Hash 工具函数 ── */
+function setRescueHash(si, subcatId){
+  if(si == null){
+    history.replaceState(null, '', window.location.pathname);
+  } else if(subcatId){
+    history.replaceState(null, '', `#rescue/${si}/${subcatId}`);
+  } else {
+    history.replaceState(null, '', `#rescue/${si}`);
+  }
+}
+
+function parseRescueHash(hash){
+  if(!hash || !hash.startsWith('#rescue/')) return null;
+  const parts = hash.slice(8).split('/');
+  const si = parseInt(parts[0]);
+  if(isNaN(si)) return null;
+  return { si, subcatId: parts[1] || null };
+}
+
 /* ── Boot ── */
 async function rescueBoot(cfg, icons){
   ICONS = icons;
@@ -59,43 +79,49 @@ async function rescueBoot(cfg, icons){
     await renderBanner(CFG.banner, total);
     renderRescueHome();
     renderCtrlBar(cfg.controls);
-    showRescueHome();
+    showRescueHome(true);
 
-    history.replaceState({panel:'rescue',view:'home'},'','');
-    const _rs = localStorage.getItem('lj_return_state');
-    if(_rs){
-      localStorage.removeItem('lj_return_state');
-      const st = JSON.parse(_rs);
-      if(st.panel==='rescue' && st.view==='scene' && st.si!=null){
-        openRescueScene(st.si);
-      } else if(st.panel==='rescue' && st.view==='subcat' && st.si!=null){
-        openRescueScene(st.si).then(()=>{
-          currentSubcat=st.subcatId;
-          renderSubcatBar(st.si);
-          renderRescueContent(st.si,st.subcatId);
-        });
+    // 从 URL hash 恢复位置
+    const parsed = parseRescueHash(window.location.hash);
+    if(parsed){
+      const { si, subcatId } = parsed;
+      if(subcatId){
+        await openRescueScene(si);
+        currentSubcat = subcatId;
+        renderSubcatBar(si);
+        renderRescueContent(si, subcatId);
+        updateCtrlBarMode('content');
+        const ctrlBar = document.getElementById('ctrlBar');
+        if(ctrlBar) ctrlBar.classList.add('on');
+        document.querySelector('main')?.classList.add('has-ctrl');
+      } else {
+        openRescueScene(si);
       }
     }
-    window.addEventListener('popstate',(e)=>{
-      const st=e.state;
-      if(!st||st.panel!=='rescue') return;
+
+    // 监听浏览器返回/前进
+    window.addEventListener('hashchange', ()=>{
+      const parsed = parseRescueHash(window.location.hash);
       stopSpeech();
-      if(st.view==='home'){
+      if(!parsed){
         showRescueHome(true);
-      } else if(st.view==='scene'){
-        currentSubcat=null;
-        filterUnlearned=false;
-        currentRescueSection=st.si;
-        currentSceneData=RESCUE_CACHE[st.si];
-        showRescueDetail(st.si);
-      } else if(st.view==='subcat'){
-        currentSubcat=st.subcatId;
-        currentRescueSection=st.si;
-        currentSceneData=RESCUE_CACHE[st.si];
-        document.getElementById('ctrlBar').classList.add('on');
-        updateCtrlBarMode('content');
-        renderSubcatBar(st.si);
-        renderRescueContent(st.si,st.subcatId);
+      } else {
+        const { si, subcatId } = parsed;
+        if(subcatId){
+          currentSubcat = subcatId;
+          currentRescueSection = si;
+          currentSceneData = RESCUE_CACHE[si];
+          document.getElementById('ctrlBar').classList.add('on');
+          updateCtrlBarMode('content');
+          renderSubcatBar(si);
+          renderRescueContent(si, subcatId);
+        } else {
+          currentSubcat = null;
+          filterUnlearned = false;
+          currentRescueSection = si;
+          currentSceneData = RESCUE_CACHE[si];
+          showRescueDetail(si);
+        }
       }
     });
 
@@ -160,13 +186,13 @@ async function openRescueScene(si){
     }
   }
   currentSceneData=RESCUE_CACHE[si];
-  history.pushState({panel:'rescue',view:'scene',si},'','');
+  setRescueHash(si);
   showRescueDetail(si);
 }
 
 /* ── 视图切换 ── */
-function showRescueHome(fromPopstate){
-  if(!fromPopstate) history.replaceState({panel:'rescue',view:'home'},'','');
+function showRescueHome(fromHashChange){
+  if(!fromHashChange) setRescueHash(null);
   currentRescueView='home';
   const home=document.getElementById('rescueHome');
   home.style.display='';
@@ -264,7 +290,7 @@ function renderSceneLanding(si){
 
 function selectSubcat(subcatId, si){
   currentSubcat=subcatId;
-  history.pushState({panel:'rescue',view:'subcat',si,subcatId},'','');
+  setRescueHash(si, subcatId);
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('content');
   renderSubcatBar(si);
@@ -296,6 +322,7 @@ function renderSubcatBar(si){
 function setSubcat(id){
   if(!id){
     currentSubcat=null;
+    setRescueHash(currentRescueSection);
     document.getElementById('ctrlBar').classList.remove('on');
     updateCtrlBarMode('home');
     renderSceneLanding(currentRescueSection);
@@ -303,6 +330,7 @@ function setSubcat(id){
     return;
   }
   currentSubcat=id;
+  setRescueHash(currentRescueSection, id);
   document.getElementById('ctrlBar').classList.add('on');
   updateCtrlBarMode('content');
   renderSubcatBar(currentRescueSection);
@@ -419,15 +447,6 @@ function toggleFilterUnlearned(){
 }
 
 /* ── 搜索 ── */
-document.addEventListener('DOMContentLoaded',()=>{
-  const si=document.getElementById('searchInput');
-  if(si) si.addEventListener('input',function(){
-    const q=this.value.trim();
-    if(!q){ clearRescueSearch(); return; }
-    doRescueSearch(q);
-  });
-});
-
 function doRescueSearch(q){
   stopSpeech();
   document.getElementById('rescueHome').style.display='none';
@@ -489,13 +508,13 @@ function renderCtrlBar(c){
   const modeHtml=`<div class="cseg">
     ${(c.modes||[]).map(m=>
       `<button class="btn${currentMode===m.id?' on':''}" id="smode-${m.id}"
-               onclick="setRescueMode('${m.id}')">${esc(m.label)}</button>`
+               onclick="setRescueMode('${m.id}')">${t('mode_'+m.id)}</button>`
     ).join('')}
   </div>`;
   const rateHtml=`<div class="cseg">
     ${(c.rates||[]).map(r=>
       `<button class="btn${currentRate===r.id?' on':''}" id="srate-${r.id}"
-               onclick="setRescueRate('${r.id}')">${esc(r.label)}</button>`
+               onclick="setRescueRate('${r.id}')">${t('rate_'+r.id)}</button>`
     ).join('')}
   </div>`;
   const row2=document.getElementById('ctrlRow2');
@@ -529,7 +548,6 @@ function setRescueRate(r){
 
 /* ── 朗读 ── */
 function getModeTexts(item){
-  // 根据当前语言选择朗读语言代码
   const langMap = {'zh':'zh-CN','zh-TW':'zh-TW','en':'en-US','vi':'vi-VN','ko':'ko-KR'};
   const ttsLang = langMap[currentLang] || 'zh-CN';
   const ttsText = tField(item,'zh') || item.zh;

@@ -245,36 +245,17 @@
         console.warn(`版块初始化失败: ${m.id}`, e);
       }
     }
-
-    // 恢复语言切换前的位置
-    const _rs = localStorage.getItem('lj_return_state');
-    if(_rs){
-      localStorage.removeItem('lj_return_state');
-      try{
-        const st = JSON.parse(_rs);
-        if(st.panel==='rescue' && st.view==='scene' && st.si!=null){
-          if(typeof openRescueScene === 'function') openRescueScene(st.si);
-        } else if(st.panel==='rescue' && st.view==='subcat' && st.si!=null){
-          if(typeof openRescueScene === 'function'){
-            openRescueScene(st.si).then(()=>{
-              if(typeof renderSubcatBar === 'function') renderSubcatBar(st.si);
-              if(typeof renderRescueContent === 'function') renderRescueContent(st.si, st.subcatId);
-            });
-          }
-        }
-      } catch(e){ console.warn('恢复位置失败', e); }
-    } else {
-      const savedTab = localStorage.getItem('lj_tab');
-      if(savedTab && savedTab !== 'rescue'){
-        switchTab(savedTab);
-        switchTab(currentTab);
-      }
+    // 恢复语言切换前的位置 // 恢复浏览器刷新前的位置
+    const savedTab = localStorage.getItem('lj_tab');
+    if(savedTab && savedTab !== 'rescue'){
+      switchTab(savedTab);
+      switchTab(currentTab);
     }
 
-    setTimeout(()=>{
-      const hdr = document.getElementById('header');
-      if(hdr) document.querySelector('main').style.paddingTop = hdr.offsetHeight+'px';
-    }, 100);
+      setTimeout(()=>{
+        const hdr = document.getElementById('header');
+        if(hdr) document.querySelector('main').style.paddingTop = hdr.offsetHeight+'px';
+      }, 100);
 
   } catch(e){
     console.error('Boot failed:', e);
