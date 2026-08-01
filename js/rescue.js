@@ -1,5 +1,5 @@
 /* ══════════════════════════════
-   rescue.js — 急救版块逻辑 v3
+   rescue.js — 急救版块逻辑 v4
    Living Japanese v3.0
    三层结构：首页→场景→内容
    导航：URL hash 模式
@@ -31,8 +31,6 @@ let currentRescueView = 'home';
 let currentRescueSection = -1;
 let currentSceneData = null;
 let currentSubcat = null;
-let checkedItems = {};
-let filterUnlearned = false;
 let shouldStop = false, loopMode = false, speakSession = 0;
 let rubyOn = true, currentMode = 'jp', currentRate = '0.75';
 
@@ -60,7 +58,6 @@ async function rescueBoot(cfg, icons){
   ICONS = icons;
   currentMode = cfg.controls?.defaultMode || 'jp';
   currentRate = cfg.controls?.defaultRate  || '0.75';
-  loadRescueStorage();
 
   try{
     const index = await fetch('data/rescue/index.json').then(r=>r.json());
@@ -85,9 +82,9 @@ async function rescueBoot(cfg, icons){
     const parsed = parseRescueHash(window.location.hash);
     if(parsed){
       const { si, subcatId } = parsed;
-      if(subcatId){
-        await openRescueScene(si);
+        if(subcatId){
         currentSubcat = subcatId;
+        await openRescueScene(si, true);
         renderSubcatBar(si);
         renderRescueContent(si, subcatId);
         updateCtrlBarMode('content');
@@ -117,7 +114,6 @@ async function rescueBoot(cfg, icons){
           renderRescueContent(si, subcatId);
         } else {
           currentSubcat = null;
-          filterUnlearned = false;
           currentRescueSection = si;
           currentSceneData = RESCUE_CACHE[si];
           showRescueDetail(si);
@@ -136,14 +132,6 @@ async function rescueBoot(cfg, icons){
     document.getElementById('loading').textContent='加载失败，请检查 data/rescue/index.json';
     console.error(e);
   }
-}
-
-/* ── Storage ── */
-function loadRescueStorage(){
-  try{ checkedItems=JSON.parse(localStorage.getItem('lj_checked')||'{}'); }catch(e){ checkedItems={}; }
-}
-function saveRescueStorage(){
-  try{ localStorage.setItem('lj_checked',JSON.stringify(checkedItems)); }catch(e){}
 }
 
 /* ── 场景首页 ── */
@@ -170,10 +158,9 @@ function renderRescueHome(){
 }
 
 /* ── 打开场景 ── */
-async function openRescueScene(si){
+async function openRescueScene(si, keepSubcat){
   currentRescueSection=si;
-  currentSubcat=null;
-  filterUnlearned=false;
+  if(!keepSubcat) currentSubcat=null;
   stopSpeech();
 
   if(!RESCUE_CACHE[si]){
@@ -186,7 +173,7 @@ async function openRescueScene(si){
     }
   }
   currentSceneData=RESCUE_CACHE[si];
-  setRescueHash(si);
+  if(!currentSubcat) setRescueHash(si);
   showRescueDetail(si);
 }
 
@@ -348,26 +335,20 @@ function renderRescueContent(si, subcatId){
   if(subcatId){
     items=items.filter(({item})=>item.subcategory===subcatId);
   }
-  if(filterUnlearned){
-    items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${si}-${ii}`]);
-  }
 
   if(!items.length){
-    wrap.innerHTML='<p style="color:var(--t4);padding:20px 0;font-size:13px;text-align:center">${t("all_done")}</p>';
+    wrap.innerHTML=`<p style="color:var(--t4);padding:20px 0;font-size:13px;text-align:center">${t('all_done')}</p>`;
     return;
   }
 
   wrap.innerHTML=items.map(({item,ii})=>{
     const isStaff=item.role==='staff';
-    const isDone=!!checkedItems[`${si}-${ii}`];
-    return`<div class="card${isDone?' done':''}${isStaff?' is-staff':''}" id="card-${si}-${ii}">
+    return`<div class="card${isStaff?' is-staff':''}" id="card-${si}-${ii}">
       ${isStaff?`<span class="staff-label">${t('staff_label')}</span>`:''}
       <div class="card-top">
         <div class="card-num">${ii+1}</div>
         <div class="card-btns-top">
           <button class="card-play-btn${isStaff?' is-staff-btn':''}" onclick="speakOne(${si},${ii})">${isStaff?t('staff_listen'):t('speak_one')}</button>
-          ${!isStaff?`<button class="lbtn${isDone?' on':''}" id="lb-${si}-${ii}"
-                  onclick="toggleDone(${si},${ii})">${isDone?t('learned_done'):t('learned')}</button>`:''}
         </div>
       </div>
       <div class="jp">${rubyHtml(item.jp,item.furigana)}</div>
@@ -414,36 +395,6 @@ function toggleRuby(){
   const btn=document.getElementById('btnRuby');
   if(btn) btn.classList.toggle('on',!rubyOn);
   if(currentRescueView==='content') renderRescueContent(currentRescueSection,currentSubcat);
-}
-
-/* ── 学会了 ── */
-function toggleDone(si,ii){
-  const key=`${si}-${ii}`;
-  checkedItems[key]=!checkedItems[key];
-  if(!checkedItems[key]) delete checkedItems[key];
-  saveRescueStorage();
-  const isDone=!!checkedItems[key];
-  if(filterUnlearned&&isDone){
-    const card=document.getElementById(`card-${si}-${ii}`);
-    if(card){
-      card.style.transition='opacity .3s,transform .3s';
-      card.style.opacity='0'; card.style.transform='translateX(18px)';
-      setTimeout(()=>{if(card.parentNode)card.parentNode.removeChild(card);},300);
-    }
-  } else {
-    const card=document.getElementById(`card-${si}-${ii}`);
-    const lb=document.getElementById(`lb-${si}-${ii}`);
-    if(card) card.classList.toggle('done',isDone);
-    if(lb){lb.classList.toggle('on',isDone);lb.textContent=isDone?t('learned_done'):t('learned');}
-  }
-}
-
-/* ── 只看未学 ── */
-function toggleFilterUnlearned(){
-  filterUnlearned=!filterUnlearned;
-  const btn=document.getElementById('btnUnlearned');
-  if(btn) btn.classList.toggle('on',filterUnlearned);
-  renderRescueContent(currentRescueSection,currentSubcat);
 }
 
 /* ── 搜索 ── */
@@ -518,8 +469,7 @@ function renderCtrlBar(c){
     ).join('')}
   </div>`;
   const row2=document.getElementById('ctrlRow2');
-  if(row2) row2.innerHTML=modeHtml+rateHtml+`
-    <button class="ctrl-icon sm" id="btnRuby" onclick="toggleRuby()">${t('learn_ruby')}</button>`;
+  if(row2) row2.innerHTML=modeHtml+rateHtml;
 }
 
 function updateCtrlBarMode(mode){
@@ -595,7 +545,6 @@ function speakAll(){
   if(!sec) return;
   let items=sec.items.map((item,ii)=>({item,ii}));
   if(currentSubcat) items=items.filter(({item})=>item.subcategory===currentSubcat);
-  if(filterUnlearned) items=items.filter(({item,ii})=>item.role==='staff'||!checkedItems[`${currentRescueSection}-${ii}`]);
   items=items.filter(({item})=>item.role!=='staff');
   if(!items.length){showToast(t('all_done'),2000);return;}
   speakList(items,0,session);
@@ -681,8 +630,7 @@ window.LJ_MODULES['rescue']={
           <button class="ctrl-icon" id="btnLoop" onclick="toggleLoop()">🔁</button>
         </div>
         <div class="ctrl-row1-right">
-          <button class="ctrl-unlearned" id="btnUnlearned"
-                  onclick="toggleFilterUnlearned()">${t('unlearned_only')}</button>
+          <button class="ctrl-icon sm" id="btnRuby" onclick="toggleRuby()">${t('learn_ruby')}</button>
         </div>
       </div>
       <div class="ctrl-row2" id="ctrlRow2"></div>`;

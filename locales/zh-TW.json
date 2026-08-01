@@ -16,9 +16,6 @@
   "search_learn": "搜尋詞彙或場景…",
 
   "staff_label": "對方可能會問",
-  "learned": "學會了",
-  "learned_done": "✓ 學會了",
-  "unlearned_only": "只看未學",
   "speak_all": "▶ 朗讀",
   "speak_one": "▶ 僅日語朗讀",
   "staff_listen": "🎧 試聽",
@@ -32,8 +29,8 @@
   "load_fail": "載入失敗，請重新整理。",
 
   "mode_jp": "僅日語",
-  "mode_jp_zh": "日→中",
-  "mode_repeat": "日→中→日",
+  "mode_jp_zh": "日⇨中",
+  "mode_repeat": "日⇨中⇨日",
   "rate_0.9": "正常",
   "rate_0.75": "慢",
   "rate_0.6": "更慢",

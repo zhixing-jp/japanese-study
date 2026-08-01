@@ -16,9 +16,6 @@
   "search_learn": "Search vocabulary or scene…",
 
   "staff_label": "Staff may ask",
-  "learned": "Got it",
-  "learned_done": "✓ Got it",
-  "unlearned_only": "Unlearned only",
   "speak_all": "▶ Read All",
   "speak_one": "▶ Listen",
   "staff_listen": "🎧 Listen",
@@ -31,9 +28,9 @@
   "all_done": "🎉 All done!",
   "load_fail": "Failed to load. Please refresh.",
 
-  "mode_jp": "Japanese only",
-  "mode_jp_zh": "JP → EN",
-  "mode_repeat": "JP → EN → JP",
+  "mode_jp": "JP",
+  "mode_jp_zh": "JP⇨EN",
+  "mode_repeat": "JP⇨EN⇨JP",
   "rate_0.9": "Normal",
   "rate_0.75": "Slow",
   "rate_0.6": "Slower",

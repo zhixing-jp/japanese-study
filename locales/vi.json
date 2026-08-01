@@ -16,9 +16,6 @@
   "search_learn": "Tìm kiếm từ vựng hoặc tình huống…",
 
   "staff_label": "Nhân viên có thể hỏi",
-  "learned": "Đã hiểu",
-  "learned_done": "✓ Đã hiểu",
-  "unlearned_only": "Chỉ xem chưa học",
   "speak_all": "▶ Đọc tất cả",
   "speak_one": "▶ Nghe tiếng Nhật",
   "staff_listen": "🎧 Nghe",
@@ -31,9 +28,9 @@
   "all_done": "🎉 Hoàn thành tất cả!",
   "load_fail": "Tải thất bại. Vui lòng làm mới trang.",
 
-  "mode_jp": "Chỉ tiếng Nhật",
-  "mode_jp_zh": "NB → VI",
-  "mode_repeat": "NB → VI → NB",
+  "mode_jp": "JP",
+  "mode_jp_zh": "JP⇨VI",
+  "mode_repeat": "JP⇨VI⇨JP",
   "rate_0.9": "Bình thường",
   "rate_0.75": "Chậm",
   "rate_0.6": "Chậm hơn",

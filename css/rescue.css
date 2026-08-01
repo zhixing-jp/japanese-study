@@ -266,9 +266,13 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
 
 /* 第二行 */
 .ctrl-row2 {
-  display: flex; align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+.ctrl-row2::-webkit-scrollbar { display: none; }
 
 /* 返回按钮 */
 .ctrl-back {
@@ -304,7 +308,7 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
 .ctrl-icon.on  { background: rgba(0,122,255,.35); color: #5AC8FA; }
 .ctrl-icon.rd  { background: rgba(255,59,48,.25); color: #FF6B6B; }
 .ctrl-icon.stopped { background: var(--red); color: #fff; }
-.ctrl-icon.sm  { font-size: 12px; font-weight: 700; }
+.ctrl-icon.sm  { font-size: 12px; font-weight: 700; width: auto; padding: 0 8px; }
 
 /* 朗读主按钮 */
 .ctrl-play {

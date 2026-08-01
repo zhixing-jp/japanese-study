@@ -16,9 +16,6 @@
   "search_learn": "단어 또는 상황으로 검색…",
 
   "staff_label": "직원이 물어볼 수 있어요",
-  "learned": "알겠어요",
-  "learned_done": "✓ 알겠어요",
-  "unlearned_only": "미학습만 보기",
   "speak_all": "▶ 전체 듣기",
   "speak_one": "▶ 일본어 듣기",
   "staff_listen": "🎧 듣기",
@@ -31,9 +28,9 @@
   "all_done": "🎉 모두 완료!",
   "load_fail": "로드 실패. 새로고침해 주세요.",
 
-  "mode_jp": "일본어만",
-  "mode_jp_zh": "일본어→한국어",
-  "mode_repeat": "일→한→일",
+  "mode_jp": "JP",
+  "mode_jp_zh": "JP⇨KO",
+  "mode_repeat": "JP⇨KO⇨JP",
   "rate_0.9": "보통",
   "rate_0.75": "느리게",
   "rate_0.6": "더 느리게",
