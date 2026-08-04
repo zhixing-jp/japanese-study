@@ -1,0 +1,138 @@
+---
+interface Props {
+  item: {
+    jp: string;
+    furigana?: string;
+    zh?: string;
+    en?: string;
+    'zh-TW'?: string;
+    vi?: string;
+    ko?: string;
+    role?: string;
+    id?: string;
+  };
+  idx: number;
+  lang: string;
+}
+
+const { item, idx, lang } = Astro.props;
+const isStaff = item.role === 'staff';
+
+function getText(item: Props['item'], lang: string): string {
+  if (lang === 'en') return item.en || item.zh || '';
+  if (lang === 'zh-TW') return item['zh-TW'] || item.zh || '';
+  if (lang === 'vi') return item.vi || item.zh || '';
+  if (lang === 'ko') return item.ko || item.zh || '';
+  return item.zh || '';
+}
+
+const labels: Record<string, Record<string, string>> = {
+  staff: {
+    zh: '对方可能会问', en: 'Staff may ask',
+    'zh-TW': '對方可能會問', vi: 'Nhân viên có thể hỏi', ko: '직원이 물어볼 수 있어요'
+  },
+  listen: { zh: '🎧 试听', en: '🎧 Listen', 'zh-TW': '🎧 試聽', vi: '🎧 Nghe', ko: '🎧 듣기' },
+  speak:  { zh: '▶ 朗读', en: '▶ Listen', 'zh-TW': '▶ 朗讀', vi: '▶ Nghe', ko: '▶ 듣기' }
+};
+
+const text = getText(item, lang);
+const staffLabel = labels.staff[lang] || labels.staff.zh;
+const btnLabel = isStaff
+  ? (labels.listen[lang] || labels.listen.zh)
+  : (labels.speak[lang] || labels.speak.zh);
+
+// 判断是否是汉字
+function isKanji(ch: string): boolean {
+  const c = ch.codePointAt(0) || 0;
+  return (c >= 0x4E00 && c <= 0x9FFF) ||
+         (c >= 0x3400 && c <= 0x4DBF) ||
+         (c >= 0xF900 && c <= 0xFAFF) ||
+         c === 0x3005; // 々
+}
+
+// 判断是否是假名
+function isKana(ch: string): boolean {
+  const c = ch.codePointAt(0) || 0;
+  return (c >= 0x3040 && c <= 0x309F) || // 平假名
+         (c >= 0x30A0 && c <= 0x30FF);    // 片假名
+}
+
+// 字符对齐算法：jp + furigana → ruby HTML
+function buildRubyHtml(jp: string, furigana: string): string {
+  if (!furigana || furigana === jp) return jp;
+
+  // 把jp分成片段：汉字组 和 非汉字组
+  const segments: { text: string; isKanjiGroup: boolean }[] = [];
+  let i = 0;
+  while (i < jp.length) {
+    if (isKanji(jp[i])) {
+      let k = i;
+      while (k < jp.length && isKanji(jp[k])) k++;
+      segments.push({ text: jp.slice(i, k), isKanjiGroup: true });
+      i = k;
+    } else {
+      let k = i;
+      while (k < jp.length && !isKanji(jp[k])) k++;
+      segments.push({ text: jp.slice(i, k), isKanjiGroup: false });
+      i = k;
+    }
+  }
+
+  // 在furigana里找对应的假名范围
+  let fp = 0;
+  let html = '';
+
+  for (let s = 0; s < segments.length; s++) {
+    const seg = segments[s];
+    if (!seg.isKanjiGroup) {
+      // 非汉字段：在furigana里跳过对应字符
+      for (const ch of seg.text) {
+        if (fp < furigana.length) fp++;
+      }
+      html += seg.text;
+    } else {
+      // 汉字段：找到下一个非汉字段在furigana里的位置
+      const nextSeg = segments[s + 1];
+      let fe = furigana.length;
+      if (nextSeg) {
+        // 从当前fp往后找nextSeg.text[0]的位置
+        const idx = furigana.indexOf(nextSeg.text[0], fp);
+        if (idx !== -1) fe = idx;
+      }
+      const reading = furigana.slice(fp, fe);
+      fp = fe;
+      html += `<ruby>${seg.text}<rt>${reading}</rt></ruby>`;
+    }
+  }
+
+  return html;
+}
+
+const rubyHtml = buildRubyHtml(item.jp, item.furigana || '');
+---
+
+<div
+  class={`card${isStaff ? ' is-staff' : ''}`}
+  id={`card-${idx}`}
+  data-idx={idx}
+  data-jp={item.jp}
+  data-furigana={item.furigana || item.jp}
+  data-text={text}
+  data-role={item.role || 'user'}
+>
+  {isStaff && <span class="staff-label">{staffLabel}</span>}
+
+  <div class="card-top">
+    <div class="card-num">{idx + 1}</div>
+    <div class="card-btns-top">
+      <button
+        class={`card-play-btn${isStaff ? ' is-staff-btn' : ''}`}
+        onclick={`speakItem(${idx})`}
+        aria-label={btnLabel}
+      >{btnLabel}</button>
+    </div>
+  </div>
+
+  <div class="jp" set:html={rubyHtml} />
+  <div class="zh">{text}</div>
+</div>

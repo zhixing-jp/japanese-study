@@ -1,0 +1,239 @@
+---
+import { getLangFromUrl } from '../i18n/index.js';
+
+const lang = getLangFromUrl(Astro.url);
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  rescueCss?: boolean;
+}
+
+const {
+  title = 'Living Japanese | 日活',
+  description = '不会日语，也能在日本活得从容。',
+  ogImage = 'https://livingjapanese.app/assets/og-image.webp',
+  rescueCss = false
+} = Astro.props;
+
+const siteUrl = 'https://livingjapanese.app';
+
+const langLabels: Record<string, string> = {
+  'zh': '简体中文', 'zh-TW': '繁體中文',
+  'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어'
+};
+
+const langPaths: Record<string, string> = {
+  'zh': '/', 'zh-TW': '/zh-TW/',
+  'en': '/en/', 'vi': '/vi/', 'ko': '/ko/'
+};
+
+// 静态导航标签多语言
+const navLabels: Record<string, Record<string, string>> = {
+  rescue: { zh: '急救语句', en: 'Phrase Rescue', 'zh-TW': '急救語句', vi: 'Câu Cứu Cấp', ko: '긴급 표현' },
+  learn:  { zh: '日语学习', en: 'Practice',      'zh-TW': '日語學習',  vi: 'Luyện Tập',   ko: '연습' }
+};
+
+const rescueUrl = lang === 'zh' ? '/' : `/${lang}/`;
+const learnUrl  = lang === 'zh' ? '/learn/' : `/${lang}/learn/`;
+
+const currentPath = Astro.url.pathname;
+const isLearn = currentPath.includes('/learn');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "日活 Living Japanese",
+  "url": siteUrl,
+  "description": "不会日语，也能在日本活得从容。19个真实生活场景，数百句经过筛选的实用日语，遇到语言障碍时10秒找到句子，点一下让手机替你开口说。由在日20年华人制作，完全免费，无需下载。",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "inLanguage": ["zh-CN", "zh-TW", "en", "vi", "ko", "ja"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
+};
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FF3B30">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="日活 Living Japanese">
+
+  <title>{title}</title>
+  <meta name="description" content={description}>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={Astro.url}>
+  <meta property="og:type" content="website">
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:locale" content={lang === 'zh' ? 'zh_CN' : lang === 'zh-TW' ? 'zh_TW' : lang}>
+  <meta property="og:site_name" content="日活 Living Japanese">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href={Astro.url}>
+  {Object.entries(langPaths).map(([l, path]) => (
+    <link rel="alternate" hreflang={l === 'zh' ? 'zh-CN' : l} href={`${siteUrl}${path}`} />
+  ))}
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/base.css">
+  { rescueCss && <link rel="stylesheet" href="/css/rescue.css" /> }
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N484C7TXZ0" is:inline></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N484C7TXZ0');
+  </script>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header">
+    <div class="header-bar">
+      <div class="wordmark">
+        <div class="wordmark">
+          <a href={rescueUrl} style="text-decoration:none;color:inherit;">
+            <span id="siteTitle">Living Japanese · 日活</span>
+          </a>
+        <div class="wordmark-dot"></div>
+      </div>
+    </div>
+
+      <!-- 探索栏 -->
+      <div class="search-wrap" id="searchWrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="搜索...">
+      </div>
+
+      <!-- 语言切换 -->
+      <div id="langSwitchWrap" class="lang-switch-wrap">
+        <button id="langBtn" class="lang-btn" aria-label="Switch language">🌐 {langLabels[lang]}</button>
+        <div id="langMenu" class="lang-menu" style="display:none">
+          {Object.entries(langLabels).map(([l, label]) => (
+            <a href="javascript:void(0)" onclick={`switchLang('${l}')`} class={`lang-menu-item${l === lang ? ' active' : ''}`}>{label}</a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <slot />
+  <!-- 搜索结果面板 -->
+  <div id="searchPanel" style="display:none;position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100%;background:var(--bg);z-index:500;overflow-y:auto;padding:60px 14px 80px;">
+    <div id="searchResults"></div>
+  </div>
+
+  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+  <script is:inline>
+    let search;
+    async function initSearch() {
+      if (search) return;
+      const PagefindUI = window.PagefindUI;
+      search = new PagefindUI({
+        element: '#searchResults',
+        showImages: false,
+        resetStyles: true,
+        translations: {
+          placeholder: currentLang === 'en' ? 'Search...' : 
+                      currentLang === 'ko' ? '검색...' :
+                      currentLang === 'vi' ? 'Tìm kiếm...' : '搜索...'
+        }
+      });
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const searchPanel = document.getElementById('searchPanel');
+
+    searchInput.addEventListener('focus', async () => {
+      await initSearch();
+      searchPanel.style.display = 'block';
+    });
+
+    searchInput.addEventListener('input', async (e) => {
+      await initSearch();
+      if (e.target.value) {
+        searchPanel.style.display = 'block';
+        search.triggerSearch(e.target.value);
+      } else {
+        searchPanel.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!searchPanel.contains(e.target) && e.target !== searchInput) {
+        searchPanel.style.display = 'none';
+        searchInput.value = '';
+      }
+    });
+  </script>
+
+  <!-- Back to Top -->
+  <button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Toast -->
+  <div id="toast"></div>
+
+  <!-- Bottom Navigation -->
+  <nav id="tabBar">
+    <a href={rescueUrl} class={`tab${!isLearn ? ' on' : ''}`}>
+      <div class="tab-icon">🛡️</div>
+      {navLabels.rescue[lang] || navLabels.rescue.zh}
+    </a>
+    <a href={learnUrl} class={`tab${isLearn ? ' on' : ''}`}>
+      <div class="tab-icon">📖</div>
+      {navLabels.learn[lang] || navLabels.learn.zh}
+    </a>
+  </nav>
+
+  <!-- base.js -->
+  <script src="/js/base.js" is:inline></script>
+
+  <!-- 语言切换菜单 -->
+  <script is:inline>
+    document.getElementById('langBtn').addEventListener('click', function(e) {
+      e.stopPropagation();
+      const menu = document.getElementById('langMenu');
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    });
+    document.addEventListener('click', function(e) {
+      const wrap = document.getElementById('langSwitchWrap');
+      if (wrap && !wrap.contains(e.target)) {
+        document.getElementById('langMenu').style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

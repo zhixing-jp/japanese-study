@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/en/(.*)", "destination": "/en/$1" },
+    { "source": "/zh-TW/(.*)", "destination": "/zh-TW/$1" },
+    { "source": "/vi/(.*)", "destination": "/vi/$1" },
+    { "source": "/ko/(.*)", "destination": "/ko/$1" }
+  ]
+}

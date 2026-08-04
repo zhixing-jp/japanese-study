@@ -1,0 +1,127 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { getLangFromUrl } from '../../../../i18n/index.js';
+import rescueIndex from '../../../../../public/data/rescue/index.json';
+import { readFile } from 'node:fs/promises';
+
+export async function getStaticPaths() {
+  const paths = [];
+  
+  for (const scene of rescueIndex.scenes) {
+    let sceneData;
+    try {
+      const raw = await readFile(`public/data/rescue/${scene.file.split('/').pop()}`, 'utf-8');
+      sceneData = JSON.parse(raw);
+    } catch(e) {
+      sceneData = { items: [] };
+    }
+    
+    paths.push({
+      params: { scene: scene.id },
+      props: { scene, sceneData }
+    });
+  }
+  
+  return paths;
+}
+
+const { scene, sceneData } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+
+const sceneTitle = (scene as any)[`title_${lang}`] || (scene as any).title_zh || scene.title;
+const sceneDesc = (scene as any)[`description_${lang}`] || scene.description || '';
+const subcats = scene.subcategories || [];
+const info = (scene as any).info || [];
+
+// 面包屑
+const homeUrl = lang === 'zh' ? '/' : `/${lang}/`;
+const homeLabel: Record<string, string> = {
+  zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈'
+};
+
+// subcategory标题多语言
+function getSubTitle(sub: any, lang: string): string {
+  return sub[`title_${lang}`] || sub.title || '';
+}
+
+// info内容多语言
+function getInfoTitle(sec: any, lang: string): string {
+  return sec[`title_${lang}`] || sec.title || '';
+}
+
+function getInfoLines(sec: any, lang: string): string[] {
+  return sec[`lines_${lang}`] || sec.lines || [];
+}
+---
+
+<Base title={`${sceneTitle} | Living Japanese`} description={sceneDesc} rescueCss={true}>
+
+  <!-- 面包屑 -->
+  <nav class="rescue-breadcrumb" aria-label="breadcrumb">
+    <a href={homeUrl}>{homeLabel[lang] || homeLabel.zh}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{sceneTitle}</span>
+  </nav>
+
+  <!-- 场景Hero -->
+  <div class="rescue-scene-landing">
+    <div class="rescue-landing-hero" style={scene.image ? `background-image:url('/${scene.image}')` : ''}>
+      <a href={homeUrl} class="rescue-landing-back">← {homeLabel[lang] || homeLabel.zh}</a>
+      <div class="rescue-landing-title-hero">{sceneTitle}</div>
+      <div class="rescue-landing-desc-hero">{sceneDesc}</div>
+    </div>
+
+    <!-- Info块 -->
+    {info.length > 0 && (
+      <div class="scene-info-wrap" id="sceneInfoWrap">
+        <div class="scene-info" id="sceneInfo">
+          {info.map((sec: any) => (
+            <div class="scene-info-section">
+              <div class="scene-info-title">{getInfoTitle(sec, lang)}</div>
+              <div class="scene-info-body">
+                {sec.table ? (
+                  <table class="scene-info-table">
+                    {sec.table.map((row: string[], i: number) => (
+                      <tr class={i === 0 ? 'scene-info-table-header' : ''}>
+                        {row.map((cell: string) => (
+                          <td set:html={cell} />
+                        ))}
+                      </tr>
+                    ))}
+                  </table>
+                ) : (
+                  <ul>
+                    {getInfoLines(sec, lang).map((line: string) => (
+                      <li set:html={line} />
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        <button 
+          class="scene-info-toggle"
+          onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '∧ 点击折叠' : '∨ 点击打开';"
+        >∨ 点击打开</button>
+      </div>
+    )}
+
+    <!-- 搜索栏 -->
+    <div class="rescue-scene-landing" data-pagefind-body></div>
+
+    <!-- Sub分类列表 -->
+    <div class="rescue-landing-grid">
+      {subcats.map((sub: any) => (
+        <a 
+          href={lang === 'zh' ? `/rescue/${scene.id}/${sub.id}/` : `/${lang}/rescue/${scene.id}/${sub.id}/`}
+          class="rescue-landing-btn"
+        >
+          <span class="rescue-landing-btn-title">{getSubTitle(sub, lang)}</span>
+          <span class="rescue-landing-btn-ja">{sub.title_ja || ''}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+</Base>

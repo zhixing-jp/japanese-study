@@ -1,0 +1,104 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl } from '../../i18n/index.js';
+import rescueIndex from '../../../public/data/rescue/index.json';
+import config from '../../../public/config.json';
+
+const lang = getLangFromUrl(Astro.url);
+
+// 标题和描述多语言
+const siteTitles: Record<string, string> = {
+  zh: '日活 Living Japanese | 不会日语也能在日本活得从容',
+  en: 'Living Japanese | Survive daily life in Japan',
+  'zh-TW': '日活 Living Japanese | 不會日語也能在日本活得從容',
+  vi: 'Living Japanese | Sống thoải mái tại Nhật Bản',
+  ko: 'Living Japanese | 일본어 없이도 일본에서 편안하게'
+};
+
+const siteDescs: Record<string, string> = {
+  zh: '不会日语，也能在日本活得从容。19个真实生活场景，数百句实用日语，遇到语言障碍时10秒找到句子。完全免费。',
+  en: 'Survive daily life in Japan without Japanese. 19 real-life scenes, hundreds of practical phrases. Find what you need in 10 seconds. Completely free.',
+  'zh-TW': '不會日語，也能在日本活得從容。19個真實生活場景，數百句實用日語。完全免費。',
+  vi: 'Sống thoải mái tại Nhật Bản mà không cần tiếng Nhật. 19 tình huống thực tế, hàng trăm câu thực dụng. Hoàn toàn miễn phí.',
+  ko: '일본어 없이도 일본에서 편안하게 생활하세요. 19개 실생활 상황, 수백 개의 실용 표현. 완전 무료.'
+};
+
+const title = siteTitles[lang] || siteTitles.zh;
+const description = siteDescs[lang] || siteDescs.zh;
+
+// 场景标题多语言
+function getSceneTitle(scene: any, lang: string): string {
+  return scene[`title_${lang}`] || scene.title_zh || scene.title;
+}
+
+// 句子数量文字
+const countLabels: Record<string, string> = {
+  zh: '句', en: ' phrases', 'zh-TW': '句', vi: ' câu', ko: '문장'
+};
+
+const scenes = rescueIndex.scenes;
+const banner = config.banner;
+
+// Banner多语言
+const bannerTitle = (banner as any)[`title_${lang}`] || banner.title || '';
+const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
+---
+
+<Base title={title} description={description} rescueCss={true}>
+
+  <!-- 搜索栏 -->
+  <div class="rescue-scene-wrap" data-pagefind-body>
+
+  <!-- Banner -->
+  <div id="banner" class="banner-wrap">
+    <div class="banner-inner">
+      <div class="banner-left">
+        <div class="banner-eyebrow">{banner.eyebrow || ''}</div>
+        <div class="banner-title">{bannerTitle}</div>
+        <div class="banner-pills">
+          {bannerPills.map((pill: string) => (
+            <span class="banner-pill">{pill}</span>
+          ))}
+        </div>
+      </div>
+      <div class="banner-right">
+        <div class="banner-stat-num">
+          {scenes.reduce((total: number, sc: any) => total + (sc.count || 0), 0)}
+        </div>
+        <div class="banner-stat-label">
+          {lang === 'zh' || lang === 'zh-TW' ? '句・完全免费' : 
+           lang === 'en' ? 'phrases · free' :
+           lang === 'vi' ? 'câu · miễn phí' : '문장 · 무료'}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 场景列表 -->
+  <div class="rescue-scene-wrap">
+    <div class="rescue-scene-grid">
+      {scenes.map((scene: any, si: number) => {
+        const sceneTitle = getSceneTitle(scene, lang);
+        const sceneUrl = lang === 'zh' 
+          ? `/rescue/${scene.id}/` 
+          : `/${lang}/rescue/${scene.id}/`;
+        const count = scene.count || 0;
+        const countLabel = countLabels[lang] || countLabels.zh;
+        
+        return (
+          <a href={sceneUrl} class="rescue-scene-card">
+            {scene.image && (
+              <div class="rescue-scene-bg" style={`background-image:url('/${scene.image}')`}></div>
+            )}
+            <div class="rescue-scene-overlay"></div>
+            <div class="rescue-scene-content">
+              <div class="rescue-scene-title">{sceneTitle}</div>
+              <div class="rescue-scene-count">{count}{countLabel}</div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</div>
+</Base>

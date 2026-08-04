@@ -1,0 +1,125 @@
+{
+  "site": {
+    "title": "Living Japanese · 日活",
+    "subtitle": "不会日语，也能在日本活得从容",
+    "version": "3.0",
+    "url": "https://livingjapanese.app"
+  },
+  "banner": {
+    "eyebrow": "Living Japanese · 日活",
+    "title": "不会日语，也能在日本活得从容。",
+    "pills": ["不用背","用时来查","10秒找到","说出来解决"],
+    "title_en": "Live comfortably in Japan, even without Japanese.",
+    "title_zh-TW":"不會日語，也能在日本生活自如。",
+    "title_vi": "Sống thoải mái ở Nhật, dù không biết tiếng Nhật.",
+    "title_ko": "일본어 몰라도, 일본에서 여유롭게 살 수 있어요.",
+    "pills_en": ["No memorizing","Look it up when needed","Find it in 10 seconds","Say it out loud"],
+    "pills_zh-TW": ["不用背","用時來查","10秒找到","說出來解決"],
+    "pills_vi": ["Không cần học thuộc","Tra khi cần","Tìm trong 10 giây","Nói ra là xong"],
+    "pills_ko": ["외울 필요 없어요","필요할 때 찾으면 돼요","10초 안에 찾기","말하면 해결"]
+  },
+  "search": {
+    "rescue": "搜索日文、中文或场景…",
+    "learn": "搜索词汇或场景…",
+    "medical": "搜索症状、科室或流程…",
+    "community": "搜索话题…"
+  },
+  "tabs": [
+    {
+      "id": "rescue",
+      "label": "急救语句",
+      "icon": "shield"
+    },
+    {
+      "id": "learn",
+      "label": "日语学习",
+      "icon": "book"
+    },
+    {
+      "id": "medical",
+      "label": "就医指南",
+      "icon": "heart"
+    },
+    {
+      "id": "community",
+      "label": "社区",
+      "icon": "chat"
+    }
+  ],
+  "modules": [
+    {
+      "id": "rescue",
+      "css": "css/rescue.css",
+      "js": "js/rescue.js"
+    },
+    {
+      "id": "learn",
+      "css": "css/learn.css",
+      "js": "js/learn.js"
+    },
+    {
+      "id": "medical",
+      "css": "css/medical.css",
+      "js": "js/medical.js"
+    },
+    {
+      "id": "community",
+      "css": "css/community.css",
+      "js": "js/community.js"
+    }
+  ],
+  "controls": {
+    "defaultMode": "jp",
+    "defaultRate": "0.75",
+    "modes": [
+  {"id": "jp"},
+  {"id": "jp_zh"},
+  {"id": "repeat"}
+  ],
+  "rates": [
+    {"id": "0.9"},
+    {"id": "0.75"},
+    {"id": "0.6"}
+  ]
+  },
+  "sceneBar": {
+    "priorityOrder": [
+      "共通短句",
+      "受診",
+      "買い物",
+      "交通",
+      "飲食",
+      "子供・学校",
+      "手続き",
+      "お金",
+      "住まい",
+      "緊急",
+      "仕事",
+      "外出",
+      "入境・空港",
+      "コンビニサービス",
+      "生活サービス",
+      "ネット購入・配送",
+      "電話",
+      "デジタル"
+    ]
+  },
+  "i18n": {
+    "defaultLang": "zh",
+    "fallbackLang": "en",
+    "supportedLangs": [
+      "zh",
+      "zh-TW",
+      "en",
+      "vi",
+      "ko"
+    ],
+    "langPaths": {
+      "zh": "/",
+      "zh-TW": "/zh-TW/",
+      "en": "/en/",
+      "vi": "/vi/",
+      "ko": "/ko/"
+    }
+  }
+}

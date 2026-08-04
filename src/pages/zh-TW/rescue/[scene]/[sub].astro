@@ -1,0 +1,103 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import RescueItem from '../../../../components/RescueItem.astro';
+import { getLangFromUrl } from '../../../../i18n/index.js';
+import rescueIndex from '../../../../../public/data/rescue/index.json';
+import { readFile } from 'node:fs/promises';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const scene of rescueIndex.scenes) {
+    if (!scene.subcategories || scene.subcategories.length === 0) continue;
+    let sceneData;
+    try {
+      const raw = await readFile(`public/data/rescue/${scene.file.split('/').pop()}`, 'utf-8');
+      sceneData = JSON.parse(raw);
+    } catch(e) { continue; }
+    for (const sub of scene.subcategories) {
+      const items = (sceneData.items || []).filter((item: any) => item.subcategory === sub.id);
+      paths.push({ params: { scene: scene.id, sub: sub.id }, props: { scene, sub, items } });
+    }
+  }
+  return paths;
+}
+
+const { scene, sub, items } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+
+const sceneTitle = (scene as any)[`title_${lang}`] || (scene as any).title_zh || scene.title;
+const subTitle = (sub as any)[`title_${lang}`] || sub.title;
+const title = `${sceneTitle} · ${subTitle} | Living Japanese`;
+const description = `${subTitle} - ${(scene as any)[`description_${lang}`] || scene.description || ''}`;
+
+const homeUrl = lang === 'zh' ? '/' : `/${lang}/`;
+const sceneUrl = lang === 'zh' ? `/rescue/${scene.id}/` : `/${lang}/rescue/${scene.id}/`;
+
+const homeLabel: Record<string, string> = {
+  zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈'
+};
+
+const ui: Record<string, Record<string, string>> = {
+  back:     { zh: '返回', en: 'Back', 'zh-TW': '返回', vi: 'Quay lại', ko: '돌아가기' },
+  play:     { zh: '▶ 朗读', en: '▶ Play', 'zh-TW': '▶ 朗讀', vi: '▶ Đọc', ko: '▶ 읽기' },
+  stop:     { zh: '■ 停止', en: '■ Stop', 'zh-TW': '■ 停止', vi: '■ Dừng', ko: '■ 정지' },
+  ruby:     { zh: '注音', en: 'Kana', 'zh-TW': '注音', vi: 'Kana', ko: '후리' },
+  jp:       { zh: '仅日语', en: 'JP only', 'zh-TW': '僅日語', vi: 'Chỉ JP', ko: 'JP만' },
+  jp_zh:    { zh: '日→中', en: 'JP→EN', 'zh-TW': '日→中', vi: 'JP→VI', ko: 'JP→KO' },
+  repeat:   { zh: '日→中→日', en: 'JP→EN→JP', 'zh-TW': '日→中→日', vi: 'JP→VI→JP', ko: 'JP→KO→JP' },
+  normal:   { zh: '普通', en: 'Normal', 'zh-TW': '普通', vi: 'Bình thường', ko: '보통' },
+  slow:     { zh: '慢', en: 'Slow', 'zh-TW': '慢', vi: 'Chậm', ko: '느리게' },
+  slower:   { zh: '更慢', en: 'Slower', 'zh-TW': '更慢', vi: 'Chậm hơn', ko: '더 느리게' },
+};
+
+function u(key: string) { return ui[key]?.[lang] || ui[key]?.zh || key; }
+---
+
+<Base title={title} description={description} rescueCss={true}>
+
+  <div id="pageData"
+    data-scene-id={scene.id}
+    data-sub-id={sub.id}
+    data-lang={lang}
+    data-play-label={u('play')}
+    data-stop-label={u('stop')}
+    style="display:none">
+  </div>
+
+  <!-- 面包屑 -->
+  <nav class="rescue-breadcrumb" aria-label="breadcrumb">
+    <a href={homeUrl}>{homeLabel[lang] || homeLabel.zh}</a>
+    <span aria-hidden="true">›</span>
+    <a href={sceneUrl}>{sceneTitle}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{subTitle}</span>
+  </nav>
+
+  <!-- 控制栏 -->
+  <div class="rescue-ctrl-bar" id="subCtrlBar">
+    <a href={sceneUrl} class="ctrl-back">{u('back')}</a>
+    <button onclick="togglePlay()" class="ctrl-play" id="btnPlay">{u('play')}</button>
+    <button onclick="toggleLoop()" class="ctrl-icon" id="btnLoop">🔁</button>
+    <button onclick="toggleRuby()" class="ctrl-icon" id="btnRuby">{u('ruby')}</button>
+    <select onchange="setMode(this.value)" id="modeSelect">
+      <option value="jp">{u('jp')}</option>
+      <option value="jp_zh">{u('jp_zh')}</option>
+      <option value="repeat">{u('repeat')}</option>
+    </select>
+    <select onchange="setRate(this.value)" id="rateSelect">
+      <option value="0.9">{u('normal')}</option>
+      <option value="0.75" selected>{u('slow')}</option>
+      <option value="0.6">{u('slower')}</option>
+    </select>
+  </div>
+
+  <!-- 句子列表（data-pagefind-body让Pagefind索引此区域）-->
+  <div class="rescue-content-wrap" id="itemsWrap" data-pagefind-body>
+    {items.map((item: any, idx: number) => (
+      <RescueItem item={item} idx={idx} lang={lang} />
+    ))}
+  </div>
+
+  <script src="/js/rescue-ui.js" is:inline></script>
+
+</Base>
