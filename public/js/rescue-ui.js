@@ -40,11 +40,6 @@ function speakAll() {
   speakSession++;
   const session = speakSession;
   let items = getItems().filter(item => item.role !== 'staff');
-  if (filterUnlearned) {
-    const sceneId = document.getElementById('pageData')?.dataset.sceneId;
-    const checked = getChecked(sceneId);
-    items = items.filter(item => !checked[item.idx]);
-  }
   if (!items.length) { showToast('🎉 全部已学完！'); return; }
   speakList(items, 0, session);
 }
