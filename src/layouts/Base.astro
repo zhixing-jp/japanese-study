@@ -83,10 +83,21 @@ const jsonLd = {
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href={Astro.url}>
-  {Object.entries(langPaths).map(([l, path]) => (
-    <link rel="alternate" hreflang={l === 'zh' ? 'zh-CN' : l} href={`${siteUrl}${path}`} />
-  ))}
-  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
+  {Object.entries(langPaths).map(([l, prefix]) => {
+  // 从当前URL路径中去掉语言前缀，得到纯路径
+  const currentPath = Astro.url.pathname;
+  const strippedPath = currentPath
+    .replace(/^\/(en|zh-TW|vi|ko)\//, '/')
+    .replace(/^\/(en|zh-TW|vi|ko)$/, '/');
+  // 构建该语言版本的完整URL
+  const langUrl = l === 'zh'
+    ? `${siteUrl}${strippedPath}`
+    : `${siteUrl}/${l}${strippedPath === '/' ? '/' : strippedPath}`;
+  return (
+    <link rel="alternate" hreflang={l === 'zh' ? 'zh-CN' : l} href={langUrl} />
+  );
+  })}
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}${Astro.url.pathname.replace(/^\/(en|zh-TW|vi|ko)\//, '/').replace(/^\/(en|zh-TW|vi|ko)$/, '/')}`} />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
