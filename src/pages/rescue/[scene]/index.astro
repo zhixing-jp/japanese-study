@@ -74,7 +74,9 @@ function getInfoLines(sec: any, lang: string): string[] {
     <!-- Info块 -->
     {info.length > 0 && (
       <div class="scene-info-wrap" id="sceneInfoWrap">
-        <div class="scene-info" id="sceneInfo">
+        <div class="scene-info" id="sceneInfo"
+          style="cursor:pointer"
+          onclick="this.classList.toggle('expanded'); this.nextElementSibling.textContent = this.classList.contains('expanded') ? '∧ 点击折叠' : '∨ 点击打开';">
           {info.map((sec: any) => (
             <div class="scene-info-section">
               <div class="scene-info-title">{getInfoTitle(sec, lang)}</div>

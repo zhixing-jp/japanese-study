@@ -1,0 +1,2407 @@
+{
+  "s01": {
+    "id": "s01",
+    "title": "入境・空港",
+    "title_zh": "入境・机场",
+    "info": [
+      {
+        "title": "入境流程顺序：",
+        "title_zh": "入境流程顺序：",
+        "title_en": "Immigration process:",
+        "title_zh-TW": "入境流程順序：",
+        "title_vi": "Quy trình nhập cảnh:",
+        "title_ko": "입국 절차 순서:",
+        "lines": [
+          "飞机落地 → 入国审查（Immigration）→ 行李提取 → 海关申报（税関）→ 出机场"
+        ],
+        "lines_zh": [
+          "飞机落地 → 入国审查（Immigration）→ 行李提取 → 海关申报（税関）→ 出机场"
+        ],
+        "lines_en": [
+          "Landing → Immigration check → Baggage claim → Customs → Exit airport"
+        ],
+        "lines_zh-TW": [
+          "飛機落地 → 入國審查（Immigration）→ 行李提取 → 海關申報（稅關）→ 出機場"
+        ],
+        "lines_vi": [
+          "Máy bay hạ cánh → Kiểm tra nhập cảnh → Nhận hành lý → Khai báo hải quan → Ra khỏi sân bay"
+        ],
+        "lines_ko": [
+          "비행기 착륙 → 입국 심사(Immigration) → 수하물 수취 → 세관 신고 → 공항 출발"
+        ]
+      },
+      {
+        "title": "入国审查需要准备：",
+        "title_zh": "入国审查需要准备：",
+        "title_en": "What to prepare for immigration:",
+        "title_zh-TW": "入國審查需要準備：",
+        "title_vi": "Chuẩn bị cho kiểm tra nhập cảnh:",
+        "title_ko": "입국 심사에 필요한 준비:",
+        "lines": [
+          "护照 + 回程机票（电子版即可）",
+          "住宿地址（酒店预订确认书出示手机即可）",
+          "需要按指纹、拍照，配合操作即可",
+          "长居者持在留卡，走专用通道，流程更快"
+        ],
+        "lines_zh": [
+          "护照 + 回程机票（电子版即可）",
+          "住宿地址（酒店预订确认书出示手机即可）",
+          "需要按指纹、拍照，配合操作即可",
+          "长居者持在留卡，走专用通道，流程更快"
+        ],
+        "lines_en": [
+          "Passport + return ticket (digital version OK)",
+          "Accommodation address (hotel booking confirmation on phone is fine)",
+          "Fingerprints and photo required, just follow instructions",
+          "Long-term residents use residence card, dedicated lane, faster process"
+        ],
+        "lines_zh-TW": [
+          "護照 + 回程機票（電子版即可）",
+          "住宿地址（酒店預訂確認書出示手機即可）",
+          "需要按指紋、拍照，配合操作即可",
+          "長居者持在留卡，走專用通道，流程更快"
+        ],
+        "lines_vi": [
+          "Hộ chiếu + vé về (bản điện tử cũng được)",
+          "Địa chỉ chỗ ở (chỉ cần hiển thị xác nhận đặt khách sạn trên điện thoại)",
+          "Cần lấy dấu vân tay và chụp ảnh, làm theo hướng dẫn",
+          "Người cư trú dài hạn dùng thẻ cư trú, đi làn dành riêng, nhanh hơn"
+        ],
+        "lines_ko": [
+          "여권 + 귀국 항공권 (전자 버전 가능)",
+          "숙박 주소 (호텔 예약 확인서 스마트폰 제시 가능)",
+          "지문 채취 및 사진 촬영 필요, 지시에 따라 협조",
+          "장기 거주자는 재류카드 소지, 전용 통로 이용, 절차 빠름"
+        ]
+      },
+      {
+        "title": "海关申报：",
+        "title_zh": "海关申报：",
+        "title_en": "Customs declaration:",
+        "title_zh-TW": "海關申報：",
+        "title_vi": "Khai báo hải quan:",
+        "title_ko": "세관 신고:",
+        "lines": [
+          "提前在「Visit Japan Web」完成电子申报，出示二维码即可",
+          "携带肉制品、水果、超额现金（100万円以上）需申报",
+          "未申报违禁品会被没收，严重者影响入境资格"
+        ],
+        "lines_zh": [
+          "提前在「Visit Japan Web」完成电子申报，出示二维码即可",
+          "携带肉制品、水果、超额现金（100万円以上）需申报",
+          "未申报违禁品会被没收，严重者影响入境资格"
+        ],
+        "lines_en": [
+          "Complete electronic declaration on 'Visit Japan Web' in advance, show QR code",
+          "Meat products, fruits, and cash over ¥1,000,000 must be declared",
+          "Undeclared prohibited items will be confiscated; serious cases may affect entry eligibility"
+        ],
+        "lines_zh-TW": [
+          "提前在「Visit Japan Web」完成電子申報，出示二維碼即可",
+          "攜帶肉製品、水果、超額現金（100萬円以上）需申報",
+          "未申報違禁品會被沒收，嚴重者影響入境資格"
+        ],
+        "lines_vi": [
+          "Hoàn thành khai báo điện tử trên 'Visit Japan Web' trước, xuất trình mã QR",
+          "Phải khai báo nếu mang thịt, trái cây, tiền mặt trên 1.000.000 yên",
+          "Hàng cấm không khai báo sẽ bị tịch thu, trường hợp nghiêm trọng có thể ảnh hưởng tư cách nhập cảnh"
+        ],
+        "lines_ko": [
+          "'Visit Japan Web'에서 미리 전자 신고 완료 후 QR코드 제시",
+          "육류 제품, 과일, 100만 엔 이상 현금은 신고 필요",
+          "미신고 금지 물품은 압수되며, 심한 경우 입국 자격에 영향"
+        ]
+      },
+      {
+        "title": "出机场交通：",
+        "title_zh": "出机场交通：",
+        "title_en": "Airport transportation:",
+        "title_zh-TW": "出機場交通：",
+        "title_vi": "Giao thông ra khỏi sân bay:",
+        "title_ko": "공항 교통:",
+        "lines": [
+          "<strong>电车</strong>：最便宜，关西用南海或JR，关东用成田EX或京成",
+          "<strong>大巴</strong>：直达酒店或主要车站，适合行李多的情况",
+          "<strong>出租车</strong>：最贵，适合深夜或目的地偏远",
+          "建议落地后先购买或激活IC卡（ICOCA / Suica）"
+        ],
+        "lines_zh": [
+          "<strong>电车</strong>：最便宜，关西用南海或JR，关东用成田EX或京成",
+          "<strong>大巴</strong>：直达酒店或主要车站，适合行李多的情况",
+          "<strong>出租车</strong>：最贵，适合深夜或目的地偏远",
+          "建议落地后先购买或激活IC卡（ICOCA / Suica）"
+        ],
+        "lines_en": [
+          "<strong>Train</strong>: Cheapest; Nankai or JR for Kansai, Narita Express or Keisei for Kanto",
+          "<strong>Bus</strong>: Goes directly to hotels or major stations, good for heavy luggage",
+          "<strong>Taxi</strong>: Most expensive, good for late night or remote destinations",
+          "Recommend buying or activating IC card (ICOCA / Suica) after landing"
+        ],
+        "lines_zh-TW": [
+          "<strong>電車</strong>：最便宜，關西用南海或JR，關東用成田EX或京成",
+          "<strong>大巴</strong>：直達酒店或主要車站，適合行李多的情況",
+          "<strong>出租車</strong>：最貴，適合深夜或目的地偏遠",
+          "建議落地後先購買或激活IC卡（ICOCA / Suica）"
+        ],
+        "lines_vi": [
+          "<strong>Tàu điện</strong>: Rẻ nhất; Kansai dùng Nankai hoặc JR, Kanto dùng Narita EX hoặc Keisei",
+          "<strong>Xe buýt</strong>: Đi thẳng đến khách sạn hoặc ga chính, tốt khi nhiều hành lý",
+          "<strong>Taxi</strong>: Đắt nhất, phù hợp đêm khuya hoặc điểm đến xa",
+          "Nên mua hoặc kích hoạt thẻ IC (ICOCA / Suica) sau khi hạ cánh"
+        ],
+        "lines_ko": [
+          "<strong>전철</strong>: 가장 저렴; 간사이는 난카이·JR, 간토는 나리타EX·케이세이",
+          "<strong>버스</strong>: 호텔이나 주요 역까지 직행, 짐이 많을 때 적합",
+          "<strong>택시</strong>: 가장 비쌈, 심야나 목적지가 멀 때 적합",
+          "도착 후 IC카드(ICOCA / Suica) 구매 또는 활성화 권장"
+        ]
+      }
+    ]
+  },
+  "s03": {
+    "id": "s03",
+    "title": "買い物",
+    "title_zh": "买东西",
+    "info": [
+      {
+        "title": "消费税与免税：",
+        "title_zh": "消费税与免税：",
+        "lines": [
+          "日本消费税为<strong>10%</strong>，食品・饮料为<strong>8%</strong>",
+          "外国游客在指定店铺购物满<strong>5,000円</strong>（税前）可办理免税",
+          "免税需出示护照，商品须在30天内带出日本",
+          "标有「Tax Free」的店铺可办理，大型药妆店和百货店通常都有"
+        ],
+        "lines_zh": [
+          "日本消费税为<strong>10%</strong>，食品・饮料为<strong>8%</strong>",
+          "外国游客在指定店铺购物满<strong>5,000円</strong>（税前）可办理免税",
+          "免税需出示护照，商品须在30天内带出日本",
+          "标有「Tax Free」的店铺可办理，大型药妆店和百货店通常都有"
+        ],
+        "title_en": "Consumption Tax & Tax Exemption:",
+        "title_zh-TW": "消費稅與免稅：",
+        "title_vi": "Thuế tiêu thụ & Miễn thuế:",
+        "title_ko": "소비세 & 면세:",
+        "lines_en": [
+          "Consumption tax in Japan is 10% (food and beverages 8%)",
+          "Foreign tourists can shop tax-free at designated stores with their passport",
+          "Minimum tax-free purchase: ¥5,000 (general goods) or ¥5,000 (consumables, purchased separately)",
+          "Tax-free items cannot be opened or used in Japan"
+        ],
+        "lines_zh-TW": [
+          "日本消費稅為10%（食品飲料8%）",
+          "外國遊客持護照可在指定店免稅購物",
+          "免稅最低消費：一般商品5000円起，消耗品5000円起（需分開購買）",
+          "免稅商品在日本境內不可開封使用"
+        ],
+        "lines_vi": [
+          "Thuế tiêu thụ tại Nhật là 10% (thực phẩm và đồ uống 8%)",
+          "Du khách nước ngoài có thể mua hàng miễn thuế tại các cửa hàng được chỉ định với hộ chiếu",
+          "Mua tối thiểu để được miễn thuế: ¥5.000 (hàng thông thường) hoặc ¥5.000 (hàng tiêu dùng, mua riêng)",
+          "Hàng miễn thuế không được mở hoặc sử dụng tại Nhật Bản"
+        ],
+        "lines_ko": [
+          "일본 소비세는 10% (식음료 8%)",
+          "외국 관광객은 여권으로 지정 매장에서 면세 쇼핑 가능",
+          "면세 최소 구매액: 일반 상품 5,000엔, 소모품 5,000엔 (별도 구매)",
+          "면세 상품은 일본 내에서 개봉하거나 사용할 수 없음"
+        ]
+      },
+      {
+        "title": "退换货规定：",
+        "title_zh": "退换货规定：",
+        "lines": [
+          "日本各店退换货政策不统一，购买前最好确认",
+          "通常需要保留收据（レシート）和原包装",
+          "食品、内衣、已拆封商品一般不可退换",
+          "有问题的商品（破损、瑕疵）大多数店铺会接受退换"
+        ],
+        "lines_zh": [
+          "日本各店退换货政策不统一，购买前最好确认",
+          "通常需要保留收据（レシート）和原包装",
+          "食品、内衣、已拆封商品一般不可退换",
+          "有问题的商品（破损、瑕疵）大多数店铺会接受退换"
+        ],
+        "title_en": "Return & Exchange Policy:",
+        "title_zh-TW": "退換貨規定：",
+        "title_vi": "Quy định đổi trả hàng:",
+        "title_ko": "반품 & 교환 규정:",
+        "lines_en": [
+          "Japan does not have a universal return policy — each store sets its own rules",
+          "In general: unused, with tags, within a few days, with receipt",
+          "Food, cosmetics, and underwear are usually non-returnable",
+          "Tax-free purchases: returning requires repaying the tax"
+        ],
+        "lines_zh-TW": [
+          "日本沒有統一的退換貨政策，各店規定不同",
+          "一般原則：未使用、保留標籤、數日內、持收據",
+          "食品、化妝品、內衣通常不可退換",
+          "免稅購買的商品：退貨需補繳稅款"
+        ],
+        "lines_vi": [
+          "Nhật Bản không có chính sách đổi trả thống nhất — mỗi cửa hàng có quy định riêng",
+          "Nguyên tắc chung: chưa sử dụng, còn nhãn, trong vài ngày, có hóa đơn",
+          "Thực phẩm, mỹ phẩm và đồ lót thường không được đổi trả",
+          "Hàng mua miễn thuế: đổi trả phải hoàn thuế"
+        ],
+        "lines_ko": [
+          "일본에는 통일된 반품 정책이 없으며 각 매장마다 규정이 다릅니다",
+          "일반 원칙: 미사용, 태그 유지, 수일 이내, 영수증 지참",
+          "식품, 화장품, 속옷은 일반적으로 반품 불가",
+          "면세 구매 상품: 반품 시 세금 재납부 필요"
+        ]
+      },
+      {
+        "title": "支付方式：",
+        "title_zh": "支付方式：",
+        "lines": [
+          "现金仍被广泛接受，建议随身携带",
+          "IC卡（Suica / ICOCA）、信用卡、手机支付普遍可用",
+          "部分小店和个人摊贩只收现金",
+          "自助收银机（セルフレジ）越来越普遍，操作语言可切换"
+        ],
+        "lines_zh": [
+          "现金仍被广泛接受，建议随身携带",
+          "IC卡（Suica / ICOCA）、信用卡、手机支付普遍可用",
+          "部分小店和个人摊贩只收现金",
+          "自助收银机（セルフレジ）越来越普遍，操作语言可切换"
+        ],
+        "title_en": "Payment Methods:",
+        "title_zh-TW": "支付方式：",
+        "title_vi": "Phương thức thanh toán:",
+        "title_ko": "결제 방법:",
+        "lines_en": [
+          "Cash: most widely accepted everywhere",
+          "Credit/debit card: most major stores accept Visa/Mastercard",
+          "IC card (Suica/ICOCA): convenient for small purchases at convenience stores",
+          "PayPay/LINE Pay: popular cashless apps, requires Japanese phone number to register"
+        ],
+        "lines_zh-TW": [
+          "現金：最通用，到處都收",
+          "信用卡／扣款卡：大多數大型店家接受Visa/Mastercard",
+          "IC卡（Suica/ICOCA）：適合便利店等小額消費",
+          "PayPay/LINE Pay：流行的無現金App，需日本手機號碼註冊"
+        ],
+        "lines_vi": [
+          "Tiền mặt: được chấp nhận rộng rãi nhất ở mọi nơi",
+          "Thẻ tín dụng/ghi nợ: hầu hết các cửa hàng lớn chấp nhận Visa/Mastercard",
+          "Thẻ IC (Suica/ICOCA): tiện lợi cho mua sắm nhỏ ở cửa hàng tiện lợi",
+          "PayPay/LINE Pay: ứng dụng không tiền mặt phổ biến, cần số điện thoại Nhật để đăng ký"
+        ],
+        "lines_ko": [
+          "현금: 어디서나 가장 널리 사용 가능",
+          "신용카드/체크카드: 대부분의 대형 매장에서 Visa/Mastercard 수락",
+          "IC카드 (Suica/ICOCA): 편의점 등 소액 결제에 편리",
+          "PayPay/LINE Pay: 인기 있는 비현금 앱, 일본 전화번호로 등록 필요"
+        ]
+      }
+    ]
+  },
+  "s05": {
+    "id": "s05",
+    "title": "交通",
+    "title_zh": "坐车",
+    "info": [
+      {
+        "title": "日本主要交通工具：",
+        "title_zh": "日本主要交通工具：",
+        "lines": [
+          "<strong>電車・地下鉄</strong>：最常用，准时，覆盖城市主要区域",
+          "<strong>新幹線</strong>：城市间长距离移动，速度快但票价高",
+          "<strong>路線バス</strong>：覆盖电车到不了的区域，后门上车前门下车",
+          "<strong>タクシー</strong>：车门自动开关，适合深夜或行李多时",
+          "<strong>自転車</strong>：短距离移动，注意停放规定，乱停会被移走"
+        ],
+        "lines_zh": [
+          "<strong>電車・地下鉄</strong>：最常用，准时，覆盖城市主要区域",
+          "<strong>新幹線</strong>：城市间长距离移动，速度快但票价高",
+          "<strong>路線バス</strong>：覆盖电车到不了的区域，后门上车前门下车",
+          "<strong>タクシー</strong>：车门自动开关，适合深夜或行李多时",
+          "<strong>自転車</strong>：短距离移动，注意停放规定，乱停会被移走"
+        ],
+        "title_en": "Main Transport in Japan:",
+        "title_zh-TW": "日本主要交通工具：",
+        "title_vi": "Phương tiện giao thông chính tại Nhật:",
+        "title_ko": "일본 주요 교통수단:",
+        "lines_en": [
+          "Train (電車): most common, punctual, covers most cities",
+          "Subway (地下鉄): underground lines in major cities",
+          "Bus (バス): covers areas trains don't reach",
+          "Taxi (タクシー): expensive, available 24 hours",
+          "Shinkansen (新幹線): high-speed train between cities"
+        ],
+        "lines_zh-TW": [
+          "電車（電車）：最常用，準時，覆蓋大多數城市",
+          "地鐵（地下鉄）：大城市的地下線路",
+          "公車（バス）：覆蓋電車無法到達的地區",
+          "計程車（タクシー）：較貴，24小時可用",
+          "新幹線（新幹線）：城市間的高速列車"
+        ],
+        "lines_vi": [
+          "Tàu điện (電車): phổ biến nhất, đúng giờ, bao phủ hầu hết các thành phố",
+          "Tàu điện ngầm (地下鉄): tuyến ngầm ở các thành phố lớn",
+          "Xe buýt (バス): bao phủ các khu vực tàu điện không đến được",
+          "Taxi (タクシー): đắt tiền, hoạt động 24 giờ",
+          "Shinkansen (新幹線): tàu cao tốc giữa các thành phố"
+        ],
+        "lines_ko": [
+          "전철(電車): 가장 일반적, 정시, 대부분의 도시 커버",
+          "지하철(地下鉄): 대도시의 지하 노선",
+          "버스(バス): 전철이 닿지 않는 지역 커버",
+          "택시(タクシー): 비쌈, 24시간 이용 가능",
+          "신칸센(新幹線): 도시 간 고속 열차"
+        ]
+      },
+      {
+        "title": "IC卡（交通卡）：",
+        "title_zh": "IC卡（交通卡）：",
+        "lines": [
+          "关西用<strong>ICOCA</strong>，关东用<strong>Suica</strong>，全国大部分交通通用",
+          "便利店、自动售货机也可以使用",
+          "余额不足时在站内充值机充值（チャージ）"
+        ],
+        "lines_zh": [
+          "关西用<strong>ICOCA</strong>，关东用<strong>Suica</strong>，全国大部分交通通用",
+          "便利店、自动售货机也可以使用",
+          "余额不足时在站内充值机充值（チャージ）"
+        ],
+        "title_en": "IC Card (Transit Card):",
+        "title_zh-TW": "IC卡（交通卡）：",
+        "title_vi": "Thẻ IC (Thẻ giao thông):",
+        "title_ko": "IC카드 (교통카드):",
+        "lines_en": [
+          "Suica (Tokyo area) / ICOCA (Osaka/Kansai area) — both usable nationwide",
+          "Can be used on trains, buses, and for shopping at convenience stores",
+          "Buy at station ticket machines, top up at machines or convenience stores",
+          "Requires ¥500 deposit (refundable when returned)"
+        ],
+        "lines_zh-TW": [
+          "Suica（東京地區）/ ICOCA（大阪・關西地區）——兩者全國通用",
+          "可用於電車、公車及便利店購物",
+          "在車站自動售票機購買，在機器或便利店充值",
+          "需500円押金（退卡時退還）"
+        ],
+        "lines_vi": [
+          "Suica (khu vực Tokyo) / ICOCA (khu vực Osaka/Kansai) — cả hai đều dùng được toàn quốc",
+          "Có thể dùng trên tàu điện, xe buýt và mua sắm tại cửa hàng tiện lợi",
+          "Mua tại máy bán vé ở ga, nạp tiền tại máy hoặc cửa hàng tiện lợi",
+          "Cần đặt cọc ¥500 (hoàn lại khi trả thẻ)"
+        ],
+        "lines_ko": [
+          "Suica (도쿄 지역) / ICOCA (오사카·간사이 지역) — 둘 다 전국에서 사용 가능",
+          "전철, 버스 및 편의점 쇼핑에 사용 가능",
+          "역 자동발매기에서 구매, 기계 또는 편의점에서 충전",
+          "500엔 보증금 필요 (반납 시 환불)"
+        ]
+      },
+      {
+        "title": "乘电车注意：",
+        "title_zh": "乘电车注意：",
+        "lines": [
+          "同一条线路有普通、急行、特急之分，停站不同",
+          "坐错方向或坐过站，找站务员说明即可处理",
+          "末班车（終電）时间约23点-24点，各路线不同"
+        ],
+        "lines_zh": [
+          "同一条线路有普通、急行、特急之分，停站不同",
+          "坐错方向或坐过站，找站务员说明即可处理",
+          "末班车（終電）时间约23点-24点，各路线不同"
+        ],
+        "title_en": "Train Tips:",
+        "title_zh-TW": "搭電車注意：",
+        "title_vi": "Lưu ý khi đi tàu điện:",
+        "title_ko": "전철 탑승 주의사항:",
+        "lines_en": [
+          "Queue at the marked spots on the platform",
+          "Let passengers off before boarding",
+          "Keep voices low, phones on silent",
+          "Priority seats (優先席) are for elderly, pregnant, and disabled passengers",
+          "Eating and drinking generally not allowed (Shinkansen is OK)"
+        ],
+        "lines_zh-TW": [
+          "在月台標示處排隊等候",
+          "先讓乘客下車再上車",
+          "保持安靜，手機調靜音",
+          "優先席（優先席）供老年人、孕婦和殘障人士使用",
+          "一般不可飲食（新幹線可以）"
+        ],
+        "lines_vi": [
+          "Xếp hàng tại các vị trí được đánh dấu trên sân ga",
+          "Để hành khách xuống trước khi lên",
+          "Giữ im lặng, để điện thoại ở chế độ im lặng",
+          "Ghế ưu tiên (優先席) dành cho người cao tuổi, phụ nữ mang thai và người khuyết tật",
+          "Nói chung không được ăn uống (Shinkansen thì được)"
+        ],
+        "lines_ko": [
+          "플랫폼의 표시된 자리에서 줄을 서서 대기",
+          "내리는 승객을 먼저 내보낸 후 탑승",
+          "조용히 하고 핸드폰은 무음 모드",
+          "우선석(優先席)은 노약자, 임산부, 장애인용",
+          "일반적으로 음식물 섭취 불가 (신칸센은 가능)"
+        ]
+      },
+      {
+        "title": "乘公交注意：",
+        "title_zh": "乘公交注意：",
+        "lines": [
+          "通常后门上车、前门下车，上车时取整理券",
+          "下车前按铃提示司机，下车时付费或刷卡",
+          "部分地区前门上车，规则因地而异"
+        ],
+        "lines_zh": [
+          "通常后门上车、前门下车，上车时取整理券",
+          "下车前按铃提示司机，下车时付费或刷卡",
+          "部分地区前门上车，规则因地而异"
+        ],
+        "title_en": "Bus Tips:",
+        "title_zh-TW": "搭公車注意：",
+        "title_vi": "Lưu ý khi đi xe buýt:",
+        "title_ko": "버스 탑승 주의사항:",
+        "lines_en": [
+          "Most buses: board from the front, pay when getting on",
+          "Some routes: board from the rear, pay when getting off",
+          "Press the button before your stop to signal the driver",
+          "IC card or exact change recommended (buses often don't give change)"
+        ],
+        "lines_zh-TW": [
+          "多數公車：前門上車，上車付款",
+          "部分路線：後門上車，下車付款",
+          "在站前按鈴通知司機停車",
+          "建議使用IC卡或備好零錢（公車通常不找零）"
+        ],
+        "lines_vi": [
+          "Hầu hết xe buýt: lên từ cửa trước, trả tiền khi lên",
+          "Một số tuyến: lên từ cửa sau, trả tiền khi xuống",
+          "Bấm nút trước điểm dừng để báo tài xế",
+          "Nên dùng thẻ IC hoặc chuẩn bị tiền lẻ (xe buýt thường không thối tiền)"
+        ],
+        "lines_ko": [
+          "대부분의 버스: 앞문으로 탑승, 탈 때 요금 지불",
+          "일부 노선: 뒷문으로 탑승, 내릴 때 요금 지불",
+          "정류장 전에 버튼을 눌러 기사에게 신호",
+          "IC카드나 잔돈 준비 권장 (버스는 보통 거스름돈 없음)"
+        ]
+      }
+    ]
+  },
+  "s06": {
+    "id": "s06",
+    "title": "受診",
+    "title_zh": "看病",
+    "info": [
+      {
+        "title": "在日本看病，有三种方式：",
+        "title_zh": "在日本看病，有三种方式：",
+        "lines": [
+          "<strong>诊所（クリニック）</strong>：适合轻症，部分可直接去无需预约",
+          "<strong>医院（病院）</strong>：适合慢性病复诊或需要专科检查",
+          "<strong>急诊（救急）</strong>：严重症状拨打119，或前往救急医院"
+        ],
+        "lines_zh": [
+          "<strong>诊所（クリニック）</strong>：适合轻症，部分可直接去无需预约",
+          "<strong>医院（病院）</strong>：适合慢性病复诊或需要专科检查",
+          "<strong>急诊（救急）</strong>：严重症状拨打119，或前往救急医院"
+        ],
+        "title_en": "Three Ways to See a Doctor in Japan:",
+        "title_zh-TW": "在日本看病，有三種方式：",
+        "title_vi": "Ba cách khám bệnh tại Nhật Bản:",
+        "title_ko": "일본에서 진료받는 세 가지 방법:",
+        "lines_en": [
+          "Clinic (クリニック・診療所): for minor illnesses, no appointment usually needed",
+          "Hospital (病院): for serious conditions, referral letter (紹介状) recommended",
+          "Emergency (救急): call 119 or go to an emergency hospital (救急病院)"
+        ],
+        "lines_zh-TW": [
+          "診所（クリニック・診療所）：適合輕症，通常不需預約",
+          "醫院（病院）：適合重症，建議持介紹信（紹介状）",
+          "急診（救急）：撥打119或前往急救醫院（救急病院）"
+        ],
+        "lines_vi": [
+          "Phòng khám (クリニック・診療所): cho bệnh nhẹ, thường không cần đặt lịch",
+          "Bệnh viện (病院): cho bệnh nặng, nên có giấy giới thiệu (紹介状)",
+          "Cấp cứu (救急): gọi 119 hoặc đến bệnh viện cấp cứu (救急病院)"
+        ],
+        "lines_ko": [
+          "클리닉(クリニック・診療所): 경미한 질환, 보통 예약 불필요",
+          "병원(病院): 중증 질환, 소개장(紹介状) 권장",
+          "응급(救急): 119 신고 또는 응급 병원(救急病院) 방문"
+        ]
+      },
+      {
+        "title": "常见科室：",
+        "title_zh": "常见科室：",
+        "lines_zh": [],
+        "table": [
+          [
+            "科室",
+            "对应症状・说明"
+          ],
+          [
+            "<strong>内科</strong>",
+            "发烧、感冒、腹痛等一般症状"
+          ],
+          [
+            "<strong>外科</strong>",
+            "外伤、手术（≠中文外科，不含骨科）"
+          ],
+          [
+            "<strong>整形外科</strong>",
+            "骨折、关节、肌肉（≠中文整形，是骨科）"
+          ],
+          [
+            "<strong>皮膚科</strong>",
+            "皮肤问题"
+          ],
+          [
+            "<strong>眼科</strong>",
+            "眼睛问题"
+          ],
+          [
+            "<strong>耳鼻咽喉科</strong>",
+            "耳鼻喉问题"
+          ],
+          [
+            "<strong>歯科・口腔外科</strong>",
+            "牙齿、口腔问题"
+          ],
+          [
+            "<strong>小児科</strong>",
+            "儿童看诊（14岁以下）"
+          ],
+          [
+            "<strong>産婦人科</strong>",
+            "妇科、产科"
+          ],
+          [
+            "<strong>泌尿器科</strong>",
+            "泌尿系统问题"
+          ],
+          [
+            "<strong>循環器科</strong>",
+            "心脏、血管问题"
+          ],
+          [
+            "<strong>精神科・心療内科</strong>",
+            "心理、精神健康"
+          ]
+        ],
+        "title_en": "Common Departments:",
+        "title_zh-TW": "常見科室：",
+        "title_vi": "Các khoa thông thường:",
+        "title_ko": "주요 진료과:",
+        "lines_en": [
+          "Internal medicine (内科): fever, cold, stomachache",
+          "Surgery (外科): wounds, fractures",
+          "Orthopedics (整形外科): joint pain, back pain",
+          "Pediatrics (小児科): children's illnesses",
+          "Obstetrics & Gynecology (産婦人科): women's health",
+          "Dentistry (歯科): dental issues",
+          "Ophthalmology (眼科): eye problems",
+          "ENT (耳鼻科): ear, nose, throat"
+        ],
+        "lines_zh-TW": [
+          "內科（内科）：發燒、感冒、胃痛",
+          "外科（外科）：傷口、骨折",
+          "骨科（整形外科）：關節痛、腰痛",
+          "兒科（小児科）：兒童疾病",
+          "婦產科（産婦人科）：婦女健康",
+          "牙科（歯科）：牙齒問題",
+          "眼科（眼科）：眼睛問題",
+          "耳鼻喉科（耳鼻科）：耳、鼻、喉"
+        ],
+        "lines_vi": [
+          "Nội khoa (内科): sốt, cảm lạnh, đau dạ dày",
+          "Ngoại khoa (外科): vết thương, gãy xương",
+          "Chỉnh hình (整形外科): đau khớp, đau lưng",
+          "Nhi khoa (小児科): bệnh trẻ em",
+          "Phụ sản (産婦人科): sức khỏe phụ nữ",
+          "Nha khoa (歯科): vấn đề răng miệng",
+          "Nhãn khoa (眼科): vấn đề về mắt",
+          "Tai mũi họng (耳鼻科): tai, mũi, họng"
+        ],
+        "lines_ko": [
+          "내과(内科): 발열, 감기, 복통",
+          "외과(外科): 상처, 골절",
+          "정형외과(整形外科): 관절통, 요통",
+          "소아과(小児科): 소아 질환",
+          "산부인과(産婦人科): 여성 건강",
+          "치과(歯科): 치아 문제",
+          "안과(眼科): 눈 문제",
+          "이비인후과(耳鼻科): 귀, 코, 목"
+        ]
+      },
+      {
+        "title": "就诊流程：",
+        "title_zh": "就诊流程：",
+        "lines": [
+          "预约（网络或电话）→ 挂号（受付）→ 候诊室等待",
+          "→ 医生问诊 → 缴费 → 凭处方笺去附近药局取药"
+        ],
+        "lines_zh": [
+          "预约（网络或电话）→ 挂号（受付）→ 候诊室等待",
+          "→ 医生问诊 → 缴费 → 凭处方笺去附近药局取药"
+        ],
+        "title_en": "How to See a Doctor:",
+        "title_zh-TW": "就診流程：",
+        "title_vi": "Quy trình khám bệnh:",
+        "title_ko": "진료 절차:",
+        "lines_en": [
+          "Reception (受付) → Fill in medical form → Wait → See doctor → Pay → Get prescription → Pharmacy"
+        ],
+        "lines_zh-TW": [
+          "掛號（受付）→ 填寫問診表 → 等待 → 就診 → 付款 → 拿處方箋 → 藥局"
+        ],
+        "lines_vi": [
+          "Đăng ký (受付) → Điền phiếu khám → Chờ → Khám bệnh → Thanh toán → Nhận đơn thuốc → Nhà thuốc"
+        ],
+        "lines_ko": [
+          "접수(受付) → 문진표 작성 → 대기 → 진료 → 납부 → 처방전 수령 → 약국"
+        ]
+      },
+      {
+        "title": "需要准备：",
+        "title_zh": "需要准备：",
+        "lines": [
+          "健康保険証（医保卡）或マイナンバーカード",
+          "初诊需填写问诊表（問診票）",
+          "处方笺可在医院附近任意调剂药局使用"
+        ],
+        "lines_zh": [
+          "健康保険証（医保卡）或マイナンバーカード",
+          "初诊需填写问诊表（問診票）",
+          "处方笺可在医院附近任意调剂药局使用"
+        ],
+        "title_en": "What to Bring:",
+        "title_zh-TW": "需要準備：",
+        "title_vi": "Cần chuẩn bị:",
+        "title_ko": "준비물:",
+        "lines_en": [
+          "Health insurance card (保険証) — reduces cost to 30%",
+          "My Number card or residence card",
+          "Cash (some clinics are cash only)",
+          "List of current medications if any"
+        ],
+        "lines_zh-TW": [
+          "健康保險證（保険証）——費用降至30%",
+          "My Number卡或在留卡",
+          "現金（部分診所只收現金）",
+          "目前服用的藥物清單（如有）"
+        ],
+        "lines_vi": [
+          "Thẻ bảo hiểm y tế (保険証) — giảm chi phí xuống còn 30%",
+          "Thẻ My Number hoặc thẻ cư trú",
+          "Tiền mặt (một số phòng khám chỉ nhận tiền mặt)",
+          "Danh sách thuốc đang dùng nếu có"
+        ],
+        "lines_ko": [
+          "건강보험증(保険証) — 비용을 30%로 줄여줌",
+          "마이넘버카드 또는 재류카드",
+          "현금 (일부 클리닉은 현금만 가능)",
+          "현재 복용 중인 약 목록 (있는 경우)"
+        ]
+      }
+    ]
+  },
+  "s07": {
+    "id": "s07",
+    "title": "手続き",
+    "title_zh": "行政手续",
+    "info": [
+      {
+        "title": "常去的机构：",
+        "title_zh": "常去的机构：",
+        "lines": [
+          "<strong>市役所・区役所</strong>：住民票、健康保险、搬家登记等日常手续",
+          "<strong>入管局（出入国在留管理局）</strong>：在留资格更新、变更",
+          "<strong>警察署・運転免許センター</strong>：驾照换取、更新",
+          "<strong>年金事務所</strong>：国民年金相关手续"
+        ],
+        "lines_zh": [
+          "<strong>市役所・区役所</strong>：住民票、健康保险、搬家登记等日常手续",
+          "<strong>入管局（出入国在留管理局）</strong>：在留资格更新、变更",
+          "<strong>警察署・運転免許センター</strong>：驾照换取、更新",
+          "<strong>年金事務所</strong>：国民年金相关手续"
+        ],
+        "title_en": "Common Offices to Visit:",
+        "title_zh-TW": "常去的機構：",
+        "title_vi": "Các cơ quan thường đến:",
+        "title_ko": "자주 방문하는 기관:",
+        "lines_en": [
+          "City Hall (市区町村役所): address changes, resident register, health insurance, pension",
+          "Immigration Bureau (入管局): residence status, residence card",
+          "Pension Office (年金事務所): national pension procedures",
+          "Driver's License Center (運転免許センター): license renewal, conversion"
+        ],
+        "lines_zh-TW": [
+          "市區町村役所：住址變更、住民票、健保、年金",
+          "入管局：在留資格、在留卡",
+          "年金事務所：國民年金手續",
+          "運轉免許中心：駕照更新、換照"
+        ],
+        "lines_vi": [
+          "Tòa thị chính (市区町村役所): thay đổi địa chỉ, hồ sơ cư trú, bảo hiểm y tế, lương hưu",
+          "Cục Quản lý Xuất Nhập cảnh (入管局): tư cách cư trú, thẻ cư trú",
+          "Văn phòng Lương hưu (年金事務所): thủ tục hưu trí quốc dân",
+          "Trung tâm Bằng lái xe (運転免許センター): gia hạn, chuyển đổi bằng lái"
+        ],
+        "lines_ko": [
+          "시구청(市区町村役所): 주소 변경, 주민표, 건강보험, 연금",
+          "출입국관리국(入管局): 재류자격, 재류카드",
+          "연금사무소(年金事務所): 국민연금 수속",
+          "운전면허센터(運転免許センター): 면허 갱신, 전환"
+        ]
+      },
+      {
+        "title": "去役所前需要准备：",
+        "title_zh": "去役所前需要准备：",
+        "lines": [
+          "在留卡（ザイリュウカード）或マイナンバーカード",
+          "部分手续需要印章（はんこ），签名也可接受",
+          "不确定需要什么材料，可先电话确认"
+        ],
+        "lines_zh": [
+          "在留卡（ザイリュウカード）或マイナンバーカード",
+          "部分手续需要印章（はんこ），签名也可接受",
+          "不确定需要什么材料，可先电话确认"
+        ],
+        "title_en": "What to Bring to City Hall:",
+        "title_zh-TW": "去役所前需要準備：",
+        "title_vi": "Chuẩn bị trước khi đến tòa thị chính:",
+        "title_ko": "시청 방문 전 준비물:",
+        "lines_en": [
+          "Residence card (在留カード) or My Number card",
+          "Passport",
+          "Personal seal (印鑑) if available — signature also accepted in most cases",
+          "Cash for fees (some offices accept card)"
+        ],
+        "lines_zh-TW": [
+          "在留卡或My Number卡",
+          "護照",
+          "印章（如有）——大多數情況下簽名也可接受",
+          "備好費用現金（部分辦公室接受刷卡）"
+        ],
+        "lines_vi": [
+          "Thẻ cư trú (在留カード) hoặc thẻ My Number",
+          "Hộ chiếu",
+          "Con dấu cá nhân (印鑑) nếu có — chữ ký cũng được chấp nhận trong hầu hết các trường hợp",
+          "Tiền mặt cho phí (một số văn phòng chấp nhận thẻ)"
+        ],
+        "lines_ko": [
+          "재류카드 또는 마이넘버카드",
+          "여권",
+          "도장(印鑑) 있으면 지참 — 대부분의 경우 서명도 가능",
+          "수수료 현금 준비 (일부 기관은 카드 가능)"
+        ]
+      },
+      {
+        "title": "役所的流程：",
+        "title_zh": "役所的流程：",
+        "lines": [
+          "入口取号（番号札）→ 等待叫号 → 到窗口办理",
+          "填写申请书（申請書）→ 缴费 → 领取证明或等待邮寄"
+        ],
+        "lines_zh": [
+          "入口取号（番号札）→ 等待叫号 → 到窗口办理",
+          "填写申请书（申請書）→ 缴费 → 领取证明或等待邮寄"
+        ],
+        "title_en": "City Hall Procedures:",
+        "title_zh-TW": "役所的流程：",
+        "title_vi": "Quy trình tại tòa thị chính:",
+        "title_ko": "시청 절차:",
+        "lines_en": [
+          "Take a numbered ticket at the entrance machine",
+          "Wait until your number is called",
+          "Go to the designated counter",
+          "Fill in the form — staff will help if needed",
+          "Pay any fees and receive your documents"
+        ],
+        "lines_zh-TW": [
+          "在入口的機器上取號牌",
+          "等待叫號",
+          "前往指定窗口",
+          "填寫表格——如需要工作人員會協助",
+          "繳費並領取文件"
+        ],
+        "lines_vi": [
+          "Lấy số thứ tự tại máy ở lối vào",
+          "Chờ đến lượt được gọi",
+          "Đến quầy được chỉ định",
+          "Điền vào mẫu — nhân viên sẽ giúp nếu cần",
+          "Trả phí và nhận tài liệu"
+        ],
+        "lines_ko": [
+          "입구 기계에서 번호표 뽑기",
+          "번호가 불릴 때까지 대기",
+          "지정 창구로 이동",
+          "서류 작성 — 필요하면 직원이 도와줌",
+          "수수료 납부 후 서류 수령"
+        ]
+      },
+      {
+        "title": "在留资格手续（入管局）：",
+        "title_zh": "在留资格手续（入管局）：",
+        "lines": [
+          "更新或变更在留资格需提前申请，不能逾期",
+          "审查期间约1-3个月，期间可继续居住",
+          "审查通过后收到通知书，带手续费前往领取新在留卡"
+        ],
+        "lines_zh": [
+          "更新或变更在留资格需提前申请，不能逾期",
+          "审查期间约1-3个月，期间可继续居住",
+          "审查通过后收到通知书，带手续费前往领取新在留卡"
+        ],
+        "title_en": "Residence Status Procedures (Immigration Bureau):",
+        "title_zh-TW": "在留資格手續（入管局）：",
+        "title_vi": "Thủ tục tư cách cư trú (Cục Xuất Nhập cảnh):",
+        "title_ko": "재류자격 수속 (출입국관리국):",
+        "lines_en": [
+          "Renewal: apply up to 3 months before expiry",
+          "Status change: apply before current status expires",
+          "Permanent residency: generally requires 10 years of residence",
+          "Immigration Bureau hotline: 0570-013904 (weekdays 9:00-17:00)"
+        ],
+        "lines_zh-TW": [
+          "更新：到期前最多3個月申請",
+          "資格變更：在現有資格到期前申請",
+          "永住：一般需要居住10年",
+          "入管局熱線：0570-013904（平日9:00-17:00）"
+        ],
+        "lines_vi": [
+          "Gia hạn: nộp đơn trước khi hết hạn tối đa 3 tháng",
+          "Thay đổi tư cách: nộp đơn trước khi tư cách hiện tại hết hạn",
+          "Thường trú: thường yêu cầu 10 năm cư trú",
+          "Đường dây hỗ trợ Cục Xuất Nhập cảnh: 0570-013904 (các ngày trong tuần 9:00-17:00)"
+        ],
+        "lines_ko": [
+          "갱신: 만료 최대 3개월 전에 신청",
+          "자격 변경: 현재 자격 만료 전에 신청",
+          "영주권: 일반적으로 10년 거주 필요",
+          "출입국관리국 상담 전화: 0570-013904 (평일 9:00-17:00)"
+        ]
+      }
+    ]
+  },
+  "s08": {
+    "id": "s08",
+    "title": "お金",
+    "title_zh": "用钱",
+    "info": [
+      {
+        "title": "在日本开银行账户：",
+        "title_zh": "在日本开银行账户：",
+        "lines": [
+          "常用银行：<strong>ゆうちょ銀行</strong>（邮政银行）/ <strong>三菱UFJ</strong> / <strong>三井住友</strong> / <strong>みずほ</strong>",
+          "需要准备：在留卡、マイナンバーカード、手机号码",
+          "部分银行要求在日居住满6个月才可开户",
+          "ゆうちょ銀行门槛较低，适合刚到日本的人"
+        ],
+        "lines_zh": [
+          "常用银行：<strong>ゆうちょ銀行</strong>（邮政银行）/ <strong>三菱UFJ</strong> / <strong>三井住友</strong> / <strong>みずほ</strong>",
+          "需要准备：在留卡、マイナンバーカード、手机号码",
+          "部分银行要求在日居住满6个月才可开户",
+          "ゆうちょ銀行门槛较低，适合刚到日本的人"
+        ],
+        "title_en": "Opening a Bank Account in Japan:",
+        "title_zh-TW": "在日本開銀行帳戶：",
+        "title_vi": "Mở tài khoản ngân hàng ở Nhật Bản:",
+        "title_ko": "일본에서 은행 계좌 개설:",
+        "lines_en": [
+          "Required documents: residence card, passport, address in Japan",
+          "Some banks require residence of 6 months or more",
+          "Recommended banks for foreigners: Japan Post Bank (ゆうちょ), Sumitomo Mitsui, online banks",
+          "Takes about 1-2 weeks to receive your card and passbook"
+        ],
+        "lines_zh-TW": [
+          "所需文件：在留卡、護照、日本地址",
+          "部分銀行要求居住6個月以上",
+          "推薦外籍人士：郵政銀行（ゆうちょ）、三井住友、網路銀行",
+          "收到卡片和存折約需1-2週"
+        ],
+        "lines_vi": [
+          "Tài liệu cần thiết: thẻ cư trú, hộ chiếu, địa chỉ tại Nhật",
+          "Một số ngân hàng yêu cầu cư trú từ 6 tháng trở lên",
+          "Ngân hàng được đề xuất cho người nước ngoài: Japan Post Bank (ゆうちょ), Sumitomo Mitsui, ngân hàng trực tuyến",
+          "Mất khoảng 1-2 tuần để nhận thẻ và sổ tiết kiệm"
+        ],
+        "lines_ko": [
+          "필요 서류: 재류카드, 여권, 일본 내 주소",
+          "일부 은행은 6개월 이상 거주 필요",
+          "외국인 추천 은행: 우체국 은행(ゆうちょ), 스미토모미쓰이, 온라인 은행",
+          "카드와 통장 수령까지 약 1-2주 소요"
+        ]
+      },
+      {
+        "title": "ATM使用：",
+        "title_zh": "ATM使用：",
+        "lines": [
+          "便利店ATM（Seven Bank / ローソン / イオン）支持外国卡",
+          "可切换英文界面操作",
+          "深夜・节假日使用可能收取手续费（约110-220円）",
+          "海外发行的银行卡可在标有「国際カード対応」的ATM使用",
+          "跨行取款手续费：平日日间通常免费，其他时段约110円",
+          "国际汇款手续费：各银行不同，通常2,000-3,500円"
+        ],
+        "lines_zh": [
+          "便利店ATM（Seven Bank / ローソン / イオン）支持外国卡",
+          "可切换英文界面操作",
+          "深夜・节假日使用可能收取手续费（约110-220円）",
+          "海外发行的银行卡可在标有「国際カード対応」的ATM使用",
+          "跨行取款手续费：平日日间通常免费，其他时段约110円",
+          "国际汇款手续费：各银行不同，通常2,000-3,500円"
+        ],
+        "title_en": "Using ATMs:",
+        "title_zh-TW": "ATM使用：",
+        "title_vi": "Sử dụng ATM:",
+        "title_ko": "ATM 이용:",
+        "lines_en": [
+          "7-Eleven ATMs and Japan Post ATMs accept most international cards",
+          "Select English on the screen for easier operation",
+          "Fees apply for international card withdrawals (usually ¥110-220)",
+          "Daily withdrawal limit varies by card type"
+        ],
+        "lines_zh-TW": [
+          "7-Eleven ATM和郵政ATM接受大多數國際卡",
+          "在螢幕上選擇英語操作更方便",
+          "國際卡取款需收取手續費（通常110-220円）",
+          "每日取款限額因卡種而異"
+        ],
+        "lines_vi": [
+          "ATM 7-Eleven và ATM Japan Post chấp nhận hầu hết thẻ quốc tế",
+          "Chọn tiếng Anh trên màn hình để dễ thao tác hơn",
+          "Có phí rút tiền bằng thẻ quốc tế (thường ¥110-220)",
+          "Hạn mức rút tiền hàng ngày khác nhau tùy loại thẻ"
+        ],
+        "lines_ko": [
+          "세븐일레븐 ATM과 일본 우체국 ATM은 대부분의 국제 카드 사용 가능",
+          "화면에서 영어 선택하면 조작이 더 편리",
+          "국제 카드 출금 시 수수료 발생 (보통 ¥110-220)",
+          "1일 출금 한도는 카드 종류에 따라 다름"
+        ]
+      },
+      {
+        "title": "日本常用支付方式：",
+        "title_zh": "日本常用支付方式：",
+        "lines": [
+          "<strong>现金</strong>：日本仍广泛使用，建议随身携带",
+          "<strong>IC卡</strong>（Suica / ICOCA）：便利店、超市、交通通用",
+          "<strong>クレジットカード</strong>：大型店铺普遍接受",
+          "<strong>スマホ決済</strong>（PayPay / LINE Pay）：中小店铺覆盖率高"
+        ],
+        "lines_zh": [
+          "<strong>现金</strong>：日本仍广泛使用，建议随身携带",
+          "<strong>IC卡</strong>（Suica / ICOCA）：便利店、超市、交通通用",
+          "<strong>クレジットカード</strong>：大型店铺普遍接受",
+          "<strong>スマホ決済</strong>（PayPay / LINE Pay）：中小店铺覆盖率高"
+        ],
+        "title_en": "Common Payment Methods in Japan:",
+        "title_zh-TW": "日本常用支付方式：",
+        "title_vi": "Phương thức thanh toán phổ biến ở Nhật:",
+        "title_ko": "일본의 일반적인 결제 방법:",
+        "lines_en": [
+          "Cash: still widely used, especially at small restaurants and local shops",
+          "Credit card: Visa/Mastercard accepted at most major stores",
+          "IC card (Suica/ICOCA): for transport and small purchases",
+          "PayPay: most popular cashless app in Japan"
+        ],
+        "lines_zh-TW": [
+          "現金：仍廣泛使用，尤其是小餐館和地方商店",
+          "信用卡：大多數大型商店接受Visa/Mastercard",
+          "IC卡（Suica/ICOCA）：用於交通和小額消費",
+          "PayPay：日本最流行的無現金App"
+        ],
+        "lines_vi": [
+          "Tiền mặt: vẫn được sử dụng rộng rãi, đặc biệt ở nhà hàng nhỏ và cửa hàng địa phương",
+          "Thẻ tín dụng: Visa/Mastercard được chấp nhận ở hầu hết các cửa hàng lớn",
+          "Thẻ IC (Suica/ICOCA): cho giao thông và mua sắm nhỏ",
+          "PayPay: ứng dụng thanh toán không tiền mặt phổ biến nhất Nhật Bản"
+        ],
+        "lines_ko": [
+          "현금: 여전히 널리 사용됨, 특히 작은 식당과 지역 매장",
+          "신용카드: 대부분의 대형 매장에서 Visa/Mastercard 수락",
+          "IC카드 (Suica/ICOCA): 교통 및 소액 결제",
+          "PayPay: 일본에서 가장 인기 있는 비현금 앱"
+        ]
+      },
+      {
+        "title": "向中国汇款：",
+        "title_zh": "向中国汇款：",
+        "lines": [
+          "可通过银行国际汇款，需要对方账户的SWIFT代码",
+          "<strong>WeChat Pay</strong> / <strong>Alipay</strong>国际版也可转账",
+          "汇款金额较大时银行可能要求说明资金来源"
+        ],
+        "lines_zh": [
+          "可通过银行国际汇款，需要对方账户的SWIFT代码",
+          "<strong>WeChat Pay</strong> / <strong>Alipay</strong>国际版也可转账",
+          "汇款金额较大时银行可能要求说明资金来源"
+        ],
+        "title_en": "Sending Money to China:",
+        "title_zh-TW": "向中國匯款：",
+        "title_vi": "Gửi tiền về Trung Quốc:",
+        "title_ko": "중국으로 송금:",
+        "lines_en": [
+          "Bank transfer: available at most Japanese banks, takes 2-5 business days",
+          "Western Union / World Remit: online transfer services",
+          "WeChat Pay international transfer: convenient for China transfers",
+          "Fees and exchange rates vary — compare before sending"
+        ],
+        "lines_zh-TW": [
+          "銀行匯款：大多數日本銀行均提供，2-5個工作日到達",
+          "Western Union / World Remit：線上匯款服務",
+          "微信國際匯款：向中國匯款便利",
+          "費用和匯率各異——匯款前請比較"
+        ],
+        "lines_vi": [
+          "Chuyển khoản ngân hàng: có tại hầu hết các ngân hàng Nhật, mất 2-5 ngày làm việc",
+          "Western Union / World Remit: dịch vụ chuyển tiền trực tuyến",
+          "Chuyển tiền quốc tế WeChat Pay: tiện lợi cho chuyển tiền về Trung Quốc",
+          "Phí và tỷ giá khác nhau — hãy so sánh trước khi gửi"
+        ],
+        "lines_ko": [
+          "은행 송금: 대부분의 일본 은행에서 가능, 2-5 영업일 소요",
+          "Western Union / World Remit: 온라인 송금 서비스",
+          "위챗 페이 국제 송금: 중국 송금에 편리",
+          "수수료와 환율이 다름 — 보내기 전에 비교하세요"
+        ]
+      }
+    ]
+  },
+  "s09": {
+    "id": "s09",
+    "title": "住まい",
+    "title_zh": "住房",
+    "info": [
+      {
+        "title": "租房流程：",
+        "title_zh": "租房流程：",
+        "lines": [
+          "中介看房 → 申请（申込）→ 审查（约1周）→ 签约 → 缴费 → 入住"
+        ],
+        "lines_zh": [
+          "中介看房 → 申请（申込）→ 审查（约1周）→ 签约 → 缴费 → 入住"
+        ],
+        "title_en": "Renting an Apartment in Japan:",
+        "title_zh-TW": "租房流程：",
+        "title_vi": "Quy trình thuê nhà:",
+        "title_ko": "임대 절차:",
+        "lines_en": [
+          "Search → View property → Apply → Screening (審査) → Sign contract → Pay initial fees → Move in",
+          "Screening for foreign nationals may require a guarantor company (保証会社)",
+          "Typical contract term: 2 years (auto-renewal with renewal fee)"
+        ],
+        "lines_zh-TW": [
+          "找房 → 看房 → 申請 → 審查（審査）→ 簽約 → 繳初期費用 → 入住",
+          "外籍人士審查可能需要擔保公司（保証会社）",
+          "典型合約期限：2年（自動續約，需支付續約費）"
+        ],
+        "lines_vi": [
+          "Tìm nhà → Xem nhà → Đăng ký → Thẩm định (審査) → Ký hợp đồng → Trả phí ban đầu → Dọn vào",
+          "Thẩm định cho người nước ngoài có thể cần công ty bảo lãnh (保証会社)",
+          "Thời hạn hợp đồng thông thường: 2 năm (tự động gia hạn với phí gia hạn)"
+        ],
+        "lines_ko": [
+          "집 찾기 → 집 보기 → 신청 → 심사(審査) → 계약 → 초기 비용 납부 → 입주",
+          "외국인 심사에는 보증 회사(保証会社)가 필요할 수 있음",
+          "일반적인 계약 기간: 2년 (갱신료 있는 자동 갱신)"
+        ]
+      },
+      {
+        "title": "初期费用（入住时一次性缴纳）：",
+        "title_zh": "初期费用（入住时一次性缴纳）：",
+        "lines_zh": [],
+        "table": [
+          [
+            "费用项目",
+            "金额",
+            "是否退还"
+          ],
+          [
+            "<strong>敷金</strong>（押金）",
+            "1-2个月房租",
+            "退房后部分退还"
+          ],
+          [
+            "<strong>礼金</strong>",
+            "1-2个月房租",
+            "不退还"
+          ],
+          [
+            "<strong>仲介手数料</strong>",
+            "1个月房租",
+            "不退还"
+          ],
+          [
+            "<strong>火災保険</strong>",
+            "约1-2万円/年",
+            "不退还"
+          ]
+        ],
+        "title_en": "Initial Costs (One-time Payment on Move-in):",
+        "title_zh-TW": "初期費用（入住時一次性繳納）：",
+        "title_vi": "Chi phí ban đầu (Thanh toán một lần khi dọn vào):",
+        "title_ko": "초기 비용 (입주 시 일시 납부):",
+        "lines_en": [
+          "Security deposit (敷金): 1-2 months' rent, returned on move-out (minus deductions)",
+          "Key money (礼金): 0-2 months' rent, not returned (custom gift to landlord)",
+          "Agency fee (仲介手数料): usually 1 month's rent",
+          "Fire insurance (火災保険): required, about ¥15,000-20,000 per 2 years",
+          "Guarantor company fee (保証会社): about 0.5-1 month's rent"
+        ],
+        "lines_zh-TW": [
+          "押金（敷金）：1-2個月房租，退房時退還（扣除損耗）",
+          "禮金（礼金）：0-2個月房租，不退還（給房東的禮金）",
+          "仲介費（仲介手数料）：通常1個月房租",
+          "火災保險（火災保険）：必須投保，約15,000-20,000円/2年",
+          "擔保公司費（保証会社）：約0.5-1個月房租"
+        ],
+        "lines_vi": [
+          "Tiền đặt cọc (敷金): 1-2 tháng tiền thuê, hoàn lại khi dọn đi (trừ khấu trừ)",
+          "Tiền lễ (礼金): 0-2 tháng tiền thuê, không hoàn lại (phong tục tặng chủ nhà)",
+          "Phí môi giới (仲介手数料): thường 1 tháng tiền thuê",
+          "Bảo hiểm hỏa hoạn (火災保険): bắt buộc, khoảng ¥15.000-20.000/2 năm",
+          "Phí công ty bảo lãnh (保証会社): khoảng 0,5-1 tháng tiền thuê"
+        ],
+        "lines_ko": [
+          "보증금(敷金): 월세 1-2개월, 퇴실 시 반환 (공제 후)",
+          "사례금(礼金): 월세 0-2개월, 반환 없음 (집주인에 대한 관행)",
+          "중개 수수료(仲介手数料): 보통 월세 1개월",
+          "화재보험(火災保険): 필수, 약 ¥15,000-20,000/2년",
+          "보증회사 수수료(保証会社): 약 월세 0.5-1개월"
+        ]
+      },
+      {
+        "title": "租房注意事项：",
+        "title_zh": "租房注意事项：",
+        "lines": [
+          "外国人租房可能需要<strong>保证会社</strong>（担保公司）审查",
+          "合同通常以2年为单位，续签需缴纳更新料",
+          "退房需提前1-2个月通知，具体看合同规定",
+          "搬入时拍照记录房间原状，避免退房时纠纷"
+        ],
+        "lines_zh": [
+          "外国人租房可能需要<strong>保证会社</strong>（担保公司）审查",
+          "合同通常以2年为单位，续签需缴纳更新料",
+          "退房需提前1-2个月通知，具体看合同规定",
+          "搬入时拍照记录房间原状，避免退房时纠纷"
+        ],
+        "title_en": "Things to Note When Renting:",
+        "title_zh-TW": "租房注意事項：",
+        "title_vi": "Lưu ý khi thuê nhà:",
+        "title_ko": "임대 시 주의사항:",
+        "lines_en": [
+          "Read the contract carefully — especially restoration to original condition (原状回復) clauses",
+          "Pets, musical instruments, and subletting usually require special permission",
+          "Report repairs to the landlord or management company promptly",
+          "Garbage rules vary by area — confirm with your landlord"
+        ],
+        "lines_zh-TW": [
+          "仔細閱讀合約——特別是原狀回復條款",
+          "寵物、樂器、轉租通常需要特別許可",
+          "維修問題請及時向房東或管理公司報告",
+          "垃圾規定因地區而異——請向房東確認"
+        ],
+        "lines_vi": [
+          "Đọc kỹ hợp đồng — đặc biệt là điều khoản khôi phục hiện trạng (原状回復)",
+          "Thú cưng, nhạc cụ và cho thuê lại thường cần giấy phép đặc biệt",
+          "Báo cáo các vấn đề sửa chữa cho chủ nhà hoặc công ty quản lý kịp thời",
+          "Quy định rác thải khác nhau theo khu vực — xác nhận với chủ nhà"
+        ],
+        "lines_ko": [
+          "계약서를 꼼꼼히 읽을 것 — 특히 원상 복구(原状回復) 조항",
+          "반려동물, 악기, 전대는 보통 특별 허가 필요",
+          "수리 문제는 집주인이나 관리 회사에 즉시 보고",
+          "쓰레기 규정은 지역마다 다름 — 집주인에게 확인"
+        ]
+      },
+      {
+        "title": "入住后需要办理：",
+        "title_zh": "入住后需要办理：",
+        "lines": [
+          "搬入14天内去<strong>市役所・区役所</strong>办理转入登记（転入届）",
+          "确认垃圾分类规则和收取日期",
+          "了解紧急联系方式（管理会社・大家）"
+        ],
+        "lines_zh": [
+          "搬入14天内去<strong>市役所・区役所</strong>办理转入登记（転入届）",
+          "确认垃圾分类规则和收取日期",
+          "了解紧急联系方式（管理会社・大家）"
+        ],
+        "title_en": "What to Do After Moving In:",
+        "title_zh-TW": "入住後需要辦理：",
+        "title_vi": "Việc cần làm sau khi dọn vào:",
+        "title_ko": "입주 후 해야 할 일:",
+        "lines_en": [
+          "Register your new address at city hall within 14 days",
+          "Update your residence card address",
+          "Set up electricity, gas, and water contracts",
+          "Notify your bank, workplace, and insurance of your new address"
+        ],
+        "lines_zh-TW": [
+          "14天內到市役所辦理新地址登記",
+          "更新在留卡上的地址",
+          "辦理電、煤氣、水道合約",
+          "通知銀行、單位、保險公司新地址"
+        ],
+        "lines_vi": [
+          "Đăng ký địa chỉ mới tại tòa thị chính trong vòng 14 ngày",
+          "Cập nhật địa chỉ trên thẻ cư trú",
+          "Ký hợp đồng điện, gas và nước",
+          "Thông báo địa chỉ mới cho ngân hàng, nơi làm việc và bảo hiểm"
+        ],
+        "lines_ko": [
+          "14일 이내에 시청에서 새 주소 등록",
+          "재류카드의 주소 업데이트",
+          "전기, 가스, 수도 계약 체결",
+          "은행, 직장, 보험사에 새 주소 통보"
+        ]
+      }
+    ]
+  },
+  "s10": {
+    "id": "s10",
+    "title": "子供・学校",
+    "title_zh": "孩子・学校",
+    "info": [
+      {
+        "title": "日本学校体系：",
+        "title_zh": "日本学校体系：",
+        "lines": [
+          "<strong>保育園</strong>：0-5岁，父母工作期间托管，需向市役所申请",
+          "<strong>幼稚園</strong>：3-5岁，教育为主，通常半天",
+          "<strong>小学校</strong>：6-11岁，6年，义务教育",
+          "<strong>中学校</strong>：12-14岁，3年，义务教育",
+          "<strong>高校</strong>：15-17岁，3年，需参加入学考试"
+        ],
+        "lines_zh": [
+          "<strong>保育園</strong>：0-5岁，父母工作期间托管，需向市役所申请",
+          "<strong>幼稚園</strong>：3-5岁，教育为主，通常半天",
+          "<strong>小学校</strong>：6-11岁，6年，义务教育",
+          "<strong>中学校</strong>：12-14岁，3年，义务教育",
+          "<strong>高校</strong>：15-17岁，3年，需参加入学考试"
+        ],
+        "title_en": "Japan's School System:",
+        "title_zh-TW": "日本學校體系：",
+        "title_vi": "Hệ thống trường học Nhật Bản:",
+        "title_ko": "일본의 학교 체계:",
+        "lines_en": [
+          "Nursery (保育園): ages 0-5, for working parents",
+          "Kindergarten (幼稚園): ages 3-5, education-focused",
+          "Elementary school (小学校): ages 6-12, 6 years",
+          "Junior high (中学校): ages 12-15, 3 years (compulsory)",
+          "High school (高校): ages 15-18, 3 years"
+        ],
+        "lines_zh-TW": [
+          "保育園：0-5歲，適合雙職工家庭",
+          "幼稚園：3-5歲，以教育為主",
+          "小學（小学校）：6-12歲，6年",
+          "初中（中学校）：12-15歲，3年（義務教育）",
+          "高中（高校）：15-18歲，3年"
+        ],
+        "lines_vi": [
+          "Nhà trẻ (保育園): 0-5 tuổi, dành cho phụ huynh đi làm",
+          "Mẫu giáo (幼稚園): 3-5 tuổi, tập trung giáo dục",
+          "Tiểu học (小学校): 6-12 tuổi, 6 năm",
+          "THCS (中学校): 12-15 tuổi, 3 năm (bắt buộc)",
+          "THPT (高校): 15-18 tuổi, 3 năm"
+        ],
+        "lines_ko": [
+          "보육원(保育園): 0-5세, 맞벌이 부모용",
+          "유치원(幼稚園): 3-5세, 교육 중심",
+          "초등학교(小学校): 6-12세, 6년",
+          "중학교(中学校): 12-15세, 3년 (의무교육)",
+          "고등학교(高校): 15-18세, 3년"
+        ]
+      },
+      {
+        "title": "入学手续：",
+        "title_zh": "入学手续：",
+        "lines": [
+          "住民票登记后，市役所会自动发送入学通知（就学通知書）",
+          "转学时需先取得原学校的転学通知書，再向新学校办理",
+          "外国籍儿童同样享有义务教育权利，免费入学"
+        ],
+        "lines_zh": [
+          "住民票登记后，市役所会自动发送入学通知（就学通知書）",
+          "转学时需先取得原学校的転学通知書，再向新学校办理",
+          "外国籍儿童同样享有义务教育权利，免费入学"
+        ],
+        "title_en": "Enrollment Procedures:",
+        "title_zh-TW": "入學手續：",
+        "title_vi": "Thủ tục nhập học:",
+        "title_ko": "입학 수속:",
+        "lines_en": [
+          "Public elementary/junior high: register at city hall, school assignment is automatic",
+          "Nursery/kindergarten: apply at city hall or directly to the school",
+          "Required documents: residence card, resident register (住民票), and vaccination records",
+          "Japanese language support varies by school — ask in advance"
+        ],
+        "lines_zh-TW": [
+          "公立小學・初中：在市役所登記，自動分配學校",
+          "保育園・幼稚園：在市役所或直接向學校申請",
+          "所需文件：在留卡、住民票、疫苗接種記錄",
+          "日語支援因學校而異——提前詢問"
+        ],
+        "lines_vi": [
+          "Tiểu học/THCS công lập: đăng ký tại tòa thị chính, trường được phân công tự động",
+          "Nhà trẻ/mẫu giáo: đăng ký tại tòa thị chính hoặc trực tiếp tại trường",
+          "Tài liệu cần thiết: thẻ cư trú, hồ sơ cư trú (住民票), hồ sơ tiêm chủng",
+          "Hỗ trợ tiếng Nhật khác nhau theo trường — hỏi trước"
+        ],
+        "lines_ko": [
+          "공립 초등학교/중학교: 시청에서 등록, 학교 배정은 자동",
+          "보육원/유치원: 시청 또는 학교에 직접 신청",
+          "필요 서류: 재류카드, 주민표, 예방접종 기록",
+          "일본어 지원은 학교마다 다름 — 사전에 문의"
+        ]
+      },
+      {
+        "title": "日常联络方式：",
+        "title_zh": "日常联络方式：",
+        "lines": [
+          "联络簿（<strong>連絡帳</strong>）：每日书面联络，记录出勤和健康状况",
+          "学校App（C4th等）：部分学校使用，可线上请假和接收通知",
+          "缺席必须在上学前联系学校，不能事后补报"
+        ],
+        "lines_zh": [
+          "联络簿（<strong>連絡帳</strong>）：每日书面联络，记录出勤和健康状况",
+          "学校App（C4th等）：部分学校使用，可线上请假和接收通知",
+          "缺席必须在上学前联系学校，不能事后补报"
+        ],
+        "title_en": "Daily Communication with School:",
+        "title_zh-TW": "日常聯絡方式：",
+        "title_vi": "Cách liên lạc hàng ngày với trường:",
+        "title_ko": "일상적인 학교 연락 방법:",
+        "lines_en": [
+          "Absence: call the school before morning or use the school app if available",
+          "Late arrival/early pickup: notify the school in advance",
+          "Notices sent home (プリント): read carefully, sign and return when required",
+          "Teacher contact: through the school office, or at drop-off/pickup time"
+        ],
+        "lines_zh-TW": [
+          "請假：早上前致電學校，或使用學校App（如有）",
+          "遲到・早退：提前通知學校",
+          "發回家的通知單（プリント）：仔細閱讀，需要時簽名後交還",
+          "聯繫老師：通過學校辦公室，或在送迎時間"
+        ],
+        "lines_vi": [
+          "Xin nghỉ: gọi điện cho trường trước buổi sáng hoặc dùng ứng dụng trường nếu có",
+          "Đến muộn/về sớm: thông báo trước cho trường",
+          "Thông báo gửi về nhà (プリント): đọc kỹ, ký và trả lại khi cần",
+          "Liên hệ giáo viên: qua văn phòng trường, hoặc khi đưa đón"
+        ],
+        "lines_ko": [
+          "결석: 아침 전에 학교에 전화, 또는 학교 앱 이용 (있는 경우)",
+          "지각/조기 하원: 학교에 미리 통보",
+          "가정통신문(プリント): 꼼꼼히 읽고, 필요 시 서명 후 반환",
+          "교사 연락: 학교 사무실을 통해, 또는 등하원 시간에"
+        ]
+      },
+      {
+        "title": "午餐与费用：",
+        "title_zh": "午餐与费用：",
+        "lines": [
+          "公立小学・中学提供<strong>給食</strong>（营养午餐），每月缴费约4,000-5,000円",
+          "有过敏的孩子需提前和学校书面说明",
+          "保育園费用根据家庭收入而定，部分情况可免费"
+        ],
+        "lines_zh": [
+          "公立小学・中学提供<strong>給食</strong>（营养午餐），每月缴费约4,000-5,000円",
+          "有过敏的孩子需提前和学校书面说明",
+          "保育園费用根据家庭收入而定，部分情况可免费"
+        ],
+        "title_en": "School Lunch & Costs:",
+        "title_zh-TW": "午餐與費用：",
+        "title_vi": "Bữa trưa & Chi phí:",
+        "title_ko": "점심 & 비용:",
+        "lines_en": [
+          "School lunch (給食): served at most public elementary and junior high schools",
+          "Monthly lunch fee: around ¥4,000-5,000",
+          "Allergy concerns must be reported to the school in advance",
+          "Some nurseries/kindergartens require packed lunches on certain days"
+        ],
+        "lines_zh-TW": [
+          "學校午餐（給食）：大多數公立小學和初中提供",
+          "每月午餐費：約4,000-5,000円",
+          "過敏問題必須提前向學校報告",
+          "部分保育園・幼稚園某些日子需要帶便當"
+        ],
+        "lines_vi": [
+          "Bữa trưa tại trường (給食): được phục vụ tại hầu hết các trường tiểu học và THCS công lập",
+          "Phí bữa trưa hàng tháng: khoảng ¥4.000-5.000",
+          "Vấn đề dị ứng phải được báo cáo cho trường trước",
+          "Một số nhà trẻ/mẫu giáo yêu cầu mang cơm hộp vào một số ngày"
+        ],
+        "lines_ko": [
+          "학교 급식(給食): 대부분의 공립 초등학교와 중학교에서 제공",
+          "월 급식비: 약 ¥4,000-5,000",
+          "알레르기 문제는 사전에 학교에 보고 필수",
+          "일부 보육원/유치원은 특정 날에 도시락 필요"
+        ]
+      },
+      {
+        "title": "费用与无偿化政策：",
+        "title_zh": "费用与无偿化政策：",
+        "lines": [
+          "<strong>3-5岁幼儿园・保育园：保育费完全免费</strong>（国家政策，所有家庭适用）",
+          "0-2岁保育园：住民税非课税世帯免费，其他家庭按收入缴费",
+          "小学校・中学校：义务教育，学费免费，給食费每月约4,000-5,000円",
+          "通园交通费、活动费、副食费等不在免费范围内",
+          "第2子半额、第3子以上免费（保育园・幼稚园）"
+        ],
+        "lines_zh": [
+          "<strong>3-5岁幼儿园・保育园：保育费完全免费</strong>（国家政策，所有家庭适用）",
+          "0-2岁保育园：住民税非课税世帯免费，其他家庭按收入缴费",
+          "小学校・中学校：义务教育，学费免费，給食费每月约4,000-5,000円",
+          "通园交通费、活动费、副食费等不在免费范围内",
+          "第2子半额、第3子以上免费（保育园・幼稚园）"
+        ],
+        "title_en": "Fees & Free Education Policy:",
+        "title_zh-TW": "費用與無償化政策：",
+        "title_vi": "Học phí & Chính sách giáo dục miễn phí:",
+        "title_ko": "비용 & 무상 교육 정책:",
+        "lines_en": [
+          "Public elementary and junior high: tuition free (compulsory education)",
+          "Nursery/kindergarten (幼児教育無償化): children aged 3-5 are eligible for free education",
+          "Some fees still apply: school supplies, excursions, extracurricular activities",
+          "Income-based subsidies available — inquire at city hall"
+        ],
+        "lines_zh-TW": [
+          "公立小學・初中：免學費（義務教育）",
+          "保育園・幼稚園（幼兒教育無償化）：3-5歲可享免費教育",
+          "仍有部分費用：學習用品、郊遊、課外活動",
+          "按收入補貼——在市役所詢問"
+        ],
+        "lines_vi": [
+          "Tiểu học và THCS công lập: miễn học phí (giáo dục bắt buộc)",
+          "Nhà trẻ/mẫu giáo (幼児教育無償化): trẻ 3-5 tuổi được miễn phí giáo dục",
+          "Vẫn có một số phí: đồ dùng học tập, dã ngoại, hoạt động ngoại khóa",
+          "Có trợ cấp theo thu nhập — hỏi tại tòa thị chính"
+        ],
+        "lines_ko": [
+          "공립 초등학교/중학교: 수업료 무료 (의무교육)",
+          "보육원/유치원 (幼児教育無償化): 3-5세 무상 교육 가능",
+          "일부 비용 여전히 있음: 학용품, 소풍, 과외 활동",
+          "소득 기반 보조금 이용 가능 — 시청에서 문의"
+        ]
+      }
+    ]
+  },
+  "s11": {
+    "id": "s11",
+    "title": "仕事",
+    "title_zh": "工作",
+    "info": [
+      {
+        "title": "打工前必须确认：",
+        "title_zh": "打工前必须确认：",
+        "lines": [
+          "持「留学」「就学」「家族滞在」签证者，打工前须申请<strong>资格外活动许可</strong>",
+          "许可证记载在在留卡背面，未取得许可直接打工属违法",
+          "违规后果：罚款、拘留、强制遣返，并影响签证续签"
+        ],
+        "lines_zh": [
+          "持「留学」「就学」「家族滞在」签证者，打工前须申请<strong>资格外活动许可</strong>",
+          "许可证记载在在留卡背面，未取得许可直接打工属违法",
+          "违规后果：罚款、拘留、强制遣返，并影响签证续签"
+        ],
+        "title_en": "Must-Check Before Working:",
+        "title_zh-TW": "打工前必須確認：",
+        "title_vi": "Phải kiểm tra trước khi làm việc:",
+        "title_ko": "일하기 전 반드시 확인:",
+        "lines_en": [
+          "Check if your visa allows you to work and how many hours per week",
+          "Students: max 28 hours/week (unlimited during long holidays)",
+          "Obtain a work permit if required (資格外活動許可)",
+          "Working without permission is illegal and can affect your visa status"
+        ],
+        "lines_zh-TW": [
+          "確認您的簽證是否允許工作及每週可工作多少小時",
+          "留學生：每週最多28小時（長假期間不限）",
+          "如需要，取得工作許可（資格外活動許可）",
+          "未獲許可工作屬違法，可能影響您的簽證狀態"
+        ],
+        "lines_vi": [
+          "Kiểm tra visa của bạn có cho phép làm việc và làm bao nhiêu giờ/tuần",
+          "Sinh viên: tối đa 28 giờ/tuần (không giới hạn trong kỳ nghỉ dài)",
+          "Xin giấy phép làm việc nếu cần (資格外活動許可)",
+          "Làm việc không phép là bất hợp pháp và có thể ảnh hưởng tư cách visa"
+        ],
+        "lines_ko": [
+          "비자가 취업을 허용하는지, 주당 몇 시간 일할 수 있는지 확인",
+          "유학생: 주 28시간 이내 (방학 중 제한 없음)",
+          "필요한 경우 취업 허가 취득 (資格外活動許可)",
+          "허가 없이 일하는 것은 불법이며 비자 상태에 영향을 줄 수 있음"
+        ]
+      },
+      {
+        "title": "各签证打工限制对比：",
+        "title_zh": "各签证打工限制对比：",
+        "lines_zh": [],
+        "table": [
+          [
+            "签证类型",
+            "每周工时",
+            "行业限制"
+          ],
+          [
+            "<strong>留学・就学</strong>",
+            "28小时（长假可放宽）",
+            "严禁风俗业"
+          ],
+          [
+            "<strong>家族滞在</strong>",
+            "严格28小时（长假也不变）",
+            "严禁风俗业"
+          ],
+          [
+            "<strong>永住者</strong>",
+            "无限制",
+            "任何合法行业"
+          ],
+          [
+            "<strong>日本人配偶等</strong>",
+            "无限制",
+            "任何合法行业"
+          ],
+          [
+            "<strong>定住者</strong>",
+            "无限制",
+            "任何合法行业"
+          ]
+        ],
+        "title_en": "Work Restrictions by Visa Type:",
+        "title_zh-TW": "各簽證打工限制對比：",
+        "title_vi": "Hạn chế làm việc theo loại visa:",
+        "title_ko": "비자 종류별 취업 제한:",
+        "lines_en": [
+          "Student visa: 28 hours/week, unlimited during summer/winter break",
+          "Dependent visa: 28 hours/week with work permit",
+          "Specified Skilled Worker (特定技能): full-time work allowed in designated fields",
+          "Permanent resident / spouse of Japanese: no restrictions"
+        ],
+        "lines_zh-TW": [
+          "留學簽證：每週28小時，暑假冬假期間不限",
+          "家族滯在：持工作許可每週28小時",
+          "特定技能：可在指定領域全職工作",
+          "永住者・日本人配偶：無限制"
+        ],
+        "lines_vi": [
+          "Visa du học: 28 giờ/tuần, không giới hạn trong kỳ nghỉ hè/đông",
+          "Visa gia đình (phụ thuộc): 28 giờ/tuần với giấy phép làm việc",
+          "Kỹ năng đặc định (特定技能): được làm toàn thời gian trong lĩnh vực được chỉ định",
+          "Thường trú / vợ/chồng người Nhật: không hạn chế"
+        ],
+        "lines_ko": [
+          "유학 비자: 주 28시간, 여름/겨울 방학 중 제한 없음",
+          "가족체류: 취업 허가 있으면 주 28시간",
+          "특정기능: 지정 분야에서 풀타임 취업 가능",
+          "영주자 / 일본인 배우자: 제한 없음"
+        ]
+      },
+      {
+        "title": "绝对禁止的行业：",
+        "title_zh": "绝对禁止的行业：",
+        "lines": [
+          "任何签证均不可在风俗营业相关场所工作",
+          "包括：陪酒吧、夜总会、柏青哥店、成人相关场所等",
+          "即使是洗碗、清洁等后台岗位也不允许"
+        ],
+        "lines_zh": [
+          "任何签证均不可在风俗营业相关场所工作",
+          "包括：陪酒吧、夜总会、柏青哥店、成人相关场所等",
+          "即使是洗碗、清洁等后台岗位也不允许"
+        ],
+        "title_en": "Absolutely Prohibited Industries:",
+        "title_zh-TW": "絕對禁止的行業：",
+        "title_vi": "Ngành nghề tuyệt đối bị cấm:",
+        "title_ko": "절대 금지 업종:",
+        "lines_en": [
+          "Adult entertainment industry",
+          "Gambling-related businesses",
+          "Any work that violates your visa conditions",
+          "Violation can result in deportation and a ban on re-entry"
+        ],
+        "lines_zh-TW": [
+          "成人娛樂業",
+          "賭博相關行業",
+          "任何違反簽證條件的工作",
+          "違規可能導致強制遣返並禁止再入境"
+        ],
+        "lines_vi": [
+          "Ngành giải trí người lớn",
+          "Các doanh nghiệp liên quan đến cờ bạc",
+          "Bất kỳ công việc nào vi phạm điều kiện visa",
+          "Vi phạm có thể dẫn đến trục xuất và cấm tái nhập cảnh"
+        ],
+        "lines_ko": [
+          "성인 오락 업종",
+          "도박 관련 사업",
+          "비자 조건을 위반하는 모든 일",
+          "위반 시 강제 퇴거 및 재입국 금지 처분 가능"
+        ]
+      },
+      {
+        "title": "收入与税务：",
+        "title_zh": "收入与税务：",
+        "lines": [
+          "年收入超过<strong>103万円</strong>须缴纳所得税",
+          "家族滞在者年收超103万円，可能影响主扶养人的扶养津贴",
+          "超过<strong>130万円</strong>须自行加入社会保险",
+          "入职需提交マイナンバー，用于税务申报"
+        ],
+        "lines_zh": [
+          "年收入超过<strong>103万円</strong>须缴纳所得税",
+          "家族滞在者年收超103万円，可能影响主扶养人的扶养津贴",
+          "超过<strong>130万円</strong>须自行加入社会保险",
+          "入职需提交マイナンバー，用于税务申报"
+        ],
+        "title_en": "Income & Tax:",
+        "title_zh-TW": "收入與稅務：",
+        "title_vi": "Thu nhập & Thuế:",
+        "title_ko": "수입 & 세금:",
+        "lines_en": [
+          "Income tax (所得税) and residence tax (住民税) are deducted from wages",
+          "Annual income under ¥1,030,000 is generally exempt from income tax",
+          "File a tax return (確定申告) if you have multiple jobs or have left employment",
+          "Tax office (税務署) or online at the National Tax Agency website"
+        ],
+        "lines_zh-TW": [
+          "所得稅（所得税）和居民稅（住民税）從工資中扣除",
+          "年收入低於1,030,000円一般免徵所得稅",
+          "有多份工作或離職時需要申報確定申告",
+          "稅務署辦理或在國稅廳網站線上申報"
+        ],
+        "lines_vi": [
+          "Thuế thu nhập (所得税) và thuế cư trú (住民税) được khấu trừ từ lương",
+          "Thu nhập hàng năm dưới ¥1.030.000 thường được miễn thuế thu nhập",
+          "Nộp tờ khai thuế (確定申告) nếu có nhiều việc làm hoặc đã nghỉ việc",
+          "Nộp tại cơ quan thuế (税務署) hoặc trực tuyến tại website Cục thuế quốc gia"
+        ],
+        "lines_ko": [
+          "소득세(所得税)와 주민세(住民税)는 급여에서 공제",
+          "연간 수입 ¥1,030,000 미만은 일반적으로 소득세 면제",
+          "복수 직장이 있거나 퇴직한 경우 확정신고 필요",
+          "세무서에서 처리하거나 국세청 홈페이지에서 온라인 신고"
+        ]
+      },
+      {
+        "title": "职场文化：",
+        "title_zh": "职场文化：",
+        "lines": [
+          "准时非常重要，迟到须提前联系",
+          "请假需尽早通知，并主动寻找替代人选",
+          "离职通常需提前1个月通知"
+        ],
+        "lines_zh": [
+          "准时非常重要，迟到须提前联系",
+          "请假需尽早通知，并主动寻找替代人选",
+          "离职通常需提前1个月通知"
+        ],
+        "title_en": "Workplace Culture:",
+        "title_zh-TW": "職場文化：",
+        "title_vi": "Văn hóa nơi làm việc:",
+        "title_ko": "직장 문화:",
+        "lines_en": [
+          "Punctuality is very important — arrive a few minutes early",
+          "Greet colleagues with 「おはようございます」in the morning",
+          "When leaving: 「お先に失礼します」, colleagues respond 「お疲れ様でした」",
+          "Report, contact, consult (報告・連絡・相談 = ホウレンソウ) — keep your supervisor informed"
+        ],
+        "lines_zh-TW": [
+          "準時非常重要——提前幾分鐘到達",
+          "早上用「おはようございます」向同事打招呼",
+          "離開時說「お先に失礼します」，同事回應「お疲れ様でした」",
+          "報告・聯絡・相談（ホウレンソウ）——讓上司隨時了解情況"
+        ],
+        "lines_vi": [
+          "Đúng giờ rất quan trọng — đến trước vài phút",
+          "Chào đồng nghiệp bằng 「おはようございます」vào buổi sáng",
+          "Khi về: 「お先に失礼します」, đồng nghiệp trả lời 「お疲れ様でした」",
+          "Báo cáo, liên lạc, tham khảo ý kiến (報告・連絡・相談 = ホウレンソウ) — giữ cho cấp trên luôn được thông báo"
+        ],
+        "lines_ko": [
+          "시간 준수가 매우 중요 — 몇 분 일찍 도착",
+          "아침에 동료에게 「おはようございます」로 인사",
+          "퇴근 시: 「お先に失礼します」, 동료 응답: 「お疲れ様でした」",
+          "보고·연락·상담 (報告・連絡・相談 = ホウレンソウ) — 상사에게 항상 상황 보고"
+        ]
+      }
+    ]
+  },
+  "s14": {
+    "id": "s14",
+    "title": "在留手続き",
+    "title_zh": "在留手续・入管",
+    "info": [
+      {
+        "title": "在留资格的种类",
+        "title_zh": "在留资格的种类",
+        "title_en": "Types of Residence Status",
+        "title_zh-TW": "在留資格的種類",
+        "title_vi": "Các loại tư cách cư trú",
+        "title_ko": "재류자격의 종류",
+        "lines": [
+          "在留资格决定了你在日本能做什么、能待多久。",
+          "常见类型：技术・人文知识・国际业务、特定技能、留学、家族滞在、永住者等。",
+          "不同资格的更新时间和条件不同，务必确认自己的资格类型。"
+        ],
+        "lines_zh": [
+          "在留资格决定了你在日本能做什么、能待多久。",
+          "常见类型：技术・人文知识・国际业务、特定技能、留学、家族滞在、永住者等。",
+          "不同资格的更新时间和条件不同，务必确认自己的资格类型。"
+        ],
+        "lines_en": [
+          "Your residence status determines what you can do in Japan and how long you can stay.",
+          "Common types: Engineer/Specialist, Specified Skilled Worker, Student, Dependent, Permanent Resident.",
+          "Renewal conditions vary by status — always confirm your own category."
+        ],
+        "lines_zh-TW": [
+          "在留資格決定了你在日本能做什麼、能待多久。",
+          "常見類型：技術・人文知識・國際業務、特定技能、留學、家族滯在、永住者等。",
+          "不同資格的更新時間和條件不同，務必確認自己的資格類型。"
+        ],
+        "lines_vi": [
+          "Tư cách cư trú quyết định bạn có thể làm gì và ở lại bao lâu tại Nhật Bản.",
+          "Các loại phổ biến: Kỹ thuật/Nhân văn/Kinh doanh quốc tế, Kỹ năng đặc định, Du học, Người thân, Thường trú.",
+          "Điều kiện gia hạn khác nhau tùy loại tư cách — hãy luôn xác nhận loại tư cách của bạn."
+        ],
+        "lines_ko": [
+          "재류자격은 일본에서 무엇을 할 수 있고 얼마나 머물 수 있는지를 결정합니다.",
+          "주요 종류: 기술·인문지식·국제업무, 특정기능, 유학, 가족체류, 영주자 등.",
+          "자격마다 갱신 시기와 조건이 다르므로 반드시 본인의 자격 종류를 확인하세요."
+        ]
+      },
+      {
+        "title": "在留期限更新",
+        "title_zh": "在留期限更新",
+        "title_en": "Renewing Your Residence Period",
+        "title_zh-TW": "在留期限更新",
+        "title_vi": "Gia hạn thời gian cư trú",
+        "title_ko": "재류기간 갱신",
+        "lines": [
+          "更新申请最早可在期限到期前3个月开始办理。",
+          "建议至少提前2个月去入管局申请，避免审查期间超期。",
+          "申请受理中即使过了期限也可合法居留，但要妥善保管申请收据。"
+        ],
+        "lines_zh": [
+          "更新申请最早可在期限到期前3个月开始办理。",
+          "建议至少提前2个月去入管局申请，避免审查期间超期。",
+          "申请受理中即使过了期限也可合法居留，但要妥善保管申请收据。"
+        ],
+        "lines_en": [
+          "You can apply for renewal up to 3 months before your status expires.",
+          "Apply at least 2 months early to avoid your status expiring during the review period.",
+          "If your status expires during review, you may legally stay — keep your application receipt safe."
+        ],
+        "lines_zh-TW": [
+          "更新申請最早可在期限到期前3個月開始辦理。",
+          "建議至少提前2個月去入管局申請，避免審查期間超期。",
+          "申請受理中即使過了期限也可合法居留，但要妥善保管申請收據。"
+        ],
+        "lines_vi": [
+          "Bạn có thể nộp đơn gia hạn sớm nhất 3 tháng trước khi hết hạn.",
+          "Nên nộp đơn trước ít nhất 2 tháng để tránh hết hạn trong thời gian xem xét.",
+          "Nếu hết hạn trong khi đang xem xét, bạn vẫn được ở lại hợp pháp — hãy giữ biên nhận đơn."
+        ],
+        "lines_ko": [
+          "갱신 신청은 기간 만료 최대 3개월 전부터 가능합니다.",
+          "심사 중 만료를 피하기 위해 최소 2개월 전에 신청하는 것을 권장합니다.",
+          "심사 중 기간이 만료되어도 합법적으로 체류할 수 있습니다 — 신청 영수증을 잘 보관하세요."
+        ]
+      },
+      {
+        "title": "在留期限过期的后果",
+        "title_zh": "在留期限过期的后果",
+        "title_en": "Consequences of Overstaying",
+        "title_zh-TW": "在留期限過期的後果",
+        "title_vi": "Hậu quả của việc cư trú quá hạn",
+        "title_ko": "재류기간 초과의 결과",
+        "lines": [
+          "超过在留期限即为「不法残留」，可面临强制遣返和5年内禁止入境。",
+          "如果发现快过期，立即前往入管局说明情况，主动申报可能从轻处理。",
+          "入管局咨询热线：0570-013904（平日9:00-17:00）"
+        ],
+        "lines_zh": [
+          "超过在留期限即为「不法残留」，可面临强制遣返和5年内禁止入境。",
+          "如果发现快过期，立即前往入管局说明情况，主动申报可能从轻处理。",
+          "入管局咨询热线：0570-013904（平日9:00-17:00）"
+        ],
+        "lines_en": [
+          "Overstaying your visa is illegal and can result in deportation and a 5-year re-entry ban.",
+          "If your status is about to expire, go to the immigration office immediately — voluntary disclosure may reduce penalties.",
+          "Immigration consultation hotline: 0570-013904 (weekdays 9:00–17:00)"
+        ],
+        "lines_zh-TW": [
+          "超過在留期限即為「不法殘留」，可面臨強制遣返和5年內禁止入境。",
+          "如果發現快過期，立即前往入管局說明情況，主動申報可能從輕處理。",
+          "入管局諮詢熱線：0570-013904（平日9:00-17:00）"
+        ],
+        "lines_vi": [
+          "Cư trú quá hạn là bất hợp pháp và có thể bị trục xuất và cấm nhập cảnh 5 năm.",
+          "Nếu sắp hết hạn, hãy đến cục xuất nhập cảnh ngay — tự nguyện khai báo có thể được xử lý nhẹ hơn.",
+          "Đường dây tư vấn xuất nhập cảnh: 0570-013904 (các ngày trong tuần 9:00–17:00)"
+        ],
+        "lines_ko": [
+          "재류기간 초과는 불법체류로 강제퇴거 및 5년간 입국 금지 처분을 받을 수 있습니다.",
+          "기간이 곧 만료된다면 즉시 출입국관리국에 가서 상황을 설명하세요 — 자진 신고 시 처분이 가벼워질 수 있습니다.",
+          "출입국관리국 상담 전화: 0570-013904 (평일 9:00–17:00)"
+        ]
+      },
+      {
+        "title": "办理地点",
+        "title_zh": "办理地点",
+        "title_en": "Where to Apply",
+        "title_zh-TW": "辦理地點",
+        "title_vi": "Nơi làm thủ tục",
+        "title_ko": "신청 장소",
+        "lines": [
+          "出入国在留管理局（入管局）：各都道府县均设有办事处。",
+          "大阪入管：大阪市住之江区南港北1-29-53",
+          "东京入管：東京都江東区新木場1-1-1",
+          "营业时间：平日9:00-16:00，午休12:00-13:00，周末及节假日休息。"
+        ],
+        "lines_zh": [
+          "出入国在留管理局（入管局）：各都道府县均设有办事处。",
+          "大阪入管：大阪市住之江区南港北1-29-53",
+          "东京入管：東京都江東区新木場1-1-1",
+          "营业时间：平日9:00-16:00，午休12:00-13:00，周末及节假日休息。"
+        ],
+        "lines_en": [
+          "Immigration Bureau (Nyukan): Offices in every prefecture.",
+          "Osaka: 1-29-53 Nankokita, Suminoe-ku, Osaka",
+          "Tokyo: 1-1-1 Shinkiba, Koto-ku, Tokyo",
+          "Hours: Weekdays 9:00–16:00 (closed 12:00–13:00), closed weekends and holidays."
+        ],
+        "lines_zh-TW": [
+          "出入國在留管理局（入管局）：各都道府縣均設有辦事處。",
+          "大阪入管：大阪市住之江區南港北1-29-53",
+          "東京入管：東京都江東區新木場1-1-1",
+          "營業時間：平日9:00-16:00，午休12:00-13:00，週末及節假日休息。"
+        ],
+        "lines_vi": [
+          "Cục Quản lý Xuất Nhập cảnh (Nyukan): Có văn phòng tại mỗi tỉnh thành.",
+          "Osaka: 1-29-53 Nankokita, Suminoe-ku, Osaka",
+          "Tokyo: 1-1-1 Shinkiba, Koto-ku, Tokyo",
+          "Giờ làm việc: Các ngày trong tuần 9:00–16:00 (nghỉ trưa 12:00–13:00), nghỉ cuối tuần và ngày lễ."
+        ],
+        "lines_ko": [
+          "출입국재류관리국(입관국): 각 도도부현에 사무소가 있습니다.",
+          "오사카 입관: 오사카시 스미노에구 난코기타 1-29-53",
+          "도쿄 입관: 도쿄도 고토구 신키바 1-1-1",
+          "운영 시간: 평일 9:00–16:00 (점심 12:00–13:00), 주말 및 공휴일 휴무."
+        ]
+      }
+    ]
+  },
+  "s15": {
+    "id": "s15",
+    "title": "緊急",
+    "title_zh": "紧急情况",
+    "info": [
+      {
+        "title": "紧急电话：",
+        "title_zh": "紧急电话：",
+        "lines": [
+          "<strong>110</strong>：警察，遇到犯罪、事故、可疑人物时拨打",
+          "<strong>119</strong>：救护车・消防，身体紧急状况或火灾时拨打",
+          "两个号码均免费，可24小时拨打",
+          "日语不好时说「英語（中国語）をお願いします」，会转接翻译"
+        ],
+        "lines_zh": [
+          "<strong>110</strong>：警察，遇到犯罪、事故、可疑人物时拨打",
+          "<strong>119</strong>：救护车・消防，身体紧急状况或火灾时拨打",
+          "两个号码均免费，可24小时拨打",
+          "日语不好时说「英語（中国語）をお願いします」，会转接翻译"
+        ],
+        "title_en": "Emergency Numbers:",
+        "title_zh-TW": "緊急電話：",
+        "title_vi": "Số điện thoại khẩn cấp:",
+        "title_ko": "긴급 전화:",
+        "lines_en": [
+          "110: Police",
+          "119: Ambulance & Fire",
+          "#7119: Emergency consultation (unsure if ambulance needed)",
+          "#8000: Children's emergency line (late-night pediatric issues)"
+        ],
+        "lines_zh-TW": [
+          "110：警察",
+          "119：救護車・消防",
+          "#7119：救急安心センター，不確定是否需要救護車時撥打",
+          "#8000：小兒救急電話，兒童深夜突發狀況時撥打"
+        ],
+        "lines_vi": [
+          "110: Cảnh sát",
+          "119: Xe cấp cứu & Cứu hỏa",
+          "#7119: Tư vấn cấp cứu (không chắc có cần xe cấp cứu không)",
+          "#8000: Đường dây cấp cứu trẻ em (vấn đề nhi khoa ban đêm)"
+        ],
+        "lines_ko": [
+          "110: 경찰",
+          "119: 구급차 & 소방",
+          "#7119: 구급 안심 센터 (구급차가 필요한지 불확실할 때)",
+          "#8000: 소아 응급 전화 (야간 소아 긴급 상황)"
+        ]
+      },
+      {
+        "title": "交番（派出所）：",
+        "title_zh": "交番（派出所）：",
+        "lines": [
+          "遍布全国各地，通常在车站附近",
+          "丢失物品、迷路、遇到麻烦都可以进去寻求帮助",
+          "找到的遗失物品会送到交番，失物可前往询问",
+          "外国人也可以去，态度通常友善"
+        ],
+        "lines_zh": [
+          "遍布全国各地，通常在车站附近",
+          "丢失物品、迷路、遇到麻烦都可以进去寻求帮助",
+          "找到的遗失物品会送到交番，失物可前往询问",
+          "外国人也可以去，态度通常友善"
+        ],
+        "title_en": "Koban (Police Box):",
+        "title_zh-TW": "交番（派出所）：",
+        "title_vi": "Koban (Đồn cảnh sát nhỏ):",
+        "title_ko": "교번(파출소):",
+        "lines_en": [
+          "Small police stations found throughout Japan, open 24 hours",
+          "Can help with: lost items, directions, reporting incidents",
+          "Staff may not speak English — show them written information if needed"
+        ],
+        "lines_zh-TW": [
+          "遍佈日本各地的小型警察局，24小時開放",
+          "可協助：失物、問路、報案",
+          "工作人員可能不會英語——如需要可出示書面資訊"
+        ],
+        "lines_vi": [
+          "Đồn cảnh sát nhỏ khắp Nhật Bản, mở cửa 24 giờ",
+          "Có thể giúp: đồ vật mất, chỉ đường, báo cáo sự cố",
+          "Nhân viên có thể không nói tiếng Anh — hãy cho họ xem thông tin bằng văn bản nếu cần"
+        ],
+        "lines_ko": [
+          "일본 전역에 있는 소규모 경찰서, 24시간 운영",
+          "도움 가능: 분실물, 길 안내, 사건 신고",
+          "직원이 영어를 못할 수 있음 — 필요시 문서로 된 정보 제시"
+        ]
+      },
+      {
+        "title": "物品丢失：",
+        "title_zh": "物品丢失：",
+        "lines": [
+          "丢失护照：立即联系中国大使馆或领事馆补办",
+          "丢失信用卡：立即致电卡片背面客服挂失",
+          "丢失在留卡：14天内前往入管局申请补发",
+          "日本失物招领率极高，丢失物品有很大概率被找回"
+        ],
+        "lines_zh": [
+          "丢失护照：立即联系中国大使馆或领事馆补办",
+          "丢失信用卡：立即致电卡片背面客服挂失",
+          "丢失在留卡：14天内前往入管局申请补发",
+          "日本失物招领率极高，丢失物品有很大概率被找回"
+        ],
+        "title_en": "Lost Items:",
+        "title_zh-TW": "物品遺失：",
+        "title_vi": "Đồ vật bị mất:",
+        "title_ko": "물건 분실:",
+        "lines_en": [
+          "Report to the nearest Koban or lost and found (落とし物センター)",
+          "Train/subway lost items: contact the station office",
+          "Taxi lost items: contact the taxi company directly",
+          "Japan has a high item recovery rate — report immediately"
+        ],
+        "lines_zh-TW": [
+          "向最近的交番或失物招領中心（落とし物センター）報告",
+          "電車・地鐵失物：聯繫車站服務台",
+          "計程車失物：直接聯繫計程車公司",
+          "日本失物尋回率高——請立即申報"
+        ],
+        "lines_vi": [
+          "Báo cáo tại koban gần nhất hoặc trung tâm đồ vật thất lạc (落とし物センター)",
+          "Đồ vật mất trên tàu điện/tàu điện ngầm: liên hệ văn phòng ga",
+          "Đồ vật mất trên taxi: liên hệ trực tiếp với công ty taxi",
+          "Nhật Bản có tỷ lệ tìm lại đồ cao — hãy báo cáo ngay"
+        ],
+        "lines_ko": [
+          "가까운 교번이나 분실물 센터(落とし物センター)에 신고",
+          "전철/지하철 분실물: 역 사무실에 연락",
+          "택시 분실물: 택시 회사에 직접 연락",
+          "일본은 분실물 회수율이 높음 — 즉시 신고하세요"
+        ]
+      },
+      {
+        "title": "灾害应对：",
+        "title_zh": "灾害应对：",
+        "lines": [
+          "地震时：躲到桌下保护头部，不要慌乱跑出室外",
+          "海啸警报时：立即向高处撤离",
+          "避难场所（避難所）通常在学校或公园，事先确认附近位置",
+          "建议下载「Yahoo!防災速報」接收灾害预警通知"
+        ],
+        "lines_zh": [
+          "地震时：躲到桌下保护头部，不要慌乱跑出室外",
+          "海啸警报时：立即向高处撤离",
+          "避难场所（避難所）通常在学校或公园，事先确认附近位置",
+          "建议下载「Yahoo!防災速報」接收灾害预警通知"
+        ],
+        "title_en": "Disaster Response:",
+        "title_zh-TW": "災害應對：",
+        "title_vi": "Ứng phó thảm họa:",
+        "title_ko": "재난 대응:",
+        "lines_en": [
+          "Earthquake: Drop, Cover, Hold On — don't run outside immediately",
+          "Tsunami warning: move to high ground immediately",
+          "Evacuation shelters (避難所): follow local government announcements",
+          "NHK World and disaster alert apps provide multilingual information"
+        ],
+        "lines_zh-TW": [
+          "地震：趴下、掩護、抓緊——不要立即跑出去",
+          "海嘯警報：立即前往高地",
+          "避難所（避難所）：遵循地方政府廣播",
+          "NHK World及災害警報App提供多語言資訊"
+        ],
+        "lines_vi": [
+          "Động đất: Nằm xuống, Che chắn, Bám chặt — đừng chạy ra ngoài ngay",
+          "Cảnh báo sóng thần: di chuyển đến nơi cao ngay lập tức",
+          "Nơi trú ẩn sơ tán (避難所): làm theo thông báo của chính quyền địa phương",
+          "NHK World và các ứng dụng cảnh báo thảm họa cung cấp thông tin đa ngôn ngữ"
+        ],
+        "lines_ko": [
+          "지진: 엎드리기, 가리기, 잡기 — 즉시 밖으로 뛰어나가지 말 것",
+          "쓰나미 경보: 즉시 높은 곳으로 이동",
+          "대피소(避難所): 지방 정부 방송에 따름",
+          "NHK World 및 재난 경보 앱에서 다국어 정보 제공"
+        ]
+      }
+    ]
+  },
+  "s16": {
+    "id": "s16",
+    "title": "テレフォン日本語",
+    "title_zh": "电话日语",
+    "info": [
+      {
+        "title": "电话礼仪因场合而异：",
+        "title_zh": "电话礼仪因场合而异：",
+        "lines": [
+          "<strong>商务・正式场合</strong>：接听说「はい、○○です」，结束说「失礼いたします」",
+          "<strong>私人・朋友</strong>：接听说「もしもし」即可，随意自然",
+          "<strong>陌生来电・机构电话</strong>：接听说「はい、○○です」报姓名",
+          "打给机构或店铺，开口先说「お忙しいところ恐れ入ります」表示礼貌"
+        ],
+        "lines_zh": [
+          "<strong>商务・正式场合</strong>：接听说「はい、○○です」，结束说「失礼いたします」",
+          "<strong>私人・朋友</strong>：接听说「もしもし」即可，随意自然",
+          "<strong>陌生来电・机构电话</strong>：接听说「はい、○○です」报姓名",
+          "打给机构或店铺，开口先说「お忙しいところ恐れ入ります」表示礼貌"
+        ],
+        "title_en": "Phone Etiquette by Situation:",
+        "title_zh-TW": "電話禮儀因場合而異：",
+        "title_vi": "Phép lịch sự qua điện thoại tùy theo tình huống:",
+        "title_ko": "상황별 전화 예절:",
+        "lines_en": [
+          "Personal call: 「もしもし」to answer, 「じゃあ、またね」to hang up",
+          "Business call: 「はい、○○でございます」to answer, 「失礼いたします」to hang up",
+          "Don't hang up first when receiving a business call — wait for the other party"
+        ],
+        "lines_zh-TW": [
+          "私人通話：接電話用「もしもし」，掛電話用「じゃあ、またね」",
+          "商務通話：接電話用「はい、○○でございます」，掛電話用「失礼いたします」",
+          "接到商務電話時不要先掛電話——等對方先掛"
+        ],
+        "lines_vi": [
+          "Cuộc gọi cá nhân: 「もしもし」để trả lời, 「じゃあ、またね」để kết thúc",
+          "Cuộc gọi công việc: 「はい、○○でございます」để trả lời, 「失礼いたします」để kết thúc",
+          "Khi nhận cuộc gọi công việc, đừng cúp máy trước — chờ đối phương cúp trước"
+        ],
+        "lines_ko": [
+          "개인 통화: 「もしもし」로 받기, 「じゃあ、またね」로 끊기",
+          "비즈니스 통화: 「はい、○○でございます」로 받기, 「失礼いたします」로 끊기",
+          "비즈니스 전화를 받을 때는 먼저 끊지 말 것 — 상대방이 먼저 끊을 때까지 기다리기"
+        ]
+      },
+      {
+        "title": "自动语音应对：",
+        "title_zh": "自动语音应对：",
+        "lines": [
+          "日本很多机构电话接通后是自动语音菜单",
+          "听到「○番を押してください」按对应数字键选择",
+          "想转接真人说「担当者につないでください」",
+          "或直接按「0」，很多系统0键可转接人工"
+        ],
+        "lines_zh": [
+          "日本很多机构电话接通后是自动语音菜单",
+          "听到「○番を押してください」按对应数字键选择",
+          "想转接真人说「担当者につないでください」",
+          "或直接按「0」，很多系统0键可转接人工"
+        ],
+        "title_en": "Automated Voice Systems:",
+        "title_zh-TW": "自動語音應對：",
+        "title_vi": "Hệ thống giọng nói tự động:",
+        "title_ko": "자동 음성 안내 대응:",
+        "lines_en": [
+          "Press 1 for Japanese, Press 2 for English (if available)",
+          "Listen carefully to the options before pressing",
+          "Press 0 or say 「オペレーター」to connect to a human operator",
+          "If you miss the options, stay on the line — the menu usually repeats"
+        ],
+        "lines_zh-TW": [
+          "按1選日語，按2選英語（如有）",
+          "按鍵前仔細聆聽選項",
+          "按0或說「オペレーター」轉接人工客服",
+          "錯過選項時保持在線——菜單通常會重播"
+        ],
+        "lines_vi": [
+          "Nhấn 1 cho tiếng Nhật, nhấn 2 cho tiếng Anh (nếu có)",
+          "Nghe kỹ các tùy chọn trước khi nhấn",
+          "Nhấn 0 hoặc nói 「オペレーター」để kết nối với nhân viên",
+          "Nếu bỏ lỡ các tùy chọn, hãy giữ đường dây — menu thường được lặp lại"
+        ],
+        "lines_ko": [
+          "1번 일본어, 2번 영어 (있는 경우)",
+          "누르기 전에 옵션을 주의 깊게 들을 것",
+          "0번을 누르거나 「オペレーター」라고 말하면 상담원 연결",
+          "옵션을 놓쳤을 때는 전화를 끊지 말 것 — 메뉴가 보통 반복됨"
+        ]
+      },
+      {
+        "title": "听不懂时的应对：",
+        "title_zh": "听不懂时的应对：",
+        "lines": [
+          "说「日本語があまり話せません」告知对方",
+          "请对方说慢一点「ゆっくり話していただけますか」",
+          "听不清时说「電波が悪くて聞こえにくいんですが」",
+          "重要内容请对方发LINE或邮件「LINEで送ってもらえますか」"
+        ],
+        "lines_zh": [
+          "说「日本語があまり話せません」告知对方",
+          "请对方说慢一点「ゆっくり話していただけますか」",
+          "听不清时说「電波が悪くて聞こえにくいんですが」",
+          "重要内容请对方发LINE或邮件「LINEで送ってもらえますか」"
+        ],
+        "title_en": "When You Can't Understand:",
+        "title_zh-TW": "聽不懂時的應對：",
+        "title_vi": "Khi không hiểu:",
+        "title_ko": "못 알아들을 때:",
+        "lines_en": [
+          "Say 「日本語があまり話せません」to notify the other party",
+          "Ask them to speak slowly: 「ゆっくり話していただけますか」",
+          "If the line is bad: 「電波が悪くて聞こえにくいんですが」",
+          "For important info, ask them to send via LINE or email: 「LINEで送ってもらえますか」"
+        ],
+        "lines_zh-TW": [
+          "說「日本語があまり話せません」告知對方",
+          "請對方說慢一點「ゆっくり話していただけますか」",
+          "聽不清時說「電波が悪くて聞こえにくいんですが」",
+          "重要內容請對方發LINE或郵件「LINEで送ってもらえますか」"
+        ],
+        "lines_vi": [
+          "Nói 「日本語があまり話せません」để thông báo cho đối phương",
+          "Yêu cầu nói chậm hơn: 「ゆっくり話していただけますか」",
+          "Khi đường truyền kém: 「電波が悪くて聞こえにくいんですが」",
+          "Với thông tin quan trọng, yêu cầu gửi qua LINE hoặc email: 「LINEで送ってもらえますか」"
+        ],
+        "lines_ko": [
+          "「日本語があまり話せません」라고 말해 상대방에게 알리기",
+          "천천히 말해달라고 요청: 「ゆっくり話していただけますか」",
+          "전화가 잘 안 들릴 때: 「電波が悪くて聞こえにくいんですが」",
+          "중요한 내용은 LINE이나 이메일로 보내달라고 요청: 「LINEで送ってもらえますか」"
+        ]
+      },
+      {
+        "title": "紧急联系：",
+        "title_zh": "紧急联系：",
+        "lines": [
+          "<strong>110</strong>：警察",
+          "<strong>119</strong>：救护车・消防",
+          "<strong>#7119</strong>：救急安心センター，不确定是否需要救护车时拨打",
+          "<strong>#8000</strong>：小児救急電話，儿童深夜突发状况时拨打"
+        ],
+        "lines_zh": [
+          "<strong>110</strong>：警察",
+          "<strong>119</strong>：救护车・消防",
+          "<strong>#7119</strong>：救急安心センター，不确定是否需要救护车时拨打",
+          "<strong>#8000</strong>：小児救急電話，儿童深夜突发状况时拨打"
+        ],
+        "title_en": "Emergency Contacts:",
+        "title_zh-TW": "緊急聯繫：",
+        "title_vi": "Liên hệ khẩn cấp:",
+        "title_ko": "긴급 연락처:",
+        "lines_en": [
+          "110: Police",
+          "119: Ambulance & Fire",
+          "#7119: Emergency consultation center",
+          "#8000: Children's emergency line"
+        ],
+        "lines_zh-TW": [
+          "110：警察",
+          "119：救護車・消防",
+          "#7119：救急安心センター",
+          "#8000：小兒救急電話"
+        ],
+        "lines_vi": [
+          "110: Cảnh sát",
+          "119: Xe cấp cứu & Cứu hỏa",
+          "#7119: Trung tâm tư vấn cấp cứu",
+          "#8000: Đường dây cấp cứu trẻ em"
+        ],
+        "lines_ko": [
+          "110: 경찰",
+          "119: 구급차 & 소방",
+          "#7119: 구급 안심 센터",
+          "#8000: 소아 응급 전화"
+        ]
+      }
+    ]
+  },
+  "s18": {
+    "id": "s18",
+    "title": "荷物を送る",
+    "title_zh": "寄快递・邮寄",
+    "info": [
+      {
+        "title": "在日本寄东西，有三个渠道：",
+        "title_zh": "在日本寄东西，有三个渠道：",
+        "lines": [
+          "便利店：最方便，随时可去，店员帮你办理",
+          "邮局：价格较低，适合重物或正式文件",
+          "上门取件：电话预约，快递员来取，适合大件"
+        ],
+        "lines_zh": [
+          "便利店：最方便，随时可去，店员帮你办理",
+          "邮局：价格较低，适合重物或正式文件",
+          "上门取件：电话预约，快递员来取，适合大件"
+        ],
+        "title_en": "Three Ways to Send Packages in Japan:",
+        "title_zh-TW": "在日本寄東西，有三個渠道：",
+        "title_vi": "Ba cách gửi đồ ở Nhật Bản:",
+        "title_ko": "일본에서 물건을 보내는 세 가지 방법:",
+        "lines_en": [
+          "Convenience store: most convenient, open anytime, staff helps you",
+          "Post office: lower prices, good for heavy items or official documents",
+          "Home pickup: call to schedule, courier comes to you, good for large items"
+        ],
+        "lines_zh-TW": [
+          "便利店：最方便，隨時可去，店員幫你辦理",
+          "郵局：價格較低，適合重物或正式文件",
+          "上門取件：電話預約，快遞員來取，適合大件"
+        ],
+        "lines_vi": [
+          "Cửa hàng tiện lợi: tiện nhất, mở cửa mọi lúc, nhân viên giúp bạn",
+          "Bưu điện: giá thấp hơn, tốt cho đồ nặng hoặc tài liệu chính thức",
+          "Lấy hàng tận nhà: gọi đặt lịch, người giao đến nhà, tốt cho đồ lớn"
+        ],
+        "lines_ko": [
+          "편의점: 가장 편리, 언제든지 갈 수 있음, 직원이 도와줌",
+          "우체국: 가격 저렴, 무거운 물건이나 공식 서류에 적합",
+          "방문 수거: 전화로 예약, 택배 기사가 방문, 대형 물건에 적합"
+        ]
+      },
+      {
+        "title": "三家主要物流公司：",
+        "title_zh": "三家主要物流公司：",
+        "lines": [
+          "ヤマト運輸（黒猫）/ 佐川急便 / 日本郵政（ゆうパック）",
+          "便利店对应的物流公司因店而异，无法自行选择"
+        ],
+        "lines_zh": [
+          "ヤマト運輸（黒猫）/ 佐川急便 / 日本郵政（ゆうパック）",
+          "便利店对应的物流公司因店而异，无法自行选择"
+        ],
+        "title_en": "Three Major Delivery Companies:",
+        "title_zh-TW": "三家主要物流公司：",
+        "title_vi": "Ba công ty giao hàng lớn:",
+        "title_ko": "3대 물류 회사:",
+        "lines_en": [
+          "Yamato Transport (ヤマト運輸 / Black Cat) / Sagawa Express / Japan Post (Yu-Pack)",
+          "The delivery company at convenience stores varies by store — you cannot choose freely"
+        ],
+        "lines_zh-TW": [
+          "ヤマト運輸（黑貓）/ 佐川急便 / 日本郵政（ゆうパック）",
+          "便利店對應的物流公司因店而異，無法自行選擇"
+        ],
+        "lines_vi": [
+          "Yamato Transport (ヤマト運輸 / Mèo đen) / Sagawa Express / Japan Post (Yu-Pack)",
+          "Công ty giao hàng tại cửa hàng tiện lợi khác nhau tùy cửa hàng — không thể tự chọn"
+        ],
+        "lines_ko": [
+          "야마토 운수(ヤマト運輸 / 검은 고양이) / 사가와 급편 / 일본 우정(유팩)",
+          "편의점의 물류 회사는 매장마다 다르며 자유롭게 선택할 수 없음"
+        ]
+      },
+      {
+        "title": "运费支付方式：",
+        "title_zh": "运费支付方式：",
+        "lines": [
+          "元払い：寄件人付款",
+          "着払い：收件人付款（需对方事先同意）"
+        ],
+        "lines_zh": [
+          "元払い：寄件人付款",
+          "着払い：收件人付款（需对方事先同意）"
+        ],
+        "title_en": "Shipping Payment Methods:",
+        "title_zh-TW": "運費支付方式：",
+        "title_vi": "Phương thức thanh toán phí vận chuyển:",
+        "title_ko": "운임 결제 방법:",
+        "lines_en": [
+          "元払い (Motobharai): sender pays",
+          "着払い (Chakubarai): recipient pays (recipient must agree in advance)"
+        ],
+        "lines_zh-TW": [
+          "元払い：寄件人付款",
+          "着払い：收件人付款（需對方事先同意）"
+        ],
+        "lines_vi": [
+          "元払い: người gửi trả phí",
+          "着払い: người nhận trả phí (người nhận phải đồng ý trước)"
+        ],
+        "lines_ko": [
+          "元払い: 발송인 결제",
+          "着払い: 수취인 결제 (수취인이 사전에 동의해야 함)"
+        ]
+      },
+      {
+        "title": "寄件前需要准备：",
+        "title_zh": "寄件前需要准备：",
+        "lines": [
+          "收件人的姓名・地址・电话号码",
+          "包裹的重量和尺寸决定价格",
+          "易碎物品需要告知",
+          "保留控え（存根）用于追踪查询"
+        ],
+        "lines_zh": [
+          "收件人的姓名・地址・电话号码",
+          "包裹的重量和尺寸决定价格",
+          "易碎物品需要告知",
+          "保留控え（存根）用于追踪查询"
+        ],
+        "title_en": "What to Prepare Before Sending:",
+        "title_zh-TW": "寄件前需要準備：",
+        "title_vi": "Chuẩn bị trước khi gửi:",
+        "title_ko": "발송 전 준비사항:",
+        "lines_en": [
+          "Recipient's name, address, and phone number",
+          "Package weight and size determine the price",
+          "Notify staff of fragile items",
+          "Keep your receipt (控え) for tracking and inquiries"
+        ],
+        "lines_zh-TW": [
+          "收件人的姓名・地址・電話號碼",
+          "包裹的重量和尺寸決定價格",
+          "易碎物品需要告知",
+          "保留控え（存根）用於追蹤查詢"
+        ],
+        "lines_vi": [
+          "Tên, địa chỉ và số điện thoại người nhận",
+          "Trọng lượng và kích thước gói hàng quyết định giá",
+          "Thông báo cho nhân viên về đồ dễ vỡ",
+          "Giữ biên nhận (控え) để theo dõi và hỏi thêm"
+        ],
+        "lines_ko": [
+          "수취인의 이름, 주소, 전화번호",
+          "패키지 무게와 크기가 가격을 결정",
+          "깨지기 쉬운 물건은 직원에게 알릴 것",
+          "영수증(控え) 보관 — 추적 및 문의에 사용"
+        ]
+      }
+    ]
+  }
+}
