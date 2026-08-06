@@ -84,6 +84,34 @@
 .rescue-scene-count {
   font-size: 9px; color: rgba(255,255,255,.6); margin-top: 2px;
 }
+.rescue-landing-groups {
+  padding: 8px 14px 20px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.rescue-landing-group {
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  border: .5px solid var(--line);
+  padding: 14px 12px 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.rescue-landing-group-title {
+  font-size: 15px; font-weight: 700;
+  color: var(--t1); margin-bottom: 10px;
+  padding-left: 2px; letter-spacing: -.2px;
+}
+.rescue-landing-group .rescue-landing-grid {
+  padding: 0; gap: 7px;
+}
+.rescue-landing-group .rescue-landing-btn {
+  padding: 10px 10px; min-height: 54px;
+}
+.rescue-landing-group .rescue-landing-btn-title {
+  font-size: 13px;
+}
+.rescue-landing-group .rescue-landing-btn-ja {
+  font-size: 11px;
+}
 
 /* ── 场景Landing页 ── */
 .rescue-scene-landing { animation: fadeIn .2s ease-out; }
@@ -91,8 +119,19 @@
   padding: 14px 16px 20px;
   display: flex; flex-direction: column; gap: 6px;
   border-radius: 0 0 var(--r-xl) var(--r-xl);
-  background: linear-gradient(135deg, #1A1A2E 0%, #2C2C44 100%);
+  background-color: #1A1A2E;
   background-size: cover; background-position: center;
+  position: relative;
+}
+.rescue-landing-hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 0 0 var(--r-xl) var(--r-xl);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.65) 100%);
+  pointer-events: none;
+}
+.rescue-landing-hero > * {
+  position: relative; z-index: 1;
 }
 .rescue-landing-back {
   align-self: flex-start;
@@ -110,7 +149,7 @@
   letter-spacing: -.3px; text-shadow: 0 1px 4px rgba(0,0,0,.3);
 }
 .rescue-landing-desc-hero {
-  font-size: 13px; color: rgba(255,255,255,.75);
+  font-size: 16px; color: #fff;
   line-height: 1.5; font-style: italic;
 }
 

@@ -6,7 +6,6 @@ import { readFile } from 'node:fs/promises';
 
 export async function getStaticPaths() {
   const paths = [];
-  
   for (const scene of rescueIndex.scenes) {
     let sceneData;
     try {
@@ -15,13 +14,11 @@ export async function getStaticPaths() {
     } catch(e) {
       sceneData = { items: [] };
     }
-    
     paths.push({
       params: { scene: scene.id },
       props: { scene, sceneData }
     });
   }
-  
   return paths;
 }
 
@@ -33,24 +30,30 @@ const sceneDesc = (scene as any)[`description_${lang}`] || scene.description || 
 const subcats = scene.subcategories || [];
 const info = (scene as any).info || [];
 
-// 面包屑
 const homeUrl = lang === 'zh' ? '/' : `/${lang}/`;
 const homeLabel: Record<string, string> = {
   zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈'
 };
 
-// subcategory标题多语言
 function getSubTitle(sub: any, lang: string): string {
   return sub[`title_${lang}`] || sub.title || '';
 }
-
-// info内容多语言
 function getInfoTitle(sec: any, lang: string): string {
   return sec[`title_${lang}`] || sec.title || '';
 }
-
 function getInfoLines(sec: any, lang: string): string[] {
   return sec[`lines_${lang}`] || sec.lines || [];
+}
+
+// 按group分组
+const hasGroups = subcats.some((sub: any) => sub.group);
+const groups: Record<string, any[]> = {};
+if (hasGroups) {
+  subcats.forEach((sub: any) => {
+    const key = sub.group || 'other';
+    if (!groups[key]) groups[key] = [];
+    groups[key].push(sub);
+  });
 }
 ---
 
@@ -102,28 +105,53 @@ function getInfoLines(sec: any, lang: string): string[] {
             </div>
           ))}
         </div>
-        <button 
+        <button
           class="scene-info-toggle"
           onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '∧ 点击折叠' : '∨ 点击打开';"
         >∨ 点击打开</button>
       </div>
     )}
 
-    <!-- 搜索栏 -->
-    <div class="rescue-scene-landing" data-pagefind-body></div>
+    <!-- pagefind索引区 -->
+    <div data-pagefind-body style="display:none">{sceneTitle} {sceneDesc}</div>
 
     <!-- Sub分类列表 -->
-    <div class="rescue-landing-grid">
-      {subcats.map((sub: any) => (
-        <a 
-          href={lang === 'zh' ? `/rescue/${scene.id}/${sub.id}/` : `/${lang}/rescue/${scene.id}/${sub.id}/`}
-          class="rescue-landing-btn"
-        >
-          <span class="rescue-landing-btn-title">{getSubTitle(sub, lang)}</span>
-          <span class="rescue-landing-btn-ja">{sub.title_ja || ''}</span>
-        </a>
-      ))}
-    </div>
+    {hasGroups ? (
+      <div class="rescue-landing-groups">
+        {Object.entries(groups).map(([groupKey, groupSubs]) => {
+          const firstSub = groupSubs[0];
+          const groupLabel = firstSub[`group_${lang}`] || firstSub.group_zh || groupKey;
+          return (
+            <div class="rescue-landing-group">
+              <div class="rescue-landing-group-title">{groupLabel}</div>
+              <div class="rescue-landing-grid">
+                {groupSubs.map((sub: any) => (
+                  <a
+                    href={lang === 'zh' ? `/rescue/${scene.id}/${sub.id}/` : `/${lang}/rescue/${scene.id}/${sub.id}/`}
+                    class="rescue-landing-btn"
+                  >
+                    <span class="rescue-landing-btn-title">{getSubTitle(sub, lang)}</span>
+                    <span class="rescue-landing-btn-ja">{sub.title_ja || ''}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    ) : (
+      <div class="rescue-landing-grid">
+        {subcats.map((sub: any) => (
+          <a
+            href={lang === 'zh' ? `/rescue/${scene.id}/${sub.id}/` : `/${lang}/rescue/${scene.id}/${sub.id}/`}
+            class="rescue-landing-btn"
+          >
+            <span class="rescue-landing-btn-title">{getSubTitle(sub, lang)}</span>
+            <span class="rescue-landing-btn-ja">{sub.title_ja || ''}</span>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
 
 </Base>
