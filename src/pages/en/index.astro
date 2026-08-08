@@ -75,30 +75,58 @@ const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
   </div>
 
   <!-- 场景列表 -->
-  <div class="rescue-scene-wrap">
-    <div class="rescue-scene-grid">
-      {scenes.map((scene: any, si: number) => {
-        const sceneTitle = getSceneTitle(scene, lang);
-        const sceneUrl = lang === 'zh' 
-          ? `/rescue/${scene.id}/` 
-          : `/${lang}/rescue/${scene.id}/`;
-        const count = scene.count || 0;
-        const countLabel = countLabels[lang] || countLabels.zh;
-        
+  <!-- 场景列表（按分类分组）-->
+{(() => {
+  const categories = [
+    { id: 'daily',     zh: '日常必備', en: 'Essentials',    'zh-TW': '日常必備', vi: 'Cơ bản',      ko: '일상 필수',   icon: '📌' },
+    { id: 'medical',   zh: '医疗健康', en: 'Medical',        'zh-TW': '醫療健康', vi: 'Y tế',         ko: '의료 건강',   icon: '🏥' },
+    { id: 'living',    zh: '生活居住', en: 'Daily Life',     'zh-TW': '生活居住', vi: 'Cuộc sống',    ko: '생활 거주',   icon: '🏠' },
+    { id: 'transport', zh: '出行交通', en: 'Transport',      'zh-TW': '出行交通', vi: 'Di chuyển',    ko: '교통 이동',   icon: '🚗' },
+    { id: 'shopping',  zh: '购物饮食', en: 'Shopping',       'zh-TW': '購物飲食', vi: 'Mua sắm',      ko: '쇼핑 음식',   icon: '🛍️' },
+    { id: 'work',      zh: '工作学校', en: 'Work & School',  'zh-TW': '工作學校', vi: 'Công việc',    ko: '일 학교',     icon: '💼' },
+    { id: 'leisure',   zh: '文化休闲', en: 'Leisure',        'zh-TW': '文化休閒', vi: 'Giải trí',     ko: '문화 여가',   icon: '🎌' },
+    { id: 'emergency', zh: '紧急灾害', en: 'Emergency',      'zh-TW': '緊急災害', vi: 'Khẩn cấp',     ko: '긴급 재해',   icon: '🆘' },
+  ];
+
+  return (
+    <div class="rescue-scene-wrap">
+      {categories.map(cat => {
+        const catScenes = scenes.filter((s: any) => s.category === cat.id);
+        if (catScenes.length === 0) return null;
+        const catLabel = (cat as any)[lang] || cat.zh;
         return (
-          <a href={sceneUrl} class="rescue-scene-card">
-            {scene.image && (
-              <div class="rescue-scene-bg" style={`background-image:url('/${scene.image}')`}></div>
-            )}
-            <div class="rescue-scene-overlay"></div>
-            <div class="rescue-scene-content">
-              <div class="rescue-scene-title">{sceneTitle}</div>
-              <div class="rescue-scene-count">{count}{countLabel}</div>
+          <div class="rescue-category-group">
+            <div class="rescue-category-title">
+              <span class="rescue-category-icon">{cat.icon}</span>
+              <span>{catLabel}</span>
             </div>
-          </a>
+            <div class="rescue-scene-grid">
+              {catScenes.map((scene: any) => {
+                const sceneTitle = getSceneTitle(scene, lang);
+                const sceneUrl = lang === 'zh'
+                  ? `/rescue/${scene.id}/`
+                  : `/${lang}/rescue/${scene.id}/`;
+                const count = scene.count || 0;
+                const countLabel = countLabels[lang] || countLabels.zh;
+                return (
+                  <a href={sceneUrl} class="rescue-scene-card">
+                    {scene.image && (
+                      <div class="rescue-scene-bg" style={`background-image:url('/${scene.image}')`}></div>
+                    )}
+                    <div class="rescue-scene-overlay"></div>
+                    <div class="rescue-scene-content">
+                      <div class="rescue-scene-title">{sceneTitle}</div>
+                      <div class="rescue-scene-count">{count}{countLabel}</div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         );
       })}
     </div>
-  </div>
+  );
+})()}
 </div>
 </Base>

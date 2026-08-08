@@ -72,7 +72,8 @@
           "title_vi": "Hỏi thông tin cơ bản",
           "title_ko": "기본 정보 묻기"
         }
-      ]
+      ],
+      "category": "daily"
     },
     {
       "id": "s01",
@@ -153,7 +154,8 @@
           "title_vi": "Ra khỏi sân bay",
           "title_ko": "공항 출발 | 교통"
         }
-      ]
+      ],
+      "category": "transport"
     },
     {
       "id": "s02",
@@ -203,7 +205,8 @@
           "title_vi": "Bị lạc",
           "title_ko": "길을 잃었을 때"
         }
-      ]
+      ],
+      "category": "transport"
     },
     {
       "id": "s03",
@@ -417,7 +420,8 @@
           "title_vi": "Tủ khóa",
           "title_ko": "코인 로커"
         }
-      ]
+      ],
+      "category": "shopping"
     },
     {
       "id": "s04",
@@ -497,7 +501,8 @@
           "title_vi": "Mang về",
           "title_ko": "포장"
         }
-      ]
+      ],
+      "category": "shopping"
     },
     {
       "id": "s05",
@@ -599,7 +604,8 @@
           "title_vi": "Sự cố & Khẩn cấp",
           "title_ko": "운행 장애 & 긴급"
         }
-      ]
+      ],
+      "category": "transport"
     },
     {
       "id": "s06",
@@ -731,7 +737,8 @@
           "title_vi": "Mua thuốc tại hiệu thuốc (OTC)",
           "title_ko": "드럭스토어에서 약 구입하기"
         }
-      ]
+      ],
+      "category": "medical"
     },
     {
       "id": "s07",
@@ -862,7 +869,8 @@
           "title_vi": "Thanh toán & Nhận hồ sơ",
           "title_ko": "납부・수령"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s08",
@@ -983,7 +991,8 @@
           "title_vi": "Mất thẻ",
           "title_ko": "카드 분실"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s09",
@@ -1114,7 +1123,8 @@
           "title_vi": "Chuyển nhà",
           "title_ko": "이사"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s10",
@@ -1235,7 +1245,8 @@
           "title_vi": "Hoạt động trường học",
           "title_ko": "학교 행사"
         }
-      ]
+      ],
+      "category": "work"
     },
     {
       "id": "s11",
@@ -1366,7 +1377,8 @@
           "title_vi": "Báo cáo với cấp trên",
           "title_ko": "상사에게 보고"
         }
-      ]
+      ],
+      "category": "work"
     },
     {
       "id": "s12",
@@ -1446,7 +1458,8 @@
           "title_vi": "Mua vé",
           "title_ko": "티켓 구매"
         }
-      ]
+      ],
+      "category": "shopping"
     },
     {
       "id": "s13",
@@ -1506,7 +1519,8 @@
           "title_vi": "Sửa điện thoại & Đồ vật",
           "title_ko": "스마트폰 & 물건 수리"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s14",
@@ -1597,7 +1611,8 @@
           "title_vi": "Khẩn cấp & Tình huống có vấn đề",
           "title_ko": "긴급 & 문제 상황"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s15",
@@ -1698,7 +1713,8 @@
           "title_vi": "Tai nạn giao thông",
           "title_ko": "교통사고"
         }
-      ]
+      ],
+      "category": "emergency"
     },
     {
       "id": "s16",
@@ -1942,7 +1958,8 @@
           "title_vi": "Ứng phó giọng nói tự động",
           "title_ko": "자동 음성 대응"
         }
-      ]
+      ],
+      "category": "daily"
     },
     {
       "id": "s17",
@@ -2012,7 +2029,8 @@
           "title_vi": "Mã xác minh & Lỗi đăng nhập",
           "title_ko": "인증 & 로그인 오류"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s18",
@@ -2104,7 +2122,8 @@
           "title_vi": "Theo dõi & Xử lý sự cố",
           "title_ko": "추적 & 문제 처리"
         }
-      ]
+      ],
+      "category": "living"
     },
     {
       "id": "s19",
@@ -2123,271 +2142,716 @@
       "description_ko": "체크인부터 체크아웃까지, 호텔 전 과정 대화 가이드.",
       "count": 68,
       "info": [
-    {
-      "title": "入住流程：",
-      "lines": [
-        "到达前台 → 告知姓名/出示护照 → 确认预约 → 支付住宿税 → 领取房卡 → 前往房间"
-      ]
+        {
+          "title": "入住流程：",
+          "lines": [
+            "到达前台 → 告知姓名/出示护照 → 确认预约 → 支付住宿税 → 领取房卡 → 前往房间"
+          ]
+        },
+        {
+          "title": "宿泊税について：",
+          "lines": [
+            "住宿税（宿泊税）是各都道府县单独征收的税，金额因地区和房价而异",
+            "通常在入住时或退房时以现金另行支付，不包含在预约金额中",
+            "东京：每晚房价1万円以上收取100-200円；大阪：每人每晚100円起"
+          ]
+        },
+        {
+          "title": "注意：",
+          "lines": [
+            "入住时间通常为15:00-16:00，退房时间通常为11:00",
+            "提前到达可先寄存行李，有空房时可提前入住（需确认）",
+            "大多数日本酒店可免费寄存行李至当日营业结束"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "标准入住",
+          "title_ja": "スタンダードチェックイン",
+          "title_en": "Standard Check-in",
+          "title_zh-TW": "標準入住",
+          "title_vi": "Nhận phòng thông thường",
+          "title_ko": "일반 체크인",
+          "group": "チェックイン",
+          "group_zh": "入住",
+          "group_en": "Check-in",
+          "group_zh-TW": "入住",
+          "group_vi": "Nhận phòng",
+          "group_ko": "체크인"
+        },
+        {
+          "id": "sub02",
+          "title": "预约出问题",
+          "title_ja": "予約トラブル",
+          "title_en": "Reservation Issues",
+          "title_zh-TW": "預約出問題",
+          "title_vi": "Vấn đề đặt phòng",
+          "title_ko": "예약 문제",
+          "group": "チェックイン",
+          "group_zh": "入住",
+          "group_en": "Check-in",
+          "group_zh-TW": "入住",
+          "group_vi": "Nhận phòng",
+          "group_ko": "체크인"
+        },
+        {
+          "id": "sub03",
+          "title": "深夜到达",
+          "title_ja": "深夜到着・遅延連絡",
+          "title_en": "Late Arrival",
+          "title_zh-TW": "深夜到達",
+          "title_vi": "Đến muộn",
+          "title_ko": "늦은 도착",
+          "group": "チェックイン",
+          "group_zh": "入住",
+          "group_en": "Check-in",
+          "group_zh-TW": "入住",
+          "group_vi": "Nhận phòng",
+          "group_ko": "체크인"
+        },
+        {
+          "id": "sub04",
+          "title": "无预约前往",
+          "title_ja": "予約なし・当日空室確認",
+          "title_en": "Walk-in",
+          "title_zh-TW": "無預約前往",
+          "title_vi": "Đến không đặt trước",
+          "title_ko": "예약 없이 방문",
+          "group": "チェックイン",
+          "group_zh": "入住",
+          "group_en": "Check-in",
+          "group_zh-TW": "入住",
+          "group_vi": "Nhận phòng",
+          "group_ko": "체크인"
+        },
+        {
+          "id": "sub05",
+          "title": "入住前寄存",
+          "title_ja": "チェックイン前の荷物預かり",
+          "title_en": "Pre Check-in Storage",
+          "title_zh-TW": "入住前寄存",
+          "title_vi": "Gửi hành lý trước khi nhận phòng",
+          "title_ko": "체크인 전 짐 보관",
+          "group": "荷物預かり",
+          "group_zh": "行李寄存",
+          "group_en": "Luggage Storage",
+          "group_zh-TW": "行李寄存",
+          "group_vi": "Gửi hành lý",
+          "group_ko": "짐 보관"
+        },
+        {
+          "id": "sub06",
+          "title": "退房后寄存取回",
+          "title_ja": "チェックアウト後の荷物預かり・受取",
+          "title_en": "Post Check-out Storage",
+          "title_zh-TW": "退房後寄存取回",
+          "title_vi": "Gửi hành lý sau khi trả phòng",
+          "title_ko": "체크아웃 후 짐 보관·수령",
+          "group": "荷物預かり",
+          "group_zh": "行李寄存",
+          "group_en": "Luggage Storage",
+          "group_zh-TW": "行李寄存",
+          "group_vi": "Gửi hành lý",
+          "group_ko": "짐 보관"
+        },
+        {
+          "id": "sub07",
+          "title": "备品索取",
+          "title_ja": "アメニティ・タオルの追加",
+          "title_en": "Requesting Amenities",
+          "title_zh-TW": "備品索取",
+          "title_vi": "Xin thêm đồ dùng",
+          "title_ko": "어메니티 요청",
+          "group": "滞在中",
+          "group_zh": "住宿期间",
+          "group_en": "During Stay",
+          "group_zh-TW": "住宿期間",
+          "group_vi": "Trong thời gian lưu trú",
+          "group_ko": "숙박 중"
+        },
+        {
+          "id": "sub08",
+          "title": "房间故障",
+          "title_ja": "部屋のトラブル",
+          "title_en": "Room Issues",
+          "title_zh-TW": "房間故障",
+          "title_vi": "Sự cố trong phòng",
+          "title_ko": "객실 문제",
+          "group": "滞在中",
+          "group_zh": "住宿期间",
+          "group_en": "During Stay",
+          "group_zh-TW": "住宿期間",
+          "group_vi": "Trong thời gian lưu trú",
+          "group_ko": "숙박 중"
+        },
+        {
+          "id": "sub09",
+          "title": "馆内设施",
+          "title_ja": "館内設備の利用",
+          "title_en": "Facility Inquiries",
+          "title_zh-TW": "館內設施",
+          "title_vi": "Sử dụng tiện ích",
+          "title_ko": "시설 이용",
+          "group": "滞在中",
+          "group_zh": "住宿期间",
+          "group_en": "During Stay",
+          "group_zh-TW": "住宿期間",
+          "group_vi": "Trong thời gian lưu trú",
+          "group_ko": "숙박 중"
+        },
+        {
+          "id": "sub10",
+          "title": "打扫与毛巾",
+          "title_ja": "清掃・タオル交換",
+          "title_en": "Housekeeping",
+          "title_zh-TW": "打掃與毛巾",
+          "title_vi": "Dọn phòng và khăn",
+          "title_ko": "청소 및 수건",
+          "group": "滞在中",
+          "group_zh": "住宿期间",
+          "group_en": "During Stay",
+          "group_zh-TW": "住宿期間",
+          "group_vi": "Trong thời gian lưu trú",
+          "group_ko": "숙박 중"
+        },
+        {
+          "id": "sub11",
+          "title": "早餐确认",
+          "title_ja": "朝食の場所と時間の確認",
+          "title_en": "Breakfast Info",
+          "title_zh-TW": "早餐確認",
+          "title_vi": "Xác nhận bữa sáng",
+          "title_ko": "조식 확인",
+          "group": "レストラン・朝食",
+          "group_zh": "餐厅与早餐",
+          "group_en": "Restaurant & Breakfast",
+          "group_zh-TW": "餐廳與早餐",
+          "group_vi": "Nhà hàng & Bữa sáng",
+          "group_ko": "레스토랑 & 조식"
+        },
+        {
+          "id": "sub12",
+          "title": "等待入座",
+          "title_ja": "混雑時の案内・待ち時間",
+          "title_en": "Waiting for a Table",
+          "title_zh-TW": "等待入座",
+          "title_vi": "Chờ bàn",
+          "title_ko": "대기 및 안내",
+          "group": "レストラン・朝食",
+          "group_zh": "餐厅与早餐",
+          "group_en": "Restaurant & Breakfast",
+          "group_zh-TW": "餐廳與早餐",
+          "group_vi": "Nhà hàng & Bữa sáng",
+          "group_ko": "레스토랑 & 조식"
+        },
+        {
+          "id": "sub13",
+          "title": "用餐中追加",
+          "title_ja": "食事中のトラブル・追加リクエスト",
+          "title_en": "During Meal Requests",
+          "title_zh-TW": "用餐中追加",
+          "title_vi": "Yêu cầu thêm trong bữa ăn",
+          "title_ko": "식사 중 추가 요청",
+          "group": "レストラン・朝食",
+          "group_zh": "餐厅与早餐",
+          "group_en": "Restaurant & Breakfast",
+          "group_zh-TW": "餐廳與早餐",
+          "group_vi": "Nhà hàng & Bữa sáng",
+          "group_ko": "레스토랑 & 조식"
+        },
+        {
+          "id": "sub14",
+          "title": "餐厅预约",
+          "title_ja": "館内レストランの予約",
+          "title_en": "Restaurant Reservation",
+          "title_zh-TW": "餐廳預約",
+          "title_vi": "Đặt bàn nhà hàng",
+          "title_ko": "레스토랑 예약",
+          "group": "レストラン・朝食",
+          "group_zh": "餐厅与早餐",
+          "group_en": "Restaurant & Breakfast",
+          "group_zh-TW": "餐廳與早餐",
+          "group_vi": "Nhà hàng & Bữa sáng",
+          "group_ko": "레스토랑 & 조식"
+        },
+        {
+          "id": "sub15",
+          "title": "餐厅满席",
+          "title_ja": "満席・外部レストランの案内",
+          "title_en": "Fully Booked",
+          "title_zh-TW": "餐廳滿席",
+          "title_vi": "Hết chỗ & Gợi ý bên ngoài",
+          "title_ko": "만석 & 주변 식당 안내",
+          "group": "レストラン・朝食",
+          "group_zh": "餐厅与早餐",
+          "group_en": "Restaurant & Breakfast",
+          "group_zh-TW": "餐廳與早餐",
+          "group_vi": "Nhà hàng & Bữa sáng",
+          "group_ko": "레스토랑 & 조식"
+        },
+        {
+          "id": "sub16",
+          "title": "点餐",
+          "title_ja": "ルームサービスの注文",
+          "title_en": "Ordering Room Service",
+          "title_zh-TW": "點餐",
+          "title_vi": "Gọi món",
+          "title_ko": "룸서비스 주문",
+          "group": "ルームサービス",
+          "group_zh": "客房服务",
+          "group_en": "Room Service",
+          "group_zh-TW": "客房服務",
+          "group_vi": "Dịch vụ phòng",
+          "group_ko": "룸서비스"
+        },
+        {
+          "id": "sub17",
+          "title": "送餐到达",
+          "title_ja": "料理の受け取り",
+          "title_en": "Receiving Delivery",
+          "title_zh-TW": "送餐到達",
+          "title_vi": "Nhận đồ ăn",
+          "title_ko": "음식 수령",
+          "group": "ルームサービス",
+          "group_zh": "客房服务",
+          "group_en": "Room Service",
+          "group_zh-TW": "客房服務",
+          "group_vi": "Dịch vụ phòng",
+          "group_ko": "룸서비스"
+        },
+        {
+          "id": "sub18",
+          "title": "投币洗衣机",
+          "title_ja": "コインランドリーの利用",
+          "title_en": "Coin Laundry",
+          "title_zh-TW": "投幣洗衣機",
+          "title_vi": "Máy giặt tự phục vụ",
+          "title_ko": "코인 세탁기",
+          "group": "ランドリー・クリーニング",
+          "group_zh": "洗衣服务",
+          "group_en": "Laundry & Cleaning",
+          "group_zh-TW": "洗衣服務",
+          "group_vi": "Giặt & Giặt khô",
+          "group_ko": "세탁 & 드라이클리닝"
+        },
+        {
+          "id": "sub19",
+          "title": "干洗服务",
+          "title_ja": "クリーニングサービス",
+          "title_en": "Dry Cleaning",
+          "title_zh-TW": "乾洗服務",
+          "title_vi": "Dịch vụ giặt khô",
+          "title_ko": "드라이클리닝",
+          "group": "ランドリー・クリーニング",
+          "group_zh": "洗衣服务",
+          "group_en": "Laundry & Cleaning",
+          "group_zh-TW": "洗衣服務",
+          "group_vi": "Giặt & Giặt khô",
+          "group_ko": "세탁 & 드라이클리닝"
+        },
+        {
+          "id": "sub20",
+          "title": "标准退房",
+          "title_ja": "スタンダードチェックアウト",
+          "title_en": "Standard Check-out",
+          "title_zh-TW": "標準退房",
+          "title_vi": "Trả phòng thông thường",
+          "title_ko": "일반 체크아웃",
+          "group": "チェックアウト",
+          "group_zh": "退房",
+          "group_en": "Check-out",
+          "group_zh-TW": "退房",
+          "group_vi": "Trả phòng",
+          "group_ko": "체크아웃"
+        },
+        {
+          "id": "sub21",
+          "title": "追加费用结算",
+          "title_ja": "追加精算",
+          "title_en": "Additional Charges",
+          "title_zh-TW": "追加費用結算",
+          "title_vi": "Thanh toán phụ phí",
+          "title_ko": "추가 정산",
+          "group": "チェックアウト",
+          "group_zh": "退房",
+          "group_en": "Check-out",
+          "group_zh-TW": "退房",
+          "group_vi": "Trả phòng",
+          "group_ko": "체크아웃"
+        },
+        {
+          "id": "sub22",
+          "title": "退房后忘东西",
+          "title_ja": "忘れ物・郵送依頼",
+          "title_en": "Lost Items & Mailing",
+          "title_zh-TW": "退房後忘東西",
+          "title_vi": "Đồ bỏ quên & gửi bưu điện",
+          "title_ko": "분실물 및 우편 발송",
+          "group": "チェックアウト",
+          "group_zh": "退房",
+          "group_en": "Check-out",
+          "group_zh-TW": "退房",
+          "group_vi": "Trả phòng",
+          "group_ko": "체크아웃"
+        },
+        {
+          "id": "sub23",
+          "title": "换房申请",
+          "title_ja": "部屋変更リクエスト",
+          "title_en": "Room Change Request",
+          "title_zh-TW": "換房申請",
+          "title_vi": "Yêu cầu đổi phòng",
+          "title_ko": "방 변경 요청",
+          "group": "その他サービス",
+          "group_zh": "其他服务",
+          "group_en": "Other Services",
+          "group_zh-TW": "其他服務",
+          "group_vi": "Dịch vụ khác",
+          "group_ko": "기타 서비스"
+        },
+        {
+          "id": "sub24",
+          "title": "周边推荐与叫车",
+          "title_ja": "周辺案内・タクシー手配",
+          "title_en": "Local Recommendations & Taxi",
+          "title_zh-TW": "周邊推薦與叫車",
+          "title_vi": "Giới thiệu xung quanh & gọi taxi",
+          "title_ko": "주변 추천 및 택시 호출",
+          "group": "その他サービス",
+          "group_zh": "其他服务",
+          "group_en": "Other Services",
+          "group_zh-TW": "其他服務",
+          "group_vi": "Dịch vụ khác",
+          "group_ko": "기타 서비스"
+        },
+        {
+          "id": "sub25",
+          "title": "续住与提前退房",
+          "title_ja": "延泊・早期チェックアウト",
+          "title_en": "Extension & Early Check-out",
+          "title_zh-TW": "續住與提前退房",
+          "title_vi": "Gia hạn & Trả phòng sớm",
+          "title_ko": "연박 및 조기 체크아웃",
+          "group": "その他サービス",
+          "group_zh": "其他服务",
+          "group_en": "Other Services",
+          "group_zh-TW": "其他服務",
+          "group_vi": "Dịch vụ khác",
+          "group_ko": "기타 서비스"
+        }
+      ],
+      "category": "leisure"
     },
     {
-      "title": "宿泊税について：",
-      "lines": [
-        "住宿税（宿泊税）是各都道府县单独征收的税，金额因地区和房价而异",
-        "通常在入住时或退房时以现金另行支付，不包含在预约金额中",
-        "东京：每晚房价1万円以上收取100-200円；大阪：每人每晚100円起"
-      ]
-    },
-    {
-      "title": "注意：",
-      "lines": [
-        "入住时间通常为15:00-16:00，退房时间通常为11:00",
-        "提前到达可先寄存行李，有空房时可提前入住（需确认）",
-        "大多数日本酒店可免费寄存行李至当日营业结束"
-      ]
+      "id": "s20",
+      "file": "data/rescue/s20_onsen.json",
+      "title": "温泉・銭湯",
+      "title_zh": "温泉・澡堂",
+      "title_en": "Onsen & Public Bath",
+      "title_zh-TW": "溫泉・澡堂",
+      "title_vi": "Onsen & Nhà tắm công cộng",
+      "title_ko": "온센 & 목욕탕",
+      "image": "assets/rescue/scenes/onsen.webp",
+      "description": "温泉、銭湯、ホテル大浴場での入浴から岩盤浴・マッサージまで。",
+      "description_en": "From onsen and public baths to hot stone baths and massage services.",
+      "description_zh-TW": "從溫泉、澡堂到岩盤浴、按摩，完整對話指南。",
+      "description_vi": "Từ onsen, nhà tắm công cộng đến phòng đá nóng và dịch vụ massage.",
+      "description_ko": "온센, 목욕탕부터 암반욕, 마사지까지 완벽 대화 가이드.",
+      "count": 81,
+      "info": [
+        {
+          "title": "入浴前の必須マナー：",
+          "lines": [
+            "入浴前に必ずかけ湯（シャワーで体を洗うこと）をしてください。これは他の利用者への基本的なマナーです",
+            "毛巾不能碰到池水，泡澡时放在头上或岸边",
+            "入浴前後に水分補給を忘れずに。めまいや気分が悪くなったらすぐスタッフに声をかけてください"
+          ]
+        },
+        {
+          "title": "纹身注意：",
+          "lines": [
+            "日本温泉对纹身非常敏感，即便很小也要先咨询前台",
+            "部分设施提供遮盖贴纸，请提前确认",
+            "未遵守规定可能被拒绝入场"
+          ]
+        },
+        {
+          "title": "水温参考：",
+          "lines": [
+            "日本温泉通常较热（40-42度）",
+            "如不适应，找标注「ぬるめ」（温水）的池子（约38-39度）",
+            "第一次建议泡10-15分钟，多休息"
+          ]
+        },
+        {
+          "title": "注意：",
+          "lines": [
+            "男女入口通常分开，请确认标识（男/女）",
+            "更衣室和浴场内禁止拍照和使用手机",
+            "储物柜通常需要100円硬币（可退还）"
+          ]
+        }
+      ],
+      "subcategories": [
+        {
+          "id": "sub01",
+          "title": "銭湯・日帰り温泉",
+          "title_ja": "銭湯・日帰り温泉の受付",
+          "title_en": "Public Bath / Day Spa",
+          "title_zh-TW": "澡堂・日歸溫泉",
+          "title_vi": "Nhà tắm công cộng / Spa ngày",
+          "title_ko": "대중목욕탕 / 당일 온센",
+          "group": "入場・受付",
+          "group_zh": "入场与付费",
+          "group_en": "Entrance & Payment",
+          "group_zh-TW": "入場與付費",
+          "group_vi": "Vào cửa & Thanh toán",
+          "group_ko": "입장 & 결제"
+        },
+        {
+          "id": "sub02",
+          "title": "酒店大浴场",
+          "title_ja": "ホテル大浴場",
+          "title_en": "Hotel Large Bath",
+          "title_zh-TW": "飯店大浴場",
+          "title_vi": "Khu tắm lớn khách sạn",
+          "title_ko": "호텔 대욕장",
+          "group": "入場・受付",
+          "group_zh": "入场与付费",
+          "group_en": "Entrance & Payment",
+          "group_zh-TW": "入場與付費",
+          "group_vi": "Vào cửa & Thanh toán",
+          "group_ko": "입장 & 결제"
+        },
+        {
+          "id": "sub03",
+          "title": "包间浴室",
+          "title_ja": "貸切風呂・家族風呂",
+          "title_en": "Private / Family Bath",
+          "title_zh-TW": "包間浴室",
+          "title_vi": "Phòng tắm riêng",
+          "title_ko": "가족탕 / 대절 욕실",
+          "group": "入場・受付",
+          "group_zh": "入场与付费",
+          "group_en": "Entrance & Payment",
+          "group_zh-TW": "入場與付費",
+          "group_vi": "Vào cửa & Thanh toán",
+          "group_ko": "입장 & 결제"
+        },
+        {
+          "id": "sub04",
+          "title": "储物柜与换零钱",
+          "title_ja": "ロッカー・両替",
+          "title_en": "Lockers & Change",
+          "title_zh-TW": "儲物櫃與換零錢",
+          "title_vi": "Tủ khóa & Đổi tiền",
+          "title_ko": "라커 & 환전",
+          "group": "更衣室",
+          "group_zh": "更衣与准备",
+          "group_en": "Changing Room",
+          "group_zh-TW": "更衣與準備",
+          "group_vi": "Phòng thay đồ",
+          "group_ko": "탈의실"
+        },
+        {
+          "id": "sub05",
+          "title": "纹身与手机规定",
+          "title_ja": "タトゥー・スマホの確認",
+          "title_en": "Tattoo & Phone Rules",
+          "title_zh-TW": "紋身與手機規定",
+          "title_vi": "Quy định xăm hình & điện thoại",
+          "title_ko": "문신 & 스마트폰 규정",
+          "group": "更衣室",
+          "group_zh": "更衣与准备",
+          "group_en": "Changing Room",
+          "group_zh-TW": "更衣與準備",
+          "group_vi": "Phòng thay đồ",
+          "group_ko": "탈의실"
+        },
+        {
+          "id": "sub06",
+          "title": "洗体场使用",
+          "title_ja": "洗い場の使い方",
+          "title_en": "Shower Area",
+          "title_zh-TW": "洗身區使用",
+          "title_vi": "Khu tắm vòi hoa sen",
+          "title_ko": "세신 구역 이용",
+          "group": "浴場内",
+          "group_zh": "浴场内",
+          "group_en": "Inside the Bath",
+          "group_zh-TW": "浴場內",
+          "group_vi": "Trong khu tắm",
+          "group_ko": "욕장 내부"
+        },
+        {
+          "id": "sub07",
+          "title": "温泉区询问",
+          "title_ja": "温泉・お湯の確認",
+          "title_en": "Bath Temperature",
+          "title_zh-TW": "溫泉區詢問",
+          "title_vi": "Hỏi về khu onsen",
+          "title_ko": "온천 구역 문의",
+          "group": "浴場内",
+          "group_zh": "浴场内",
+          "group_en": "Inside the Bath",
+          "group_zh-TW": "浴場內",
+          "group_vi": "Trong khu tắm",
+          "group_ko": "욕장 내부"
+        },
+        {
+          "id": "sub08",
+          "title": "男女分浴确认",
+          "title_ja": "男女別・混浴の確認",
+          "title_en": "Gender Separation",
+          "title_zh-TW": "男女分浴確認",
+          "title_vi": "Xác nhận phân chia nam nữ",
+          "title_ko": "남녀 분리 확인",
+          "group": "浴場内",
+          "group_zh": "浴场内",
+          "group_en": "Inside the Bath",
+          "group_zh-TW": "浴場內",
+          "group_vi": "Trong khu tắm",
+          "group_ko": "욕장 내부"
+        },
+        {
+          "id": "sub09",
+          "title": "休息区与设施",
+          "title_ja": "休憩エリア・設備利用",
+          "title_en": "Rest Area & Facilities",
+          "title_zh-TW": "休息區與設施",
+          "title_vi": "Khu nghỉ ngơi & Tiện ích",
+          "title_ko": "휴게 공간 & 시설",
+          "group": "離店後",
+          "group_zh": "离场后",
+          "group_en": "Post-bath",
+          "group_zh-TW": "離場後",
+          "group_vi": "Sau khi tắm",
+          "group_ko": "퇴장 후"
+        },
+        {
+          "id": "sub10",
+          "title": "物品遗失",
+          "title_ja": "忘れ物の確認",
+          "title_en": "Lost Items",
+          "title_zh-TW": "物品遺失",
+          "title_vi": "Đồ thất lạc",
+          "title_ko": "분실물 확인",
+          "group": "離店後",
+          "group_zh": "离场后",
+          "group_en": "Post-bath",
+          "group_zh-TW": "離場後",
+          "group_vi": "Sau khi tắm",
+          "group_ko": "퇴장 후"
+        },
+        {
+          "id": "sub11",
+          "title": "岩盘浴受付",
+          "title_ja": "岩盤浴の受付・料金",
+          "title_en": "Hot Stone Bath Entry",
+          "title_zh-TW": "岩盤浴受付",
+          "title_vi": "Đăng ký phòng đá nóng",
+          "title_ko": "암반욕 접수",
+          "group": "岩盤浴",
+          "group_zh": "岩盘浴",
+          "group_en": "Hot Stone Bath",
+          "group_zh-TW": "岩盤浴",
+          "group_vi": "Phòng đá nóng",
+          "group_ko": "암반욕"
+        },
+        {
+          "id": "sub12",
+          "title": "岩盘浴使用规则",
+          "title_ja": "岩盤浴エリアのルール",
+          "title_en": "Hot Stone Bath Rules",
+          "title_zh-TW": "岩盤浴使用規則",
+          "title_vi": "Quy tắc phòng đá nóng",
+          "title_ko": "암반욕 이용 규칙",
+          "group": "岩盤浴",
+          "group_zh": "岩盘浴",
+          "group_en": "Hot Stone Bath",
+          "group_zh-TW": "岩盤浴",
+          "group_vi": "Phòng đá nóng",
+          "group_ko": "암반욕"
+        },
+        {
+          "id": "sub13",
+          "title": "免费休息区",
+          "title_ja": "無料休憩エリア",
+          "title_en": "Free Rest Area",
+          "title_zh-TW": "免費休息區",
+          "title_vi": "Khu nghỉ ngơi miễn phí",
+          "title_ko": "무료 휴게 공간",
+          "group": "休憩室",
+          "group_zh": "休息室",
+          "group_en": "Relaxation Lounge",
+          "group_zh-TW": "休息室",
+          "group_vi": "Phòng thư giãn",
+          "group_ko": "휴식 라운지"
+        },
+        {
+          "id": "sub14",
+          "title": "付费包厢",
+          "title_ja": "有料リラックスブース",
+          "title_en": "Paid Private Booth",
+          "title_zh-TW": "付費包廂",
+          "title_vi": "Phòng riêng có tính phí",
+          "title_ko": "유료 개인 부스",
+          "group": "休憩室",
+          "group_zh": "休息室",
+          "group_en": "Relaxation Lounge",
+          "group_zh-TW": "休息室",
+          "group_vi": "Phòng thư giãn",
+          "group_ko": "휴식 라운지"
+        },
+        {
+          "id": "sub15",
+          "title": "预约按摩",
+          "title_ja": "マッサージの予約",
+          "title_en": "Book a Massage",
+          "title_zh-TW": "預約按摩",
+          "title_vi": "Đặt lịch massage",
+          "title_ko": "마사지 예약",
+          "group": "マッサージ",
+          "group_zh": "按摩",
+          "group_en": "Massage & Spa",
+          "group_zh-TW": "按摩",
+          "group_vi": "Massage & Spa",
+          "group_ko": "마사지 & 스파"
+        },
+        {
+          "id": "sub16",
+          "title": "按摩过程沟通",
+          "title_ja": "施術中のコミュニケーション",
+          "title_en": "During the Massage",
+          "title_zh-TW": "按摩過程溝通",
+          "title_vi": "Giao tiếp trong khi massage",
+          "title_ko": "시술 중 소통",
+          "group": "マッサージ",
+          "group_zh": "按摩",
+          "group_en": "Massage & Spa",
+          "group_zh-TW": "按摩",
+          "group_vi": "Massage & Spa",
+          "group_ko": "마사지 & 스파"
+        },
+        {
+          "id": "sub17",
+          "title": "按摩结束结算",
+          "title_ja": "マッサージ後の精算",
+          "title_en": "Post-massage Payment",
+          "title_zh-TW": "按摩結束結算",
+          "title_vi": "Thanh toán sau massage",
+          "title_ko": "마사지 후 정산",
+          "group": "マッサージ",
+          "group_zh": "按摩",
+          "group_en": "Massage & Spa",
+          "group_zh-TW": "按摩",
+          "group_vi": "Massage & Spa",
+          "group_ko": "마사지 & 스파"
+        }
+      ],
+      "category": "leisure"
     }
-  ],
-  "subcategories": [
-    {
-      "id": "sub01",
-      "title": "标准入住",
-      "title_ja": "スタンダードチェックイン",
-      "title_en": "Standard Check-in",
-      "title_zh-TW": "標準入住",
-      "title_vi": "Nhận phòng thông thường",
-      "title_ko": "일반 체크인",
-      "group": "チェックイン",
-      "group_zh": "入住",
-      "group_en": "Check-in",
-      "group_zh-TW": "入住",
-      "group_vi": "Nhận phòng",
-      "group_ko": "체크인"
-    },
-    {
-      "id": "sub02",
-      "title": "预约出问题",
-      "title_ja": "予約トラブル",
-      "title_en": "Reservation Issues",
-      "title_zh-TW": "預約出問題",
-      "title_vi": "Vấn đề đặt phòng",
-      "title_ko": "예약 문제",
-      "group": "チェックイン",
-      "group_zh": "入住",
-      "group_en": "Check-in",
-      "group_zh-TW": "入住",
-      "group_vi": "Nhận phòng",
-      "group_ko": "체크인"
-    },
-    {
-      "id": "sub03",
-      "title": "深夜到达",
-      "title_ja": "深夜到着・遅延連絡",
-      "title_en": "Late Arrival",
-      "title_zh-TW": "深夜到達",
-      "title_vi": "Đến muộn",
-      "title_ko": "늦은 도착",
-      "group": "チェックイン",
-      "group_zh": "入住",
-      "group_en": "Check-in",
-      "group_zh-TW": "入住",
-      "group_vi": "Nhận phòng",
-      "group_ko": "체크인"
-    },
-    {
-      "id": "sub04",
-      "title": "无预约前往",
-      "title_ja": "予約なし・当日空室確認",
-      "title_en": "Walk-in",
-      "title_zh-TW": "無預約前往",
-      "title_vi": "Đến không đặt trước",
-      "title_ko": "예약 없이 방문",
-      "group": "チェックイン",
-      "group_zh": "入住",
-      "group_en": "Check-in",
-      "group_zh-TW": "入住",
-      "group_vi": "Nhận phòng",
-      "group_ko": "체크인"
-    },
-    {
-      "id": "sub05",
-      "title": "入住前寄存",
-      "title_ja": "チェックイン前の荷物預かり",
-      "title_en": "Pre Check-in Storage",
-      "title_zh-TW": "入住前寄存",
-      "title_vi": "Gửi hành lý trước khi nhận phòng",
-      "title_ko": "체크인 전 짐 보관",
-      "group": "荷物預かり",
-      "group_zh": "行李寄存",
-      "group_en": "Luggage Storage",
-      "group_zh-TW": "行李寄存",
-      "group_vi": "Gửi hành lý",
-      "group_ko": "짐 보관"
-    },
-    {
-      "id": "sub06",
-      "title": "退房后寄存取回",
-      "title_ja": "チェックアウト後の荷物預かり・受取",
-      "title_en": "Post Check-out Storage",
-      "title_zh-TW": "退房後寄存取回",
-      "title_vi": "Gửi hành lý sau khi trả phòng",
-      "title_ko": "체크아웃 후 짐 보관·수령",
-      "group": "荷物預かり",
-      "group_zh": "行李寄存",
-      "group_en": "Luggage Storage",
-      "group_zh-TW": "行李寄存",
-      "group_vi": "Gửi hành lý",
-      "group_ko": "짐 보관"
-    },
-    {
-      "id": "sub07",
-      "title": "备品索取",
-      "title_ja": "アメニティ・タオルの追加",
-      "title_en": "Requesting Amenities",
-      "title_zh-TW": "備品索取",
-      "title_vi": "Xin thêm đồ dùng",
-      "title_ko": "어메니티 요청",
-      "group": "滞在中",
-      "group_zh": "住宿期间",
-      "group_en": "During Stay",
-      "group_zh-TW": "住宿期間",
-      "group_vi": "Trong thời gian lưu trú",
-      "group_ko": "숙박 중"
-    },
-    {
-      "id": "sub08",
-      "title": "房间故障",
-      "title_ja": "部屋のトラブル",
-      "title_en": "Room Issues",
-      "title_zh-TW": "房間故障",
-      "title_vi": "Sự cố trong phòng",
-      "title_ko": "객실 문제",
-      "group": "滞在中",
-      "group_zh": "住宿期间",
-      "group_en": "During Stay",
-      "group_zh-TW": "住宿期間",
-      "group_vi": "Trong thời gian lưu trú",
-      "group_ko": "숙박 중"
-    },
-    {
-      "id": "sub09",
-      "title": "馆内设施",
-      "title_ja": "館内設備の利用",
-      "title_en": "Facility Inquiries",
-      "title_zh-TW": "館內設施",
-      "title_vi": "Sử dụng tiện ích",
-      "title_ko": "시설 이용",
-      "group": "滞在中",
-      "group_zh": "住宿期间",
-      "group_en": "During Stay",
-      "group_zh-TW": "住宿期間",
-      "group_vi": "Trong thời gian lưu trú",
-      "group_ko": "숙박 중"
-    },
-    {
-      "id": "sub10",
-      "title": "打扫与毛巾",
-      "title_ja": "清掃・タオル交換",
-      "title_en": "Housekeeping",
-      "title_zh-TW": "打掃與毛巾",
-      "title_vi": "Dọn phòng và khăn",
-      "title_ko": "청소 및 수건",
-      "group": "滞在中",
-      "group_zh": "住宿期间",
-      "group_en": "During Stay",
-      "group_zh-TW": "住宿期間",
-      "group_vi": "Trong thời gian lưu trú",
-      "group_ko": "숙박 중"
-    },
-    {
-      "id": "sub11",
-      "title": "标准退房",
-      "title_ja": "スタンダードチェックアウト",
-      "title_en": "Standard Check-out",
-      "title_zh-TW": "標準退房",
-      "title_vi": "Trả phòng thông thường",
-      "title_ko": "일반 체크아웃",
-      "group": "チェックアウト",
-      "group_zh": "退房",
-      "group_en": "Check-out",
-      "group_zh-TW": "退房",
-      "group_vi": "Trả phòng",
-      "group_ko": "체크아웃"
-    },
-    {
-      "id": "sub12",
-      "title": "追加费用结算",
-      "title_ja": "追加精算",
-      "title_en": "Additional Charges",
-      "title_zh-TW": "追加費用結算",
-      "title_vi": "Thanh toán phụ phí",
-      "title_ko": "추가 정산",
-      "group": "チェックアウト",
-      "group_zh": "退房",
-      "group_en": "Check-out",
-      "group_zh-TW": "退房",
-      "group_vi": "Trả phòng",
-      "group_ko": "체크아웃"
-    },
-    {
-      "id": "sub13",
-      "title": "退房后忘东西",
-      "title_ja": "忘れ物・郵送依頼",
-      "title_en": "Lost Items & Mailing",
-      "title_zh-TW": "退房後忘東西",
-      "title_vi": "Đồ bỏ quên & gửi bưu điện",
-      "title_ko": "분실물 및 우편 발송",
-      "group": "チェックアウト",
-      "group_zh": "退房",
-      "group_en": "Check-out",
-      "group_zh-TW": "退房",
-      "group_vi": "Trả phòng",
-      "group_ko": "체크아웃"
-    },
-    {
-      "id": "sub14",
-      "title": "换房申请",
-      "title_ja": "部屋変更リクエスト",
-      "title_en": "Room Change Request",
-      "title_zh-TW": "換房申請",
-      "title_vi": "Yêu cầu đổi phòng",
-      "title_ko": "방 변경 요청",
-      "group": "その他サービス",
-      "group_zh": "其他服务",
-      "group_en": "Other Services",
-      "group_zh-TW": "其他服務",
-      "group_vi": "Dịch vụ khác",
-      "group_ko": "기타 서비스"
-    },
-    {
-      "id": "sub15",
-      "title": "周边推荐与叫车",
-      "title_ja": "周辺案内・タクシー手配",
-      "title_en": "Local Recommendations & Taxi",
-      "title_zh-TW": "周邊推薦與叫車",
-      "title_vi": "Giới thiệu xung quanh & gọi taxi",
-      "title_ko": "주변 추천 및 택시 호출",
-      "group": "その他サービス",
-      "group_zh": "其他服务",
-      "group_en": "Other Services",
-      "group_zh-TW": "其他服務",
-      "group_vi": "Dịch vụ khác",
-      "group_ko": "기타 서비스"
-    },
-    {
-      "id": "sub16",
-      "title": "续住与提前退房",
-      "title_ja": "延泊・早期チェックアウト",
-      "title_en": "Extension & Early Check-out",
-      "title_zh-TW": "續住與提前退房",
-      "title_vi": "Gia hạn & Trả phòng sớm",
-      "title_ko": "연박 및 조기 체크아웃",
-      "group": "その他サービス",
-      "group_zh": "其他服务",
-      "group_en": "Other Services",
-      "group_zh-TW": "其他服務",
-      "group_vi": "Dịch vụ khác",
-      "group_ko": "기타 서비스"
-    }
-  ]
-}
   ]
 }

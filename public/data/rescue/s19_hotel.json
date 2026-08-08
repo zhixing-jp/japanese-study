@@ -652,7 +652,7 @@
       "ko": "냉장고 음료를 이용했습니다. 정산해 주세요.",
       "scene": "追加精算",
       "id": "s19-050",
-      "subcategory": "sub12",
+      "subcategory": "sub20",
       "role": "user"
     },
     {
@@ -665,7 +665,7 @@
       "ko": "알겠습니다. 이용 항목을 확인하겠습니다. [X]엔 청구됩니다.",
       "scene": "追加精算",
       "id": "s19-051",
-      "subcategory": "sub12",
+      "subcategory": "sub20",
       "role": "staff"
     },
     {
@@ -678,7 +678,7 @@
       "ko": "숙박세는 얼마인가요?",
       "scene": "追加精算",
       "id": "s19-052",
-      "subcategory": "sub12",
+      "subcategory": "sub20",
       "role": "user"
     },
     {
@@ -691,7 +691,7 @@
       "ko": "숙박세는 1인 1박 [X]엔입니다. 숙박비와 별도로 현금으로 지불하셔야 합니다.",
       "scene": "追加精算",
       "id": "s19-053",
-      "subcategory": "sub12",
+      "subcategory": "sub20",
       "role": "staff"
     },
     {
@@ -704,7 +704,7 @@
       "ko": "방금 체크아웃한 [이름]인데요, 방에 충전기를 두고 나왔어요.",
       "scene": "忘れ物",
       "id": "s19-054",
-      "subcategory": "sub13",
+      "subcategory": "sub22",
       "role": "user"
     },
     {
@@ -717,7 +717,7 @@
       "ko": "객실 번호와 분실물의 특징을 알려주시겠어요?",
       "scene": "忘れ物",
       "id": "s19-055",
-      "subcategory": "sub13",
+      "subcategory": "sub22",
       "role": "staff"
     },
     {
@@ -730,7 +730,7 @@
       "ko": "[X]호실입니다. 흰색 스마트폰 충전기입니다.",
       "scene": "忘れ物",
       "id": "s19-056",
-      "subcategory": "sub13",
+      "subcategory": "sub22",
       "role": "user"
     },
     {
@@ -743,7 +743,7 @@
       "ko": "확인해 보겠습니다... 방에 있었습니다. 우편으로 보내드릴까요?",
       "scene": "忘れ物",
       "id": "s19-057",
-      "subcategory": "sub13",
+      "subcategory": "sub22",
       "role": "staff"
     },
     {
@@ -756,7 +756,7 @@
       "ko": "우편으로 보내주세요. 배송비는 얼마인가요?",
       "scene": "忘れ物",
       "id": "s19-058",
-      "subcategory": "sub13",
+      "subcategory": "sub22",
       "role": "user"
     },
     {
@@ -769,7 +769,7 @@
       "ko": "방을 바꿔주실 수 있나요? 옆 방 소리가 시끄러워서 잠을 못 자겠어요.",
       "scene": "部屋変更",
       "id": "s19-059",
-      "subcategory": "sub14",
+      "subcategory": "sub23",
       "role": "user"
     },
     {
@@ -782,7 +782,7 @@
       "ko": "대단히 죄송합니다. 빈 방을 확인해 보겠습니다. 잠시만 기다려 주세요.",
       "scene": "部屋変更",
       "id": "s19-060",
-      "subcategory": "sub14",
+      "subcategory": "sub23",
       "role": "staff"
     },
     {
@@ -795,7 +795,7 @@
       "ko": "높은 층의 방이나 경치가 좋은 방이 있나요?",
       "scene": "部屋変更",
       "id": "s19-061",
-      "subcategory": "sub14",
+      "subcategory": "sub23",
       "role": "user"
     },
     {
@@ -808,7 +808,7 @@
       "ko": "근처에 추천하는 레스토랑이 있나요?",
       "scene": "周辺案内",
       "id": "s19-062",
-      "subcategory": "sub15",
+      "subcategory": "sub24",
       "role": "user"
     },
     {
@@ -821,7 +821,7 @@
       "ko": "택시를 불러주시겠어요? [역]까지 가고 싶은데요.",
       "scene": "周辺案内",
       "id": "s19-063",
-      "subcategory": "sub15",
+      "subcategory": "sub24",
       "role": "user"
     },
     {
@@ -834,7 +834,7 @@
       "ko": "알겠습니다. 바로 부르겠습니다. 입구에서 기다려 주세요.",
       "scene": "周辺案内",
       "id": "s19-064",
-      "subcategory": "sub15",
+      "subcategory": "sub24",
       "role": "staff"
     },
     {
@@ -847,7 +847,7 @@
       "ko": "하루 더 연장하고 싶은데, 가능한가요?",
       "scene": "延長・早期退出",
       "id": "s19-065",
-      "subcategory": "sub16",
+      "subcategory": "sub25",
       "role": "user"
     },
     {
@@ -860,7 +860,7 @@
       "ko": "확인해 보겠습니다... 오늘은 [X]호실만 비어 있습니다. 방을 옮기셔도 괜찮으시겠어요?",
       "scene": "延長・早期退出",
       "id": "s19-066",
-      "subcategory": "sub16",
+      "subcategory": "sub25",
       "role": "staff"
     },
     {
@@ -873,7 +873,7 @@
       "ko": "예정보다 일찍 체크아웃하고 싶은데, 취소 수수료가 있나요?",
       "scene": "延長・早期退出",
       "id": "s19-067",
-      "subcategory": "sub16",
+      "subcategory": "sub25",
       "role": "user"
     },
     {
@@ -886,7 +886,462 @@
       "ko": "예약하신 플랜에 따라 다릅니다. 확인해 드릴 테니 잠시만 기다려 주세요.",
       "scene": "延長・早期退出",
       "id": "s19-068",
+      "subcategory": "sub25",
+      "role": "staff"
+    },
+    {
+      "jp": "おはようございます。朝食会場はどこですか。何時までですか。",
+      "furigana": "おはようございます。ちょうしょくかいじょうはどこですか。なんじまでですか。",
+      "zh": "早上好，请问早餐在哪里用？几点结束？",
+      "zh-TW": "早上好，請問早餐在哪裡用？幾點結束？",
+      "en": "Good morning. Where is the breakfast area? Until what time?",
+      "vi": "Chào buổi sáng. Khu vực ăn sáng ở đâu? Đến mấy giờ?",
+      "ko": "안녕하세요. 조식 장소는 어디인가요? 몇 시까지인가요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-069",
+      "subcategory": "sub11",
+      "role": "user"
+    },
+    {
+      "jp": "おはようございます。朝食会場は [2階のレストラン] でございます。時間は [7時から10時まで、入場は9時半まで] です。",
+      "furigana": "おはようございます。ちょうしょくかいじょうは [2かいのレストラン] でございます。じかんは [7じから10じまで、にゅうじょうは9じはんまで] です。",
+      "zh": "早上好，早餐在[2楼餐厅]，时间是[7点到10点，9点半停止入场]。",
+      "zh-TW": "早上好，早餐在[2樓餐廳]，時間是[7點到10點，9點半停止入場]。",
+      "en": "Good morning. Breakfast is served at the [2nd floor restaurant], from [7:00 to 10:00, last entry at 9:30].",
+      "vi": "Chào buổi sáng. Bữa sáng được phục vụ tại [nhà hàng tầng 2], từ [7 giờ đến 10 giờ, vào cửa trước 9 giờ 30].",
+      "ko": "안녕하세요. 조식 장소는 [2층 레스토랑]이며, 시간은 [7시부터 10시까지, 입장은 9시 30분까지]입니다.",
+      "scene": "レストラン・朝食",
+      "id": "s19-070",
+      "subcategory": "sub11",
+      "role": "staff"
+    },
+    {
+      "jp": "朝食券は必要ですか。",
+      "furigana": "ちょうしょくけんはひつようですか。",
+      "zh": "需要早餐券吗？",
+      "zh-TW": "需要早餐券嗎？",
+      "en": "Do I need a breakfast voucher?",
+      "vi": "Tôi có cần phiếu ăn sáng không?",
+      "ko": "조식 쿠폰이 필요한가요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-071",
+      "subcategory": "sub11",
+      "role": "user"
+    },
+    {
+      "jp": "はい、こちらの朝食券をご提示ください。お席へどうぞ。こちらの「食事中」の札をお使いください。",
+      "furigana": "はい、こちらのちょうしょくけんをごていじください。おせきへどうぞ。こちらの「しょくじちゅう」のふだをおつかいください。",
+      "zh": "是的，请出示早餐券。请到座位就坐，请使用这个「用餐中」的牌子。",
+      "zh-TW": "是的，請出示早餐券。請到座位就坐，請使用這個「用餐中」的牌子。",
+      "en": "Yes, please show your breakfast voucher. Please take a seat and use this 'Occupied' sign.",
+      "vi": "Vâng, vui lòng xuất trình phiếu ăn sáng. Mời ngồi và dùng biển 'Đang dùng bữa' này.",
+      "ko": "네, 조식 쿠폰을 제시해 주세요. 자리로 안내해 드리겠습니다. 이 '식사 중' 표시를 사용해 주세요.",
+      "scene": "レストラン・朝食",
+      "id": "s19-072",
+      "subcategory": "sub11",
+      "role": "staff"
+    },
+    {
+      "jp": "現在、大変混み合っておりまして、[10分] ほどお待ちいただけますか。",
+      "furigana": "げんざい、たいへんこみあっておりまして、[10ふん] ほどおまちいただけますか。",
+      "zh": "现在非常拥挤，请问您可以等大约[10分钟]吗？",
+      "zh-TW": "現在非常擁擠，請問您可以等大約[10分鐘]嗎？",
+      "en": "It's very busy right now. Could you wait about [10 minutes]?",
+      "vi": "Hiện tại rất đông, bạn có thể chờ khoảng [10 phút] không?",
+      "ko": "지금 매우 혼잡합니다. [10분] 정도 기다려 주실 수 있나요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-073",
+      "subcategory": "sub12",
+      "role": "staff"
+    },
+    {
+      "jp": "わかりました。どこで待てばいいですか。",
+      "furigana": "わかりました。どこでまてばいいですか。",
+      "zh": "好的，请问在哪里等？",
+      "zh-TW": "好的，請問在哪裡等？",
+      "en": "Understood. Where should I wait?",
+      "vi": "Vâng, tôi nên chờ ở đâu?",
+      "ko": "알겠습니다. 어디서 기다리면 될까요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-074",
+      "subcategory": "sub12",
+      "role": "user"
+    },
+    {
+      "jp": "こちらの椅子でお待ちください。お名前をお願いします。お呼びいたします。",
+      "furigana": "こちらのいすでおまちください。おなまえをおねがいします。およびいたします。",
+      "zh": "请在这里的椅子上等候，请告诉我您的姓名，我会叫您的。",
+      "zh-TW": "請在這裡的椅子上等候，請告訴我您的姓名，我會叫您的。",
+      "en": "Please wait on these chairs. May I have your name? We'll call you when ready.",
+      "vi": "Vui lòng ngồi chờ ở đây. Cho tôi biết tên của bạn, chúng tôi sẽ gọi bạn.",
+      "ko": "여기 의자에서 기다려 주세요. 성함을 알려주시면 불러드리겠습니다.",
+      "scene": "レストラン・朝食",
+      "id": "s19-075",
+      "subcategory": "sub12",
+      "role": "staff"
+    },
+    {
+      "jp": "すみません、コーヒーのおかわりはできますか。",
+      "furigana": "すみません、コーヒーのおかわりはできますか。",
+      "zh": "不好意思，可以续杯咖啡吗？",
+      "zh-TW": "不好意思，可以續杯咖啡嗎？",
+      "en": "Excuse me, can I have a refill of coffee?",
+      "vi": "Xin lỗi, tôi có thể lấy thêm cà phê không?",
+      "ko": "저기요, 커피 리필이 되나요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-076",
+      "subcategory": "sub13",
+      "role": "user"
+    },
+    {
+      "jp": "はい、あちらのドリンクバーをご自由にお使いください。",
+      "furigana": "はい、あちらのドリンクバーをごじゆうにおつかいください。",
+      "zh": "好的，请随意使用那边的饮料吧台。",
+      "zh-TW": "好的，請隨意使用那邊的飲料吧台。",
+      "en": "Yes, please feel free to use the drink bar over there.",
+      "vi": "Vâng, bạn có thể tự phục vụ tại quầy đồ uống ở đó.",
+      "ko": "네, 저쪽 드링크바를 자유롭게 이용하세요.",
+      "scene": "レストラン・朝食",
+      "id": "s19-077",
+      "subcategory": "sub13",
+      "role": "staff"
+    },
+    {
+      "jp": "子供用の椅子と食器をいただけますか。",
+      "furigana": "こどもようのいすとしょっきをいただけますか。",
+      "zh": "可以给我儿童椅和儿童餐具吗？",
+      "zh-TW": "可以給我兒童椅和兒童餐具嗎？",
+      "en": "Could I have a high chair and children's tableware?",
+      "vi": "Bạn có thể cho tôi ghế trẻ em và bộ đồ ăn dành cho trẻ không?",
+      "ko": "어린이용 의자와 식기를 주실 수 있나요?",
+      "scene": "レストラン・朝食",
+      "id": "s19-078",
+      "subcategory": "sub13",
+      "role": "user"
+    },
+    {
+      "jp": "今日の夜、レストランを予約したいんですが、空いていますか。",
+      "furigana": "きょうのよる、レストランをよやくしたいんですが、あいていますか。",
+      "zh": "我想预约今晚的餐厅，请问有位子吗？",
+      "zh-TW": "我想預約今晚的餐廳，請問有位子嗎？",
+      "en": "I'd like to make a dinner reservation for tonight. Do you have availability?",
+      "vi": "Tôi muốn đặt bàn tối nay. Còn chỗ không?",
+      "ko": "오늘 저녁 레스토랑을 예약하고 싶은데, 자리가 있나요?",
+      "scene": "レストラン予約",
+      "id": "s19-079",
+      "subcategory": "sub14",
+      "role": "user"
+    },
+    {
+      "jp": "何名様で、何時をご希望ですか。",
+      "furigana": "なんめいさまで、なんじをごきぼうですか。",
+      "zh": "请问几位，希望几点用餐？",
+      "zh-TW": "請問幾位，希望幾點用餐？",
+      "en": "How many people, and what time would you like?",
+      "vi": "Bao nhiêu người và bạn muốn đặt lúc mấy giờ?",
+      "ko": "몇 분이시고, 몇 시를 원하시나요?",
+      "scene": "レストラン予約",
+      "id": "s19-080",
+      "subcategory": "sub14",
+      "role": "staff"
+    },
+    {
+      "jp": "[2] 人で、[7] 時ごろがいいです。",
+      "furigana": "[2] にんで、[7] じごろがいいです。",
+      "zh": "[2]人，大约[7]点左右。",
+      "zh-TW": "[2]人，大約[7]點左右。",
+      "en": "[2] people, around [7] o'clock.",
+      "vi": "[2] người, khoảng [7] giờ.",
+      "ko": "[2]명이고, [7]시쯤이 좋겠습니다.",
+      "scene": "レストラン予約",
+      "id": "s19-081",
+      "subcategory": "sub14",
+      "role": "user"
+    },
+    {
+      "jp": "[7] 時ですね、お席をご用意できます。お部屋番号とお名前をお願いします。",
+      "furigana": "[7] じですね、おせきをごよういできます。おへやばんごうとおなまえをおねがいします。",
+      "zh": "[7]点可以，我们为您安排座位。请告诉我您的房间号和姓名。",
+      "zh-TW": "[7]點可以，我們為您安排座位。請告訴我您的房間號和姓名。",
+      "en": "[7] o'clock, we can arrange a table. Could I have your room number and name?",
+      "vi": "[7] giờ được, chúng tôi có thể chuẩn bị chỗ. Cho tôi số phòng và tên của bạn.",
+      "ko": "[7]시 가능합니다. 객실 번호와 성함을 알려주세요.",
+      "scene": "レストラン予約",
+      "id": "s19-082",
+      "subcategory": "sub14",
+      "role": "staff"
+    },
+    {
+      "jp": "[X号室] の [ローマ字の苗字] です。",
+      "furigana": "[X ごうしつ] の [ローマじのみょうじ] です。",
+      "zh": "[X号]房的[姓名]。",
+      "zh-TW": "[X號]房的[姓名]。",
+      "en": "Room [X], name is [surname in Roman letters].",
+      "vi": "Phòng [X], tên là [họ bằng chữ Latinh].",
+      "ko": "[X]호실의 [로마자 성]입니다.",
+      "scene": "レストラン予約",
+      "id": "s19-083",
+      "subcategory": "sub14",
+      "role": "user"
+    },
+    {
+      "jp": "承知いたしました。では、今夜 [7] 時にお待ちしております。",
+      "furigana": "しょうちいたしました。では、こんや [7] じにおまちしております。",
+      "zh": "好的，今晚[7]点恭候您的光临。",
+      "zh-TW": "好的，今晚[7]點恭候您的光臨。",
+      "en": "Understood. We'll be expecting you tonight at [7] o'clock.",
+      "vi": "Vâng. Chúng tôi sẽ chờ bạn tối nay lúc [7] giờ.",
+      "ko": "알겠습니다. 오늘 저녁 [7]시에 기다리겠습니다.",
+      "scene": "レストラン予約",
+      "id": "s19-084",
+      "subcategory": "sub14",
+      "role": "staff"
+    },
+    {
+      "jp": "あいにく今夜のディナーは満席となっております。",
+      "furigana": "あいにくこんやのディナーはまんせきとなっております。",
+      "zh": "很遗憾，今晚的晚餐已经全部订满了。",
+      "zh-TW": "很遺憾，今晚的晚餐已經全部訂滿了。",
+      "en": "Unfortunately, tonight's dinner is fully booked.",
+      "vi": "Rất tiếc, bữa tối hôm nay đã hết chỗ.",
+      "ko": "아쉽게도 오늘 저녁 식사는 만석입니다.",
+      "scene": "レストラン予約",
+      "id": "s19-085",
+      "subcategory": "sub15",
+      "role": "staff"
+    },
+    {
+      "jp": "わかりました。近くに歩いて行けるレストランはありますか。",
+      "furigana": "わかりました。ちかくにあるいていけるレストランはありますか。",
+      "zh": "好的，附近有可以步行到的餐厅吗？",
+      "zh-TW": "好的，附近有可以步行到的餐廳嗎？",
+      "en": "I see. Are there any restaurants nearby that I can walk to?",
+      "vi": "Vâng. Có nhà hàng nào gần đây có thể đi bộ đến không?",
+      "ko": "알겠습니다. 걸어서 갈 수 있는 근처 레스토랑이 있나요?",
+      "scene": "レストラン予約",
+      "id": "s19-086",
+      "subcategory": "sub15",
+      "role": "user"
+    },
+    {
+      "jp": "はい、ホテルの周辺に飲食店がいくつかございます。こちらの周辺マップをご覧ください。",
+      "furigana": "はい、ホテルのしゅうへんにいんしょくてんがいくつかございます。こちらのしゅうへんマップをごらんください。",
+      "zh": "有的，酒店周边有几家餐厅，请参考这份周边地图。",
+      "zh-TW": "有的，酒店周邊有幾家餐廳，請參考這份周邊地圖。",
+      "en": "Yes, there are several restaurants around the hotel. Please take a look at this area map.",
+      "vi": "Vâng, có một số nhà hàng quanh khách sạn. Vui lòng xem bản đồ khu vực này.",
+      "ko": "네, 호텔 주변에 음식점이 몇 군데 있습니다. 이 주변 지도를 참고해 주세요.",
+      "scene": "レストラン予約",
+      "id": "s19-087",
+      "subcategory": "sub15",
+      "role": "staff"
+    },
+    {
+      "jp": "ルームサービスをお願いしたいんですが。",
+      "furigana": "ルームサービスをおねがいしたいんですが。",
+      "zh": "我想点客房服务。",
+      "zh-TW": "我想點客房服務。",
+      "en": "I'd like to order room service.",
+      "vi": "Tôi muốn gọi dịch vụ phòng.",
+      "ko": "룸서비스를 부탁하고 싶습니다.",
+      "scene": "ルームサービス",
+      "id": "s19-088",
       "subcategory": "sub16",
+      "role": "user"
+    },
+    {
+      "jp": "お電話ありがとうございます。メニューはお決まりでしょうか。",
+      "furigana": "おでんわありがとうございます。メニューはおきまりでしょうか。",
+      "zh": "感谢您的来电，请问您决定好点什么了吗？",
+      "zh-TW": "感謝您的來電，請問您決定好點什麼了嗎？",
+      "en": "Thank you for calling. Have you decided on your order?",
+      "vi": "Cảm ơn bạn đã gọi. Bạn đã quyết định món chưa?",
+      "ko": "전화 주셔서 감사합니다. 주문은 결정하셨나요?",
+      "scene": "ルームサービス",
+      "id": "s19-089",
+      "subcategory": "sub16",
+      "role": "staff"
+    },
+    {
+      "jp": "[ハンバーグセット] を [1] つと、[ビール] を [1] 本お願いします。",
+      "furigana": "[ハンバーグセット] を [1] つと、[ビール] を [1] ほんおねがいします。",
+      "zh": "请给我[1]份[汉堡套餐]和[1]瓶[啤酒]。",
+      "zh-TW": "請給我[1]份[漢堡套餐]和[1]瓶[啤酒]。",
+      "en": "I'd like [1] [hamburger set] and [1] [beer], please.",
+      "vi": "Cho tôi [1] [set hamburger] và [1] chai [bia].",
+      "ko": "[햄버그 세트] [1]개와 [맥주] [1]병 부탁드립니다.",
+      "scene": "ルームサービス",
+      "id": "s19-090",
+      "subcategory": "sub16",
+      "role": "user"
+    },
+    {
+      "jp": "かしこまりました。お届けまで [30分] ほどかかります。お支払いはチェックアウト時にお部屋代と合わせて清算いたします。",
+      "furigana": "かしこまりました。おとどけまで [30ふん] ほどかかります。おしはらいはチェックアウトじにおへやだいとあわせてせいさんいたします。",
+      "zh": "好的，大约需要[30分钟]送达。费用将在退房时与住宿费一起结算。",
+      "zh-TW": "好的，大約需要[30分鐘]送達。費用將在退房時與住宿費一起結算。",
+      "en": "Certainly. Delivery will take about [30 minutes]. Payment will be added to your room bill at check-out.",
+      "vi": "Vâng. Sẽ mất khoảng [30 phút] để giao. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
+      "ko": "알겠습니다. 배달까지 약 [30분] 걸립니다. 결제는 체크아웃 시 숙박비와 함께 정산됩니다.",
+      "scene": "ルームサービス",
+      "id": "s19-091",
+      "subcategory": "sub16",
+      "role": "staff"
+    },
+    {
+      "jp": "ルームサービスでございます。失礼いたします。",
+      "furigana": "ルームサービスでございます。しつれいいたします。",
+      "zh": "您好，客房服务到了，打扰了。",
+      "zh-TW": "您好，客房服務到了，打擾了。",
+      "en": "Room service. Excuse me.",
+      "vi": "Dịch vụ phòng đây ạ. Xin phép vào.",
+      "ko": "룸서비스입니다. 실례합니다.",
+      "scene": "ルームサービス",
+      "id": "s19-092",
+      "subcategory": "sub17",
+      "role": "staff"
+    },
+    {
+      "jp": "はい、どうぞ。",
+      "furigana": "はい、どうぞ。",
+      "zh": "好的，请进。",
+      "zh-TW": "好的，請進。",
+      "en": "Yes, come in.",
+      "vi": "Vâng, mời vào.",
+      "ko": "네, 들어오세요.",
+      "scene": "ルームサービス",
+      "id": "s19-093",
+      "subcategory": "sub17",
+      "role": "user"
+    },
+    {
+      "jp": "こちら [ハンバーグセット] と [ビール] でございます。こちらの伝票にお部屋番号とお名前をご記入ください。",
+      "furigana": "こちら [ハンバーグセット] と [ビール] でございます。こちらのでんぴょうにおへやばんごうとおなまえをごきにゅうください。",
+      "zh": "这是您点的[汉堡套餐]和[啤酒]，请在这张单据上填写房间号和姓名。",
+      "zh-TW": "這是您點的[漢堡套餐]和[啤酒]，請在這張單據上填寫房間號和姓名。",
+      "en": "Here is your [hamburger set] and [beer]. Please write your room number and name on this slip.",
+      "vi": "Đây là [set hamburger] và [bia] của bạn. Vui lòng điền số phòng và tên vào phiếu này.",
+      "ko": "[햄버그 세트]와 [맥주]입니다. 이 전표에 객실 번호와 성함을 기재해 주세요.",
+      "scene": "ルームサービス",
+      "id": "s19-094",
+      "subcategory": "sub17",
+      "role": "staff"
+    },
+    {
+      "jp": "ごゆっくりどうぞ。",
+      "furigana": "ごゆっくりどうぞ。",
+      "zh": "请慢用。",
+      "zh-TW": "請慢用。",
+      "en": "Please enjoy your meal.",
+      "vi": "Mời bạn dùng bữa ngon miệng.",
+      "ko": "천천히 드세요.",
+      "scene": "ルームサービス",
+      "id": "s19-095",
+      "subcategory": "sub17",
+      "role": "staff"
+    },
+    {
+      "jp": "コインランドリーはどこにありますか。",
+      "furigana": "コインランドリーはどこにありますか。",
+      "zh": "投币洗衣机在哪里？",
+      "zh-TW": "投幣洗衣機在哪裡？",
+      "en": "Where is the coin laundry?",
+      "vi": "Máy giặt tự phục vụ ở đâu?",
+      "ko": "코인 세탁기는 어디에 있나요?",
+      "scene": "ランドリー",
+      "id": "s19-096",
+      "subcategory": "sub18",
+      "role": "user"
+    },
+    {
+      "jp": "コインランドリーは [2階] の自動販売機コーナーの横にございます。1回 [300円] です。両替はフロントでできます。",
+      "furigana": "コインランドリーは [2かい] のじどうはんばいきコーナーのよこにございます。1かい [300えん] です。りょうがえはフロントでできます。",
+      "zh": "投币洗衣机在[2楼]自动售货机旁边，每次[300円]，前台可以换零钱。",
+      "zh-TW": "投幣洗衣機在[2樓]自動販賣機旁邊，每次[300円]，前台可以換零錢。",
+      "en": "The coin laundry is next to the vending machine area on the [2nd] floor. It costs [300 yen] per use. You can get change at the front desk.",
+      "vi": "Máy giặt tự phục vụ ở cạnh khu vực máy bán hàng tự động tầng [2], giá [300 yên] mỗi lần. Bạn có thể đổi tiền lẻ tại lễ tân.",
+      "ko": "코인 세탁기는 [2층] 자판기 코너 옆에 있습니다. 1회 [300엔]이며, 프런트에서 환전 가능합니다.",
+      "scene": "ランドリー",
+      "id": "s19-097",
+      "subcategory": "sub18",
+      "role": "staff"
+    },
+    {
+      "jp": "乾燥機もありますか。",
+      "furigana": "かんそうきもありますか。",
+      "zh": "有烘干机吗？",
+      "zh-TW": "有烘乾機嗎？",
+      "en": "Is there also a dryer?",
+      "vi": "Có máy sấy không?",
+      "ko": "건조기도 있나요?",
+      "scene": "ランドリー",
+      "id": "s19-098",
+      "subcategory": "sub18",
+      "role": "user"
+    },
+    {
+      "jp": "はい、乾燥機は [30分 100円] です。",
+      "furigana": "はい、かんそうきは [30ふん 100えん] です。",
+      "zh": "有的，烘干机[30分钟100円]。",
+      "zh-TW": "有的，烘乾機[30分鐘100円]。",
+      "en": "Yes, the dryer costs [100 yen for 30 minutes].",
+      "vi": "Có, máy sấy giá [100 yên cho 30 phút].",
+      "ko": "네, 건조기는 [30분에 100엔]입니다.",
+      "scene": "ランドリー",
+      "id": "s19-099",
+      "subcategory": "sub18",
+      "role": "staff"
+    },
+    {
+      "jp": "ワイシャツのクリーニングをお願いしたいんですが、どうすればいいですか。",
+      "furigana": "ワイシャツのクリーニングをおねがいしたいんですが、どうすればいいですか。",
+      "zh": "我想送洗衬衫，应该怎么做？",
+      "zh-TW": "我想送洗襯衫，應該怎麼做？",
+      "en": "I'd like to have my shirt dry-cleaned. How do I do that?",
+      "vi": "Tôi muốn giặt khô áo sơ mi. Tôi phải làm thế nào?",
+      "ko": "와이셔츠 세탁을 맡기고 싶은데, 어떻게 하면 되나요?",
+      "scene": "クリーニング",
+      "id": "s19-100",
+      "subcategory": "sub19",
+      "role": "user"
+    },
+    {
+      "jp": "クローゼットの中に専用のバッグと伝票がございます。ご記入の上、午前 [10時] までにフロントへお持ちください。",
+      "furigana": "クローゼットのなかにせんようのバッグとでんぴょうがございます。ごきにゅうのうえ、ごぜん [10じ] までにフロントへおもちください。",
+      "zh": "衣柜里有专用袋和单据，填好后请在上午[10点]前送到前台。",
+      "zh-TW": "衣櫃裡有專用袋和單據，填好後請在上午[10點]前送到前台。",
+      "en": "There is a special bag and form in the closet. Please fill it out and bring it to the front desk by [10:00 AM].",
+      "vi": "Trong tủ quần áo có túi chuyên dụng và phiếu. Vui lòng điền vào và mang đến lễ tân trước [10 giờ sáng].",
+      "ko": "옷장 안에 전용 백과 전표가 있습니다. 기재 후 오전 [10시]까지 프런트에 가져다 주세요.",
+      "scene": "クリーニング",
+      "id": "s19-101",
+      "subcategory": "sub19",
+      "role": "staff"
+    },
+    {
+      "jp": "今日の夕方には仕上がりますか。",
+      "furigana": "きょうのゆうがたにはしあがりますか。",
+      "zh": "今天傍晚能洗好吗？",
+      "zh-TW": "今天傍晚能洗好嗎？",
+      "en": "Will it be ready by this evening?",
+      "vi": "Có thể xong vào chiều tối hôm nay không?",
+      "ko": "오늘 저녁까지 완성될까요?",
+      "scene": "クリーニング",
+      "id": "s19-102",
+      "subcategory": "sub19",
+      "role": "user"
+    },
+    {
+      "jp": "はい、朝 [10時] までのお預かりで、本日の夕方 [6時] 頃に仕上がります。料金はチェックアウト時にお部屋代と合わせて清算いたします。",
+      "furigana": "はい、あさ [10じ] までのおあずかりで、ほんじつのゆうがた [6じ] ごろにしあがります。りょうきんはチェックアウトじにおへやだいとあわせてせいさんいたします。",
+      "zh": "是的，上午[10点]前送来的话，今天傍晚[6点]左右可以洗好。费用将在退房时与住宿费一起结算。",
+      "zh-TW": "是的，上午[10點]前送來的話，今天傍晚[6點]左右可以洗好。費用將在退房時與住宿費一起結算。",
+      "en": "Yes, if dropped off by [10:00 AM], it will be ready around [6:00 PM] today. Payment will be added to your room bill at check-out.",
+      "vi": "Vâng, nếu mang đến trước [10 giờ sáng], sẽ xong vào khoảng [6 giờ chiều] hôm nay. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
+      "ko": "네, 오전 [10시]까지 맡기시면 오늘 저녁 [6시]쯤 완성됩니다. 요금은 체크아웃 시 숙박비와 함께 정산됩니다.",
+      "scene": "クリーニング",
+      "id": "s19-103",
+      "subcategory": "sub19",
       "role": "staff"
     }
   ]
