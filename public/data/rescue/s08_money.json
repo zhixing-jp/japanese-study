@@ -1,13 +1,13 @@
 {
   "id": "s08",
-  "title": "お金",
-  "title_zh": "金融",
+  "title": "金融",
   "title_en": "Banking & Finance",
   "title_zh-TW": "金融",
   "title_vi": "Ngân hàng & Tài chính",
   "title_ko": "금융 & 은행",
-  "category": "金融",
+  "category": "living",
   "description": "银行、ATM、汇款、信用卡——在日本成功完成各类金融操作。",
+  "description_ja": "銀行、ATM、郵便局——お金の手続きや発送を無事に終えるためのフレーズです。",
   "description_en": "Bank, ATM, transfers, credit cards — successfully completing all kinds of financial transactions in Japan.",
   "description_zh-TW": "銀行、ATM、匯款、信用卡——在日本順利完成各類金融操作。",
   "description_vi": "Ngân hàng, ATM, chuyển tiền, thẻ tín dụng — hoàn thành thành công các giao dịch tài chính tại Nhật Bản.",
@@ -1047,5 +1047,6 @@
       "vi": "Nếu bạn đã làm thủ tục tạm dừng thẻ, thẻ đó có thể không thể sử dụng lại.",
       "ko": "이미 이용 정지 수속을 하셨다면 해당 카드는 다시 사용할 수 없을 수 있습니다."
     }
-  ]
+  ],
+  "title_ja": "お金"
 }

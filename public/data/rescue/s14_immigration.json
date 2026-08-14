@@ -1,13 +1,13 @@
 {
   "id": "s14",
-  "title": "在留手続き",
-  "title_zh": "在留手续・入管",
+  "title": "在留手续・入管",
   "title_en": "Residence & Immigration",
   "title_zh-TW": "在留手續・入管",
   "title_vi": "Thủ tục cư trú & Xuất nhập cảnh",
   "title_ko": "재류 수속 & 출입국관리",
-  "category": "在留手续・入管",
+  "category": "living",
   "description": "入境、在留卡更新、资格变更——在日本顺利办理入管相关手续。",
+  "description_ja": "入国、在留カードの更新、資格変更——入管関連の手続きを無事に終えるためのフレーズです。",
   "description_en": "Arrival, residence card renewal, status changes — handling immigration procedures in Japan.",
   "description_zh-TW": "入境、在留卡更新、資格變更——在日本順利辦理入管相關手續。",
   "description_vi": "Nhập cảnh, gia hạn thẻ cư trú, thay đổi tư cách — xử lý các thủ tục xuất nhập cảnh tại Nhật Bản.",
@@ -289,7 +289,43 @@
       "ko": "자격외활동 허가를 신청하고 싶어요."
     },
     {
+      "jp": "永住申請の審査には、半年から1年ほどかかります。",
+      "furigana": "えいじゅうしんせいのしんさには、はんとしからいちねんほどかかります。",
+      "zh": "永住申请的审查大约需要半年到一年。",
       "id": "s14-020",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "The permanent residency application takes about six months to a year to process.",
+      "zh-TW": "永住申請的審查大約需要半年到一年。",
+      "vi": "Việc xét duyệt hồ sơ vĩnh trú mất khoảng nửa năm đến một năm.",
+      "ko": "영주권 신청 심사에는 반년에서 1년 정도 걸립니다."
+    },
+    {
+      "jp": "こちらの書類一式をご用意ください。",
+      "furigana": "こちらのしょるいいっしきをごようういください。",
+      "zh": "请准备好这一整套材料。",
+      "id": "s14-021",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "Please prepare this full set of documents.",
+      "zh-TW": "請準備好這一整套材料。",
+      "vi": "Vui lòng chuẩn bị đầy đủ bộ hồ sơ này.",
+      "ko": "이 서류 일체를 준비해 주세요."
+    },
+    {
+      "jp": "資格外活動許可は、こちらの窓口で申請できます。",
+      "furigana": "しかくがいかつどうきょかは、こちらのまどぐちでしんせいできます。",
+      "zh": "资格外活动许可可以在这个窗口申请。",
+      "id": "s14-022",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "You can apply for permission for activities outside your status at this counter.",
+      "zh-TW": "資格外活動許可可以在這個窗口申請。",
+      "vi": "Giấy phép hoạt động ngoài tư cách có thể xin tại quầy này.",
+      "ko": "자격외 활동 허가는 이 창구에서 신청할 수 있습니다."
+    },
+    {
+      "id": "s14-023",
       "subcategory": "sub04",
       "role": "user",
       "jp": "再入国許可を申請したいです。",
@@ -301,7 +337,7 @@
       "ko": "재입국 허가를 신청하고 싶어요."
     },
     {
-      "id": "s14-021",
+      "id": "s14-024",
       "subcategory": "sub04",
       "role": "user",
       "jp": "みなし再入国許可で出国できますか。",
@@ -313,7 +349,7 @@
       "ko": "간주 재입국 허가로 출국할 수 있나요?"
     },
     {
-      "id": "s14-022",
+      "id": "s14-025",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "みなし再入国許可は出国から1年以内に戻る場合に利用できます。",
@@ -325,7 +361,7 @@
       "ko": "간주 재입국 허가는 출국 후 1년 이내에 돌아오는 경우에 이용할 수 있습니다."
     },
     {
-      "id": "s14-023",
+      "id": "s14-026",
       "subcategory": "sub04",
       "role": "user",
       "jp": "出国前に手続きが必要ですか。",
@@ -337,7 +373,7 @@
       "ko": "출국 전에 수속이 필요한가요?"
     },
     {
-      "id": "s14-024",
+      "id": "s14-027",
       "subcategory": "sub05",
       "role": "user",
       "jp": "在留期限が過ぎてしまいました。どうすればいいですか。",
@@ -349,7 +385,7 @@
       "ko": "재류기간이 지나버렸어요. 어떻게 해야 하나요?"
     },
     {
-      "id": "s14-025",
+      "id": "s14-028",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "すぐに入管局に出頭してください。自主的に申し出ることで、処分が軽くなる場合があります。",
@@ -361,7 +397,7 @@
       "ko": "즉시 출입국관리국에 자진 신고해 주세요. 자진 신고 시 처분이 가벼워질 수 있습니다."
     },
     {
-      "id": "s14-026",
+      "id": "s14-029",
       "subcategory": "sub05",
       "role": "user",
       "jp": "パスポートをなくしました。大使館に連絡する必要がありますか。",
@@ -373,7 +409,7 @@
       "ko": "여권을 잃어버렸어요. 대사관에 연락해야 하나요?"
     },
     {
-      "id": "s14-027",
+      "id": "s14-030",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "まず警察に遺失届を出してから、大使館でパスポートの再発行手続きをしてください。",
@@ -385,7 +421,7 @@
       "ko": "먼저 경찰에 분실 신고를 하고, 그 후 대사관에서 여권 재발급 수속을 해주세요."
     },
     {
-      "id": "s14-028",
+      "id": "s14-031",
       "subcategory": "sub05",
       "role": "user",
       "jp": "警察に在留カードの提示を求められました。",
@@ -397,7 +433,7 @@
       "ko": "경찰이 재류카드 제시를 요구했어요."
     },
     {
-      "id": "s14-029",
+      "id": "s14-032",
       "subcategory": "sub05",
       "role": "user",
       "jp": "通訳をお願いできますか。",
@@ -409,7 +445,7 @@
       "ko": "통역을 부탁드릴 수 있나요?"
     },
     {
-      "id": "s14-030",
+      "id": "s14-033",
       "subcategory": "sub05",
       "role": "user",
       "jp": "入管局の電話番号を教えてください。",
@@ -421,7 +457,7 @@
       "ko": "출입국관리국 전화번호를 알려주세요."
     },
     {
-      "id": "s14-031",
+      "id": "s14-034",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "入管局の相談電話は0570-013904です。平日9時から17時まで対応しています。",
@@ -432,5 +468,6 @@
       "vi": "Đường dây tư vấn của cục quản lý xuất nhập cảnh là 0570-013904, phục vụ từ 9:00 đến 17:00 các ngày trong tuần.",
       "ko": "출입국관리국 상담 전화는 0570-013904이며, 평일 9시부터 17시까지 운영합니다."
     }
-  ]
+  ],
+  "title_ja": "在留手続き"
 }

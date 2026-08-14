@@ -6,7 +6,7 @@ export default defineConfig({
   integrations: [sitemap()],
   i18n: {
     defaultLocale: 'zh',
-    locales: ['zh', 'zh-TW', 'en', 'vi', 'ko'],
+    locales: ['zh', 'zh-TW', 'en', 'vi', 'ko', 'ja'],
     routing: {
       prefixDefaultLocale: false,
       strategy: 'pathname'

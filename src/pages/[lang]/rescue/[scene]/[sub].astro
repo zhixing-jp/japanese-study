@@ -1,11 +1,11 @@
 ---
-import Base from '../../../layouts/Base.astro';
-import RescueItem from '../../../components/RescueItem.astro';
-import { getLangFromUrl } from '../../../i18n/index.js';
-import rescueIndex from '../../../../public/data/rescue/index.json';
+import Base from '../../../../layouts/Base.astro';
+import RescueItem from '../../../../components/RescueItem.astro';
+import rescueIndex from '../../../../../public/data/rescue/index.json';
 import { readFile } from 'node:fs/promises';
 
 export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
   const paths = [];
   for (const scene of rescueIndex.scenes) {
     if (!scene.subcategories || scene.subcategories.length === 0) continue;
@@ -13,25 +13,29 @@ export async function getStaticPaths() {
     try {
       const raw = await readFile(`public/data/rescue/${scene.file.split('/').pop()}`, 'utf-8');
       sceneData = JSON.parse(raw);
-    } catch(e) { continue; }
+    } catch (e) { continue; }
     for (const sub of scene.subcategories) {
       const items = (sceneData.items || []).filter((item: any) => item.subcategory === sub.id);
-      paths.push({ params: { scene: scene.id, sub: sub.id }, props: { scene, sub, items } });
+      for (const lang of SUPPORTED_LANGS) {
+        paths.push({
+          params: { lang, scene: scene.id, sub: sub.id },
+          props: { scene, sub, items, lang }
+        });
+      }
     }
   }
   return paths;
 }
 
-const { scene, sub, items } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+const { scene, sub, items, lang } = Astro.props;
 
 const sceneTitle = (scene as any)[`title_${lang}`] || (scene as any).title_zh || scene.title;
 const subTitle = (sub as any)[`title_${lang}`] || sub.title;
 const title = `${sceneTitle} · ${subTitle} | Living Japanese`;
 const description = `${subTitle} - ${(scene as any)[`description_${lang}`] || scene.description || ''}`;
 
-const homeUrl = lang === 'zh' ? '/' : `/${lang}/`;
-const sceneUrl = lang === 'zh' ? `/rescue/${scene.id}/` : `/${lang}/rescue/${scene.id}/`;
+const homeUrl = `/${lang}/`;
+const sceneUrl = `/${lang}/rescue/${scene.id}/`;
 
 const homeLabel: Record<string, string> = {
   zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈', ja: 'ホーム'
@@ -68,7 +72,6 @@ function u(key: string) { return ui[key]?.[lang] || ui[key]?.zh || key; }
     style="display:none">
   </div>
 
-  <!-- 面包屑 -->
   <nav class="rescue-breadcrumb" aria-label="breadcrumb">
     <a href={homeUrl}>{homeLabel[lang] || homeLabel.zh}</a>
     <span aria-hidden="true">›</span>
@@ -77,7 +80,6 @@ function u(key: string) { return ui[key]?.[lang] || ui[key]?.zh || key; }
     <span aria-current="page">{subTitle}</span>
   </nav>
 
-  <!-- 控制栏 -->
   <div class="rescue-ctrl-bar" id="subCtrlBar">
     <a href={sceneUrl} class="ctrl-back" aria-label={u('back')}>←</a>
     <button onclick="togglePlay()" class="ctrl-play" id="btnPlay" aria-label={u('play')}>▶</button>
@@ -88,7 +90,6 @@ function u(key: string) { return ui[key]?.[lang] || ui[key]?.zh || key; }
     <button type="button" onclick="cycleRate()" class="ctrl-cycle" id="btnRate" aria-label="speed"></button>
   </div>
 
-  <!-- 句子列表（data-pagefind-body让Pagefind索引此区域）-->
   <div class="rescue-content-wrap" id="itemsWrap" data-pagefind-body>
     {items.map((item: any, idx: number) => (
       <RescueItem item={item} idx={idx} lang={lang} />

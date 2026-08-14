@@ -430,7 +430,7 @@
       "vi": "Xin lỗi, tôi muốn trả lại sản phẩm này.",
       "ko": "죄송한데, 이 상품을 반품하고 싶습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-001",
+      "id": "s03-033",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -443,7 +443,7 @@
       "vi": "Size không vừa, bạn có thể đổi cho tôi không?",
       "ko": "사이즈가 맞지 않아서 교환해 주실 수 있나요?",
       "scene": "退换货",
-      "id": "s03-sub05-002",
+      "id": "s03-034",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -456,7 +456,7 @@
       "vi": "Tôi mang theo hóa đơn và sản phẩm vẫn còn nguyên trạng.",
       "ko": "영수증과 함께 상품을 원래 상태 그대로 가져왔습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-003",
+      "id": "s03-035",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -469,7 +469,7 @@
       "vi": "Khi về nhà mở ra, tôi thấy đã có vết xước rồi.",
       "ko": "집에 와서 열어보니 이미 흠집이 있었습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-004",
+      "id": "s03-036",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -478,7 +478,7 @@
       "furigana": "こわれていました。",
       "zh": "买回来是坏的。",
       "scene": "退换货",
-      "id": "s03-035",
+      "id": "s03-037",
       "subcategory": "sub05",
       "role": "user",
       "en": "It was broken when I got it.",
@@ -495,7 +495,7 @@
       "vi": "Tôi vô tình mua nhầm size, có thể đổi hàng được không?",
       "ko": "사이즈를 잘못 구매했는데, 교환이 가능한가요?",
       "scene": "退换货",
-      "id": "s03-sub05-005",
+      "id": "s03-038",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -508,7 +508,7 @@
       "vi": "Nó khác với những gì tôi tưởng tượng, nên tôi muốn trả lại.",
       "ko": "상상했던 것과 달라서 반품을 하고 싶습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-006",
+      "id": "s03-039",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -521,7 +521,7 @@
       "vi": "Nếu hoàn tiền, có trả bằng tiền mặt không?",
       "ko": "환불의 경우 현금으로 돌려받을 수 있나요?",
       "scene": "退换货",
-      "id": "s03-sub05-008",
+      "id": "s03-040",
       "subcategory": "sub05",
       "role": "user"
     },
@@ -534,7 +534,7 @@
       "vi": "Bạn muốn đổi trả hàng, đúng không?",
       "ko": "반품·교환을 원하시는 거죠?",
       "scene": "退换货",
-      "id": "s03-sub05-009",
+      "id": "s03-041",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -547,7 +547,7 @@
       "vi": "Cho tôi hỏi lý do bạn muốn trả hàng là gì?",
       "ko": "반품 이유가 어떻게 되시나요?",
       "scene": "退换货",
-      "id": "s03-sub05-010",
+      "id": "s03-042",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -560,7 +560,7 @@
       "vi": "Bạn có mang hóa đơn không?",
       "ko": "영수증은 가지고 계신가요?",
       "scene": "退换货",
-      "id": "s03-sub05-011",
+      "id": "s03-043",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -573,7 +573,7 @@
       "vi": "Để tôi kiểm tra tình trạng sản phẩm. Vui lòng đợi một chút.",
       "ko": "상품 상태를 확인하겠습니다. 잠시만 기다려 주세요.",
       "scene": "退换货",
-      "id": "s03-sub05-012",
+      "id": "s03-044",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -586,7 +586,7 @@
       "vi": "Rất xin lỗi. Vì sản phẩm đã được mở ra, chúng tôi không thể xử lý đổi trả.",
       "ko": "죄송합니다. 개봉된 상품이기 때문에 반품·교환이 어렵습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-013",
+      "id": "s03-045",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -599,7 +599,7 @@
       "vi": "Chúng tôi sẽ đổi cho bạn cùng sản phẩm với size khác.",
       "ko": "같은 상품의 다른 사이즈로 교환해 드리겠습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-014",
+      "id": "s03-046",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -612,7 +612,7 @@
       "vi": "Vì bạn thanh toán bằng thẻ tín dụng, hoàn tiền có thể mất vài ngày.",
       "ko": "신용카드로 결제하셨기 때문에 환불까지 며칠 걸릴 수 있습니다.",
       "scene": "退换货",
-      "id": "s03-sub05-015",
+      "id": "s03-047",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -625,7 +625,7 @@
       "vi": "Thủ tục sẽ mất một chút thời gian. Vui lòng chờ một chút.",
       "ko": "절차에 잠시 시간이 걸립니다. 잠시만 기다려 주세요.",
       "scene": "退换货",
-      "id": "s03-sub05-016",
+      "id": "s03-048",
       "subcategory": "sub05",
       "role": "staff"
     },
@@ -634,7 +634,7 @@
       "furigana": "こいんろっかーはありますか。",
       "zh": "有投币储物柜吗？",
       "scene": "储物柜",
-      "id": "s03-037",
+      "id": "s03-049",
       "subcategory": "sub06",
       "role": "user",
       "en": "Are there coin lockers?",
@@ -643,11 +643,24 @@
       "ko": "코인 로커가 있나요?"
     },
     {
+      "jp": "はい、あちらにございます。",
+      "furigana": "はい、あちらにございます。",
+      "zh": "有的，在那边。",
+      "zh-TW": "有的，在那邊。",
+      "en": "Yes, it's over there.",
+      "vi": "Có ạ, ở đằng kia.",
+      "ko": "네, 저쪽에 있습니다.",
+      "scene": "储物柜",
+      "subcategory": "sub06",
+      "role": "staff",
+      "id": "s03-050"
+    },
+    {
       "jp": "使い方を教えてください。",
       "furigana": "つかいかたをおしえてください。",
       "zh": "请告诉我怎么用。",
       "scene": "储物柜",
-      "id": "s03-038",
+      "id": "s03-051",
       "subcategory": "sub06",
       "role": "user",
       "en": "Could you show me how to use it?",
@@ -656,17 +669,43 @@
       "ko": "사용 방법을 알려주실 수 있나요?"
     },
     {
+      "jp": "まず荷物を入れて、お金を入れると鍵が出てきます。",
+      "furigana": "まずにもつをいれて、おかねをいれるとかぎがでてきます。",
+      "zh": "先放东西进去，投币后钥匙就会出来。",
+      "zh-TW": "先放東西進去，投幣後鑰匙就會出來。",
+      "en": "Put your items in first, then insert coins and the key will come out.",
+      "vi": "Đầu tiên cho đồ vào, sau đó bỏ tiền vào thì chìa khóa sẽ ra.",
+      "ko": "먼저 짐을 넣고 돈을 넣으면 열쇠가 나옵니다.",
+      "scene": "储物柜",
+      "subcategory": "sub06",
+      "role": "staff",
+      "id": "s03-052"
+    },
+    {
       "jp": "鍵をなくしました。",
       "furigana": "かぎをなくしました。",
       "zh": "我把钥匙弄丢了。",
       "scene": "储物柜",
-      "id": "s03-039",
+      "id": "s03-053",
       "subcategory": "sub06",
       "role": "user",
       "en": "I've lost my key.",
       "zh-TW": "我把鑰匙弄丟了。",
       "vi": "Tôi đánh mất chìa khóa rồi.",
       "ko": "열쇠를 잃어버렸어요."
+    },
+    {
+      "jp": "大丈夫です。身分証をお見せいただければ開けられます。",
+      "furigana": "だいじょうぶです。みぶんしょうをおみせいただければあけられます。",
+      "zh": "没关系，出示身份证件我们可以帮您打开。",
+      "zh-TW": "沒關係，出示身分證件我們可以幫您打開。",
+      "en": "That's alright. If you show us your ID, we can open it for you.",
+      "vi": "Không sao ạ. Nếu quý khách cho xem giấy tờ tùy thân, chúng tôi có thể mở giúp.",
+      "ko": "괜찮습니다. 신분증을 보여주시면 열어드릴 수 있습니다.",
+      "scene": "储物柜",
+      "subcategory": "sub06",
+      "role": "staff",
+      "id": "s03-054"
     }
   ],
   "subcategories": [
@@ -729,6 +768,7 @@
   "title_zh-TW": "買東西",
   "title_vi": "Mua sắm",
   "title_ko": "쇼핑",
+  "description_ja": "スーパーマーケット、コンビニ、ドラッグストア — どこで買い物をしても必要なフレーズ。",
   "description_en": "Supermarkets, convenience stores, drugstores — phrases you'll need wherever you shop.",
   "description_zh-TW": "超市、便利店、藥妝店——無論在哪裡買東西，這些句子都用得到。",
   "description_vi": "Siêu thị, cửa hàng tiện lợi, hiệu thuốc — những câu cần thiết khi mua sắm ở bất kỳ đâu.",

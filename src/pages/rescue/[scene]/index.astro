@@ -29,11 +29,27 @@ const sceneTitle = (scene as any)[`title_${lang}`] || (scene as any).title_zh ||
 const sceneDesc = (scene as any)[`description_${lang}`] || scene.description || '';
 const subcats = scene.subcategories || [];
 const info = (scene as any).info || [];
+const categoryIcons: Record<string, string> = {
+  daily: '📌', medical: '🏥', living: '🏠', transport: '🚗',
+  shopping: '🛍️', work: '💼', leisure: '🎌', emergency: '🆘'
+};
+const sceneIcon = categoryIcons[(scene as any).category] || '📍';
 
 const homeUrl = lang === 'zh' ? '/' : `/${lang}/`;
 const homeLabel: Record<string, string> = {
-  zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈'
+  zh: '首页', en: 'Home', 'zh-TW': '首頁', vi: 'Trang chủ', ko: '홈', ja: 'ホーム'
 };
+
+const infoToggleLabel: Record<string, { open: string; close: string }> = {
+  zh:     { open: '∨ 点击打开', close: '∧ 点击折叠' },
+  en:     { open: '∨ Tap to open', close: '∧ Tap to close' },
+  'zh-TW':{ open: '∨ 點擊打開', close: '∧ 點擊折疊' },
+  vi:     { open: '∨ Nhấn để mở', close: '∧ Nhấn để đóng' },
+  ko:     { open: '∨ 눌러서 열기', close: '∧ 눌러서 닫기' },
+  ja:     { open: '∨ タップして開く', close: '∧ タップして閉じる' }
+};
+const toggleOpen = infoToggleLabel[lang]?.open || infoToggleLabel.zh.open;
+const toggleClose = infoToggleLabel[lang]?.close || infoToggleLabel.zh.close;
 
 function getSubTitle(sub: any, lang: string): string {
   return sub[`title_${lang}`] || sub.title || '';
@@ -68,10 +84,12 @@ if (hasGroups) {
 
   <!-- 场景Hero -->
   <div class="rescue-scene-landing">
-    <div class="rescue-landing-hero" style={scene.image ? `background-image:url('/${scene.image}')` : ''}>
-      <a href={homeUrl} class="rescue-landing-back">← {homeLabel[lang] || homeLabel.zh}</a>
-      <div class="rescue-landing-title-hero">{sceneTitle}</div>
-      <div class="rescue-landing-desc-hero">{sceneDesc}</div>
+    <div class="rescue-landing-hero">
+      <div class="rescue-landing-hero-text">
+        <div class="rescue-landing-title-hero">{sceneTitle}</div>
+        <div class="rescue-landing-desc-hero">{sceneDesc}</div>
+      </div>
+      <span class="rescue-landing-icon" aria-hidden="true">{sceneIcon}</span>
     </div>
 
     <!-- Info块 -->
@@ -79,7 +97,9 @@ if (hasGroups) {
       <div class="scene-info-wrap" id="sceneInfoWrap">
         <div class="scene-info" id="sceneInfo"
           style="cursor:pointer"
-          onclick="this.classList.toggle('expanded'); this.nextElementSibling.textContent = this.classList.contains('expanded') ? '∧ 点击折叠' : '∨ 点击打开';">
+          data-open-label={toggleOpen}
+          data-close-label={toggleClose}
+          onclick="this.classList.toggle('expanded'); this.nextElementSibling.textContent = this.classList.contains('expanded') ? this.dataset.closeLabel : this.dataset.openLabel;">
           {info.map((sec: any) => (
             <div class="scene-info-section">
               <div class="scene-info-title">{getInfoTitle(sec, lang)}</div>
@@ -107,8 +127,8 @@ if (hasGroups) {
         </div>
         <button
           class="scene-info-toggle"
-          onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? '∧ 点击折叠' : '∨ 点击打开';"
-        >∨ 点击打开</button>
+          onclick="this.previousElementSibling.classList.toggle('expanded'); this.textContent = this.previousElementSibling.classList.contains('expanded') ? this.previousElementSibling.dataset.closeLabel : this.previousElementSibling.dataset.openLabel;"
+        >{toggleOpen}</button>
       </div>
     )}
 

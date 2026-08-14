@@ -3,8 +3,22 @@ import Base from '../layouts/Base.astro';
 import { getLangFromUrl } from '../i18n/index.js';
 import rescueIndex from '../../public/data/rescue/index.json';
 import config from '../../public/config.json';
+import { readFile } from 'node:fs/promises';
 
 const lang = getLangFromUrl(Astro.url);
+
+// 实时统计每个场景的真实句子数（读取对话文件本身，不依赖index.json里手动维护的count字段，
+// 避免count随内容增减而过期失真——这是SSG构建时计算，不是运行时开销）
+const sceneCounts: Record<string, number> = {};
+for (const scene of rescueIndex.scenes) {
+  try {
+    const raw = await readFile(`public/data/rescue/${scene.file.split('/').pop()}`, 'utf-8');
+    const sceneData = JSON.parse(raw);
+    sceneCounts[scene.id] = (sceneData.items || []).length;
+  } catch (e) {
+    sceneCounts[scene.id] = 0;
+  }
+}
 
 // 标题和描述多语言
 const siteTitles: Record<string, string> = {
@@ -12,7 +26,8 @@ const siteTitles: Record<string, string> = {
   en: 'Living Japanese | Survive daily life in Japan',
   'zh-TW': '日活 Living Japanese | 不會日語也能在日本活得從容',
   vi: 'Living Japanese | Sống thoải mái tại Nhật Bản',
-  ko: 'Living Japanese | 일본어 없이도 일본에서 편안하게'
+  ko: 'Living Japanese | 일본어 없이도 일본에서 편안하게',
+  ja: '日活 Living Japanese | 日本語がわからなくても日本で自信を持って暮らせる'
 };
 
 const siteDescs: Record<string, string> = {
@@ -20,7 +35,8 @@ const siteDescs: Record<string, string> = {
   en: 'Survive daily life in Japan without Japanese. 19 real-life scenes, hundreds of practical phrases. Find what you need in 10 seconds. Completely free.',
   'zh-TW': '不會日語，也能在日本活得從容。19個真實生活場景，數百句實用日語。完全免費。',
   vi: 'Sống thoải mái tại Nhật Bản mà không cần tiếng Nhật. 19 tình huống thực tế, hàng trăm câu thực dụng. Hoàn toàn miễn phí.',
-  ko: '일본어 없이도 일본에서 편안하게 생활하세요. 19개 실생활 상황, 수백 개의 실용 표현. 완전 무료.'
+  ko: '일본어 없이도 일본에서 편안하게 생활하세요. 19개 실생활 상황, 수백 개의 실용 표현. 완전 무료.',
+  ja: '日本語がわからなくても、日本で自信を持って暮らせる。19の実生活シーン、数百の実用フレーズ。10秒で必要な文を見つけられます。完全無料。'
 };
 
 const title = siteTitles[lang] || siteTitles.zh;
@@ -33,7 +49,7 @@ function getSceneTitle(scene: any, lang: string): string {
 
 // 句子数量文字
 const countLabels: Record<string, string> = {
-  zh: '句', en: ' phrases', 'zh-TW': '句', vi: ' câu', ko: '문장'
+  zh: '句', en: ' phrases', 'zh-TW': '句', vi: ' câu', ko: '문장', ja: '文'
 };
 
 const scenes = rescueIndex.scenes;
@@ -42,10 +58,17 @@ const banner = config.banner;
 // Banner多语言
 const bannerTitle = (banner as any)[`title_${lang}`] || banner.title || '';
 const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
+
+// banner统计文案（原本用if/else硬编码，这里改成映射表，方便加ja）
+const bannerStatLabels: Record<string, string> = {
+  zh: '句・完全免费', 'zh-TW': '句・完全免費',
+  en: 'phrases · free', vi: 'câu · miễn phí', ko: '문장 · 무료',
+  ja: '文・完全無料'
+};
 ---
 
 <Base title={title} description={description} rescueCss={true}>
-  
+
   <!-- 搜索栏 -->
   <div class="rescue-scene-wrap" data-pagefind-body>
 
@@ -63,12 +86,10 @@ const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
       </div>
       <div class="banner-right">
         <div class="banner-stat-num">
-          {scenes.reduce((total: number, sc: any) => total + (sc.count || 0), 0)}
+          {scenes.reduce((total: number, sc: any) => total + (sceneCounts[sc.id] || 0), 0)}
         </div>
         <div class="banner-stat-label">
-          {lang === 'zh' || lang === 'zh-TW' ? '句・完全免费' : 
-           lang === 'en' ? 'phrases · free' :
-           lang === 'vi' ? 'câu · miễn phí' : '문장 · 무료'}
+          {bannerStatLabels[lang] || bannerStatLabels.zh}
         </div>
       </div>
     </div>
@@ -77,14 +98,14 @@ const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
   <!-- 场景列表（按分类分组）-->
 {(() => {
   const categories = [
-    { id: 'daily',     zh: '日常必備', en: 'Essentials',    'zh-TW': '日常必備', vi: 'Cơ bản',      ko: '일상 필수',   icon: '📌' },
-    { id: 'medical',   zh: '医疗健康', en: 'Medical',        'zh-TW': '醫療健康', vi: 'Y tế',         ko: '의료 건강',   icon: '🏥' },
-    { id: 'living',    zh: '生活居住', en: 'Daily Life',     'zh-TW': '生活居住', vi: 'Cuộc sống',    ko: '생활 거주',   icon: '🏠' },
-    { id: 'transport', zh: '出行交通', en: 'Transport',      'zh-TW': '出行交通', vi: 'Di chuyển',    ko: '교통 이동',   icon: '🚗' },
-    { id: 'shopping',  zh: '购物饮食', en: 'Shopping',       'zh-TW': '購物飲食', vi: 'Mua sắm',      ko: '쇼핑 음식',   icon: '🛍️' },
-    { id: 'work',      zh: '工作学校', en: 'Work & School',  'zh-TW': '工作學校', vi: 'Công việc',    ko: '일 학교',     icon: '💼' },
-    { id: 'leisure',   zh: '文化休闲', en: 'Leisure',        'zh-TW': '文化休閒', vi: 'Giải trí',     ko: '문화 여가',   icon: '🎌' },
-    { id: 'emergency', zh: '紧急灾害', en: 'Emergency',      'zh-TW': '緊急災害', vi: 'Khẩn cấp',     ko: '긴급 재해',   icon: '🆘' },
+    { id: 'daily',     zh: '日常必備', en: 'Essentials',    'zh-TW': '日常必備', vi: 'Cơ bản',      ko: '일상 필수',   ja: '日常必須',   icon: '📌' },
+    { id: 'medical',   zh: '医疗健康', en: 'Medical',        'zh-TW': '醫療健康', vi: 'Y tế',         ko: '의료 건강',   ja: '医療・健康', icon: '🏥' },
+    { id: 'living',    zh: '生活居住', en: 'Daily Life',     'zh-TW': '生活居住', vi: 'Cuộc sống',    ko: '생활 거주',   ja: '生活・居住', icon: '🏠' },
+    { id: 'transport', zh: '出行交通', en: 'Transport',      'zh-TW': '出行交通', vi: 'Di chuyển',    ko: '교통 이동',   ja: '交通・移動', icon: '🚗' },
+    { id: 'shopping',  zh: '购物饮食', en: 'Shopping',       'zh-TW': '購物飲食', vi: 'Mua sắm',      ko: '쇼핑 음식',   ja: '買い物・飲食', icon: '🛍️' },
+    { id: 'work',      zh: '工作学校', en: 'Work & School',  'zh-TW': '工作學校', vi: 'Công việc',    ko: '일 학교',     ja: '仕事・学校', icon: '💼' },
+    { id: 'leisure',   zh: '文化休闲', en: 'Leisure',        'zh-TW': '文化休閒', vi: 'Giải trí',     ko: '문화 여가',   ja: '文化・レジャー', icon: '🎌' },
+    { id: 'emergency', zh: '紧急灾害', en: 'Emergency',      'zh-TW': '緊急災害', vi: 'Khẩn cấp',     ko: '긴급 재해',   ja: '緊急・災害', icon: '🆘' },
   ];
 
   return (
@@ -105,7 +126,7 @@ const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
                 const sceneUrl = lang === 'zh'
                   ? `/rescue/${scene.id}/`
                   : `/${lang}/rescue/${scene.id}/`;
-                const count = scene.count || 0;
+                const count = sceneCounts[scene.id] || 0;
                 const countLabel = countLabels[lang] || countLabels.zh;
                 return (
                   <a href={sceneUrl} class="rescue-scene-card">

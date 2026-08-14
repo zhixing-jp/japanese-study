@@ -1,13 +1,13 @@
 {
   "id": "s18",
-  "title": "宅配便・郵送",
-  "title_zh": "快递・配送",
+  "title": "快递・配送",
   "title_en": "Delivery & Shipping",
   "title_zh-TW": "快遞・配送",
   "title_vi": "Giao hàng & Vận chuyển",
   "title_ko": "택배 & 배송",
-  "category": "快递・配送",
+  "category": "living",
   "description": "寄件、收件、上门取件、追踪——在日本顺利处理快递配送的各类情况。",
+  "description_ja": "コンビニ、郵便局、集荷依頼——荷物を無事に発送するためのフレーズです。",
   "description_en": "Sending, receiving, pickup, tracking — handling all delivery situations in Japan.",
   "description_zh-TW": "寄件、收件、上門取件、追蹤——在日本順利處理快遞配送的各類情況。",
   "description_vi": "Gửi hàng, nhận hàng, lấy hàng tận nơi, theo dõi — xử lý mọi tình huống giao nhận tại Nhật Bản.",
@@ -431,6 +431,43 @@
       "zh-TW": "請給我收據。",
       "vi": "Cho tôi xin biên lai.",
       "ko": "영수증 주세요."
+    },
+    {
+      "jp": "追跡番号はこちらの伝票に記載されています。",
+      "furigana": "ついせきばんごうはこちらのでんぴょうにきさいされています。",
+      "zh": "追踪号码写在这张单据上。",
+      "id": "s18-032",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "The tracking number is written on this slip.",
+      "zh-TW": "追蹤號碼寫在這張單據上。",
+      "vi": "Mã theo dõi được ghi trên phiếu này.",
+      "ko": "추적 번호는 이 전표에 기재되어 있습니다."
+    },
+    {
+      "jp": "確認いたします。少々お待ちください。",
+      "furigana": "かくにんいたします。しょうしょうおまちください。",
+      "zh": "我来确认一下，请稍等。",
+      "id": "s18-033",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "I'll check on that. Please wait a moment.",
+      "zh-TW": "我來確認一下，請稍等。",
+      "vi": "Tôi sẽ kiểm tra. Xin vui lòng chờ một chút.",
+      "ko": "확인하겠습니다. 잠시만 기다려 주세요."
+    },
+    {
+      "jp": "申し訳ございません。改めてお調べして、ご連絡いたします。",
+      "furigana": "もうしわけございません。あらためておしらべして、ごれんらくいたします。",
+      "zh": "非常抱歉，我们会重新调查后联系您。",
+      "id": "s18-034",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "We apologize. We'll look into it further and get back to you.",
+      "zh-TW": "非常抱歉，我們會重新調查後聯繫您。",
+      "vi": "Xin lỗi quý khách. Chúng tôi sẽ kiểm tra lại và liên hệ sau.",
+      "ko": "죄송합니다. 다시 조사하여 연락드리겠습니다."
     }
-  ]
+  ],
+  "title_ja": "宅配便・郵送"
 }

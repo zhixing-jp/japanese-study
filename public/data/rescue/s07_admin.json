@@ -1,13 +1,13 @@
 {
   "id": "s07",
-  "title": "手続き",
-  "title_zh": "办手续",
+  "title": "办手续",
   "title_en": "Administrative Procedures",
   "title_zh-TW": "辦手續",
   "title_vi": "Thủ tục hành chính",
   "title_ko": "행정 절차",
-  "category": "办手续",
+  "category": "living",
   "description": "在日本办理各类行政手续时用到的句子。",
+  "description_ja": "役所、区役所——手続きを終えて必要な書類を受け取るためのフレーズです。",
   "description_en": "Phrases for handling all kinds of administrative procedures in Japan.",
   "description_zh-TW": "在日本辦理各類行政手續時用到的句子。",
   "description_vi": "Các câu dùng khi làm các loại thủ tục hành chính tại Nhật Bản.",
@@ -1116,5 +1116,6 @@
       "vi": "Vậy là đã hoàn tất tất cả thủ tục.",
       "ko": "이것으로 모든 수속이 완료되었습니다."
     }
-  ]
+  ],
+  "title_ja": "手続き"
 }

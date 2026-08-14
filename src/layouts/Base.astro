@@ -21,25 +21,29 @@ const siteUrl = 'https://livingjapanese.app';
 
 const langLabels: Record<string, string> = {
   'zh': '简体中文', 'zh-TW': '繁體中文',
-  'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어'
+  'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어', 'ja': '日本語'
 };
 
 const langPaths: Record<string, string> = {
   'zh': '/', 'zh-TW': '/zh-TW/',
-  'en': '/en/', 'vi': '/vi/', 'ko': '/ko/'
+  'en': '/en/', 'vi': '/vi/', 'ko': '/ko/', 'ja': '/ja/'
 };
 
 // 静态导航标签多语言
+// 说明：learn版块已并入rescue并下线，第2个tab暂时指向/medical/占位页
+// （就医流程・日语版块，内容制作中），medical文案沿用zh.json已有的tab_medical key
 const navLabels: Record<string, Record<string, string>> = {
-  rescue: { zh: '急救语句', en: 'Phrase Rescue', 'zh-TW': '急救語句', vi: 'Câu Cứu Cấp', ko: '긴급 표현' },
-  learn:  { zh: '日语学习', en: 'Practice',      'zh-TW': '日語學習',  vi: 'Luyện Tập',   ko: '연습' }
+  rescue:  { zh: '急救语句', en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
+  medical: { zh: '就医指南', en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' }
 };
 
-const rescueUrl = lang === 'zh' ? '/' : `/${lang}/`;
-const learnUrl  = lang === 'zh' ? '/learn/' : `/${lang}/learn/`;
+const rescueUrl  = lang === 'zh' ? '/' : `/${lang}/`;
+// medical是占位页，暂时只有单一路径（无语言子目录），页面内部按当前语言显示对应文案。
+// 等就医版块正式做多语言目录时，这里要改回 lang === 'zh' ? '/medical/' : `/${lang}/medical/` 的形式
+const medicalUrl = '/medical/';
 
 const currentPath = Astro.url.pathname;
-const isLearn = currentPath.includes('/learn');
+const isMedical = currentPath.includes('/medical');
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -87,8 +91,8 @@ const jsonLd = {
   // 从当前URL路径中去掉语言前缀，得到纯路径
   const currentPath = Astro.url.pathname;
   const strippedPath = currentPath
-    .replace(/^\/(en|zh-TW|vi|ko)\//, '/')
-    .replace(/^\/(en|zh-TW|vi|ko)$/, '/');
+    .replace(/^\/(en|zh-TW|vi|ko|ja)\//, '/')
+    .replace(/^\/(en|zh-TW|vi|ko|ja)$/, '/');
   // 构建该语言版本的完整URL
   const langUrl = l === 'zh'
     ? `${siteUrl}${strippedPath}`
@@ -97,7 +101,7 @@ const jsonLd = {
     <link rel="alternate" hreflang={l === 'zh' ? 'zh-CN' : l} href={langUrl} />
   );
   })}
-  <link rel="alternate" hreflang="x-default" href={`${siteUrl}${Astro.url.pathname.replace(/^\/(en|zh-TW|vi|ko)\//, '/').replace(/^\/(en|zh-TW|vi|ko)$/, '/')}`} />
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}${Astro.url.pathname.replace(/^\/(en|zh-TW|vi|ko|ja)\//, '/').replace(/^\/(en|zh-TW|vi|ko|ja)$/, '/')}`} />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -173,9 +177,10 @@ const jsonLd = {
         showImages: false,
         resetStyles: true,
         translations: {
-          placeholder: currentLang === 'en' ? 'Search...' : 
+          placeholder: currentLang === 'en' ? 'Search...' :
                       currentLang === 'ko' ? '검색...' :
-                      currentLang === 'vi' ? 'Tìm kiếm...' : '搜索...'
+                      currentLang === 'vi' ? 'Tìm kiếm...' :
+                      currentLang === 'ja' ? '検索...' : '搜索...'
         }
       });
     }
@@ -218,13 +223,13 @@ const jsonLd = {
 
   <!-- Bottom Navigation -->
   <nav id="tabBar">
-    <a href={rescueUrl} class={`tab${!isLearn ? ' on' : ''}`}>
+    <a href={rescueUrl} class={`tab${!isMedical ? ' on' : ''}`}>
       <div class="tab-icon">🛡️</div>
       {navLabels.rescue[lang] || navLabels.rescue.zh}
     </a>
-    <a href={learnUrl} class={`tab${isLearn ? ' on' : ''}`}>
-      <div class="tab-icon">📖</div>
-      {navLabels.learn[lang] || navLabels.learn.zh}
+    <a href={medicalUrl} class={`tab${isMedical ? ' on' : ''}`}>
+      <div class="tab-icon">🏥</div>
+      {navLabels.medical[lang] || navLabels.medical.zh}
     </a>
   </nav>
 

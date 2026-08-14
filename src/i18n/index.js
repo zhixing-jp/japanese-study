@@ -3,7 +3,8 @@ export const languages = {
   'zh-TW': '繁體中文',
   'en': 'English',
   'vi': 'Tiếng Việt',
-  'ko': '한국어'
+  'ko': '한국어',
+  'ja': '日本語'
 };
 
 export const defaultLang = 'zh';

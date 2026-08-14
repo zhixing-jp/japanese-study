@@ -1,13 +1,13 @@
 {
   "id": "s11",
-  "title": "仕事",
-  "title_zh": "工作",
+  "title": "工作",
   "title_en": "Work",
   "title_zh-TW": "工作",
   "title_vi": "Công việc",
   "title_ko": "직장",
-  "category": "工作",
+  "category": "work",
   "description": "求职、面试、打工日常——在日本工作所需的沟通句子。",
+  "description_ja": "アルバイトの面接、接客、レジ対応——仕事でのやり取りを無事にこなすためのフレーズです。",
   "description_en": "Job hunting, interviews, daily work — phrases for working in Japan.",
   "description_zh-TW": "求職、面試、打工日常——在日本工作所需的溝通句子。",
   "description_vi": "Tìm việc, phỏng vấn, công việc hàng ngày — các câu cần thiết khi làm việc tại Nhật Bản.",
@@ -160,13 +160,13 @@
       "id": "s11-006",
       "subcategory": "sub02",
       "role": "user",
-      "jp": "本日、面接に来ました。○○と申します。",
-      "furigana": "ほんじつ、めんせつにきました。○○ともうします。",
-      "zh": "我今天来面试，我叫○○。",
-      "en": "I'm here for today's interview. My name is ○○.",
-      "zh-TW": "我今天來面試，我叫○○。",
-      "vi": "Hôm nay tôi đến phỏng vấn. Tôi tên là ○○.",
-      "ko": "오늘 면접 보러 왔어요. ○○이라고 합니다."
+      "jp": "本日、面接に来ました。田中と申します。",
+      "furigana": "ほんじつ、めんせつにきました。たなかともうします。",
+      "zh": "我今天来面试，我叫田中。",
+      "en": "I'm here for my interview today. My name is Tanaka.",
+      "zh-TW": "我今天來面試，我叫田中。",
+      "vi": "Hôm nay tôi đến phỏng vấn. Tôi tên là Tanaka.",
+      "ko": "오늘 면접 보러 왔습니다. 다나카라고 합니다."
     },
     {
       "id": "s11-007",
@@ -313,7 +313,43 @@
       "ko": "이 작업 순서를 확인하게 해주세요."
     },
     {
+      "jp": "はい、いつでも聞いてください。",
+      "furigana": "はい、いつでもきいてください。",
+      "zh": "好的，随时可以问我。",
       "id": "s11-019",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "Sure, feel free to ask anytime.",
+      "zh-TW": "好的，隨時可以問我。",
+      "vi": "Vâng, bạn hỏi lúc nào cũng được.",
+      "ko": "네, 언제든지 물어보세요."
+    },
+    {
+      "jp": "こうやって、まずボタンを押してください。",
+      "furigana": "こうやって、まずボタンをおしてください。",
+      "zh": "这样，先按这个按钮。",
+      "id": "s11-020",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "Like this, press this button first.",
+      "zh-TW": "這樣，先按這個按鈕。",
+      "vi": "Như thế này, hãy nhấn nút này trước.",
+      "ko": "이렇게, 먼저 버튼을 눌러주세요."
+    },
+    {
+      "jp": "分からないことがあったら、遠慮なく聞いてくださいね。",
+      "furigana": "わからないことがあったら、えんりょなくきいてくださいね。",
+      "zh": "有不懂的地方，别客气尽管问哦。",
+      "id": "s11-021",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "If there's anything you don't understand, don't hesitate to ask.",
+      "zh-TW": "有不懂的地方，別客氣儘管問喔。",
+      "vi": "Nếu có gì không hiểu, đừng ngại hỏi nhé.",
+      "ko": "모르는 게 있으면 사양 말고 물어보세요."
+    },
+    {
+      "id": "s11-022",
       "subcategory": "sub04",
       "role": "user",
       "jp": "シフトを確認したいです。",
@@ -325,7 +361,7 @@
       "ko": "스케줄을 확인하고 싶어요."
     },
     {
-      "id": "s11-020",
+      "id": "s11-023",
       "subcategory": "sub04",
       "role": "user",
       "jp": "21日は休めますか。",
@@ -337,7 +373,7 @@
       "ko": "21일 쉴 수 있을까요?"
     },
     {
-      "id": "s11-021",
+      "id": "s11-024",
       "subcategory": "sub04",
       "role": "user",
       "jp": "体調が悪くて、本日お休みしたいんですが。",
@@ -349,7 +385,7 @@
       "ko": "몸이 안 좋아서 오늘 쉬고 싶어요."
     },
     {
-      "id": "s11-022",
+      "id": "s11-025",
       "subcategory": "sub04",
       "role": "user",
       "jp": "代わりの人を探してみます。",
@@ -361,7 +397,7 @@
       "ko": "대신할 사람을 찾아볼게요."
     },
     {
-      "id": "s11-023",
+      "id": "s11-026",
       "subcategory": "sub04",
       "role": "user",
       "jp": "遅刻します。30分ほど遅れます。",
@@ -373,7 +409,7 @@
       "ko": "지각할 것 같아요. 30분 정도 늦겠습니다."
     },
     {
-      "id": "s11-024",
+      "id": "s11-027",
       "subcategory": "sub04",
       "role": "user",
       "jp": "シフトを代わってもらえませんか。",
@@ -385,7 +421,43 @@
       "ko": "시프트를 바꿔주실 수 있나요?"
     },
     {
-      "id": "s11-025",
+      "jp": "はい、大丈夫です。21日はお休みで大丈夫ですよ。",
+      "furigana": "はい、だいじょうぶです。にじゅういちにちはおやすみでだいじょうぶですよ。",
+      "zh": "好的，没问题。21日休息没问题的。",
+      "id": "s11-028",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Sure, no problem. You can take the 21st off.",
+      "zh-TW": "好的，沒問題。21日休息沒問題的。",
+      "vi": "Vâng, không sao. Ngày 21 nghỉ được đấy.",
+      "ko": "네, 괜찮습니다. 21일은 쉬셔도 됩니다."
+    },
+    {
+      "jp": "お大事に。今日はゆっくり休んでください。",
+      "furigana": "おだいじに。きょうはゆっくりやすんでください。",
+      "zh": "请多保重，今天好好休息吧。",
+      "id": "s11-029",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Take care. Please rest well today.",
+      "zh-TW": "請多保重，今天好好休息吧。",
+      "vi": "Mong bạn giữ gìn sức khỏe. Hôm nay nghỉ ngơi cho khỏe nhé.",
+      "ko": "몸조리 잘하세요. 오늘은 푹 쉬세요."
+    },
+    {
+      "jp": "分かりました。代わりの人が見つかったら教えてください。",
+      "furigana": "わかりました。かわりのひとがみつかったらおしえてください。",
+      "zh": "知道了，找到替班的人后告诉我一声。",
+      "id": "s11-030",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Got it. Let me know once you find someone to cover.",
+      "zh-TW": "知道了，找到替班的人後告訴我一聲。",
+      "vi": "Được rồi. Nếu tìm được người thay thì báo cho tôi nhé.",
+      "ko": "알겠습니다. 대신할 사람 찾으면 알려주세요."
+    },
+    {
+      "id": "s11-031",
       "subcategory": "sub05",
       "role": "user",
       "jp": "いらっしゃいませ。",
@@ -397,7 +469,7 @@
       "ko": "어서 오세요."
     },
     {
-      "id": "s11-026",
+      "id": "s11-032",
       "subcategory": "sub05",
       "role": "user",
       "jp": "こちらへどうぞ。",
@@ -409,7 +481,7 @@
       "ko": "이쪽으로 오세요."
     },
     {
-      "id": "s11-027",
+      "id": "s11-033",
       "subcategory": "sub05",
       "role": "user",
       "jp": "少々お待ちください。",
@@ -421,7 +493,7 @@
       "ko": "잠시만 기다려 주세요."
     },
     {
-      "id": "s11-028",
+      "id": "s11-034",
       "subcategory": "sub05",
       "role": "user",
       "jp": "お待たせしました。",
@@ -433,7 +505,7 @@
       "ko": "오래 기다리셨습니다."
     },
     {
-      "id": "s11-029",
+      "id": "s11-035",
       "subcategory": "sub05",
       "role": "user",
       "jp": "かしこまりました。",
@@ -445,7 +517,7 @@
       "ko": "알겠습니다."
     },
     {
-      "id": "s11-030",
+      "id": "s11-036",
       "subcategory": "sub05",
       "role": "user",
       "jp": "申し訳ございません。",
@@ -457,7 +529,7 @@
       "ko": "대단히 죄송합니다."
     },
     {
-      "id": "s11-031",
+      "id": "s11-037",
       "subcategory": "sub05",
       "role": "user",
       "jp": "ただいま確認いたします。",
@@ -469,7 +541,7 @@
       "ko": "지금 바로 확인해 보겠습니다."
     },
     {
-      "id": "s11-032",
+      "id": "s11-038",
       "subcategory": "sub05",
       "role": "user",
       "jp": "担当の者をお呼びします。",
@@ -481,7 +553,43 @@
       "ko": "담당자를 부르겠습니다."
     },
     {
-      "id": "s11-033",
+      "jp": "すみません、袋はありますか。",
+      "furigana": "すみません、ふくろはありますか。",
+      "zh": "不好意思，有袋子吗？",
+      "id": "s11-039",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "Excuse me, do you have a bag?",
+      "zh-TW": "不好意思，有袋子嗎？",
+      "vi": "Xin lỗi, có túi không?",
+      "ko": "저기요, 봉투 있나요?"
+    },
+    {
+      "jp": "これ、返品できますか。",
+      "furigana": "これ、へんぴんできますか。",
+      "zh": "这个可以退货吗？",
+      "id": "s11-040",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "Can I return this?",
+      "zh-TW": "這個可以退貨嗎？",
+      "vi": "Cái này trả lại được không?",
+      "ko": "이거 반품 가능한가요?"
+    },
+    {
+      "jp": "ありがとうございます、助かりました。",
+      "furigana": "ありがとうございます、たすかりました。",
+      "zh": "谢谢，帮了大忙了。",
+      "id": "s11-041",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "Thank you, that helped a lot.",
+      "zh-TW": "謝謝，幫了大忙了。",
+      "vi": "Cảm ơn, giúp tôi nhiều lắm.",
+      "ko": "감사합니다, 도움이 됐어요."
+    },
+    {
+      "id": "s11-042",
       "subcategory": "sub06",
       "role": "user",
       "jp": "ポイントカードはお持ちですか。",
@@ -493,7 +601,7 @@
       "ko": "포인트 카드 있으세요?"
     },
     {
-      "id": "s11-034",
+      "id": "s11-043",
       "subcategory": "sub06",
       "role": "user",
       "jp": "袋はご利用ですか。",
@@ -505,7 +613,7 @@
       "ko": "봉투 필요하세요?"
     },
     {
-      "id": "s11-035",
+      "id": "s11-044",
       "subcategory": "sub06",
       "role": "user",
       "jp": "お支払いは現金ですか、カードですか。",
@@ -517,43 +625,43 @@
       "ko": "현금이세요, 카드세요?"
     },
     {
-      "id": "s11-036",
+      "id": "s11-045",
       "subcategory": "sub06",
       "role": "user",
-      "jp": "○○円です。",
-      "furigana": "○れいえんです。",
-      "zh": "○○日元。",
-      "en": "That'll be ○○ yen.",
-      "zh-TW": "○○日元。",
-      "vi": "○○ yên ạ.",
-      "ko": "○○엔입니다."
+      "jp": "1,200円です。",
+      "furigana": "せんにひゃくえんです。",
+      "zh": "1,200日元。",
+      "en": "That's 1,200 yen.",
+      "zh-TW": "1,200日元。",
+      "vi": "1.200 yên.",
+      "ko": "1,200엔입니다."
     },
     {
-      "id": "s11-037",
+      "id": "s11-046",
       "subcategory": "sub06",
       "role": "user",
-      "jp": "○○円お預かりします。",
-      "furigana": "○れいえんおあずかりします。",
-      "zh": "收您○○日元。",
-      "en": "I'll take ○○ yen from you.",
-      "zh-TW": "收您○○日元。",
-      "vi": "Tôi nhận ○○ yên của bạn.",
-      "ko": "○○엔 받겠습니다."
+      "jp": "2,000円お預かりします。",
+      "furigana": "にせんえんおあずかりします。",
+      "zh": "收您2,000日元。",
+      "en": "I'll take 2,000 yen from you.",
+      "zh-TW": "收您2,000日元。",
+      "vi": "Nhận 2.000 yên từ quý khách.",
+      "ko": "2,000엔 받았습니다."
     },
     {
-      "id": "s11-038",
+      "id": "s11-047",
       "subcategory": "sub06",
       "role": "user",
-      "jp": "○○円のお返しです。",
-      "furigana": "○れいえんのおかえしです。",
-      "zh": "找您○○日元。",
-      "en": "Here's your ○○ yen change.",
-      "zh-TW": "找您○○日元。",
-      "vi": "Tiền thối ○○ yên ạ.",
-      "ko": "○○엔 거스름돈입니다."
+      "jp": "800円のお返しです。",
+      "furigana": "はっぴゃくえんのおかえしです。",
+      "zh": "找您800日元。",
+      "en": "Here's your change, 800 yen.",
+      "zh-TW": "找您800日元。",
+      "vi": "Tiền thối lại là 800 yên.",
+      "ko": "거스름돈 800엔입니다."
     },
     {
-      "id": "s11-039",
+      "id": "s11-048",
       "subcategory": "sub06",
       "role": "user",
       "jp": "こちらにタッチしてください。",
@@ -565,7 +673,7 @@
       "ko": "여기를 눌러주세요."
     },
     {
-      "id": "s11-040",
+      "id": "s11-049",
       "subcategory": "sub06",
       "role": "user",
       "jp": "レシートはご利用ですか。",
@@ -577,7 +685,43 @@
       "ko": "영수증 필요하세요?"
     },
     {
-      "id": "s11-041",
+      "jp": "カードでお願いします。",
+      "furigana": "カードでおねがいします。",
+      "zh": "请用卡支付。",
+      "id": "s11-050",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "I'll pay by card, please.",
+      "zh-TW": "請用卡支付。",
+      "vi": "Tôi trả bằng thẻ.",
+      "ko": "카드로 부탁드립니다."
+    },
+    {
+      "jp": "レシートはいらないです。",
+      "furigana": "レシートはいらないです。",
+      "zh": "不需要收据。",
+      "id": "s11-051",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "I don't need a receipt.",
+      "zh-TW": "不需要收據。",
+      "vi": "Tôi không cần hóa đơn.",
+      "ko": "영수증은 필요 없어요."
+    },
+    {
+      "jp": "ポイントカードは持っていないです。",
+      "furigana": "ポイントカードはもっていないです。",
+      "zh": "没有积分卡。",
+      "id": "s11-052",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "I don't have a point card.",
+      "zh-TW": "沒有集點卡。",
+      "vi": "Tôi không có thẻ tích điểm.",
+      "ko": "포인트 카드는 없어요."
+    },
+    {
+      "id": "s11-053",
       "subcategory": "sub07",
       "role": "user",
       "jp": "少々お待ちください。確認してまいります。",
@@ -589,7 +733,7 @@
       "ko": "잠시만 기다려 주세요. 확인하러 가겠습니다."
     },
     {
-      "id": "s11-042",
+      "id": "s11-054",
       "subcategory": "sub07",
       "role": "user",
       "jp": "上の者を呼んでまいります。",
@@ -601,7 +745,7 @@
       "ko": "상급자를 부르겠습니다."
     },
     {
-      "id": "s11-043",
+      "id": "s11-055",
       "subcategory": "sub07",
       "role": "user",
       "jp": "大変申し訳ございません。",
@@ -613,7 +757,7 @@
       "ko": "대단히 죄송합니다."
     },
     {
-      "id": "s11-044",
+      "id": "s11-056",
       "subcategory": "sub07",
       "role": "user",
       "jp": "ただいま対応いたします。",
@@ -625,7 +769,7 @@
       "ko": "지금 바로 대응하겠습니다."
     },
     {
-      "id": "s11-045",
+      "id": "s11-057",
       "subcategory": "sub07",
       "role": "user",
       "jp": "お客様がお怒りになっています。対応をお願いできますか。",
@@ -637,19 +781,43 @@
       "ko": "고객이 화가 나 있어요. 대응해 주실 수 있나요?"
     },
     {
-      "id": "s11-046",
-      "subcategory": "sub08",
-      "role": "user",
-      "jp": "はい、○○でございます。",
-      "furigana": "はい、○○でございます。",
-      "zh": "您好，这里是○○。",
-      "en": "Hello, this is ○○.",
-      "zh-TW": "您好，這裡是○○。",
-      "vi": "Xin chào, đây là ○○.",
-      "ko": "네, ○○입니다."
+      "jp": "早めに対応してください。お願いします。",
+      "furigana": "はやめにたいおうしてください。おねがいします。",
+      "zh": "请尽快处理，拜托了。",
+      "id": "s11-058",
+      "subcategory": "sub07",
+      "role": "staff",
+      "en": "Please handle it as soon as possible.",
+      "zh-TW": "請盡快處理，拜託了。",
+      "vi": "Xin xử lý sớm giúp tôi.",
+      "ko": "빨리 처리해 주세요. 부탁드립니다."
     },
     {
-      "id": "s11-047",
+      "jp": "分かりました。確認、お願いします。",
+      "furigana": "わかりました。かくにん、おねがいします。",
+      "zh": "明白了，麻烦确认一下。",
+      "id": "s11-059",
+      "subcategory": "sub07",
+      "role": "staff",
+      "en": "Understood. Please check on it.",
+      "zh-TW": "明白了，麻煩確認一下。",
+      "vi": "Đã hiểu. Xin vui lòng kiểm tra giúp.",
+      "ko": "알겠습니다. 확인 부탁드립니다."
+    },
+    {
+      "id": "s11-060",
+      "subcategory": "sub08",
+      "role": "user",
+      "jp": "はい、セブンイレブンでございます。",
+      "furigana": "はい、せぶんいれぶんでございます。",
+      "zh": "您好，这里是7-Eleven。",
+      "en": "Hello, this is 7-Eleven.",
+      "zh-TW": "您好，這裡是7-Eleven。",
+      "vi": "Xin chào, đây là 7-Eleven.",
+      "ko": "네, 세븐일레븐입니다."
+    },
+    {
+      "id": "s11-061",
       "subcategory": "sub08",
       "role": "user",
       "jp": "ただいま担当者に代わります。少々お待ちください。",
@@ -661,7 +829,7 @@
       "ko": "지금 바로 담당자로 연결해 드리겠습니다. 잠시만 기다려 주세요."
     },
     {
-      "id": "s11-048",
+      "id": "s11-062",
       "subcategory": "sub08",
       "role": "user",
       "jp": "担当者はただいま席を外しております。",
@@ -673,7 +841,7 @@
       "ko": "담당자는 지금 자리를 비웠습니다."
     },
     {
-      "id": "s11-049",
+      "id": "s11-063",
       "subcategory": "sub08",
       "role": "user",
       "jp": "折り返しお電話いたします。",
@@ -685,7 +853,7 @@
       "ko": "다시 연락드리겠습니다."
     },
     {
-      "id": "s11-050",
+      "id": "s11-064",
       "subcategory": "sub08",
       "role": "user",
       "jp": "お名前とお電話番号をお聞きしてもよろしいですか。",
@@ -697,7 +865,31 @@
       "ko": "성함과 전화번호를 알려주시겠어요?"
     },
     {
-      "id": "s11-051",
+      "jp": "すみません、店長さんはいらっしゃいますか。",
+      "furigana": "すみません、てんちょうさんはいらっしゃいますか。",
+      "zh": "不好意思，请问店长在吗？",
+      "id": "s11-065",
+      "subcategory": "sub08",
+      "role": "staff",
+      "en": "Excuse me, is the manager there?",
+      "zh-TW": "不好意思，請問店長在嗎？",
+      "vi": "Xin lỗi, quản lý cửa hàng có ở đó không?",
+      "ko": "저기요, 점장님 계신가요?"
+    },
+    {
+      "jp": "分かりました。では、また後でかけ直します。",
+      "furigana": "わかりました。では、またあとでかけなおします。",
+      "zh": "明白了，那我稍后再打过来。",
+      "id": "s11-066",
+      "subcategory": "sub08",
+      "role": "staff",
+      "en": "Understood, I'll call back later then.",
+      "zh-TW": "明白了，那我稍後再打過來。",
+      "vi": "Đã hiểu, vậy lát nữa tôi gọi lại.",
+      "ko": "알겠습니다. 그럼 나중에 다시 걸게요."
+    },
+    {
+      "id": "s11-067",
       "subcategory": "sub09",
       "role": "user",
       "jp": "報告があります。少しよろしいですか。",
@@ -709,7 +901,7 @@
       "ko": "보고할 게 있는데요. 잠깐 괜찮으세요?"
     },
     {
-      "id": "s11-052",
+      "id": "s11-068",
       "subcategory": "sub09",
       "role": "user",
       "jp": "お客様からクレームがありました。",
@@ -721,7 +913,7 @@
       "ko": "고객 컴플레인이 있었어요."
     },
     {
-      "id": "s11-053",
+      "id": "s11-069",
       "subcategory": "sub09",
       "role": "user",
       "jp": "商品の在庫が少なくなっています。",
@@ -733,7 +925,7 @@
       "ko": "상품 재고가 줄어들고 있어요."
     },
     {
-      "id": "s11-054",
+      "id": "s11-070",
       "subcategory": "sub09",
       "role": "user",
       "jp": "レジが動きません。確認していただけますか。",
@@ -745,19 +937,19 @@
       "ko": "계산대가 작동하지 않아요. 확인해 주실 수 있나요?"
     },
     {
-      "id": "s11-055",
+      "id": "s11-071",
       "subcategory": "sub09",
       "role": "user",
-      "jp": "○○さんがまだ来ていません。",
-      "furigana": "○○さんがまだきていません。",
-      "zh": "○○还没来。",
-      "en": "○○ hasn't arrived yet.",
-      "zh-TW": "○○還沒來。",
-      "vi": "○○ vẫn chưa đến.",
-      "ko": "○○씨가 아직 오지 않았어요."
+      "jp": "田中さんがまだ来ていません。",
+      "furigana": "たなかさんがまだきていません。",
+      "zh": "田中还没来。",
+      "en": "Tanaka hasn't arrived yet.",
+      "zh-TW": "田中還沒來。",
+      "vi": "Tanaka vẫn chưa đến.",
+      "ko": "다나카 씨가 아직 안 왔어요."
     },
     {
-      "id": "s11-056",
+      "id": "s11-072",
       "subcategory": "sub09",
       "role": "user",
       "jp": "落とし物がありました。",
@@ -767,6 +959,43 @@
       "zh-TW": "有人遺落了東西。",
       "vi": "Có người để quên đồ.",
       "ko": "분실물이 있었어요."
+    },
+    {
+      "jp": "分かりました、対応をお願いします。",
+      "furigana": "わかりました、たいおうをおねがいします。",
+      "zh": "知道了，麻烦处理一下。",
+      "id": "s11-073",
+      "subcategory": "sub09",
+      "role": "staff",
+      "en": "Got it, please handle it.",
+      "zh-TW": "知道了，麻煩處理一下。",
+      "vi": "Đã rõ, xin xử lý giúp.",
+      "ko": "알겠습니다, 처리 부탁드려요."
+    },
+    {
+      "jp": "了解です。ありがとう。",
+      "furigana": "りょうかいです。ありがとう。",
+      "zh": "了解，谢谢。",
+      "id": "s11-074",
+      "subcategory": "sub09",
+      "role": "staff",
+      "en": "Got it, thanks.",
+      "zh-TW": "了解，謝謝。",
+      "vi": "Đã hiểu. Cảm ơn nhé.",
+      "ko": "알겠습니다. 고마워요."
+    },
+    {
+      "jp": "すぐに新しいものを注文しておきます。",
+      "furigana": "すぐにあたらしいものをちゅうもんしておきます。",
+      "zh": "我马上下单订新的。",
+      "id": "s11-075",
+      "subcategory": "sub09",
+      "role": "staff",
+      "en": "I'll order a new one right away.",
+      "zh-TW": "我馬上下單訂新的。",
+      "vi": "Tôi sẽ đặt hàng mới ngay.",
+      "ko": "바로 새것을 주문해 둘게요."
     }
-  ]
+  ],
+  "title_ja": "仕事"
 }

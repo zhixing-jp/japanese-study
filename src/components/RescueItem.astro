@@ -31,15 +31,12 @@ const labels: Record<string, Record<string, string>> = {
     zh: '对方可能会问', en: 'Staff may ask',
     'zh-TW': '對方可能會問', vi: 'Nhân viên có thể hỏi', ko: '직원이 물어볼 수 있어요'
   },
-  listen: { zh: '🎧 试听', en: '🎧 Listen', 'zh-TW': '🎧 試聽', vi: '🎧 Nghe', ko: '🎧 듣기' },
-  speak:  { zh: '▶ 朗读', en: '▶ Listen', 'zh-TW': '▶ 朗讀', vi: '▶ Nghe', ko: '▶ 듣기' }
+  speak: { zh: '▶ 朗读', en: '▶ Listen', 'zh-TW': '▶ 朗讀', vi: '▶ Nghe', ko: '▶ 듣기' }
 };
 
 const text = getText(item, lang);
 const staffLabel = labels.staff[lang] || labels.staff.zh;
-const btnLabel = isStaff
-  ? (labels.listen[lang] || labels.listen.zh)
-  : (labels.speak[lang] || labels.speak.zh);
+const btnLabel = labels.speak[lang] || labels.speak.zh;
 
 // 判断是否是汉字
 function isKanji(ch: string): boolean {
@@ -55,6 +52,14 @@ function isKana(ch: string): boolean {
   const c = ch.codePointAt(0) || 0;
   return (c >= 0x3040 && c <= 0x309F) || // 平假名
          (c >= 0x30A0 && c <= 0x30FF);    // 片假名
+}
+
+// 字符对齐算法：jp + furigana → ruby HTML
+// 片假名转平假名（仅用于furigana比对定位，不影响显示）
+function kataToHira(str: string): string {
+  return str.replace(/[ァ-ヶ]/g, (ch) =>
+    String.fromCharCode(ch.charCodeAt(0) - 0x60)
+  );
 }
 
 // 字符对齐算法：jp + furigana → ruby HTML
@@ -78,6 +83,9 @@ function buildRubyHtml(jp: string, furigana: string): string {
     }
   }
 
+  // furigana统一转成平假名基准，用于定位（不影响实际显示内容）
+  const furiHira = kataToHira(furigana);
+
   // 在furigana里找对应的假名范围
   let fp = 0;
   let html = '';
@@ -91,12 +99,12 @@ function buildRubyHtml(jp: string, furigana: string): string {
       }
       html += seg.text;
     } else {
-      // 汉字段：找到下一个非汉字段在furigana里的位置
+      // 汉字段：找到下一个非汉字段在furigana里的位置（用平假名基准比对）
       const nextSeg = segments[s + 1];
       let fe = furigana.length;
       if (nextSeg) {
-        // 从当前fp往后找nextSeg.text[0]的位置
-        const idx = furigana.indexOf(nextSeg.text[0], fp);
+        const nextFirstHira = kataToHira(nextSeg.text[0]);
+        const idx = furiHira.indexOf(nextFirstHira, fp);
         if (idx !== -1) fe = idx;
       }
       const reading = furigana.slice(fp, fe);

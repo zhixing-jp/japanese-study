@@ -165,41 +165,41 @@
 /* ── 场景Landing页 ── */
 .rescue-scene-landing { animation: fadeIn .2s ease-out; }
 .rescue-landing-hero {
-  padding: 14px 16px 20px;
-  display: flex; flex-direction: column; gap: 6px;
-  border-radius: 0 0 var(--r-xl) var(--r-xl);
-  background-color: #1A1A2E;
-  background-size: cover; background-position: center;
+  height: 100px;
+  padding: 16px;
+  display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+  border-radius: var(--r-xl);
+  background: linear-gradient(to right, #0F1F3D 0%, #3A2A5C 100%);
   position: relative;
+  overflow: hidden;
 }
-.rescue-landing-hero::after {
-  content: '';
-  position: absolute; inset: 0;
-  border-radius: 0 0 var(--r-xl) var(--r-xl);
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.65) 100%);
-  pointer-events: none;
+.rescue-landing-hero-text {
+  display: flex; flex-direction: column; gap: 4px;
+  min-width: 0;
+  flex: 1;
 }
+.rescue-landing-icon {
+  font-size: 40px;
+  opacity: 0.9;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.rescue-landing-icon { z-index: 0 !important; }
 .rescue-landing-hero > * {
   position: relative; z-index: 1;
 }
-.rescue-landing-back {
-  align-self: flex-start;
-  height: 32px; padding: 0 14px; border-radius: 20px;
-  background: rgba(255,255,255,0.20); color: #fff;
-  border: 1px solid rgba(255,255,255,.25);
-  font-size: 13px; font-weight: 600;
-  white-space: nowrap; display: flex; align-items: center; gap: 4px;
-  transition: all .15s cubic-bezier(.34,1.56,.64,1);
-  text-decoration: none; margin-bottom: 8px;
-}
-.rescue-landing-back:active { transform: scale(.92); }
 .rescue-landing-title-hero {
-  font-size: 26px; font-weight: 700; color: #fff;
+  font-size: 19px; font-weight: 700; color: #fff;
   letter-spacing: -.3px; text-shadow: 0 1px 4px rgba(0,0,0,.3);
+  line-height: 1.2;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  flex-shrink: 0;
 }
 .rescue-landing-desc-hero {
-  font-size: 16px; color: #fff;
-  line-height: 1.5; font-style: italic;
+  font-size: 13px; color: #fff;
+  line-height: 1.4; font-style: italic;
+  overflow: hidden; text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
 }
 
 /* ── Info块 ── */
@@ -292,10 +292,10 @@
 .rescue-ctrl-bar > * { flex-shrink: 0; }
 
 .rescue-ctrl-bar .ctrl-play {
-  height: 28px; padding: 0 12px; border-radius: var(--r-sm);
+  height: 28px; width: 28px; padding: 0; border-radius: var(--r-sm);
   background: var(--t1); color: #fff; border: none;
-  font-size: 12px; font-weight: 700; cursor: pointer;
-  white-space: nowrap;
+  font-size: 13px; font-weight: 700; cursor: pointer;
+  flex-shrink: 0;
 }
 
 .rescue-ctrl-bar .ctrl-unlearned {
@@ -307,17 +307,26 @@
 .rescue-ctrl-bar .ctrl-unlearned.on {
   background: var(--blue); color: #fff;
 }
-.rescue-ctrl-bar select {
-  height: 28px; padding: 0 8px; border-radius: var(--r-sm);
+.rescue-ctrl-bar .ctrl-icon {
+  width: 28px; height: 28px; padding: 0; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 12px; cursor: pointer;
+  border: none; font-size: 14px; font-weight: 600; cursor: pointer;
+  flex-shrink: 0;
 }
-.ctrl-back {
-  height: 28px; padding: 0 10px; border-radius: var(--r-sm);
+.rescue-ctrl-bar .ctrl-cycle {
+  height: 28px; width: 58px; padding: 0; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 12px; font-weight: 600;
+  border: none; font-size: 10.5px; font-weight: 600; cursor: pointer;
+  white-space: nowrap; overflow: hidden; text-overflow: clip;
+  flex-shrink: 0; letter-spacing: -.2px;
+}
+.rescue-ctrl-bar .ctrl-cycle:active { background: rgba(255,255,255,.22); }
+.ctrl-back {
+  height: 28px; width: 28px; padding: 0; border-radius: var(--r-sm);
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
+  border: none; font-size: 15px; font-weight: 700;
   text-decoration: none; display: flex; align-items: center;
-  white-space: nowrap; flex-shrink: 0;
+  justify-content: center; flex-shrink: 0;
 }
 .ctrl-back:active { background: rgba(255,255,255,.22); }
 

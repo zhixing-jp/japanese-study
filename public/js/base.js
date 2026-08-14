@@ -15,6 +15,7 @@ function detectLang() {
   if (path.startsWith('/zh-TW/')) return 'zh-TW';
   if (path.startsWith('/vi/'))    return 'vi';
   if (path.startsWith('/ko/'))    return 'ko';
+  if (path.startsWith('/ja/'))    return 'ja';
   const saved = localStorage.getItem('lj_lang');
   if (saved) return saved;
   const sys = (navigator.language || 'en').toLowerCase();
@@ -22,6 +23,7 @@ function detectLang() {
   if (sys.startsWith('zh')) return 'zh';
   if (sys.startsWith('vi')) return 'vi';
   if (sys.startsWith('ko')) return 'ko';
+  if (sys.startsWith('ja')) return 'ja';
   return 'en';
 }
 
@@ -44,7 +46,7 @@ function switchLang(lang) {
   localStorage.setItem('lj_lang', lang);
   const langPaths = {
     'zh': '/', 'zh-TW': '/zh-TW/',
-    'en': '/en/', 'vi': '/vi/', 'ko': '/ko/'
+    'en': '/en/', 'vi': '/vi/', 'ko': '/ko/', 'ja': '/ja/'
   };
   const path = window.location.pathname;
   const subMatch = path.match(/\/rescue\/(s\d+)\/(sub\d+)\//);

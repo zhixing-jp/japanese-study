@@ -1,13 +1,13 @@
 {
   "id": "s13",
-  "title": "生活サービス",
-  "title_zh": "生活服务",
+  "title": "生活服务",
   "title_en": "Daily Services",
   "title_zh-TW": "生活服務",
   "title_vi": "Dịch vụ hàng ngày",
   "title_ko": "생활 서비스",
-  "category": "生活服务",
+  "category": "living",
   "description": "理发、美甲、洗衣、修理——在日本使用各类线下生活服务。",
+  "description_ja": "携帯電話、美容院、ネイル、クリーニング——生活サービスの予約や相談に使えるフレーズです。",
   "description_en": "Hair salon, nail, laundry, repairs — using everyday services in Japan.",
   "description_zh-TW": "理髮、美甲、洗衣、修理——在日本使用各類線下生活服務。",
   "description_vi": "Cắt tóc, làm móng, giặt là, sửa chữa — sử dụng các dịch vụ sinh hoạt tại Nhật Bản.",
@@ -280,7 +280,43 @@
       "ko": "요금은 얼마인가요?"
     },
     {
+      "jp": "かしこまりました。ご希望のデザインですね。",
+      "furigana": "かしこまりました。ごきぼうのでざいんですね。",
+      "zh": "好的，是您希望的这个款式对吧。",
       "id": "s13-020",
+      "subcategory": "sub02",
+      "role": "staff",
+      "en": "Understood, this is the design you want, correct?",
+      "zh-TW": "好的，是您希望的這個款式對吧。",
+      "vi": "Vâng, đây là mẫu quý khách muốn phải không ạ.",
+      "ko": "알겠습니다. 원하시는 디자인 맞으시죠?"
+    },
+    {
+      "jp": "副作用は少ないですが、まれに赤みが出ることがあります。",
+      "furigana": "ふくさようはすくないですが、まれにあかみがでることがあります。",
+      "zh": "副作用比较少，但偶尔会有发红的情况。",
+      "id": "s13-021",
+      "subcategory": "sub02",
+      "role": "staff",
+      "en": "Side effects are rare, but redness can occasionally occur.",
+      "zh-TW": "副作用比較少，但偶爾會有發紅的情況。",
+      "vi": "Tác dụng phụ ít, nhưng thỉnh thoảng có thể bị đỏ da.",
+      "ko": "부작용은 적지만, 드물게 붉어질 수 있습니다."
+    },
+    {
+      "jp": "料金は5,000円です。",
+      "furigana": "りょうきんはごせんえんです。",
+      "zh": "费用是5,000日元。",
+      "id": "s13-022",
+      "subcategory": "sub02",
+      "role": "staff",
+      "en": "The fee is 5,000 yen.",
+      "zh-TW": "費用是5,000日元。",
+      "vi": "Chi phí là 5.000 yên.",
+      "ko": "요금은 5,000엔입니다."
+    },
+    {
+      "id": "s13-023",
       "subcategory": "sub03",
       "role": "user",
       "jp": "クリーニングをお願いします。",
@@ -292,7 +328,7 @@
       "ko": "드라이클리닝 부탁드립니다."
     },
     {
-      "id": "s13-021",
+      "id": "s13-024",
       "subcategory": "sub03",
       "role": "user",
       "jp": "シミがあります。",
@@ -304,7 +340,7 @@
       "ko": "얼룩이 있어요."
     },
     {
-      "id": "s13-022",
+      "id": "s13-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "デリケートな素材です。",
@@ -316,7 +352,7 @@
       "ko": "섬세한 소재예요."
     },
     {
-      "id": "s13-023",
+      "id": "s13-026",
       "subcategory": "sub03",
       "role": "user",
       "jp": "縮まないように気をつけてください。",
@@ -328,7 +364,7 @@
       "ko": "줄어들지 않도록 주의해 주세요."
     },
     {
-      "id": "s13-024",
+      "id": "s13-027",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "仕上がりはいつ頃ご希望ですか。",
@@ -340,7 +376,7 @@
       "ko": "언제까지 완성되길 원하세요?"
     },
     {
-      "id": "s13-025",
+      "id": "s13-028",
       "subcategory": "sub03",
       "role": "user",
       "jp": "いつできますか。",
@@ -352,7 +388,7 @@
       "ko": "언제 완성되나요?"
     },
     {
-      "id": "s13-026",
+      "id": "s13-029",
       "subcategory": "sub03",
       "role": "user",
       "jp": "取りに来ました。",
@@ -364,7 +400,7 @@
       "ko": "찾으러 왔어요."
     },
     {
-      "id": "s13-027",
+      "id": "s13-030",
       "subcategory": "sub04",
       "role": "user",
       "jp": "スマホの修理をお願いしたいです。",
@@ -376,7 +412,7 @@
       "ko": "스마트폰 수리를 맡기고 싶어요."
     },
     {
-      "id": "s13-028",
+      "id": "s13-031",
       "subcategory": "sub04",
       "role": "user",
       "jp": "画面が割れました。",
@@ -388,7 +424,7 @@
       "ko": "화면이 깨졌어요."
     },
     {
-      "id": "s13-029",
+      "id": "s13-032",
       "subcategory": "sub04",
       "role": "user",
       "jp": "充電ができなくなりました。",
@@ -400,7 +436,7 @@
       "ko": "충전이 안 돼요."
     },
     {
-      "id": "s13-030",
+      "id": "s13-033",
       "subcategory": "sub04",
       "role": "user",
       "jp": "データは消えませんか。",
@@ -412,7 +448,7 @@
       "ko": "데이터가 지워지지는 않나요?"
     },
     {
-      "id": "s13-031",
+      "id": "s13-034",
       "subcategory": "sub04",
       "role": "user",
       "jp": "見積もりをお願いします。",
@@ -424,7 +460,7 @@
       "ko": "견적을 알려주실 수 있나요?"
     },
     {
-      "id": "s13-032",
+      "id": "s13-035",
       "subcategory": "sub04",
       "role": "user",
       "jp": "どのくらい時間がかかりますか。",
@@ -436,7 +472,7 @@
       "ko": "얼마나 걸리나요?"
     },
     {
-      "id": "s13-033",
+      "id": "s13-036",
       "subcategory": "sub04",
       "role": "user",
       "jp": "いつ取りに来ればいいですか。",
@@ -448,7 +484,7 @@
       "ko": "언제 찾으러 오면 될까요?"
     },
     {
-      "id": "s13-034",
+      "id": "s13-037",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "修理できない場合もございます。",
@@ -460,7 +496,7 @@
       "ko": "수리가 불가능한 경우도 있습니다."
     },
     {
-      "id": "s13-035",
+      "id": "s13-038",
       "subcategory": "sub04",
       "role": "user",
       "jp": "修理できない場合は、そのまま返してください。",
@@ -471,5 +507,6 @@
       "vi": "Nếu không thể sửa, vui lòng trả lại nguyên trạng.",
       "ko": "수리가 안 되면 그대로 돌려주세요."
     }
-  ]
+  ],
+  "title_ja": "生活サービス"
 }

@@ -282,7 +282,7 @@ body {
 .rescue-breadcrumb {
   display: flex; align-items: center; gap: 6px;
   padding: 10px 14px 6px;
-  font-size: 12px; color: var(--t4); flex-wrap: wrap;
+  font-size: 14px; color: var(--t4); flex-wrap: wrap;
 }
 .rescue-breadcrumb a {
   color: var(--t3); text-decoration: none; transition: color .15s;

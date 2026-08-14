@@ -1,13 +1,13 @@
 {
   "id": "s15",
-  "title": "緊急",
-  "title_zh": "紧急情况",
+  "title": "紧急情况",
   "title_en": "Emergency",
   "title_zh-TW": "緊急情況",
   "title_vi": "Khẩn cấp",
   "title_ko": "긴급 상황",
-  "category": "紧急情况",
+  "category": "emergency",
   "description": "丢东西、被盗、急救、火灾、事故——在紧急情况下迅速得到帮助。",
+  "description_ja": "落とし物、体調不良、災害——緊急時に助けを求めるためのフレーズです。",
   "description_en": "Lost items, theft, ambulance, fire, accidents — getting help fast in an emergency.",
   "description_zh-TW": "丟東西、被盜、急救、火災、事故——在緊急情況下迅速得到幫助。",
   "description_vi": "Mất đồ, trộm cắp, cấp cứu, hỏa hoạn, tai nạn — nhận được sự giúp đỡ nhanh chóng trong tình huống khẩn cấp.",
@@ -304,13 +304,13 @@
       "id": "s15-021",
       "subcategory": "sub03",
       "role": "user",
-      "jp": "住所は○○です。",
-      "furigana": "じゅうしょは○○です。",
-      "zh": "地址是○○。",
-      "en": "The address is ○○.",
-      "zh-TW": "地址是○○。",
-      "vi": "Địa chỉ là ○○.",
-      "ko": "주소는 ○○입니다."
+      "jp": "住所は新宿区西新宿1-1-1です。",
+      "furigana": "じゅうしょはしんじゅくくにししんじゅくいちのいちのいちです。",
+      "zh": "地址是新宿区西新宿1-1-1。",
+      "en": "The address is 1-1-1 Nishishinjuku, Shinjuku-ku.",
+      "zh-TW": "地址是新宿區西新宿1-1-1。",
+      "vi": "Địa chỉ là 1-1-1 Nishishinjuku, Shinjuku-ku.",
+      "ko": "주소는 신주쿠구 니시신주쿠 1-1-1입니다."
     },
     {
       "id": "s15-022",
@@ -520,13 +520,13 @@
       "id": "s15-039",
       "subcategory": "sub05",
       "role": "user",
-      "jp": "車のナンバーは○○です。",
-      "furigana": "くるまのなんばーは○○です。",
-      "zh": "车牌号是○○。",
-      "en": "The license plate number is ○○.",
-      "zh-TW": "車牌號是○○。",
-      "vi": "Biển số xe là ○○.",
-      "ko": "차 번호판은 ○○입니다."
+      "jp": "車のナンバーは品川300あ1234です。",
+      "furigana": "くるまのなんばーはしながわさんびゃくあいちにさんよんです。",
+      "zh": "车牌号是品川300あ1234。",
+      "en": "The license plate is Shinagawa 300 a 1234.",
+      "zh-TW": "車牌號是品川300あ1234。",
+      "vi": "Biển số xe là Shinagawa 300 a 1234.",
+      "ko": "차량 번호는 시나가와 300아 1234입니다."
     },
     {
       "id": "s15-040",
@@ -563,6 +563,43 @@
       "zh-TW": "請給我出具事故證明書。",
       "vi": "Cho tôi xin giấy chứng nhận tai nạn.",
       "ko": "사고 증명서를 주세요."
+    },
+    {
+      "jp": "分かりました。今からそちらに向かいます。",
+      "furigana": "わかりました。いまからそちらにむかいます。",
+      "zh": "知道了，我们现在马上过去。",
+      "id": "s15-043",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "Understood, we're heading there now.",
+      "zh-TW": "知道了，我們現在馬上過去。",
+      "vi": "Đã rõ, chúng tôi sẽ đến ngay bây giờ.",
+      "ko": "알겠습니다. 지금 바로 그쪽으로 가겠습니다."
+    },
+    {
+      "jp": "怪我人の状態を教えてください。",
+      "furigana": "けがにんのじょうたいをおしえてください。",
+      "zh": "请告诉我受伤者的情况。",
+      "id": "s15-044",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "Please tell us the condition of the injured person.",
+      "zh-TW": "請告訴我受傷者的情況。",
+      "vi": "Xin cho biết tình trạng người bị thương.",
+      "ko": "부상자의 상태를 알려주세요."
+    },
+    {
+      "jp": "事故証明書は後日、警察署で発行できます。",
+      "furigana": "じこしょうめいしょはごじつ、けいさつしょではっこうできます。",
+      "zh": "事故证明书之后可以在警察署领取。",
+      "id": "s15-045",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "The accident certificate can be issued later at the police station.",
+      "zh-TW": "事故證明書之後可以在警察署領取。",
+      "vi": "Giấy chứng nhận tai nạn có thể được cấp sau tại đồn cảnh sát.",
+      "ko": "사고증명서는 나중에 경찰서에서 발급받을 수 있습니다."
     }
-  ]
+  ],
+  "title_ja": "緊急"
 }

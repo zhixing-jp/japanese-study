@@ -448,17 +448,17 @@
       "ko": "SIM 카드는 어디서 살 수 있나요?"
     },
     {
-      "jp": "〇〇駅まで大人一枚お願いします。",
-      "furigana": "れいれいえきまでおとないちまいおねがいします。",
-      "zh": "请给我一张到〇〇站的成人票。",
+      "jp": "新宿駅まで大人一枚お願いします。",
+      "furigana": "しんじゅくえきまでおとないちまいおねがいします。",
+      "zh": "请给我一张到新宿站的成人票。",
       "scene": "乘电车",
       "id": "s01-035",
       "subcategory": "sub05",
       "role": "user",
-      "en": "One adult ticket to ○○ station, please.",
-      "zh-TW": "請給我一張到○○站的成人票。",
-      "vi": "Cho tôi một vé người lớn đến ga ○○.",
-      "ko": "○○역까지 어른 한 장 주세요."
+      "en": "One adult ticket to Shinjuku station, please.",
+      "zh-TW": "請給我一張到新宿站的成人票。",
+      "vi": "Cho tôi một vé người lớn đến ga Shinjuku.",
+      "ko": "신주쿠역까지 어른 한 장 주세요."
     },
     {
       "jp": "特急券もお願いします。",
@@ -487,17 +487,17 @@
       "ko": "저기요, 개찰구가 열리지 않는데요."
     },
     {
-      "jp": "〇〇行きを大人二枚お願いします。",
-      "furigana": "れいれいいきをおとなにまいおねがいします。",
-      "zh": "请给我两张去〇〇的车票。",
+      "jp": "新宿行きを大人二枚お願いします。",
+      "furigana": "しんじゅくいきをおとなにまいおねがいします。",
+      "zh": "请给我两张去新宿的成人票。",
       "scene": "乘大巴",
       "id": "s01-038",
       "subcategory": "sub06",
       "role": "user",
-      "en": "Two adult tickets to ○○, please.",
-      "zh-TW": "請給我兩張去○○的車票。",
-      "vi": "Cho tôi hai vé người lớn đi ○○.",
-      "ko": "○○행 어른 두 장 주세요."
+      "en": "Two adult tickets to Shinjuku, please.",
+      "zh-TW": "請給我兩張去新宿的成人票。",
+      "vi": "Cho tôi hai vé người lớn đi Shinjuku.",
+      "ko": "신주쿠행 어른 두 장 주세요."
     },
     {
       "jp": "次のバスは何時ですか。",
@@ -539,17 +539,17 @@
       "ko": "짐은 화물칸에 넣으시겠어요?"
     },
     {
-      "jp": "〇〇までです。お願いします。",
-      "furigana": "れいれいまでです。おねがいします。",
-      "zh": "到〇〇。拜托了。",
+      "jp": "新宿までです。お願いします。",
+      "furigana": "しんじゅくまでです。おねがいします。",
+      "zh": "到新宿。麻烦了。",
       "scene": "乘大巴",
       "id": "s01-042",
       "subcategory": "sub06",
       "role": "user",
-      "en": "To ○○, please.",
-      "zh-TW": "到○○。拜託了。",
-      "vi": "Đến ○○. Nhờ bạn nhé.",
-      "ko": "○○까지 부탁드립니다."
+      "en": "To Shinjuku, please.",
+      "zh-TW": "到新宿。麻煩了。",
+      "vi": "Đến Shinjuku ạ. Cảm ơn.",
+      "ko": "신주쿠까지요. 부탁드립니다."
     },
     {
       "jp": "いらっしゃいませ。どちらまでですか。",
@@ -578,17 +578,17 @@
       "ko": "여기로 가주세요. (지도 제시)"
     },
     {
-      "jp": "〇〇ホテルまでお願いします。",
-      "furigana": "れいれいほてるまでおねがいします。",
-      "zh": "请去〇〇酒店。",
+      "jp": "帝国ホテルまでお願いします。",
+      "furigana": "ていこくほてるまでおねがいします。",
+      "zh": "请到帝国酒店。",
       "scene": "乘出租车",
       "id": "s01-045",
       "subcategory": "sub07",
       "role": "user",
-      "en": "To ○○ Hotel, please.",
-      "zh-TW": "請去○○酒店。",
-      "vi": "Cho tôi đến khách sạn ○○.",
-      "ko": "○○호텔로 가주세요."
+      "en": "To the Imperial Hotel, please.",
+      "zh-TW": "請到帝國酒店。",
+      "vi": "Cho tôi đến khách sạn Imperial.",
+      "ko": "데이코쿠 호텔까지 부탁드립니다."
     },
     {
       "jp": "カードでお願いします。",
@@ -628,6 +628,97 @@
       "zh-TW": "請給我一張收據。",
       "vi": "Cho tôi xin biên lai nhé.",
       "ko": "영수증 부탁드립니다."
+    },
+    {
+      "jp": "かしこまりました。こちらの用紙にご記入をお願いします。",
+      "furigana": "かしこまりました。こちらのようしにごきにゅうをおねがいします。",
+      "zh": "好的，请填写这张单子。",
+      "zh-TW": "好的，請填寫這張單子。",
+      "en": "Certainly. Please fill out this form.",
+      "vi": "Vâng ạ. Xin quý khách điền vào tờ này.",
+      "ko": "알겠습니다. 이 용지에 작성해 주세요.",
+      "scene": "行李提取",
+      "id": "s01-049",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "申し訳ございません。写真を撮らせていただけますか。",
+      "furigana": "もうしわけございません。しゃしんをとらせていただけますか。",
+      "zh": "非常抱歉，可以让我拍张照片吗？",
+      "zh-TW": "非常抱歉，可以讓我拍張照片嗎？",
+      "en": "I'm very sorry. May I take a photo of it?",
+      "vi": "Chúng tôi rất xin lỗi. Cho tôi chụp ảnh được không ạ?",
+      "ko": "대단히 죄송합니다. 사진을 찍어도 될까요?",
+      "scene": "行李提取",
+      "id": "s01-050",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "確認いたします。少々お待ちください。",
+      "furigana": "かくにんいたします。しょうしょうおまちください。",
+      "zh": "我确认一下，请稍等。",
+      "zh-TW": "我確認一下，請稍等。",
+      "en": "Let me check. One moment, please.",
+      "vi": "Để tôi xác nhận. Xin quý khách chờ một chút.",
+      "ko": "확인하겠습니다. 잠시만 기다려 주세요.",
+      "scene": "行李提取",
+      "id": "s01-051",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "ご宿泊先の住所を教えてください。",
+      "furigana": "ごしゅくはくさきのじゅうしょをおしえてください。",
+      "zh": "请告诉我您入住的地址。",
+      "zh-TW": "請告訴我您入住的地址。",
+      "en": "Could you tell me the address of where you're staying?",
+      "vi": "Xin quý khách cho biết địa chỉ nơi lưu trú.",
+      "ko": "숙소 주소를 알려주세요.",
+      "scene": "行李提取",
+      "id": "s01-052",
+      "subcategory": "sub02",
+      "role": "staff"
+    },
+    {
+      "jp": "新宿駅まで、300円になります。",
+      "furigana": "しんじゅくえきまで、さんびゃくえんになります。",
+      "zh": "到新宿站，是300日元。",
+      "zh-TW": "到新宿站，是300日圓。",
+      "en": "To Shinjuku station, that'll be 300 yen.",
+      "vi": "Đến ga Shinjuku là 300 yên.",
+      "ko": "신주쿠역까지 300엔입니다.",
+      "scene": "乘电车",
+      "id": "s01-053",
+      "subcategory": "sub05",
+      "role": "staff"
+    },
+    {
+      "jp": "かしこまりました。合わせて800円です。",
+      "furigana": "かしこまりました。あわせてはっぴゃくえんです。",
+      "zh": "好的，一共是800日元。",
+      "zh-TW": "好的，一共是800日圓。",
+      "en": "Certainly. That'll be 800 yen in total.",
+      "vi": "Vâng ạ. Tổng cộng là 800 yên.",
+      "ko": "알겠습니다. 합쳐서 800엔입니다.",
+      "scene": "乘电车",
+      "id": "s01-054",
+      "subcategory": "sub05",
+      "role": "staff"
+    },
+    {
+      "jp": "拝見します。あ、こちらの改札からどうぞ。",
+      "furigana": "はいけんします。あ、こちらのかいさつからどうぞ。",
+      "zh": "我看一下。啊，请从这边的检票口通过。",
+      "zh-TW": "我看一下。啊，請從這邊的閘機通過。",
+      "en": "Let me take a look. Ah, please go through this gate instead.",
+      "vi": "Để tôi xem. À, mời quý khách qua cổng soát vé bên này.",
+      "ko": "확인해 보겠습니다. 아, 이쪽 개찰구로 나가세요.",
+      "scene": "乘电车",
+      "id": "s01-055",
+      "subcategory": "sub05",
+      "role": "staff"
     }
   ],
   "subcategories": [
@@ -699,6 +790,7 @@
   "title_zh-TW": "入境・機場",
   "title_vi": "Nhập cảnh · Sân bay",
   "title_ko": "입국 · 공항",
+  "description_ja": "日本に到着して空港で入国審査をする際のフレーズ。",
   "description_en": "Phrases for arriving in Japan and going through immigration at the airport.",
   "description_zh-TW": "剛到日本，在機場入境時用到的句子。",
   "description_vi": "Các câu dùng khi mới đến Nhật Bản và làm thủ tục nhập cảnh tại sân bay.",

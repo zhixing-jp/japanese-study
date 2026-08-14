@@ -1,13 +1,13 @@
 {
   "id": "s12",
-  "title": "コンビニサービス",
-  "title_zh": "便利店服务",
+  "title": "便利店服务",
   "title_en": "Convenience Store Services",
   "title_zh-TW": "便利店服務",
   "title_vi": "Dịch vụ cửa hàng tiện lợi",
   "title_ko": "편의점 서비스",
-  "category": "便利店服务",
+  "category": "shopping",
   "description": "结账、热食、复印、缴费——在便利店顺利完成各类服务。",
+  "description_ja": "コピー、支払い、チケット購入——コンビニでの各種サービスに使えるフレーズです。",
   "description_en": "Checkout, hot food, copying, bill payment — getting things done at the convenience store.",
   "description_zh-TW": "結帳、熱食、複印、繳費——在便利店順利完成各類服務。",
   "description_vi": "Thanh toán, đồ ăn nóng, photocopy, nộp phí — hoàn thành các dịch vụ tại cửa hàng tiện lợi.",
@@ -406,7 +406,43 @@
       "ko": "잘 안 돼요."
     },
     {
+      "jp": "こちらの機械をお使いください。",
+      "furigana": "こちらのきかいをおつかいください。",
+      "zh": "请使用这台机器。",
       "id": "s12-029",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Please use this machine.",
+      "zh-TW": "請使用這台機器。",
+      "vi": "Vui lòng sử dụng máy này.",
+      "ko": "이 기계를 사용해 주세요."
+    },
+    {
+      "jp": "1枚10円です。",
+      "furigana": "いちまいじゅうえんです。",
+      "zh": "一张10日元。",
+      "id": "s12-030",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "It's 10 yen per sheet.",
+      "zh-TW": "一張10日元。",
+      "vi": "10 yên một tờ.",
+      "ko": "한 장에 10엔입니다."
+    },
+    {
+      "jp": "少々お待ちください。紙を交換します。",
+      "furigana": "しょうしょうおまちください。かみをこうかんします。",
+      "zh": "请稍等，我去换纸。",
+      "id": "s12-031",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Please wait a moment, I'll replace the paper.",
+      "zh-TW": "請稍等，我去換紙。",
+      "vi": "Xin chờ một chút, tôi sẽ thay giấy.",
+      "ko": "잠시만 기다려 주세요. 용지를 교체하겠습니다."
+    },
+    {
+      "id": "s12-032",
       "subcategory": "sub05",
       "role": "user",
       "jp": "この払込票で払えますか。",
@@ -418,7 +454,7 @@
       "ko": "이 납부서로 낼 수 있나요?"
     },
     {
-      "id": "s12-030",
+      "id": "s12-033",
       "subcategory": "sub05",
       "role": "user",
       "jp": "このバーコードで払えますか。",
@@ -430,7 +466,7 @@
       "ko": "이 바코드로 결제할 수 있나요?"
     },
     {
-      "id": "s12-031",
+      "id": "s12-034",
       "subcategory": "sub05",
       "role": "user",
       "jp": "電気代を払いたいです。",
@@ -442,7 +478,7 @@
       "ko": "전기요금을 내고 싶어요."
     },
     {
-      "id": "s12-032",
+      "id": "s12-035",
       "subcategory": "sub05",
       "role": "user",
       "jp": "水道代を払いたいです。",
@@ -454,7 +490,7 @@
       "ko": "수도요금을 내고 싶어요."
     },
     {
-      "id": "s12-033",
+      "id": "s12-036",
       "subcategory": "sub05",
       "role": "user",
       "jp": "税金を払いたいです。",
@@ -466,7 +502,7 @@
       "ko": "세금을 내고 싶어요."
     },
     {
-      "id": "s12-034",
+      "id": "s12-037",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "こちらの機械でお支払いいただけます。",
@@ -478,7 +514,7 @@
       "ko": "이 기계에서 납부하실 수 있습니다."
     },
     {
-      "id": "s12-035",
+      "id": "s12-038",
       "subcategory": "sub06",
       "role": "user",
       "jp": "チケットを買いたいんですが。",
@@ -490,7 +526,7 @@
       "ko": "티켓을 사고 싶어요."
     },
     {
-      "id": "s12-036",
+      "id": "s12-039",
       "subcategory": "sub06",
       "role": "user",
       "jp": "新幹線の切符はここで買えますか。",
@@ -502,7 +538,7 @@
       "ko": "신칸센 표도 여기서 살 수 있나요?"
     },
     {
-      "id": "s12-037",
+      "id": "s12-040",
       "subcategory": "sub06",
       "role": "user",
       "jp": "コンサートのチケットを買えますか。",
@@ -514,7 +550,7 @@
       "ko": "콘서트 티켓도 살 수 있나요?"
     },
     {
-      "id": "s12-038",
+      "id": "s12-041",
       "subcategory": "sub06",
       "role": "staff",
       "jp": "Loppi（またはFamiポート）からお申し込みください。",
@@ -526,7 +562,7 @@
       "ko": "Loppi(또는 Fami Port)에서 신청해 주세요."
     },
     {
-      "id": "s12-039",
+      "id": "s12-042",
       "subcategory": "sub06",
       "role": "user",
       "jp": "この番号を持ってレジに来てください。",
@@ -537,5 +573,6 @@
       "vi": "Vui lòng mang số này đến quầy thu ngân.",
       "ko": "이 번호를 가지고 계산대로 오세요."
     }
-  ]
+  ],
+  "title_ja": "コンビニサービス"
 }

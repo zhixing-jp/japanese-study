@@ -1,13 +1,13 @@
 {
   "id": "s10",
-  "title": "子供・学校",
-  "title_zh": "孩子・学校",
+  "title": "孩子・学校",
   "title_en": "Kids & School",
   "title_zh-TW": "孩子・學校",
   "title_vi": "Trẻ em & Trường học",
   "title_ko": "자녀 & 학교",
-  "category": "孩子・学校",
+  "category": "work",
   "description": "入学手续、日常联络、和老师沟通——顺利处理好孩子在日本上学的一切事务。",
+  "description_ja": "入園・入学手続き、送り迎え、先生とのやり取り——子どものことをうまく進めるためのフレーズです。",
   "description_en": "Enrollment, daily contact, communicating with teachers — handling everything for your child's schooling in Japan.",
   "description_zh-TW": "入學手續、日常聯絡、和老師溝通——順利處理好孩子在日本上學的一切事務。",
   "description_vi": "Thủ tục nhập học, liên lạc hàng ngày, giao tiếp với giáo viên — xử lý mọi việc liên quan đến việc học của con ở Nhật.",
@@ -604,7 +604,43 @@
       "ko": "다음 주 소풍에 가져갈 것들을 알려주세요."
     },
     {
+      "jp": "承知しました。ご連絡ありがとうございます。",
+      "furigana": "しょうちしました。ごれんらくありがとうございます。",
+      "zh": "知道了，谢谢您的联系。",
       "id": "s10-044",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "Understood, thank you for letting us know.",
+      "zh-TW": "知道了，謝謝您的聯繫。",
+      "vi": "Đã rõ, cảm ơn quý phụ huynh đã liên hệ.",
+      "ko": "알겠습니다. 연락 주셔서 감사합니다."
+    },
+    {
+      "jp": "宿題はプリント3ページ分です。",
+      "furigana": "しゅくだいはプリントさんページぶんです。",
+      "zh": "作业是讲义3页的量。",
+      "id": "s10-045",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "The homework is 3 pages of the worksheet.",
+      "zh-TW": "作業是講義3頁的量。",
+      "vi": "Bài tập là 3 trang phiếu bài tập.",
+      "ko": "숙제는 프린트 3페이지 분량입니다."
+    },
+    {
+      "jp": "遠足には、お弁当と水筒をお持たせください。",
+      "furigana": "えんそくには、おべんとうとすいとうをおもたせください。",
+      "zh": "郊游请让孩子带便当和水壶。",
+      "id": "s10-046",
+      "subcategory": "sub06",
+      "role": "staff",
+      "en": "Please have your child bring a lunch box and water bottle for the trip.",
+      "zh-TW": "郊遊請讓孩子帶便當和水壺。",
+      "vi": "Trong buổi dã ngoại, xin cho bé mang theo cơm hộp và bình nước.",
+      "ko": "소풍에는 도시락과 물통을 챙겨 보내주세요."
+    },
+    {
+      "id": "s10-047",
       "subcategory": "sub07",
       "role": "user",
       "jp": "子どもが学校でいじめられているようです。",
@@ -616,7 +652,7 @@
       "ko": "아이가 학교에서 괴롭힘을 당하고 있는 것 같아요."
     },
     {
-      "id": "s10-045",
+      "id": "s10-048",
       "subcategory": "sub07",
       "role": "user",
       "jp": "子どもから話を聞いて、心配になりました。",
@@ -628,7 +664,7 @@
       "ko": "아이에게 이야기를 듣고 걱정이 됐어요."
     },
     {
-      "id": "s10-046",
+      "id": "s10-049",
       "subcategory": "sub07",
       "role": "user",
       "jp": "学校側で状況を確認していただけますか。",
@@ -640,7 +676,7 @@
       "ko": "학교 측에서 상황을 확인해 주실 수 있나요?"
     },
     {
-      "id": "s10-047",
+      "id": "s10-050",
       "subcategory": "sub07",
       "role": "staff",
       "jp": "詳しく状況を確認して、折り返しご連絡します。",
@@ -652,7 +688,7 @@
       "ko": "자세히 상황을 확인한 후 다시 연락드리겠습니다."
     },
     {
-      "id": "s10-048",
+      "id": "s10-051",
       "subcategory": "sub07",
       "role": "user",
       "jp": "子どもが外国人だからという理由でからかわれているようです。",
@@ -664,7 +700,7 @@
       "ko": "아이가 외국인이라는 이유로 놀림을 받고 있는 것 같아요."
     },
     {
-      "id": "s10-049",
+      "id": "s10-052",
       "subcategory": "sub07",
       "role": "user",
       "jp": "その後、状況はどうなっていますか。",
@@ -676,7 +712,7 @@
       "ko": "그 후로 상황이 어떻게 됐나요?"
     },
     {
-      "id": "s10-050",
+      "id": "s10-053",
       "subcategory": "sub07",
       "role": "user",
       "jp": "子どもが最近、学校に行きたがりません。",
@@ -688,7 +724,7 @@
       "ko": "아이가 요즘 학교에 가기 싫어해요."
     },
     {
-      "id": "s10-051",
+      "id": "s10-054",
       "subcategory": "sub08",
       "role": "user",
       "jp": "運動会はいつですか。",
@@ -700,7 +736,7 @@
       "ko": "운동회는 언제인가요?"
     },
     {
-      "id": "s10-052",
+      "id": "s10-055",
       "subcategory": "sub08",
       "role": "user",
       "jp": "遠足に何を持っていけばいいですか。",
@@ -712,7 +748,7 @@
       "ko": "소풍에 뭘 가져가면 되나요?"
     },
     {
-      "id": "s10-053",
+      "id": "s10-056",
       "subcategory": "sub08",
       "role": "user",
       "jp": "参観日はいつですか。",
@@ -724,7 +760,7 @@
       "ko": "참관일은 언제인가요?"
     },
     {
-      "id": "s10-054",
+      "id": "s10-057",
       "subcategory": "sub08",
       "role": "user",
       "jp": "発表会の時間を教えてください。",
@@ -736,7 +772,7 @@
       "ko": "발표회 시간을 알려주세요."
     },
     {
-      "id": "s10-055",
+      "id": "s10-058",
       "subcategory": "sub08",
       "role": "user",
       "jp": "当日、保護者は何時に集合すればいいですか。",
@@ -748,7 +784,7 @@
       "ko": "당일 학부모는 몇 시에 모이면 되나요?"
     },
     {
-      "id": "s10-056",
+      "id": "s10-059",
       "subcategory": "sub08",
       "role": "user",
       "jp": "雨天の場合はどうなりますか。",
@@ -758,6 +794,43 @@
       "zh-TW": "如果下雨的話會怎麼樣？",
       "vi": "Nếu trời mưa thì sao?",
       "ko": "비가 오면 어떻게 되나요?"
+    },
+    {
+      "jp": "運動会は10月10日です。",
+      "furigana": "うんどうかいはじゅうがつとおかです。",
+      "zh": "运动会是10月10日。",
+      "id": "s10-060",
+      "subcategory": "sub08",
+      "role": "staff",
+      "en": "Sports day is on October 10th.",
+      "zh-TW": "運動會是10月10日。",
+      "vi": "Hội thao vào ngày 10 tháng 10.",
+      "ko": "운동회는 10월 10일입니다."
+    },
+    {
+      "jp": "当日は9時に体育館へお集まりください。",
+      "furigana": "とうじつはくじにたいいくかんへおあつまりください。",
+      "zh": "当天请9点到体育馆集合。",
+      "id": "s10-061",
+      "subcategory": "sub08",
+      "role": "staff",
+      "en": "Please gather at the gym at 9 AM that day.",
+      "zh-TW": "當天請9點到體育館集合。",
+      "vi": "Vào ngày hôm đó, xin tập trung tại nhà thi đấu lúc 9 giờ.",
+      "ko": "당일에는 9시까지 체육관으로 모여주세요."
+    },
+    {
+      "jp": "雨天の場合は、翌日に延期になります。",
+      "furigana": "うてんのばあいは、よくじつにえんきになります。",
+      "zh": "如果下雨的话，会顺延到第二天。",
+      "id": "s10-062",
+      "subcategory": "sub08",
+      "role": "staff",
+      "en": "In case of rain, it will be postponed to the next day.",
+      "zh-TW": "如果下雨的話，會順延到隔天。",
+      "vi": "Nếu trời mưa, sự kiện sẽ hoãn sang ngày hôm sau.",
+      "ko": "우천 시에는 다음 날로 연기됩니다."
     }
-  ]
+  ],
+  "title_ja": "子供・学校"
 }

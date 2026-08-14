@@ -1,13 +1,13 @@
 {
   "id": "s16",
-  "title": "テレフォン日本語",
-  "title_zh": "电话日语",
+  "title": "电话日语",
   "title_en": "Phone Japanese",
   "title_zh-TW": "電話日語",
   "title_vi": "Tiếng Nhật qua điện thoại",
   "title_ko": "전화 일본어",
-  "category": "电话日语",
+  "category": "daily",
   "description": "接电话、打电话、听不懂时——成功应对日语电话，不挂断，不误解。",
+  "description_ja": "電話を受ける、かける、伝言を残す——電話での日本語のやり取りに困らないためのフレーズです。",
   "description_en": "Answering, calling, when you can't understand — handling Japanese phone calls without hanging up in confusion.",
   "description_zh-TW": "接電話、打電話、聽不懂時——成功應對日語電話，不掛斷，不誤解。",
   "description_vi": "Nghe điện thoại, gọi điện, khi không hiểu — xử lý cuộc gọi tiếng Nhật mà không cúp máy nhầm.",
@@ -64,13 +64,13 @@
       "id": "s16-001",
       "subcategory": "sub01",
       "role": "user",
-      "jp": "はい、○○です。",
-      "furigana": "はい、○○です。",
-      "zh": "喂，我是○○。",
-      "en": "Hello, this is ○○.",
-      "zh-TW": "喂，我是○○。",
-      "vi": "A lô, tôi là ○○.",
-      "ko": "여보세요, ○○입니다."
+      "jp": "はい、田中です。",
+      "furigana": "はい、たなかです。",
+      "zh": "喂，我是田中。",
+      "en": "Hello, this is Tanaka.",
+      "zh-TW": "喂，我是田中。",
+      "vi": "Alo, tôi là Tanaka.",
+      "ko": "네, 다나카입니다."
     },
     {
       "id": "s16-002",
@@ -133,7 +133,31 @@
       "ko": "잠깐만 기다려 주시겠어요?"
     },
     {
+      "jp": "もしもし、田中さんのお宅でしょうか。",
+      "furigana": "もしもし、たなかさんのおたくでしょうか。",
+      "zh": "喂，请问是田中家吗？",
       "id": "s16-007",
+      "subcategory": "sub01",
+      "role": "staff",
+      "en": "Hello, is this the Tanaka residence?",
+      "zh-TW": "喂，請問是田中家嗎？",
+      "vi": "Alo, đây có phải nhà anh/chị Tanaka không?",
+      "ko": "여보세요, 다나카 씨 댁인가요?"
+    },
+    {
+      "jp": "突然のお電話、失礼いたします。",
+      "furigana": "とつぜんのおでんわ、しつれいいたします。",
+      "zh": "冒昧突然来电，不好意思。",
+      "id": "s16-008",
+      "subcategory": "sub01",
+      "role": "staff",
+      "en": "Sorry for calling out of the blue.",
+      "zh-TW": "冒昧突然來電，不好意思。",
+      "vi": "Xin lỗi vì đã gọi điện đột ngột.",
+      "ko": "갑자기 전화드려서 죄송합니다."
+    },
+    {
+      "id": "s16-009",
       "subcategory": "sub02",
       "role": "user",
       "jp": "日本語が上手ではないので、ゆっくりお願いします。",
@@ -145,7 +169,7 @@
       "ko": "일본어를 잘 못해서요, 천천히 말씀해 주세요."
     },
     {
-      "id": "s16-008",
+      "id": "s16-010",
       "subcategory": "sub02",
       "role": "user",
       "jp": "すみません、電波が悪くて聞こえにくいんですが。",
@@ -157,7 +181,7 @@
       "ko": "죄송한데, 신호가 약해서 잘 안 들려요."
     },
     {
-      "id": "s16-009",
+      "id": "s16-011",
       "subcategory": "sub02",
       "role": "user",
       "jp": "もう一度、おっしゃっていただけますか。",
@@ -169,7 +193,7 @@
       "ko": "다시 한 번 말씀해 주시겠어요?"
     },
     {
-      "id": "s16-010",
+      "id": "s16-012",
       "subcategory": "sub02",
       "role": "user",
       "jp": "もう少しゆっくり話していただけますか。",
@@ -181,7 +205,7 @@
       "ko": "좀 더 천천히 말씀해 주시겠어요?"
     },
     {
-      "id": "s16-011",
+      "id": "s16-013",
       "subcategory": "sub02",
       "role": "user",
       "jp": "漢字でどのように書きますか。",
@@ -193,7 +217,7 @@
       "ko": "한자로는 어떻게 쓰나요?"
     },
     {
-      "id": "s16-012",
+      "id": "s16-014",
       "subcategory": "sub02",
       "role": "user",
       "jp": "メモを取るので、少々お待ちください。",
@@ -205,7 +229,7 @@
       "ko": "메모할게요. 잠시만요."
     },
     {
-      "id": "s16-013",
+      "id": "s16-015",
       "subcategory": "sub02",
       "role": "user",
       "jp": "LINEで送ってもらえますか。",
@@ -217,7 +241,7 @@
       "ko": "LINE으로 보내주실 수 있나요?"
     },
     {
-      "id": "s16-014",
+      "id": "s16-016",
       "subcategory": "sub02",
       "role": "user",
       "jp": "メールで送ってもらえますか。",
@@ -229,7 +253,31 @@
       "ko": "메일로 보내주실 수 있나요?"
     },
     {
-      "id": "s16-015",
+      "jp": "はい、分かりました。ゆっくり話しますね。",
+      "furigana": "はい、わかりました。ゆっくりはなしますね。",
+      "zh": "好的，我知道了，我会说慢一点的。",
+      "id": "s16-017",
+      "subcategory": "sub02",
+      "role": "staff",
+      "en": "OK, understood. I'll speak slowly.",
+      "zh-TW": "好的，我知道了，我會說慢一點的。",
+      "vi": "Vâng, đã hiểu. Tôi sẽ nói chậm lại nhé.",
+      "ko": "네, 알겠습니다. 천천히 말할게요."
+    },
+    {
+      "jp": "た・な・か、と書きます。",
+      "furigana": "た・な・か、とかきます。",
+      "zh": "写作「た・な・か」（田中）。",
+      "id": "s16-018",
+      "subcategory": "sub02",
+      "role": "staff",
+      "en": "It's written T-A-N-A-K-A.",
+      "zh-TW": "寫作「た・な・か」（田中）。",
+      "vi": "Được viết là T-A-N-A-K-A.",
+      "ko": "'타·나·카'라고 씁니다."
+    },
+    {
+      "id": "s16-019",
       "subcategory": "sub03",
       "role": "user",
       "jp": "お忙しいところ、恐れ入ります。",
@@ -241,19 +289,19 @@
       "ko": "바쁘신데 연락드려서 죄송합니다."
     },
     {
-      "id": "s16-016",
+      "id": "s16-020",
       "subcategory": "sub03",
       "role": "user",
-      "jp": "○○の件でお電話しました。",
-      "furigana": "○○のけんでおでんわしました。",
-      "zh": "我是关于○○的事打来的。",
-      "en": "I'm calling about ○○.",
-      "zh-TW": "我是關於○○的事打來的。",
-      "vi": "Tôi gọi về việc ○○.",
-      "ko": "○○ 건으로 전화드렸어요."
+      "jp": "契約の件でお電話しました。",
+      "furigana": "けいやくのけんでおでんわしました。",
+      "zh": "我是关于合同的事打来的。",
+      "en": "I'm calling about the contract.",
+      "zh-TW": "我是關於合約的事打來的。",
+      "vi": "Tôi gọi về việc hợp đồng.",
+      "ko": "계약 건으로 전화드렸습니다."
     },
     {
-      "id": "s16-017",
+      "id": "s16-021",
       "subcategory": "sub03",
       "role": "user",
       "jp": "確認のためにお電話しました。",
@@ -265,7 +313,7 @@
       "ko": "확인차 전화드렸어요."
     },
     {
-      "id": "s16-018",
+      "id": "s16-022",
       "subcategory": "sub03",
       "role": "user",
       "jp": "明日、二名で予約したいんですが、できますか。",
@@ -277,7 +325,7 @@
       "ko": "내일 두 명으로 예약하고 싶은데요, 가능한가요?"
     },
     {
-      "id": "s16-019",
+      "id": "s16-023",
       "subcategory": "sub03",
       "role": "user",
       "jp": "来週の火曜日の十時に、予約をお願いできますか。",
@@ -289,7 +337,7 @@
       "ko": "다음 주 화요일 10시로 예약할 수 있을까요?"
     },
     {
-      "id": "s16-020",
+      "id": "s16-024",
       "subcategory": "sub03",
       "role": "user",
       "jp": "キャンセルしたいです。",
@@ -301,7 +349,7 @@
       "ko": "취소하고 싶어요."
     },
     {
-      "id": "s16-021",
+      "id": "s16-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "変更したいです。",
@@ -313,31 +361,55 @@
       "ko": "변경하고 싶어요."
     },
     {
-      "id": "s16-022",
+      "id": "s16-026",
       "subcategory": "sub03",
       "role": "user",
-      "jp": "○○と申します。",
-      "furigana": "○○ともうします。",
-      "zh": "我叫○○。",
-      "en": "My name is ○○.",
-      "zh-TW": "我叫○○。",
-      "vi": "Tên tôi là ○○.",
-      "ko": "○○이라고 합니다."
+      "jp": "田中と申します。",
+      "furigana": "たなかともうします。",
+      "zh": "我叫田中。",
+      "en": "My name is Tanaka.",
+      "zh-TW": "我叫田中。",
+      "vi": "Tôi tên là Tanaka.",
+      "ko": "다나카라고 합니다."
     },
     {
-      "id": "s16-023",
+      "jp": "はい、かしこまりました。明日10時、2名様ですね。",
+      "furigana": "はい、かしこまりました。あしたじゅうじ、にめいさまですね。",
+      "zh": "好的，明白了。明天10点，2位对吧。",
+      "id": "s16-027",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "Certainly. Tomorrow at 10 AM for 2 people, correct?",
+      "zh-TW": "好的，明白了。明天10點，2位對吧。",
+      "vi": "Vâng, đã rõ. 10 giờ ngày mai, 2 người phải không ạ.",
+      "ko": "네, 알겠습니다. 내일 10시, 2분이시죠?"
+    },
+    {
+      "jp": "申し訳ございません、その時間は満席です。",
+      "furigana": "もうしわけございません、そのじかんはまんせきです。",
+      "zh": "非常抱歉，那个时间已经满席了。",
+      "id": "s16-028",
+      "subcategory": "sub03",
+      "role": "staff",
+      "en": "I'm sorry, that time is fully booked.",
+      "zh-TW": "非常抱歉，那個時間已經滿席了。",
+      "vi": "Xin lỗi, thời gian đó đã hết chỗ.",
+      "ko": "죄송합니다, 그 시간은 예약이 꽉 찼습니다."
+    },
+    {
+      "id": "s16-029",
       "subcategory": "sub04",
       "role": "user",
-      "jp": "○○さんはいらっしゃいますか。",
-      "furigana": "○○さんはいらっしゃいますか。",
-      "zh": "○○先生/女士在吗？",
-      "en": "Is ○○ available?",
-      "zh-TW": "○○先生/女士在嗎？",
-      "vi": "Anh/chị ○○ có ở đó không?",
-      "ko": "○○씨 계신가요?"
+      "jp": "佐藤さんはいらっしゃいますか。",
+      "furigana": "さとうさんはいらっしゃいますか。",
+      "zh": "佐藤先生/女士在吗？",
+      "en": "Is Mr./Ms. Sato there?",
+      "zh-TW": "佐藤先生/女士在嗎？",
+      "vi": "Anh/chị Sato có ở đó không?",
+      "ko": "사토 씨 계신가요?"
     },
     {
-      "id": "s16-024",
+      "id": "s16-030",
       "subcategory": "sub04",
       "role": "user",
       "jp": "伝言をお願いできますか。",
@@ -349,19 +421,19 @@
       "ko": "메모를 남겨주실 수 있나요?"
     },
     {
-      "id": "s16-025",
+      "id": "s16-031",
       "subcategory": "sub04",
       "role": "user",
-      "jp": "○○から電話があったとお伝えください。",
-      "furigana": "○○からでんわがあったとおつたえください。",
-      "zh": "请转告○○来电话了。",
-      "en": "Please let them know that ○○ called.",
-      "zh-TW": "請轉告○○來電話了。",
-      "vi": "Vui lòng nhắn lại rằng ○○ đã gọi.",
-      "ko": "○○이 전화했다고 전해주세요."
+      "jp": "田中から電話があったとお伝えください。",
+      "furigana": "たなかからでんわがあったとおつたえください。",
+      "zh": "请转告田中来电话了。",
+      "en": "Please tell them Tanaka called.",
+      "zh-TW": "請轉告田中來電話了。",
+      "vi": "Vui lòng nhắn rằng Tanaka đã gọi điện.",
+      "ko": "다나카에게서 전화가 왔었다고 전해주세요."
     },
     {
-      "id": "s16-026",
+      "id": "s16-032",
       "subcategory": "sub04",
       "role": "user",
       "jp": "折り返しお電話をお願いします。",
@@ -373,7 +445,7 @@
       "ko": "다시 전화 주시도록 해주세요."
     },
     {
-      "id": "s16-027",
+      "id": "s16-033",
       "subcategory": "sub04",
       "role": "user",
       "jp": "わかりました。ありがとうございます。失礼します。",
@@ -385,7 +457,7 @@
       "ko": "알겠습니다. 감사합니다. 안녕히 계세요."
     },
     {
-      "id": "s16-028",
+      "id": "s16-034",
       "subcategory": "sub04",
       "role": "user",
       "jp": "それでは、よろしくお願いいたします。失礼いたします。",
@@ -397,7 +469,31 @@
       "ko": "그럼 잘 부탁드립니다. 실례하겠습니다."
     },
     {
-      "id": "s16-029",
+      "jp": "かしこまりました。お伝えします。",
+      "furigana": "かしこまりました。おつたえします。",
+      "zh": "明白了，我会转告的。",
+      "id": "s16-035",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Certainly, I'll pass along the message.",
+      "zh-TW": "明白了，我會轉告的。",
+      "vi": "Vâng, tôi sẽ nhắn lại.",
+      "ko": "알겠습니다. 전달해 드리겠습니다."
+    },
+    {
+      "jp": "折り返しのお電話番号を教えていただけますか。",
+      "furigana": "おりかえしのおでんわばんごうをおしえていただけますか。",
+      "zh": "可以告诉我您的回电号码吗？",
+      "id": "s16-036",
+      "subcategory": "sub04",
+      "role": "staff",
+      "en": "Could you give me your callback number?",
+      "zh-TW": "可以告訴我您的回電號碼嗎？",
+      "vi": "Anh/chị có thể cho tôi số điện thoại để gọi lại không?",
+      "ko": "다시 걸 전화번호를 알려주시겠어요?"
+    },
+    {
+      "id": "s16-037",
       "subcategory": "sub05",
       "role": "user",
       "jp": "オペレーターにつないでください。",
@@ -409,7 +505,7 @@
       "ko": "상담원으로 연결해 주세요."
     },
     {
-      "id": "s16-030",
+      "id": "s16-038",
       "subcategory": "sub05",
       "role": "user",
       "jp": "担当者と話したいです。",
@@ -421,7 +517,7 @@
       "ko": "담당자와 통화하고 싶어요."
     },
     {
-      "id": "s16-031",
+      "id": "s16-039",
       "subcategory": "sub05",
       "role": "user",
       "jp": "もう一度、メニューを聞かせていただけますか。",
@@ -433,7 +529,7 @@
       "ko": "메뉴를 다시 한 번 들려주시겠어요?"
     },
     {
-      "id": "s16-032",
+      "id": "s16-040",
       "subcategory": "sub05",
       "role": "user",
       "jp": "日本語が不自由なので、ゆっくり話していただけますか。",
@@ -443,6 +539,31 @@
       "zh-TW": "我日語不太流利，可以說慢一點嗎？",
       "vi": "Tiếng Nhật của tôi không thành thạo. Bạn có thể nói chậm hơn không?",
       "ko": "일본어가 서툴러서요, 천천히 말씀해 주시겠어요?"
+    },
+    {
+      "jp": "ただいま、大変混み合っております。そのままお待ちください。",
+      "furigana": "ただいま、たいへんこみあっております。そのままおまちください。",
+      "zh": "目前非常拥挤，请继续保持等待。",
+      "id": "s16-041",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "We're currently experiencing high call volume. Please continue to hold.",
+      "zh-TW": "目前非常擁擠，請繼續保持等待。",
+      "vi": "Hiện đang rất đông cuộc gọi. Xin vui lòng tiếp tục chờ.",
+      "ko": "현재 매우 혼잡합니다. 그대로 기다려 주세요."
+    },
+    {
+      "jp": "オペレーターにおつなぎします。少々お待ちください。",
+      "furigana": "おぺれーたーにおつなぎします。しょうしょうおまちください。",
+      "zh": "正在为您转接客服人员，请稍等。",
+      "id": "s16-042",
+      "subcategory": "sub05",
+      "role": "staff",
+      "en": "We'll connect you to an operator. Please wait a moment.",
+      "zh-TW": "正在為您轉接客服人員，請稍等。",
+      "vi": "Chúng tôi sẽ kết nối với nhân viên tổng đài. Xin chờ trong giây lát.",
+      "ko": "상담원에게 연결해 드리겠습니다. 잠시만 기다려 주세요."
     }
-  ]
+  ],
+  "title_ja": "テレフォン日本語"
 }
