@@ -23,11 +23,6 @@ const sceneTitle = (scene as any)[`title_${lang}`] || (scene as any).title_zh ||
 const sceneDesc = (scene as any)[`description_${lang}`] || scene.description || '';
 const subcats = scene.subcategories || [];
 const info = (scene as any).info || [];
-const categoryIcons: Record<string, string> = {
-  daily: '📌', medical: '🏥', living: '🏠', transport: '🚗',
-  shopping: '🛍️', work: '💼', leisure: '🎌', emergency: '🆘'
-};
-const sceneIcon = categoryIcons[(scene as any).category] || '📍';
 
 const homeUrl = `/${lang}/`;
 const homeLabel: Record<string, string> = {
@@ -80,7 +75,9 @@ if (hasGroups) {
         <div class="rescue-landing-title-hero">{sceneTitle}</div>
         <div class="rescue-landing-desc-hero">{sceneDesc}</div>
       </div>
-      <span class="rescue-landing-icon" aria-hidden="true">{sceneIcon}</span>
+      {scene.image && (
+        <img class="rescue-landing-thumb" src={`/${scene.image}`} alt="" aria-hidden="true" />
+      )}
     </div>
 
     {info.length > 0 && (
