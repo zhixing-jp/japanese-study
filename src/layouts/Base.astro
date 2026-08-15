@@ -12,7 +12,7 @@ interface Props {
 
 const {
   title = 'Living Japanese | 日活',
-  description = '不会日语，也能在日本活得从容。',
+  description = '在日本看病、租房、办手续怎么用日语说？23个真实场景对话，真人核实，跟读练习，完全免费。',
   ogImage = 'https://livingjapanese.app/assets/og-image.webp',
   rescueCss = false
 } = Astro.props;
@@ -41,6 +41,21 @@ const rescueUrl  = lang === 'zh' ? '/' : `/${lang}/`;
 // medical是占位页，暂时只有单一路径（无语言子目录），页面内部按当前语言显示对应文案。
 // 等就医版块正式做多语言目录时，这里要改回 lang === 'zh' ? '/medical/' : `/${lang}/medical/` 的形式
 const medicalUrl = '/medical/';
+// about同medical，单一路径，内部按当前语言显示对应文案
+const aboutUrl = '/about/';
+
+const footerLabels: Record<string, string> = {
+  zh: '关于我们', 'zh-TW': '關於我們',
+  en: 'About Us', vi: 'Về Chúng Tôi', ko: '소개', ja: '私たちについて'
+};
+const footerCopyright: Record<string, string> = {
+  zh: `© ${new Date().getFullYear()} Living Japanese · 日活`,
+  'zh-TW': `© ${new Date().getFullYear()} Living Japanese · 日活`,
+  en: `© ${new Date().getFullYear()} Living Japanese`,
+  vi: `© ${new Date().getFullYear()} Living Japanese`,
+  ko: `© ${new Date().getFullYear()} Living Japanese`,
+  ja: `© ${new Date().getFullYear()} Living Japanese`
+};
 
 const currentPath = Astro.url.pathname;
 const isMedical = currentPath.includes('/medical');
@@ -50,7 +65,7 @@ const jsonLd = {
   "@type": "WebApplication",
   "name": "日活 Living Japanese",
   "url": siteUrl,
-  "description": "不会日语，也能在日本活得从容。19个真实生活场景，数百句经过筛选的实用日语，遇到语言障碍时10秒找到句子，点一下让手机替你开口说。由在日20年华人制作，完全免费，无需下载。",
+  "description": "不是学日语，是习惯说日语。23个真实生活场景，数百句日本人真的会这样说的对话，配双向跟读练习，通勤路上随手练几句。内容由在日20年华人亲自核实，不是机器翻译，完全免费，无需下载。",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web",
   "inLanguage": ["zh-CN", "zh-TW", "en", "vi", "ko", "ja"],
@@ -161,6 +176,13 @@ const jsonLd = {
 
   <!-- Page Content -->
   <slot />
+
+  <!-- Footer -->
+  <footer id="siteFooter" style="max-width:640px;margin:0 auto;padding:24px 20px 100px;text-align:center;border-top:1px solid rgba(0,0,0,.06);margin-top:40px;">
+    <a id="footerAboutLink" href={aboutUrl} style="font-size:13px;color:var(--muted,#888);text-decoration:none;">{footerLabels[lang] || footerLabels.zh}</a>
+    <div id="footerCopyright" style="font-size:11px;color:rgba(0,0,0,.3);margin-top:8px;">{footerCopyright[lang] || footerCopyright.zh}</div>
+  </footer>
+
   <!-- 搜索结果面板 -->
   <div id="searchPanel" style="display:none;position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100%;background:var(--bg);z-index:500;overflow-y:auto;padding:60px 14px 80px;">
     <div id="searchResults"></div>
@@ -248,6 +270,44 @@ const jsonLd = {
       if (wrap && !wrap.contains(e.target)) {
         document.getElementById('langMenu').style.display = 'none';
       }
+    });
+
+    // about/medical等单一路径页面：switchLang()不会跳转页面，而是原地loadLocale后派发langChanged，
+    // 这里同步更新语言按钮文案和菜单里的active高亮，否则切换后header上显示的还是旧语言
+    document.addEventListener('langChanged', function(e) {
+      const lang = e.detail && e.detail.lang;
+      if (!lang) return;
+      const langLabelsClient = {
+        'zh': '简体中文', 'zh-TW': '繁體中文',
+        'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어', 'ja': '日本語'
+      };
+      const btn = document.getElementById('langBtn');
+      if (btn) btn.textContent = `🌐 ${langLabelsClient[lang] || langLabelsClient.zh}`;
+      document.querySelectorAll('#langMenu .lang-menu-item').forEach(function(item, idx) {
+        const keys = Object.keys(langLabelsClient);
+        item.classList.toggle('active', keys[idx] === lang);
+      });
+      document.getElementById('langMenu').style.display = 'none';
+
+      // 同步页脚的"关于我们"文案和版权行（footer同样是server端按URL渲染的，
+      // 在about/medical这类单一路径页面上，语言切换不刷新页面，需要客户端手动同步）
+      const footerLabelsClient = {
+        zh: '关于我们', 'zh-TW': '關於我們',
+        en: 'About Us', vi: 'Về Chúng Tôi', ko: '소개', ja: '私たちについて'
+      };
+      const footerYear = new Date().getFullYear();
+      const footerCopyrightClient = {
+        zh: `© ${footerYear} Living Japanese · 日活`,
+        'zh-TW': `© ${footerYear} Living Japanese · 日活`,
+        en: `© ${footerYear} Living Japanese`,
+        vi: `© ${footerYear} Living Japanese`,
+        ko: `© ${footerYear} Living Japanese`,
+        ja: `© ${footerYear} Living Japanese`
+      };
+      const footerLink = document.getElementById('footerAboutLink');
+      if (footerLink) footerLink.textContent = footerLabelsClient[lang] || footerLabelsClient.zh;
+      const footerCopy = document.getElementById('footerCopyright');
+      if (footerCopy) footerCopy.textContent = footerCopyrightClient[lang] || footerCopyrightClient.zh;
     });
   </script>
 

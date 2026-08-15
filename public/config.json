@@ -1,21 +1,26 @@
 {
   "site": {
     "title": "Living Japanese · 日活",
-    "subtitle": "不会日语，也能在日本活得从容",
+    "subtitle": "不是学日语，是习惯说日语",
     "version": "3.0",
     "url": "https://livingjapanese.app"
   },
   "banner": {
     "eyebrow": "Living Japanese · 日活",
-    "title": "不会日语，也能在日本活得从容。",
-    "pills": ["不用背","用时来查","10秒找到","说出来解决"],
-    "title_en": "Live comfortably in Japan, even without Japanese.",
-    "title_zh-TW":"不會日語，也能在日本生活自如。",
-    "title_vi": "Sống thoải mái ở Nhật, dù không biết tiếng Nhật.",
-    "title_ko": "일본어 몰라도, 일본에서 여유롭게 살 수 있어요.",
-    "pills_en": ["No memorizing","Look it up when needed","Find it in 10 seconds","Say it out loud"],
-    "pills_zh-TW": ["不用背","用時來查","10秒找到","說出來解決"],
-    "pills_vi": ["Không cần học thuộc","Tra khi cần","Tìm trong 10 giây","Nói ra là xong"],
-    "pills_ko": ["외울 필요 없어요","필요할 때 찾으면 돼요","10초 안에 찾기","말하면 해결"]
+    "title": "不是学日语，是习惯说日语。",
+    "subtitle": "23个真实生活场景对话，跟着日本人真实的说法，练到脱口而出。",
+    "pills": ["完全免费","真人亲自核实，不是机器翻译","真实场景真实对话","双向跟读练到脱口而出"],
+    "title_en": "Not studying Japanese. Making it a habit.",
+    "title_zh-TW": "不是學日語，是習慣說日語。",
+    "title_vi": "Không phải học tiếng Nhật, mà là quen nói tiếng Nhật.",
+    "title_ko": "일본어를 배우는 게 아니라, 습관처럼 말하는 거예요.",
+    "subtitle_en": "23 real-life scenes with authentic dialogue Japanese people actually use, practiced until it becomes second nature.",
+    "subtitle_zh-TW": "23個真實生活場景對話，跟著日本人真實的說法，練到脫口而出。",
+    "subtitle_vi": "23 tình huống hội thoại thật, theo đúng cách người Nhật nói, luyện đến khi nói ra tự nhiên.",
+    "subtitle_ko": "23개 실생활 장면의 진짜 대화, 일본인이 실제로 쓰는 표현 그대로, 입에 붙을 때까지 연습하세요.",
+    "pills_en": ["Completely free","Verified by a real person, not machine-translated","Real scenes, real dialogue","Two-way shadowing practice until it sticks"],
+    "pills_zh-TW": ["完全免費","真人親自核實，不是機器翻譯","真實場景真實對話","雙向跟讀練到脫口而出"],
+    "pills_vi": ["Hoàn toàn miễn phí","Do người thật kiểm chứng, không phải dịch máy","Tình huống thật, hội thoại thật","Luyện nói hai chiều đến khi thành phản xạ"],
+    "pills_ko": ["완전 무료","실제 사람이 직접 검증, 기계번역 아님","진짜 상황, 진짜 대화","양방향 쉐도잉으로 입에 붙을 때까지"]
   }
 }

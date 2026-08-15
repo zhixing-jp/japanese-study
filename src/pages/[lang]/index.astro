@@ -27,21 +27,21 @@ for (const scene of rescueIndex.scenes) {
 }
 
 const siteTitles: Record<string, string> = {
-  zh: '日活 Living Japanese | 不会日语也能在日本活得从容',
-  en: 'Living Japanese | Survive daily life in Japan',
-  'zh-TW': '日活 Living Japanese | 不會日語也能在日本活得從容',
-  vi: 'Living Japanese | Sống thoải mái tại Nhật Bản',
-  ko: 'Living Japanese | 일본어 없이도 일본에서 편안하게',
-  ja: '日活 Living Japanese | 日本語がわからなくても日本で自信を持って暮らせる'
+  zh: '日活 Living Japanese | 不是学日语，是习惯说日语',
+  en: 'Living Japanese | Not studying Japanese. Making it a habit.',
+  'zh-TW': '日活 Living Japanese | 不是學日語，是習慣說日語',
+  vi: 'Living Japanese | Không phải học tiếng Nhật, mà là quen nói',
+  ko: 'Living Japanese | 일본어를 배우는 게 아니라, 습관처럼 말하기',
+  ja: '日活 Living Japanese | 日本語を学ぶのではなく、話す習慣を'
 };
 
 const siteDescs: Record<string, string> = {
-  zh: '不会日语，也能在日本活得从容。19个真实生活场景，数百句实用日语，遇到语言障碍时10秒找到句子。完全免费。',
-  en: 'Survive daily life in Japan without Japanese. 19 real-life scenes, hundreds of practical phrases. Find what you need in 10 seconds. Completely free.',
-  'zh-TW': '不會日語，也能在日本活得從容。19個真實生活場景，數百句實用日語。完全免費。',
-  vi: 'Sống thoải mái tại Nhật Bản mà không cần tiếng Nhật. 19 tình huống thực tế, hàng trăm câu thực dụng. Hoàn toàn miễn phí.',
-  ko: '일본어 없이도 일본에서 편안하게 생활하세요. 19개 실생활 상황, 수백 개의 실용 표현. 완전 무료.',
-  ja: '日本語がわからなくても、日本で自信を持って暮らせる。19の実生活シーン、数百の実用フレーズ。10秒で必要な文を見つけられます。完全無料。'
+  zh: '在日本看病、租房、办手续怎么用日语说？23个真实场景对话，真人核实，跟读练习，完全免费。',
+  en: 'Real Japanese for hospital visits, apartment hunting, city hall, and driver license conversion in Japan. 23 verified scenes with two-way shadowing practice — completely free.',
+  'zh-TW': '在日本看病、打工度假、辦手續怎麼用日語說？23個真實場景對話，真人核實，跟讀練習，完全免費。',
+  vi: 'Đi khám bệnh, xin nghỉ phép, giải quyết tranh chấp lao động, thuê nhà, làm thủ tục hành chính ở Nhật phải nói tiếng Nhật thế nào? 23 tình huống hội thoại thật, có người kiểm chứng nội dung, luyện nói theo miễn phí hoàn toàn.',
+  ko: '병원, 관공서, 은행, 워홀·유학 생활에서 일본어로 뭐라고 말해야 할지 막막할 때. 실제 검증된 23개 생활 상황 회화를 무료로 듣고 따라 말해보세요.',
+  ja: '病院、市役所、賃貸契約など、日本の生活シーンで本当に使える日本語を。23の場面の実際の会話、シャドーイング練習付き、完全無料。'
 };
 
 const title = siteTitles[lang] || siteTitles.zh;
@@ -59,6 +59,7 @@ const scenes = rescueIndex.scenes;
 const banner = config.banner;
 
 const bannerTitle = (banner as any)[`title_${lang}`] || banner.title || '';
+const bannerSubtitle = (banner as any)[`subtitle_${lang}`] || banner.subtitle || '';
 const bannerPills = (banner as any)[`pills_${lang}`] || banner.pills || [];
 
 const bannerStatLabels: Record<string, string> = {
@@ -66,6 +67,27 @@ const bannerStatLabels: Record<string, string> = {
   en: 'phrases · free', vi: 'câu · miễn phí', ko: '문장 · 무료',
   ja: '文・完全無料'
 };
+
+// banner下方"了解我们为什么做这个网站"文字链接
+const aboutLinkLabels: Record<string, string> = {
+  zh: '了解我们为什么做这个网站 →',
+  'zh-TW': '了解我們為什麼做這個網站 →',
+  en: 'Why we built this site →',
+  vi: 'Vì sao chúng tôi làm trang web này →',
+  ko: '우리가 이 사이트를 만든 이유 →',
+  ja: 'このサイトを作った理由 →'
+};
+const aboutLinkLabel = (aboutLinkLabels as any)[lang] || aboutLinkLabels.zh;
+
+const shadowingLabels: Record<string, { title: string; body: string }> = {
+  zh:     { title: '跟读练习', body: '🎧 连续播放、3秒等你跟读、5秒等你跟读——日本人怎么问、你怎么答，两边角色都能练到嘴里说出来。' },
+  en:     { title: 'Shadowing Practice', body: '🎧 Continuous playback, or pause 3s / 5s for you to repeat — practice both sides of the conversation until it becomes second nature.' },
+  'zh-TW':{ title: '跟讀練習', body: '🎧 連續播放、3秒等你跟讀、5秒等你跟讀——日本人怎麼問、你怎麼答，兩邊角色都能練到嘴裡說出來。' },
+  vi:     { title: 'Luyện tập theo (Shadowing)', body: '🎧 Phát liên tục, hoặc dừng 3 giây / 5 giây để bạn lặp lại — luyện cả hai vai trong hội thoại đến khi nói ra tự nhiên.' },
+  ko:     { title: '쉐도잉 연습', body: '🎧 연속 재생, 3초 대기, 5초 대기 중 선택 — 일본인이 묻는 말과 내가 답하는 말, 양쪽 다 입에 붙을 때까지 연습하세요.' },
+  ja:     { title: 'シャドーイング練習', body: '🎧 連続再生、3秒待って復唱、5秒待って復唱——相手のセリフも自分のセリフも、両方口に出して練習できます。' }
+};
+const shadowing = shadowingLabels[lang] || shadowingLabels.zh;
 ---
 
 <Base title={title} description={description} rescueCss={true}>
@@ -77,6 +99,7 @@ const bannerStatLabels: Record<string, string> = {
       <div class="banner-left">
         <div class="banner-eyebrow">{banner.eyebrow || ''}</div>
         <div class="banner-title">{bannerTitle}</div>
+        {bannerSubtitle && <div class="banner-subtitle">{bannerSubtitle}</div>}
         <div class="banner-pills">
           {bannerPills.map((pill: string) => (
             <span class="banner-pill">{pill}</span>
@@ -92,6 +115,11 @@ const bannerStatLabels: Record<string, string> = {
         </div>
       </div>
     </div>
+    <div class="banner-shadowing">
+      <span class="banner-shadowing-title">{shadowing.title}</span>
+      <span class="banner-shadowing-body">{shadowing.body}</span>
+    </div>
+    <a href="/about/" class="banner-about-link">{aboutLinkLabel}</a>
   </div>
 
 {(() => {

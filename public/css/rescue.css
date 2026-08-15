@@ -27,8 +27,12 @@
 }
 .banner-title {
   font-size: 17px; font-weight: 400; letter-spacing: -.2px;
-  color: var(--yellow); line-height: 1.4; margin-bottom: 7px;
+  color: var(--yellow); line-height: 1.4; margin-bottom: 3px;
   white-space: pre-line;
+}
+.banner-subtitle {
+  font-size: 12px; color: rgba(255,255,255,.65);
+  line-height: 1.4; margin-bottom: 7px;
 }
 .banner-pills { display: flex; gap: 5px; flex-wrap: wrap; }
 .banner-pill {
@@ -47,6 +51,24 @@
   font-size: 9px; color: rgba(255,255,255,.40);
   font-weight: 600; letter-spacing: .06em; margin-top: 2px;
 }
+.banner-shadowing {
+  margin-top: 10px; padding-top: 10px;
+  border-top: .5px solid rgba(255,255,255,.12);
+  display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap;
+}
+.banner-shadowing-title {
+  font-size: 11px; font-weight: 700; color: rgba(255,255,255,.85);
+  flex-shrink: 0;
+}
+.banner-shadowing-body {
+  font-size: 11px; color: rgba(255,255,255,.55); line-height: 1.5;
+}
+.banner-about-link {
+  display: inline-block; margin-top: 10px;
+  font-size: 11px; color: rgba(255,255,255,.5);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.banner-about-link:hover { color: rgba(255,255,255,.8); }
 
 /* ── 场景卡片网格（首页）── */
 .rescue-scene-wrap {
@@ -165,44 +187,45 @@
 /* ── 场景Landing页 ── */
 .rescue-scene-landing { animation: fadeIn .2s ease-out; }
 .rescue-landing-hero {
-  min-height: 100px;
-  padding: 16px;
-  display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 20px 16px 20px;
+  display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 12px;
   border-radius: var(--r-xl);
-  background: linear-gradient(to right, #0F1F3D 0%, #3A2A5C 100%);
+  background: linear-gradient(to right, #16213e, #4a1d6e);
   position: relative;
   overflow: hidden;
 }
 .rescue-landing-hero-text {
-  display: flex; flex-direction: column; gap: 4px;
-  min-width: 0;
-  flex: 1;
+  display: flex; flex-direction: column; gap: 6px;
+  min-width: 0; flex: 1;
 }
-.rescue-landing-thumb {
-  width: 68px;
-  height: 68px;
-  border-radius: var(--r-md);
+.rescue-landing-hero-thumb {
+  width: 68px; height: 68px; flex-shrink: 0;
+  border-radius: var(--r-md, 12px);
   object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.3);
 }
-
-.rescue-landing-hero > * {
-  position: relative; z-index: 1;
+.rescue-landing-back {
+  align-self: flex-start;
+  height: 32px; padding: 0 14px; border-radius: 20px;
+  background: rgba(255,255,255,0.20); color: #fff;
+  border: 1px solid rgba(255,255,255,.25);
+  font-size: 13px; font-weight: 600;
+  white-space: nowrap; display: flex; align-items: center; gap: 4px;
+  transition: all .15s cubic-bezier(.34,1.56,.64,1);
+  text-decoration: none; margin-bottom: 8px;
 }
+.rescue-landing-back:active { transform: scale(.92); }
 .rescue-landing-title-hero {
-  font-size: 19px; font-weight: 700; color: #fff;
+  font-size: 16px; font-weight: 700; color: #fff;
   letter-spacing: -.3px; text-shadow: 0 1px 4px rgba(0,0,0,.3);
-  line-height: 1.2;
-  white-space: normal;
-  word-break: break-word;
-  flex-shrink: 0;
 }
 .rescue-landing-desc-hero {
-  font-size: 13px; color: #fff;
-  line-height: 1.4; font-style: italic;
-  overflow: hidden; text-overflow: ellipsis;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  font-size: 12px; color: #fff;
+  line-height: 1.5; font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ── Info块 ── */

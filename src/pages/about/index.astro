@@ -1,0 +1,99 @@
+---
+// 目标路径：src/pages/about/index.astro → 映射为 /about/
+// 关于我们 页面：单一路径，不分语言子目录（与 /medical/ 占位页同一模式）
+// 页面内容按当前语言（base.js 的 detectLang / loadLocale 机制）在客户端动态显示
+import Base from '../../layouts/Base.astro';
+
+const aboutTitles: Record<string, string> = {
+  zh: '关于我们 | Living Japanese · 日活',
+  'zh-TW': '關於我們 | Living Japanese · 日活',
+  en: 'About Us | Living Japanese',
+  vi: 'Về Chúng Tôi | Living Japanese',
+  ko: '소개 | Living Japanese',
+  ja: '私たちについて | Living Japanese'
+};
+---
+
+<Base title={aboutTitles.zh} description="为什么做这个网站——一个人的真实起源，和我们如何核实每一句日语对话。" rescueCss={false}>
+  <main id="aboutMain" class="about-page" style="max-width:640px;margin:0 auto;padding:32px 20px 80px;">
+    <h1 id="aboutTitle" style="font-size:22px;font-weight:700;margin-bottom:20px;">关于 Living Japanese</h1>
+    <div id="aboutBody" class="about-body" style="font-size:15px;line-height:1.9;color:var(--text,#333);"></div>
+  </main>
+
+  <script is:inline>
+    function renderAboutPage() {
+      {
+        const titleMap = {
+          zh: '关于 Living Japanese',
+          'zh-TW': '關於 Living Japanese',
+          en: 'About Living Japanese',
+          vi: 'Về Living Japanese',
+          ko: 'Living Japanese 소개',
+          ja: 'Living Japanese について'
+        };
+
+        const bodyMap = {
+          zh: [
+            '这个网站，最早是为了一个人做的——我太太。',
+            '她知道应该学日语，但坐不下来啃课本，没时间，也没精力。我们想要的不是"学习"，是让她在通勤路上、闲下来的时候，随手就能接触到真实的、日本人真的会这样说的日语，慢慢习惯说出口，而不是硬背语法。',
+            '后来我们发现，很多刚到日本、或者已经住了很久但还是常常被语言卡住的人，也需要同样的东西——不是教科书，是"这个场景下，日本人到底会怎么说、我该怎么回"。',
+            '内容不是翻译软件生成的。我在日本生活了20年，做医疗协调相关工作，每一句对话、每一条注意事项，都是根据真实场景核实过、筛选过的——不是"能用"，是"日本人真的会这样说"。',
+            '这个网站完全免费，会持续更新。如果你在日本生活中遇到语言之外更复杂的问题（比如就医、行政手续需要专业协助），也可以联系我们了解医疗协调服务。'
+          ],
+          'zh-TW': [
+            '這個網站，最早是為了一個人做的——我太太。',
+            '她知道應該學日語，但坐不下來啃課本，沒時間，也沒精力。我們想要的不是「學習」，是讓她在通勤路上、閒下來的時候，隨手就能接觸到真實的、日本人真的會這樣說的日語，慢慢習慣說出口，而不是硬背文法。',
+            '後來我們發現，很多剛到日本、或者已經住了很久但還是常常被語言卡住的人，也需要同樣的東西——不是教科書，是「這個場景下，日本人到底會怎麼說、我該怎麼回」。',
+            '內容不是翻譯軟體生成的。我在日本生活了20年，做醫療協調相關工作，每一句對話、每一條注意事項，都是根據真實場景核實過、篩選過的——不是「能用」，是「日本人真的會這樣說」。',
+            '這個網站完全免費，會持續更新。如果你在日本生活中遇到語言之外更複雜的問題（比如就醫、行政手續需要專業協助），也可以聯繫我們了解醫療協調服務。'
+          ],
+          en: [
+            'This site was originally built for one person — my wife.',
+            'She knew she should learn Japanese, but couldn’t sit down with a textbook — no time, no energy for it. What we wanted wasn’t "studying." It was for her to run into real Japanese, the kind Japanese people actually say, during her commute or downtime, and slowly get used to saying it out loud — not memorizing grammar rules.',
+            'Later we realized that many people who’d just arrived in Japan, or had already lived here for years but still got stuck on language, needed the same thing — not a textbook, but "what would a Japanese person actually say in this situation, and how should I respond?"',
+            'The content isn’t machine-translated. I’ve lived in Japan for 20 years, working in medical coordination, and every line of dialogue and every note has been checked and selected based on real scenes — not just "usable," but "what a Japanese person would actually say."',
+            'This site is completely free and keeps getting updated. If you run into something more complex than a language barrier in daily life in Japan — like needing professional help at a hospital or with administrative procedures — feel free to reach out about our medical coordination service.'
+          ],
+          vi: [
+            'Trang web này ban đầu được làm cho một người — vợ tôi.',
+            'Cô ấy biết mình nên học tiếng Nhật, nhưng không thể ngồi yên học sách giáo khoa — không có thời gian, cũng không có sức. Điều chúng tôi muốn không phải là "học", mà là để cô ấy, trên đường đi làm hay lúc rảnh rỗi, có thể tiếp xúc với tiếng Nhật thật, đúng như cách người Nhật thực sự nói, dần quen nói ra miệng — chứ không phải học thuộc ngữ pháp.',
+            'Sau đó chúng tôi nhận ra, rất nhiều người mới đến Nhật, hoặc đã sống lâu nhưng vẫn thường bị vướng vì ngôn ngữ, cũng cần điều tương tự — không phải sách giáo khoa, mà là "trong tình huống này, người Nhật thực sự sẽ nói gì, và tôi nên trả lời thế nào".',
+            'Nội dung không phải do phần mềm dịch tạo ra. Tôi đã sống ở Nhật 20 năm, làm công việc liên quan đến điều phối y tế, từng câu hội thoại, từng lưu ý đều được kiểm chứng và chọn lọc dựa trên tình huống thật — không chỉ là "dùng được", mà là "người Nhật thực sự nói như vậy".',
+            'Trang web này hoàn toàn miễn phí và sẽ tiếp tục được cập nhật. Nếu bạn gặp vấn đề phức tạp hơn ngôn ngữ trong cuộc sống ở Nhật (như cần hỗ trợ chuyên nghiệp khi khám bệnh, làm thủ tục hành chính), bạn cũng có thể liên hệ để tìm hiểu về dịch vụ điều phối y tế của chúng tôi.'
+          ],
+          ko: [
+            '이 사이트는 원래 한 사람을 위해 만들었습니다 — 제 아내입니다.',
+            '아내는 일본어를 배워야 한다는 걸 알고 있었지만, 책상에 앉아 교과서를 붙잡고 있을 시간도 에너지도 없었습니다. 저희가 원한 건 "공부"가 아니라, 출퇴근길이나 여유 있는 시간에 자연스럽게 일본인이 실제로 쓰는 진짜 일본어를 접하고, 문법을 억지로 외우는 대신 조금씩 입에 붙여가는 것이었습니다.',
+            '그러다 보니 일본에 막 온 사람이든, 오래 살았지만 여전히 언어 때문에 막히는 사람이든 똑같은 걸 필요로 한다는 걸 알게 됐습니다 — 교과서가 아니라 "이 상황에서 일본인은 실제로 뭐라고 말하고, 나는 어떻게 대답해야 하는가"였습니다.',
+            '콘텐츠는 번역 프로그램으로 만든 게 아닙니다. 저는 일본에서 20년을 살면서 의료 코디네이션 관련 일을 하고 있고, 모든 대화 한 줄, 모든 안내 사항은 실제 상황을 기준으로 검증하고 선별한 것입니다 — "쓸 수 있다"가 아니라 "일본인이 실제로 이렇게 말한다"는 기준입니다.',
+            '이 사이트는 완전 무료이며 계속 업데이트됩니다. 일본 생활에서 언어 외에 더 복잡한 문제(병원 진료, 행정 절차 등 전문적인 도움이 필요한 경우)를 겪고 계시다면, 저희 의료 코디네이션 서비스에 대해 문의하셔도 됩니다.'
+          ],
+          ja: [
+            'このサイトは、もともとたった一人のために作りました——私の妻です。',
+            '妻は日本語を勉強しなければと分かっていましたが、机に向かって教科書を開く時間も気力もありませんでした。私たちが求めていたのは「勉強」ではなく、通勤中やちょっとした空き時間に、日本人が実際に使うリアルな日本語に自然に触れて、文法を無理に覚えるのではなく、少しずつ口に出す習慣をつけることでした。',
+            'その後、日本に来たばかりの人も、長く住んでいてもまだ言葉の壁にぶつかる人も、同じものを必要としていることに気づきました——教科書ではなく、「この場面で、日本人は実際どう言うのか、自分はどう答えればいいのか」です。',
+            'コンテンツは翻訳ソフトで生成したものではありません。私は日本で20年生活し、医療コーディネーション関連の仕事をしており、すべての会話文、すべての注意事項は実際の場面をもとに確認・選定したものです——「使える」ではなく「日本人が実際にそう言う」を基準にしています。',
+            'このサイトは完全無料で、今後も更新を続けます。日本での生活で言葉の壁以上に複雑な問題（通院や行政手続きなどで専門的なサポートが必要な場合）に直面した際は、医療コーディネーションサービスについてもお問い合わせください。'
+          ]
+        };
+
+        const lang = (typeof currentLang !== 'undefined' && currentLang) || 'zh';
+        const titleEl = document.getElementById('aboutTitle');
+        const bodyEl = document.getElementById('aboutBody');
+        if (titleEl) titleEl.textContent = titleMap[lang] || titleMap.zh;
+        if (bodyEl) {
+          const paras = bodyMap[lang] || bodyMap.zh;
+          bodyEl.innerHTML = paras.map(p => `<p style="margin-bottom:16px;">${p}</p>`).join('');
+        }
+      }
+    }
+
+    // 首次加载：等 base.js 的 DOMContentLoaded 里 loadLocale 跑完再渲染
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(renderAboutPage, 0);
+    });
+    // 语言切换：switchLang() 对 /about/ 这类单一路径页面会原地 loadLocale 并派发 langChanged，
+    // 这里监听后重新渲染，不刷新/跳转页面
+    document.addEventListener('langChanged', renderAboutPage);
+  </script>
+</Base>

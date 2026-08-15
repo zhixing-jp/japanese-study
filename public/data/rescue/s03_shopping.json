@@ -85,7 +85,7 @@
     },
     {
       "jp": "試着してもいいですか。",
-      "furigana": "試着してもいいですか。",
+      "furigana": "しちゃくしてもいいですか。",
       "zh": "可以试穿吗？",
       "scene": "试穿・试用",
       "id": "s03-007",
@@ -98,7 +98,7 @@
     },
     {
       "jp": "試着室はどこですか。",
-      "furigana": "試着しつはどこですか。",
+      "furigana": "しちゃくしつはどこですか。",
       "zh": "试衣间在哪里？",
       "scene": "试穿・试用",
       "id": "s03-008",
@@ -768,9 +768,9 @@
   "title_zh-TW": "買東西",
   "title_vi": "Mua sắm",
   "title_ko": "쇼핑",
-  "description_ja": "スーパーマーケット、コンビニ、ドラッグストア — どこで買い物をしても必要なフレーズ。",
   "description_en": "Supermarkets, convenience stores, drugstores — phrases you'll need wherever you shop.",
   "description_zh-TW": "超市、便利店、藥妝店——無論在哪裡買東西，這些句子都用得到。",
   "description_vi": "Siêu thị, cửa hàng tiện lợi, hiệu thuốc — những câu cần thiết khi mua sắm ở bất kỳ đâu.",
-  "description_ko": "슈퍼마켓, 편의점, 드럭스토어 — 어디서 쇼핑하든 필요한 표현."
+  "description_ko": "슈퍼마켓, 편의점, 드럭스토어 — 어디서 쇼핑하든 필요한 표현.",
+  "description_ja": "スーパー、コンビニ、ドラッグストア——どこで買い物をしても使えるフレーズです。"
 }

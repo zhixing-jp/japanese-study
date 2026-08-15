@@ -3680,24 +3680,28 @@
           "title_vi": "Phép lịch sự qua điện thoại tùy theo tình huống:",
           "title_ko": "상황별 전화 예절:",
           "lines_en": [
-            "Personal call: 「もしもし」to answer, 「じゃあ、またね」to hang up",
-            "Business call: 「はい、○○でございます」to answer, 「失礼いたします」to hang up",
-            "Don't hang up first when receiving a business call — wait for the other party"
+            "<strong>Business / formal calls</strong>: answer with 「はい、○○です」, close with 「失礼いたします」",
+            "<strong>Personal / friends</strong>: just answer with 「もしもし」, casual and relaxed",
+            "<strong>Unknown callers / institutions</strong>: answer with 「はい、○○です」and state your name",
+            "Calling an institution or shop yourself? Open with 「お忙しいところ恐れ入ります」to sound polite"
           ],
           "lines_zh-TW": [
-            "私人通話：接電話用「もしもし」，掛電話用「じゃあ、またね」",
-            "商務通話：接電話用「はい、○○でございます」，掛電話用「失礼いたします」",
-            "接到商務電話時不要先掛電話——等對方先掛"
+            "<strong>商務・正式場合</strong>：接聽說「はい、○○です」，結束說「失礼いたします」",
+            "<strong>私人・朋友</strong>：接聽說「もしもし」即可，隨意自然",
+            "<strong>陌生來電・機構電話</strong>：接聽說「はい、○○です」報姓名",
+            "打給機構或店鋪，開口先說「お忙しいところ恐れ入ります」表示禮貌"
           ],
           "lines_vi": [
-            "Cuộc gọi cá nhân: 「もしもし」để trả lời, 「じゃあ、またね」để kết thúc",
-            "Cuộc gọi công việc: 「はい、○○でございます」để trả lời, 「失礼いたします」để kết thúc",
-            "Khi nhận cuộc gọi công việc, đừng cúp máy trước — chờ đối phương cúp trước"
+            "<strong>Cuộc gọi công việc / trang trọng</strong>: trả lời bằng 「はい、○○です」, kết thúc bằng 「失礼いたします」",
+            "<strong>Cuộc gọi cá nhân / bạn bè</strong>: chỉ cần trả lời 「もしもし」là được, tự nhiên thoải mái",
+            "<strong>Số lạ / cuộc gọi từ cơ quan</strong>: trả lời bằng 「はい、○○です」và xưng tên",
+            "Khi bạn chủ động gọi đến cơ quan hoặc cửa hàng, hãy mở đầu bằng 「お忙しいところ恐れ入ります」để thể hiện phép lịch sự"
           ],
           "lines_ko": [
-            "개인 통화: 「もしもし」로 받기, 「じゃあ、またね」로 끊기",
-            "비즈니스 통화: 「はい、○○でございます」로 받기, 「失礼いたします」로 끊기",
-            "비즈니스 전화를 받을 때는 먼저 끊지 말 것 — 상대방이 먼저 끊을 때까지 기다리기"
+            "<strong>업무・공식적인 상황</strong>: 받을 때는 「はい、○○です」, 끊을 때는 「失礼いたします」",
+            "<strong>사적인 통화・친구</strong>: 받을 때는 「もしもし」면 충분, 편하고 자연스럽게",
+            "<strong>모르는 번호・기관 전화</strong>: 받을 때는 「はい、○○です」라고 이름을 밝힘",
+            "기관이나 가게에 직접 전화할 때는 먼저 「お忙しいところ恐れ入ります」라고 말하면 정중함"
           ],
           "title_ja": "電話のマナーは場面によって違う：",
           "lines_ja": [
