@@ -290,7 +290,7 @@
 }
 .med-symptom-part-card {
   position: relative;
-  background-color: var(--surface);
+  background-color: #0f2a4a;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,9 +310,7 @@
   pointer-events: none;
 }
 .med-symptom-part-card:active { transform: scale(.97); }
-.med-symptom-part-card--tinted::before {
-  background: linear-gradient(180deg, rgba(11,91,199,.10) 0%, rgba(11, 80, 199, 0.85) 100%);
-}
+
 .med-symptom-part-card-title {
   position: relative;
   font-size: 15.5px;

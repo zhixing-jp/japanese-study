@@ -82,7 +82,7 @@ function getPartStats(part: any) {
         return (
           <a
             href={`/medical/symptom-dictionary/${part.id}/`}
-                        class={`med-symptom-part-card${part.id === 'respiratory-cardiac' ? '' : ' med-symptom-part-card--tinted'}`}
+              class="med-symptom-part-card"
             style={`background-image: url(${bgImage})`}
           >
             <div class="med-symptom-part-card-title">{getPartTitle(part, lang)}</div>
