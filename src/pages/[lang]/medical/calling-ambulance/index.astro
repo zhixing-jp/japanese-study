@@ -1,0 +1,96 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+import disclaimer from '../../../../../public/data/medical/disclaimer.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+let pageData: any = { sections: [] };
+try {
+  const raw = await readFile('public/data/medical/calling-ambulance.json', 'utf-8');
+  pageData = JSON.parse(raw);
+} catch (e) {
+  pageData = { sections: [] };
+}
+
+function tf(obj: any, field: string, lang: string): string {
+  return obj[`${field}_${lang}`] || obj[field] || obj[`${field}_zh`] || '';
+}
+
+// items/sections 的翻译字段是直接以语言码命名（如 en/vi/ko/zh-TW/zh），不带前缀
+function itemTranslation(item: any, lang: string): string {
+  return item[lang] || item.zh || '';
+}
+
+const breadcrumbLabels: Record<string, string> = {
+  'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
+};
+const titleField = `title_${lang}`;
+---
+
+<Base title={`${pageData[titleField] || pageData.title} | Living Japanese`} description={tf(pageData, 'description', lang)} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href={`/${lang}/medical/`}>{breadcrumbLabels[lang] || breadcrumbLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{pageData[titleField] || pageData.title}</span>
+  </nav>
+
+  <p class="med-disclaimer">{disclaimer.page_full[lang as keyof typeof disclaimer.page_full] || disclaimer.page_full.zh}</p>
+
+  <div class="med-action-page" id="medActionPage">
+    <h1 class="med-action-title">{pageData[titleField] || pageData.title}</h1>
+
+    {(pageData.sections || []).map((section: any) => (
+      <section class="med-action-section">
+        <h2 class="med-action-section-title">{tf(section, 'title', lang)}</h2>
+
+        {(section.items || []).map((item: any) => (
+          <div
+            class={`med-action-card med-action-card--${item.type} ${item.role ? `is-${item.role}` : ''}`}
+            data-type={item.type}
+            data-jp={item.jp || ''}
+          >
+            {item.type !== 'instruction' && (
+              <>
+                <div class="med-action-jp">{item.jp}</div>
+                <div class="med-action-furigana">{item.furigana}</div>
+                <button class="med-action-play-btn" data-jp={item.jp} aria-label="Play">▶</button>
+              </>
+            )}
+            <div class="med-action-translated">{itemTranslation(item, lang)}</div>
+            {item.note && <div class="med-action-note">{tf(item, 'note', lang)}</div>}
+          </div>
+        ))}
+      </section>
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageData[titleField] || pageData.title} {tf(pageData, 'description', lang)}</div>
+
+  <script is:inline src="/js/tts-core.js"></script>
+  <script is:inline src="/js/medical-ui.js"></script>
+  <script is:inline>
+    (function () {
+      function init() {
+        if (!window.medicalUI) return;
+        document.querySelectorAll('.med-action-play-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const jp = btn.getAttribute('data-jp');
+            if (!jp) return;
+            window.medicalUI.speakItem({ type: 'phrase', jp: jp });
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

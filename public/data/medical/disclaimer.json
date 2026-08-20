@@ -1,0 +1,26 @@
+{
+  "hub_short": {
+    "zh": "以下内容仅供信息参考，不能替代医生的诊断和治疗意见。",
+    "zh-TW": "以下內容僅供資訊參考，不能替代醫生的診斷和治療意見。",
+    "en": "The following is for informational reference only and cannot replace a doctor's diagnosis or medical advice.",
+    "vi": "Nội dung dưới đây chỉ mang tính tham khảo, không thể thay thế chẩn đoán và ý kiến điều trị của bác sĩ.",
+    "ko": "아래 내용은 정보 참고용이며, 의사의 진단 및 치료 의견을 대체할 수 없습니다.",
+    "ja": "以下の内容は情報提供のみを目的としており、医師の診断・治療方針に代わるものではありません。"
+  },
+  "page_full": {
+    "zh": "本板块内容仅供信息参考，不构成医疗建议、法律建议或财务建议。费用数字、保险与行政制度可能随时间调整，具体请以医疗机构、市役所、入国管理局等官方窗口的最新说明为准。内容如有过时或不准确之处，欢迎反馈，我们会持续更新。",
+    "zh-TW": "本板塊內容僅供資訊參考，不構成醫療建議、法律建議或財務建議。費用數字、保險與行政制度可能隨時間調整，具體請以醫療機構、市役所、入國管理局等官方窗口的最新說明為準。內容如有過時或不準確之處，歡迎反饋，我們會持續更新。",
+    "en": "This section is for informational reference only and does not constitute medical, legal, or financial advice. Costs, insurance rules, and administrative systems may change over time — please confirm the latest details with the relevant medical institution, municipal office, or immigration authority. If you notice anything outdated or inaccurate, we welcome your feedback and will keep this updated.",
+    "vi": "Nội dung phần này chỉ mang tính tham khảo thông tin, không cấu thành lời khuyên y tế, pháp lý hoặc tài chính. Các con số về chi phí, bảo hiểm và thủ tục hành chính có thể thay đổi theo thời gian — vui lòng xác nhận thông tin mới nhất tại cơ sở y tế, tòa thị chính, hoặc cục quản lý xuất nhập cảnh. Nếu phát hiện nội dung lỗi thời hoặc không chính xác, rất mong nhận được phản hồi để chúng tôi cập nhật.",
+    "ko": "이 섹션의 내용은 정보 참고용이며, 의료·법률·재무 관련 조언을 구성하지 않습니다. 비용, 보험, 행정 제도는 시간에 따라 변경될 수 있으므로, 구체적인 사항은 의료기관, 시청, 출입국관리국 등 공식 창구의 최신 안내를 확인하시기 바랍니다. 내용에 오래되었거나 부정확한 부분이 있다면 피드백을 환영하며, 지속적으로 업데이트하겠습니다.",
+    "ja": "本セクションの内容は情報提供のみを目的としており、医療・法律・財務上の助言を構成するものではありません。費用、保険、行政制度は時間の経過とともに変更される可能性があるため、詳細は医療機関、市役所、出入国在留管理局など公式窓口の最新情報をご確認ください。内容に古い部分や不正確な点がございましたら、フィードバックを歓迎します。随時更新してまいります。"
+  },
+  "tool_short": {
+    "zh": "词库内容仅供沟通参考，不构成诊断建议。",
+    "zh-TW": "詞庫內容僅供溝通參考，不構成診斷建議。",
+    "en": "This dictionary is for communication reference only and does not constitute diagnostic advice.",
+    "vi": "Từ điển này chỉ mang tính tham khảo giao tiếp, không cấu thành lời khuyên chẩn đoán.",
+    "ko": "이 사전은 의사소통 참고용이며, 진단 조언을 구성하지 않습니다.",
+    "ja": "この辞典はコミュニケーションの参考用であり、診断に関する助言を構成するものではありません。"
+  }
+}

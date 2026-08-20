@@ -8,13 +8,15 @@ interface Props {
   description?: string;
   ogImage?: string;
   rescueCss?: boolean;
+  medicalCss?: boolean;
 }
 
 const {
   title = 'Living Japanese | 日活',
   description = '在日本看病、租房、办手续怎么用日语说？23个真实场景对话，真人核实，跟读练习，完全免费。',
   ogImage = 'https://livingjapanese.app/assets/og-image.webp',
-  rescueCss = false
+  rescueCss = false,
+  medicalCss = false
 } = Astro.props;
 
 const siteUrl = 'https://livingjapanese.app';
@@ -33,7 +35,7 @@ const langPaths: Record<string, string> = {
 // 说明：learn版块已并入rescue并下线，第2个tab暂时指向/medical/占位页
 // （就医流程・日语版块，内容制作中），medical文案沿用zh.json已有的tab_medical key
 const navLabels: Record<string, Record<string, string>> = {
-  rescue:  { zh: '急救语句', en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
+  rescue:  { zh: '生活日语学习', en: 'Everyday Japanese', 'zh-TW': '生活日語學習', vi: 'Học Tiếng Nhật Đời Sống', ko: '생활 일본어 학습', ja: '生活日本語学習' },
   medical: { zh: '就医指南', en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' }
 };
 
@@ -125,6 +127,7 @@ const jsonLd = {
   <!-- CSS -->
   <link rel="stylesheet" href="/css/base.css">
   { rescueCss && <link rel="stylesheet" href="/css/rescue.css" /> }
+  { medicalCss && <link rel="stylesheet" href="/css/medical.css" /> }
 
   <!-- JSON-LD -->
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

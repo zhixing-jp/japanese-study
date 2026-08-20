@@ -1,0 +1,819 @@
+/* ══════════════════════════════
+   medical.css — 就医指南板块专属样式
+   独立系统：不引用/不依赖 rescue.css
+   仅使用 base.css 提供的站点级设计变量（--bg/--t1/--r-md 等）
+   Living Japanese v4.0 SSG
+══════════════════════════════ */
+
+/* ────────────────────────────────
+   〇、面包屑 / 通用容器
+──────────────────────────────── */
+
+.med-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--t3);
+  padding: 14px 16px 6px;
+}
+.med-breadcrumb a {
+  color: var(--t3);
+  text-decoration: none;
+}
+.med-breadcrumb a:active { opacity: .6; }
+.med-breadcrumb [aria-current="page"] {
+  color: var(--t1);
+  font-weight: 500;
+}
+
+/* ────────────────────────────────
+   〇之二、免责声明（统一组件，跨所有子页面复用）
+──────────────────────────────── */
+
+.med-disclaimer {
+  font-size: 12.5px;
+  color: var(--t3);
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 auto 18px;
+  padding: 0 16px;
+}
+.med-hub-page .med-disclaimer {
+  margin: 0 0 24px;
+  padding: 0;
+}
+.med-ref-page .med-disclaimer {
+  margin: 0 0 22px;
+  padding: 0;
+  max-width: none;
+}
+
+.med-disclaimer--tool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--glass);
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  margin: 0 auto 14px;
+}
+.med-disclaimer--tool-close {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: var(--t4);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+/* ────────────────────────────────
+   一、重投入组（跟读驱动）
+   前缀：.med-action-*
+   覆盖：叫救护车/挂号/结算拿药/夜间就医/药妆店购药/症状词库
+──────────────────────────────── */
+
+.med-action-page {
+  background: var(--bg);
+  padding: 4px 16px 40px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.med-action-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 8px 0 20px;
+  letter-spacing: -0.01em;
+}
+
+.med-action-section {
+  margin-bottom: 28px;
+}
+
+.med-action-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 10px 2px;
+}
+
+/* 跟读卡片：单句/指引/对话三种type共用外壳，内部按type细分 */
+.med-action-card {
+  background: var(--surface);
+  border-radius: var(--r-md);
+  padding: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 1px 1px rgba(0,0,0,.03);
+  position: relative;
+  transition: box-shadow .2s, transform .1s;
+}
+.med-action-card:active { transform: scale(.99); }
+
+.med-action-card--phrase {
+  border-left: 3px solid var(--blue);
+}
+
+.med-action-card--instruction {
+  background: var(--glass);
+  box-shadow: none;
+  border-left: 3px solid var(--t4);
+  padding: 14px 16px;
+}
+
+.med-action-card--dialogue {
+  border-left: 3px solid var(--green);
+  max-width: 86%;
+}
+.med-action-card--dialogue.is-user {
+  margin-left: auto;
+  border-left: none;
+  border-right: 3px solid var(--blue);
+}
+.med-action-card--dialogue.is-staff {
+  margin-right: auto;
+}
+
+.med-action-card.is-playing {
+  box-shadow: 0 4px 18px rgba(0,122,255,.16);
+}
+
+.med-action-jp {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--t1);
+  line-height: 1.5;
+  padding-right: 44px;
+}
+
+.med-action-furigana {
+  font-size: 12px;
+  color: var(--t4);
+  margin-top: 2px;
+}
+
+.med-action-translated {
+  font-size: 14px;
+  color: var(--t2);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.med-action-card--instruction .med-action-translated {
+  margin-top: 0;
+  font-size: 14.5px;
+  color: var(--t2);
+  line-height: 1.65;
+}
+
+.med-action-note {
+  font-size: 12.5px;
+  color: var(--t3);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  line-height: 1.6;
+}
+
+.med-action-play-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+  background: var(--blue-bg);
+  color: var(--blue);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+}
+.med-action-play-btn:active {
+  transform: scale(.9);
+  background: var(--blue);
+  color: #fff;
+}
+
+/* ────────────────────────────────
+   二、症状词库工具页
+   前缀：.med-symptom-*
+──────────────────────────────── */
+
+.med-symptom-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4px 16px 40px;
+}
+
+.med-symptom-search {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 5;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border-radius: var(--r-lg);
+  padding: 4px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+}
+.med-symptom-search input {
+  width: 100%;
+  border: none;
+  background: var(--surface);
+  border-radius: var(--r-md);
+  padding: 12px 16px;
+  font-size: 15px;
+  color: var(--t1);
+  outline: none;
+}
+.med-symptom-search input::placeholder { color: var(--t4); }
+
+.med-symptom-search-results {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  margin-top: 4px;
+  background: var(--surface);
+  border-radius: var(--r-md);
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  overflow: hidden;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.med-symptom-search-result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.med-symptom-search-result-item:last-child { border-bottom: none; }
+.med-symptom-search-result-item:active { background: var(--bg); }
+.med-symptom-search-result-jp {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--t1);
+}
+.med-symptom-search-result-zh {
+  font-size: 12.5px;
+  color: var(--t3);
+}
+.med-symptom-search-empty {
+  padding: 14px;
+  font-size: 13.5px;
+  color: var(--t4);
+  text-align: center;
+}
+
+/* 症状词库入口页：部位卡片网格（landing page） */
+.med-symptom-landing {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4px 16px 40px;
+}
+
+.med-symptom-part-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+.med-symptom-part-card {
+  position: relative;
+  background-color: var(--surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--r-md);
+  padding: 16px;
+  min-height: 92px;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 1px 1px rgba(0,0,0,.03);
+  overflow: hidden;
+}
+/* 背景图之上叠一层渐变，保证文字在任何图片上都清晰可读；图片文件缺失时不影响卡片显示 */
+.med-symptom-part-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.45) 100%);
+  pointer-events: none;
+}
+.med-symptom-part-card:active { transform: scale(.97); }
+.med-symptom-part-card--tinted::before {
+  background: linear-gradient(180deg, rgba(11,91,199,.10) 0%, rgba(11, 80, 199, 0.85) 100%);
+}
+.med-symptom-part-card-title {
+  position: relative;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  margin-bottom: 4px;
+}
+.med-symptom-part-card-meta {
+  position: relative;
+  font-size: 12px;
+  color: rgba(255,255,255,.88);
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+}
+
+/* 从入口页搜索跳转过来的高亮定位 */
+.med-symptom-entry--highlight {
+  animation: medSymptomHighlightPulse 1.6s ease-out;
+}
+@keyframes medSymptomHighlightPulse {
+  0%   { box-shadow: 0 0 0 3px var(--blue); }
+  100% { box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 1px 1px rgba(0,0,0,.03); }
+}
+
+.med-symptom-body-part-nav {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 0 16px;
+  scrollbar-width: none;
+}
+.med-symptom-body-part-nav::-webkit-scrollbar { display: none; }
+
+.med-symptom-body-part-link {
+  flex-shrink: 0;
+  background: var(--surface);
+  color: var(--t2);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  scroll-snap-align: start;
+}
+.med-symptom-body-part-link:active {
+  background: var(--blue);
+  color: #fff;
+}
+
+.med-symptom-part-section {
+  scroll-margin-top: calc(var(--header-h) + 70px);
+  margin-bottom: 32px;
+}
+
+.med-symptom-part-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--t1);
+  display: inline-block;
+}
+
+.med-symptom-group {
+  margin-bottom: 18px;
+}
+
+.med-symptom-group-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px 2px;
+}
+
+.med-symptom-entry {
+  background: var(--surface);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06), 0 1px 1px rgba(0,0,0,.03);
+  position: relative;
+}
+
+.med-symptom-entry--danger {
+  border: 1.5px solid rgba(255,59,48,.35);
+  background: var(--red-bg);
+}
+
+/* 危险信号三档分级：critical(致命/分秒必争) > urgent(需尽快就医) > rare(极罕见但严重) */
+.med-symptom-entry--danger.is-urgent {
+  border-color: rgba(255,214,10,.5);
+  background: rgba(255,214,10,.08);
+}
+.med-symptom-entry--danger.is-rare {
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.med-symptom-jp {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--t3);
+  margin-bottom: 4px;
+}
+
+.med-symptom-example-jp {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--t1);
+  line-height: 1.5;
+  padding-right: 44px;
+}
+
+.med-symptom-example-furigana {
+  font-size: 12px;
+  color: var(--t4);
+  margin-top: 2px;
+  /* 就医指南板块的症状详情页里，furigana注音不在前台展示（症状库面向所有语言用户，
+     假名注音对非日语学习者没有意义），但DOM节点保留不删——data-jp朗读功能未来
+     可能需要从这里取值，用display:none隐藏而非删除元素/移除代码。 */
+  display: none;
+}
+
+.med-symptom-example-translated {
+  font-size: 14px;
+  color: var(--t2);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.med-symptom-play-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 999px;
+  background: var(--blue-bg);
+  color: var(--blue);
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+}
+.med-symptom-play-btn:active {
+  transform: scale(.9);
+  background: var(--blue);
+  color: #fff;
+}
+
+.med-symptom-danger-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--red);
+  background: var(--red-bg);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-top: 10px;
+}
+.med-symptom-danger-badge.is-urgent {
+  color: #B8860B;
+  background: rgba(255,214,10,.15);
+}
+.med-symptom-danger-badge.is-rare {
+  color: var(--t3);
+  background: var(--bg);
+  font-weight: 500;
+}
+
+.med-symptom-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.med-symptom-related-label {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  color: var(--t4);
+  align-self: center;
+  white-space: nowrap;
+}
+.med-symptom-related-item {
+  flex-shrink: 0;
+  max-width: 100%;
+  background: var(--bg);
+  color: var(--t2);
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+.med-symptom-related-item .med-symptom-related-gloss {
+  color: var(--t4);
+  font-weight: 400;
+}
+.med-symptom-related-item:active {
+  background: var(--blue);
+  color: #fff;
+}
+
+/* 建议挂号科室：独立浅蓝样式，区别于危险信号（红/黄）、note提示（灰）、相关表达（中性药丸） */
+.med-symptom-department {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: #eef6ff;
+  border: 1px solid #d3e8ff;
+  border-radius: var(--r-sm, 8px);
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+.med-symptom-department-label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 6px;
+}
+.med-symptom-department-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.med-symptom-department-tag {
+  display: inline-block;
+  max-width: 100%;
+  background: #ffffff;
+  color: #2b6cb0;
+  border: 1px solid #bfdcff;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  line-height: 1.4;
+}
+.med-symptom-department-note {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #3a6ea5;
+  overflow-wrap: break-word;
+}
+
+.med-symptom-danger-tip {
+  background: var(--red-bg);
+  color: var(--red);
+  border-radius: var(--r-md);
+  padding: 12px 16px;
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+.med-symptom-danger-tip a {
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.med-symptom-danger-tip.is-urgent {
+  background: rgba(255,214,10,.12);
+  color: #8A6914;
+}
+.med-symptom-danger-tip.is-urgent a { color: #8A6914; }
+.med-symptom-danger-tip.is-rare {
+  background: var(--bg);
+  color: var(--t2);
+}
+.med-symptom-danger-tip.is-rare a { color: var(--t2); }
+
+/* ────────────────────────────────
+   三、轻量组（信息聚合）
+   前缀：.med-ref-*
+   覆盖：医疗制度与费用/特殊人群速查/FAQ
+   调性：文档型 — 留白更多、结构更清晰、去掉沉浸式渐变
+──────────────────────────────── */
+
+.med-ref-page {
+  background: var(--surface);
+  max-width: 680px;
+  margin: 12px auto 40px;
+  padding: 28px 24px;
+  border-radius: var(--r-lg);
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+.med-ref-page h1 {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.med-ref-verified-note {
+  font-size: 12px;
+  color: var(--t3);
+  background: var(--glass);
+  border-radius: var(--r-sm);
+  padding: 10px 14px;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+.med-ref-anchor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.med-ref-anchor-nav a {
+  font-size: 13px;
+  color: var(--blue);
+  background: var(--blue-bg);
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.med-ref-section {
+  margin-bottom: 30px;
+  scroll-margin-top: calc(var(--header-h) + 20px);
+}
+.med-ref-section:last-child { margin-bottom: 0; }
+
+.med-ref-section-heading {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.med-ref-uncertain-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #B8860B;
+  background: rgba(255,214,10,.16);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.med-ref-body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--t2);
+}
+
+.med-ref-referral-note {
+  font-size: 13.5px;
+  color: var(--t2);
+  background: var(--glass);
+  border-radius: var(--r-sm);
+  padding: 12px 14px;
+  margin-top: 14px;
+  line-height: 1.7;
+}
+
+/* FAQ 专用 */
+.med-ref-faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+.med-ref-faq-item:last-child { border-bottom: none; }
+
+.med-ref-faq-question {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--t1);
+  margin-bottom: 8px;
+}
+
+.med-ref-faq-answer {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--t2);
+}
+
+.med-ref-faq-item--referral {
+  background: var(--glass);
+  border-radius: var(--r-md);
+  padding: 18px;
+  margin-top: 24px;
+  border-bottom: none;
+}
+
+/* ────────────────────────────────
+   四、入口页
+   前缀：.med-hub-*
+──────────────────────────────── */
+
+.med-hub-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 16px 40px;
+}
+
+.med-hub-page h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--t1);
+  margin: 8px 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.med-hub-intro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--t3);
+  margin-bottom: 28px;
+}
+
+.med-hub-group {
+  margin-bottom: 28px;
+}
+
+.med-hub-group h2 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--t3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+  padding-left: 2px;
+}
+
+.med-hub-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.med-hub-nav-card {
+  display: block;
+  border-radius: var(--r-lg);
+  padding: 16px 18px;
+  text-decoration: none;
+  transition: transform .1s;
+}
+.med-hub-nav-card:active { transform: scale(.98); }
+
+.med-hub-nav-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.med-hub-nav-card-desc {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* action / tool 组：沉浸式渐变，呼应rescue的场景卡片质感 */
+.med-hub-nav-card--action,
+.med-hub-nav-card--tool {
+  background: linear-gradient(135deg, #16213e 0%, #4a1d6e 100%);
+  box-shadow: 0 2px 10px rgba(22,33,62,.25);
+}
+.med-hub-nav-card--action .med-hub-nav-card-title,
+.med-hub-nav-card--tool .med-hub-nav-card-title {
+  color: #fff;
+}
+.med-hub-nav-card--action .med-hub-nav-card-desc,
+.med-hub-nav-card--tool .med-hub-nav-card-desc {
+  color: rgba(255,255,255,.72);
+}
+
+/* reference 组：文档型卡片，克制、清晰 */
+.med-hub-nav-card--reference {
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.med-hub-nav-card--reference .med-hub-nav-card-title {
+  color: var(--t1);
+}
+.med-hub-nav-card--reference .med-hub-nav-card-desc {
+  color: var(--t3);
+}
+
+@media (min-width: 480px) {
+  .med-hub-nav-grid { grid-template-columns: 1fr 1fr; }
+}

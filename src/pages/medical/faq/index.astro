@@ -1,0 +1,40 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+import disclaimer from '../../../../public/data/medical/disclaimer.json';
+
+const lang = 'zh';
+
+let pageData: any = { questions: [] };
+try {
+  const raw = await readFile('public/data/medical/faq.json', 'utf-8');
+  pageData = JSON.parse(raw);
+} catch (e) {
+  pageData = { questions: [] };
+}
+---
+
+<Base title={`${pageData.title || '常见问题'} | Living Japanese · 日活`} description={pageData.description || ''} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href="/medical/">就医指南</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{pageData.title}</span>
+  </nav>
+
+  <p class="med-disclaimer">{disclaimer.page_full.zh}</p>
+
+  <div class="med-ref-page" id="medRefPage">
+    <h1>{pageData.title}</h1>
+
+    {(pageData.questions || []).map((q: any) => (
+      <div class={`med-ref-faq-item ${q.is_referral ? 'med-ref-faq-item--referral' : ''}`}>
+        <div class="med-ref-faq-question">{q.question_zh}</div>
+        <div class="med-ref-faq-answer">{q.answer_zh}</div>
+      </div>
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageData.title} {pageData.description}</div>
+
+</Base>

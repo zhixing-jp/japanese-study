@@ -1,0 +1,188 @@
+{
+  "id": "calling-ambulance",
+  "title": "叫救护车完整指南",
+  "title_en": "Calling an Ambulance",
+  "title_zh-TW": "叫救護車完整指南",
+  "title_vi": "Hướng dẫn gọi xe cứu thương",
+  "title_ko": "구급차 부르는 방법",
+  "title_ja": "救急車の呼び方",
+  "description": "从判断要不要叫车，到调度员会问什么、救护车到达后流程，一步步说清楚。",
+  "sections": [
+    {
+      "id": "step0",
+      "title": "先判断：要不要叫救护车",
+      "title_en": "First, decide: do you need an ambulance?",
+      "items": [
+        {
+          "id": "amb-000",
+          "type": "instruction",
+          "zh": "如果你无法确定情况是否需要救护车，可以直接拨打119说明情况，请调度员帮忙判断。日本消防厅的参考标准是：意识明显异常、严重外伤、症状快速恶化、无法自行安全前往医疗机构、需要现场紧急评估或处置。",
+          "en": "If you're not sure whether the situation calls for an ambulance, you can call 119 directly, explain the situation, and let the dispatcher help you decide. The Fire and Disaster Management Agency of Japan's (消防庁) reference criteria include: clearly abnormal consciousness, severe injury, rapidly worsening symptoms, being unable to safely get to a medical facility on your own, or needing on-site emergency assessment or treatment.",
+          "zh-TW": "如果你無法確定情況是否需要救護車，可以直接撥打119說明情況，請調度員幫忙判斷。日本消防廳的參考標準是：意識明顯異常、嚴重外傷、症狀快速惡化、無法自行安全前往醫療機構、需要現場緊急評估或處置。",
+          "vi": "Nếu bạn không chắc tình huống có cần gọi xe cứu thương hay không, có thể gọi thẳng số 119, trình bày tình hình và nhờ tổng đài viên (dispatcher) giúp phán đoán. Tiêu chuẩn tham khảo của Cục Cứu hỏa và Phòng chống thiên tai Nhật Bản (消防庁 - Shōbōchō) là: ý thức rõ ràng bất thường, chấn thương nặng, triệu chứng xấu đi nhanh chóng, không thể tự đến cơ sở y tế một cách an toàn, hoặc cần đánh giá/xử lý khẩn cấp tại chỗ.",
+          "ko": "상황이 구급차가 필요한지 판단이 서지 않는다면, 바로 119에 전화해서 상황을 설명하고 상황실 요원(디스패처)에게 판단을 맡겨도 됩니다. 일본 소방청(消防庁, 쇼보초)의 참고 기준은 다음과 같습니다: 의식이 뚜렷하게 이상함, 중증 외상, 증상이 빠르게 악화됨, 스스로 안전하게 의료기관까지 갈 수 없음, 현장에서 긴급 평가나 처치가 필요함.",
+          "note": "救护车运输本身免费（公共资源），但送到医院后的急诊接诊费用通常高于普通门诊",
+          "ja": "救急車が必要かどうか判断がつかない場合は、119に電話して状況を説明し、通信指令員に判断を任せて構いません。日本の消防庁が示す目安は、明らかな意識障害、重度のけが、症状の急激な悪化、自力で安全に医療機関へ行けない、現場での緊急評価や処置が必要、といった状態です。",
+          "note_en": "The ambulance ride itself is free (it's a public resource), but the emergency room fee once you reach the hospital is usually higher than a regular outpatient visit.",
+          "note_zh-TW": "救護車運送本身免費（公共資源），但送到醫院後的急診接診費用通常高於一般門診。",
+          "note_vi": "Bản thân việc vận chuyển bằng xe cứu thương là miễn phí (nguồn lực công cộng), nhưng phí khám cấp cứu sau khi đến bệnh viện thường cao hơn khám ngoại trú thông thường.",
+          "note_ko": "구급차 이송 자체는 무료입니다(공공 자원). 다만 병원에 도착한 후 응급 진료비는 보통 일반 외래보다 비쌉니다.",
+          "note_ja": "救急車の搬送自体は無料です（公共のリソースです）。ただし病院に到着した後の救急診療費は、通常の外来診療より高くなるのが一般的です。"
+        }
+      ],
+      "title_zh-TW": "先判斷：要不要叫救護車",
+      "title_vi": "Trước tiên hãy phán đoán: có cần gọi xe cứu thương không",
+      "title_ko": "먼저 판단하기: 구급차를 불러야 할까?",
+      "title_ja": "まず判断する：救急車を呼ぶべきかどうか"
+    },
+    {
+      "id": "step1",
+      "title": "第一步：拨打119",
+      "title_en": "Step 1: Call 119",
+      "items": [
+        {
+          "id": "amb-001",
+          "type": "phrase",
+          "jp": "救急車をお願いします。",
+          "furigana": "きゅうきゅうしゃをおねがいします。",
+          "zh": "请派救护车。",
+          "en": "Please send an ambulance.",
+          "zh-TW": "請派救護車。",
+          "vi": "Xin hãy điều xe cứu thương.",
+          "ko": "구급차를 보내주세요.",
+          "note": "情况紧急、来不及组织语言时可以直接说这句。日语已经比较熟练的常住居民，也可以直接用日语描述情况",
+          "ja": "救急車をお願いします。",
+          "note_en": "Use this line directly when the situation is urgent and there's no time to gather your words. If you're a long-term resident already comfortable in Japanese, you can also describe the situation in Japanese yourself.",
+          "note_zh-TW": "情況緊急、來不及組織語言時可以直接說這句。日語已經比較熟練的常住居民，也可以直接用日語描述情況。",
+          "note_vi": "Khi tình huống khẩn cấp, không kịp sắp xếp câu từ, bạn có thể nói thẳng câu này. Nếu là người sinh sống lâu dài đã khá thành thạo tiếng Nhật, cũng có thể trực tiếp mô tả tình huống bằng tiếng Nhật.",
+          "note_ko": "상황이 급해서 말을 정리할 겨를이 없을 때는 이 문장을 그대로 말하면 됩니다. 일본어가 이미 어느 정도 능숙한 장기 거주자라면 직접 일본어로 상황을 설명해도 됩니다.",
+          "note_ja": "緊急で言葉をまとめる余裕がないときは、このフレーズをそのまま言えば通じます。日本語がある程度得意な長期居住者であれば、そのまま日本語で状況を説明しても構いません。"
+        },
+        {
+          "id": "amb-001b",
+          "type": "phrase",
+          "jp": "アンビュランス、中国語 お願いします。",
+          "furigana": "アンビュランス、ちゅうごくご おねがいします。",
+          "zh": "救护车，请提供中文翻译支援。",
+          "en": "Ambulance — please provide Chinese interpretation support.",
+          "zh-TW": "救護車，請提供中文翻譯支援。",
+          "vi": "Xe cứu thương, xin hỗ trợ phiên dịch tiếng Trung.",
+          "ko": "구급차입니다, 중국어 통역 지원을 부탁드립니다.",
+          "note": "日语还不足以流畅描述症状时，先说明需要外语支援（可替换成English/Vietnamese/Korean），等待三方翻译接入后再详细说明",
+          "ja": "救急車をお願いします。中国語の通訳支援をお願いします。",
+          "note_en": "If your Japanese isn't fluent enough to describe symptoms clearly, first state that you need foreign-language support (you can substitute English/Vietnamese/Korean), then wait for the three-way interpretation service to connect before explaining in detail.",
+          "note_zh-TW": "日語還不足以流暢描述症狀時，先說明需要外語支援（可替換成English/Vietnamese/Korean），等待三方翻譯接入後再詳細說明。",
+          "note_vi": "Khi tiếng Nhật chưa đủ trôi chảy để mô tả triệu chứng, hãy nói trước rằng bạn cần hỗ trợ ngoại ngữ (có thể thay bằng English/Vietnamese/Korean), đợi dịch vụ phiên dịch ba bên kết nối rồi mới giải thích chi tiết.",
+          "note_ko": "일본어로 증상을 유창하게 설명하기 어려울 때는, 먼저 외국어 지원이 필요하다고 말한 뒤(English/Vietnamese/Korean 등으로 바꿔 말해도 됩니다) 3자 통역이 연결되기를 기다렸다가 자세히 설명하세요.",
+          "note_ja": "日本語で症状をスムーズに説明できる自信がないときは、まず外国語のサポートが必要であることを伝え（English/Vietnamese/Koreanなどに置き換え可）、三者間通訳が接続されるのを待ってから詳しく説明してください。"
+        }
+      ],
+      "title_zh-TW": "第一步：撥打119",
+      "title_vi": "Bước 1: Gọi 119",
+      "title_ko": "1단계: 119에 전화하기",
+      "title_ja": "ステップ1：119に電話する"
+    },
+    {
+      "id": "step2",
+      "title": "第二步：说清楚三个关键信息",
+      "title_en": "Step 2: Clearly state three key pieces of information",
+      "items": [
+        {
+          "id": "amb-002",
+          "type": "instruction",
+          "zh": "调度员接通后，通常会问你的具体位置、症状、姓名和电话——保持描述一致比反复解释更重要。",
+          "en": "Once the dispatcher answers, they'll usually ask for your exact location, symptoms, name, and phone number — staying consistent in what you say matters more than repeating explanations.",
+          "zh-TW": "調度員接通後，通常會問你的具體位置、症狀、姓名和電話——保持描述一致比反覆解釋更重要。",
+          "vi": "Sau khi tổng đài viên kết nối, họ thường sẽ hỏi vị trí cụ thể, triệu chứng, họ tên và số điện thoại của bạn — giữ cho lời mô tả nhất quán quan trọng hơn là giải thích đi giải thích lại.",
+          "ko": "상황실 요원이 전화를 받으면 보통 정확한 위치, 증상, 이름, 전화번호를 물어봅니다. 반복해서 설명하는 것보다 일관되게 말하는 것이 더 중요합니다.",
+          "note": null,
+          "ja": "通信指令員につながると、通常は現在地、症状、氏名、電話番号を聞かれます。何度も説明し直すより、一貫した内容を伝えることの方が重要です。"
+        },
+        {
+          "id": "amb-003",
+          "type": "phrase",
+          "jp": "住所は〇〇です。",
+          "furigana": "じゅうしょは〇〇です。",
+          "zh": "地址是〇〇。",
+          "en": "The address is 〇〇.",
+          "zh-TW": "地址是〇〇。",
+          "vi": "Địa chỉ là 〇〇.",
+          "ko": "주소는 〇〇입니다.",
+          "note": "常住居民建议平时就记熟自己住址的日文写法和读法，紧急时更快更准确；不确定地址时也可以报附近建筑物名、商业设施名，或电线杆上的编号牌，也可以直接用地图App报地点名称",
+          "ja": "住所は〇〇です。",
+          "note_en": "Long-term residents should memorize the Japanese written form and pronunciation of their address in advance — it's faster and more accurate in an emergency. If you're unsure of the address, you can also give the name of a nearby building or commercial facility, the number plate on a utility pole, or simply share the location name from a map app.",
+          "note_zh-TW": "常住居民建議平時就記熟自己住址的日文寫法和讀法，緊急時更快更準確；不確定地址時也可以報附近建築物名、商業設施名，或電線桿上的編號牌，也可以直接用地圖App報地點名稱。",
+          "note_vi": "Người sinh sống lâu dài nên ghi nhớ trước cách viết và cách đọc địa chỉ nhà mình bằng tiếng Nhật, để khi khẩn cấp có thể nói nhanh và chính xác hơn; nếu không chắc địa chỉ, cũng có thể báo tên tòa nhà gần đó, tên cơ sở thương mại, hoặc số hiệu trên cột điện, hay dùng ứng dụng bản đồ để báo tên địa điểm.",
+          "note_ko": "장기 거주자는 평소에 자기 주소의 일본어 표기와 읽는 법을 미리 외워두는 것이 좋습니다. 그래야 긴급 상황에서 더 빠르고 정확하게 전달할 수 있습니다. 주소가 확실하지 않을 때는 근처 건물 이름, 상업 시설 이름, 전신주에 붙어 있는 번호판을 알려줘도 되고, 지도 앱으로 장소 이름을 그대로 알려줘도 됩니다.",
+          "note_ja": "常住している方は、普段から自宅住所の日本語表記と読み方を覚えておくと、緊急時により速く正確に伝えられます。住所がはっきりしない場合は、近くの建物名や商業施設名、電柱の番号標を伝えても構いませんし、地図アプリで地点名を伝える方法もあります。"
+        },
+        {
+          "id": "amb-003b",
+          "type": "instruction",
+          "zh": "除了地址，调度员还会问症状描述，以及你的姓名和电话——这三项信息说清楚后，可以趁等待时间准备好证件（在留卡/护照、保险证）和正在服用的药物记录（如果有）。",
+          "en": "Besides your address, the dispatcher will also ask you to describe your symptoms, along with your name and phone number. Once these three items are clear, you can use the waiting time to get your ID (residence card/passport, insurance card) and any current medication records (if you have them) ready.",
+          "zh-TW": "除了地址，調度員還會問症狀描述，以及你的姓名和電話——這三項資訊說清楚後，可以趁等待時間準備好證件（在留卡／護照、保險證）和正在服用的藥物記錄（如果有）。",
+          "vi": "Ngoài địa chỉ, tổng đài viên còn sẽ hỏi mô tả triệu chứng, cùng với họ tên và số điện thoại của bạn — sau khi nói rõ ba thông tin này, bạn có thể tranh thủ thời gian chờ để chuẩn bị giấy tờ (thẻ lưu trú/hộ chiếu, thẻ bảo hiểm) và ghi chép thuốc đang dùng (nếu có).",
+          "ko": "주소 외에도 상황실 요원은 증상, 이름, 전화번호를 물어봅니다. 이 세 가지를 명확히 전달했다면, 기다리는 동안 신분증(재류카드/여권, 보험증)과 복용 중인 약 기록(있는 경우)을 미리 준비해 두세요.",
+          "note": null,
+          "ja": "住所のほかに、通信指令員は症状の説明、氏名、電話番号も聞いてきます。この3点を伝え終えたら、待っている間に身分証（在留カード・パスポート、保険証）や服用中の薬の記録（あれば）を準備しておきましょう。"
+        }
+      ],
+      "title_zh-TW": "第二步：說清楚三個關鍵資訊",
+      "title_vi": "Bước 2: Nói rõ ba thông tin quan trọng",
+      "title_ko": "2단계: 세 가지 핵심 정보를 명확히 전달하기",
+      "title_ja": "ステップ2：3つの重要な情報をはっきり伝える"
+    },
+    {
+      "id": "step3",
+      "title": "第三步：等待救护车到达，以及到达后会发生什么",
+      "title_en": "Step 3: Waiting for the ambulance, and what happens after it arrives",
+      "items": [
+        {
+          "id": "amb-004",
+          "type": "dialogue_turn",
+          "role": "staff",
+          "jp": "今どちらにいらっしゃいますか？",
+          "furigana": "いまどちらにいらっしゃいますか？",
+          "zh": "您现在在哪里？",
+          "en": "Where are you right now?",
+          "zh-TW": "您現在在哪裡？",
+          "vi": "Hiện tại bạn đang ở đâu?",
+          "ko": "지금 어디 계신가요?",
+          "note": null,
+          "ja": "今どちらにいらっしゃいますか。",
+          "role_en": "staff",
+          "role_zh-TW": "staff",
+          "role_vi": "staff",
+          "role_ko": "staff",
+          "role_ja": "staff"
+        },
+        {
+          "id": "amb-005",
+          "type": "instruction",
+          "zh": "救护人员到达后不会立刻送医院，通常会先做生命体征评估，再联系可以接诊的医院——这是日本急救系统的正常流程，不代表处理慢或不重视。送去哪家医院由病情严重程度、是否有对应科室、医院是否可以接收决定，不一定是离你最近的医院。",
+          "en": "After paramedics arrive, they won't rush you straight to a hospital. They'll usually first assess your vital signs, then contact a hospital that can accept you — this is the normal procedure in Japan's emergency system, not a sign of slow or careless handling. Which hospital you're taken to is decided by how severe your condition is, whether the right department is available, and whether the hospital can accept you — it isn't necessarily the closest one.",
+          "zh-TW": "救護人員到達後不會立刻送醫院，通常會先做生命徵象評估，再聯繫可以接診的醫院——這是日本急救系統的正常流程，不代表處理慢或不重視。送去哪家醫院由病情嚴重程度、是否有對應科別、醫院是否可以接收決定，不一定是離你最近的醫院。",
+          "vi": "Sau khi nhân viên cứu thương đến, họ sẽ không đưa bạn đến bệnh viện ngay lập tức, mà thường sẽ đánh giá các dấu hiệu sinh tồn trước, sau đó liên hệ bệnh viện có thể tiếp nhận — đây là quy trình bình thường của hệ thống cấp cứu Nhật Bản, không có nghĩa là xử lý chậm hay không coi trọng. Việc đưa đến bệnh viện nào sẽ do mức độ nghiêm trọng của bệnh, có khoa phù hợp hay không, và bệnh viện có thể tiếp nhận hay không quyết định, không nhất thiết là bệnh viện gần bạn nhất.",
+          "ko": "구급대원이 도착해도 곧바로 병원으로 이송하지 않습니다. 보통 먼저 활력징후(바이탈)를 확인한 뒤 받아줄 수 있는 병원에 연락합니다 — 이는 일본 응급 시스템의 정상적인 절차이며, 처리가 느리거나 소홀히 여겨서가 아닙니다. 어느 병원으로 이송되는지는 병의 심각도, 해당 진료과 유무, 병원이 받아줄 수 있는지에 따라 결정되며, 반드시 가장 가까운 병원인 것은 아닙니다.",
+          "note": "现场需要配合的是：描述症状变化、出示证件、提供既往病史（过敏/慢性病/正在服用的药）。保持描述一致比反复解释更重要",
+          "ja": "救急隊員が到着しても、すぐに病院へ搬送するわけではありません。通常はまずバイタルサイン（生命兆候）を確認し、その後受け入れ可能な病院に連絡します。これは日本の救急システムの通常の流れであり、対応が遅い、あるいは軽視されているという意味ではありません。搬送先の病院は、症状の重さ、対応する診療科の有無、病院が受け入れ可能かどうかで決まり、必ずしも最寄りの病院とは限りません。",
+          "note_en": "What you need to cooperate with on-site: describing how your symptoms are changing, showing ID, and providing your medical history (allergies/chronic conditions/current medications). Staying consistent in what you say matters more than repeating explanations.",
+          "note_zh-TW": "現場需要配合的是：描述症狀變化、出示證件、提供既往病史（過敏／慢性病／正在服用的藥）。保持描述一致比反覆解釋更重要。",
+          "note_vi": "Những gì bạn cần phối hợp tại hiện trường là: mô tả sự thay đổi của triệu chứng, xuất trình giấy tờ, cung cấp tiền sử bệnh (dị ứng/bệnh mãn tính/thuốc đang dùng). Giữ cho lời mô tả nhất quán quan trọng hơn là giải thích đi giải thích lại.",
+          "note_ko": "현장에서 협조해야 할 것은 증상 변화 설명, 신분증 제시, 기존 병력 제공(알레르기/만성질환/복용 중인 약)입니다. 반복해서 설명하는 것보다 일관되게 말하는 것이 더 중요합니다.",
+          "note_ja": "現場で協力すべきことは、症状の変化の説明、身分証の提示、既往歴（アレルギー・持病・服用中の薬）の提供です。何度も説明し直すより、一貫した内容を伝えることの方が重要です。"
+        }
+      ],
+      "title_zh-TW": "第三步：等待救護車到達，以及到達後會發生什麼",
+      "title_vi": "Bước 3: Chờ xe cứu thương đến, và những gì sẽ xảy ra sau khi đến",
+      "title_ko": "3단계: 구급차를 기다리는 동안, 그리고 도착 후 벌어지는 일",
+      "title_ja": "ステップ3：救急車の到着を待つこと、そして到着後に起こること"
+    }
+  ],
+  "description_en": "From deciding whether you need an ambulance, to what the dispatcher will ask, to what happens after the ambulance arrives — explained step by step.",
+  "description_zh-TW": "從判斷要不要叫車，到調度員會問什麼、救護車到達後的流程，一步步說清楚。",
+  "description_vi": "Từ việc phán đoán có cần gọi xe cứu thương hay không, đến những gì tổng đài viên sẽ hỏi, và quy trình sau khi xe cứu thương đến — giải thích từng bước một.",
+  "description_ko": "구급차를 불러야 할지 판단하는 방법부터, 상황실 요원이 무엇을 물어보는지, 구급차 도착 후 절차까지 단계별로 설명합니다.",
+  "description_ja": "救急車を呼ぶべきかどうかの判断から、通信指令員に何を聞かれるか、救急車到着後の流れまで、順を追って説明します。"
+}

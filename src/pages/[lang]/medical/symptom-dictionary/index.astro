@@ -1,0 +1,208 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+import disclaimer from '../../../../../public/data/medical/disclaimer.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({
+    params: { lang },
+    props: { lang }
+  }));
+}
+
+const { lang } = Astro.props;
+
+let symptomData: any = { body_parts: [] };
+try {
+  const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+  symptomData = JSON.parse(raw);
+} catch (e) {
+  symptomData = { body_parts: [] };
+}
+
+const bodyParts = symptomData.body_parts || [];
+
+const pageTitles: Record<string, string> = {
+  zh: '症状指认词库',
+  'zh-TW': '症狀指認詞庫',
+  en: 'Symptom Dictionary',
+  vi: 'Từ điển triệu chứng',
+  ko: '증상 표현 사전',
+  ja: '症状表現辞典'
+};
+const pageDescs: Record<string, string> = {
+  zh: '不知道症状怎么说？按身体部位分类，搜索、朗读、指给医生或药剂师看，快速准确沟通。',
+  'zh-TW': '不知道症狀怎麼說？按身體部位分類，搜尋、朗讀、指給醫生或藥劑師看，快速準確溝通。',
+  en: 'Not sure how to describe your symptoms? Organized by body part — search, listen, and point.',
+  vi: 'Không biết mô tả triệu chứng thế nào? Phân loại theo bộ phận cơ thể.',
+  ko: '증상을 어떻게 말해야 할지 모르겠나요? 신체 부위별로 정리했어요.',
+  ja: '症状の伝え方がわからない？体の部位別に整理しています。'
+};
+
+const breadcrumbLabels: Record<string, string> = {
+  'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
+};
+
+const searchPlaceholders: Record<string, string> = {
+  'zh-TW': '搜尋症狀，如「頭痛」，會自動跳轉到對應部位',
+  en: 'Search symptoms, e.g. "headache" — jumps to the matching body part',
+  vi: 'Tìm triệu chứng, ví dụ "đau đầu" — sẽ chuyển đến bộ phận tương ứng',
+  ko: '증상 검색, 예: "두통" — 해당 부위로 자동 이동',
+  ja: '症状を検索、例：「頭痛」— 該当部位に自動で移動します'
+};
+
+const noResultLabels: Record<string, string> = {
+  'zh-TW': '沒有找到符合的症狀', en: 'No matching symptoms found',
+  vi: 'Không tìm thấy triệu chứng phù hợp', ko: '일치하는 증상을 찾을 수 없습니다',
+  ja: '該当する症状が見つかりません'
+};
+
+const cardMetaLabels: Record<string, { entries: string; danger: string }> = {
+  'zh-TW': { entries: '條', danger: '條需留意' },
+  en: { entries: ' entries', danger: ' need attention' },
+  vi: { entries: ' mục', danger: ' cần lưu ý' },
+  ko: { entries: '개', danger: '개 주의 필요' },
+  ja: { entries: '件', danger: '件は要注意' }
+};
+
+function getPartTitle(part: any, lang: string): string {
+  return part[`title_${lang}`] || part.title || '';
+}
+
+function getPartStats(part: any) {
+  let total = 0;
+  let danger = 0;
+  for (const g of (part.groups || [])) {
+    for (const e of (g.entries || [])) {
+      total++;
+      if (e.danger_flag) danger++;
+    }
+  }
+  return { total, danger };
+}
+
+const meta = cardMetaLabels[lang] || cardMetaLabels.en;
+
+// disclaimer.json 是直接 import 的 JSON 模块，TS 会按字面量内容推断出精确类型，
+// 导致用运行时变量 lang 去做动态取值时报类型错误。按协作铁律第6条，
+// 这种运行时变量拼接/索引访问，要在 frontmatter 里用 Record<string, string> 断言处理好，
+// 不要把 as 类型断言直接写在模板表达式区域（模板区域解析泛型语法的行为和 frontmatter 不一致）。
+const disclaimerToolShort = disclaimer.tool_short as Record<string, string>;
+const toolShortText = disclaimerToolShort[lang] || disclaimerToolShort.zh;
+---
+
+<Base title={pageTitles[lang] || pageTitles.zh} description={pageDescs[lang] || pageDescs.zh} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href={`/${lang}/medical/`}>{breadcrumbLabels[lang] || breadcrumbLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{pageTitles[lang] || pageTitles.zh}</span>
+  </nav>
+
+  <div class="med-symptom-landing" id="medSymptomLanding">
+
+    <div class="med-disclaimer med-disclaimer--tool" id="medDisclaimerTool">
+      <span>{toolShortText}</span>
+      <button type="button" class="med-disclaimer--tool-close" aria-label="Dismiss" onclick="this.closest('#medDisclaimerTool').style.display='none'">✕</button>
+    </div>
+
+    <div class="med-symptom-search">
+      <input
+        type="text"
+        id="medSymptomSearchInput"
+        placeholder={searchPlaceholders[lang] || searchPlaceholders.en}
+        aria-label="Search symptom dictionary"
+        autocomplete="off"
+      />
+      <div id="medSymptomSearchResults" class="med-symptom-search-results" style="display:none"></div>
+    </div>
+
+    <div class="med-symptom-part-grid">
+      {bodyParts.map((part: any) => {
+        const stats = getPartStats(part);
+        const bgImage = `/assets/medical/symptom-parts/${part.id}.webp`;
+        return (
+          <a
+            href={`/${lang}/medical/symptom-dictionary/${part.id}/`}
+                        class={`med-symptom-part-card${part.id === 'respiratory-cardiac' ? '' : ' med-symptom-part-card--tinted'}`}
+            style={`background-image: url(${bgImage})`}
+          >
+            <div class="med-symptom-part-card-title">{getPartTitle(part, lang)}</div>
+            <div class="med-symptom-part-card-meta">
+              {stats.total}{meta.entries}{stats.danger > 0 && ` · ${stats.danger}${meta.danger}`}
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">
+    {pageTitles[lang] || pageTitles.zh} {pageDescs[lang] || pageDescs.zh}
+    {bodyParts.map((part: any) => getPartTitle(part, lang)).join(' ')}
+  </div>
+
+  <script is:inline define:vars={{ lang, noResultText: noResultLabels[lang] || noResultLabels.en }}>
+    (function () {
+      let searchIndex = null;
+
+      function loadIndex(cb) {
+        if (searchIndex) return cb(searchIndex);
+        fetch('/data/medical/symptom-search-index.json')
+          .then(function (r) { return r.json(); })
+          .then(function (data) { searchIndex = data; cb(data); })
+          .catch(function () { searchIndex = []; cb([]); });
+      }
+
+      function init() {
+        const input = document.getElementById('medSymptomSearchInput');
+        const resultsBox = document.getElementById('medSymptomSearchResults');
+        if (!input || !resultsBox) return;
+
+        input.addEventListener('input', function () {
+          const kw = input.value.trim().toLowerCase();
+          if (!kw) {
+            resultsBox.style.display = 'none';
+            resultsBox.innerHTML = '';
+            return;
+          }
+          loadIndex(function (index) {
+            const matches = index.filter(function (item) {
+              return (item.symptom_jp && item.symptom_jp.toLowerCase().indexOf(kw) !== -1) ||
+                     (item.example_zh && item.example_zh.toLowerCase().indexOf(kw) !== -1);
+            }).slice(0, 8);
+
+            if (matches.length === 0) {
+              resultsBox.innerHTML = '<div class="med-symptom-search-empty">' + noResultText + '</div>';
+              resultsBox.style.display = 'block';
+              return;
+            }
+
+            resultsBox.innerHTML = matches.map(function (m) {
+              return '<a class="med-symptom-search-result-item" href="/' + lang + '/medical/symptom-dictionary/' + m.part + '/?highlight=' + m.id + '">' +
+                '<span class="med-symptom-search-result-jp">' + m.symptom_jp + '</span>' +
+                '<span class="med-symptom-search-result-zh">' + (m.example_zh || '') + '</span>' +
+                '</a>';
+            }).join('');
+            resultsBox.style.display = 'block';
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!resultsBox.contains(e.target) && e.target !== input) {
+            resultsBox.style.display = 'none';
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</Base>

@@ -1,0 +1,71 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+import disclaimer from '../../../../../public/data/medical/disclaimer.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+const disclaimerData: any = disclaimer;
+
+let pageData: any = { sections: [] };
+try {
+  const raw = await readFile('public/data/medical/special-groups.json', 'utf-8');
+  pageData = JSON.parse(raw);
+} catch (e) {
+  pageData = { sections: [] };
+}
+
+function tf(obj: any, field: string, lang: string): string {
+  return obj[`${field}_${lang}`] || obj[field] || obj[`${field}_zh`] || '';
+}
+
+const breadcrumbLabels: Record<string, string> = {
+  'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
+};
+const titleField = `title_${lang}`;
+---
+
+<Base title={`${pageData[titleField] || pageData.title} | Living Japanese`} description={tf(pageData, 'description', lang)} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href={`/${lang}/medical/`}>{breadcrumbLabels[lang] || breadcrumbLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{pageData[titleField] || pageData.title}</span>
+  </nav>
+
+  <p class="med-disclaimer">{disclaimerData.page_full?.[lang] || disclaimerData.page_full?.zh || ''}</p>
+
+  <div class="med-ref-page" id="medRefPage">
+    <h1>{pageData[titleField] || pageData.title}</h1>
+
+    {pageData.verified_note && (
+      <div class="med-ref-verified-note">
+        Verified: {pageData.verified_note.verified_date} — Sources: {(pageData.verified_note.sources || []).join(', ')}
+      </div>
+    )}
+
+    <nav class="med-ref-anchor-nav">
+      {(pageData.sections || []).map((s: any) => (
+        <a href={`#${s.id}`}>{tf(s, 'heading', lang)}</a>
+      ))}
+    </nav>
+
+    {(pageData.sections || []).map((section: any) => (
+      <div class="med-ref-section" id={section.id}>
+        <h2 class="med-ref-section-heading">
+          {tf(section, 'heading', lang)}
+          {section.uncertain && <span class="med-ref-uncertain-tag">⚠️</span>}
+        </h2>
+        <div class="med-ref-body">{tf(section, 'body', lang)}</div>
+      </div>
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageData[titleField] || pageData.title} {tf(pageData, 'description', lang)}</div>
+
+</Base>

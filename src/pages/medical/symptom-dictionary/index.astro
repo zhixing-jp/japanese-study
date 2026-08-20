@@ -1,0 +1,165 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+import disclaimer from '../../../../public/data/medical/disclaimer.json';
+const lang = 'zh';
+
+let symptomData: any = { body_parts: [] };
+try {
+  const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+  symptomData = JSON.parse(raw);
+} catch (e) {
+  symptomData = { body_parts: [] };
+}
+
+const bodyParts = symptomData.body_parts || [];
+
+const pageTitles: Record<string, string> = {
+  zh: '症状指认词库',
+  'zh-TW': '症狀指認詞庫',
+  en: 'Symptom Dictionary',
+  vi: 'Từ điển triệu chứng',
+  ko: '증상 표현 사전',
+  ja: '症状表現辞典'
+};
+const pageDescs: Record<string, string> = {
+  zh: '不知道症状怎么说？按身体部位分类，搜索、朗读、指给医生或药剂师看，快速准确沟通。',
+  'zh-TW': '不知道症狀怎麼說？按身體部位分類，搜尋、朗讀、指給醫生或藥劑師看，快速準確溝通。',
+  en: 'Not sure how to describe your symptoms? Organized by body part — search, listen, and point.',
+  vi: 'Không biết mô tả triệu chứng thế nào? Phân loại theo bộ phận cơ thể.',
+  ko: '증상을 어떻게 말해야 할지 모르겠나요? 신체 부위별로 정리했어요.',
+  ja: '症状の伝え方がわからない？体の部位別に整理しています。'
+};
+
+function getPartTitle(part: any, lang: string): string {
+  return part[`title_${lang}`] || part.title || '';
+}
+
+// 每个部位的条数和危险信号数，供卡片展示
+function getPartStats(part: any) {
+  let total = 0;
+  let danger = 0;
+  for (const g of (part.groups || [])) {
+    for (const e of (g.entries || [])) {
+      total++;
+      if (e.danger_flag) danger++;
+    }
+  }
+  return { total, danger };
+}
+---
+
+<Base title={pageTitles[lang] || pageTitles.zh} description={pageDescs[lang] || pageDescs.zh} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href="/medical/">就医指南</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{pageTitles[lang] || pageTitles.zh}</span>
+  </nav>
+
+  <div class="med-symptom-landing" id="medSymptomLanding">
+
+    <div class="med-disclaimer med-disclaimer--tool" id="medDisclaimerTool">
+      <span>{disclaimer.tool_short.zh}</span>
+      <button type="button" class="med-disclaimer--tool-close" aria-label="关闭提示" onclick="this.closest('#medDisclaimerTool').style.display='none'">✕</button>
+    </div>
+
+    <div class="med-symptom-search">
+      <input
+        type="text"
+        id="medSymptomSearchInput"
+        placeholder="搜索症状，如「头痛」，会自动跳转到对应部位"
+        aria-label="搜索症状词库"
+        autocomplete="off"
+      />
+      <div id="medSymptomSearchResults" class="med-symptom-search-results" style="display:none"></div>
+    </div>
+
+    <div class="med-symptom-part-grid">
+      {bodyParts.map((part: any) => {
+        const stats = getPartStats(part);
+        const bgImage = `/assets/medical/symptom-parts/${part.id}.webp`;
+        return (
+          <a
+            href={`/medical/symptom-dictionary/${part.id}/`}
+                        class={`med-symptom-part-card${part.id === 'respiratory-cardiac' ? '' : ' med-symptom-part-card--tinted'}`}
+            style={`background-image: url(${bgImage})`}
+          >
+            <div class="med-symptom-part-card-title">{getPartTitle(part, lang)}</div>
+            <div class="med-symptom-part-card-meta">
+              {stats.total}条{stats.danger > 0 && ` · ${stats.danger}条需留意`}
+            </div>
+          </a>
+        );
+      })}
+    </div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">
+    {pageTitles[lang] || pageTitles.zh} {pageDescs[lang] || pageDescs.zh}
+    {bodyParts.map((part: any) => getPartTitle(part, lang)).join(' ')}
+  </div>
+
+  <script is:inline>
+    (function () {
+      let searchIndex = null;
+
+      function loadIndex(cb) {
+        if (searchIndex) return cb(searchIndex);
+        fetch('/data/medical/symptom-search-index.json')
+          .then(function (r) { return r.json(); })
+          .then(function (data) { searchIndex = data; cb(data); })
+          .catch(function () { searchIndex = []; cb([]); });
+      }
+
+      function init() {
+        const input = document.getElementById('medSymptomSearchInput');
+        const resultsBox = document.getElementById('medSymptomSearchResults');
+        if (!input || !resultsBox) return;
+
+        input.addEventListener('input', function () {
+          const kw = input.value.trim().toLowerCase();
+          if (!kw) {
+            resultsBox.style.display = 'none';
+            resultsBox.innerHTML = '';
+            return;
+          }
+          loadIndex(function (index) {
+            const matches = index.filter(function (item) {
+              return (item.symptom_jp && item.symptom_jp.toLowerCase().indexOf(kw) !== -1) ||
+                     (item.example_zh && item.example_zh.toLowerCase().indexOf(kw) !== -1);
+            }).slice(0, 8);
+
+            if (matches.length === 0) {
+              resultsBox.innerHTML = '<div class="med-symptom-search-empty">没有找到匹配的症状</div>';
+              resultsBox.style.display = 'block';
+              return;
+            }
+
+            resultsBox.innerHTML = matches.map(function (m) {
+              return '<a class="med-symptom-search-result-item" href="/medical/symptom-dictionary/' + m.part + '/?highlight=' + m.id + '">' +
+                '<span class="med-symptom-search-result-jp">' + m.symptom_jp + '</span>' +
+                '<span class="med-symptom-search-result-zh">' + (m.example_zh || '') + '</span>' +
+                '</a>';
+            }).join('');
+            resultsBox.style.display = 'block';
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!resultsBox.contains(e.target) && e.target !== input) {
+            resultsBox.style.display = 'none';
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</Base>

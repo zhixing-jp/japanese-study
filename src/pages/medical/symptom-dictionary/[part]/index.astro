@@ -1,0 +1,305 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+
+// ---- 数据结构类型定义（对应 public/data/medical/symptom-dictionary.json） ----
+// 科室对照表里的一条科室信息：日语原名 + 各语言注释
+interface DepartmentInfo {
+  jp: string;
+  zh: string;
+  'zh-TW': string;
+  en: string;
+  vi: string;
+  ko: string;
+  ja: string;
+}
+type DepartmentsMap = Record<string, DepartmentInfo>;
+
+// 各语言兜底提示文案（可能不是每条都有）
+type DepartmentNote = Partial<Record<'zh' | 'zh-TW' | 'en' | 'vi' | 'ko' | 'ja', string>>;
+
+// 注：symptom-dictionary.json 里像 example_en / note_en / gloss_en 这类字段，
+// 键名都是"字段前缀 + 语言变量"动态拼接出来的（访问时用 obj[`${field}_${lang}`]）。
+// 按协作铁律第6条，这种运行时变量拼接键名不应该用接口索引签名硬解决
+// （模板字面量索引签名只能覆盖写死的字面量键，覆盖不了变量拼接），
+// 所以这里改用 Record<string, string | undefined> 断言 + 下方的 getField() 辅助函数统一处理。
+interface SymptomEntry {
+  id: string;
+  symptom_jp: string;
+  example_jp: string;
+  example_furigana: string;
+  example_zh: string;
+  note?: string;
+  danger_flag: boolean;
+  danger_severity?: 'critical' | 'urgent' | 'rare_but_serious';
+  department?: string[];
+  department_note?: DepartmentNote;
+  related_entries?: string[];
+}
+
+interface SymptomGroup {
+  group_name: string;
+  entries: SymptomEntry[];
+}
+
+interface BodyPart {
+  id: string;
+  title: string;
+  groups: SymptomGroup[];
+}
+
+// 统一的动态字段取值辅助函数：field 是字段前缀（如 'title'/'note'/'example'/'gloss'/'group_name'），
+// lang 是语言代码。取不到该语言版本时按 fallbackLang（默认 'zh'）兜底。
+//
+// 参数类型故意写成 unknown 而不是 Record<string, unknown>：
+// Astro 模板区域（<Base>...</Base> 内的 {} 表达式）里如果直接写
+// `xxx as unknown as Record<string, unknown>` 这种带尖括号泛型的类型断言，
+// Astro/TS 编译器会把尖括号误判成 JSX 标签定界符，导致该表达式后面
+// 整个文件的 JSX 树追踪错乱（表现为一大串不相关的 "no corresponding
+// closing tag" 报错）。写成 unknown 参数类型后，调用方只需要
+// `xxx as unknown`（不含尖括号），从根源上避免这个解析器缺陷。
+function getField(
+  obj: unknown,
+  field: string,
+  lang: string,
+  fallbackLang: string = 'zh'
+): string {
+  const map = obj as Record<string, string | undefined>;
+  return map[`${field}_${lang}`] || map[`${field}_${fallbackLang}`] || (map[field] as string) || '';
+}
+
+interface SymptomDictionaryData {
+  body_parts: BodyPart[];
+  departments_map?: DepartmentsMap;
+}
+
+// 注意：Astro 的 getStaticPaths() 在独立的隔离作用域中执行，无法引用
+// 该函数外部定义的其他函数/变量，所以数据读取逻辑必须写在函数内部，
+// 不能像普通模块那样提取成一个共享的顶层辅助函数。
+export async function getStaticPaths() {
+  async function loadSymptomData(): Promise<SymptomDictionaryData> {
+    try {
+      const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+      return JSON.parse(raw) as SymptomDictionaryData;
+    } catch (e) {
+      return { body_parts: [] };
+    }
+  }
+  const symptomData = await loadSymptomData();
+  return symptomData.body_parts.map((part) => ({
+    params: { part: part.id },
+    props: { part }
+  }));
+}
+
+// 供页面渲染阶段（模块顶层作用域，非 getStaticPaths 内部）复用的同一份读取逻辑
+async function loadSymptomData(): Promise<SymptomDictionaryData> {
+  try {
+    const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+    return JSON.parse(raw) as SymptomDictionaryData;
+  } catch (e) {
+    return { body_parts: [] };
+  }
+}
+
+interface Props {
+  part: BodyPart;
+}
+
+const { part } = Astro.props as Props;
+const lang = 'zh';
+
+function getPartTitle(p: BodyPart, lang: string): string {
+  return getField(p as unknown, 'title', lang);
+}
+function getEntryField(entry: SymptomEntry, field: string, lang: string): string {
+  return getField(entry as unknown, field, lang);
+}
+
+const partTitle = getPartTitle(part, lang);
+
+// related_entries 只存了id，这里建一个同部位内 id -> {jp, gloss} 的映射，
+// 供近义词对比展示直接拿到"日语原文 + 当前语言简短注释"，不需要额外请求。
+// （related_entries 目前的数据设计都是同部位内互相引用，跨部位引用的情况暂不支持展示文本，仅保留跳转链接兜底）
+interface RelatedEntryText {
+  jp: string;
+  gloss: string;
+}
+const entryTextMap: Record<string, RelatedEntryText> = {};
+for (const g of part.groups) {
+  for (const e of g.entries) {
+    // 中文页面用 example_zh 去掉句号作为简短注释，与其他语言页面统一用 gloss_xx 字段的逻辑保持一致
+    const shortGloss = (e.example_zh || '').replace(/[。.]+$/, '');
+    entryTextMap[e.id] = { jp: e.symptom_jp, gloss: shortGloss };
+  }
+}
+
+// 建议挂号科室：全局科室对照表（日语名+中文注释），词条里只存科室id数组
+const fullSymptomData = await loadSymptomData();
+const departmentsMap: DepartmentsMap = fullSymptomData.departments_map || {};
+
+function getDeptLabel(deptId: string, lang: string): string {
+  const dept = departmentsMap[deptId];
+  if (!dept) return deptId;
+  return (dept as unknown as Record<string, string>)[lang] || dept.zh || dept.jp || deptId;
+}
+
+const pageTitle = `${partTitle}症状表达 | 症状指认词库`;
+const pageDesc = `${partTitle}相关的日语症状表达，配例句、假名注音、跟读发音，方便就医时向医生描述。`;
+---
+
+<Base title={pageTitle} description={pageDesc} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href="/medical/">就医指南</a>
+    <span aria-hidden="true">›</span>
+    <a href="/medical/symptom-dictionary/">症状指认词库</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{partTitle}</span>
+  </nav>
+
+  <div class="med-symptom-page" id="medSymptomPage">
+
+    <h1 class="med-symptom-part-title">{partTitle}</h1>
+
+    <div id="medSymptomList">
+      {part.groups.map((group: SymptomGroup) => {
+        const groupName = getField(group as unknown, 'group_name', lang);
+        return (
+        <div class="med-symptom-group">
+          <h2 class="med-symptom-group-title">{groupName}</h2>
+
+          {group.entries.map((entry: SymptomEntry) => {
+            const severity = entry.danger_severity || 'urgent';
+            const severityClass = !entry.danger_flag ? '' : (severity === 'critical' ? '' : (severity === 'rare_but_serious' ? 'is-rare' : 'is-urgent'));
+            const badgeText = severity === 'critical' ? '⚠️ 危险信号，可能危及生命' : (severity === 'rare_but_serious' ? '⚠️ 少见但需留意的信号' : '⚠️ 需要留意的信号');
+            return (
+            <div
+              id={`entry-${entry.id}`}
+              class={`med-symptom-entry ${entry.danger_flag ? 'med-symptom-entry--danger' : ''} ${severityClass}`}
+              data-entry-id={entry.id}
+              data-danger={entry.danger_flag ? 'true' : 'false'}
+              data-severity={severity}
+              data-related={JSON.stringify(entry.related_entries || [])}
+            >
+              <div class="med-symptom-jp">{entry.symptom_jp}</div>
+              <div class="med-symptom-example-jp">{entry.example_jp}</div>
+              <div class="med-symptom-example-furigana">{entry.example_furigana}</div>
+              <div class="med-symptom-example-translated">{getEntryField(entry, 'example', lang)}</div>
+
+              <button
+                class="med-action-play-btn med-symptom-play-btn"
+                data-jp={entry.example_jp}
+                aria-label="朗读"
+              >▶</button>
+
+              {entry.note && (
+                <div class="med-action-note">{getEntryField(entry, 'note', lang)}</div>
+              )}
+
+              {entry.danger_flag && (
+                <div class={`med-symptom-danger-badge ${severityClass}`}>{badgeText}</div>
+              )}
+
+              {entry.department && entry.department.length > 0 && (
+                <div class="med-symptom-department">
+                  <span class="med-symptom-department-label">建议挂号科室</span>
+                  <div class="med-symptom-department-tags">
+                    {entry.department.map((deptId: string) => (
+                      <span class="med-symptom-department-tag">{getDeptLabel(deptId, lang)}</span>
+                    ))}
+                  </div>
+                  {entry.department_note && (
+                    <p class="med-symptom-department-note">{entry.department_note[lang as keyof DepartmentNote] || entry.department_note.zh}</p>
+                  )}
+                </div>
+              )}
+
+              {entry.related_entries && entry.related_entries.length > 0 && (
+                <div class="med-symptom-related">
+                  <span class="med-symptom-related-label">相关表达</span>
+                  {entry.related_entries.map((relId: string) => (
+                    entryTextMap[relId] && (
+                      <a href={`#entry-${relId}`} class="med-symptom-related-item" data-jump-to={relId}>
+                        {entryTextMap[relId].jp}
+                        {entryTextMap[relId].gloss && (
+                          <span class="med-symptom-related-gloss">（{entryTextMap[relId].gloss}）</span>
+                        )}
+                      </a>
+                    )
+                  ))}
+                </div>
+              )}
+            </div>
+            );
+          })}
+        </div>
+        );
+      })}
+    </div>
+
+    <div id="medDangerTipContainer"></div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">
+    {pageTitle} {pageDesc}
+  </div>
+
+  <script is:inline src="/js/tts-core.js"></script>
+  <script is:inline src="/js/medical-ui.js"></script>
+  <script is:inline>
+    (function () {
+      function init() {
+        if (!window.medicalUI) return;
+
+        document.querySelectorAll('.med-symptom-play-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const jp = btn.getAttribute('data-jp');
+            if (!jp) return;
+            window.medicalUI.speakItem({ type: 'phrase', jp: jp }, 'ja');
+
+            const entryEl = btn.closest('.med-symptom-entry');
+            if (entryEl && entryEl.getAttribute('data-danger') === 'true') {
+              const container = document.getElementById('medDangerTipContainer');
+              window.medicalUI.showDangerTip({ danger_flag: true, danger_severity: entryEl.getAttribute('data-severity') }, container);
+            }
+          });
+        });
+
+        // 从入口页搜索跳转过来的高亮定位：?highlight=xxx-001
+        const params = new URLSearchParams(window.location.search);
+        const highlightId = params.get('highlight');
+        if (highlightId) {
+          const target = document.querySelector('[data-entry-id="' + highlightId + '"]');
+          if (target) {
+            target.classList.add('med-symptom-entry--highlight');
+            setTimeout(function () {
+              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+          }
+        }
+
+        // 近义词对比：点击"相关表达"标签，跳到同页内对应词条并短暂高亮
+        document.querySelectorAll('.med-symptom-related-item').forEach(function (link) {
+          link.addEventListener('click', function () {
+            const relId = link.getAttribute('data-jump-to');
+            const target = document.querySelector('[data-entry-id="' + relId + '"]');
+            if (target) {
+              target.classList.remove('med-symptom-entry--highlight');
+              void target.offsetWidth; // 强制重排，让动画能重新触发
+              target.classList.add('med-symptom-entry--highlight');
+            }
+          });
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</Base>

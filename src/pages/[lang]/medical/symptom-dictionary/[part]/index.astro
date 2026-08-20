@@ -1,0 +1,354 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import { readFile } from 'node:fs/promises';
+
+// ---- 数据结构类型定义（对应 public/data/medical/symptom-dictionary.json） ----
+// 与中文版 src/pages/medical/symptom-dictionary/[part]/index.astro 保持同一套接口，
+// 避免两个文件的类型定义各写一套、后续维护时又出现不一致。
+// 科室对照表里的一条科室信息：日语原名 + 各语言注释
+interface DepartmentInfo {
+  jp: string;
+  zh: string;
+  'zh-TW': string;
+  en: string;
+  vi: string;
+  ko: string;
+  ja: string;
+}
+type DepartmentsMap = Record<string, DepartmentInfo>;
+
+// 各语言兜底提示文案（可能不是每条都有）
+type DepartmentNote = Partial<Record<'zh' | 'zh-TW' | 'en' | 'vi' | 'ko' | 'ja', string>>;
+
+// 注：symptom-dictionary.json 里像 example_en / note_en / gloss_en 这类字段，
+// 键名都是"字段前缀 + 语言变量"动态拼接出来的（访问时用 obj[`${field}_${lang}`]）。
+// 按协作铁律第6条，这种运行时变量拼接键名不应该用接口索引签名硬解决
+// （模板字面量索引签名只能覆盖写死的字面量键，覆盖不了变量拼接），
+// 所以这里改用 Record<string, string | undefined> 断言 + 下方的 getField() 辅助函数统一处理。
+interface SymptomEntry {
+  id: string;
+  symptom_jp: string;
+  example_jp: string;
+  example_furigana: string;
+  example_zh: string;
+  note?: string;
+  danger_flag: boolean;
+  danger_severity?: 'critical' | 'urgent' | 'rare_but_serious';
+  department?: string[];
+  department_note?: DepartmentNote;
+  related_entries?: string[];
+}
+
+interface SymptomGroup {
+  group_name: string;
+  entries: SymptomEntry[];
+}
+
+interface BodyPart {
+  id: string;
+  title: string;
+  groups: SymptomGroup[];
+}
+
+// 统一的动态字段取值辅助函数：field 是字段前缀（如 'title'/'note'/'example'/'gloss'/'group_name'），
+// lang 是语言代码。取不到该语言版本时按 fallbackLang（默认 'zh'）兜底。
+//
+// 参数类型故意写成 unknown 而不是 Record<string, unknown>：
+// Astro 模板区域（<Base>...</Base> 内的 {} 表达式）里如果直接写
+// `xxx as unknown as Record<string, unknown>` 这种带尖括号泛型的类型断言，
+// Astro/TS 编译器会把尖括号误判成 JSX 标签定界符，导致该表达式后面
+// 整个文件的 JSX 树追踪错乱（表现为一大串不相关的 "no corresponding
+// closing tag" 报错）。写成 unknown 参数类型后，调用方只需要
+// `xxx as unknown`（不含尖括号），从根源上避免这个解析器缺陷，
+// 而不是靠把断言挪到别处"绕过"——挪到 .map() 回调体内依然会触发同样的问题，
+// 因为回调体在语法上仍然属于模板区域。
+function getField(
+  obj: unknown,
+  field: string,
+  lang: string,
+  fallbackLang: string = 'zh'
+): string {
+  const map = obj as Record<string, string | undefined>;
+  return map[`${field}_${lang}`] || map[`${field}_${fallbackLang}`] || (map[field] as string) || '';
+}
+
+interface SymptomDictionaryData {
+  body_parts: BodyPart[];
+  departments_map?: DepartmentsMap;
+}
+
+const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'] as const;
+type SupportedLang = typeof SUPPORTED_LANGS[number];
+
+// 注意：Astro 的 getStaticPaths() 在独立的隔离作用域中执行，无法引用
+// 该函数外部定义的其他函数/变量，所以数据读取逻辑必须写在函数内部，
+// 不能像普通模块那样提取成一个共享的顶层辅助函数。
+export async function getStaticPaths() {
+  async function loadSymptomData(): Promise<SymptomDictionaryData> {
+    try {
+      const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+      return JSON.parse(raw) as SymptomDictionaryData;
+    } catch (e) {
+      return { body_parts: [] };
+    }
+  }
+  const symptomData = await loadSymptomData();
+  const langs: SupportedLang[] = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  const paths: { params: { lang: string; part: string }; props: { lang: SupportedLang; part: BodyPart } }[] = [];
+  for (const lang of langs) {
+    for (const part of symptomData.body_parts) {
+      paths.push({ params: { lang, part: part.id }, props: { lang, part } });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  lang: SupportedLang;
+  part: BodyPart;
+}
+
+const { lang, part } = Astro.props as Props;
+
+function getPartTitle(p: BodyPart, lang: string): string {
+  return getField(p as unknown, 'title', lang);
+}
+function getEntryField(entry: SymptomEntry, field: string, lang: string): string {
+  return getField(entry as unknown, field, lang);
+}
+
+const partTitle = getPartTitle(part, lang);
+
+const breadcrumbLabels: Record<string, string> = {
+  'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
+};
+const dictLabels: Record<string, string> = {
+  'zh-TW': '症狀指認詞庫', en: 'Symptom Dictionary', vi: 'Từ điển triệu chứng', ko: '증상 표현 사전', ja: '症状表現辞典'
+};
+
+const titleSuffixes: Record<string, string> = {
+  'zh-TW': `${partTitle}症狀表達 | ${dictLabels['zh-TW']}`,
+  en: `${partTitle} Symptoms | ${dictLabels.en}`,
+  vi: `Triệu chứng ${partTitle} | ${dictLabels.vi}`,
+  ko: `${partTitle} 증상 표현 | ${dictLabels.ko}`,
+  ja: `${partTitle}の症状表現 | ${dictLabels.ja}`
+};
+const descSuffixes: Record<string, string> = {
+  'zh-TW': `${partTitle}相關的日語症狀表達，配例句、跟讀發音。`,
+  en: `Japanese phrases for ${partTitle} symptoms, with example sentences and audio.`,
+  vi: `Cách diễn đạt triệu chứng ${partTitle} bằng tiếng Nhật, kèm câu ví dụ và phát âm.`,
+  ko: `${partTitle} 관련 일본어 증상 표현, 예문・발음 포함.`,
+  ja: `${partTitle}に関する症状表現、例文・発音付き。`
+};
+
+const pageTitle = titleSuffixes[lang] || titleSuffixes.en;
+const pageDesc = descSuffixes[lang] || descSuffixes.en;
+
+const playLabels: Record<string, string> = {
+  'zh-TW': '朗讀', en: 'Play', vi: 'Đọc', ko: '읽기', ja: '朗読'
+};
+const dangerBadgeLabels: Record<string, { critical: string; urgent: string; rare: string }> = {
+  'zh-TW': { critical: '⚠️ 危險信號，可能危及生命', urgent: '⚠️ 需要留意的信號', rare: '⚠️ 少見但需留意的信號' },
+  en: { critical: '⚠️ Danger sign — could be life-threatening', urgent: '⚠️ Worth paying attention to', rare: '⚠️ Rare but serious sign' },
+  vi: { critical: '⚠️ Dấu hiệu nguy hiểm, có thể đe dọa tính mạng', urgent: '⚠️ Cần lưu ý', rare: '⚠️ Hiếm gặp nhưng nghiêm trọng' },
+  ko: { critical: '⚠️ 위험 신호, 생명이 위험할 수 있음', urgent: '⚠️ 주의가 필요한 신호', rare: '⚠️ 드물지만 심각한 신호' },
+  ja: { critical: '⚠️ 危険信号、命に関わる可能性', urgent: '⚠️ 注意が必要な信号', rare: '⚠️ 稀だが重大な信号' }
+};
+const badges = dangerBadgeLabels[lang] || dangerBadgeLabels.en;
+
+const relatedLabels: Record<string, string> = {
+  'zh-TW': '相關表達', en: 'Related', vi: 'Cách nói liên quan', ko: '관련 표현', ja: '関連する表現'
+};
+const relatedLabel = relatedLabels[lang] || relatedLabels.en;
+
+// related_entries 只存了id，这里建一个同部位内 id -> {jp, gloss} 的映射，
+// 供近义词对比展示直接拿到"日语原文 + 当前语言简短注释"。
+// gloss 取自各条目的 gloss_${lang} 字段（en/zh-TW/vi/ko 有，ja 没有——
+// 日语页面本身就是日语原文，不需要再注释）。
+interface RelatedEntryText {
+  jp: string;
+  gloss: string;
+}
+const entryTextMap: Record<string, RelatedEntryText> = {};
+for (const g of part.groups) {
+  for (const e of g.entries) {
+    const gloss = lang === 'ja' ? '' : getField(e as unknown, 'gloss', lang, '');
+    entryTextMap[e.id] = { jp: e.symptom_jp, gloss };
+  }
+}
+
+// 建议挂号科室：全局科室对照表（日语名+多语言注释），词条里只存科室id数组
+const departmentLabels: Record<string, string> = {
+  'zh-TW': '建議掛號科室', en: 'Suggested Department', vi: 'Khoa nên khám', ko: '추천 진료과', ja: 'おすすめの診療科'
+};
+const departmentLabel = departmentLabels[lang] || departmentLabels.en;
+
+// 供页面渲染阶段（模块顶层作用域，非 getStaticPaths 内部）复用的同一份读取逻辑
+async function loadSymptomData(): Promise<SymptomDictionaryData> {
+  try {
+    const raw = await readFile('public/data/medical/symptom-dictionary.json', 'utf-8');
+    return JSON.parse(raw) as SymptomDictionaryData;
+  } catch (e) {
+    return { body_parts: [] };
+  }
+}
+const fullSymptomData = await loadSymptomData();
+const departmentsMap: DepartmentsMap = fullSymptomData.departments_map || {};
+
+function getDeptLabel(deptId: string, lang: string): string {
+  const dept = departmentsMap[deptId];
+  if (!dept) return deptId;
+  return (dept as unknown as Record<string, string>)[lang] || dept.en || dept.jp || deptId;
+}
+---
+
+<Base title={pageTitle} description={pageDesc} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href={`/${lang}/medical/`}>{breadcrumbLabels[lang] || breadcrumbLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <a href={`/${lang}/medical/symptom-dictionary/`}>{dictLabels[lang] || dictLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{partTitle}</span>
+  </nav>
+
+  <div class="med-symptom-page" id="medSymptomPage">
+
+    <h1 class="med-symptom-part-title">{partTitle}</h1>
+
+    <div id="medSymptomList">
+      {part.groups.map((group: SymptomGroup) => (
+        <div class="med-symptom-group">
+          <h2 class="med-symptom-group-title">{getField(group as unknown, 'group_name', lang)}</h2>
+
+          {group.entries.map((entry: SymptomEntry) => {
+            const severity = entry.danger_severity || 'urgent';
+            const severityClass = !entry.danger_flag ? '' : (severity === 'critical' ? '' : (severity === 'rare_but_serious' ? 'is-rare' : 'is-urgent'));
+            const badgeText = severity === 'critical' ? badges.critical : (severity === 'rare_but_serious' ? badges.rare : badges.urgent);
+            return (
+            <div
+              id={`entry-${entry.id}`}
+              class={`med-symptom-entry ${entry.danger_flag ? 'med-symptom-entry--danger' : ''} ${severityClass}`}
+              data-entry-id={entry.id}
+              data-danger={entry.danger_flag ? 'true' : 'false'}
+              data-severity={severity}
+              data-related={JSON.stringify(entry.related_entries || [])}
+            >
+              <div class="med-symptom-jp">{entry.symptom_jp}</div>
+              <div class="med-symptom-example-jp">{entry.example_jp}</div>
+              <div class="med-symptom-example-furigana">{entry.example_furigana}</div>
+              <div class="med-symptom-example-translated">{getEntryField(entry, 'example', lang)}</div>
+
+              <button
+                class="med-action-play-btn med-symptom-play-btn"
+                data-jp={entry.example_jp}
+                aria-label={playLabels[lang] || playLabels.en}
+              >▶</button>
+
+              {entry.note && (
+                <div class="med-action-note">{getEntryField(entry, 'note', lang)}</div>
+              )}
+
+              {entry.danger_flag && (
+                <div class={`med-symptom-danger-badge ${severityClass}`}>{badgeText}</div>
+              )}
+
+              {entry.department && entry.department.length > 0 && (
+                <div class="med-symptom-department">
+                  <span class="med-symptom-department-label">{departmentLabel}</span>
+                  <div class="med-symptom-department-tags">
+                    {entry.department.map((deptId: string) => (
+                      <span class="med-symptom-department-tag">{getDeptLabel(deptId, lang)}</span>
+                    ))}
+                  </div>
+                  {entry.department_note && (
+                    <p class="med-symptom-department-note">{entry.department_note[lang as keyof DepartmentNote] || entry.department_note.en}</p>
+                  )}
+                </div>
+              )}
+
+              {entry.related_entries && entry.related_entries.length > 0 && (
+                <div class="med-symptom-related">
+                  <span class="med-symptom-related-label">{relatedLabel}</span>
+                  {entry.related_entries.map((relId: string) => (
+                    entryTextMap[relId] && (
+                      <a href={`#entry-${relId}`} class="med-symptom-related-item" data-jump-to={relId}>
+                        {entryTextMap[relId].jp}
+                        {entryTextMap[relId].gloss && (
+                          <span class="med-symptom-related-gloss">（{entryTextMap[relId].gloss}）</span>
+                        )}
+                      </a>
+                    )
+                  ))}
+                </div>
+              )}
+            </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
+
+    <div id="medDangerTipContainer"></div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">
+    {pageTitle} {pageDesc}
+  </div>
+
+  <script is:inline src="/js/tts-core.js"></script>
+  <script is:inline src="/js/medical-ui.js"></script>
+  <script is:inline>
+    (function () {
+      function init() {
+        if (!window.medicalUI) return;
+
+        document.querySelectorAll('.med-symptom-play-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            const jp = btn.getAttribute('data-jp');
+            if (!jp) return;
+            window.medicalUI.speakItem({ type: 'phrase', jp: jp }, 'ja');
+
+            const entryEl = btn.closest('.med-symptom-entry');
+            if (entryEl && entryEl.getAttribute('data-danger') === 'true') {
+              const container = document.getElementById('medDangerTipContainer');
+              window.medicalUI.showDangerTip({ danger_flag: true, danger_severity: entryEl.getAttribute('data-severity') }, container);
+            }
+          });
+        });
+
+        const params = new URLSearchParams(window.location.search);
+        const highlightId = params.get('highlight');
+        if (highlightId) {
+          const target = document.querySelector('[data-entry-id="' + highlightId + '"]');
+          if (target) {
+            target.classList.add('med-symptom-entry--highlight');
+            setTimeout(function () {
+              target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+          }
+        }
+
+        document.querySelectorAll('.med-symptom-related-item').forEach(function (link) {
+          link.addEventListener('click', function () {
+            const relId = link.getAttribute('data-jump-to');
+            const target = document.querySelector('[data-entry-id="' + relId + '"]');
+            if (target) {
+              target.classList.remove('med-symptom-entry--highlight');
+              void target.offsetWidth;
+              target.classList.add('med-symptom-entry--highlight');
+            }
+          });
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+</Base>

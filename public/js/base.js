@@ -51,15 +51,24 @@ function switchLang(lang) {
   const path = window.location.pathname;
   const subMatch = path.match(/\/rescue\/(s\d+)\/(sub\d+)\//);
   const sceneMatch = path.match(/\/rescue\/(s\d+)\//);
-  // about / medical 是单一路径（无语言子目录），页面内容按 currentLang 在客户端动态显示，
+  // /medical/ 整个家族（就医指南首页、8个分类子页面、症状指认词库列表页与详情页）
+  // 都是构建时按语言各自生成好的独立静态页面（中文版无前缀，其他语言版有 /lang/ 前缀），
+  // 不是客户端动态换语言的页面，所以切换语言要跳转到"同一子路径对应语言版本"，
+  // 而不是走 loadLocale() 原地刷新那一套（那一套只适用于 about 这种单一路径页面）。
+  const medicalMatch = path.match(/^(?:\/(?:zh-TW|en|vi|ko|ja))?\/medical(\/.*)?\/?$/);
+  // about 是单一路径（无语言子目录），页面内容按 currentLang 在客户端动态显示，
   // 不需要跳转页面——只需重新 loadLocale 并重新渲染，原地刷新即可
-  const singlePathMatch = path.match(/^\/(about|medical)\/?$/);
+  const singlePathMatch = path.match(/^\/(about)\/?$/);
   if (subMatch) {
     const prefix = langPaths[lang] === '/' ? '' : langPaths[lang].slice(0, -1);
     window.location.href = `${prefix}/rescue/${subMatch[1]}/${subMatch[2]}/`;
   } else if (sceneMatch) {
     const prefix = langPaths[lang] === '/' ? '' : langPaths[lang].slice(0, -1);
     window.location.href = `${prefix}/rescue/${sceneMatch[1]}/`;
+  } else if (medicalMatch) {
+    const prefix = langPaths[lang] === '/' ? '' : langPaths[lang].slice(0, -1);
+    const subPath = medicalMatch[1] || '/';
+    window.location.href = `${prefix}/medical${subPath}`;
   } else if (singlePathMatch) {
     loadLocale(lang).then(() => {
       document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang } }));

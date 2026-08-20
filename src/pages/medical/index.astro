@@ -1,33 +1,44 @@
 ---
-// 目标路径：src/pages/medical/index.astro → 映射为 /medical/
-// 就医流程・日语版块 占位页
-// 单一路径 /medical/，页面内容按当前语言（base.js的detectLang/loadLocale）动态显示，
-// 不建6个语言子目录——等正式内容做好后，这个占位页会被完整的多语言版块替换
 import Base from '../../layouts/Base.astro';
+import medicalIndex from '../../../public/data/medical/index.json';
+import disclaimer from '../../../public/data/medical/disclaimer.json';
+
+const lang = 'zh';
+
+const titles: Record<string, string> = {
+  action: '现场执行', tool: '症状指认词库', reference: '医疗制度与常见问题'
+};
+
+const groups: Record<string, any[]> = { action: [], tool: [], reference: [] };
+for (const p of medicalIndex.pages) {
+  (groups[p.group] || (groups[p.group] = [])).push(p);
+}
 ---
 
-<Base title="就医指南 | Living Japanese · 日活" rescueCss={false}>
-  <main class="medical-placeholder" style="min-height:60vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px;">
-    <div style="font-size:48px;margin-bottom:16px;">🏥</div>
-    <h1 id="medicalTitle" style="font-size:20px;font-weight:600;margin-bottom:8px;">就医指南</h1>
-    <p id="medicalDesc" style="color:var(--muted,#888);font-size:15px;">即将上线</p>
-  </main>
+<Base title="就医指南 | Living Japanese · 日活" description="在日本看病，从制度认知到现场沟通，中文一站式指南，真人核实，可跟读练习。" medicalCss={true}>
 
-  <script is:inline>
-    // 复用base.js已初始化的LOCALE（DOMContentLoaded中已loadLocale），
-    // 这里在下一轮事件循环读取，确保LOCALE已加载完毕
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        const titleMap = {
-          zh: '就医指南', 'zh-TW': '就醫指南', en: 'Medical Guide',
-          vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド'
-        };
-        const lang = (typeof currentLang !== 'undefined' && currentLang) || 'zh';
-        const titleEl = document.getElementById('medicalTitle');
-        const descEl = document.getElementById('medicalDesc');
-        if (titleEl) titleEl.textContent = titleMap[lang] || titleMap.zh;
-        if (descEl) descEl.textContent = (typeof t === 'function' ? t('coming_soon') : null) || '即将上线';
-      }, 0);
-    });
-  </script>
+  <div class="med-hub-page" id="medHubPage">
+    <h1>就医指南</h1>
+    <p class="med-hub-intro">流程细节，来自20年在日经验人工核实；关键词句都能跟读发音；遇到拿不准的情况，有真人可以直接帮你判断。</p>
+    <p class="med-disclaimer">{disclaimer.hub_short.zh}</p>
+
+    {Object.entries(groups).map(([groupKey, pages]) => (
+      pages.length > 0 && (
+        <section class="med-hub-group">
+          <h2>{titles[groupKey] || groupKey}</h2>
+          <div class="med-hub-nav-grid">
+            {pages.map((p: any) => (
+              <a href={p.url} class={`med-hub-nav-card med-hub-nav-card--${groupKey}`}>
+                <div class="med-hub-nav-card-title">{p.title}</div>
+                <div class="med-hub-nav-card-desc">{p.description}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">就医指南 在日本看病 挂号 保险 症状 中文</div>
+
 </Base>

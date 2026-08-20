@@ -1,0 +1,78 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import medicalIndex from '../../../../../public/data/medical/index.json';
+import disclaimer from '../../../../../public/data/medical/disclaimer.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+const titles: Record<string, Record<string, string>> = {
+  action: { 'zh-TW': '現場執行', en: 'On-Site Guides', vi: 'Hướng dẫn tại chỗ', ko: '현장 대응', ja: '現場対応' },
+  tool: { 'zh-TW': '症狀指認詞庫', en: 'Symptom Dictionary', vi: 'Từ điển triệu chứng', ko: '증상 사전', ja: '症状辞典' },
+  reference: { 'zh-TW': '醫療制度與常見問題', en: 'System & FAQ', vi: 'Hệ thống & Câu hỏi', ko: '제도 및 FAQ', ja: '制度とFAQ' }
+};
+
+const pageTitles: Record<string, string> = {
+  'zh-TW': '就醫指南 | Living Japanese',
+  en: 'Medical Guide | Living Japanese',
+  vi: 'Hướng dẫn y tế | Living Japanese',
+  ko: '의료 가이드 | Living Japanese',
+  ja: '医療ガイド | Living Japanese'
+};
+const pageDescs: Record<string, string> = {
+  'zh-TW': '在日本看病，從制度認知到現場溝通，一站式指南，真人核實，可跟讀練習。',
+  en: 'Seeing a doctor in Japan — from understanding the system to real conversations, human-verified, with read-aloud practice.',
+  vi: 'Khám bệnh ở Nhật Bản — từ hiểu hệ thống đến giao tiếp thực tế, được xác minh bởi con người.',
+  ko: '일본에서 병원 가기 — 제도 이해부터 실제 대화까지, 실제 검증된 안내.',
+  ja: '日本での受診 — 制度理解から実際の会話まで、人による確認済みガイド。'
+};
+
+function tf(p: any, field: string, lang: string): string {
+  return p[`${field}_${lang}`] || p[field] || p[`${field}_zh`] || '';
+}
+
+const groups: Record<string, any[]> = { action: [], tool: [], reference: [] };
+for (const p of medicalIndex.pages) {
+  (groups[p.group] || (groups[p.group] = [])).push(p);
+}
+
+const langPathPrefix = `/${lang}`;
+
+// disclaimer.json 是直接 import 的 JSON 模块，TS 会按字面量内容推断出精确类型，
+// 导致用运行时变量 lang 去做动态取值时报类型错误。按协作铁律第6条，
+// 这种运行时变量拼接/索引访问，要在 frontmatter 里用 Record<string, string> 断言处理好，
+// 不要把 as 类型断言直接写在模板表达式区域（模板区域解析泛型语法的行为和 frontmatter 不一致）。
+const disclaimerHubShort = disclaimer.hub_short as Record<string, string>;
+const hubShortText = disclaimerHubShort[lang] || disclaimerHubShort.zh;
+---
+
+<Base title={pageTitles[lang] || pageTitles.en} description={pageDescs[lang] || pageDescs.en} medicalCss={true}>
+
+  <div class="med-hub-page" id="medHubPage">
+    <h1>{(pageTitles[lang] || pageTitles.en).split(' | ')[0]}</h1>
+    <p class="med-disclaimer">{hubShortText}</p>
+
+    {Object.entries(groups).map(([groupKey, pages]) => (
+      pages.length > 0 && (
+        <section class="med-hub-group">
+          <h2>{titles[groupKey]?.[lang] || titles[groupKey]?.en || groupKey}</h2>
+          <div class="med-hub-nav-grid">
+            {pages.map((p: any) => (
+              <a href={`${langPathPrefix}${p.url}`} class={`med-hub-nav-card med-hub-nav-card--${groupKey}`}>
+                <div class="med-hub-nav-card-title">{tf(p, 'title', lang)}</div>
+                <div class="med-hub-nav-card-desc">{tf(p, 'description', lang)}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageTitles[lang]} {pageDescs[lang]}</div>
+
+</Base>

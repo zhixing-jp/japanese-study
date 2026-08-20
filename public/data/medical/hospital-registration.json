@@ -1,0 +1,138 @@
+{
+  "id": "hospital-registration",
+  "title": "挂号话术与流程",
+  "title_en": "Hospital Registration",
+  "title_zh-TW": "掛號話術與流程",
+  "title_vi": "Thủ tục và cách nói khi đăng ký khám",
+  "title_ko": "접수 절차와 표현",
+  "title_ja": "受付の流れと言い方",
+  "description": "出示保险证、说明来意，第一次挂号该怎么说；院内大致流程一次说清楚。",
+  "sections": [
+    {
+      "id": "step0",
+      "title": "先想好：要不要提前预约",
+      "title_en": "First, decide: should you make an appointment in advance?",
+      "items": [
+        {
+          "id": "reg-000",
+          "type": "instruction",
+          "zh": "多数诊所不是随到随看。建议先电话确认是否可以就诊，避免到了现场排几个小时的队还被告知当天已满。",
+          "en": "Most clinics don't operate on a walk-in basis. It's best to call ahead and confirm whether they can see you, so you avoid waiting in line for hours only to be told they're full for the day.",
+          "zh-TW": "多數診所不是隨到隨看。建議先電話確認是否可以就診，避免到了現場排幾個小時的隊還被告知當天已滿。",
+          "vi": "Hầu hết các phòng khám không tiếp nhận theo kiểu đến là khám ngay. Nên gọi điện xác nhận trước xem có thể khám hay không, để tránh việc đến nơi xếp hàng mấy tiếng đồng hồ mà vẫn bị báo là đã hết lượt trong ngày.",
+          "ko": "대부분의 클리닉은 워크인(예약 없이 바로 진료)이 되지 않습니다. 미리 전화로 진료 가능 여부를 확인하는 것이 좋습니다. 현장에 가서 몇 시간을 기다렸는데 당일 접수가 마감됐다는 말을 듣는 상황을 피할 수 있습니다.",
+          "note": null,
+          "ja": "多くのクリニックは飛び込みで診てもらえるわけではありません。事前に電話で診察可能か確認しておくと、現地で何時間も並んだ末に「本日は受付終了」と言われる事態を避けられます。"
+        }
+      ],
+      "title_zh-TW": "先想好：要不要提前預約",
+      "title_vi": "Trước tiên hãy cân nhắc: có nên đặt hẹn trước không",
+      "title_ko": "먼저 생각해보기: 미리 예약해야 할까",
+      "title_ja": "まず考える：事前予約すべきかどうか"
+    },
+    {
+      "id": "step1",
+      "title": "出示保险证，说明来意",
+      "title_en": "Show your insurance card and explain why you're there",
+      "items": [
+        {
+          "id": "reg-001",
+          "type": "phrase",
+          "jp": "初診/再診です。受診をお願いします。",
+          "furigana": "しょしん/さいしんです。じゅしんをおねがいします。",
+          "zh": "这是初诊/复诊，请安排看诊。",
+          "en": "This is my first visit / a follow-up visit — please arrange for me to be seen.",
+          "zh-TW": "這是初診／複診，請安排看診。",
+          "vi": "Đây là lần khám đầu tiên/tái khám, xin hãy sắp xếp cho tôi khám bệnh.",
+          "ko": "처음 방문입니다 / 재진입니다, 진료를 부탁드립니다.",
+          "note": "在留人士/持保险证优先使用这句，出示保险证原件——务必是原件，影本无效；每月首次就诊需携带保险证，复诊可凭诊察券；跨月就诊视为新月，需再次出示保险证",
+          "ja": "初診／再診です。診察をお願いします。",
+          "note_en": "Residents with an insurance card should use this line and show the original insurance card — it must be the original, a copy is not valid. You need to bring your insurance card for your first visit each month; for follow-up visits, your patient ID card (診察券) is enough. If you visit again in a new calendar month, it counts as a new month and you'll need to show your insurance card again.",
+          "note_zh-TW": "在留人士／持保險證優先使用這句，出示保險證原件——務必是原件，影本無效；每月首次就診需攜帶保險證，複診可憑診察券；跨月就診視為新月，需再次出示保險證。",
+          "note_vi": "Người có tư cách lưu trú/có thẻ bảo hiểm nên ưu tiên dùng câu này, xuất trình thẻ bảo hiểm bản gốc — bắt buộc phải là bản gốc, bản photo không có giá trị; lần khám đầu tiên trong tháng cần mang theo thẻ bảo hiểm, tái khám có thể dùng thẻ khám bệnh (診察券); khám sang tháng mới được tính là tháng mới, cần xuất trình lại thẻ bảo hiểm.",
+          "note_ko": "재류자격이 있거나 보험증을 소지한 경우 이 문장을 우선 사용하고, 보험증 원본을 제시하세요 — 반드시 원본이어야 하며 사본은 무효입니다. 매달 첫 진료 시 보험증을 지참해야 하고, 재진 시에는 진찰권(診察券)으로도 됩니다. 달이 바뀌어 진료받으면 새로운 달로 취급되어 보험증을 다시 제시해야 합니다.",
+          "note_ja": "在留資格があり保険証をお持ちの方はこのフレーズを優先的に使い、保険証の原本を提示してください——必ず原本が必要で、コピーは無効です。毎月最初の受診時には保険証の持参が必要で、再診時は診察券で対応できます。月をまたいで受診する場合は新しい月として扱われるため、再度保険証の提示が必要です。"
+        },
+        {
+          "id": "reg-002",
+          "type": "dialogue_turn",
+          "role": "staff",
+          "jp": "保険証をお持ちですか？",
+          "furigana": "ほけんしょうをおもちですか？",
+          "zh": "您带保险证了吗？",
+          "en": "Do you have your insurance card with you?",
+          "zh-TW": "您帶保險證了嗎？",
+          "vi": "Bạn có mang theo thẻ bảo hiểm không?",
+          "ko": "보험증 가지고 오셨나요?",
+          "note": null,
+          "ja": "保険証はお持ちですか。",
+          "role_en": "staff",
+          "role_zh-TW": "staff",
+          "role_vi": "staff",
+          "role_ko": "staff",
+          "role_ja": "staff"
+        }
+      ],
+      "title_zh-TW": "出示保險證，說明來意",
+      "title_vi": "Xuất trình thẻ bảo hiểm, giải thích lý do đến khám",
+      "title_ko": "보험증을 제시하고 방문 목적을 설명하기",
+      "title_ja": "保険証を提示し、来院理由を伝える"
+    },
+    {
+      "id": "step2",
+      "title": "无日本医保时",
+      "title_en": "If you don't have Japanese health insurance",
+      "items": [
+        {
+          "id": "reg-003",
+          "type": "phrase",
+          "jp": "観光客です。日本の健康保険はありません。全額（現金またはカード）で支払います。受診できますか？",
+          "furigana": "かんこうきゃくです。にほんのけんこうほけんはありません。ぜんがく（げんきんまたはカード）でしはらいます。じゅしんできますか？",
+          "zh": "我是游客，无日本医保。我将全额自费支付（现金或卡），可以安排看诊吗？",
+          "en": "I'm a visitor without Japanese health insurance. I'll pay the full cost myself, in cash or by card — could I be seen?",
+          "zh-TW": "我是遊客，無日本醫保。我將全額自費支付（現金或卡），可以安排看診嗎？",
+          "vi": "Tôi là khách du lịch, không có bảo hiểm y tế Nhật Bản. Tôi sẽ tự thanh toán toàn bộ chi phí (tiền mặt hoặc thẻ), có thể sắp xếp cho tôi khám được không?",
+          "ko": "저는 여행자이고 일본 건강보험이 없습니다. 전액 자비로(현금 또는 카드) 지불하겠습니다, 진료 가능할까요?",
+          "note": "适用于短期访客/无日本医保，比如临时来探亲访友的家人朋友",
+          "ja": "観光客で、日本の健康保険には加入していません。費用は全額自己負担（現金またはカード）でお支払いしますので、診察していただけますか。",
+          "note_en": "This applies to short-term visitors without Japanese health insurance — for example, family or friends visiting temporarily.",
+          "note_zh-TW": "適用於短期訪客／無日本醫保，比如臨時來探親訪友的家人朋友。",
+          "note_vi": "Áp dụng cho khách thăm ngắn hạn/không có bảo hiểm y tế Nhật Bản, ví dụ như người thân bạn bè đến thăm tạm thời.",
+          "note_ko": "일본 건강보험이 없는 단기 방문자에게 해당합니다. 예를 들어 잠시 방문 온 가족이나 친구가 이에 해당합니다.",
+          "note_ja": "日本の健康保険を持たない短期訪問者、例えば一時的に訪ねてきた家族や友人などが該当します。"
+        }
+      ],
+      "title_zh-TW": "無日本醫保時",
+      "title_vi": "Khi không có bảo hiểm y tế Nhật Bản",
+      "title_ko": "일본 건강보험이 없을 때",
+      "title_ja": "日本の健康保険がない場合"
+    },
+    {
+      "id": "step3",
+      "title": "院内大致流程",
+      "title_en": "The general in-clinic process",
+      "items": [
+        {
+          "id": "reg-004",
+          "type": "instruction",
+          "zh": "前台挂号（出示护照、填写问诊票）→ 候诊 → 医生问诊（陈述症状、回答问题）→ 必要检查 → 医生诊断 → 治疗方案说明 → 前台结算、拿处方笺 → 药局取药。",
+          "en": "Register at the front desk (show your passport, fill out the medical questionnaire) → Wait to be called → Doctor's consultation (describe your symptoms, answer questions) → Necessary tests, if any → Doctor's diagnosis → Explanation of the treatment plan → Pay and receive your prescription at the front desk → Pick up medication at the pharmacy.",
+          "zh-TW": "前台掛號（出示護照、填寫問診表）→ 候診 → 醫生問診（陳述症狀、回答問題）→ 必要檢查 → 醫生診斷 → 治療方案說明 → 前台結算、拿處方箋 → 藥局取藥。",
+          "vi": "Đăng ký tại quầy lễ tân (xuất trình hộ chiếu, điền phiếu khám bệnh) → Chờ khám → Bác sĩ khám (trình bày triệu chứng, trả lời câu hỏi) → Xét nghiệm cần thiết (nếu có) → Bác sĩ chẩn đoán → Giải thích phương án điều trị → Thanh toán tại quầy lễ tân, nhận đơn thuốc → Lấy thuốc tại nhà thuốc.",
+          "ko": "접수처에서 등록(여권 제시, 문진표 작성) → 대기 → 의사 진료(증상 설명, 질문에 답변) → 필요한 검사 → 의사 진단 → 치료 방침 설명 → 접수처에서 수납, 처방전 수령 → 약국에서 약 수령.",
+          "note": null,
+          "ja": "受付で登録（パスポートを提示、問診票を記入）→ 診察待ち → 医師の診察（症状を伝え、質問に答える）→ 必要な検査 → 医師による診断 → 治療方針の説明 → 受付で会計、処方箋を受け取る → 薬局で薬を受け取る。"
+        }
+      ],
+      "title_zh-TW": "院內大致流程",
+      "title_vi": "Quy trình chung trong bệnh viện/phòng khám",
+      "title_ko": "원내 대략적인 흐름",
+      "title_ja": "院内の大まかな流れ"
+    }
+  ],
+  "description_en": "How to show your insurance card and explain why you're there for your first registration, plus a clear walkthrough of the general in-clinic process.",
+  "description_zh-TW": "出示保險證、說明來意，第一次掛號該怎麼說；院內大致流程一次說清楚。",
+  "description_vi": "Cách xuất trình thẻ bảo hiểm, giải thích lý do đến khám khi đăng ký lần đầu; giải thích rõ quy trình chung trong bệnh viện/phòng khám.",
+  "description_ko": "보험증을 제시하고 방문 목적을 설명하는 법, 처음 접수할 때 어떻게 말해야 하는지, 원내 대략적인 흐름을 한 번에 정리했습니다.",
+  "description_ja": "保険証の提示や来院理由の伝え方、初診受付でどう言えばよいか、院内の大まかな流れをまとめて説明します。"
+}

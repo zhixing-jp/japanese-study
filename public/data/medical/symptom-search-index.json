@@ -1,0 +1,752 @@
+[
+  {
+    "id": "gen-001",
+    "part": "general",
+    "symptom_jp": "全身がだるい・調子が悪い",
+    "example_zh": "说不清具体哪里不舒服，就是浑身乏力、状态不好。"
+  },
+  {
+    "id": "gen-002",
+    "part": "general",
+    "symptom_jp": "何科に行けばいいかわからない",
+    "example_zh": "不知道该挂哪个科，能先帮我看一下吗。"
+  },
+  {
+    "id": "gen-003",
+    "part": "general",
+    "symptom_jp": "痛みの強さ（10段階で）",
+    "example_zh": "疼痛程度大概是10分中的7分（数字越大越痛）。"
+  },
+  {
+    "id": "gen-004",
+    "part": "general",
+    "symptom_jp": "だんだん悪くなっている",
+    "example_zh": "症状在逐渐加重。"
+  },
+  {
+    "id": "gen-005",
+    "part": "general",
+    "symptom_jp": "いつからその症状がありますか、への答え方",
+    "example_zh": "从3天前开始有这个症状。"
+  },
+  {
+    "id": "gen-006",
+    "part": "general",
+    "symptom_jp": "持病があります",
+    "example_zh": "我有慢性病/既往病史（具体病名）。"
+  },
+  {
+    "id": "gen-007",
+    "part": "general",
+    "symptom_jp": "薬・食べ物のアレルギーがあります",
+    "example_zh": "我对这种药物/食物过敏。"
+  },
+  {
+    "id": "gen-008",
+    "part": "general",
+    "symptom_jp": "現在飲んでいる薬があります",
+    "example_zh": "我现在正在服用这个药（出示药物或处方）。"
+  },
+  {
+    "id": "gen-009",
+    "part": "general",
+    "symptom_jp": "妊娠している可能性があります",
+    "example_zh": "我可能怀孕了。"
+  },
+  {
+    "id": "head-001",
+    "part": "head",
+    "symptom_jp": "頭痛",
+    "example_zh": "头痛。"
+  },
+  {
+    "id": "head-020",
+    "part": "head",
+    "symptom_jp": "頭が重い",
+    "example_zh": "头部沉重感。"
+  },
+  {
+    "id": "head-002",
+    "part": "head",
+    "symptom_jp": "ズキズキする頭痛",
+    "example_zh": "头部一跳一跳地痛（跳痛/抽痛）。"
+  },
+  {
+    "id": "head-003",
+    "part": "head",
+    "symptom_jp": "締め付けられるような頭痛",
+    "example_zh": "头像被东西紧紧箍住一样痛（紧箍感/压迫感）。"
+  },
+  {
+    "id": "head-006",
+    "part": "head",
+    "symptom_jp": "割れるような激痛",
+    "example_zh": "头痛得像要裂开一样剧烈。"
+  },
+  {
+    "id": "head-004",
+    "part": "head",
+    "symptom_jp": "片側だけの頭痛",
+    "example_zh": "只有单侧头痛。"
+  },
+  {
+    "id": "head-005",
+    "part": "head",
+    "symptom_jp": "目の奥がえぐられるような痛み",
+    "example_zh": "单侧眼眶后方剧烈钻痛（像被挖一样）。"
+  },
+  {
+    "id": "head-018",
+    "part": "head",
+    "symptom_jp": "ろれつが回らない",
+    "example_zh": "说话开始不清楚（言语不清）。"
+  },
+  {
+    "id": "head-019",
+    "part": "head",
+    "symptom_jp": "雷が落ちたような・バットで殴られたような突然の激痛",
+    "example_zh": "从未经历过的剧烈头痛突然发作，像被雷劈中/被球棒打了后脑勺一样。"
+  },
+  {
+    "id": "head-021",
+    "part": "head",
+    "symptom_jp": "首の後ろが硬直し高熱を伴う頭痛",
+    "example_zh": "头痛同时伴有后颈僵硬（脖子发硬、低头困难）和高热。"
+  },
+  {
+    "id": "eye-001",
+    "part": "eye",
+    "symptom_jp": "目が痛い",
+    "example_zh": "眼睛痛。"
+  },
+  {
+    "id": "eye-002",
+    "part": "eye",
+    "symptom_jp": "目の充血",
+    "example_zh": "眼睛发红/充血。"
+  },
+  {
+    "id": "eye-003",
+    "part": "eye",
+    "symptom_jp": "目がかすむ",
+    "example_zh": "视力模糊/看不清楚。"
+  },
+  {
+    "id": "eye-004",
+    "part": "eye",
+    "symptom_jp": "目が乾く",
+    "example_zh": "眼睛干涩。"
+  },
+  {
+    "id": "eye-005",
+    "part": "eye",
+    "symptom_jp": "目に異物感がある",
+    "example_zh": "眼睛有异物感（像有沙子）。"
+  },
+  {
+    "id": "eye-006",
+    "part": "eye",
+    "symptom_jp": "まぶたの腫れ",
+    "example_zh": "眼睑肿胀。"
+  },
+  {
+    "id": "eye-007",
+    "part": "eye",
+    "symptom_jp": "飛蚊症",
+    "example_zh": "眼前有黑点或飘浮物（飞蚊症）。"
+  },
+  {
+    "id": "eye-008",
+    "part": "eye",
+    "symptom_jp": "目がかゆい",
+    "example_zh": "眼睛痒。"
+  },
+  {
+    "id": "eye-009",
+    "part": "eye",
+    "symptom_jp": "まぶしい",
+    "example_zh": "畏光/怕光。"
+  },
+  {
+    "id": "eye-010",
+    "part": "eye",
+    "symptom_jp": "目やにが出る",
+    "example_zh": "眼屎（分泌物）增多。"
+  },
+  {
+    "id": "eye-011",
+    "part": "eye",
+    "symptom_jp": "急な視力低下",
+    "example_zh": "视力突然下降。"
+  },
+  {
+    "id": "eye-012",
+    "part": "eye",
+    "symptom_jp": "物が二重に見える",
+    "example_zh": "重影/复视。"
+  },
+  {
+    "id": "eye-013",
+    "part": "eye",
+    "symptom_jp": "視野が欠ける",
+    "example_zh": "视野缺失/像被窗帘遮住一部分。"
+  },
+  {
+    "id": "eye-014",
+    "part": "eye",
+    "symptom_jp": "光が走る・稲妻のように見える",
+    "example_zh": "眼前有闪光感/像看到闪电一样。"
+  },
+  {
+    "id": "eye-015",
+    "part": "eye",
+    "symptom_jp": "物が歪んで見える",
+    "example_zh": "视物变形/直线看起来是弯曲的。"
+  },
+  {
+    "id": "eye-016",
+    "part": "eye",
+    "symptom_jp": "強い目の痛みに頭痛や吐き気を伴う",
+    "example_zh": "眼睛剧痛并伴随头痛、恶心。"
+  },
+  {
+    "id": "resp-001",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "咳が出る",
+    "example_zh": "咳嗽。"
+  },
+  {
+    "id": "resp-002",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "胸が痛い",
+    "example_zh": "胸痛。"
+  },
+  {
+    "id": "resp-003",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "乾いた咳",
+    "example_zh": "干咳（无痰）。"
+  },
+  {
+    "id": "resp-004",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "痰が出る",
+    "example_zh": "有痰。"
+  },
+  {
+    "id": "resp-005",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "血痰",
+    "example_zh": "痰中带血。"
+  },
+  {
+    "id": "resp-006",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "ゼイゼイする",
+    "example_zh": "呼吸时有喘鸣音（呼哧呼哧的声音）。"
+  },
+  {
+    "id": "resp-007",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "息苦しい",
+    "example_zh": "呼吸困难/胸闷气短。"
+  },
+  {
+    "id": "resp-008",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "動悸",
+    "example_zh": "心悸/心慌（能感觉到心跳）。"
+  },
+  {
+    "id": "resp-009",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "胸の圧迫感",
+    "example_zh": "胸口有压迫感/像被紧紧箍住。"
+  },
+  {
+    "id": "resp-010",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "チクチク痛む",
+    "example_zh": "胸口刺痛（针扎般的痛感）。"
+  },
+  {
+    "id": "resp-011",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "血圧が高い・低い",
+    "example_zh": "血压高/血压低。"
+  },
+  {
+    "id": "resp-012",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "締め付けられるような胸の痛みが30分以上続く",
+    "example_zh": "胸口像被紧紧箍住一样痛，持续30分钟以上没有缓解。"
+  },
+  {
+    "id": "resp-013",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "痛みが肩・腕・顎・背中に広がる",
+    "example_zh": "胸痛并向肩膀、手臂、下巴或背部放射（扩散性疼痛）。"
+  },
+  {
+    "id": "resp-014",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "不整脈",
+    "example_zh": "心律不齐（心跳漏拍/忽快忽慢）。"
+  },
+  {
+    "id": "resp-015",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "冷や汗を伴う胸の痛み",
+    "example_zh": "胸痛并伴有冷汗。"
+  },
+  {
+    "id": "resp-016",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "失神・意識が遠のく",
+    "example_zh": "快要昏厥/意识模糊。"
+  },
+  {
+    "id": "resp-017",
+    "part": "respiratory-cardiac",
+    "symptom_jp": "安静にしていても息苦しい",
+    "example_zh": "静止/休息状态下也感到呼吸困难（不是运动后才喘）。"
+  },
+  {
+    "id": "gi-001",
+    "part": "gastrointestinal",
+    "symptom_jp": "お腹が痛い",
+    "example_zh": "肚子痛。"
+  },
+  {
+    "id": "gi-002",
+    "part": "gastrointestinal",
+    "symptom_jp": "吐き気・嘔吐",
+    "example_zh": "恶心/呕吐。"
+  },
+  {
+    "id": "gi-003",
+    "part": "gastrointestinal",
+    "symptom_jp": "お腹が張る",
+    "example_zh": "腹胀。"
+  },
+  {
+    "id": "gi-004",
+    "part": "gastrointestinal",
+    "symptom_jp": "胸焼け",
+    "example_zh": "烧心/反酸。"
+  },
+  {
+    "id": "gi-005",
+    "part": "gastrointestinal",
+    "symptom_jp": "下痢",
+    "example_zh": "腹泻/拉肚子。"
+  },
+  {
+    "id": "gi-006",
+    "part": "gastrointestinal",
+    "symptom_jp": "水様便",
+    "example_zh": "水样便（像水一样的腹泻）。"
+  },
+  {
+    "id": "gi-007",
+    "part": "gastrointestinal",
+    "symptom_jp": "便秘",
+    "example_zh": "便秘。"
+  },
+  {
+    "id": "gi-008",
+    "part": "gastrointestinal",
+    "symptom_jp": "差し込むような痛み",
+    "example_zh": "腹部绞痛（一阵一阵抽痛）。"
+  },
+  {
+    "id": "gi-009",
+    "part": "gastrointestinal",
+    "symptom_jp": "食欲がない",
+    "example_zh": "食欲不振/没胃口。"
+  },
+  {
+    "id": "gi-010",
+    "part": "gastrointestinal",
+    "symptom_jp": "げっぷ",
+    "example_zh": "打嗝/嗳气频繁。"
+  },
+  {
+    "id": "gi-011",
+    "part": "gastrointestinal",
+    "symptom_jp": "みぞおちの痛み",
+    "example_zh": "胃部/心窝处疼痛。"
+  },
+  {
+    "id": "gi-012",
+    "part": "gastrointestinal",
+    "symptom_jp": "血便・粘液便",
+    "example_zh": "血便/黏液便。"
+  },
+  {
+    "id": "gi-013",
+    "part": "gastrointestinal",
+    "symptom_jp": "我慢できないほどの激しい腹痛が続く",
+    "example_zh": "剧烈腹痛难以忍受，且持续不缓解（6小时以上）。"
+  },
+  {
+    "id": "gi-014",
+    "part": "gastrointestinal",
+    "symptom_jp": "みぞおちの痛みが右下腹部に移動する",
+    "example_zh": "一开始是胃/心窝处痛，现在痛感转移并固定到右下腹，走路或咳嗽会震得更痛。"
+  },
+  {
+    "id": "gi-015",
+    "part": "gastrointestinal",
+    "symptom_jp": "お腹を押して離すと強く痛む",
+    "example_zh": "按压腹部时痛，松开手的瞬间更痛（反跳痛）。"
+  },
+  {
+    "id": "gi-016",
+    "part": "gastrointestinal",
+    "symptom_jp": "38度以上の発熱と腹痛・下痢を伴う",
+    "example_zh": "发烧38度以上，同时伴有腹痛和腹泻。"
+  },
+  {
+    "id": "gi-017",
+    "part": "gastrointestinal",
+    "symptom_jp": "脱水症状（口の渇き・尿量減少・めまい）",
+    "example_zh": "脱水信号：口渴严重、尿量减少、头晕站不稳。"
+  },
+  {
+    "id": "uri-001",
+    "part": "urinary",
+    "symptom_jp": "排尿痛",
+    "example_zh": "排尿时疼痛（尿痛）。"
+  },
+  {
+    "id": "uri-002",
+    "part": "urinary",
+    "symptom_jp": "頻尿",
+    "example_zh": "尿频（上厕所次数明显增多）。"
+  },
+  {
+    "id": "uri-003",
+    "part": "urinary",
+    "symptom_jp": "尿意切迫感",
+    "example_zh": "尿急（突然很想上厕所，忍不住）。"
+  },
+  {
+    "id": "uri-004",
+    "part": "urinary",
+    "symptom_jp": "尿が少ない",
+    "example_zh": "尿量减少。"
+  },
+  {
+    "id": "uri-005",
+    "part": "urinary",
+    "symptom_jp": "尿が濁る",
+    "example_zh": "尿液浑浊。"
+  },
+  {
+    "id": "uri-006",
+    "part": "urinary",
+    "symptom_jp": "残尿感",
+    "example_zh": "排尿后仍有尿不尽的感觉。"
+  },
+  {
+    "id": "uri-007",
+    "part": "urinary",
+    "symptom_jp": "尿が出にくい",
+    "example_zh": "排尿困难（尿液不容易排出）。"
+  },
+  {
+    "id": "uri-008",
+    "part": "urinary",
+    "symptom_jp": "夜間尿",
+    "example_zh": "夜尿多（夜里频繁起来上厕所）。"
+  },
+  {
+    "id": "uri-009",
+    "part": "urinary",
+    "symptom_jp": "尿の色が濃い",
+    "example_zh": "尿色深（颜色比平时明显深）。"
+  },
+  {
+    "id": "uri-010",
+    "part": "urinary",
+    "symptom_jp": "血尿",
+    "example_zh": "血尿（尿液中带血）。"
+  },
+  {
+    "id": "uri-011",
+    "part": "urinary",
+    "symptom_jp": "尿がまったく出ない（尿閉）",
+    "example_zh": "完全无法排尿（尿闭），膀胱胀满感明显、难受。"
+  },
+  {
+    "id": "uri-012",
+    "part": "urinary",
+    "symptom_jp": "発熱と背中・腰の痛みを伴う排尿症状",
+    "example_zh": "发热同时伴有背部/腰部疼痛及排尿相关症状。"
+  },
+  {
+    "id": "uri-013",
+    "part": "urinary",
+    "symptom_jp": "突然の激しい脇腹・腰の痛み",
+    "example_zh": "突发剧烈的侧腹/腰部绞痛。"
+  },
+  {
+    "id": "limb-001",
+    "part": "limbs-trauma",
+    "symptom_jp": "関節痛・筋肉痛",
+    "example_zh": "关节痛/肌肉痛。"
+  },
+  {
+    "id": "limb-002",
+    "part": "limbs-trauma",
+    "symptom_jp": "転んだ・けがをした",
+    "example_zh": "摔倒受伤了。"
+  },
+  {
+    "id": "limb-003",
+    "part": "limbs-trauma",
+    "symptom_jp": "しびれ",
+    "example_zh": "手脚麻木。"
+  },
+  {
+    "id": "limb-004",
+    "part": "limbs-trauma",
+    "symptom_jp": "足がつる",
+    "example_zh": "腿抽筋。"
+  },
+  {
+    "id": "limb-005",
+    "part": "limbs-trauma",
+    "symptom_jp": "力が入らない",
+    "example_zh": "手（脚）无法用力。"
+  },
+  {
+    "id": "limb-006",
+    "part": "limbs-trauma",
+    "symptom_jp": "肩こり",
+    "example_zh": "肩膀僵硬/酸痛。"
+  },
+  {
+    "id": "limb-007",
+    "part": "limbs-trauma",
+    "symptom_jp": "腫れ・押すと痛い",
+    "example_zh": "肿胀/触痛（按压时痛）。"
+  },
+  {
+    "id": "limb-008",
+    "part": "limbs-trauma",
+    "symptom_jp": "動かせない",
+    "example_zh": "（手臂/腿等）无法活动。"
+  },
+  {
+    "id": "limb-009",
+    "part": "limbs-trauma",
+    "symptom_jp": "捻挫",
+    "example_zh": "扭伤了（脚踝等）。"
+  },
+  {
+    "id": "limb-010",
+    "part": "limbs-trauma",
+    "symptom_jp": "切り傷・擦り傷",
+    "example_zh": "割伤/擦伤。"
+  },
+  {
+    "id": "limb-011",
+    "part": "limbs-trauma",
+    "symptom_jp": "軽いやけど（赤み・小さい範囲）",
+    "example_zh": "轻微烫伤，没有起水泡。"
+  },
+  {
+    "id": "limb-016",
+    "part": "limbs-trauma",
+    "symptom_jp": "水ぶくれができたやけど・広範囲のやけど",
+    "example_zh": "烫伤起了水泡，范围也比较大。"
+  },
+  {
+    "id": "limb-012",
+    "part": "limbs-trauma",
+    "symptom_jp": "突き指",
+    "example_zh": "戳到手指（手指挫伤）。"
+  },
+  {
+    "id": "limb-013",
+    "part": "limbs-trauma",
+    "symptom_jp": "骨折の疑い（強い痛み・腫れ・変形）",
+    "example_zh": "剧痛、明显肿胀、外观变形，怀疑骨折。"
+  },
+  {
+    "id": "limb-014",
+    "part": "limbs-trauma",
+    "symptom_jp": "固定後に薬が効かないほどの強い痛みが続く",
+    "example_zh": "打石膏/夹板固定后，止痛药也无法缓解的持续剧痛。"
+  },
+  {
+    "id": "limb-015",
+    "part": "limbs-trauma",
+    "symptom_jp": "指先や足先が白っぽく冷たく、感覚がない",
+    "example_zh": "手指/脚趾末端发白、冰冷、失去知觉。"
+  },
+  {
+    "id": "limb-017",
+    "part": "limbs-trauma",
+    "symptom_jp": "肩こりと一緒に腕がしびれる・痛みが広がる",
+    "example_zh": "肩膀酸痛的同时，手臂发麻、疼痛还在扩散。"
+  },
+  {
+    "id": "skin-001",
+    "part": "skin",
+    "symptom_jp": "かゆい",
+    "example_zh": "皮肤痒。"
+  },
+  {
+    "id": "skin-002",
+    "part": "skin",
+    "symptom_jp": "湿疹・蕁麻疹",
+    "example_zh": "湿疹/荨麻疹。"
+  },
+  {
+    "id": "skin-003",
+    "part": "skin",
+    "symptom_jp": "赤く腫れる",
+    "example_zh": "红肿。"
+  },
+  {
+    "id": "skin-004",
+    "part": "skin",
+    "symptom_jp": "かぶれ",
+    "example_zh": "接触性皮肤过敏（皮肤刺激反应）。"
+  },
+  {
+    "id": "skin-005",
+    "part": "skin",
+    "symptom_jp": "カサカサする",
+    "example_zh": "皮肤干燥/脱屑。"
+  },
+  {
+    "id": "skin-006",
+    "part": "skin",
+    "symptom_jp": "皮がむける",
+    "example_zh": "掉皮/脱皮。"
+  },
+  {
+    "id": "skin-007",
+    "part": "skin",
+    "symptom_jp": "じくじくする",
+    "example_zh": "有渗液（皮肤湿润渗出液体）。"
+  },
+  {
+    "id": "skin-008",
+    "part": "skin",
+    "symptom_jp": "水ぶくれ",
+    "example_zh": "水泡。"
+  },
+  {
+    "id": "skin-009",
+    "part": "skin",
+    "symptom_jp": "膿が出る",
+    "example_zh": "化脓。"
+  },
+  {
+    "id": "skin-010",
+    "part": "skin",
+    "symptom_jp": "ヒリヒリ痛む",
+    "example_zh": "刺痛/灼痛。"
+  },
+  {
+    "id": "skin-011",
+    "part": "skin",
+    "symptom_jp": "虫刺され",
+    "example_zh": "虫咬（被虫子叮咬）。"
+  },
+  {
+    "id": "skin-012",
+    "part": "skin",
+    "symptom_jp": "蕁麻疹に呼吸困難や唇の腫れを伴う",
+    "example_zh": "荨麻疹同时伴有呼吸困难、嘴唇肿胀。"
+  },
+  {
+    "id": "skin-013",
+    "part": "skin",
+    "symptom_jp": "唇や爪が青白い・脈が触れにくい",
+    "example_zh": "嘴唇/指甲发青发白，脉搏摸不清或很弱。"
+  },
+  {
+    "id": "skin-014",
+    "part": "skin",
+    "symptom_jp": "発疹に高熱と目・口の粘膜のただれを伴う",
+    "example_zh": "皮疹伴高热，同时眼睛/口腔黏膜也出现糜烂。"
+  },
+  {
+    "id": "mental-001",
+    "part": "mental",
+    "symptom_jp": "不安感が強い",
+    "example_zh": "焦虑不安。"
+  },
+  {
+    "id": "mental-002",
+    "part": "mental",
+    "symptom_jp": "気分が落ち込む",
+    "example_zh": "情绪低落。"
+  },
+  {
+    "id": "mental-003",
+    "part": "mental",
+    "symptom_jp": "眠れない",
+    "example_zh": "失眠/睡眠障碍。"
+  },
+  {
+    "id": "mental-004",
+    "part": "mental",
+    "symptom_jp": "イライラする",
+    "example_zh": "烦躁/易怒。"
+  },
+  {
+    "id": "mental-005",
+    "part": "mental",
+    "symptom_jp": "集中できない",
+    "example_zh": "无法集中注意力。"
+  },
+  {
+    "id": "mental-006",
+    "part": "mental",
+    "symptom_jp": "パニック発作",
+    "example_zh": "惊恐发作（突然极度焦虑、心跳加速、呼吸困难）。"
+  },
+  {
+    "id": "mental-007",
+    "part": "mental",
+    "symptom_jp": "やる気が出ない",
+    "example_zh": "倦怠感/提不起劲/没有动力。"
+  },
+  {
+    "id": "mental-008",
+    "part": "mental",
+    "symptom_jp": "お酒や薬の量が増えた",
+    "example_zh": "饮酒或用药量增加。"
+  },
+  {
+    "id": "mental-009",
+    "part": "mental",
+    "symptom_jp": "過呼吸",
+    "example_zh": "过度换气（呼吸急促，手脚发麻）。"
+  },
+  {
+    "id": "mental-010",
+    "part": "mental",
+    "symptom_jp": "なんとなく気分が沈む・身体が重い",
+    "example_zh": "说不清楚具体原因，就是莫名情绪低落、身体感觉很沉重/提不起劲。"
+  },
+  {
+    "id": "mental-012",
+    "part": "mental",
+    "symptom_jp": "お酒や薬をやめたいのにやめられない",
+    "example_zh": "想戒酒（戒药），但戒不掉。"
+  },
+  {
+    "id": "mental-011",
+    "part": "mental",
+    "symptom_jp": "消えてしまいたい",
+    "example_zh": "有过想要消失/自杀的念头。"
+  }
+]

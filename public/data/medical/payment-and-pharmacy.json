@@ -1,0 +1,97 @@
+{
+  "id": "payment-and-pharmacy",
+  "title": "结算与拿药",
+  "title_en": "Payment & Pharmacy",
+  "title_zh-TW": "結算與拿藥",
+  "title_vi": "Thanh toán và lấy thuốc",
+  "title_ko": "수납과 약 받기",
+  "title_ja": "会計と薬の受け取り",
+  "description": "日本实行医药分离制度，怎么结账、去哪里拿药，一次说清楚。",
+  "sections": [
+    {
+      "id": "step1",
+      "title": "结算",
+      "title_en": "Paying",
+      "items": [
+        {
+          "id": "pay-001",
+          "type": "instruction",
+          "zh": "诊所通常只收现金，医院通常支持信用卡，请提前准备好足够的日元现金，尤其是小型诊所和夜间急诊常常无法刷卡。",
+          "en": "Clinics generally accept cash only, while hospitals usually accept credit cards — be sure to bring enough yen in cash, especially since small clinics and night emergency care often can't process card payments.",
+          "zh-TW": "診所通常只收現金，醫院通常支援信用卡，請提前準備好足夠的日圓現金，尤其是小型診所和夜間急診常常無法刷卡。",
+          "vi": "Phòng khám thường chỉ nhận tiền mặt, bệnh viện thường hỗ trợ thẻ tín dụng, hãy chuẩn bị đủ tiền mặt yên Nhật trước, đặc biệt là các phòng khám nhỏ và cấp cứu ban đêm thường không thể quẹt thẻ.",
+          "ko": "클리닉은 보통 현금만 받고 병원은 대개 신용카드가 가능합니다. 특히 소규모 클리닉이나 야간 응급실은 카드 결제가 안 되는 경우가 많으니 충분한 엔화 현금을 미리 준비하세요.",
+          "note": null,
+          "ja": "クリニックは現金のみの対応が多く、病院ではクレジットカードが使えることが一般的です。特に小規模なクリニックや夜間救急ではカード決済ができないことが多いため、事前に日本円の現金を十分に用意しておいてください。"
+        },
+        {
+          "id": "pay-002",
+          "type": "phrase",
+          "jp": "領収書をください。",
+          "furigana": "りょうしゅうしょをください。",
+          "zh": "请给我收据。",
+          "en": "Could I get a receipt, please?",
+          "zh-TW": "請給我收據。",
+          "vi": "Xin hãy cho tôi hóa đơn.",
+          "ko": "영수증 주세요.",
+          "note": "结算后一定要保留收据，是日后向国保/社保申请差额返还、或购买了旅行保险的短期访客回国理赔的唯一凭证",
+          "ja": "領収書をください。",
+          "note_en": "Always keep your receipt after paying — it's the only proof you'll need later when applying for a reimbursement of the difference through Kokuho (National Health Insurance) or Shaho (Employees' Health Insurance), or when short-term visitors with travel insurance file a claim after returning home.",
+          "note_zh-TW": "結帳後一定要保留收據，是日後向國保／社保申請差額返還、或購買了旅遊保險的短期訪客回國理賠的唯一憑證。",
+          "note_vi": "Sau khi thanh toán nhất định phải giữ lại hóa đơn, đây là chứng từ duy nhất để sau này xin hoàn trả chênh lệch từ Kokuho/Shaho (bảo hiểm quốc dân/bảo hiểm xã hội), hoặc để khách thăm ngắn hạn có mua bảo hiểm du lịch yêu cầu bồi thường khi về nước.",
+          "note_ko": "수납 후에는 반드시 영수증을 보관하세요. 이는 나중에 국보(国保, 국민건강보험)/사보(社保, 사회보험)에 차액 환급을 신청하거나, 여행자보험에 가입한 단기 방문자가 귀국 후 보험금을 청구할 때 유일한 증빙 자료가 됩니다.",
+          "note_ja": "会計後は必ず領収書を保管してください。これは後日、国保（国民健康保険）・社保（社会保険）へ差額の払い戻しを申請する際、または旅行保険に加入している短期訪問者が帰国後に保険金を請求する際の唯一の証拠書類になります。"
+        }
+      ],
+      "title_zh-TW": "結帳",
+      "title_vi": "Thanh toán",
+      "title_ko": "수납하기",
+      "title_ja": "会計"
+    },
+    {
+      "id": "step2",
+      "title": "去药局取药",
+      "title_en": "Picking up medication at the pharmacy",
+      "items": [
+        {
+          "id": "pay-003",
+          "type": "instruction",
+          "zh": "日本实行\"医药分离\"——医院通常不直接给药，你需要拿着处方笺，到医院附近挂着「処方せん受付」或「調剤薬局」招牌的药局取药，药费和医院费用分开结算，请准备充足现金。",
+          "en": "Japan operates under a system of \"separating prescribing from dispensing\" (医薬分業) — hospitals generally don't hand you medication directly. You'll need to take your prescription (処方せん) to a pharmacy near the hospital displaying a sign for \"処方せん受付\" (prescriptions accepted) or \"調剤薬局\" (dispensing pharmacy). Medication costs are billed separately from hospital fees, so make sure you have enough cash.",
+          "zh-TW": "日本實行「醫藥分業」——醫院通常不直接給藥，你需要拿著處方箋，到醫院附近掛著「処方せん受付」或「調剤薬局」招牌的藥局取藥，藥費和醫院費用分開結算，請準備充足現金。",
+          "vi": "Nhật Bản áp dụng chế độ \"tách biệt thuốc và khám bệnh\" (医薬分業) — bệnh viện thường không phát thuốc trực tiếp, bạn cần cầm đơn thuốc (処方せん) đến nhà thuốc gần bệnh viện có biển hiệu \"処方せん受付\" (nhận đơn thuốc) hoặc \"調剤薬局\" (nhà thuốc điều chế) để lấy thuốc. Tiền thuốc và tiền viện phí thanh toán riêng, hãy chuẩn bị đủ tiền mặt.",
+          "ko": "일본은 「의약분업(医薬分業)」 제도를 시행합니다 — 병원에서 보통 약을 바로 주지 않으므로, 처방전(処方せん)을 들고 병원 근처의「処方せん受付(처방전 접수)」또는「調剤薬局(조제약국)」간판이 걸린 약국으로 가서 약을 받아야 합니다. 약값과 진료비는 별도로 계산되니 현금을 충분히 준비하세요.",
+          "note": "处方笺标准有效期为交付日起4天内，但医生可另行注明更长有效期，如有疑问请当场向医生或药局确认",
+          "ja": "日本では「医薬分業」が行われています——病院で直接薬を渡されることは基本的にないため、処方せんを持って病院の近くにある「処方せん受付」または「調剤薬局」の看板が出ている薬局へ行き、薬を受け取る必要があります。薬代と診療費は別会計になるため、現金を十分に用意しておいてください。",
+          "note_en": "The standard validity period of a prescription is 4 days from the date it's issued, but a doctor may note a longer validity period on it — if you're unsure, check with the doctor or pharmacy on the spot.",
+          "note_zh-TW": "處方箋標準有效期為交付日起4天內，但醫生可另行註明更長有效期，如有疑問請當場向醫生或藥局確認。",
+          "note_vi": "Thời hạn hiệu lực tiêu chuẩn của đơn thuốc là 4 ngày kể từ ngày cấp, nhưng bác sĩ có thể ghi chú thời hạn dài hơn, nếu có thắc mắc hãy xác nhận ngay với bác sĩ hoặc nhà thuốc.",
+          "note_ko": "처방전의 기본 유효기간은 발행일로부터 4일 이내이지만, 의사가 별도로 더 긴 유효기간을 명시할 수 있습니다. 궁금한 점이 있으면 그 자리에서 의사나 약국에 확인하세요.",
+          "note_ja": "処方せんの標準的な有効期間は交付日から4日以内ですが、医師が別途より長い有効期間を記載することもあります。疑問があればその場で医師や薬局に確認してください。"
+        },
+        {
+          "id": "pay-004",
+          "type": "phrase",
+          "jp": "処方箋をお願いします。",
+          "furigana": "しょほうせんをおねがいします。",
+          "zh": "麻烦帮我配这张处方笺的药。",
+          "en": "Could you fill this prescription for me, please?",
+          "zh-TW": "麻煩幫我配這張處方箋的藥。",
+          "vi": "Phiền bạn bốc thuốc theo đơn thuốc này giúp tôi.",
+          "ko": "이 처방전대로 약을 조제해 주세요.",
+          "note": null,
+          "ja": "この処方せんの薬をお願いします。"
+        }
+      ],
+      "title_zh-TW": "去藥局取藥",
+      "title_vi": "Đến nhà thuốc lấy thuốc",
+      "title_ko": "약국에서 약 받기",
+      "title_ja": "薬局で薬を受け取る"
+    }
+  ],
+  "description_en": "Japan separates prescribing from dispensing — here's a clear rundown of how to pay and where to pick up your medication.",
+  "description_zh-TW": "日本實行醫藥分業制度，怎麼結帳、去哪裡拿藥，一次說清楚。",
+  "description_vi": "Nhật Bản áp dụng chế độ tách biệt thuốc và khám bệnh, cách thanh toán, đi đâu lấy thuốc — giải thích rõ một lần.",
+  "description_ko": "일본은 의약분업 제도를 시행합니다. 어떻게 계산하고 어디서 약을 받는지 한 번에 정리했습니다.",
+  "description_ja": "日本では医薬分業制度が行われています。会計の仕方や薬の受け取り方について、まとめて説明します。"
+}

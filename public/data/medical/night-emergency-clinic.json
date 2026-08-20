@@ -1,0 +1,73 @@
+{
+  "id": "night-emergency-clinic",
+  "title": "夜间/非工作时间就医",
+  "title_en": "Night & Holiday Care",
+  "title_zh-TW": "夜間/非工作時間就醫",
+  "title_vi": "Khám bệnh ban đêm/ngoài giờ",
+  "title_ko": "야간·휴일 진료",
+  "title_ja": "夜間・休日の受診",
+  "description": "诊所都休息了怎么办，找夜间急诊的方法。",
+  "sections": [
+    {
+      "id": "step1",
+      "title": "找夜间急诊",
+      "title_en": "Finding night emergency care",
+      "items": [
+        {
+          "id": "night-001",
+          "type": "instruction",
+          "zh": "多数诊所夜间和节假日休诊。如果情况没有严重到需要叫救护车：①搜索\"所在城市+夜间急患中心\"或\"所在城市+当番医\"；②电话确认是否接诊；③按指引前往。",
+          "en": "Most clinics are closed at night and on holidays. If the situation isn't severe enough to call an ambulance: (1) search \"[your city] + 夜間急患センター (night emergency center)\" or \"[your city] + 当番医 (on-duty doctor)\"; (2) call to confirm they can see you; (3) follow the directions given.",
+          "zh-TW": "多數診所夜間和節假日休診。如果情況沒有嚴重到需要叫救護車：①搜尋「所在城市＋夜間急患中心」或「所在城市＋當番醫」；②電話確認是否接診；③按指引前往。",
+          "vi": "Hầu hết các phòng khám nghỉ vào ban đêm và ngày lễ. Nếu tình huống chưa nghiêm trọng đến mức cần gọi xe cứu thương: ① Tìm kiếm \"tên thành phố bạn đang ở + 夜間急患センター (trung tâm cấp cứu ban đêm)\" hoặc \"tên thành phố + 当番医 (bác sĩ trực)\"; ② Gọi điện xác nhận có thể khám không; ③ Đi theo hướng dẫn.",
+          "ko": "대부분의 클리닉은 야간과 공휴일에는 휴진합니다. 구급차를 부를 정도로 심각하지 않다면: ①「거주 도시 + 夜間急患センター(야간 급환 센터)」또는「거주 도시 + 当番医(당번의)」로 검색; ②전화로 진료 가능 여부 확인; ③안내에 따라 이동.",
+          "note": "常住居民建议平时就留意所在市区町村官网的\"夜间・休日急患情报\"页面，或提前把附近的夜间急诊机构存进手机收藏夹，真正需要时不用现找",
+          "ja": "多くのクリニックは夜間・休日は休診です。救急車を呼ぶほどではない場合：①「お住まいの市区町村＋夜間急患センター」または「お住まいの市区町村＋当番医」で検索する。②電話で診察可能か確認する。③案内に従って向かう。",
+          "note_en": "Long-term residents should get in the habit of checking their municipality's official website page for \"night/holiday emergency care information\" (夜間・休日急患情報), or save nearby night emergency facilities to their phone's bookmarks in advance, so they don't have to search when it's actually needed.",
+          "note_zh-TW": "常住居民建議平時就留意所在市區町村官網的「夜間・休日急患情報」頁面，或提前把附近的夜間急診機構存進手機收藏夾，真正需要時不用現找。",
+          "note_vi": "Người sinh sống lâu dài nên chú ý trước trang \"夜間・休日急患情報\" (thông tin cấp cứu ban đêm/ngày lễ) trên trang web chính thức của thành phố/quận/thị trấn nơi mình sinh sống, hoặc lưu trước các cơ sở cấp cứu ban đêm gần đó vào mục yêu thích trên điện thoại, để khi thực sự cần thì không phải tìm kiếm gấp gáp.",
+          "note_ko": "장기 거주자는 평소에 거주하는 시·구·정·촌 공식 홈페이지의 「夜間・休日急患情報(야간·휴일 급환 정보)」 페이지를 확인해 두거나, 근처 야간 응급 기관을 미리 휴대폰 즐겨찾기에 저장해 두면 실제로 필요할 때 급하게 찾을 필요가 없습니다.",
+          "note_ja": "常住している方は、普段からお住まいの市区町村公式サイトの「夜間・休日急患情報」ページをチェックしておいたり、近くの夜間救急機関を事前にスマホのブックマークに保存しておくと、いざというときに慌てて探さずに済みます。"
+        },
+        {
+          "id": "night-002",
+          "type": "phrase",
+          "jp": "今すぐ診てもらえますか？",
+          "furigana": "いますぐみてもらえますか？",
+          "zh": "现在可以看诊吗？",
+          "en": "Can you see me right now?",
+          "zh-TW": "現在可以看診嗎？",
+          "vi": "Bây giờ có thể khám được không?",
+          "ko": "지금 진료 가능한가요?",
+          "note": "电话确认是否接诊时可以直接问这句",
+          "ja": "今、診てもらえますか。",
+          "note_en": "You can ask this directly when calling to confirm whether they can see you.",
+          "note_zh-TW": "電話確認是否接診時可以直接問這句。",
+          "note_vi": "Khi gọi điện xác nhận có thể khám hay không, bạn có thể hỏi thẳng câu này.",
+          "note_ko": "전화로 진료 가능 여부를 확인할 때 바로 이렇게 물어보면 됩니다.",
+          "note_ja": "電話で診察可能か確認する際、そのままこのフレーズで聞いて構いません。"
+        },
+        {
+          "id": "night-003",
+          "type": "instruction",
+          "zh": "如果暂住酒店（比如临时来访的家人朋友），酒店前台常备「休日・夜間急患マップ」（夜间急诊地图），也是很精准的指引资源，可以直接求助。",
+          "en": "If you're staying at a hotel (for example, if you're a visiting family member or friend), the hotel front desk usually keeps a \"holiday/night emergency map\" (休日・夜間急患マップ) on hand — this is also a very reliable source of guidance, and you can ask them directly for help.",
+          "zh-TW": "如果暫住酒店（比如臨時來訪的家人朋友），飯店櫃檯常備「休日・夜間急患マップ」（夜間急診地圖），也是很精準的指引資源，可以直接求助。",
+          "vi": "Nếu bạn đang tạm trú tại khách sạn (ví dụ như người thân bạn bè đến thăm tạm thời), quầy lễ tân khách sạn thường có sẵn \"休日・夜間急患マップ\" (bản đồ cấp cứu ban đêm), đây cũng là nguồn hướng dẫn rất chính xác, bạn có thể trực tiếp nhờ giúp đỡ.",
+          "ko": "호텔에 머무르고 있다면(예를 들어 잠시 방문 온 가족이나 친구인 경우), 호텔 프런트에는 보통 「休日・夜間急患マップ(휴일·야간 급환 지도)」가 비치되어 있습니다. 이 역시 매우 정확한 안내 자료이니 직접 도움을 요청하면 됩니다.",
+          "note": null,
+          "ja": "ホテルに滞在している場合（一時的に訪ねてきた家族や友人など）、ホテルのフロントには「休日・夜間急患マップ」が用意されていることが多く、非常に正確な案内資料になります。直接フロントに相談してみてください。"
+        }
+      ],
+      "title_zh-TW": "找夜間急診",
+      "title_vi": "Tìm phòng cấp cứu ban đêm",
+      "title_ko": "야간 응급실 찾기",
+      "title_ja": "夜間救急を探す"
+    }
+  ],
+  "description_en": "What to do when all the clinics are closed — how to find night emergency care.",
+  "description_zh-TW": "診所都休息了怎麼辦，找夜間急診的方法。",
+  "description_vi": "Khi các phòng khám đều đã đóng cửa thì làm sao, cách tìm phòng cấp cứu ban đêm.",
+  "description_ko": "병원이 다 문을 닫았을 때 어떻게 하나, 야간 응급 진료를 찾는 방법.",
+  "description_ja": "クリニックがすべて休診のときはどうするか、夜間救急を探す方法。"
+}
