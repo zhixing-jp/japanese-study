@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "パスポートをお願いします。",
-      "furigana": "ぱすぽーとをおねがいします。",
       "zh": "请出示护照。",
       "scene": "入境审查",
       "id": "s01-001",
@@ -16,11 +15,26 @@
       "en": "Please show me your passport.",
       "zh-TW": "請出示護照。",
       "vi": "Xin cho xem hộ chiếu.",
-      "ko": "여권을 보여주세요."
+      "ko": "여권을 보여주세요.",
+      "ruby": [
+        {
+          "text": "パスポートをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスポートをおねがいします。"
     },
     {
       "jp": "両手の人差し指を置いてください。",
-      "furigana": "りょうてのひとさしゆびをおいてください。",
       "zh": "请放上双手食指（采集指纹）。",
       "scene": "入境审查",
       "id": "s01-002",
@@ -29,11 +43,49 @@
       "en": "Please place both index fingers here.",
       "zh-TW": "請放上兩手食指（採集指紋）。",
       "vi": "Vui lòng đặt hai ngón trỏ lên đây.",
-      "ko": "양손 검지를 올려주세요."
+      "ko": "양손 검지를 올려주세요.",
+      "ruby": [
+        {
+          "text": "両手",
+          "isKanji": true,
+          "reading": "りょうて"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "人差",
+          "isKanji": true,
+          "reading": "ひとさ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "指",
+          "isKanji": true,
+          "reading": "ゆび"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "いてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうてのひとさしゆびをおいてください。"
     },
     {
       "jp": "カメラを見てください。",
-      "furigana": "かめらをみてください。",
       "zh": "请看镜头（拍照）。",
       "scene": "入境审查",
       "id": "s01-003",
@@ -42,11 +94,26 @@
       "en": "Please look at the camera.",
       "zh-TW": "請看鏡頭。",
       "vi": "Nhìn vào camera nhé.",
-      "ko": "카메라를 봐주세요."
+      "ko": "카메라를 봐주세요.",
+      "ruby": [
+        {
+          "text": "カメラを",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "てください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カメラをみてください。"
     },
     {
       "jp": "今回の来日の目的は何ですか。",
-      "furigana": "こんかいのらいにちのもくてきはなにですか。",
       "zh": "这次来日本的目的是什么？",
       "scene": "入境审查",
       "id": "s01-004",
@@ -55,11 +122,49 @@
       "en": "What is the purpose of your visit to Japan?",
       "zh-TW": "這次來日本的目的是什麼？",
       "vi": "Mục đích chuyến thăm Nhật Bản lần này của bạn là gì?",
-      "ko": "이번 일본 방문 목적은 무엇인가요?"
+      "ko": "이번 일본 방문 목적은 무엇인가요?",
+      "ruby": [
+        {
+          "text": "今回",
+          "isKanji": true,
+          "reading": "こんかい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "来日",
+          "isKanji": true,
+          "reading": "らいにち"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "目的",
+          "isKanji": true,
+          "reading": "もくてき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんかいのらいにちのもくてきはなにですか。"
     },
     {
       "jp": "観光です。",
-      "furigana": "かんこうです。",
       "zh": "来旅游的。",
       "scene": "入境审查",
       "id": "s01-005",
@@ -68,11 +173,22 @@
       "en": "I'm here for sightseeing.",
       "zh-TW": "我是來觀光的。",
       "vi": "Tôi đến để du lịch.",
-      "ko": "관광하러 왔습니다."
+      "ko": "관광하러 왔습니다.",
+      "ruby": [
+        {
+          "text": "観光",
+          "isKanji": true,
+          "reading": "かんこう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かんこうです。"
     },
     {
       "jp": "仕事です。",
-      "furigana": "しごとです。",
       "zh": "来工作的。",
       "scene": "入境审查",
       "id": "s01-006",
@@ -81,11 +197,22 @@
       "en": "I'm here for work.",
       "zh-TW": "我是來工作的。",
       "vi": "Tôi đến để làm việc.",
-      "ko": "일하러 왔습니다."
+      "ko": "일하러 왔습니다.",
+      "ruby": [
+        {
+          "text": "仕事",
+          "isKanji": true,
+          "reading": "しごと"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しごとです。"
     },
     {
       "jp": "留学です。",
-      "furigana": "りゅうがくです。",
       "zh": "来留学的。",
       "scene": "入境审查",
       "id": "s01-007",
@@ -94,11 +221,22 @@
       "en": "I'm here to study.",
       "zh-TW": "我是來留學的。",
       "vi": "Tôi đến để du học.",
-      "ko": "유학하러 왔습니다."
+      "ko": "유학하러 왔습니다.",
+      "ruby": [
+        {
+          "text": "留学",
+          "isKanji": true,
+          "reading": "りゅうがく"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りゅうがくです。"
     },
     {
       "jp": "家族に会いに来ました。",
-      "furigana": "かぞくにあいにきました。",
       "zh": "来探亲的。",
       "scene": "入境审查",
       "id": "s01-008",
@@ -107,11 +245,40 @@
       "en": "I'm here to visit family.",
       "zh-TW": "我是來探親的。",
       "vi": "Tôi đến thăm gia đình.",
-      "ko": "가족을 만나러 왔습니다."
+      "ko": "가족을 만나러 왔습니다.",
+      "ruby": [
+        {
+          "text": "家族",
+          "isKanji": true,
+          "reading": "かぞく"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "会",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いに",
+          "isKanji": false
+        },
+        {
+          "text": "来",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "ました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぞくにあいにきました。"
     },
     {
       "jp": "知人に会いに来ました。",
-      "furigana": "ちじんにあいにきました。",
       "zh": "来见朋友的。",
       "scene": "入境审查",
       "id": "s01-009",
@@ -120,11 +287,40 @@
       "en": "I'm here to see a friend.",
       "zh-TW": "我是來見朋友的。",
       "vi": "Tôi đến gặp bạn bè.",
-      "ko": "친구를 만나러 왔습니다."
+      "ko": "친구를 만나러 왔습니다.",
+      "ruby": [
+        {
+          "text": "知人",
+          "isKanji": true,
+          "reading": "ちじん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "会",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いに",
+          "isKanji": false
+        },
+        {
+          "text": "来",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "ました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちじんにあいにきました。"
     },
     {
       "jp": "どのくらい滞在しますか。",
-      "furigana": "どのくらいたいざいしますか。",
       "zh": "要停留多久？",
       "scene": "入境审查",
       "id": "s01-010",
@@ -133,11 +329,26 @@
       "en": "How long will you be staying?",
       "zh-TW": "您打算停留多久？",
       "vi": "Bạn sẽ lưu lại bao lâu?",
-      "ko": "얼마나 체류하실 예정인가요?"
+      "ko": "얼마나 체류하실 예정인가요?",
+      "ruby": [
+        {
+          "text": "どのくらい",
+          "isKanji": false
+        },
+        {
+          "text": "滞在",
+          "isKanji": true,
+          "reading": "たいざい"
+        },
+        {
+          "text": "しますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どのくらいたいざいしますか。"
     },
     {
       "jp": "五日間です。",
-      "furigana": "ごにちかんです。",
       "zh": "5天。",
       "scene": "入境审查",
       "id": "s01-011",
@@ -146,11 +357,27 @@
       "en": "Five days.",
       "zh-TW": "5天。",
       "vi": "5 ngày.",
-      "ko": "5일입니다."
+      "ko": "5일입니다.",
+      "ruby": [
+        {
+          "text": "五",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "日間",
+          "isKanji": true,
+          "reading": "にちかん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごにちかんです。"
     },
     {
       "jp": "一週間です。",
-      "furigana": "いちしゅうかんです。",
       "zh": "一周。",
       "scene": "入境审查",
       "id": "s01-012",
@@ -159,11 +386,27 @@
       "en": "One week.",
       "zh-TW": "一個星期。",
       "vi": "Một tuần.",
-      "ko": "일주일입니다."
+      "ko": "일주일입니다.",
+      "ruby": [
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "週間",
+          "isKanji": true,
+          "reading": "しゅうかん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いちしゅうかんです。"
     },
     {
       "jp": "どこに泊まりますか。",
-      "furigana": "どこにとまりますか。",
       "zh": "住在哪里？",
       "scene": "入境审查",
       "id": "s01-013",
@@ -172,11 +415,26 @@
       "en": "Where will you be staying?",
       "zh-TW": "您住在哪裡？",
       "vi": "Bạn sẽ ở đâu?",
-      "ko": "어디에서 묵으실 예정인가요?"
+      "ko": "어디에서 묵으실 예정인가요?",
+      "ruby": [
+        {
+          "text": "どこに",
+          "isKanji": false
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どこにとまりますか。"
     },
     {
       "jp": "ここに泊まります。",
-      "furigana": "ここにとまります。",
       "zh": "我住在这里。（出示手机预订单）",
       "scene": "入境审查",
       "id": "s01-014",
@@ -185,11 +443,26 @@
       "en": "I'll be staying here. (showing phone booking)",
       "zh-TW": "我住這裡。（出示手機預訂單）",
       "vi": "Tôi ở đây. (Cho xem điện thoại)",
-      "ko": "여기 묵을 예정입니다. (스마트폰 예약 화면 제시)"
+      "ko": "여기 묵을 예정입니다. (스마트폰 예약 화면 제시)",
+      "ruby": [
+        {
+          "text": "ここに",
+          "isKanji": false
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここにとまります。"
     },
     {
       "jp": "帰りの航空券を見せてください。",
-      "furigana": "かえりのこうくうけんをみせてください。",
       "zh": "请出示回程机票。",
       "scene": "入境审查",
       "id": "s01-015",
@@ -198,11 +471,45 @@
       "en": "Please show me your return ticket.",
       "zh-TW": "請出示回程機票。",
       "vi": "Vui lòng cho xem vé về.",
-      "ko": "귀국 항공권을 보여주세요."
+      "ko": "귀국 항공권을 보여주세요.",
+      "ruby": [
+        {
+          "text": "帰",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "りの",
+          "isKanji": false
+        },
+        {
+          "text": "航空",
+          "isKanji": true,
+          "reading": "こうくう"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かえりのこうくうけんをみせてください。"
     },
     {
       "jp": "はい、これです。",
-      "furigana": "はい、これです。",
       "zh": "有的，就是这个。（出示电子机票）",
       "scene": "入境审查",
       "id": "s01-016",
@@ -211,11 +518,17 @@
       "en": "Yes, here it is. (showing e-ticket)",
       "zh-TW": "有的，就是這個。（出示電子機票）",
       "vi": "Đây ạ. (Cho xem vé điện tử)",
-      "ko": "네, 여기 있습니다. (전자 티켓 제시)"
+      "ko": "네, 여기 있습니다. (전자 티켓 제시)",
+      "ruby": [
+        {
+          "text": "はい、これです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、これです。"
     },
     {
       "jp": "荷物が見つかりません。",
-      "furigana": "にもつがみつかりません。",
       "zh": "找不到我的行李。",
       "scene": "行李提取",
       "id": "s01-017",
@@ -224,11 +537,31 @@
       "en": "I can't find my luggage.",
       "zh-TW": "我找不到行李。",
       "vi": "Tôi không tìm thấy hành lý của mình.",
-      "ko": "제 짐을 찾을 수가 없어요."
+      "ko": "제 짐을 찾을 수가 없어요.",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "つかりません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつがみつかりません。"
     },
     {
       "jp": "荷物が壊れていました。",
-      "furigana": "にもつがこわれていました。",
       "zh": "行李破损了。",
       "scene": "行李提取",
       "id": "s01-018",
@@ -237,11 +570,31 @@
       "en": "My luggage is damaged.",
       "zh-TW": "我的行李破損了。",
       "vi": "Hành lý của tôi bị hỏng rồi.",
-      "ko": "짐이 파손됐어요."
+      "ko": "짐이 파손됐어요.",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "壊",
+          "isKanji": true,
+          "reading": "こわ"
+        },
+        {
+          "text": "れていました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつがこわれていました。"
     },
     {
       "jp": "これが荷物の控えです。",
-      "furigana": "これがにもつのひかえです。",
       "zh": "这是行李托运单。",
       "scene": "行李提取",
       "id": "s01-019",
@@ -250,11 +603,35 @@
       "en": "This is my baggage claim tag.",
       "zh-TW": "這是行李托運單。",
       "vi": "Đây là thẻ hành lý của tôi.",
-      "ko": "이것이 수하물 영수증입니다."
+      "ko": "이것이 수하물 영수증입니다.",
+      "ruby": [
+        {
+          "text": "これが",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "控",
+          "isKanji": true,
+          "reading": "ひか"
+        },
+        {
+          "text": "えです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "これがにもつのひかえです。"
     },
     {
       "jp": "どこに届けてもらえますか。",
-      "furigana": "どこにとどけてもらえますか。",
       "zh": "可以送到哪里？",
       "scene": "行李提取",
       "id": "s01-020",
@@ -263,11 +640,26 @@
       "en": "Where can it be delivered?",
       "zh-TW": "可以送到哪裡？",
       "vi": "Có thể giao đến đâu vậy?",
-      "ko": "어디로 배달해 주실 수 있나요?"
+      "ko": "어디로 배달해 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "どこに",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "けてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どこにとどけてもらえますか。"
     },
     {
       "jp": "申告書はありますか。",
-      "furigana": "しんこくしょはありますか。",
       "zh": "有带申报单吗？",
       "scene": "海关申报",
       "id": "s01-021",
@@ -276,11 +668,27 @@
       "en": "Do you have your customs declaration form?",
       "zh-TW": "您有帶申報單嗎？",
       "vi": "Bạn có mang tờ khai hải quan không?",
-      "ko": "신고서를 가지고 계신가요?"
+      "ko": "신고서를 가지고 계신가요?",
+      "ruby": [
+        {
+          "text": "申告",
+          "isKanji": true,
+          "reading": "しんこく"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんこくしょはありますか。"
     },
     {
       "jp": "はい、これです。",
-      "furigana": "はい、これです。",
       "zh": "有的，就是这个。（出示二维码或纸质单）",
       "scene": "海关申报",
       "id": "s01-022",
@@ -289,11 +697,17 @@
       "en": "Yes, here it is. (showing QR code or paper form)",
       "zh-TW": "有的，就是這個。（出示二維碼或紙質單）",
       "vi": "Có, đây ạ. (Cho xem mã QR hoặc tờ giấy)",
-      "ko": "네, 여기 있습니다. (QR코드 또는 종이 제시)"
+      "ko": "네, 여기 있습니다. (QR코드 또는 종이 제시)",
+      "ruby": [
+        {
+          "text": "はい、これです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、これです。"
     },
     {
       "jp": "申告するものはありません。",
-      "furigana": "しんこくするものはありません。",
       "zh": "没有需要申报的。",
       "scene": "海关申报",
       "id": "s01-023",
@@ -302,11 +716,22 @@
       "en": "I have nothing to declare.",
       "zh-TW": "我沒有需要申報的東西。",
       "vi": "Tôi không có gì để khai báo.",
-      "ko": "신고할 것이 없습니다."
+      "ko": "신고할 것이 없습니다.",
+      "ruby": [
+        {
+          "text": "申告",
+          "isKanji": true,
+          "reading": "しんこく"
+        },
+        {
+          "text": "するものはありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんこくするものはありません。"
     },
     {
       "jp": "肉製品や果物は持っていますか。",
-      "furigana": "にくせいひんやくだものはもっていますか。",
       "zh": "有带肉制品或水果吗？",
       "scene": "海关申报",
       "id": "s01-024",
@@ -315,11 +740,45 @@
       "en": "Do you have any meat products or fruits?",
       "zh-TW": "您有帶肉製品或水果嗎？",
       "vi": "Bạn có mang theo thịt hoặc trái cây không?",
-      "ko": "육류나 과일을 가지고 계신가요?"
+      "ko": "육류나 과일을 가지고 계신가요?",
+      "ruby": [
+        {
+          "text": "肉",
+          "isKanji": true,
+          "reading": "にく"
+        },
+        {
+          "text": "製品",
+          "isKanji": true,
+          "reading": "せいひん"
+        },
+        {
+          "text": "や",
+          "isKanji": false
+        },
+        {
+          "text": "果物",
+          "isKanji": true,
+          "reading": "くだもの"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "っていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にくせいひんやくだものはもっていますか。"
     },
     {
       "jp": "いいえ、持っていません。",
-      "furigana": "いいえ、もっていません。",
       "zh": "没有带。",
       "scene": "海关申报",
       "id": "s01-025",
@@ -328,11 +787,26 @@
       "en": "No, I don't.",
       "zh-TW": "沒有帶。",
       "vi": "Không, tôi không có.",
-      "ko": "아니요, 없습니다."
+      "ko": "아니요, 없습니다.",
+      "ruby": [
+        {
+          "text": "いいえ、",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "っていません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、もっていません。"
     },
     {
       "jp": "お土産です。",
-      "furigana": "おみやげです。",
       "zh": "是伴手礼。",
       "scene": "海关申报",
       "id": "s01-026",
@@ -341,11 +815,26 @@
       "en": "They're souvenirs.",
       "zh-TW": "是伴手禮。",
       "vi": "Đây là quà lưu niệm.",
-      "ko": "선물입니다."
+      "ko": "선물입니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "土産",
+          "isKanji": true,
+          "reading": "みやげ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おみやげです。"
     },
     {
       "jp": "服だけです。",
-      "furigana": "ふくだけです。",
       "zh": "只有衣服。",
       "scene": "海关申报",
       "id": "s01-027",
@@ -354,11 +843,22 @@
       "en": "Just clothes.",
       "zh-TW": "只有衣服。",
       "vi": "Chỉ có quần áo thôi.",
-      "ko": "옷만 있습니다."
+      "ko": "옷만 있습니다.",
+      "ruby": [
+        {
+          "text": "服",
+          "isKanji": true,
+          "reading": "ふく"
+        },
+        {
+          "text": "だけです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふくだけです。"
     },
     {
       "jp": "スーツケースを開けてください。",
-      "furigana": "すーつけーすをあけてください。",
       "zh": "请打开行李箱。",
       "scene": "海关申报",
       "id": "s01-028",
@@ -367,11 +867,26 @@
       "en": "Please open your suitcase.",
       "zh-TW": "請打開行李箱。",
       "vi": "Vui lòng mở vali ra.",
-      "ko": "수트케이스를 열어주세요."
+      "ko": "수트케이스를 열어주세요.",
+      "ruby": [
+        {
+          "text": "スーツケースを",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スーツケースをあけてください。"
     },
     {
       "jp": "はい、どうぞ。",
-      "furigana": "はい、どうぞ。",
       "zh": "好的，请便。",
       "scene": "海关申报",
       "id": "s01-029",
@@ -380,11 +895,17 @@
       "en": "Sure, go ahead.",
       "zh-TW": "好的，請便。",
       "vi": "Vâng, mời bạn.",
-      "ko": "네, 열겠습니다."
+      "ko": "네, 열겠습니다.",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。"
     },
     {
       "jp": "電車の駅はどこですか。",
-      "furigana": "でんしゃのえきはどこですか。",
       "zh": "电车站在哪里？",
       "scene": "寻找交通",
       "id": "s01-030",
@@ -393,11 +914,31 @@
       "en": "Where is the train station?",
       "zh-TW": "電車站在哪裡？",
       "vi": "Ga tàu điện ở đâu vậy?",
-      "ko": "전철역은 어디에 있나요?"
+      "ko": "전철역은 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしゃのえきはどこですか。"
     },
     {
       "jp": "バスの切符売り場はどこですか。",
-      "furigana": "ばすのきっぷうりばはどこですか。",
       "zh": "巴士售票处在哪里？",
       "scene": "寻找交通",
       "id": "s01-031",
@@ -406,11 +947,40 @@
       "en": "Where is the bus ticket counter?",
       "zh-TW": "巴士售票處在哪裡？",
       "vi": "Quầy bán vé xe buýt ở đâu?",
-      "ko": "버스 매표소는 어디에 있나요?"
+      "ko": "버스 매표소는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "バスの",
+          "isKanji": false
+        },
+        {
+          "text": "切符",
+          "isKanji": true,
+          "reading": "きっぷ"
+        },
+        {
+          "text": "売",
+          "isKanji": true,
+          "reading": "う"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "バスのきっぷうりばはどこですか。"
     },
     {
       "jp": "タクシー乗り場はどちらですか。",
-      "furigana": "たくしーのりばはどちらですか。",
       "zh": "出租车乘车点在哪里？",
       "scene": "寻找交通",
       "id": "s01-032",
@@ -419,11 +989,35 @@
       "en": "Where is the taxi stand?",
       "zh-TW": "計程車乘車點在哪裡？",
       "vi": "Bến taxi ở đâu?",
-      "ko": "택시 승강장은 어디에 있나요?"
+      "ko": "택시 승강장은 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "タクシー",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "はどちらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "タクシーのりばはどちらですか。"
     },
     {
       "jp": "コインロッカーはどこですか。",
-      "furigana": "こいんろっかーはどこですか。",
       "zh": "储物柜在哪里？",
       "scene": "寻找交通",
       "id": "s01-033",
@@ -432,11 +1026,17 @@
       "en": "Where are the coin lockers?",
       "zh-TW": "儲物櫃在哪裡？",
       "vi": "Tủ khóa ở đâu vậy?",
-      "ko": "코인 로커는 어디에 있나요?"
+      "ko": "코인 로커는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "コインロッカーはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "コインロッカーはどこですか。"
     },
     {
       "jp": "SIMカードはどこで買えますか。",
-      "furigana": "SIMかーどはどこでかえますか。",
       "zh": "哪里可以买SIM卡？",
       "scene": "寻找交通",
       "id": "s01-034",
@@ -445,11 +1045,26 @@
       "en": "Where can I buy a SIM card?",
       "zh-TW": "哪裡可以買SIM卡？",
       "vi": "Mua SIM card ở đâu vậy?",
-      "ko": "SIM 카드는 어디서 살 수 있나요?"
+      "ko": "SIM 카드는 어디서 살 수 있나요?",
+      "ruby": [
+        {
+          "text": "SIMカードはどこで",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "SIMカードはどこでかえますか。"
     },
     {
       "jp": "新宿駅まで大人一枚お願いします。",
-      "furigana": "しんじゅくえきまでおとないちまいおねがいします。",
       "zh": "请给我一张到新宿站的成人票。",
       "scene": "乘电车",
       "id": "s01-035",
@@ -458,11 +1073,55 @@
       "en": "One adult ticket to Shinjuku station, please.",
       "zh-TW": "請給我一張到新宿站的成人票。",
       "vi": "Cho tôi một vé người lớn đến ga Shinjuku.",
-      "ko": "신주쿠역까지 어른 한 장 주세요."
+      "ko": "신주쿠역까지 어른 한 장 주세요.",
+      "ruby": [
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "枚",
+          "isKanji": true,
+          "reading": "まい"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんじゅくえきまでおとないちまいおねがいします。"
     },
     {
       "jp": "特急券もお願いします。",
-      "furigana": "とっきゅうけんもおねがいします。",
       "zh": "特快列车券也麻烦来一张。",
       "scene": "乘电车",
       "id": "s01-036",
@@ -471,11 +1130,36 @@
       "en": "And a limited express ticket as well, please.",
       "zh-TW": "特快列車券也麻煩來一張。",
       "vi": "Cho tôi thêm một vé tàu tốc hành.",
-      "ko": "특급권도 한 장 부탁드립니다."
+      "ko": "특급권도 한 장 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "特急",
+          "isKanji": true,
+          "reading": "とっきゅう"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "もお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "とっきゅうけんもおねがいします。"
     },
     {
       "jp": "すみません、改札が開かないんですが。",
-      "furigana": "すみません、かいさつがひらかないんですが。",
       "zh": "不好意思，检票闸机打不开。（递上票卡）",
       "scene": "乘电车",
       "id": "s01-037",
@@ -484,11 +1168,35 @@
       "en": "Excuse me, the ticket gate won't open.",
       "zh-TW": "不好意思，閘機打不開。（遞上票卡）",
       "vi": "Xin lỗi, cổng soát vé không mở được.",
-      "ko": "저기요, 개찰구가 열리지 않는데요."
+      "ko": "저기요, 개찰구가 열리지 않는데요.",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "改札",
+          "isKanji": true,
+          "reading": "かいさつ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "ひら"
+        },
+        {
+          "text": "かないんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、かいさつがひらかないんですが。"
     },
     {
       "jp": "新宿行きを大人二枚お願いします。",
-      "furigana": "しんじゅくいきをおとなにまいおねがいします。",
       "zh": "请给我两张去新宿的成人票。",
       "scene": "乘大巴",
       "id": "s01-038",
@@ -497,11 +1205,55 @@
       "en": "Two adult tickets to Shinjuku, please.",
       "zh-TW": "請給我兩張去新宿的成人票。",
       "vi": "Cho tôi hai vé người lớn đi Shinjuku.",
-      "ko": "신주쿠행 어른 두 장 주세요."
+      "ko": "신주쿠행 어른 두 장 주세요.",
+      "ruby": [
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きを",
+          "isKanji": false
+        },
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "二",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "枚",
+          "isKanji": true,
+          "reading": "まい"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんじゅくいきをおとなにまいおねがいします。"
     },
     {
       "jp": "次のバスは何時ですか。",
-      "furigana": "つぎのばすはなんじですか。",
       "zh": "下一班车是几点？",
       "scene": "乘大巴",
       "id": "s01-039",
@@ -510,11 +1262,36 @@
       "en": "What time is the next bus?",
       "zh-TW": "下一班車是幾點？",
       "vi": "Chuyến xe buýt tiếp theo mấy giờ?",
-      "ko": "다음 버스는 몇 시예요?"
+      "ko": "다음 버스는 몇 시예요?",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "のバスは",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎのバスはなんじですか。"
     },
     {
       "jp": "どちらまでですか。",
-      "furigana": "どちらまでですか。",
       "zh": "您到哪里？",
       "scene": "乘大巴",
       "id": "s01-040",
@@ -523,11 +1300,17 @@
       "en": "Where are you headed?",
       "zh-TW": "您要去哪裡？",
       "vi": "Bạn đi đến đâu?",
-      "ko": "어디까지 가세요?"
+      "ko": "어디까지 가세요?",
+      "ruby": [
+        {
+          "text": "どちらまでですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どちらまでですか。"
     },
     {
       "jp": "お荷物はトランクに入れますか。",
-      "furigana": "おにもつはとらんくにいれますか。",
       "zh": "行李要放进行李舱吗？",
       "scene": "乘大巴",
       "id": "s01-041",
@@ -536,11 +1319,35 @@
       "en": "Would you like to put your luggage in the cargo hold?",
       "zh-TW": "行李要放進行李艙嗎？",
       "vi": "Bạn có muốn để hành lý vào khoang hàng không?",
-      "ko": "짐은 화물칸에 넣으시겠어요?"
+      "ko": "짐은 화물칸에 넣으시겠어요?",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "はトランクに",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おにもつはトランクにいれますか。"
     },
     {
       "jp": "新宿までです。お願いします。",
-      "furigana": "しんじゅくまでです。おねがいします。",
       "zh": "到新宿。麻烦了。",
       "scene": "乘大巴",
       "id": "s01-042",
@@ -549,11 +1356,31 @@
       "en": "To Shinjuku, please.",
       "zh-TW": "到新宿。麻煩了。",
       "vi": "Đến Shinjuku ạ. Cảm ơn.",
-      "ko": "신주쿠까지요. 부탁드립니다."
+      "ko": "신주쿠까지요. 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "までです。お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんじゅくまでです。おねがいします。"
     },
     {
       "jp": "いらっしゃいませ。どちらまでですか。",
-      "furigana": "いらっしゃいませ。どちらまでですか。",
       "zh": "欢迎乘车。请问去哪里？",
       "scene": "乘出租车",
       "id": "s01-043",
@@ -562,11 +1389,17 @@
       "en": "Welcome. Where would you like to go?",
       "zh-TW": "歡迎乘車。請問去哪裡？",
       "vi": "Xin chào. Bạn muốn đến đâu?",
-      "ko": "어서 오세요. 어디까지 가시나요?"
+      "ko": "어서 오세요. 어디까지 가시나요?",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。どちらまでですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。どちらまでですか。"
     },
     {
       "jp": "ここお願いします。",
-      "furigana": "ここおねがいします。",
       "zh": "请去这里。（出示手机地图）",
       "scene": "乘出租车",
       "id": "s01-044",
@@ -575,11 +1408,26 @@
       "en": "Here, please. (showing map on phone)",
       "zh-TW": "請去這裡。（出示手機地圖）",
       "vi": "Đến đây nhé. (Cho xem bản đồ)",
-      "ko": "여기로 가주세요. (지도 제시)"
+      "ko": "여기로 가주세요. (지도 제시)",
+      "ruby": [
+        {
+          "text": "ここお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここおねがいします。"
     },
     {
       "jp": "帝国ホテルまでお願いします。",
-      "furigana": "ていこくほてるまでおねがいします。",
       "zh": "请到帝国酒店。",
       "scene": "乘出租车",
       "id": "s01-045",
@@ -588,11 +1436,31 @@
       "en": "To the Imperial Hotel, please.",
       "zh-TW": "請到帝國酒店。",
       "vi": "Cho tôi đến khách sạn Imperial.",
-      "ko": "데이코쿠 호텔까지 부탁드립니다."
+      "ko": "데이코쿠 호텔까지 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "帝国",
+          "isKanji": true,
+          "reading": "ていこく"
+        },
+        {
+          "text": "ホテルまでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ていこくホテルまでおねがいします。"
     },
     {
       "jp": "カードでお願いします。",
-      "furigana": "かーどでおねがいします。",
       "zh": "请刷卡。",
       "scene": "乘出租车",
       "id": "s01-046",
@@ -601,11 +1469,26 @@
       "en": "By card, please.",
       "zh-TW": "請刷卡。",
       "vi": "Tôi trả bằng thẻ.",
-      "ko": "카드로 부탁드립니다."
+      "ko": "카드로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "カードでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードでおねがいします。"
     },
     {
       "jp": "現金で払います。",
-      "furigana": "げんきんではらいます。",
       "zh": "用现金付。",
       "scene": "乘出租车",
       "id": "s01-047",
@@ -614,11 +1497,31 @@
       "en": "I'll pay cash.",
       "zh-TW": "我用現金付。",
       "vi": "Tôi trả tiền mặt.",
-      "ko": "현금으로 내겠습니다."
+      "ko": "현금으로 내겠습니다.",
+      "ruby": [
+        {
+          "text": "現金",
+          "isKanji": true,
+          "reading": "げんきん"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "払",
+          "isKanji": true,
+          "reading": "はら"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんきんではらいます。"
     },
     {
       "jp": "領収書をいただけますか。",
-      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我一张收据。",
       "scene": "乘出租车",
       "id": "s01-048",
@@ -627,11 +1530,27 @@
       "en": "Could I have a receipt, please?",
       "zh-TW": "請給我一張收據。",
       "vi": "Cho tôi xin biên lai nhé.",
-      "ko": "영수증 부탁드립니다."
+      "ko": "영수증 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "領収",
+          "isKanji": true,
+          "reading": "りょうしゅう"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうしゅうしょをいただけますか。"
     },
     {
       "jp": "かしこまりました。こちらの用紙にご記入をお願いします。",
-      "furigana": "かしこまりました。こちらのようしにごきにゅうをおねがいします。",
       "zh": "好的，请填写这张单子。",
       "zh-TW": "好的，請填寫這張單子。",
       "en": "Certainly. Please fill out this form.",
@@ -640,11 +1559,44 @@
       "scene": "行李提取",
       "id": "s01-049",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "用紙",
+          "isKanji": true,
+          "reading": "ようし"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。こちらのようしにごきにゅうをおねがいします。"
     },
     {
       "jp": "申し訳ございません。写真を撮らせていただけますか。",
-      "furigana": "もうしわけございません。しゃしんをとらせていただけますか。",
       "zh": "非常抱歉，可以让我拍张照片吗？",
       "zh-TW": "非常抱歉，可以讓我拍張照片嗎？",
       "en": "I'm very sorry. May I take a photo of it?",
@@ -653,11 +1605,49 @@
       "scene": "行李提取",
       "id": "s01-050",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。",
+          "isKanji": false
+        },
+        {
+          "text": "写真",
+          "isKanji": true,
+          "reading": "しゃしん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "撮",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "らせていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません。しゃしんをとらせていただけますか。"
     },
     {
       "jp": "確認いたします。少々お待ちください。",
-      "furigana": "かくにんいたします。しょうしょうおまちください。",
       "zh": "我确认一下，请稍等。",
       "zh-TW": "我確認一下，請稍等。",
       "en": "Let me check. One moment, please.",
@@ -666,11 +1656,40 @@
       "scene": "行李提取",
       "id": "s01-051",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたします。しょうしょうおまちください。"
     },
     {
       "jp": "ご宿泊先の住所を教えてください。",
-      "furigana": "ごしゅくはくさきのじゅうしょをおしえてください。",
       "zh": "请告诉我您入住的地址。",
       "zh-TW": "請告訴我您入住的地址。",
       "en": "Could you tell me the address of where you're staying?",
@@ -679,11 +1698,49 @@
       "scene": "行李提取",
       "id": "s01-052",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "宿泊",
+          "isKanji": true,
+          "reading": "しゅくはく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごしゅくはくさきのじゅうしょをおしえてください。"
     },
     {
       "jp": "新宿駅まで、300円になります。",
-      "furigana": "しんじゅくえきまで、さんびゃくえんになります。",
       "zh": "到新宿站，是300日元。",
       "zh-TW": "到新宿站，是300日圓。",
       "en": "To Shinjuku station, that'll be 300 yen.",
@@ -692,11 +1749,36 @@
       "scene": "乘电车",
       "id": "s01-053",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "まで、300",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "になります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんじゅくえきまで、300えんになります。"
     },
     {
       "jp": "かしこまりました。合わせて800円です。",
-      "furigana": "かしこまりました。あわせてはっぴゃくえんです。",
       "zh": "好的，一共是800日元。",
       "zh-TW": "好的，一共是800日圓。",
       "en": "Certainly. That'll be 800 yen in total.",
@@ -705,11 +1787,35 @@
       "scene": "乘电车",
       "id": "s01-054",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせて800",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。あわせて800えんです。"
     },
     {
       "jp": "拝見します。あ、こちらの改札からどうぞ。",
-      "furigana": "はいけんします。あ、こちらのかいさつからどうぞ。",
       "zh": "我看一下。啊，请从这边的检票口通过。",
       "zh-TW": "我看一下。啊，請從這邊的閘機通過。",
       "en": "Let me take a look. Ah, please go through this gate instead.",
@@ -718,7 +1824,28 @@
       "scene": "乘电车",
       "id": "s01-055",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "拝見",
+          "isKanji": true,
+          "reading": "はいけん"
+        },
+        {
+          "text": "します。あ、こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "改札",
+          "isKanji": true,
+          "reading": "かいさつ"
+        },
+        {
+          "text": "からどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はいけんします。あ、こちらのかいさつからどうぞ。"
     }
   ],
   "subcategories": [
@@ -790,9 +1917,9 @@
   "title_zh-TW": "入境・機場",
   "title_vi": "Nhập cảnh · Sân bay",
   "title_ko": "입국 · 공항",
-  "description_ja": "日本に到着して空港で入国審査をする際のフレーズ。",
   "description_en": "Phrases for arriving in Japan and going through immigration at the airport.",
   "description_zh-TW": "剛到日本，在機場入境時用到的句子。",
   "description_vi": "Các câu dùng khi mới đến Nhật Bản và làm thủ tục nhập cảnh tại sân bay.",
-  "description_ko": "일본에 막 도착해서 공항에서 입국 심사를 받을 때 사용하는 표현."
+  "description_ko": "일본에 막 도착해서 공항에서 입국 심사를 받을 때 사용하는 표현.",
+  "description_ja": "日本に着いたばかりの時、空港での入国手続きに使えるフレーズです。"
 }

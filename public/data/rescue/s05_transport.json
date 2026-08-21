@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "ICカードを買いたいです。",
-      "furigana": "ICかーどをかいたいです。",
       "zh": "我想买IC卡。",
       "scene": "买票・充值",
       "id": "s05-001",
@@ -16,11 +15,26 @@
       "en": "I'd like to buy an IC card.",
       "zh-TW": "我想買IC卡。",
       "vi": "Tôi muốn mua thẻ IC.",
-      "ko": "IC카드를 사고 싶어요."
+      "ko": "IC카드를 사고 싶어요.",
+      "ruby": [
+        {
+          "text": "ICカードを",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "いたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ICカードをかいたいです。"
     },
     {
       "jp": "ICOCAに千円チャージしたいんですが。",
-      "furigana": "ICOCAにせんえんちゃーじしたいんですが。",
       "zh": "我想给ICOCA充值一千日元。",
       "scene": "买票・充值",
       "id": "s05-002",
@@ -29,11 +43,31 @@
       "en": "I'd like to add 1,000 yen to my ICOCA.",
       "zh-TW": "我想給ICOCA充值一千日元。",
       "vi": "Tôi muốn nạp 1.000 yên vào thẻ ICOCA.",
-      "ko": "ICOCA에 1,000엔 충전하고 싶어요."
+      "ko": "ICOCA에 1,000엔 충전하고 싶어요.",
+      "ruby": [
+        {
+          "text": "ICOCAに",
+          "isKanji": false
+        },
+        {
+          "text": "千",
+          "isKanji": true,
+          "reading": "せん"
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "チャージしたいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ICOCAにせんえんチャージしたいんですが。"
     },
     {
       "jp": "梅田駅まで大人一枚お願いします。",
-      "furigana": "うめだえきまでおとないちまいおねがいします。",
       "zh": "请给我一张到梅田站的成人票。",
       "scene": "买票・充值",
       "id": "s05-003",
@@ -42,11 +76,55 @@
       "en": "One adult ticket to Umeda Station, please.",
       "zh-TW": "請給我一張到梅田站的成人票。",
       "vi": "Cho tôi một vé người lớn đến ga Umeda.",
-      "ko": "우메다역까지 어른 한 장 주세요."
+      "ko": "우메다역까지 어른 한 장 주세요.",
+      "ruby": [
+        {
+          "text": "梅田",
+          "isKanji": true,
+          "reading": "うめだ"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "枚",
+          "isKanji": true,
+          "reading": "まい"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うめだえきまでおとないちまいおねがいします。"
     },
     {
       "jp": "定期券を買いたいです。",
-      "furigana": "ていきけんをかいたいです。",
       "zh": "我想买月票。",
       "scene": "买票・充値",
       "id": "s05-004",
@@ -55,11 +133,36 @@
       "en": "I'd like to buy a commuter pass.",
       "zh-TW": "我想買月票。",
       "vi": "Tôi muốn mua vé tháng.",
-      "ko": "정기권을 사고 싶어요."
+      "ko": "정기권을 사고 싶어요.",
+      "ruby": [
+        {
+          "text": "定期",
+          "isKanji": true,
+          "reading": "ていき"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "いたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ていきけんをかいたいです。"
     },
     {
       "jp": "残高が不足しています。",
-      "furigana": "ざんだかがふそくしています。",
       "zh": "余额不足。",
       "scene": "买票・充值",
       "id": "s05-005",
@@ -68,11 +171,31 @@
       "en": "Your balance is insufficient.",
       "zh-TW": "餘額不足。",
       "vi": "Số dư không đủ.",
-      "ko": "잔액이 부족합니다."
+      "ko": "잔액이 부족합니다.",
+      "ruby": [
+        {
+          "text": "残高",
+          "isKanji": true,
+          "reading": "ざんだか"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "不足",
+          "isKanji": true,
+          "reading": "ふそく"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざんだかがふそくしています。"
     },
     {
       "jp": "梅田駅に行きたいです。",
-      "furigana": "うめだえきにいきたいです。",
       "zh": "我想去梅田站。",
       "scene": "坐电车",
       "id": "s05-006",
@@ -81,11 +204,36 @@
       "en": "I'd like to go to Umeda Station.",
       "zh-TW": "我想去梅田站。",
       "vi": "Tôi muốn đến ga Umeda.",
-      "ko": "우메다역에 가고 싶어요."
+      "ko": "우메다역에 가고 싶어요.",
+      "ruby": [
+        {
+          "text": "梅田",
+          "isKanji": true,
+          "reading": "うめだ"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うめだえきにいきたいです。"
     },
     {
       "jp": "この電車は心斎橋駅に止まりますか。",
-      "furigana": "このでんしゃはしんさいばしえきにとまりますか。",
       "zh": "这趟电车停心斋桥站吗？",
       "scene": "坐电车",
       "id": "s05-007",
@@ -94,11 +242,49 @@
       "en": "Does this train stop at Shinsaibashi Station?",
       "zh-TW": "這趟電車停心齋橋站嗎？",
       "vi": "Tàu này có dừng ở ga Shinsaibashi không?",
-      "ko": "이 전철은 신사이바시역에 서나요?"
+      "ko": "이 전철은 신사이바시역에 서나요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "心斎橋",
+          "isKanji": true,
+          "reading": "しんさいばし"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このでんしゃはしんさいばしえきにとまりますか。"
     },
     {
       "jp": "どこで乗り換えますか。",
-      "furigana": "どこでのりかえますか。",
       "zh": "在哪里换乘？",
       "scene": "坐电车",
       "id": "s05-008",
@@ -107,11 +293,35 @@
       "en": "Where do I transfer?",
       "zh-TW": "在哪裡換乘？",
       "vi": "Tôi đổi tàu ở đâu?",
-      "ko": "어디서 환승하면 되나요?"
+      "ko": "어디서 환승하면 되나요?",
+      "ruby": [
+        {
+          "text": "どこで",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "換",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どこでのりかえますか。"
     },
     {
       "jp": "次の駅は乗り換えできますか。",
-      "furigana": "つぎのえきはのりかえできますか。",
       "zh": "下一站可以换乘吗？",
       "scene": "坐电车",
       "id": "s05-009",
@@ -120,11 +330,49 @@
       "en": "Can I transfer at the next station?",
       "zh-TW": "下一站可以換乘嗎？",
       "vi": "Ga tiếp theo có thể đổi tàu không?",
-      "ko": "다음 역에서 환승 가능한가요?"
+      "ko": "다음 역에서 환승 가능한가요?",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "換",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎのえきはのりかえできますか。"
     },
     {
       "jp": "次は何駅ですか。",
-      "furigana": "つぎはなにえきですか。",
       "zh": "下一站是哪里？",
       "scene": "坐电车",
       "id": "s05-010",
@@ -133,11 +381,36 @@
       "en": "What is the next station?",
       "zh-TW": "下一站是哪裡？",
       "vi": "Ga tiếp theo là ga gì?",
-      "ko": "다음 역은 어디인가요?"
+      "ko": "다음 역은 어디인가요?",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎはなにえきですか。"
     },
     {
       "jp": "終電は何時ですか。",
-      "furigana": "しゅうでんはなんじですか。",
       "zh": "末班车是几点？",
       "scene": "坐电车",
       "id": "s05-011",
@@ -146,11 +419,36 @@
       "en": "What time is the last train?",
       "zh-TW": "末班車是幾點？",
       "vi": "Chuyến tàu cuối lúc mấy giờ?",
-      "ko": "막차가 몇 시예요?"
+      "ko": "막차가 몇 시예요?",
+      "ruby": [
+        {
+          "text": "終電",
+          "isKanji": true,
+          "reading": "しゅうでん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅうでんはなんじですか。"
     },
     {
       "jp": "この席は空いていますか。",
-      "furigana": "このせきはあいていますか。",
       "zh": "这个座位有人吗？",
       "scene": "坐电车",
       "id": "s05-012",
@@ -159,11 +457,35 @@
       "en": "Is this seat taken?",
       "zh-TW": "這個座位有人嗎？",
       "vi": "Chỗ này có người ngồi chưa?",
-      "ko": "이 자리 비어 있나요?"
+      "ko": "이 자리 비어 있나요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このせきはあいていますか。"
     },
     {
       "jp": "すみません、改札が開かないんですが。",
-      "furigana": "すみません、かいさつがひらかないんですが。",
       "zh": "不好意思，检票闸机打不开。",
       "scene": "坐电车",
       "id": "s05-013",
@@ -172,11 +494,35 @@
       "en": "Excuse me, the ticket gate won't open.",
       "zh-TW": "不好意思，閘機打不開。",
       "vi": "Xin lỗi, cổng soát vé không mở được.",
-      "ko": "저기요, 개찰구가 열리지 않는데요."
+      "ko": "저기요, 개찰구가 열리지 않는데요.",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "改札",
+          "isKanji": true,
+          "reading": "かいさつ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "ひら"
+        },
+        {
+          "text": "かないんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、かいさつがひらかないんですが。"
     },
     {
       "jp": "次は梅田、梅田です。",
-      "furigana": "つぎはうめだ、うめだです。",
       "zh": "下一站是梅田，梅田站。",
       "scene": "坐电车",
       "id": "s05-014",
@@ -185,11 +531,40 @@
       "en": "Next stop is Umeda, Umeda.",
       "zh-TW": "下一站是梅田，梅田站。",
       "vi": "Ga tiếp theo là Umeda, Umeda.",
-      "ko": "다음은 우메다, 우메다입니다."
+      "ko": "다음은 우메다, 우메다입니다.",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "梅田",
+          "isKanji": true,
+          "reading": "うめだ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "梅田",
+          "isKanji": true,
+          "reading": "うめだ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎはうめだ、うめだです。"
     },
     {
       "jp": "この電車は各駅停車です。",
-      "furigana": "このでんしゃはかくえきていしゃです。",
       "zh": "这趟车是各站都停的普通车。",
       "scene": "坐电车",
       "id": "s05-015",
@@ -198,11 +573,40 @@
       "en": "This train stops at every station.",
       "zh-TW": "這班車是每站都停的普通車。",
       "vi": "Tàu này dừng ở mọi ga.",
-      "ko": "이 열차는 각역정차입니다."
+      "ko": "이 열차는 각역정차입니다.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "各駅",
+          "isKanji": true,
+          "reading": "かくえき"
+        },
+        {
+          "text": "停車",
+          "isKanji": true,
+          "reading": "ていしゃ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このでんしゃはかくえきていしゃです。"
     },
     {
       "jp": "3番線から発車します。",
-      "furigana": "さんばんせんからはっしゃします。",
       "zh": "从3号线发车。",
       "scene": "坐电车",
       "id": "s05-016",
@@ -211,11 +615,35 @@
       "en": "It departs from platform 3.",
       "zh-TW": "從3號線發車。",
       "vi": "Tàu xuất phát từ đường ray số 3.",
-      "ko": "3번선에서 출발합니다."
+      "ko": "3번선에서 출발합니다.",
+      "ruby": [
+        {
+          "text": "3",
+          "isKanji": false
+        },
+        {
+          "text": "番線",
+          "isKanji": true,
+          "reading": "ばんせん"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "発車",
+          "isKanji": true,
+          "reading": "はっしゃ"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "3ばんせんからはっしゃします。"
     },
     {
       "jp": "改札の中でお待ちください。",
-      "furigana": "かいさつのなかでおまちください。",
       "zh": "请在检票口内等候。",
       "scene": "坐电车",
       "id": "s05-017",
@@ -224,11 +652,40 @@
       "en": "Please wait inside the ticket gate.",
       "zh-TW": "請在剪票口內等候。",
       "vi": "Vui lòng chờ bên trong cổng soát vé.",
-      "ko": "개찰구 안에서 기다려 주세요."
+      "ko": "개찰구 안에서 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "改札",
+          "isKanji": true,
+          "reading": "かいさつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいさつのなかでおまちください。"
     },
     {
       "jp": "東京から新大阪まで自由席一枚ください。",
-      "furigana": "とうきょうからしんおおさかまでじゆうせきいちまいください。",
       "zh": "请给我一张东京到新大阪的自由席票。",
       "scene": "新干线",
       "id": "s05-018",
@@ -237,11 +694,55 @@
       "en": "One unreserved seat ticket from Tokyo to Shin-Osaka, please.",
       "zh-TW": "請給我一張東京到新大阪的自由席票。",
       "vi": "Cho tôi một vé không đặt chỗ từ Tokyo đến Shin-Osaka.",
-      "ko": "도쿄에서 신오사카까지 자유석 한 장 주세요."
+      "ko": "도쿄에서 신오사카까지 자유석 한 장 주세요.",
+      "ruby": [
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "新大阪",
+          "isKanji": true,
+          "reading": "しんおおさか"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "自由",
+          "isKanji": true,
+          "reading": "じゆう"
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "枚",
+          "isKanji": true,
+          "reading": "まい"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "とうきょうからしんおおさかまでじゆうせきいちまいください。"
     },
     {
       "jp": "指定席をお願いします。",
-      "furigana": "していせきをおねがいします。",
       "zh": "请给我指定席（对号入座）。",
       "scene": "新干线",
       "id": "s05-019",
@@ -250,11 +751,36 @@
       "en": "A reserved seat, please.",
       "zh-TW": "請給我對號入座的座位。",
       "vi": "Cho tôi vé có đặt chỗ.",
-      "ko": "지정석으로 주세요."
+      "ko": "지정석으로 주세요.",
+      "ruby": [
+        {
+          "text": "指定",
+          "isKanji": true,
+          "reading": "してい"
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "していせきをおねがいします。"
     },
     {
       "jp": "窓側の席はありますか。",
-      "furigana": "まどがわのせきはありますか。",
       "zh": "有靠窗的座位吗？",
       "scene": "新干线",
       "id": "s05-020",
@@ -263,11 +789,31 @@
       "en": "Do you have a window seat?",
       "zh-TW": "有靠窗的座位嗎？",
       "vi": "Có chỗ ngồi bên cửa sổ không?",
-      "ko": "창가 자리 있나요?"
+      "ko": "창가 자리 있나요?",
+      "ruby": [
+        {
+          "text": "窓側",
+          "isKanji": true,
+          "reading": "まどがわ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まどがわのせきはありますか。"
     },
     {
       "jp": "東京まで何時間かかりますか。",
-      "furigana": "とうきょうまでなんじかんかかりますか。",
       "zh": "到东京需要几小时？",
       "scene": "新干线",
       "id": "s05-021",
@@ -276,11 +822,36 @@
       "en": "How many hours to Tokyo?",
       "zh-TW": "到東京需要幾小時？",
       "vi": "Mất bao nhiêu tiếng để đến Tokyo?",
-      "ko": "도쿄까지 몇 시간 걸려요?"
+      "ko": "도쿄까지 몇 시간 걸려요?",
+      "ruby": [
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "かかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "とうきょうまでなんじかんかかりますか。"
     },
     {
       "jp": "この席は何号車ですか。",
-      "furigana": "このせきはなにごうしゃですか。",
       "zh": "这个座位是几号车厢？",
       "scene": "新干线",
       "id": "s05-022",
@@ -289,11 +860,40 @@
       "en": "What car number is this seat in?",
       "zh-TW": "這個座位是幾號車廂？",
       "vi": "Chỗ này ở toa số mấy?",
-      "ko": "이 좌석은 몇 호차인가요?"
+      "ko": "이 좌석은 몇 호차인가요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "号車",
+          "isKanji": true,
+          "reading": "ごうしゃ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このせきはなにごうしゃですか。"
     },
     {
       "jp": "その席はご予約済みです。",
-      "furigana": "そのせきはごよやくずみです。",
       "zh": "那个座位已经被预订了。",
       "scene": "新干线",
       "id": "s05-023",
@@ -302,11 +902,40 @@
       "en": "That seat is already reserved.",
       "zh-TW": "那個座位已經被預訂了。",
       "vi": "Chỗ đó đã được đặt trước rồi.",
-      "ko": "그 자리는 예약되어 있습니다."
+      "ko": "그 자리는 예약되어 있습니다.",
+      "ruby": [
+        {
+          "text": "その",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "はご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "済",
+          "isKanji": true,
+          "reading": "ず"
+        },
+        {
+          "text": "みです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そのせきはごよやくずみです。"
     },
     {
       "jp": "切符を拝見します。",
-      "furigana": "きっぷをはいけんします。",
       "zh": "请出示一下您的车票。",
       "scene": "新干线",
       "id": "s05-024",
@@ -315,11 +944,31 @@
       "en": "May I check your ticket, please?",
       "zh-TW": "請出示一下您的車票。",
       "vi": "Cho tôi xem vé của bạn.",
-      "ko": "표를 확인하겠습니다."
+      "ko": "표를 확인하겠습니다.",
+      "ruby": [
+        {
+          "text": "切符",
+          "isKanji": true,
+          "reading": "きっぷ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "拝見",
+          "isKanji": true,
+          "reading": "はいけん"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きっぷをはいけんします。"
     },
     {
       "jp": "新大阪までおよそ2時間半です。",
-      "furigana": "しんおおさかまでおよそにじかんはんです。",
       "zh": "到新大阪大约需要两个半小时。",
       "scene": "新干线",
       "id": "s05-025",
@@ -328,11 +977,36 @@
       "en": "It's about two and a half hours to Shin-Osaka.",
       "zh-TW": "到新大阪大約需要兩個半小時。",
       "vi": "Mất khoảng hai tiếng rưỡi để đến Shin-Osaka.",
-      "ko": "신오사카까지 약 2시간 반입니다."
+      "ko": "신오사카까지 약 2시간 반입니다.",
+      "ruby": [
+        {
+          "text": "新大阪",
+          "isKanji": true,
+          "reading": "しんおおさか"
+        },
+        {
+          "text": "までおよそ2",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "半",
+          "isKanji": true,
+          "reading": "はん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんおおさかまでおよそ2じかんはんです。"
     },
     {
       "jp": "次のバスは何時ですか。",
-      "furigana": "つぎのばすはなんじですか。",
       "zh": "下一班公交车是几点？",
       "scene": "坐公交",
       "id": "s05-026",
@@ -341,11 +1015,36 @@
       "en": "What time is the next bus?",
       "zh-TW": "下一班公交車是幾點？",
       "vi": "Chuyến xe buýt tiếp theo lúc mấy giờ?",
-      "ko": "다음 버스는 몇 시예요?"
+      "ko": "다음 버스는 몇 시예요?",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "のバスは",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎのバスはなんじですか。"
     },
     {
       "jp": "このバスは大阪駅に行きますか。",
-      "furigana": "このばすはおおさかえきにいきますか。",
       "zh": "这辆公交车去大阪站吗？",
       "scene": "坐公交",
       "id": "s05-027",
@@ -354,11 +1053,40 @@
       "en": "Does this bus go to Osaka Station?",
       "zh-TW": "這輛公交車去大阪站嗎？",
       "vi": "Xe buýt này có đến ga Osaka không?",
-      "ko": "이 버스 오사카역 가나요?"
+      "ko": "이 버스 오사카역 가나요?",
+      "ruby": [
+        {
+          "text": "このバスは",
+          "isKanji": false
+        },
+        {
+          "text": "大阪",
+          "isKanji": true,
+          "reading": "おおさか"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このバスはおおさかえきにいきますか。"
     },
     {
       "jp": "次、降ります。",
-      "furigana": "つぎ、おります。",
       "zh": "下一站我要下车。",
       "scene": "坐公交",
       "id": "s05-028",
@@ -367,11 +1095,31 @@
       "en": "I'm getting off at the next stop.",
       "zh-TW": "下一站我要下車。",
       "vi": "Tôi xuống ở trạm tiếp theo.",
-      "ko": "다음 정류장에서 내릴게요."
+      "ko": "다음 정류장에서 내릴게요.",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "降",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "ります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎ、おります。"
     },
     {
       "jp": "バス停はどこですか。",
-      "furigana": "ばすていはどこですか。",
       "zh": "公交车站在哪里？",
       "scene": "坐公交",
       "id": "s05-029",
@@ -380,11 +1128,26 @@
       "en": "Where is the bus stop?",
       "zh-TW": "公交車站在哪裡？",
       "vi": "Trạm xe buýt ở đâu?",
-      "ko": "버스 정류장은 어디에 있나요?"
+      "ko": "버스 정류장은 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "バス",
+          "isKanji": false
+        },
+        {
+          "text": "停",
+          "isKanji": true,
+          "reading": "てい"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "バスていはどこですか。"
     },
     {
       "jp": "両替お願いします。",
-      "furigana": "りょうがえおねがいします。",
       "zh": "请帮我换零钱。",
       "scene": "坐公交",
       "id": "s05-030",
@@ -393,11 +1156,31 @@
       "en": "Can you break this for me?",
       "zh-TW": "請幫我換零錢。",
       "vi": "Bạn có thể đổi tiền lẻ cho tôi không?",
-      "ko": "잔돈으로 바꿔 주세요."
+      "ko": "잔돈으로 바꿔 주세요.",
+      "ruby": [
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうがえおねがいします。"
     },
     {
       "jp": "整理券をお取りください。",
-      "furigana": "せいりけんをおとりください。",
       "zh": "请抽取整理券。",
       "scene": "坐公交",
       "id": "s05-031",
@@ -406,11 +1189,36 @@
       "en": "Please take a numbered ticket.",
       "zh-TW": "請抽取整理券。",
       "vi": "Vui lòng lấy vé số.",
-      "ko": "정리권을 뽑아주세요."
+      "ko": "정리권을 뽑아주세요.",
+      "ruby": [
+        {
+          "text": "整理",
+          "isKanji": true,
+          "reading": "せいり"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "りください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せいりけんをおとりください。"
     },
     {
       "jp": "後ろのドアから乗ってください。",
-      "furigana": "うしろのどあからのってください。",
       "zh": "请从后门上车。",
       "scene": "坐公交",
       "id": "s05-032",
@@ -419,11 +1227,31 @@
       "en": "Please board from the rear door.",
       "zh-TW": "請從後門上車。",
       "vi": "Vui lòng lên từ cửa sau.",
-      "ko": "뒷문에서 타주세요."
+      "ko": "뒷문에서 타주세요.",
+      "ruby": [
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "うし"
+        },
+        {
+          "text": "ろのドアから",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "ってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うしろのドアからのってください。"
     },
     {
       "jp": "後ろのドアは自動です。そのままお待ちください。",
-      "furigana": "うしろのどあはじどうです。そのままおまちください。",
       "zh": "后门是自动的，请在原地稍等。",
       "scene": "坐出租车",
       "id": "s05-033",
@@ -432,11 +1260,40 @@
       "en": "The rear door opens automatically. Please wait.",
       "zh-TW": "後門是自動的，請在原地稍等。",
       "vi": "Cửa sau mở tự động. Vui lòng chờ.",
-      "ko": "뒷문은 자동입니다. 그대로 기다려 주세요."
+      "ko": "뒷문은 자동입니다. 그대로 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "うし"
+        },
+        {
+          "text": "ろのドアは",
+          "isKanji": false
+        },
+        {
+          "text": "自動",
+          "isKanji": true,
+          "reading": "じどう"
+        },
+        {
+          "text": "です。そのままお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うしろのドアはじどうです。そのままおまちください。"
     },
     {
       "jp": "いらっしゃいませ。どちらまでですか。",
-      "furigana": "いらっしゃいませ。どちらまでですか。",
       "zh": "欢迎乘车。请问去哪里？",
       "scene": "坐出租车",
       "id": "s05-034",
@@ -445,11 +1302,17 @@
       "en": "Welcome. Where are you headed?",
       "zh-TW": "歡迎乘車。請問去哪裡？",
       "vi": "Xin chào. Bạn muốn đến đâu?",
-      "ko": "어서 오세요. 어디까지 가세요?"
+      "ko": "어서 오세요. 어디까지 가세요?",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。どちらまでですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。どちらまでですか。"
     },
     {
       "jp": "ここ（この地図の場所）までお願いします。",
-      "furigana": "ここ（このちずのばしょ）までおねがいします。",
       "zh": "请去这里。（出示手机地图）",
       "scene": "坐出租车",
       "id": "s05-035",
@@ -458,11 +1321,44 @@
       "en": "To here, please. (showing map)",
       "zh-TW": "請去這裡。（出示手機地圖）",
       "vi": "Đến đây nhé. (Cho xem bản đồ)",
-      "ko": "여기로 가주세요. (지도 제시)"
+      "ko": "여기로 가주세요. (지도 제시)",
+      "ruby": [
+        {
+          "text": "ここ（この",
+          "isKanji": false
+        },
+        {
+          "text": "地図",
+          "isKanji": true,
+          "reading": "ちず"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "場所",
+          "isKanji": true,
+          "reading": "ばしょ"
+        },
+        {
+          "text": "）までお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここ（このちずのばしょ）までおねがいします。"
     },
     {
       "jp": "急いでいます。",
-      "furigana": "いそいでいます。",
       "zh": "我赶时间。",
       "scene": "坐出租车",
       "id": "s05-036",
@@ -471,11 +1367,22 @@
       "en": "I'm in a hurry.",
       "zh-TW": "我趕時間。",
       "vi": "Tôi đang vội.",
-      "ko": "급해요."
+      "ko": "급해요.",
+      "ruby": [
+        {
+          "text": "急",
+          "isKanji": true,
+          "reading": "いそ"
+        },
+        {
+          "text": "いでいます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いそいでいます。"
     },
     {
       "jp": "ここで降ろしてください。",
-      "furigana": "ここでおろしてください。",
       "zh": "请在这里让我下车。",
       "scene": "坐出租车",
       "id": "s05-037",
@@ -484,11 +1391,26 @@
       "en": "Please drop me off here.",
       "zh-TW": "請在這裡讓我下車。",
       "vi": "Cho tôi xuống ở đây.",
-      "ko": "여기서 내려주세요."
+      "ko": "여기서 내려주세요.",
+      "ruby": [
+        {
+          "text": "ここで",
+          "isKanji": false
+        },
+        {
+          "text": "降",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "ろしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここでおろしてください。"
     },
     {
       "jp": "次の信号で止めてください。",
-      "furigana": "つぎのしんごうでとめてください。",
       "zh": "请在下个红绿灯停车。",
       "scene": "坐出租车",
       "id": "s05-038",
@@ -497,11 +1419,40 @@
       "en": "Please stop at the next traffic light.",
       "zh-TW": "請在下個紅綠燈停車。",
       "vi": "Vui lòng dừng ở đèn giao thông tiếp theo.",
-      "ko": "다음 신호등에서 세워주세요."
+      "ko": "다음 신호등에서 세워주세요.",
+      "ruby": [
+        {
+          "text": "次",
+          "isKanji": true,
+          "reading": "つぎ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "信号",
+          "isKanji": true,
+          "reading": "しんごう"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "めてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つぎのしんごうでとめてください。"
     },
     {
       "jp": "カードで払います。",
-      "furigana": "かーどではらいます。",
       "zh": "我用卡付款。",
       "scene": "坐出租车",
       "id": "s05-039",
@@ -510,11 +1461,26 @@
       "en": "I'll pay by card.",
       "zh-TW": "我用卡付款。",
       "vi": "Tôi trả bằng thẻ.",
-      "ko": "카드로 낼게요."
+      "ko": "카드로 낼게요.",
+      "ruby": [
+        {
+          "text": "カードで",
+          "isKanji": false
+        },
+        {
+          "text": "払",
+          "isKanji": true,
+          "reading": "はら"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードではらいます。"
     },
     {
       "jp": "領収書をください。",
-      "furigana": "りょうしゅうしょをください。",
       "zh": "请给我收据。",
       "scene": "坐出租车",
       "id": "s05-040",
@@ -523,11 +1489,27 @@
       "en": "Could I have a receipt?",
       "zh-TW": "請給我收據。",
       "vi": "Cho tôi xin biên lai.",
-      "ko": "영수증 주세요."
+      "ko": "영수증 주세요.",
+      "ruby": [
+        {
+          "text": "領収",
+          "isKanji": true,
+          "reading": "りょうしゅう"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうしゅうしょをください。"
     },
     {
       "jp": "トランクを開けてください。",
-      "furigana": "とらんくをあけてください。",
       "zh": "请打开后备箱。",
       "scene": "坐出租车",
       "id": "s05-041",
@@ -536,11 +1518,26 @@
       "en": "Could you open the trunk?",
       "zh-TW": "請打開後備箱。",
       "vi": "Bạn có thể mở cốp xe không?",
-      "ko": "트렁크 열어주세요."
+      "ko": "트렁크 열어주세요.",
+      "ruby": [
+        {
+          "text": "トランクを",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "トランクをあけてください。"
     },
     {
       "jp": "タクシー乗り場はどこですか。",
-      "furigana": "たくしーのりばはどこですか。",
       "zh": "出租车乘车处在哪里？",
       "scene": "坐出租车",
       "id": "s05-042",
@@ -549,11 +1546,35 @@
       "en": "Where is the taxi stand?",
       "zh-TW": "計程車乘車處在哪裡？",
       "vi": "Điểm đón taxi ở đâu?",
-      "ko": "택시 승차장은 어디에 있나요?"
+      "ko": "택시 승차장은 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "タクシー",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "タクシーのりばはどこですか。"
     },
     {
       "jp": "電車が止まっていますが、どうすればいいですか。",
-      "furigana": "でんしゃがとまっていますが、どうすればいいですか。",
       "zh": "电车停运了，我该怎么办？",
       "scene": "异常・紧急",
       "id": "s05-043",
@@ -562,11 +1583,31 @@
       "en": "The train has stopped. What should I do?",
       "zh-TW": "電車停運了，我該怎麼辦？",
       "vi": "Tàu đã dừng rồi. Tôi phải làm gì?",
-      "ko": "전철이 멈췄는데 어떻게 해야 하나요?"
+      "ko": "전철이 멈췄는데 어떻게 해야 하나요?",
+      "ruby": [
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まっていますが、どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしゃがとまっていますが、どうすればいいですか。"
     },
     {
       "jp": "遅延証明書をいただけますか。",
-      "furigana": "ちえんしょうめいしょをいただけますか。",
       "zh": "可以给我一张延误证明书吗？",
       "scene": "异常・紧急",
       "id": "s05-044",
@@ -575,11 +1616,32 @@
       "en": "Could I have a delay certificate?",
       "zh-TW": "可以給我一張延誤證明書嗎？",
       "vi": "Cho tôi xin giấy chứng nhận trễ tàu.",
-      "ko": "지연 증명서를 주실 수 있나요?"
+      "ko": "지연 증명서를 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "遅延",
+          "isKanji": true,
+          "reading": "ちえん"
+        },
+        {
+          "text": "証明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちえんしょうめいしょをいただけますか。"
     },
     {
       "jp": "間違えて乗ってしまいました。",
-      "furigana": "まちがえてのってしまいました。",
       "zh": "我坐错车了。",
       "scene": "异常・紧急",
       "id": "s05-045",
@@ -588,11 +1650,31 @@
       "en": "I got on the wrong train.",
       "zh-TW": "我坐錯車了。",
       "vi": "Tôi đã lên nhầm tàu.",
-      "ko": "잘못 탔어요."
+      "ko": "잘못 탔어요.",
+      "ruby": [
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "えて",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "ってしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まちがえてのってしまいました。"
     },
     {
       "jp": "入場記録を取り消したいです。",
-      "furigana": "にゅうじょうきろくをとりけしたいです。",
       "zh": "我想取消入站记录。",
       "scene": "异常・紧急",
       "id": "s05-046",
@@ -601,11 +1683,45 @@
       "en": "I'd like to cancel my entry record.",
       "zh-TW": "我想取消入站記錄。",
       "vi": "Tôi muốn hủy hồ sơ vào cổng.",
-      "ko": "입장 기록을 취소하고 싶어요."
+      "ko": "입장 기록을 취소하고 싶어요.",
+      "ruby": [
+        {
+          "text": "入場",
+          "isKanji": true,
+          "reading": "にゅうじょう"
+        },
+        {
+          "text": "記録",
+          "isKanji": true,
+          "reading": "きろく"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "消",
+          "isKanji": true,
+          "reading": "け"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にゅうじょうきろくをとりけしたいです。"
     },
     {
       "jp": "切符をなくしました。",
-      "furigana": "きっぷをなくしました。",
       "zh": "我把票弄丢了。",
       "scene": "异常・紧急",
       "id": "s05-047",
@@ -614,11 +1730,22 @@
       "en": "I've lost my ticket.",
       "zh-TW": "我把票弄丟了。",
       "vi": "Tôi làm mất vé rồi.",
-      "ko": "표를 잃어버렸어요."
+      "ko": "표를 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "切符",
+          "isKanji": true,
+          "reading": "きっぷ"
+        },
+        {
+          "text": "をなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きっぷをなくしました。"
     },
     {
       "jp": "財布を電車の中に忘れてしまいました。",
-      "furigana": "さいふをでんしゃのなかにわすれてしまいました。",
       "zh": "我把钱包忘在电车里了。",
       "scene": "异常・紧急",
       "id": "s05-048",
@@ -627,11 +1754,49 @@
       "en": "I left my wallet on the train.",
       "zh-TW": "我把錢包忘在電車裡了。",
       "vi": "Tôi để quên ví trên tàu.",
-      "ko": "전철 안에 지갑을 두고 내렸어요."
+      "ko": "전철 안에 지갑을 두고 내렸어요.",
+      "ruby": [
+        {
+          "text": "財布",
+          "isKanji": true,
+          "reading": "さいふ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいふをでんしゃのなかにわすれてしまいました。"
     },
     {
       "jp": "間違えて違う駅に来てしまいました。",
-      "furigana": "まちがえてちがうえきにきてしまいました。",
       "zh": "我不小心坐错站来到这里了。",
       "scene": "异常・紧急",
       "id": "s05-049",
@@ -640,11 +1805,49 @@
       "en": "I accidentally got off at the wrong station.",
       "zh-TW": "我不小心坐錯站來到這裡了。",
       "vi": "Tôi lỡ xuống nhầm ga rồi.",
-      "ko": "잘못된 역에 내리고 말았어요."
+      "ko": "잘못된 역에 내리고 말았어요.",
+      "ruby": [
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "えて",
+          "isKanji": false
+        },
+        {
+          "text": "違",
+          "isKanji": true,
+          "reading": "ちが"
+        },
+        {
+          "text": "う",
+          "isKanji": false
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "来",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "てしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まちがえてちがうえきにきてしまいました。"
     },
     {
       "jp": "人身事故のため、運転を見合わせています。",
-      "furigana": "じんしんじこのため、うんてんをみあわせています。",
       "zh": "因为发生人身事故，目前暂停运行。",
       "scene": "异常・紧急",
       "id": "s05-050",
@@ -653,11 +1856,45 @@
       "en": "Train service is suspended due to an accident involving a person.",
       "zh-TW": "因為發生人身事故，目前暫停運行。",
       "vi": "Tàu đang tạm dừng hoạt động do có tai nạn người.",
-      "ko": "인신사고로 인해 운행을 일시 중단하고 있습니다."
+      "ko": "인신사고로 인해 운행을 일시 중단하고 있습니다.",
+      "ruby": [
+        {
+          "text": "人身",
+          "isKanji": true,
+          "reading": "じんしん"
+        },
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "のため、",
+          "isKanji": false
+        },
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見合",
+          "isKanji": true,
+          "reading": "みあ"
+        },
+        {
+          "text": "わせています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じんしんじこのため、うんてんをみあわせています。"
     },
     {
       "jp": "この電車は臨時に行先を変更します。",
-      "furigana": "このでんしゃはりんじにゆくさきをへんこうします。",
       "zh": "这趟电车将临时变更目的地。",
       "scene": "异常・紧急",
       "id": "s05-051",
@@ -666,7 +1903,50 @@
       "en": "This train will temporarily change its destination.",
       "zh-TW": "這趟電車將臨時變更目的地。",
       "vi": "Tàu này sẽ tạm thời thay đổi điểm đến.",
-      "ko": "이 열차는 임시로 행선지를 변경합니다."
+      "ko": "이 열차는 임시로 행선지를 변경합니다.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "臨時",
+          "isKanji": true,
+          "reading": "りんじ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行先",
+          "isKanji": true,
+          "reading": "ゆくさき"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "変更",
+          "isKanji": true,
+          "reading": "へんこう"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このでんしゃはりんじにゆくさきをへんこうします。"
     }
   ],
   "subcategories": [

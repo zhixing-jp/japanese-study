@@ -65,508 +65,1449 @@
       "subcategory": "sub01",
       "role": "user",
       "jp": "財布をなくしました。",
-      "furigana": "さいふをなくしました。",
       "zh": "我的钱包丢了。",
       "en": "I've lost my wallet.",
       "zh-TW": "我的錢包丟了。",
       "vi": "Tôi mất ví rồi.",
-      "ko": "지갑을 잃어버렸어요."
+      "ko": "지갑을 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "財布",
+          "isKanji": true,
+          "reading": "さいふ"
+        },
+        {
+          "text": "をなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいふをなくしました。"
     },
     {
       "id": "s15-002",
       "subcategory": "sub01",
       "role": "user",
       "jp": "パスポートをなくしました。",
-      "furigana": "ぱすぽーとをなくしました。",
       "zh": "我的护照丢了。",
       "en": "I've lost my passport.",
       "zh-TW": "我的護照丟了。",
       "vi": "Tôi mất hộ chiếu rồi.",
-      "ko": "여권을 잃어버렸어요."
+      "ko": "여권을 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "パスポートをなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスポートをなくしました。"
     },
     {
       "id": "s15-003",
       "subcategory": "sub01",
       "role": "user",
       "jp": "スマホをなくしました。",
-      "furigana": "スマホをなくしました。",
       "zh": "我的手机丢了。",
       "en": "I've lost my phone.",
       "zh-TW": "我的手機丟了。",
       "vi": "Tôi mất điện thoại rồi.",
-      "ko": "스마트폰을 잃어버렸어요."
+      "ko": "스마트폰을 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "スマホをなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホをなくしました。"
     },
     {
       "id": "s15-004",
       "subcategory": "sub01",
       "role": "user",
       "jp": "電車の中に忘れました。",
-      "furigana": "でんしゃのなかにわすれました。",
       "zh": "我忘在电车里了。",
       "en": "I left it on the train.",
       "zh-TW": "我忘在電車裡了。",
       "vi": "Tôi để quên trên tàu.",
-      "ko": "전철에 두고 내렸어요."
+      "ko": "전철에 두고 내렸어요.",
+      "ruby": [
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしゃのなかにわすれました。"
     },
     {
       "id": "s15-005",
       "subcategory": "sub01",
       "role": "user",
       "jp": "お店に忘れました。",
-      "furigana": "おみせにわすれました。",
       "zh": "我忘在店里了。",
       "en": "I left it at a shop.",
       "zh-TW": "我忘在店裡了。",
       "vi": "Tôi để quên ở cửa hàng.",
-      "ko": "가게에 두고 왔어요."
+      "ko": "가게에 두고 왔어요.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "店",
+          "isKanji": true,
+          "reading": "みせ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おみせにわすれました。"
     },
     {
       "id": "s15-006",
       "subcategory": "sub01",
       "role": "user",
       "jp": "最後に持っていたのは昨日の夜です。",
-      "furigana": "さいごにもっていたのはきのうのよるです。",
       "zh": "最后拿着它是在昨天晚上。",
       "en": "The last time I had it was last night.",
       "zh-TW": "最後拿著它是在昨天晚上。",
       "vi": "Lần cuối tôi có nó là tối qua.",
-      "ko": "마지막으로 가지고 있던 건 어젯밤이었어요."
+      "ko": "마지막으로 가지고 있던 건 어젯밤이었어요.",
+      "ruby": [
+        {
+          "text": "最後",
+          "isKanji": true,
+          "reading": "さいご"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "っていたのは",
+          "isKanji": false
+        },
+        {
+          "text": "昨日",
+          "isKanji": true,
+          "reading": "きのう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夜",
+          "isKanji": true,
+          "reading": "よる"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいごにもっていたのはきのうのよるです。"
     },
     {
       "id": "s15-007",
       "subcategory": "sub01",
       "role": "user",
       "jp": "遺失物届を出したいです。",
-      "furigana": "いしつぶつとどけをだしたいです。",
       "zh": "我想提交遗失物品申报。",
       "en": "I'd like to submit a lost item report.",
       "zh-TW": "我想提交遺失物品申報。",
       "vi": "Tôi muốn nộp đơn báo mất đồ.",
-      "ko": "분실물 신고를 하고 싶어요."
+      "ko": "분실물 신고를 하고 싶어요.",
+      "ruby": [
+        {
+          "text": "遺失",
+          "isKanji": true,
+          "reading": "いしつ"
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "ぶつ"
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とどけ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いしつぶつとどけをだしたいです。"
     },
     {
       "id": "s15-008",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "落とし物が見つかったら、ご連絡先にお電話します。",
-      "furigana": "おとしものがみつかったら、ごれんらくさきにおでんわします。",
       "zh": "如果找到失物，我们会打您留下的联系电话通知您。",
       "en": "If your lost item is found, we'll call the contact number you provided.",
       "zh-TW": "如果找到失物，我們會打您留下的聯繫電話通知您。",
       "vi": "Nếu tìm thấy đồ của bạn, chúng tôi sẽ gọi vào số liên lạc bạn cung cấp.",
-      "ko": "분실물이 발견되면 남겨주신 연락처로 전화드리겠습니다."
+      "ko": "분실물이 발견되면 남겨주신 연락처로 전화드리겠습니다.",
+      "ruby": [
+        {
+          "text": "落",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "とし",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "つかったら、ご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おとしものがみつかったら、ごれんらくさきにおでんわします。"
     },
     {
       "id": "s15-009",
       "subcategory": "sub01",
       "role": "user",
       "jp": "クレジットカードを止めたいんですが、どうすればいいですか。",
-      "furigana": "くれじっとかーどをとめたいんですが、どうすればいいですか。",
       "zh": "我想停止信用卡的使用，该怎么办？",
       "en": "I'd like to stop my credit card. What should I do?",
       "zh-TW": "我想停止信用卡的使用，該怎麼辦？",
       "vi": "Tôi muốn khóa thẻ tín dụng. Tôi phải làm gì?",
-      "ko": "신용카드를 정지하고 싶은데, 어떻게 해야 하나요?"
+      "ko": "신용카드를 정지하고 싶은데, 어떻게 해야 하나요?",
+      "ruby": [
+        {
+          "text": "クレジットカードを",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "めたいんですが、どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "クレジットカードをとめたいんですが、どうすればいいですか。"
     },
     {
       "id": "s15-010",
       "subcategory": "sub02",
       "role": "user",
       "jp": "盗まれました。",
-      "furigana": "ぬすまれました。",
       "zh": "被偷了。",
       "en": "It was stolen.",
       "zh-TW": "被偷了。",
       "vi": "Tôi bị mất cắp rồi.",
-      "ko": "도둑맞았어요."
+      "ko": "도둑맞았어요.",
+      "ruby": [
+        {
+          "text": "盗",
+          "isKanji": true,
+          "reading": "ぬす"
+        },
+        {
+          "text": "まれました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ぬすまれました。"
     },
     {
       "id": "s15-011",
       "subcategory": "sub02",
       "role": "user",
       "jp": "スリに遭いました。",
-      "furigana": "すりにあいました。",
       "zh": "我被扒手了。",
       "en": "I was pickpocketed.",
       "zh-TW": "我被扒手了。",
       "vi": "Tôi bị móc túi.",
-      "ko": "소매치기를 당했어요."
+      "ko": "소매치기를 당했어요.",
+      "ruby": [
+        {
+          "text": "スリに",
+          "isKanji": false
+        },
+        {
+          "text": "遭",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スリにあいました。"
     },
     {
       "id": "s15-012",
       "subcategory": "sub02",
       "role": "user",
       "jp": "部屋に侵入されました。",
-      "furigana": "へやにしんにゅうされました。",
       "zh": "有人闯入我的房间。",
       "en": "Someone broke into my room.",
       "zh-TW": "有人闖入我的房間。",
       "vi": "Có người đột nhập vào phòng tôi.",
-      "ko": "방에 침입 당했어요."
+      "ko": "방에 침입 당했어요.",
+      "ruby": [
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "侵入",
+          "isKanji": true,
+          "reading": "しんにゅう"
+        },
+        {
+          "text": "されました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "へやにしんにゅうされました。"
     },
     {
       "id": "s15-013",
       "subcategory": "sub02",
       "role": "user",
       "jp": "被害届を出したいです。",
-      "furigana": "ひがいとどけをだしたいです。",
       "zh": "我想报案。",
       "en": "I'd like to file a police report.",
       "zh-TW": "我想報案。",
       "vi": "Tôi muốn trình báo cảnh sát.",
-      "ko": "피해 신고를 하고 싶어요."
+      "ko": "피해 신고를 하고 싶어요.",
+      "ruby": [
+        {
+          "text": "被害",
+          "isKanji": true,
+          "reading": "ひがい"
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とどけ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ひがいとどけをだしたいです。"
     },
     {
       "id": "s15-014",
       "subcategory": "sub02",
       "role": "user",
       "jp": "通訳をお願いできますか。",
-      "furigana": "つうやくをおねがいできますか。",
       "zh": "可以帮我找翻译吗？",
       "en": "Could you get an interpreter?",
       "zh-TW": "可以幫我找翻譯嗎？",
       "vi": "Bạn có thể gọi phiên dịch không?",
-      "ko": "통역을 불러주실 수 있나요?"
+      "ko": "통역을 불러주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "通訳",
+          "isKanji": true,
+          "reading": "つうやく"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つうやくをおねがいできますか。"
     },
     {
       "id": "s15-015",
       "subcategory": "sub02",
       "role": "user",
       "jp": "誰かに後をつけられています。",
-      "furigana": "だれかにごをつけられています。",
       "zh": "有人跟踪我。",
       "en": "Someone is following me.",
       "zh-TW": "有人跟蹤我。",
       "vi": "Có người đang theo dõi tôi.",
-      "ko": "누군가 저를 미행하고 있어요."
+      "ko": "누군가 저를 미행하고 있어요.",
+      "ruby": [
+        {
+          "text": "誰",
+          "isKanji": true,
+          "reading": "だれ"
+        },
+        {
+          "text": "かに",
+          "isKanji": false
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "をつけられています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だれかにごをつけられています。"
     },
     {
       "id": "s15-016",
       "subcategory": "sub02",
       "role": "user",
       "jp": "助けてください。",
-      "furigana": "たすけてください。",
       "zh": "请帮我！",
       "en": "Help me, please.",
       "zh-TW": "請幫我！",
       "vi": "Hãy giúp tôi!",
-      "ko": "도와주세요!"
+      "ko": "도와주세요!",
+      "ruby": [
+        {
+          "text": "助",
+          "isKanji": true,
+          "reading": "たす"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たすけてください。"
     },
     {
       "id": "s15-017",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "被害届の用紙にご記入ください。",
-      "furigana": "ひがいとどけのようしにごきにゅうください。",
       "zh": "请填写受害申报表格。",
       "en": "Please fill in the incident report form.",
       "zh-TW": "請填寫受害申報表格。",
       "vi": "Vui lòng điền vào mẫu báo cáo vụ việc.",
-      "ko": "피해 신고 용지를 작성해 주세요."
+      "ko": "피해 신고 용지를 작성해 주세요.",
+      "ruby": [
+        {
+          "text": "被害",
+          "isKanji": true,
+          "reading": "ひがい"
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とどけ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "用紙",
+          "isKanji": true,
+          "reading": "ようし"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ひがいとどけのようしにごきにゅうください。"
     },
     {
       "id": "s15-018",
       "subcategory": "sub03",
       "role": "user",
       "jp": "救急車を呼んでください。",
-      "furigana": "きゅうきゅうしゃをよんでください。",
       "zh": "请叫救护车。",
       "en": "Please call an ambulance.",
       "zh-TW": "請叫救護車。",
       "vi": "Xin hãy gọi xe cấp cứu.",
-      "ko": "구급차를 불러주세요."
+      "ko": "구급차를 불러주세요.",
+      "ruby": [
+        {
+          "text": "救急",
+          "isKanji": true,
+          "reading": "きゅうきゅう"
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "しゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "んでください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きゅうきゅうしゃをよんでください。"
     },
     {
       "id": "s15-019",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "救急ですか、火事ですか。",
-      "furigana": "きゅうきゅうですか、かじですか。",
       "zh": "是急救还是火灾？",
       "en": "Is it an ambulance or a fire?",
       "zh-TW": "是急救還是火災？",
       "vi": "Cấp cứu hay hỏa hoạn?",
-      "ko": "구급인가요, 화재인가요?"
+      "ko": "구급인가요, 화재인가요?",
+      "ruby": [
+        {
+          "text": "救急",
+          "isKanji": true,
+          "reading": "きゅうきゅう"
+        },
+        {
+          "text": "ですか、",
+          "isKanji": false
+        },
+        {
+          "text": "火事",
+          "isKanji": true,
+          "reading": "かじ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きゅうきゅうですか、かじですか。"
     },
     {
       "id": "s15-020",
       "subcategory": "sub03",
       "role": "user",
       "jp": "ここで急病が起きました。",
-      "furigana": "ここできゅうびょうがおきました。",
       "zh": "这里有人突发急病。",
       "en": "Someone has suddenly fallen ill here.",
       "zh-TW": "這裡有人突發急病。",
       "vi": "Có người đột ngột bị bệnh ở đây.",
-      "ko": "여기서 급병이 발생했습니다."
+      "ko": "여기서 급병이 발생했습니다.",
+      "ruby": [
+        {
+          "text": "ここで",
+          "isKanji": false
+        },
+        {
+          "text": "急病",
+          "isKanji": true,
+          "reading": "きゅうびょう"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "起",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "きました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここできゅうびょうがおきました。"
     },
     {
       "id": "s15-021",
       "subcategory": "sub03",
       "role": "user",
       "jp": "住所は新宿区西新宿1-1-1です。",
-      "furigana": "じゅうしょはしんじゅくくにししんじゅくいちのいちのいちです。",
       "zh": "地址是新宿区西新宿1-1-1。",
       "en": "The address is 1-1-1 Nishishinjuku, Shinjuku-ku.",
       "zh-TW": "地址是新宿區西新宿1-1-1。",
       "vi": "Địa chỉ là 1-1-1 Nishishinjuku, Shinjuku-ku.",
-      "ko": "주소는 신주쿠구 니시신주쿠 1-1-1입니다."
+      "ko": "주소는 신주쿠구 니시신주쿠 1-1-1입니다.",
+      "ruby": [
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "区",
+          "isKanji": true,
+          "reading": "く"
+        },
+        {
+          "text": "西新宿",
+          "isKanji": true,
+          "reading": "にししんじゅく"
+        },
+        {
+          "text": "1-1-1です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じゅうしょはしんじゅくくにししんじゅく1-1-1です。"
     },
     {
       "id": "s15-022",
       "subcategory": "sub03",
       "role": "user",
       "jp": "日本語があまり話せません。英語が話せる人はいますか。",
-      "furigana": "にほんごがあまりはなせません。えいごがはなせるひとはいますか。",
       "zh": "我日语不太好，有会说英语的人吗？",
       "en": "My Japanese isn't great. Is there anyone who speaks English?",
       "zh-TW": "我日語不太好，有會說英語的人嗎？",
       "vi": "Tiếng Nhật của tôi không tốt. Có ai nói tiếng Anh không?",
-      "ko": "일본어를 잘 못하는데, 영어 하시는 분 계신가요?"
+      "ko": "일본어를 잘 못하는데, 영어 하시는 분 계신가요?",
+      "ruby": [
+        {
+          "text": "日本語",
+          "isKanji": true,
+          "reading": "にほんご"
+        },
+        {
+          "text": "があまり",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "せません。",
+          "isKanji": false
+        },
+        {
+          "text": "英語",
+          "isKanji": true,
+          "reading": "えいご"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "せる",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "ひと"
+        },
+        {
+          "text": "はいますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にほんごがあまりはなせません。えいごがはなせるひとはいますか。"
     },
     {
       "id": "s15-023",
       "subcategory": "sub03",
       "role": "user",
       "jp": "気分が悪くなりました。",
-      "furigana": "きぶんがわるくなりました。",
       "zh": "我身体很不舒服。",
       "en": "I'm feeling very unwell.",
       "zh-TW": "我身體很不舒服。",
       "vi": "Tôi cảm thấy rất không khỏe.",
-      "ko": "몸이 너무 안 좋아요."
+      "ko": "몸이 너무 안 좋아요.",
+      "ruby": [
+        {
+          "text": "気分",
+          "isKanji": true,
+          "reading": "きぶん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "悪",
+          "isKanji": true,
+          "reading": "わる"
+        },
+        {
+          "text": "くなりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きぶんがわるくなりました。"
     },
     {
       "id": "s15-024",
       "subcategory": "sub03",
       "role": "user",
       "jp": "意識がありません。",
-      "furigana": "いしきがありません。",
       "zh": "失去意识了。",
       "en": "They've lost consciousness.",
       "zh-TW": "失去意識了。",
       "vi": "Người đó đã mất ý thức.",
-      "ko": "의식을 잃었어요."
+      "ko": "의식을 잃었어요.",
+      "ruby": [
+        {
+          "text": "意識",
+          "isKanji": true,
+          "reading": "いしき"
+        },
+        {
+          "text": "がありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いしきがありません。"
     },
     {
       "id": "s15-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "呼吸をしていません。",
-      "furigana": "こきゅうをしていません。",
       "zh": "没有在呼吸。",
       "en": "They're not breathing.",
       "zh-TW": "沒有在呼吸。",
       "vi": "Người đó không thở.",
-      "ko": "호흡을 하지 않고 있어요."
+      "ko": "호흡을 하지 않고 있어요.",
+      "ruby": [
+        {
+          "text": "呼吸",
+          "isKanji": true,
+          "reading": "こきゅう"
+        },
+        {
+          "text": "をしていません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こきゅうをしていません。"
     },
     {
       "id": "s15-026",
       "subcategory": "sub03",
       "role": "user",
       "jp": "胸が痛いです。",
-      "furigana": "むねがいたいです。",
       "zh": "我胸口痛。",
       "en": "I have chest pain.",
       "zh-TW": "我胸口痛。",
       "vi": "Tôi bị đau ngực.",
-      "ko": "가슴이 아파요."
+      "ko": "가슴이 아파요.",
+      "ruby": [
+        {
+          "text": "胸",
+          "isKanji": true,
+          "reading": "むね"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "痛",
+          "isKanji": true,
+          "reading": "いた"
+        },
+        {
+          "text": "いです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "むねがいたいです。"
     },
     {
       "id": "s15-027",
       "subcategory": "sub03",
       "role": "user",
       "jp": "出血しています。",
-      "furigana": "しゅっけつしています。",
       "zh": "在出血。",
       "en": "There's bleeding.",
       "zh-TW": "在出血。",
       "vi": "Đang chảy máu.",
-      "ko": "피가 나고 있어요."
+      "ko": "피가 나고 있어요.",
+      "ruby": [
+        {
+          "text": "出血",
+          "isKanji": true,
+          "reading": "しゅっけつ"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅっけつしています。"
     },
     {
       "id": "s15-028",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "大丈夫ですか。意識はありますか。",
-      "furigana": "だいじょうぶですか。いしきはありますか。",
       "zh": "你还好吗？有意识吗？",
       "en": "Are you okay? Are you conscious?",
       "zh-TW": "你還好嗎？有意識嗎？",
       "vi": "Bạn có ổn không? Bạn có tỉnh không?",
-      "ko": "괜찮으세요? 의식 있으세요?"
+      "ko": "괜찮으세요? 의식 있으세요?",
+      "ruby": [
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        },
+        {
+          "text": "意識",
+          "isKanji": true,
+          "reading": "いしき"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいじょうぶですか。いしきはありますか。"
     },
     {
       "id": "s15-029",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "救急車を向かわせます。そのままお待ちください。",
-      "furigana": "きゅうきゅうしゃをむかわせます。そのままおまちください。",
       "zh": "我会派救护车过去，请在原地等待。",
       "en": "An ambulance is on its way. Please wait where you are.",
       "zh-TW": "我會派救護車過去，請在原地等待。",
       "vi": "Xe cấp cứu đang trên đường đến. Vui lòng chờ tại chỗ.",
-      "ko": "구급차를 보내겠습니다. 그 자리에서 기다려 주세요."
+      "ko": "구급차를 보내겠습니다. 그 자리에서 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "救急",
+          "isKanji": true,
+          "reading": "きゅうきゅう"
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "しゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "向",
+          "isKanji": true,
+          "reading": "む"
+        },
+        {
+          "text": "かわせます。そのままお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きゅうきゅうしゃをむかわせます。そのままおまちください。"
     },
     {
       "id": "s15-030",
       "subcategory": "sub04",
       "role": "user",
       "jp": "火事です！逃げてください！",
-      "furigana": "かじです！にげてください！",
       "zh": "着火了！请快逃！",
       "en": "Fire! Run!",
       "zh-TW": "著火了！請快逃！",
       "vi": "Cháy rồi! Chạy đi!",
-      "ko": "불이야! 도망치세요!"
+      "ko": "불이야! 도망치세요!",
+      "ruby": [
+        {
+          "text": "火事",
+          "isKanji": true,
+          "reading": "かじ"
+        },
+        {
+          "text": "です！",
+          "isKanji": false
+        },
+        {
+          "text": "逃",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "げてください！",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かじです！にげてください！"
     },
     {
       "id": "s15-031",
       "subcategory": "sub04",
       "role": "user",
       "jp": "119番に電話してください。",
-      "furigana": "119ばんにでんわしてください。",
       "zh": "请打119。",
       "en": "Please call 119.",
       "zh-TW": "請打119。",
       "vi": "Hãy gọi 119.",
-      "ko": "119에 전화해 주세요."
+      "ko": "119에 전화해 주세요.",
+      "ruby": [
+        {
+          "text": "119",
+          "isKanji": false
+        },
+        {
+          "text": "番",
+          "isKanji": true,
+          "reading": "ばん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "119ばんにでんわしてください。"
     },
     {
       "id": "s15-032",
       "subcategory": "sub04",
       "role": "user",
       "jp": "まだ中に人がいます。",
-      "furigana": "まだなかにひとがいます。",
       "zh": "里面还有人。",
       "en": "There are still people inside.",
       "zh-TW": "裡面還有人。",
       "vi": "Bên trong vẫn còn người.",
-      "ko": "안에 아직 사람이 있어요."
+      "ko": "안에 아직 사람이 있어요.",
+      "ruby": [
+        {
+          "text": "まだ",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "ひと"
+        },
+        {
+          "text": "がいます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まだなかにひとがいます。"
     },
     {
       "id": "s15-033",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "火災が発生しました。エレベーターを使わず、階段で避難してください。",
-      "furigana": "かさいがはっせいしました。えれべーたーをつかわず、かいだんでひなんしてください。",
       "zh": "发生火灾了，请不要使用电梯，走楼梯避难。",
       "en": "A fire has broken out. Please evacuate via the stairs, not the elevator.",
       "zh-TW": "發生火災了，請不要使用電梯，走樓梯避難。",
       "vi": "Có hỏa hoạn. Vui lòng sơ tán qua cầu thang, không dùng thang máy.",
-      "ko": "화재가 발생했습니다. 엘리베이터를 사용하지 말고 계단으로 대피해 주세요."
+      "ko": "화재가 발생했습니다. 엘리베이터를 사용하지 말고 계단으로 대피해 주세요.",
+      "ruby": [
+        {
+          "text": "火災",
+          "isKanji": true,
+          "reading": "かさい"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "発生",
+          "isKanji": true,
+          "reading": "はっせい"
+        },
+        {
+          "text": "しました。エレベーターを",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "わず、",
+          "isKanji": false
+        },
+        {
+          "text": "階段",
+          "isKanji": true,
+          "reading": "かいだん"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "避難",
+          "isKanji": true,
+          "reading": "ひなん"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かさいがはっせいしました。エレベーターをつかわず、かいだんでひなんしてください。"
     },
     {
       "id": "s15-034",
       "subcategory": "sub04",
       "role": "user",
       "jp": "煙が充満しています。",
-      "furigana": "けむりがじゅうまんしています。",
       "zh": "烟雾弥漫。",
       "en": "The room is full of smoke.",
       "zh-TW": "煙霧瀰漫。",
       "vi": "Khói đầy phòng.",
-      "ko": "연기가 가득 찼어요."
+      "ko": "연기가 가득 찼어요.",
+      "ruby": [
+        {
+          "text": "煙",
+          "isKanji": true,
+          "reading": "けむり"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "充満",
+          "isKanji": true,
+          "reading": "じゅうまん"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "けむりがじゅうまんしています。"
     },
     {
       "id": "s15-035",
       "subcategory": "sub04",
       "role": "user",
       "jp": "消火器はどこですか。",
-      "furigana": "しょうかきはどこですか。",
       "zh": "灭火器在哪里？",
       "en": "Where is the fire extinguisher?",
       "zh-TW": "滅火器在哪裡？",
       "vi": "Bình chữa cháy ở đâu?",
-      "ko": "소화기는 어디에 있나요?"
+      "ko": "소화기는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "消火",
+          "isKanji": true,
+          "reading": "しょうか"
+        },
+        {
+          "text": "器",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうかきはどこですか。"
     },
     {
       "id": "s15-036",
       "subcategory": "sub05",
       "role": "user",
       "jp": "事故がありました。けが人がいます。",
-      "furigana": "じこがありました。けがにんがいます。",
       "zh": "发生事故了，有人受伤。",
       "en": "There's been an accident. Someone is injured.",
       "zh-TW": "發生事故了，有人受傷。",
       "vi": "Có tai nạn. Có người bị thương.",
-      "ko": "사고가 났어요. 다친 사람이 있어요."
+      "ko": "사고가 났어요. 다친 사람이 있어요.",
+      "ruby": [
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "がありました。けが",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "がいます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じこがありました。けがにんがいます。"
     },
     {
       "id": "s15-037",
       "subcategory": "sub05",
       "role": "user",
       "jp": "警察を呼んでください。",
-      "furigana": "けいさつをよんでください。",
       "zh": "请叫警察。",
       "en": "Please call the police.",
       "zh-TW": "請叫警察。",
       "vi": "Hãy gọi cảnh sát.",
-      "ko": "경찰을 불러주세요."
+      "ko": "경찰을 불러주세요.",
+      "ruby": [
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "んでください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "けいさつをよんでください。"
     },
     {
       "id": "s15-038",
       "subcategory": "sub05",
       "role": "user",
       "jp": "連絡先を教えてください。",
-      "furigana": "れんらくさきをおしえてください。",
       "zh": "请告诉我您的联系方式。",
       "en": "Could you give me your contact information?",
       "zh-TW": "請告訴我您的聯繫方式。",
       "vi": "Bạn có thể cho tôi thông tin liên lạc không?",
-      "ko": "연락처를 알려주세요."
+      "ko": "연락처를 알려주세요.",
+      "ruby": [
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "れんらくさきをおしえてください。"
     },
     {
       "id": "s15-039",
       "subcategory": "sub05",
       "role": "user",
       "jp": "車のナンバーは品川300あ1234です。",
-      "furigana": "くるまのなんばーはしながわさんびゃくあいちにさんよんです。",
       "zh": "车牌号是品川300あ1234。",
       "en": "The license plate is Shinagawa 300 a 1234.",
       "zh-TW": "車牌號是品川300あ1234。",
       "vi": "Biển số xe là Shinagawa 300 a 1234.",
-      "ko": "차량 번호는 시나가와 300아 1234입니다."
+      "ko": "차량 번호는 시나가와 300아 1234입니다.",
+      "ruby": [
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "のナンバーは",
+          "isKanji": false
+        },
+        {
+          "text": "品川",
+          "isKanji": true,
+          "reading": "しながわ"
+        },
+        {
+          "text": "300あ1234です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "くるまのナンバーはしながわ300あ1234です。"
     },
     {
       "id": "s15-040",
       "subcategory": "sub05",
       "role": "user",
       "jp": "相手が逃げました。",
-      "furigana": "あいてがにげました。",
       "zh": "对方逃跑了。",
       "en": "The other party fled.",
       "zh-TW": "對方逃跑了。",
       "vi": "Người kia đã bỏ chạy.",
-      "ko": "상대방이 도망쳤어요."
+      "ko": "상대방이 도망쳤어요.",
+      "ruby": [
+        {
+          "text": "相手",
+          "isKanji": true,
+          "reading": "あいて"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "逃",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "げました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あいてがにげました。"
     },
     {
       "id": "s15-041",
       "subcategory": "sub05",
       "role": "user",
       "jp": "目撃者がいます。",
-      "furigana": "もくげきしゃがいます。",
       "zh": "有目击者。",
       "en": "There are witnesses.",
       "zh-TW": "有目擊者。",
       "vi": "Có người chứng kiến.",
-      "ko": "목격자가 있어요."
+      "ko": "목격자가 있어요.",
+      "ruby": [
+        {
+          "text": "目撃",
+          "isKanji": true,
+          "reading": "もくげき"
+        },
+        {
+          "text": "者",
+          "isKanji": true,
+          "reading": "しゃ"
+        },
+        {
+          "text": "がいます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もくげきしゃがいます。"
     },
     {
       "id": "s15-042",
       "subcategory": "sub05",
       "role": "user",
       "jp": "事故証明書をお願いします。",
-      "furigana": "じこしょうめいしょをおねがいします。",
       "zh": "请给我出具事故证明书。",
       "en": "Could I have an accident report certificate?",
       "zh-TW": "請給我出具事故證明書。",
       "vi": "Cho tôi xin giấy chứng nhận tai nạn.",
-      "ko": "사고 증명서를 주세요."
+      "ko": "사고 증명서를 주세요.",
+      "ruby": [
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "証明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じこしょうめいしょをおねがいします。"
     },
     {
       "jp": "分かりました。今からそちらに向かいます。",
-      "furigana": "わかりました。いまからそちらにむかいます。",
       "zh": "知道了，我们现在马上过去。",
       "id": "s15-043",
       "subcategory": "sub05",
@@ -574,11 +1515,40 @@
       "en": "Understood, we're heading there now.",
       "zh-TW": "知道了，我們現在馬上過去。",
       "vi": "Đã rõ, chúng tôi sẽ đến ngay bây giờ.",
-      "ko": "알겠습니다. 지금 바로 그쪽으로 가겠습니다."
+      "ko": "알겠습니다. 지금 바로 그쪽으로 가겠습니다.",
+      "ruby": [
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "わ"
+        },
+        {
+          "text": "かりました。",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "からそちらに",
+          "isKanji": false
+        },
+        {
+          "text": "向",
+          "isKanji": true,
+          "reading": "む"
+        },
+        {
+          "text": "かいます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。いまからそちらにむかいます。"
     },
     {
       "jp": "怪我人の状態を教えてください。",
-      "furigana": "けがにんのじょうたいをおしえてください。",
       "zh": "请告诉我受伤者的情况。",
       "id": "s15-044",
       "subcategory": "sub05",
@@ -586,11 +1556,45 @@
       "en": "Please tell us the condition of the injured person.",
       "zh-TW": "請告訴我受傷者的情況。",
       "vi": "Xin cho biết tình trạng người bị thương.",
-      "ko": "부상자의 상태를 알려주세요."
+      "ko": "부상자의 상태를 알려주세요.",
+      "ruby": [
+        {
+          "text": "怪我",
+          "isKanji": true,
+          "reading": "けが"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "状態",
+          "isKanji": true,
+          "reading": "じょうたい"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "けがじんのじょうたいをおしえてください。"
     },
     {
       "jp": "事故証明書は後日、警察署で発行できます。",
-      "furigana": "じこしょうめいしょはごじつ、けいさつしょではっこうできます。",
       "zh": "事故证明书之后可以在警察署领取。",
       "id": "s15-045",
       "subcategory": "sub05",
@@ -598,7 +1602,61 @@
       "en": "The accident certificate can be issued later at the police station.",
       "zh-TW": "事故證明書之後可以在警察署領取。",
       "vi": "Giấy chứng nhận tai nạn có thể được cấp sau tại đồn cảnh sát.",
-      "ko": "사고증명서는 나중에 경찰서에서 발급받을 수 있습니다."
+      "ko": "사고증명서는 나중에 경찰서에서 발급받을 수 있습니다.",
+      "ruby": [
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "証明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "後日",
+          "isKanji": true,
+          "reading": "ごじつ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "署",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "できます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じこしょうめいしょはごじつ、けいさつしょではっこうできます。"
     }
   ],
   "title_ja": "緊急"

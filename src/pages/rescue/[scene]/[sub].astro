@@ -80,8 +80,12 @@ function u(key: string) { return ui[key]?.[lang] || ui[key]?.zh || key; }
   <!-- 控制栏 -->
   <div class="rescue-ctrl-bar" id="subCtrlBar">
     <a href={sceneUrl} class="ctrl-back" aria-label={u('back')}>←</a>
-    <button onclick="togglePlay()" class="ctrl-play" id="btnPlay" aria-label={u('play')}>▶</button>
-    <button onclick="toggleLoop()" class="ctrl-icon" id="btnLoop">🔁</button>
+    <button onclick="togglePlay()" class="ctrl-play" id="btnPlay" aria-label={u('play')}>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <button onclick="toggleLoop()" class="ctrl-icon" id="btnLoop">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+    </button>
     <button onclick="toggleRuby()" class="ctrl-icon" id="btnRuby" aria-label={u('ruby')}>ふ</button>
     <button type="button" onclick="cyclePlayMode()" class="ctrl-cycle" id="btnPlayMode" aria-label="follow mode"></button>
     <button type="button" onclick="cycleMode()" class="ctrl-cycle" id="btnMode" aria-label="reading language"></button>

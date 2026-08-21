@@ -6,6 +6,10 @@
    不包含：任何HTML渲染
 ══════════════════════════════ */
 
+/* ── 播放/停止按钮图标（线性SVG，替代原来的 ▶ / ■ 字符）── */
+const ICON_PLAY = '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+const ICON_STOP = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>';
+
 /* ── 状态 ── */
 let currentMode = localStorage.getItem('lj_mode') || 'jp';
 let currentRate = parseFloat(localStorage.getItem('lj_rate') || '0.75');
@@ -61,7 +65,7 @@ function speakList(list, idx, session) {
     } else {
       isPlaying = false;
       const btn = document.getElementById('btnPlay');
-      if (btn) btn.textContent = '▶';
+      if (btn) btn.innerHTML = ICON_PLAY;
       showToast('✓ 朗读完毕');
     }
     return;
@@ -219,10 +223,10 @@ function togglePlay() {
   if (isPlaying) {
     stopRescueSpeech();
     isPlaying = false;
-    if (btn) btn.textContent = '▶';
+    if (btn) btn.innerHTML = ICON_PLAY;
   } else {
     isPlaying = true;
-    if (btn) btn.textContent = '■';
+    if (btn) btn.innerHTML = ICON_STOP;
     speakAll();
   }
 }

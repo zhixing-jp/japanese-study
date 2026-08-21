@@ -101,484 +101,1734 @@
       "subcategory": "sub01",
       "role": "user",
       "jp": "外国人でも借りられる物件を探しています。",
-      "furigana": "がいこくじんでもかりられるぶっけんをさがしています。",
       "zh": "我在找外国人也能租的房子。",
       "en": "I'm looking for a place that accepts foreign nationals.",
       "zh-TW": "我在找外國人也能租的房子。",
       "vi": "Tôi đang tìm phòng cho thuê chấp nhận người nước ngoài.",
-      "ko": "외국인도 임대 가능한 물건을 찾고 있어요."
+      "ko": "외국인도 임대 가능한 물건을 찾고 있어요.",
+      "ruby": [
+        {
+          "text": "外国",
+          "isKanji": true,
+          "reading": "がいこく"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "でも",
+          "isKanji": false
+        },
+        {
+          "text": "借",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "りられる",
+          "isKanji": false
+        },
+        {
+          "text": "物件",
+          "isKanji": true,
+          "reading": "ぶっけん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "探",
+          "isKanji": true,
+          "reading": "さが"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がいこくじんでもかりられるぶっけんをさがしています。"
     },
     {
       "id": "s09-002",
       "subcategory": "sub01",
       "role": "user",
       "jp": "家賃は管理費込みで八万円以内でお願いします。",
-      "furigana": "やちんはかんりひこみではちまんえんいないでおねがいします。",
       "zh": "房租希望含管理费在八万日元以内。",
       "en": "My budget, including management fees, is under 80,000 yen.",
       "zh-TW": "房租希望含管理費在八萬日元以內。",
       "vi": "Tôi muốn tiền thuê bao gồm phí quản lý dưới 80.000 yên.",
-      "ko": "관리비 포함 월세 8만 엔 이내를 원해요."
+      "ko": "관리비 포함 월세 8만 엔 이내를 원해요.",
+      "ruby": [
+        {
+          "text": "家賃",
+          "isKanji": true,
+          "reading": "やちん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "管理",
+          "isKanji": true,
+          "reading": "かんり"
+        },
+        {
+          "text": "費",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みで",
+          "isKanji": false
+        },
+        {
+          "text": "八",
+          "isKanji": true,
+          "reading": "はち"
+        },
+        {
+          "text": "万",
+          "isKanji": true,
+          "reading": "まん"
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "以内",
+          "isKanji": true,
+          "reading": "いない"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "やちんはかんりひこみではちまんえんいないでおねがいします。"
     },
     {
       "id": "s09-003",
       "subcategory": "sub01",
       "role": "user",
       "jp": "駅まで歩いて十分以内のところが希望です。",
-      "furigana": "えきまであるいてじゅうふんいないのところがきぼうです。",
       "zh": "希望步行到车站在十分钟以内。",
       "en": "I'd prefer within 10 minutes' walk from the station.",
       "zh-TW": "希望步行到車站在十分鐘以內。",
       "vi": "Tôi muốn đi bộ đến ga trong vòng 10 phút.",
-      "ko": "역에서 도보 10분 이내를 원해요."
+      "ko": "역에서 도보 10분 이내를 원해요.",
+      "ruby": [
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "歩",
+          "isKanji": true,
+          "reading": "ある"
+        },
+        {
+          "text": "いて",
+          "isKanji": false
+        },
+        {
+          "text": "十",
+          "isKanji": true,
+          "reading": "じゅう"
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "以内",
+          "isKanji": true,
+          "reading": "いない"
+        },
+        {
+          "text": "のところが",
+          "isKanji": false
+        },
+        {
+          "text": "希望",
+          "isKanji": true,
+          "reading": "きぼう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "えきまであるいてじゅうふんいないのところがきぼうです。"
     },
     {
       "id": "s09-004",
       "subcategory": "sub01",
       "role": "user",
       "jp": "この部屋を見せてもらえますか。",
-      "furigana": "このへやをみせてもらえますか。",
       "zh": "可以让我看这个房间吗？",
       "en": "Could I take a look at this room?",
       "zh-TW": "可以讓我看這個房間嗎？",
       "vi": "Tôi có thể xem phòng này không?",
-      "ko": "이 방을 보여주실 수 있나요?"
+      "ko": "이 방을 보여주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このへやをみせてもらえますか。"
     },
     {
       "id": "s09-005",
       "subcategory": "sub01",
       "role": "user",
       "jp": "洗濯機置き場は室内にありますか。",
-      "furigana": "せんたくきおきばはしつないにありますか。",
       "zh": "洗衣机摆放处是在室内吗？",
       "en": "Is the washing machine space indoors?",
       "zh-TW": "洗衣機擺放處是在室內嗎？",
       "vi": "Chỗ để máy giặt có ở trong nhà không?",
-      "ko": "세탁기 놓는 곳이 실내에 있나요?"
+      "ko": "세탁기 놓는 곳이 실내에 있나요?",
+      "ruby": [
+        {
+          "text": "洗濯",
+          "isKanji": true,
+          "reading": "せんたく"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "室内",
+          "isKanji": true,
+          "reading": "しつない"
+        },
+        {
+          "text": "にありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せんたくきおきばはしつないにありますか。"
     },
     {
       "id": "s09-006",
       "subcategory": "sub01",
       "role": "user",
       "jp": "インターネットの回線はすでに引かれていますか。",
-      "furigana": "いんたーねっとのかいせんはすでにひかれていますか。",
       "zh": "网络线路已经拉好了吗？",
       "en": "Is the internet line already set up?",
       "zh-TW": "網路線路已經拉好了嗎？",
       "vi": "Đường dây internet đã được kéo chưa?",
-      "ko": "인터넷 회선이 이미 설치되어 있나요?"
+      "ko": "인터넷 회선이 이미 설치되어 있나요?",
+      "ruby": [
+        {
+          "text": "インターネットの",
+          "isKanji": false
+        },
+        {
+          "text": "回線",
+          "isKanji": true,
+          "reading": "かいせん"
+        },
+        {
+          "text": "はすでに",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "かれていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "インターネットのかいせんはすでにひかれていますか。"
     },
     {
       "id": "s09-007",
       "subcategory": "sub01",
       "role": "user",
       "jp": "ペットは飼えますか。",
-      "furigana": "ぺっとはかえますか。",
       "zh": "可以养宠物吗？",
       "en": "Are pets allowed?",
       "zh-TW": "可以養寵物嗎？",
       "vi": "Có thể nuôi thú cưng không?",
-      "ko": "반려동물을 키울 수 있나요?"
+      "ko": "반려동물을 키울 수 있나요?",
+      "ruby": [
+        {
+          "text": "ペットは",
+          "isKanji": false
+        },
+        {
+          "text": "飼",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ペットはかえますか。"
     },
     {
       "id": "s09-008",
       "subcategory": "sub01",
       "role": "user",
       "jp": "駐車場はありますか。",
-      "furigana": "ちゅうしゃじょうはありますか。",
       "zh": "有停车场吗？",
       "en": "Is there a parking space?",
       "zh-TW": "有停車場嗎？",
       "vi": "Có chỗ đậu xe không?",
-      "ko": "주차장이 있나요?"
+      "ko": "주차장이 있나요?",
+      "ruby": [
+        {
+          "text": "駐車",
+          "isKanji": true,
+          "reading": "ちゅうしゃ"
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "じょう"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちゅうしゃじょうはありますか。"
     },
     {
       "id": "s09-009",
       "subcategory": "sub01",
       "role": "user",
       "jp": "築年数はどのくらいですか。",
-      "furigana": "ちくねんすうはどのくらいですか。",
       "zh": "房子建了多少年了？",
       "en": "How old is the building?",
       "zh-TW": "房子建了多少年了？",
       "vi": "Tòa nhà được xây bao nhiêu năm rồi?",
-      "ko": "건축한 지 얼마나 됐나요?"
+      "ko": "건축한 지 얼마나 됐나요?",
+      "ruby": [
+        {
+          "text": "築",
+          "isKanji": true,
+          "reading": "ちく"
+        },
+        {
+          "text": "年数",
+          "isKanji": true,
+          "reading": "ねんすう"
+        },
+        {
+          "text": "はどのくらいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちくねんすうはどのくらいですか。"
     },
     {
       "id": "s09-010",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "初期費用（敷金・礼金など）の見積もりをお作りします。",
-      "furigana": "しょきひよう（しききん・れいきんなど）のみつもりをおつくりします。",
       "zh": "我来为您制作一份初期费用（押金、礼金等）的预算单。",
       "en": "I'll prepare a breakdown of the initial costs (deposit, key money, etc.).",
       "zh-TW": "我來為您制作一份初期費用（押金、禮金等）的預算單。",
       "vi": "Tôi sẽ chuẩn bị bảng phân tích chi phí ban đầu (tiền đặt cọc, tiền lễ, v.v.).",
-      "ko": "초기 비용(보증금, 사례금 등) 내역서를 만들어 드리겠습니다."
+      "ko": "초기 비용(보증금, 사례금 등) 내역서를 만들어 드리겠습니다.",
+      "ruby": [
+        {
+          "text": "初期",
+          "isKanji": true,
+          "reading": "しょき"
+        },
+        {
+          "text": "費用",
+          "isKanji": true,
+          "reading": "ひよう"
+        },
+        {
+          "text": "（",
+          "isKanji": false
+        },
+        {
+          "text": "敷金",
+          "isKanji": true,
+          "reading": "しききん"
+        },
+        {
+          "text": "・",
+          "isKanji": false
+        },
+        {
+          "text": "礼金",
+          "isKanji": true,
+          "reading": "れいきん"
+        },
+        {
+          "text": "など）の",
+          "isKanji": false
+        },
+        {
+          "text": "見積",
+          "isKanji": true,
+          "reading": "みつ"
+        },
+        {
+          "text": "もりをお",
+          "isKanji": false
+        },
+        {
+          "text": "作",
+          "isKanji": true,
+          "reading": "つく"
+        },
+        {
+          "text": "りします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょきひよう（しききん・れいきんなど）のみつもりをおつくりします。"
     },
     {
       "id": "s09-011",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "こちらの物件は、外国籍の方は保証会社の審査が必要です。",
-      "furigana": "こちらのぶっけんは、がいこくせきのほうはほしょうかいしゃのしんさがひつようです。",
       "zh": "这个房源，外籍人士需要通过担保公司审查。",
       "en": "For this property, foreign nationals will need to pass a guarantor company review.",
       "zh-TW": "這個房源，外籍人士需要通過擔保公司審查。",
       "vi": "Đối với căn hộ này, người nước ngoài cần qua xét duyệt của công ty bảo lãnh.",
-      "ko": "이 매물은 외국인의 경우 보증회사 심사가 필요합니다."
+      "ko": "이 매물은 외국인의 경우 보증회사 심사가 필요합니다.",
+      "ruby": [
+        {
+          "text": "こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "物件",
+          "isKanji": true,
+          "reading": "ぶっけん"
+        },
+        {
+          "text": "は、",
+          "isKanji": false
+        },
+        {
+          "text": "外国",
+          "isKanji": true,
+          "reading": "がいこく"
+        },
+        {
+          "text": "籍",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "保証",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "審査",
+          "isKanji": true,
+          "reading": "しんさ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらのぶっけんは、がいこくせきのかたはほしょうかいしゃのしんさがひつようです。"
     },
     {
       "id": "s09-012",
       "subcategory": "sub02",
       "role": "user",
       "jp": "ここはどういう意味ですか。",
-      "furigana": "ここはどういういみですか。",
       "zh": "这里是什么意思？",
       "en": "What does this part mean?",
       "zh-TW": "這裡是什麼意思？",
       "vi": "Chỗ này có nghĩa là gì?",
-      "ko": "이 부분은 무슨 뜻인가요?"
+      "ko": "이 부분은 무슨 뜻인가요?",
+      "ruby": [
+        {
+          "text": "ここはどういう",
+          "isKanji": false
+        },
+        {
+          "text": "意味",
+          "isKanji": true,
+          "reading": "いみ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここはどういういみですか。"
     },
     {
       "id": "s09-013",
       "subcategory": "sub02",
       "role": "user",
       "jp": "中国語の説明はありますか。",
-      "furigana": "ちゅうごくごのせつめいはありますか。",
       "zh": "有中文说明吗？",
       "en": "Is there a Chinese version of the explanation?",
       "zh-TW": "有中文說明嗎？",
       "vi": "Có bản giải thích tiếng Trung không?",
-      "ko": "중국어 설명이 있나요?"
+      "ko": "중국어 설명이 있나요?",
+      "ruby": [
+        {
+          "text": "中国",
+          "isKanji": true,
+          "reading": "ちゅうごく"
+        },
+        {
+          "text": "語",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "説明",
+          "isKanji": true,
+          "reading": "せつめい"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちゅうごくごのせつめいはありますか。"
     },
     {
       "id": "s09-014",
       "subcategory": "sub02",
       "role": "user",
       "jp": "火災保険の加入は必須ですか。",
-      "furigana": "かさいほけんのかにゅうはひっすですか。",
       "zh": "必须加入火灾保险吗？",
       "en": "Is fire insurance mandatory?",
       "zh-TW": "必須加入火災保險嗎？",
       "vi": "Bảo hiểm hỏa hoạn có bắt buộc không?",
-      "ko": "화재보험은 반드시 가입해야 하나요?"
+      "ko": "화재보험은 반드시 가입해야 하나요?",
+      "ruby": [
+        {
+          "text": "火災",
+          "isKanji": true,
+          "reading": "かさい"
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "加入",
+          "isKanji": true,
+          "reading": "かにゅう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必須",
+          "isKanji": true,
+          "reading": "ひっす"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かさいほけんのかにゅうはひっすですか。"
     },
     {
       "id": "s09-015",
       "subcategory": "sub02",
       "role": "user",
       "jp": "保証人は必要ですか。",
-      "furigana": "ほしょうじんはひつようですか。",
       "zh": "需要保证人吗？",
       "en": "Is a guarantor required?",
       "zh-TW": "需要保證人嗎？",
       "vi": "Có cần người bảo lãnh không?",
-      "ko": "보증인이 필요한가요?"
+      "ko": "보증인이 필요한가요?",
+      "ruby": [
+        {
+          "text": "保証",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ほしょうじんはひつようですか。"
     },
     {
       "id": "s09-016",
       "subcategory": "sub02",
       "role": "user",
       "jp": "家賃の支払いはいつですか。",
-      "furigana": "やちんのしはらいはいつですか。",
       "zh": "房租什么时候支付？",
       "en": "When is the rent due?",
       "zh-TW": "房租什麼時候支付？",
       "vi": "Tiền thuê phải trả vào lúc nào?",
-      "ko": "월세는 언제 납부하나요?"
+      "ko": "월세는 언제 납부하나요?",
+      "ruby": [
+        {
+          "text": "家賃",
+          "isKanji": true,
+          "reading": "やちん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いはいつですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "やちんのしはらいはいつですか。"
     },
     {
       "id": "s09-017",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "重要事項説明を行いますので、こちらの説明書をご覧ください。",
-      "furigana": "じゅうようじこうせつめいをおこないますので、こちらのせつめいしょをごらんください。",
       "zh": "接下来进行重要事项说明，请看这份说明书。",
       "en": "We'll now go through the important notices — please look at this document.",
       "zh-TW": "接下來進行重要事項說明，請看這份說明書。",
       "vi": "Tiếp theo chúng tôi sẽ giải thích các điều quan trọng — vui lòng xem tài liệu này.",
-      "ko": "이제 중요 사항 설명을 진행하겠습니다. 이 설명서를 봐주세요."
+      "ko": "이제 중요 사항 설명을 진행하겠습니다. 이 설명서를 봐주세요.",
+      "ruby": [
+        {
+          "text": "重要",
+          "isKanji": true,
+          "reading": "じゅうよう"
+        },
+        {
+          "text": "事項",
+          "isKanji": true,
+          "reading": "じこう"
+        },
+        {
+          "text": "説明",
+          "isKanji": true,
+          "reading": "せつめい"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "おこな"
+        },
+        {
+          "text": "いますので、こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "説明",
+          "isKanji": true,
+          "reading": "せつめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "覧",
+          "isKanji": true,
+          "reading": "らん"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じゅうようじこうせつめいをおこないますので、こちらのせつめいしょをごらんください。"
     },
     {
       "id": "s09-018",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "原状回復についてご説明します。",
-      "furigana": "げんじょうかいふくについてごせつめいします。",
       "zh": "关于恢复原状，我来说明一下。",
       "en": "I'll explain the restoration to original condition clause.",
       "zh-TW": "關於恢復原狀，我來說明一下。",
       "vi": "Tôi sẽ giải thích về điều khoản khôi phục hiện trạng.",
-      "ko": "원상 복구에 대해 설명해 드리겠습니다."
+      "ko": "원상 복구에 대해 설명해 드리겠습니다.",
+      "ruby": [
+        {
+          "text": "原状",
+          "isKanji": true,
+          "reading": "げんじょう"
+        },
+        {
+          "text": "回復",
+          "isKanji": true,
+          "reading": "かいふく"
+        },
+        {
+          "text": "についてご",
+          "isKanji": false
+        },
+        {
+          "text": "説明",
+          "isKanji": true,
+          "reading": "せつめい"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんじょうかいふくについてごせつめいします。"
     },
     {
       "id": "s09-019",
       "subcategory": "sub02",
       "role": "user",
       "jp": "更新料はいくらですか。",
-      "furigana": "こうしんりょうはいくらですか。",
       "zh": "续约费是多少？",
       "en": "How much is the renewal fee?",
       "zh-TW": "續約費是多少？",
       "vi": "Phí gia hạn hợp đồng là bao nhiêu?",
-      "ko": "갱신료는 얼마인가요?"
+      "ko": "갱신료는 얼마인가요?",
+      "ruby": [
+        {
+          "text": "更新",
+          "isKanji": true,
+          "reading": "こうしん"
+        },
+        {
+          "text": "料",
+          "isKanji": true,
+          "reading": "りょう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうしんりょうはいくらですか。"
     },
     {
       "id": "s09-020",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "入居の当日は、管理事務所で鍵を受け取ってください。",
-      "furigana": "にゅうきょのとうじつは、かんりじむしょでかぎをうけとってください。",
       "zh": "入住当天，请在管理事务所领取钥匙。",
       "en": "On the day you move in, please pick up the keys from the management office.",
       "zh-TW": "入住當天，請在管理事務所領取鑰匙。",
       "vi": "Vào ngày dọn vào, vui lòng lấy chìa khóa tại văn phòng quản lý.",
-      "ko": "입주 당일에는 관리사무소에서 열쇠를 받아가세요."
+      "ko": "입주 당일에는 관리사무소에서 열쇠를 받아가세요.",
+      "ruby": [
+        {
+          "text": "入居",
+          "isKanji": true,
+          "reading": "にゅうきょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "当日",
+          "isKanji": true,
+          "reading": "とうじつ"
+        },
+        {
+          "text": "は、",
+          "isKanji": false
+        },
+        {
+          "text": "管理",
+          "isKanji": true,
+          "reading": "かんり"
+        },
+        {
+          "text": "事務所",
+          "isKanji": true,
+          "reading": "じむしょ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "鍵",
+          "isKanji": true,
+          "reading": "かぎ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "受",
+          "isKanji": true,
+          "reading": "う"
+        },
+        {
+          "text": "け",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "ってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にゅうきょのとうじつは、かんりじむしょでかぎをうけとってください。"
     },
     {
       "id": "s09-021",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "口座引き落としの手続き用紙をご記入ください。",
-      "furigana": "こうざひきおとしのてつづきようしをごきにゅうください。",
       "zh": "请填写账户自动扣款的申请表格。",
       "en": "Please fill out the automatic bank transfer application form.",
       "zh-TW": "請填寫帳戶自動扣款的申請表格。",
       "vi": "Vui lòng điền vào mẫu đăng ký trích nợ tự động.",
-      "ko": "계좌 자동 이체 신청서를 작성해 주세요."
+      "ko": "계좌 자동 이체 신청서를 작성해 주세요.",
+      "ruby": [
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "落",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "としの",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "用紙",
+          "isKanji": true,
+          "reading": "ようし"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうざひきおとしのてつづきようしをごきにゅうください。"
     },
     {
       "id": "s09-022",
       "subcategory": "sub03",
       "role": "user",
       "jp": "ガスの開栓はどこに連絡すればいいですか。",
-      "furigana": "がすのひらきせんはどこにれんらくすればいいですか。",
       "zh": "开通煤气需要联系哪里？",
       "en": "Who should I contact to turn on the gas?",
       "zh-TW": "開通煤氣需要聯繫哪裡？",
       "vi": "Tôi cần liên hệ đâu để mở khóa gas?",
-      "ko": "가스 개통은 어디에 연락하면 되나요?"
+      "ko": "가스 개통은 어디에 연락하면 되나요?",
+      "ruby": [
+        {
+          "text": "ガスの",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "ひらき"
+        },
+        {
+          "text": "栓",
+          "isKanji": true,
+          "reading": "せん"
+        },
+        {
+          "text": "はどこに",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "すればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ガスのひらきせんはどこにれんらくすればいいですか。"
     },
     {
       "id": "s09-023",
       "subcategory": "sub03",
       "role": "user",
       "jp": "電気とガスの契約はどうすればいいですか。",
-      "furigana": "でんきとがすのけいやくはどうすればいいですか。",
       "zh": "电力和煤气的合同怎么办理？",
       "en": "How do I set up contracts for electricity and gas?",
       "zh-TW": "電力和煤氣的合約怎麼辦理？",
       "vi": "Tôi phải làm thế nào để ký hợp đồng điện và gas?",
-      "ko": "전기와 가스 계약은 어떻게 하면 되나요?"
+      "ko": "전기와 가스 계약은 어떻게 하면 되나요?",
+      "ruby": [
+        {
+          "text": "電気",
+          "isKanji": true,
+          "reading": "でんき"
+        },
+        {
+          "text": "とガスの",
+          "isKanji": false
+        },
+        {
+          "text": "契約",
+          "isKanji": true,
+          "reading": "けいやく"
+        },
+        {
+          "text": "はどうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんきとガスのけいやくはどうすればいいですか。"
     },
     {
       "id": "s09-024",
       "subcategory": "sub03",
       "role": "user",
       "jp": "マンションのゴミ置き場はどこですか。",
-      "furigana": "まんしょんのごみおきばはどこですか。",
       "zh": "公寓的垃圾放置处在哪里？",
       "en": "Where is the garbage area for this building?",
       "zh-TW": "公寓的垃圾放置處在哪裡？",
       "vi": "Khu vực để rác của chung cư ở đâu?",
-      "ko": "맨션의 쓰레기 두는 곳은 어디인가요?"
+      "ko": "맨션의 쓰레기 두는 곳은 어디인가요?",
+      "ruby": [
+        {
+          "text": "マンションのゴミ",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "マンションのゴミおきばはどこですか。"
     },
     {
       "id": "s09-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "自転車置き場はどこですか。",
-      "furigana": "じてんしゃおきばはどこですか。",
       "zh": "自行车停放处在哪里？",
       "en": "Where is the bicycle parking area?",
       "zh-TW": "自行車停放處在哪裡？",
       "vi": "Chỗ để xe đạp ở đâu?",
-      "ko": "자전거 보관소는 어디인가요?"
+      "ko": "자전거 보관소는 어디인가요?",
+      "ruby": [
+        {
+          "text": "自転車",
+          "isKanji": true,
+          "reading": "じてんしゃ"
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "ば"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じてんしゃおきばはどこですか。"
     },
     {
       "id": "s09-026",
       "subcategory": "sub04",
       "role": "user",
       "jp": "エアコンが壊れてしまいました。修理をお願いできますか。",
-      "furigana": "えあこんがこわれてしまいました。しゅうりをおねがいできますか。",
       "zh": "空调坏了，可以帮忙修理吗？",
       "en": "The air conditioner is broken. Could you get it repaired?",
       "zh-TW": "空調壞了，可以幫忙修理嗎？",
       "vi": "Điều hòa bị hỏng rồi. Bạn có thể cho người sửa không?",
-      "ko": "에어컨이 고장났는데, 수리해 주실 수 있나요?"
+      "ko": "에어컨이 고장났는데, 수리해 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "エアコンが",
+          "isKanji": false
+        },
+        {
+          "text": "壊",
+          "isKanji": true,
+          "reading": "こわ"
+        },
+        {
+          "text": "れてしまいました。",
+          "isKanji": false
+        },
+        {
+          "text": "修理",
+          "isKanji": true,
+          "reading": "しゅうり"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エアコンがこわれてしまいました。しゅうりをおねがいできますか。"
     },
     {
       "id": "s09-027",
       "subcategory": "sub04",
       "role": "user",
       "jp": "水道の水が止まらなくなりました。",
-      "furigana": "すいどうのみずがとまらなくなりました。",
       "zh": "水龙头的水止不住了。",
       "en": "The faucet won't stop running.",
       "zh-TW": "水龍頭的水止不住了。",
       "vi": "Vòi nước không tắt được.",
-      "ko": "수도꼭지에서 물이 안 멈춰요."
+      "ko": "수도꼭지에서 물이 안 멈춰요.",
+      "ruby": [
+        {
+          "text": "水道",
+          "isKanji": true,
+          "reading": "すいどう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "水",
+          "isKanji": true,
+          "reading": "みず"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まらなくなりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すいどうのみずがとまらなくなりました。"
     },
     {
       "id": "s09-028",
       "subcategory": "sub04",
       "role": "user",
       "jp": "お湯が出ません。",
-      "furigana": "おゆがでません。",
       "zh": "没有热水。",
       "en": "There's no hot water.",
       "zh-TW": "沒有熱水。",
       "vi": "Không có nước nóng.",
-      "ko": "온수가 안 나와요."
+      "ko": "온수가 안 나와요.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "湯",
+          "isKanji": true,
+          "reading": "ゆ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "ません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おゆがでません。"
     },
     {
       "id": "s09-029",
       "subcategory": "sub04",
       "role": "user",
       "jp": "トイレが詰まっています。",
-      "furigana": "といれがつまっています。",
       "zh": "马桶堵了。",
       "en": "The toilet is clogged.",
       "zh-TW": "馬桶堵了。",
       "vi": "Toilet bị tắc.",
-      "ko": "변기가 막혔어요."
+      "ko": "변기가 막혔어요.",
+      "ruby": [
+        {
+          "text": "トイレが",
+          "isKanji": false
+        },
+        {
+          "text": "詰",
+          "isKanji": true,
+          "reading": "つ"
+        },
+        {
+          "text": "まっています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "トイレがつまっています。"
     },
     {
       "id": "s09-030",
       "subcategory": "sub04",
       "role": "user",
       "jp": "照明がつきません。",
-      "furigana": "しょうめいがつきません。",
       "zh": "灯不亮了。",
       "en": "The light won't turn on.",
       "zh-TW": "燈不亮了。",
       "vi": "Đèn không bật được.",
-      "ko": "전등이 안 켜져요."
+      "ko": "전등이 안 켜져요.",
+      "ruby": [
+        {
+          "text": "照明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "がつきません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうめいがつきません。"
     },
     {
       "id": "s09-031",
       "subcategory": "sub04",
       "role": "user",
       "jp": "雨漏りがしています。",
-      "furigana": "あまもりがしています。",
       "zh": "漏雨了。",
       "en": "There's a roof leak.",
       "zh-TW": "漏雨了。",
       "vi": "Bị dột nước mưa.",
-      "ko": "빗물이 새고 있어요."
+      "ko": "빗물이 새고 있어요.",
+      "ruby": [
+        {
+          "text": "雨漏",
+          "isKanji": true,
+          "reading": "あまも"
+        },
+        {
+          "text": "りがしています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あまもりがしています。"
     },
     {
       "id": "s09-032",
       "subcategory": "sub04",
       "role": "user",
       "jp": "排水口が詰まっています。",
-      "furigana": "はいすいぐちがつまっています。",
       "zh": "排水口堵了。",
       "en": "The drain is clogged.",
       "zh-TW": "排水口堵了。",
       "vi": "Cống thoát nước bị tắc.",
-      "ko": "배수구가 막혔어요."
+      "ko": "배수구가 막혔어요.",
+      "ruby": [
+        {
+          "text": "排水",
+          "isKanji": true,
+          "reading": "はいすい"
+        },
+        {
+          "text": "口",
+          "isKanji": true,
+          "reading": "ぐち"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "詰",
+          "isKanji": true,
+          "reading": "つ"
+        },
+        {
+          "text": "まっています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はいすいぐちがつまっています。"
     },
     {
       "id": "s09-033",
       "subcategory": "sub04",
       "role": "user",
       "jp": "いつ修理に来てもらえますか。",
-      "furigana": "いつしゅうりにきてもらえますか。",
       "zh": "什么时候可以来修理？",
       "en": "When can someone come to fix it?",
       "zh-TW": "什麼時候可以來修理？",
       "vi": "Khi nào có người đến sửa được?",
-      "ko": "언제 수리하러 올 수 있나요?"
+      "ko": "언제 수리하러 올 수 있나요?",
+      "ruby": [
+        {
+          "text": "いつ",
+          "isKanji": false
+        },
+        {
+          "text": "修理",
+          "isKanji": true,
+          "reading": "しゅうり"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "来",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "てもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いつしゅうりにきてもらえますか。"
     },
     {
       "id": "s09-034",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "修理業者を手配しますので、来週の水曜日はご都合いかがですか。",
-      "furigana": "しゅうりぎょうしゃをてはいしますので、らいしゅうのすいようびはごつごういかがですか。",
       "zh": "我来安排修理人员，下周三您方便吗？",
       "en": "I'll arrange for a repair person. Does next Wednesday work for you?",
       "zh-TW": "我來安排修理人員，下週三您方便嗎？",
       "vi": "Tôi sẽ sắp xếp người sửa. Thứ Tư tuần tới bạn có rảnh không?",
-      "ko": "수리 기사를 보내드릴게요. 다음 주 수요일 괜찮으세요?"
+      "ko": "수리 기사를 보내드릴게요. 다음 주 수요일 괜찮으세요?",
+      "ruby": [
+        {
+          "text": "修理",
+          "isKanji": true,
+          "reading": "しゅうり"
+        },
+        {
+          "text": "業者",
+          "isKanji": true,
+          "reading": "ぎょうしゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "手配",
+          "isKanji": true,
+          "reading": "てはい"
+        },
+        {
+          "text": "しますので、",
+          "isKanji": false
+        },
+        {
+          "text": "来週",
+          "isKanji": true,
+          "reading": "らいしゅう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "水曜日",
+          "isKanji": true,
+          "reading": "すいようび"
+        },
+        {
+          "text": "はご",
+          "isKanji": false
+        },
+        {
+          "text": "都合",
+          "isKanji": true,
+          "reading": "つごう"
+        },
+        {
+          "text": "いかがですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅうりぎょうしゃをてはいしますので、らいしゅうのすいようびはごつごういかがですか。"
     },
     {
       "id": "s09-035",
       "subcategory": "sub04",
       "role": "user",
       "jp": "修理費用は誰が負担しますか。",
-      "furigana": "しゅうりひようはだれがふたんしますか。",
       "zh": "修理费用由谁承担？",
       "en": "Who is responsible for the repair costs?",
       "zh-TW": "修理費用由誰承擔？",
       "vi": "Ai sẽ chịu chi phí sửa chữa?",
-      "ko": "수리 비용은 누가 부담하나요?"
+      "ko": "수리 비용은 누가 부담하나요?",
+      "ruby": [
+        {
+          "text": "修理",
+          "isKanji": true,
+          "reading": "しゅうり"
+        },
+        {
+          "text": "費用",
+          "isKanji": true,
+          "reading": "ひよう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "誰",
+          "isKanji": true,
+          "reading": "だれ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "負担",
+          "isKanji": true,
+          "reading": "ふたん"
+        },
+        {
+          "text": "しますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅうりひようはだれがふたんしますか。"
     },
     {
       "id": "s09-036",
       "subcategory": "sub05",
       "role": "user",
       "jp": "鍵をなくしてしまいました。",
-      "furigana": "かぎをなくしてしまいました。",
       "zh": "我把钥匙弄丢了。",
       "en": "I've lost my key.",
       "zh-TW": "我把鑰匙弄丟了。",
       "vi": "Tôi làm mất chìa khóa rồi.",
-      "ko": "열쇠를 잃어버렸어요."
+      "ko": "열쇠를 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "鍵",
+          "isKanji": true,
+          "reading": "かぎ"
+        },
+        {
+          "text": "をなくしてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぎをなくしてしまいました。"
     },
     {
       "id": "s09-037",
       "subcategory": "sub05",
       "role": "user",
       "jp": "鍵を部屋の中に忘れて、閉め出されてしまいました。",
-      "furigana": "かぎをへやのなかにわすれて、しめだされてしまいました。",
       "zh": "钥匙忘在房间里，我被锁在门外了。",
       "en": "I left my key inside and locked myself out.",
       "zh-TW": "鑰匙忘在房間裡，我被鎖在門外了。",
       "vi": "Tôi để quên chìa khóa bên trong và bị khóa ngoài cửa.",
-      "ko": "열쇠를 방 안에 두고 나와서 잠겼어요."
+      "ko": "열쇠를 방 안에 두고 나와서 잠겼어요.",
+      "ruby": [
+        {
+          "text": "鍵",
+          "isKanji": true,
+          "reading": "かぎ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れて、",
+          "isKanji": false
+        },
+        {
+          "text": "閉",
+          "isKanji": true,
+          "reading": "し"
+        },
+        {
+          "text": "め",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "されてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぎをへやのなかにわすれて、しめだされてしまいました。"
     },
     {
       "id": "s09-038",
       "subcategory": "sub05",
       "role": "user",
       "jp": "合鍵を作りたいんですが、許可が必要ですか。",
-      "furigana": "あいかぎをつくりたいんですが、きょかがひつようですか。",
       "zh": "我想配一把钥匙，需要许可吗？",
       "en": "I'd like to make a spare key. Do I need permission?",
       "zh-TW": "我想配一把鑰匙，需要許可嗎？",
       "vi": "Tôi muốn làm chìa khóa dự phòng. Tôi có cần xin phép không?",
-      "ko": "열쇠를 복사하고 싶은데, 허가가 필요한가요?"
+      "ko": "열쇠를 복사하고 싶은데, 허가가 필요한가요?",
+      "ruby": [
+        {
+          "text": "合鍵",
+          "isKanji": true,
+          "reading": "あいかぎ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "作",
+          "isKanji": true,
+          "reading": "つく"
+        },
+        {
+          "text": "りたいんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "許可",
+          "isKanji": true,
+          "reading": "きょか"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あいかぎをつくりたいんですが、きょかがひつようですか。"
     },
     {
       "id": "s09-039",
       "subcategory": "sub05",
       "role": "user",
       "jp": "鍵の交換費用はいくらですか。",
-      "furigana": "かぎのこうかんひようはいくらですか。",
       "zh": "换锁的费用是多少？",
       "en": "How much does it cost to change the lock?",
       "zh-TW": "換鎖的費用是多少？",
       "vi": "Chi phí thay khóa là bao nhiêu?",
-      "ko": "열쇠 교체 비용은 얼마인가요?"
+      "ko": "열쇠 교체 비용은 얼마인가요?",
+      "ruby": [
+        {
+          "text": "鍵",
+          "isKanji": true,
+          "reading": "かぎ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交換",
+          "isKanji": true,
+          "reading": "こうかん"
+        },
+        {
+          "text": "費用",
+          "isKanji": true,
+          "reading": "ひよう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぎのこうかんひようはいくらですか。"
     },
     {
       "id": "s09-040",
       "subcategory": "sub05",
       "role": "user",
       "jp": "オートロックの暗証番号を教えてもらえますか。",
-      "furigana": "おーとろっくのあんしょうばんごうをおしえてもらえますか。",
       "zh": "可以告诉我门禁密码吗？",
       "en": "Could you tell me the door code?",
       "zh-TW": "可以告訴我門禁密碼嗎？",
       "vi": "Bạn có thể cho tôi biết mã cửa tự động không?",
-      "ko": "자동잠금 비밀번호를 알려주실 수 있나요?"
+      "ko": "자동잠금 비밀번호를 알려주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "オートロックの",
+          "isKanji": false
+        },
+        {
+          "text": "暗証",
+          "isKanji": true,
+          "reading": "あんしょう"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "オートロックのあんしょうばんごうをおしえてもらえますか。"
     },
     {
       "jp": "管理会社にご連絡いただければ、開錠に伺います。",
-      "furigana": "かんりがいしゃにごれんらくいただければ、かいじょうにうかがいます。",
       "zh": "联系管理公司的话，我们会上门帮您开锁。",
       "id": "s09-041",
       "subcategory": "sub05",
@@ -586,11 +1836,59 @@
       "en": "If you contact the management company, we'll come to unlock it.",
       "zh-TW": "聯繫管理公司的話，我們會上門幫您開鎖。",
       "vi": "Nếu quý khách liên hệ công ty quản lý, chúng tôi sẽ đến mở khóa.",
-      "ko": "관리회사에 연락 주시면 개문하러 방문하겠습니다."
+      "ko": "관리회사에 연락 주시면 개문하러 방문하겠습니다.",
+      "ruby": [
+        {
+          "text": "管理",
+          "isKanji": true,
+          "reading": "かんり"
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "いただければ、",
+          "isKanji": false
+        },
+        {
+          "text": "開",
+          "isKanji": true,
+          "reading": "ひらき"
+        },
+        {
+          "text": "錠",
+          "isKanji": true,
+          "reading": "じょう"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "伺",
+          "isKanji": true,
+          "reading": "うかが"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かんりかいしゃにごれんらくいただければ、ひらきじょうにうかがいます。"
     },
     {
       "jp": "鍵の交換費用は15,000円です。",
-      "furigana": "かぎのこうかんひようはいちまんごせんえんです。",
       "zh": "换锁的费用是15,000日元。",
       "id": "s09-042",
       "subcategory": "sub05",
@@ -598,11 +1896,45 @@
       "en": "The lock replacement fee is 15,000 yen.",
       "zh-TW": "換鎖的費用是15,000日元。",
       "vi": "Chi phí thay khóa là 15.000 yên.",
-      "ko": "열쇠 교체 비용은 15,000엔입니다."
+      "ko": "열쇠 교체 비용은 15,000엔입니다.",
+      "ruby": [
+        {
+          "text": "鍵",
+          "isKanji": true,
+          "reading": "かぎ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交換",
+          "isKanji": true,
+          "reading": "こうかん"
+        },
+        {
+          "text": "費用",
+          "isKanji": true,
+          "reading": "ひよう"
+        },
+        {
+          "text": "は15,000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぎのこうかんひようは15,000えんです。"
     },
     {
       "jp": "暗証番号は1234です。",
-      "furigana": "あんしょうばんごうはいちにさんよんです。",
       "zh": "门禁密码是1234。",
       "id": "s09-043",
       "subcategory": "sub05",
@@ -610,155 +1942,488 @@
       "en": "The passcode is 1234.",
       "zh-TW": "門禁密碼是1234。",
       "vi": "Mã số là 1234.",
-      "ko": "비밀번호는 1234입니다."
+      "ko": "비밀번호는 1234입니다.",
+      "ruby": [
+        {
+          "text": "暗証",
+          "isKanji": true,
+          "reading": "あんしょう"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "は1234です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あんしょうばんごうは1234です。"
     },
     {
       "id": "s09-044",
       "subcategory": "sub06",
       "role": "user",
       "jp": "上の階の足音がうるさくて困っています。",
-      "furigana": "うえのかいのあしおとがうるさくてこまっています。",
       "zh": "楼上的脚步声很吵，让我很困扰。",
       "en": "The footsteps from upstairs are very loud and it's bothering me.",
       "zh-TW": "樓上的腳步聲很吵，讓我很困擾。",
       "vi": "Tiếng bước chân từ tầng trên rất ồn và làm tôi khó chịu.",
-      "ko": "위층 발소리가 너무 시끄러워서 불편해요."
+      "ko": "위층 발소리가 너무 시끄러워서 불편해요.",
+      "ruby": [
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "うえ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "足音",
+          "isKanji": true,
+          "reading": "あしおと"
+        },
+        {
+          "text": "がうるさくて",
+          "isKanji": false
+        },
+        {
+          "text": "困",
+          "isKanji": true,
+          "reading": "こま"
+        },
+        {
+          "text": "っています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うえのかいのあしおとがうるさくてこまっています。"
     },
     {
       "id": "s09-045",
       "subcategory": "sub06",
       "role": "staff",
       "jp": "上の階の方にお伝えします。",
-      "furigana": "うえのかいのほうにおつたえします。",
       "zh": "我会转告楼上的住户。",
       "en": "I'll let the upstairs residents know.",
       "zh-TW": "我會轉告樓上的住戶。",
       "vi": "Tôi sẽ thông báo cho cư dân tầng trên.",
-      "ko": "위층 분께 전달하겠습니다."
+      "ko": "위층 분께 전달하겠습니다.",
+      "ruby": [
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "うえ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "伝",
+          "isKanji": true,
+          "reading": "つた"
+        },
+        {
+          "text": "えします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うえのかいのかたにおつたえします。"
     },
     {
       "id": "s09-046",
       "subcategory": "sub06",
       "role": "staff",
       "jp": "下の階の方から、音がうるさいとご連絡がありました。",
-      "furigana": "したのかいのほうから、おとがうるさいとごれんらくがありました。",
       "zh": "楼下的住户反映，说声音太吵了。",
       "en": "We've received a complaint from the resident below about noise.",
       "zh-TW": "樓下的住戶反映，說聲音太吵了。",
       "vi": "Cư dân tầng dưới đã liên hệ phàn nàn về tiếng ồn.",
-      "ko": "아래층 분으로부터 소리가 시끄럽다는 연락이 있었습니다."
+      "ko": "아래층 분으로부터 소리가 시끄럽다는 연락이 있었습니다.",
+      "ruby": [
+        {
+          "text": "下",
+          "isKanji": true,
+          "reading": "した"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "から、",
+          "isKanji": false
+        },
+        {
+          "text": "音",
+          "isKanji": true,
+          "reading": "おと"
+        },
+        {
+          "text": "がうるさいとご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "がありました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "したのかいのかたから、おとがうるさいとごれんらくがありました。"
     },
     {
       "id": "s09-047",
       "subcategory": "sub06",
       "role": "user",
       "jp": "廊下に自転車を置いてもいいですか。",
-      "furigana": "ろうかにじてんしゃをおいてもいいですか。",
       "zh": "可以把自行车放在走廊吗？",
       "en": "Can I leave my bicycle in the corridor?",
       "zh-TW": "可以把自行車放在走廊嗎？",
       "vi": "Tôi có thể để xe đạp ở hành lang không?",
-      "ko": "복도에 자전거를 두어도 되나요?"
+      "ko": "복도에 자전거를 두어도 되나요?",
+      "ruby": [
+        {
+          "text": "廊下",
+          "isKanji": true,
+          "reading": "ろうか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "自転車",
+          "isKanji": true,
+          "reading": "じてんしゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "いてもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ろうかにじてんしゃをおいてもいいですか。"
     },
     {
       "id": "s09-048",
       "subcategory": "sub06",
       "role": "user",
       "jp": "ベランダでバーベキューはできますか。",
-      "furigana": "べらんだでばーべきゅーはできますか。",
       "zh": "可以在阳台上烧烤吗？",
       "en": "Can I barbecue on the balcony?",
       "zh-TW": "可以在陽台上烤肉嗎？",
       "vi": "Tôi có thể nướng thịt ở ban công không?",
-      "ko": "베란다에서 바비큐를 해도 되나요?"
+      "ko": "베란다에서 바비큐를 해도 되나요?",
+      "ruby": [
+        {
+          "text": "ベランダでバーベキューはできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ベランダでバーベキューはできますか。"
     },
     {
       "id": "s09-049",
       "subcategory": "sub06",
       "role": "user",
       "jp": "建物内は禁煙ですか。",
-      "furigana": "たてものないはきんえんですか。",
       "zh": "楼内禁烟吗？",
       "en": "Is smoking prohibited inside the building?",
       "zh-TW": "樓內禁菸嗎？",
       "vi": "Trong tòa nhà có cấm hút thuốc không?",
-      "ko": "건물 내 금연인가요?"
+      "ko": "건물 내 금연인가요?",
+      "ruby": [
+        {
+          "text": "建物",
+          "isKanji": true,
+          "reading": "たてもの"
+        },
+        {
+          "text": "内",
+          "isKanji": true,
+          "reading": "ない"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "禁煙",
+          "isKanji": true,
+          "reading": "きんえん"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たてものないはきんえんですか。"
     },
     {
       "id": "s09-050",
       "subcategory": "sub07",
       "role": "user",
       "jp": "ゴミの出し方を教えてください。",
-      "furigana": "ごみのだしかたをおしえてください。",
       "zh": "请告诉我怎么扔垃圾。",
       "en": "Could you tell me how to dispose of the garbage?",
       "zh-TW": "請告訴我怎麼扔垃圾。",
       "vi": "Bạn có thể cho tôi biết cách vứt rác không?",
-      "ko": "쓰레기 버리는 방법을 알려주세요."
+      "ko": "쓰레기 버리는 방법을 알려주세요.",
+      "ruby": [
+        {
+          "text": "ゴミの",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゴミのだしかたをおしえてください。"
     },
     {
       "id": "s09-051",
       "subcategory": "sub07",
       "role": "user",
       "jp": "燃えるゴミの収集日はいつですか。",
-      "furigana": "もえるごみのしゅうしゅうびはいつですか。",
       "zh": "可燃垃圾的收取日是哪天？",
       "en": "Which day is burnable trash collected?",
       "zh-TW": "可燃垃圾的收取日是哪天？",
       "vi": "Ngày thu gom rác đốt được là ngày nào?",
-      "ko": "타는 쓰레기 수거일은 언제인가요?"
+      "ko": "타는 쓰레기 수거일은 언제인가요?",
+      "ruby": [
+        {
+          "text": "燃",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "えるゴミの",
+          "isKanji": false
+        },
+        {
+          "text": "収集",
+          "isKanji": true,
+          "reading": "しゅうしゅう"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "はいつですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もえるゴミのしゅうしゅうびはいつですか。"
     },
     {
       "id": "s09-052",
       "subcategory": "sub07",
       "role": "user",
       "jp": "燃えないゴミの収集日はいつですか。",
-      "furigana": "もえないごみのしゅうしゅうびはいつですか。",
       "zh": "不可燃垃圾的收取日是哪天？",
       "en": "Which day is non-burnable trash collected?",
       "zh-TW": "不可燃垃圾的收取日是哪天？",
       "vi": "Ngày thu gom rác không đốt được là ngày nào?",
-      "ko": "타지 않는 쓰레기 수거일은 언제인가요?"
+      "ko": "타지 않는 쓰레기 수거일은 언제인가요?",
+      "ruby": [
+        {
+          "text": "燃",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "えないゴミの",
+          "isKanji": false
+        },
+        {
+          "text": "収集",
+          "isKanji": true,
+          "reading": "しゅうしゅう"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "はいつですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もえないゴミのしゅうしゅうびはいつですか。"
     },
     {
       "id": "s09-053",
       "subcategory": "sub07",
       "role": "user",
       "jp": "資源ゴミの収集日はいつですか。",
-      "furigana": "しげんごみのしゅうしゅうびはいつですか。",
       "zh": "可回收垃圾的收取日是哪天？",
       "en": "Which day is recyclable trash collected?",
       "zh-TW": "可回收垃圾的收取日是哪天？",
       "vi": "Ngày thu gom rác tái chế là ngày nào?",
-      "ko": "재활용 쓰레기 수거일은 언제인가요?"
+      "ko": "재활용 쓰레기 수거일은 언제인가요?",
+      "ruby": [
+        {
+          "text": "資源",
+          "isKanji": true,
+          "reading": "しげん"
+        },
+        {
+          "text": "ゴミの",
+          "isKanji": false
+        },
+        {
+          "text": "収集",
+          "isKanji": true,
+          "reading": "しゅうしゅう"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "はいつですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しげんゴミのしゅうしゅうびはいつですか。"
     },
     {
       "id": "s09-054",
       "subcategory": "sub07",
       "role": "user",
       "jp": "粗大ゴミはどうすればいいですか。",
-      "furigana": "そだいごみはどうすればいいですか。",
       "zh": "大件垃圾怎么处理？",
       "en": "How do I dispose of large items?",
       "zh-TW": "大件垃圾怎麼處理？",
       "vi": "Tôi phải xử lý đồ cồng kềnh như thế nào?",
-      "ko": "대형 쓰레기는 어떻게 처리하나요?"
+      "ko": "대형 쓰레기는 어떻게 처리하나요?",
+      "ruby": [
+        {
+          "text": "粗大",
+          "isKanji": true,
+          "reading": "そだい"
+        },
+        {
+          "text": "ゴミはどうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そだいゴミはどうすればいいですか。"
     },
     {
       "id": "s09-055",
       "subcategory": "sub07",
       "role": "user",
       "jp": "ゴミはいつ出せばいいですか。",
-      "furigana": "ごみはいつだせばいいですか。",
       "zh": "垃圾什么时间可以放出去？",
       "en": "What time should I put out the trash?",
       "zh-TW": "垃圾什麼時間可以放出去？",
       "vi": "Mấy giờ thì có thể đem rác ra ngoài?",
-      "ko": "쓰레기는 몇 시에 내놓으면 되나요?"
+      "ko": "쓰레기는 몇 시에 내놓으면 되나요?",
+      "ruby": [
+        {
+          "text": "ゴミはいつ",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "せばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゴミはいつだせばいいですか。"
     },
     {
       "jp": "燃えるゴミは月曜日と木曜日です。",
-      "furigana": "もえるゴミはげつようびともくようびです。",
       "zh": "可燃垃圾是周一和周四。",
       "id": "s09-056",
       "subcategory": "sub07",
@@ -766,11 +2431,40 @@
       "en": "Burnable trash is collected on Mondays and Thursdays.",
       "zh-TW": "可燃垃圾是週一和週四。",
       "vi": "Rác cháy được thu vào thứ Hai và thứ Năm.",
-      "ko": "가연 쓰레기는 월요일과 목요일입니다."
+      "ko": "가연 쓰레기는 월요일과 목요일입니다.",
+      "ruby": [
+        {
+          "text": "燃",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "えるゴミは",
+          "isKanji": false
+        },
+        {
+          "text": "月曜日",
+          "isKanji": true,
+          "reading": "げつようび"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "木曜日",
+          "isKanji": true,
+          "reading": "もくようび"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もえるゴミはげつようびともくようびです。"
     },
     {
       "jp": "資源ゴミは第2と第4水曜日です。",
-      "furigana": "しげんゴミはだいにとだいよんすいようびです。",
       "zh": "可回收垃圾是第2、第4周三。",
       "id": "s09-057",
       "subcategory": "sub07",
@@ -778,11 +2472,49 @@
       "en": "Recyclables are collected on the 2nd and 4th Wednesdays.",
       "zh-TW": "可回收垃圾是第2、第4週三。",
       "vi": "Rác tái chế được thu vào thứ Tư tuần thứ 2 và thứ 4.",
-      "ko": "자원 쓰레기는 둘째, 넷째 수요일입니다."
+      "ko": "자원 쓰레기는 둘째, 넷째 수요일입니다.",
+      "ruby": [
+        {
+          "text": "資源",
+          "isKanji": true,
+          "reading": "しげん"
+        },
+        {
+          "text": "ゴミは",
+          "isKanji": false
+        },
+        {
+          "text": "第",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "2と",
+          "isKanji": false
+        },
+        {
+          "text": "第",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "4",
+          "isKanji": false
+        },
+        {
+          "text": "水曜日",
+          "isKanji": true,
+          "reading": "すいようび"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しげんゴミはだい2とだい4すいようびです。"
     },
     {
       "jp": "粗大ゴミは事前予約が必要です。",
-      "furigana": "そだいゴミはじぜんよやくがひつようです。",
       "zh": "大件垃圾需要提前预约。",
       "id": "s09-058",
       "subcategory": "sub07",
@@ -790,175 +2522,743 @@
       "en": "Bulky trash requires a reservation in advance.",
       "zh-TW": "大型垃圾需要提前預約。",
       "vi": "Rác cỡ lớn cần đặt lịch trước.",
-      "ko": "대형 쓰레기는 사전 예약이 필요합니다."
+      "ko": "대형 쓰레기는 사전 예약이 필요합니다.",
+      "ruby": [
+        {
+          "text": "粗大",
+          "isKanji": true,
+          "reading": "そだい"
+        },
+        {
+          "text": "ゴミは",
+          "isKanji": false
+        },
+        {
+          "text": "事前",
+          "isKanji": true,
+          "reading": "じぜん"
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そだいゴミはじぜんよやくがひつようです。"
     },
     {
       "id": "s09-059",
       "subcategory": "sub08",
       "role": "user",
       "jp": "退去の申し出は何ヶ月前までにすればいいですか。",
-      "furigana": "たいきょのもうしではなんかげつまえまでにすればいいですか。",
       "zh": "退房通知需要提前几个月提出？",
       "en": "How many months in advance do I need to give notice to move out?",
       "zh-TW": "退房通知需要提前幾個月提出？",
       "vi": "Cần thông báo trả phòng trước bao nhiêu tháng?",
-      "ko": "퇴실 신청은 몇 개월 전에 해야 하나요?"
+      "ko": "퇴실 신청은 몇 개월 전에 해야 하나요?",
+      "ruby": [
+        {
+          "text": "退去",
+          "isKanji": true,
+          "reading": "たいきょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "ヶ月",
+          "isKanji": true,
+          "reading": "かげつ"
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "までにすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たいきょのもうしではなんかげつまえまでにすればいいですか。"
     },
     {
       "id": "s09-060",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "契約書通り、退去の二ヶ月前までに解約通知書を提出してください。",
-      "furigana": "けいやくしょどおり、たいきょのにかげつまえまでにかいやくつうちしょをていしゅつしてください。",
       "zh": "按照合同规定，请在退房前两个月提交解约通知书。",
       "en": "Per the contract, please submit your termination notice two months before moving out.",
       "zh-TW": "按照合同規定，請在退房前兩個月提交解約通知書。",
       "vi": "Theo hợp đồng, vui lòng nộp thông báo chấm dứt trước hai tháng.",
-      "ko": "계약에 따라 퇴실 2개월 전에 해약 통지서를 제출해 주세요."
+      "ko": "계약에 따라 퇴실 2개월 전에 해약 통지서를 제출해 주세요.",
+      "ruby": [
+        {
+          "text": "契約",
+          "isKanji": true,
+          "reading": "けいやく"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "通",
+          "isKanji": true,
+          "reading": "どお"
+        },
+        {
+          "text": "り、",
+          "isKanji": false
+        },
+        {
+          "text": "退去",
+          "isKanji": true,
+          "reading": "たいきょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "二",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "ヶ月",
+          "isKanji": true,
+          "reading": "かげつ"
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "までに",
+          "isKanji": false
+        },
+        {
+          "text": "解約",
+          "isKanji": true,
+          "reading": "かいやく"
+        },
+        {
+          "text": "通知",
+          "isKanji": true,
+          "reading": "つうち"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "提出",
+          "isKanji": true,
+          "reading": "ていしゅつ"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "けいやくしょどおり、たいきょのにかげつまえまでにかいやくつうちしょをていしゅつしてください。"
     },
     {
       "id": "s09-061",
       "subcategory": "sub08",
       "role": "user",
       "jp": "退去の立ち合いはいつにしますか。",
-      "furigana": "たいきょのたちあいはいつにしますか。",
       "zh": "退房现场检查定在什么时候？",
       "en": "When should we schedule the move-out inspection?",
       "zh-TW": "退房現場檢查定在什麼時候？",
       "vi": "Khi nào thì tiến hành kiểm tra tại chỗ khi trả phòng?",
-      "ko": "퇴실 입회는 언제로 할까요?"
+      "ko": "퇴실 입회는 언제로 할까요?",
+      "ruby": [
+        {
+          "text": "退去",
+          "isKanji": true,
+          "reading": "たいきょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "立",
+          "isKanji": true,
+          "reading": "た"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いはいつにしますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たいきょのたちあいはいつにしますか。"
     },
     {
       "id": "s09-062",
       "subcategory": "sub08",
       "role": "user",
       "jp": "電気・ガス・水道の解約はどこに連絡すればいいですか。",
-      "furigana": "でんき・がす・すいどうのかいやくはどこにれんらくすればいいですか。",
       "zh": "电力、煤气、水道的解约需要联系哪里？",
       "en": "Who should I contact to cancel my electricity, gas, and water contracts?",
       "zh-TW": "電力、煤氣、水道的解約需要聯繫哪裡？",
       "vi": "Tôi cần liên hệ đâu để hủy hợp đồng điện, gas và nước?",
-      "ko": "전기・가스・수도 해약은 어디에 연락하면 되나요?"
+      "ko": "전기・가스・수도 해약은 어디에 연락하면 되나요?",
+      "ruby": [
+        {
+          "text": "電気",
+          "isKanji": true,
+          "reading": "でんき"
+        },
+        {
+          "text": "・ガス・",
+          "isKanji": false
+        },
+        {
+          "text": "水道",
+          "isKanji": true,
+          "reading": "すいどう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "解約",
+          "isKanji": true,
+          "reading": "かいやく"
+        },
+        {
+          "text": "はどこに",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "すればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんき・ガス・すいどうのかいやくはどこにれんらくすればいいですか。"
     },
     {
       "id": "s09-063",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "クロスの汚れや破損があるため、修繕費が差し引かれます。",
-      "furigana": "くろすのよごれやはそんがあるため、しゅうぜんひがさしひかれます。",
       "zh": "因为壁纸有污损，将会扣除一部分修缮费。",
       "en": "As the wallpaper is stained, a portion of the restoration costs will be deducted.",
       "zh-TW": "因為壁紙有污損，將會扣除一部分修繕費。",
       "vi": "Vì giấy dán tường bị bẩn nên một phần chi phí sửa chữa sẽ bị khấu trừ.",
-      "ko": "벽지에 오염이 있어서 일부 수리비가 공제됩니다."
+      "ko": "벽지에 오염이 있어서 일부 수리비가 공제됩니다.",
+      "ruby": [
+        {
+          "text": "クロスの",
+          "isKanji": false
+        },
+        {
+          "text": "汚",
+          "isKanji": true,
+          "reading": "よご"
+        },
+        {
+          "text": "れや",
+          "isKanji": false
+        },
+        {
+          "text": "破損",
+          "isKanji": true,
+          "reading": "はそん"
+        },
+        {
+          "text": "があるため、",
+          "isKanji": false
+        },
+        {
+          "text": "修繕",
+          "isKanji": true,
+          "reading": "しゅうぜん"
+        },
+        {
+          "text": "費",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "差",
+          "isKanji": true,
+          "reading": "さ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "かれます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "クロスのよごれやはそんがあるため、しゅうぜんひがさしひかれます。"
     },
     {
       "id": "s09-064",
       "subcategory": "sub08",
       "role": "user",
       "jp": "敷金の精算はいつ、どのように行われますか。",
-      "furigana": "しききんのせいさんはいつ、どのようにおこなわれますか。",
       "zh": "押金的精算什么时候、以什么方式进行？",
       "en": "When and how will the security deposit settlement be done?",
       "zh-TW": "押金的精算什麼時候、以什麼方式進行？",
       "vi": "Việc quyết toán tiền đặt cọc sẽ được thực hiện khi nào và như thế nào?",
-      "ko": "보증금 정산은 언제, 어떤 방식으로 이루어지나요?"
+      "ko": "보증금 정산은 언제, 어떤 방식으로 이루어지나요?",
+      "ruby": [
+        {
+          "text": "敷金",
+          "isKanji": true,
+          "reading": "しききん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "精算",
+          "isKanji": true,
+          "reading": "せいさん"
+        },
+        {
+          "text": "はいつ、どのように",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "おこな"
+        },
+        {
+          "text": "われますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しききんのせいさんはいつ、どのようにおこなわれますか。"
     },
     {
       "id": "s09-065",
       "subcategory": "sub08",
       "role": "user",
       "jp": "退去後、敷金の返金はいつ頃になりますか。",
-      "furigana": "たいきょご、しききんのへんきんはいつころになりますか。",
       "zh": "退房后，押金大概什么时候退还？",
       "en": "After moving out, when will the deposit be returned?",
       "zh-TW": "退房後，押金大概什麼時候退還？",
       "vi": "Sau khi trả phòng, khoảng khi nào tiền đặt cọc sẽ được hoàn trả?",
-      "ko": "퇴실 후 보증금은 언제쯤 돌려받을 수 있나요?"
+      "ko": "퇴실 후 보증금은 언제쯤 돌려받을 수 있나요?",
+      "ruby": [
+        {
+          "text": "退去",
+          "isKanji": true,
+          "reading": "たいきょ"
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "敷金",
+          "isKanji": true,
+          "reading": "しききん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "返金",
+          "isKanji": true,
+          "reading": "へんきん"
+        },
+        {
+          "text": "はいつ",
+          "isKanji": false
+        },
+        {
+          "text": "頃",
+          "isKanji": true,
+          "reading": "ころ"
+        },
+        {
+          "text": "になりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たいきょご、しききんのへんきんはいつころになりますか。"
     },
     {
       "id": "s09-066",
       "subcategory": "sub09",
       "role": "user",
       "jp": "引越し業者に見積もりをお願いしたいです。",
-      "furigana": "ひっこしぎょうしゃにみつもりをおねがいしたいです。",
       "zh": "我想请搬家公司报价。",
       "en": "I'd like to get a quote from a moving company.",
       "zh-TW": "我想請搬家公司報價。",
       "vi": "Tôi muốn xin báo giá từ công ty chuyển nhà.",
-      "ko": "이사 업체에 견적을 요청하고 싶어요."
+      "ko": "이사 업체에 견적을 요청하고 싶어요.",
+      "ruby": [
+        {
+          "text": "引越",
+          "isKanji": true,
+          "reading": "ひっこ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "業者",
+          "isKanji": true,
+          "reading": "ぎょうしゃ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "見積",
+          "isKanji": true,
+          "reading": "みつ"
+        },
+        {
+          "text": "もりをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ひっこしぎょうしゃにみつもりをおねがいしたいです。"
     },
     {
       "id": "s09-067",
       "subcategory": "sub09",
       "role": "user",
       "jp": "大きな家具があります。",
-      "furigana": "おおきなかぐがあります。",
       "zh": "有大件家具。",
       "en": "There are large pieces of furniture.",
       "zh-TW": "有大件家具。",
       "vi": "Có đồ nội thất cồng kềnh.",
-      "ko": "대형 가구가 있어요."
+      "ko": "대형 가구가 있어요.",
+      "ruby": [
+        {
+          "text": "大",
+          "isKanji": true,
+          "reading": "おお"
+        },
+        {
+          "text": "きな",
+          "isKanji": false
+        },
+        {
+          "text": "家具",
+          "isKanji": true,
+          "reading": "かぐ"
+        },
+        {
+          "text": "があります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おおきなかぐがあります。"
     },
     {
       "id": "s09-068",
       "subcategory": "sub09",
       "role": "user",
       "jp": "エレベーターはありません。",
-      "furigana": "えれべーたーはありません。",
       "zh": "没有电梯。",
       "en": "There's no elevator.",
       "zh-TW": "沒有電梯。",
       "vi": "Không có thang máy.",
-      "ko": "엘리베이터가 없어요."
+      "ko": "엘리베이터가 없어요.",
+      "ruby": [
+        {
+          "text": "エレベーターはありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エレベーターはありません。"
     },
     {
       "id": "s09-069",
       "subcategory": "sub09",
       "role": "user",
       "jp": "エレベーターの使用予約は必要ですか。",
-      "furigana": "えれべーたーのしようよやくはひつようですか。",
       "zh": "使用电梯需要提前预约吗？",
       "en": "Do I need to reserve the elevator for moving?",
       "zh-TW": "使用電梯需要提前預約嗎？",
       "vi": "Có cần đặt trước thang máy để chuyển nhà không?",
-      "ko": "엘리베이터 이용 예약이 필요한가요?"
+      "ko": "엘리베이터 이용 예약이 필요한가요?",
+      "ruby": [
+        {
+          "text": "エレベーターの",
+          "isKanji": false
+        },
+        {
+          "text": "使用",
+          "isKanji": true,
+          "reading": "しよう"
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エレベーターのしようよやくはひつようですか。"
     },
     {
       "id": "s09-070",
       "subcategory": "sub09",
       "role": "user",
       "jp": "荷物の量と移動距離を教えてください。",
-      "furigana": "にもつのりょうといどうきょりをおしえてください。",
       "zh": "请告诉我物品量和搬运距离。",
       "en": "Could you tell me the volume of items and the moving distance?",
       "zh-TW": "請告訴我物品量和搬運距離。",
       "vi": "Vui lòng cho tôi biết khối lượng đồ đạc và khoảng cách di chuyển.",
-      "ko": "짐의 양과 이동 거리를 알려주세요."
+      "ko": "짐의 양과 이동 거리를 알려주세요.",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "量",
+          "isKanji": true,
+          "reading": "りょう"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "移動",
+          "isKanji": true,
+          "reading": "いどう"
+        },
+        {
+          "text": "距離",
+          "isKanji": true,
+          "reading": "きょり"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつのりょうといどうきょりをおしえてください。"
     },
     {
       "id": "s09-071",
       "subcategory": "sub09",
       "role": "staff",
       "jp": "当日は何時から作業を開始しますか。",
-      "furigana": "とうじつはなんじからさぎょうをかいししますか。",
       "zh": "当天几点开始作业？",
       "en": "What time will the work start on the day?",
       "zh-TW": "當天幾點開始作業？",
       "vi": "Ngày hôm đó sẽ bắt đầu làm việc lúc mấy giờ?",
-      "ko": "당일은 몇 시부터 작업을 시작하나요?"
+      "ko": "당일은 몇 시부터 작업을 시작하나요?",
+      "ruby": [
+        {
+          "text": "当日",
+          "isKanji": true,
+          "reading": "とうじつ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "作業",
+          "isKanji": true,
+          "reading": "さぎょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "開始",
+          "isKanji": true,
+          "reading": "かいし"
+        },
+        {
+          "text": "しますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "とうじつはなんじからさぎょうをかいししますか。"
     },
     {
       "id": "s09-072",
       "subcategory": "sub09",
       "role": "user",
       "jp": "不用品の処分もお願いできますか。",
-      "furigana": "ふようひんのしょぶんもおねがいできますか。",
       "zh": "可以帮忙处理不需要的物品吗？",
       "en": "Can you also dispose of items I no longer need?",
       "zh-TW": "可以幫忙處理不需要的物品嗎？",
       "vi": "Bạn có thể giúp xử lý những đồ vật không cần nữa không?",
-      "ko": "필요 없는 물건 처분도 부탁할 수 있나요?"
+      "ko": "필요 없는 물건 처분도 부탁할 수 있나요?",
+      "ruby": [
+        {
+          "text": "不",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "用品",
+          "isKanji": true,
+          "reading": "ようひん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "処分",
+          "isKanji": true,
+          "reading": "しょぶん"
+        },
+        {
+          "text": "もお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふようひんのしょぶんもおねがいできますか。"
     }
   ],
   "title_ja": "住まい"

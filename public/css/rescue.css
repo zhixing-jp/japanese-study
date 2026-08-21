@@ -216,11 +216,11 @@
 }
 .rescue-landing-back:active { transform: scale(.92); }
 .rescue-landing-title-hero {
-  font-size: 16px; font-weight: 700; color: #fff;
+  font-size: 26px; font-weight: 700; color: #fff;
   letter-spacing: -.3px; text-shadow: 0 1px 4px rgba(0,0,0,.3);
 }
 .rescue-landing-desc-hero {
-  font-size: 12px; color: #fff;
+  font-size: 16px; color: #fff;
   line-height: 1.5; font-style: italic;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -322,7 +322,9 @@
   background: var(--t1); color: #fff; border: none;
   font-size: 13px; font-weight: 700; cursor: pointer;
   flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
 }
+.rescue-ctrl-bar .ctrl-play svg { display: block; }
 
 .rescue-ctrl-bar .ctrl-unlearned {
   height: 28px; padding: 0 10px; border-radius: var(--r-sm);
@@ -338,15 +340,29 @@
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
   border: none; font-size: 14px; font-weight: 600; cursor: pointer;
   flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
 }
+.rescue-ctrl-bar .ctrl-icon svg { display: block; }
+
+/* 循环/朗读语言/语速——方案D：强调色描边胶囊，和纯图标开关区分开，
+   一眼能看出"这是可以点击切换的多档选项"而不是静态状态展示 */
 .rescue-ctrl-bar .ctrl-cycle {
-  height: 28px; width: 58px; padding: 0; border-radius: var(--r-sm);
-  background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
-  border: none; font-size: 10.5px; font-weight: 600; cursor: pointer;
+  height: 28px; padding: 0 9px; border-radius: 999px;
+  background: transparent; border: 1px solid rgba(46,107,242,.55);
+  color: #8fb4ff; font-size: 10.5px; font-weight: 600; cursor: pointer;
   white-space: nowrap; overflow: hidden; text-overflow: clip;
   flex-shrink: 0; letter-spacing: -.2px;
+  display: flex; align-items: center; gap: 4px;
 }
-.rescue-ctrl-bar .ctrl-cycle:active { background: rgba(255,255,255,.22); }
+.rescue-ctrl-bar .ctrl-cycle::before {
+  content: "⇄";
+  font-size: 9px;
+  opacity: .85;
+}
+.rescue-ctrl-bar .ctrl-cycle:active {
+  background: rgba(46,107,242,.16);
+  border-color: rgba(46,107,242,.85);
+}
 .ctrl-back {
   height: 28px; width: 28px; padding: 0; border-radius: var(--r-sm);
   background: rgba(255,255,255,0.12); color: rgba(255,255,255,.85);
@@ -429,5 +445,4 @@ mark { background: #FFD60A; color: var(--t1); border-radius: 2px; padding: 0 1px
 .ctrl-icon.on {
   background: rgba(0,122,255,.35);
   color: #5AC8FA;
-  font-size: 20px;
 }

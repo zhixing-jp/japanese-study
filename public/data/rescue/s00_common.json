@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "おはようございます。",
-      "furigana": "おはようございます。",
       "zh": "早上好。",
       "scene": "打招呼",
       "id": "s00-001",
@@ -16,11 +15,17 @@
       "en": "Good morning.",
       "zh-TW": "早安。",
       "vi": "Chào buổi sáng.",
-      "ko": "안녕하세요."
+      "ko": "안녕하세요.",
+      "ruby": [
+        {
+          "text": "おはようございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おはようございます。"
     },
     {
       "jp": "こんにちは。",
-      "furigana": "こんにちは。",
       "zh": "你好。",
       "scene": "打招呼",
       "id": "s00-002",
@@ -29,11 +34,17 @@
       "en": "Hello.",
       "zh-TW": "你好。",
       "vi": "Xin chào.",
-      "ko": "안녕하세요."
+      "ko": "안녕하세요.",
+      "ruby": [
+        {
+          "text": "こんにちは。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんにちは。"
     },
     {
       "jp": "こんばんは。",
-      "furigana": "こんばんは。",
       "zh": "晚上好。",
       "scene": "打招呼",
       "id": "s00-003",
@@ -42,11 +53,17 @@
       "en": "Good evening.",
       "zh-TW": "晚安。",
       "vi": "Chào buổi tối.",
-      "ko": "안녕하세요."
+      "ko": "안녕하세요.",
+      "ruby": [
+        {
+          "text": "こんばんは。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんばんは。"
     },
     {
       "jp": "お疲れ様です。",
-      "furigana": "おつかれさまです。",
       "zh": "辛苦了。",
       "scene": "打招呼",
       "id": "s00-004",
@@ -55,11 +72,35 @@
       "en": "Thanks for your hard work.",
       "zh-TW": "辛苦了。",
       "vi": "Cảm ơn bạn đã vất vả.",
-      "ko": "수고하셨습니다."
+      "ko": "수고하셨습니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "疲",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おつかれさまです。"
     },
     {
       "jp": "おじゃまします。",
-      "furigana": "おじゃまします。",
       "zh": "打扰了。（进入他人场所时）",
       "scene": "打招呼",
       "id": "s00-005",
@@ -68,11 +109,17 @@
       "en": "Pardon the intrusion.",
       "zh-TW": "打擾了。",
       "vi": "Xin phép vào.",
-      "ko": "실례합니다."
+      "ko": "실례합니다.",
+      "ruby": [
+        {
+          "text": "おじゃまします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おじゃまします。"
     },
     {
       "jp": "よろしくお願いします。",
-      "furigana": "よろしくおねがいします。",
       "zh": "麻烦您了。",
       "scene": "打招呼",
       "id": "s00-006",
@@ -81,11 +128,26 @@
       "en": "I'm counting on you.",
       "zh-TW": "麻煩您了。",
       "vi": "Nhờ bạn giúp đỡ nhé.",
-      "ko": "잘 부탁드립니다."
+      "ko": "잘 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "よろしくお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よろしくおねがいします。"
     },
     {
       "jp": "失礼します。",
-      "furigana": "しつれいします。",
       "zh": "打扰了。（离开或经过时）",
       "scene": "打招呼",
       "id": "s00-007",
@@ -94,11 +156,22 @@
       "en": "Excuse me.",
       "zh-TW": "失禮了。",
       "vi": "Cho tôi xin phép.",
-      "ko": "실례합니다."
+      "ko": "실례합니다.",
+      "ruby": [
+        {
+          "text": "失礼",
+          "isKanji": true,
+          "reading": "しつれい"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しつれいします。"
     },
     {
       "jp": "ありがとうございます。",
-      "furigana": "ありがとうございます。",
       "zh": "谢谢您。",
       "scene": "感谢与道歉",
       "id": "s00-008",
@@ -107,11 +180,17 @@
       "en": "Thank you very much.",
       "zh-TW": "謝謝您。",
       "vi": "Cảm ơn bạn rất nhiều.",
-      "ko": "감사합니다."
+      "ko": "감사합니다.",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。"
     },
     {
       "jp": "どうも。",
-      "furigana": "どうも。",
       "zh": "谢了。（非正式场合）",
       "scene": "感谢与道歉",
       "id": "s00-009",
@@ -120,11 +199,17 @@
       "en": "Thanks.",
       "zh-TW": "謝了。",
       "vi": "Cảm ơn.",
-      "ko": "고마워요."
+      "ko": "고마워요.",
+      "ruby": [
+        {
+          "text": "どうも。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どうも。"
     },
     {
       "jp": "すみません。",
-      "furigana": "すみません。",
       "zh": "不好意思。",
       "scene": "感谢与道歉",
       "id": "s00-010",
@@ -133,11 +218,17 @@
       "en": "Excuse me.",
       "zh-TW": "不好意思。",
       "vi": "Xin lỗi.",
-      "ko": "저기요."
+      "ko": "저기요.",
+      "ruby": [
+        {
+          "text": "すみません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません。"
     },
     {
       "jp": "申し訳ありません。",
-      "furigana": "もうしわけありません。",
       "zh": "非常抱歉。",
       "scene": "感谢与道歉",
       "id": "s00-011",
@@ -146,11 +237,31 @@
       "en": "I'm so sorry.",
       "zh-TW": "非常抱歉。",
       "vi": "Tôi thành thật xin lỗi.",
-      "ko": "정말 죄송합니다."
+      "ko": "정말 죄송합니다.",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけありません。"
     },
     {
       "jp": "大丈夫です。",
-      "furigana": "だいじょうぶです。",
       "zh": "没关系。",
       "scene": "感谢与道歉",
       "id": "s00-012",
@@ -159,11 +270,22 @@
       "en": "No worries.",
       "zh-TW": "沒關係。",
       "vi": "Không sao đâu.",
-      "ko": "괜찮아요."
+      "ko": "괜찮아요.",
+      "ruby": [
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいじょうぶです。"
     },
     {
       "jp": "お待たせしました。",
-      "furigana": "おまたせしました。",
       "zh": "让您久等了。",
       "scene": "感谢与道歉",
       "id": "s00-013",
@@ -172,11 +294,26 @@
       "en": "Sorry to keep you waiting.",
       "zh-TW": "讓您久等了。",
       "vi": "Xin lỗi đã để bạn chờ.",
-      "ko": "오래 기다리셨습니다."
+      "ko": "오래 기다리셨습니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おまたせしました。"
     },
     {
       "jp": "日本語があまり話せません。",
-      "furigana": "にほんごがあまりはなせません。",
       "zh": "我不太会说日语。",
       "scene": "听不懂时",
       "id": "s00-014",
@@ -185,11 +322,31 @@
       "en": "I don't speak much Japanese.",
       "zh-TW": "我不太會說日語。",
       "vi": "Tôi không nói được nhiều tiếng Nhật.",
-      "ko": "일본어를 잘 못해요."
+      "ko": "일본어를 잘 못해요.",
+      "ruby": [
+        {
+          "text": "日本語",
+          "isKanji": true,
+          "reading": "にほんご"
+        },
+        {
+          "text": "があまり",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "せません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にほんごがあまりはなせません。"
     },
     {
       "jp": "もう一度お願いします。",
-      "furigana": "もういちどおねがいします。",
       "zh": "请再说一次。",
       "scene": "听不懂时",
       "id": "s00-015",
@@ -198,11 +355,35 @@
       "en": "Could you say that again?",
       "zh-TW": "可以再說一次嗎？",
       "vi": "Bạn có thể nói lại không?",
-      "ko": "다시 한 번 말씀해 주시겠어요?"
+      "ko": "다시 한 번 말씀해 주시겠어요?",
+      "ruby": [
+        {
+          "text": "もう",
+          "isKanji": false
+        },
+        {
+          "text": "一度",
+          "isKanji": true,
+          "reading": "いちど"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もういちどおねがいします。"
     },
     {
       "jp": "ゆっくり話してもらえますか。",
-      "furigana": "ゆっくりはなしてもらえますか。",
       "zh": "能说慢一点吗？",
       "scene": "听不懂时",
       "id": "s00-016",
@@ -211,11 +392,26 @@
       "en": "Could you speak more slowly?",
       "zh-TW": "可以說慢一點嗎？",
       "vi": "Bạn có thể nói chậm hơn không?",
-      "ko": "좀 천천히 말씀해 주시겠어요?"
+      "ko": "좀 천천히 말씀해 주시겠어요?",
+      "ruby": [
+        {
+          "text": "ゆっくり",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "してもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゆっくりはなしてもらえますか。"
     },
     {
       "jp": "漢字で書いてもらえますか。",
-      "furigana": "かんじでかいてもらえますか。",
       "zh": "能用汉字写吗？",
       "scene": "听不懂时",
       "id": "s00-017",
@@ -224,11 +420,31 @@
       "en": "Could you write it in kanji?",
       "zh-TW": "可以用漢字寫嗎？",
       "vi": "Bạn có thể viết bằng chữ Hán không?",
-      "ko": "한자로 써주실 수 있나요?"
+      "ko": "한자로 써주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "漢字",
+          "isKanji": true,
+          "reading": "かんじ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "いてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かんじでかいてもらえますか。"
     },
     {
       "jp": "スマホで見せてもいいですか。",
-      "furigana": "スマホでみせてもいいですか。",
       "zh": "我可以用手机给您看吗？",
       "scene": "听不懂时",
       "id": "s00-018",
@@ -237,11 +453,26 @@
       "en": "Can I show you on my phone?",
       "zh-TW": "可以用手機給您看嗎？",
       "vi": "Tôi có thể cho bạn xem trên điện thoại không?",
-      "ko": "핸드폰으로 보여드려도 될까요?"
+      "ko": "핸드폰으로 보여드려도 될까요?",
+      "ruby": [
+        {
+          "text": "スマホで",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せてもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホでみせてもいいですか。"
     },
     {
       "jp": "わかりました。",
-      "furigana": "わかりました。",
       "zh": "明白了。",
       "scene": "听不懂时",
       "id": "s00-019",
@@ -250,11 +481,17 @@
       "en": "Got it.",
       "zh-TW": "明白了。",
       "vi": "Tôi hiểu rồi.",
-      "ko": "알겠습니다."
+      "ko": "알겠습니다.",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。"
     },
     {
       "jp": "わかりません。",
-      "furigana": "わかりません。",
       "zh": "不明白。",
       "scene": "听不懂时",
       "id": "s00-020",
@@ -263,11 +500,17 @@
       "en": "I don't understand.",
       "zh-TW": "我不明白。",
       "vi": "Tôi không hiểu.",
-      "ko": "잘 모르겠어요."
+      "ko": "잘 모르겠어요.",
+      "ruby": [
+        {
+          "text": "わかりません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりません。"
     },
     {
       "jp": "はい。",
-      "furigana": "はい。",
       "zh": "是的。",
       "scene": "听不懂时",
       "id": "s00-021",
@@ -276,11 +519,17 @@
       "en": "Yes.",
       "zh-TW": "是的。",
       "vi": "Vâng.",
-      "ko": "네."
+      "ko": "네.",
+      "ruby": [
+        {
+          "text": "はい。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい。"
     },
     {
       "jp": "いいえ。",
-      "furigana": "いいえ。",
       "zh": "不是。",
       "scene": "听不懂时",
       "id": "s00-022",
@@ -289,11 +538,17 @@
       "en": "No.",
       "zh-TW": "不是。",
       "vi": "Không.",
-      "ko": "아니요."
+      "ko": "아니요.",
+      "ruby": [
+        {
+          "text": "いいえ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ。"
     },
     {
       "jp": "日本語が話せません。",
-      "furigana": "にほんごがはなせません。",
       "zh": "我不会说日语。",
       "scene": "求助",
       "id": "s00-023",
@@ -302,11 +557,31 @@
       "en": "I can't speak Japanese.",
       "zh-TW": "我不會說日語。",
       "vi": "Tôi không biết tiếng Nhật.",
-      "ko": "일본어를 못합니다."
+      "ko": "일본어를 못합니다.",
+      "ruby": [
+        {
+          "text": "日本語",
+          "isKanji": true,
+          "reading": "にほんご"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "せません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にほんごがはなせません。"
     },
     {
       "jp": "助けてください。",
-      "furigana": "たすけてください。",
       "zh": "请帮帮我。",
       "scene": "求助",
       "id": "s00-024",
@@ -315,11 +590,22 @@
       "en": "Please help me.",
       "zh-TW": "請幫幫我。",
       "vi": "Xin hãy giúp tôi với.",
-      "ko": "도와주세요."
+      "ko": "도와주세요.",
+      "ruby": [
+        {
+          "text": "助",
+          "isKanji": true,
+          "reading": "たす"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たすけてください。"
     },
     {
       "jp": "中国語が話せる方はいますか。",
-      "furigana": "ちゅうごくごがはなせるほうはいますか。",
       "zh": "有人会说中文吗？",
       "scene": "求助",
       "id": "s00-025",
@@ -328,11 +614,45 @@
       "en": "Does anyone here speak Chinese?",
       "zh-TW": "這裡有人會說中文嗎？",
       "vi": "Ở đây có ai nói được tiếng Trung không?",
-      "ko": "중국어 하시는 분 계세요?"
+      "ko": "중국어 하시는 분 계세요?",
+      "ruby": [
+        {
+          "text": "中国",
+          "isKanji": true,
+          "reading": "ちゅうごく"
+        },
+        {
+          "text": "語",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "話",
+          "isKanji": true,
+          "reading": "はな"
+        },
+        {
+          "text": "せる",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "ほう"
+        },
+        {
+          "text": "はいますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちゅうごくごがはなせるほうはいますか。"
     },
     {
       "jp": "通訳を呼んでもらえますか。",
-      "furigana": "つうやくをよんでもらえますか。",
       "zh": "能帮我叫翻译吗？",
       "scene": "求助",
       "id": "s00-026",
@@ -341,11 +661,31 @@
       "en": "Could you get an interpreter?",
       "zh-TW": "能幫我找翻譯嗎？",
       "vi": "Bạn có thể gọi phiên dịch giúp tôi không?",
-      "ko": "통역을 불러주실 수 있나요?"
+      "ko": "통역을 불러주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "通訳",
+          "isKanji": true,
+          "reading": "つうやく"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "んでもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つうやくをよんでもらえますか。"
     },
     {
       "jp": "どうすればいいですか。",
-      "furigana": "どうすればいいですか。",
       "zh": "应该怎么做？",
       "scene": "求助",
       "id": "s00-027",
@@ -354,11 +694,17 @@
       "en": "What should I do?",
       "zh-TW": "我應該怎麼做？",
       "vi": "Tôi phải làm gì bây giờ?",
-      "ko": "어떻게 하면 되나요?"
+      "ko": "어떻게 하면 되나요?",
+      "ruby": [
+        {
+          "text": "どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どうすればいいですか。"
     },
     {
       "jp": "教えてください。",
-      "furigana": "おしえてください。",
       "zh": "请告诉我。",
       "scene": "求助",
       "id": "s00-028",
@@ -367,11 +713,22 @@
       "en": "Could you tell me?",
       "zh-TW": "可以告訴我嗎？",
       "vi": "Bạn có thể cho tôi biết không?",
-      "ko": "알려주시겠어요?"
+      "ko": "알려주시겠어요?",
+      "ruby": [
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おしえてください。"
     },
     {
       "jp": "いくらですか。",
-      "furigana": "いくらですか。",
       "zh": "多少钱？",
       "scene": "问基本信息",
       "id": "s00-029",
@@ -380,11 +737,17 @@
       "en": "How much is it?",
       "zh-TW": "多少錢？",
       "vi": "Bao nhiêu tiền?",
-      "ko": "얼마예요?"
+      "ko": "얼마예요?",
+      "ruby": [
+        {
+          "text": "いくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いくらですか。"
     },
     {
       "jp": "何時からですか。",
-      "furigana": "なんじからですか。",
       "zh": "从几点开始？",
       "scene": "问基本信息",
       "id": "s00-030",
@@ -393,11 +756,27 @@
       "en": "What time does it start?",
       "zh-TW": "幾點開始？",
       "vi": "Mấy giờ bắt đầu?",
-      "ko": "몇 시부터예요?"
+      "ko": "몇 시부터예요?",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "からですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんじからですか。"
     },
     {
       "jp": "何時までですか。",
-      "furigana": "なんじまでですか。",
       "zh": "到几点为止？",
       "scene": "问基本信息",
       "id": "s00-031",
@@ -406,11 +785,22 @@
       "en": "What time does it close?",
       "zh-TW": "幾點結束？",
       "vi": "Mấy giờ kết thúc?",
-      "ko": "몇 시까지예요?"
+      "ko": "몇 시까지예요?",
+      "ruby": [
+        {
+          "text": "何時",
+          "isKanji": true,
+          "reading": "いつ"
+        },
+        {
+          "text": "までですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いつまでですか。"
     },
     {
       "jp": "どこですか。",
-      "furigana": "どこですか。",
       "zh": "在哪里？",
       "scene": "问基本信息",
       "id": "s00-032",
@@ -419,11 +809,17 @@
       "en": "Where is it?",
       "zh-TW": "在哪裡？",
       "vi": "Ở đâu vậy?",
-      "ko": "어디예요?"
+      "ko": "어디예요?",
+      "ruby": [
+        {
+          "text": "どこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どこですか。"
     },
     {
       "jp": "何番ですか。",
-      "furigana": "なんばんですか。",
       "zh": "是几号？（取号、排队时）",
       "scene": "问基本信息",
       "id": "s00-033",
@@ -432,11 +828,27 @@
       "en": "What number is it?",
       "zh-TW": "是幾號？",
       "vi": "Số mấy vậy?",
-      "ko": "몇 번이에요?"
+      "ko": "몇 번이에요?",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "番",
+          "isKanji": true,
+          "reading": "ばん"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんばんですか。"
     },
     {
       "jp": "何階ですか。",
-      "furigana": "なんかいですか。",
       "zh": "在几楼？",
       "scene": "问基本信息",
       "id": "s00-034",
@@ -445,11 +857,27 @@
       "en": "What floor is it on?",
       "zh-TW": "在幾樓？",
       "vi": "Ở tầng mấy?",
-      "ko": "몇 층이에요?"
+      "ko": "몇 층이에요?",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんかいですか。"
     },
     {
       "jp": "予約は必要ですか。",
-      "furigana": "よやくはひつようですか。",
       "zh": "需要预约吗？",
       "scene": "问基本信息",
       "id": "s00-035",
@@ -458,11 +886,31 @@
       "en": "Do I need a reservation?",
       "zh-TW": "需要預約嗎？",
       "vi": "Có cần đặt lịch trước không?",
-      "ko": "예약이 필요한가요?"
+      "ko": "예약이 필요한가요?",
+      "ruby": [
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よやくはひつようですか。"
     },
     {
       "jp": "何日かかりますか。",
-      "furigana": "なんにちかかりますか。",
       "zh": "需要几天？",
       "scene": "问基本信息",
       "id": "s00-036",
@@ -471,11 +919,27 @@
       "en": "How many days will it take?",
       "zh-TW": "需要幾天？",
       "vi": "Mất bao nhiêu ngày?",
-      "ko": "며칠이나 걸려요?"
+      "ko": "며칠이나 걸려요?",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "かかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんにちかかりますか。"
     },
     {
       "jp": "1,000円になります。",
-      "furigana": "せんえんになります。",
       "zh": "是1000日元。",
       "zh-TW": "是1000日圓。",
       "en": "That'll be 1,000 yen.",
@@ -484,11 +948,26 @@
       "scene": "问基本信息",
       "id": "s00-037",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "1,000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "になります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "1,000えんになります。"
     },
     {
       "jp": "9時からです。",
-      "furigana": "くじからです。",
       "zh": "从9点开始。",
       "zh-TW": "從9點開始。",
       "en": "It starts at 9 o'clock.",
@@ -497,11 +976,26 @@
       "scene": "问基本信息",
       "id": "s00-038",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "9",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "からです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "9じからです。"
     },
     {
       "jp": "5時までです。",
-      "furigana": "ごじまでです。",
       "zh": "到5点为止。",
       "zh-TW": "到5點為止。",
       "en": "It's open until 5 o'clock.",
@@ -510,11 +1004,26 @@
       "scene": "问基本信息",
       "id": "s00-039",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "5",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "までです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "5じまでです。"
     },
     {
       "jp": "あちらです。",
-      "furigana": "あちらです。",
       "zh": "在那边。",
       "zh-TW": "在那邊。",
       "en": "It's over there.",
@@ -523,11 +1032,17 @@
       "scene": "问基本信息",
       "id": "s00-040",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらです。"
     },
     {
       "jp": "5番です。",
-      "furigana": "ごばんです。",
       "zh": "是5号。",
       "zh-TW": "是5號。",
       "en": "It's number 5.",
@@ -536,11 +1051,26 @@
       "scene": "问基本信息",
       "id": "s00-041",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "5",
+          "isKanji": false
+        },
+        {
+          "text": "番",
+          "isKanji": true,
+          "reading": "ばん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "5ばんです。"
     },
     {
       "jp": "3階です。",
-      "furigana": "さんがいです。",
       "zh": "在3楼。",
       "zh-TW": "在3樓。",
       "en": "It's on the 3rd floor.",
@@ -549,11 +1079,26 @@
       "scene": "问基本信息",
       "id": "s00-042",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "3",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "がい"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "3がいです。"
     },
     {
       "jp": "はい、予約が必要です。",
-      "furigana": "はい、よやくがひつようです。",
       "zh": "是的，需要预约。",
       "zh-TW": "是的，需要預約。",
       "en": "Yes, a reservation is required.",
@@ -562,11 +1107,35 @@
       "scene": "问基本信息",
       "id": "s00-043",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、よやくがひつようです。"
     },
     {
       "jp": "三日ほどかかります。",
-      "furigana": "みっかほどかかります。",
       "zh": "大约需要三天。",
       "zh-TW": "大約需要三天。",
       "en": "It'll take about three days.",
@@ -575,7 +1144,19 @@
       "scene": "问基本信息",
       "id": "s00-044",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "三日",
+          "isKanji": true,
+          "reading": "みっか"
+        },
+        {
+          "text": "ほどかかります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "みっかほどかかります。"
     }
   ],
   "subcategories": [
@@ -629,9 +1210,9 @@
   "title_zh-TW": "共通短句",
   "title_vi": "Câu cơ bản",
   "title_ko": "기본 표현",
-  "description_ja": "どの場面でも使える基本フレーズ。困った時は、ここの文が必ず役に立ちます。",
   "description_en": "Essential phrases for every situation. When in trouble, these will always help.",
   "description_zh-TW": "所有場景都會用到的基礎用語。遇到困難時，這裡的句子永遠有用。",
   "description_vi": "Những câu dùng được trong mọi tình huống. Khi gặp khó khăn, những câu này luôn giúp ích.",
-  "description_ko": "어떤 상황에서도 쓸 수 있는 기본 표현. 곤란할 때 항상 도움이 됩니다."
+  "description_ko": "어떤 상황에서도 쓸 수 있는 기본 표현. 곤란할 때 항상 도움이 됩니다.",
+  "description_ja": "どの場面でも使える基本フレーズ。困った時は、ここの文が必ず役に立ちます。"
 }

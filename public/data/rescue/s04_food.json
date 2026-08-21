@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "予約したいんですが、できますか。",
-      "furigana": "よやくしたいんですが、できますか。",
       "zh": "我想预约，可以吗？",
       "scene": "预约",
       "id": "s04-001",
@@ -16,11 +15,22 @@
       "en": "I'd like to make a reservation. Is that possible?",
       "zh-TW": "我想預約，可以嗎？",
       "vi": "Tôi muốn đặt bàn. Được không?",
-      "ko": "예약하고 싶은데요, 가능한가요?"
+      "ko": "예약하고 싶은데요, 가능한가요?",
+      "ruby": [
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "したいんですが、できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よやくしたいんですが、できますか。"
     },
     {
       "jp": "いつのご予約でしょうか。",
-      "furigana": "いつのごよやくでしょうか。",
       "zh": "请问您要预约哪一天？",
       "scene": "预约",
       "id": "s04-002",
@@ -29,11 +39,26 @@
       "en": "When would you like to make the reservation for?",
       "zh-TW": "請間您要預約哪一天？",
       "vi": "Anh/Chị muốn đặt lịch vào ngày nào?",
-      "ko": "언제로 예약해 드릴까요?"
+      "ko": "언제로 예약해 드릴까요?",
+      "ruby": [
+        {
+          "text": "いつのご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "でしょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いつのごよやくでしょうか。"
     },
     {
       "jp": "今週の金曜日、十九時でお願いします。",
-      "furigana": "こんしゅうのきんようび、じゅうきゅうじでおねがいします。",
       "zh": "麻烦预约这周五晚上七点。",
       "scene": "预约",
       "id": "s04-003",
@@ -42,11 +67,59 @@
       "en": "This Friday at 7 PM, please.",
       "zh-TW": "麻煩預約這週五晚上七點。",
       "vi": "Cho tôi đặt lịch vào thứ Sáu tuần này lúc 7 giờ tối.",
-      "ko": "이번 주 금요일 저녁 7시로 부탁드립니다."
+      "ko": "이번 주 금요일 저녁 7시로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "今週",
+          "isKanji": true,
+          "reading": "こんしゅう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "金曜日",
+          "isKanji": true,
+          "reading": "きんようび"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "十",
+          "isKanji": true,
+          "reading": "じゅう"
+        },
+        {
+          "text": "九",
+          "isKanji": true,
+          "reading": "きゅう"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんしゅうのきんようび、じゅうきゅうじでおねがいします。"
     },
     {
       "jp": "確認いたしますので、少々お待ちください。",
-      "furigana": "かくにんいたしますので、しょうしょうおまちください。",
       "zh": "我为您确认一下，请稍等。",
       "scene": "预约",
       "id": "s04-004",
@@ -55,11 +128,40 @@
       "en": "Let me check. Please hold on a moment.",
       "zh-TW": "我為您確認一下，請稍等。",
       "vi": "Tôi đang kiểm tra lại, vui lòng đợi một lát.",
-      "ko": "확인해 드리겠습니다. 잠시만 기다려 주세요."
+      "ko": "확인해 드리겠습니다. 잠시만 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたしますので、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたしますので、しょうしょうおまちください。"
     },
     {
       "jp": "お待たせいたしました。ご予約承ります。",
-      "furigana": "おまたせいたしました。ごよやくうけたまわります。",
       "zh": "让您久等了。已经为您预约好了。",
       "scene": "预约",
       "id": "s04-005",
@@ -68,11 +170,40 @@
       "en": "Thank you for waiting. Your reservation is confirmed.",
       "zh-TW": "讓您久等了。已經為您預約好了。",
       "vi": "Xin lỗi vì để anh/chị phải đợi. Chúng tôi đã nhận lịch đặt chỗ.",
-      "ko": "오래 기다리셨습니다. 예약이 완료되었습니다."
+      "ko": "오래 기다리셨습니다. 예약이 완료되었습니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせいたしました。ご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "承",
+          "isKanji": true,
+          "reading": "うけたまわ"
+        },
+        {
+          "text": "ります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おまたせいたしました。ごよやくうけたまわります。"
     },
     {
       "jp": "わかりました。よろしくお願いします。",
-      "furigana": "わかりました。よろしくおねがいします。",
       "zh": "知道了。那就拜托了。",
       "scene": "预约",
       "id": "s04-006",
@@ -81,11 +212,26 @@
       "en": "Understood. Thank you.",
       "zh-TW": "知道了。那就拜託了。",
       "vi": "Tôi hiểu rồi. Nhờ anh/chị nhé.",
-      "ko": "알겠습니다. 잘 부탁드립니다."
+      "ko": "알겠습니다. 잘 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "わかりました。よろしくお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。よろしくおねがいします。"
     },
     {
       "jp": "お待たせいたしました。あいにく、その時間は予約が埋まっております。",
-      "furigana": "おまたせいたしました。あいにく、そのじかんはよやくがうまっております。",
       "zh": "让您久等了。不巧的是，那个时间段已经预约满了。",
       "scene": "预约",
       "id": "s04-007",
@@ -94,11 +240,53 @@
       "en": "Thank you for waiting. Unfortunately, we are fully booked at that time.",
       "zh-TW": "讓您久等了。不巧的是，那個時間段已經預約滿了。",
       "vi": "Xin lỗi vì để anh/chị phải đợi. Rất tiếc, khung giờ đó đã kín chỗ rồi.",
-      "ko": "오래 기다리셨습니다. 안타깝게도 그 시간대는 예약이 마감되었습니다."
+      "ko": "오래 기다리셨습니다. 안타깝게도 그 시간대는 예약이 마감되었습니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせいたしました。あいにく、その",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "埋",
+          "isKanji": true,
+          "reading": "う"
+        },
+        {
+          "text": "まっております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おまたせいたしました。あいにく、そのじかんはよやくがうまっております。"
     },
     {
       "jp": "別の時間はいかがでしょうか。",
-      "furigana": "べつのじかんはいかがでしょうか。",
       "zh": "其他时间可以吗？",
       "scene": "预约",
       "id": "s04-008",
@@ -107,11 +295,31 @@
       "en": "Would another time work for you?",
       "zh-TW": "其他時間可以嗎？",
       "vi": "Anh/Chị xem thời gian khác có được không?",
-      "ko": "다른 시간은 어떠신가요?"
+      "ko": "다른 시간은 어떠신가요?",
+      "ruby": [
+        {
+          "text": "別",
+          "isKanji": true,
+          "reading": "べつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "はいかがでしょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "べつのじかんはいかがでしょうか。"
     },
     {
       "jp": "では、明日の空いている時間はありますか。",
-      "furigana": "では、あしたのあいているじかんはありますか。",
       "zh": "那么，明天有空闲的时间吗？",
       "scene": "预约",
       "id": "s04-009",
@@ -120,11 +328,44 @@
       "en": "Do you have any available time tomorrow then?",
       "zh-TW": "那麼，明天有空閒的時間嗎？",
       "vi": "Vậy ngày mai có khung giờ nào trống không?",
-      "ko": "그럼 내일 빈 시간 있나요?"
+      "ko": "그럼 내일 빈 시간 있나요?",
+      "ruby": [
+        {
+          "text": "では、",
+          "isKanji": false
+        },
+        {
+          "text": "明日",
+          "isKanji": true,
+          "reading": "あした"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いている",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "では、あしたのあいているじかんはありますか。"
     },
     {
       "jp": "わかりました。またの機会にします。",
-      "furigana": "わかりました。またのきかいにします。",
       "zh": "知道了。那留着下次有机会再说吧。",
       "scene": "预约",
       "id": "s04-010",
@@ -133,11 +374,26 @@
       "en": "I understand. Maybe next time.",
       "zh-TW": "知道了。那留著下次有機會再說吧。",
       "vi": "Tôi hiểu rồi. Hẹn dịp khác vậy.",
-      "ko": "알겠습니다. 다음 기회에 할게요."
+      "ko": "알겠습니다. 다음 기회에 할게요.",
+      "ruby": [
+        {
+          "text": "わかりました。またの",
+          "isKanji": false
+        },
+        {
+          "text": "機会",
+          "isKanji": true,
+          "reading": "きかい"
+        },
+        {
+          "text": "にします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。またのきかいにします。"
     },
     {
       "jp": "予約を変更したいです。",
-      "furigana": "よやくをへんこうしたいです。",
       "zh": "我想更改预约。",
       "scene": "预约",
       "id": "s04-011",
@@ -146,11 +402,31 @@
       "en": "I'd like to change my reservation.",
       "zh-TW": "我想更改預約。",
       "vi": "Tôi muốn thay đổi lịch đặt bàn.",
-      "ko": "예약을 변경하고 싶어요."
+      "ko": "예약을 변경하고 싶어요.",
+      "ruby": [
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "変更",
+          "isKanji": true,
+          "reading": "へんこう"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よやくをへんこうしたいです。"
     },
     {
       "jp": "予約をキャンセルしたいです。",
-      "furigana": "よやくをきゃんせるしたいです。",
       "zh": "我想取消预约。",
       "scene": "预约",
       "id": "s04-012",
@@ -159,11 +435,22 @@
       "en": "I'd like to cancel my reservation.",
       "zh-TW": "我想取消預約。",
       "vi": "Tôi muốn hủy đặt bàn.",
-      "ko": "예약을 취소하고 싶어요."
+      "ko": "예약을 취소하고 싶어요.",
+      "ruby": [
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "をキャンセルしたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よやくをキャンセルしたいです。"
     },
     {
       "jp": "いらっしゃいませ。何名様ですか。",
-      "furigana": "いらっしゃいませ。なにめいさまですか。",
       "zh": "欢迎光临。请问几位？",
       "scene": "入店・等位",
       "id": "s04-013",
@@ -172,11 +459,36 @@
       "en": "Welcome. How many people?",
       "zh-TW": "歡迎光臨。請問幾位？",
       "vi": "Xin chào. Quý khách mấy người?",
-      "ko": "어서 오세요. 몇 분이세요?"
+      "ko": "어서 오세요. 몇 분이세요?",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。なにめいさまですか。"
     },
     {
       "jp": "予約しています。董です。",
-      "furigana": "よやくしています。ただしです。",
       "zh": "我有预约，我是董。",
       "scene": "预约",
       "id": "s04-014",
@@ -185,11 +497,31 @@
       "en": "I have a reservation. My name is Dong.",
       "zh-TW": "我有預約，我是董。",
       "vi": "Tôi có đặt bàn. Tên tôi là Đổng.",
-      "ko": "예약했어요. 동이라고 합니다."
+      "ko": "예약했어요. 동이라고 합니다.",
+      "ruby": [
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        },
+        {
+          "text": "董",
+          "isKanji": true,
+          "reading": "ただし"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よやくしています。ただしです。"
     },
     {
       "jp": "二名ですが、席は空いていますか。",
-      "furigana": "にめいですが、せきはあいていますか。",
       "zh": "两位，请问有位置吗？",
       "scene": "入店・等位",
       "id": "s04-015",
@@ -198,11 +530,45 @@
       "en": "We have two. Do you have any seats available?",
       "zh-TW": "兩位，請問有位置嗎？",
       "vi": "Có hai người. Còn bàn không?",
-      "ko": "두 명인데요, 자리 있나요??"
+      "ko": "두 명인데요, 자리 있나요??",
+      "ruby": [
+        {
+          "text": "二",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "ですが、",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にめいですが、せきはあいていますか。"
     },
     {
       "jp": "あいにく満席でございます。",
-      "furigana": "あいにくまんせきでございます。",
       "zh": "不巧，现在客满。",
       "scene": "入店・等位",
       "id": "s04-016",
@@ -211,11 +577,26 @@
       "en": "I'm sorry, we're completely full at the moment.",
       "zh-TW": "很抱歉，現在客滿。",
       "vi": "Rất tiếc, hiện tại chúng tôi đã hết chỗ.",
-      "ko": "죄송하지만, 지금은 만석입니다."
+      "ko": "죄송하지만, 지금은 만석입니다.",
+      "ruby": [
+        {
+          "text": "あいにく",
+          "isKanji": false
+        },
+        {
+          "text": "満席",
+          "isKanji": true,
+          "reading": "まんせき"
+        },
+        {
+          "text": "でございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あいにくまんせきでございます。"
     },
     {
       "jp": "何分くらい待ちますか。",
-      "furigana": "なにぶんくらいまちますか。",
       "zh": "大概要等几分钟？",
       "scene": "入店・等位",
       "id": "s04-017",
@@ -224,11 +605,31 @@
       "en": "How long is the wait?",
       "zh-TW": "大概要等幾分鐘？",
       "vi": "Phải chờ khoảng bao lâu?",
-      "ko": "얼마나 기다려야 하나요?"
+      "ko": "얼마나 기다려야 하나요?",
+      "ruby": [
+        {
+          "text": "何分",
+          "isKanji": true,
+          "reading": "なにぶん"
+        },
+        {
+          "text": "くらい",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なにぶんくらいまちますか。"
     },
     {
       "jp": "禁煙席をお願いします。",
-      "furigana": "きんえんせきをおねがいします。",
       "zh": "请给我禁烟座位。",
       "scene": "入店・等位",
       "id": "s04-018",
@@ -237,11 +638,36 @@
       "en": "A non-smoking seat, please.",
       "zh-TW": "請給我禁菸座位。",
       "vi": "Cho tôi bàn không hút thuốc.",
-      "ko": "금연석으로 부탁드립니다."
+      "ko": "금연석으로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "禁煙",
+          "isKanji": true,
+          "reading": "きんえん"
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きんえんせきをおねがいします。"
     },
     {
       "jp": "子ども用の椅子はありますか。",
-      "furigana": "こどもようのいすはありますか。",
       "zh": "有儿童椅吗？",
       "scene": "入店・等位",
       "id": "s04-019",
@@ -250,11 +676,40 @@
       "en": "Do you have a high chair for children?",
       "zh-TW": "有兒童椅嗎？",
       "vi": "Có ghế cao cho trẻ em không?",
-      "ko": "유아용 의자 있나요?"
+      "ko": "유아용 의자 있나요?",
+      "ruby": [
+        {
+          "text": "子",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "ども",
+          "isKanji": false
+        },
+        {
+          "text": "用",
+          "isKanji": true,
+          "reading": "よう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "椅子",
+          "isKanji": true,
+          "reading": "いす"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こどもようのいすはありますか。"
     },
     {
       "jp": "ベビーカーでも入れますか。",
-      "furigana": "べびーかーでもいれますか。",
       "zh": "推婴儿车可以进吗？",
       "scene": "入店・等位",
       "id": "s04-020",
@@ -263,11 +718,26 @@
       "en": "Can I come in with a stroller?",
       "zh-TW": "推嬰兒車可以進去嗎？",
       "vi": "Tôi có thể vào với xe đẩy không?",
-      "ko": "유모차를 끌고 들어갈 수 있나요?"
+      "ko": "유모차를 끌고 들어갈 수 있나요?",
+      "ruby": [
+        {
+          "text": "ベビーカーでも",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ベビーカーでもいれますか。"
     },
     {
       "jp": "英語のメニューはありますか。",
-      "furigana": "えいごのめにゅーはありますか。",
       "zh": "有英文菜单吗？",
       "scene": "点餐",
       "id": "s04-021",
@@ -276,11 +746,22 @@
       "en": "Do you have an English menu?",
       "zh-TW": "有英文菜單嗎？",
       "vi": "Có thực đơn tiếng Anh không?",
-      "ko": "영어 메뉴 있나요?"
+      "ko": "영어 메뉴 있나요?",
+      "ruby": [
+        {
+          "text": "英語",
+          "isKanji": true,
+          "reading": "えいご"
+        },
+        {
+          "text": "のメニューはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "えいごのメニューはありますか。"
     },
     {
       "jp": "ご注文はお決まりですか。",
-      "furigana": "ごちゅうもんはおきまりですか。",
       "zh": "请问决定好点什么了吗？",
       "scene": "点餐",
       "id": "s04-022",
@@ -289,11 +770,35 @@
       "en": "Are you ready to order?",
       "zh-TW": "請問決定好點什麼了嗎？",
       "vi": "Quý khách đã sẵn sàng gọi món chưa?",
-      "ko": "주문은 결정하셨나요?"
+      "ko": "주문은 결정하셨나요?",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "注文",
+          "isKanji": true,
+          "reading": "ちゅうもん"
+        },
+        {
+          "text": "はお",
+          "isKanji": false
+        },
+        {
+          "text": "決",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "まりですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごちゅうもんはおきまりですか。"
     },
     {
       "jp": "注文をお願いします。",
-      "furigana": "ちゅうもんをおねがいします。",
       "zh": "我要点餐。",
       "scene": "点餐",
       "id": "s04-023",
@@ -302,11 +807,31 @@
       "en": "I'd like to order, please.",
       "zh-TW": "我要點餐。",
       "vi": "Cho tôi gọi món.",
-      "ko": "주문할게요."
+      "ko": "주문할게요.",
+      "ruby": [
+        {
+          "text": "注文",
+          "isKanji": true,
+          "reading": "ちゅうもん"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちゅうもんをおねがいします。"
     },
     {
       "jp": "おすすめは何ですか。",
-      "furigana": "おすすめはなにですか。",
       "zh": "有什么推荐的吗？",
       "scene": "点餐",
       "id": "s04-024",
@@ -315,11 +840,26 @@
       "en": "What would you recommend?",
       "zh-TW": "有什麼推薦的嗎？",
       "vi": "Bạn có thể gợi ý gì không?",
-      "ko": "추천 메뉴가 있나요?"
+      "ko": "추천 메뉴가 있나요?",
+      "ruby": [
+        {
+          "text": "おすすめは",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おすすめはなにですか。"
     },
     {
       "jp": "これをください。",
-      "furigana": "これをください。",
       "zh": "我要这个。",
       "scene": "点餐",
       "id": "s04-025",
@@ -328,11 +868,17 @@
       "en": "I'll have this one.",
       "zh-TW": "我要這個。",
       "vi": "Cho tôi cái này.",
-      "ko": "이걸로 할게요."
+      "ko": "이걸로 할게요.",
+      "ruby": [
+        {
+          "text": "これをください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "これをください。"
     },
     {
       "jp": "これと同じものをください。",
-      "furigana": "これとおなじものをください。",
       "zh": "请给我来一份和这个一样的。",
       "scene": "点餐",
       "id": "s04-026",
@@ -341,11 +887,26 @@
       "en": "I'd like the same as this, please.",
       "zh-TW": "請給我來一份和這個一樣的。",
       "vi": "Cho tôi một phần giống cái này.",
-      "ko": "이것과 같은 걸로 주세요."
+      "ko": "이것과 같은 걸로 주세요.",
+      "ruby": [
+        {
+          "text": "これと",
+          "isKanji": false
+        },
+        {
+          "text": "同",
+          "isKanji": true,
+          "reading": "おな"
+        },
+        {
+          "text": "じものをください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "これとおなじものをください。"
     },
     {
       "jp": "ランチメニューはありますか。",
-      "furigana": "らんちめにゅーはありますか。",
       "zh": "有午餐套餐吗？",
       "scene": "点餐",
       "id": "s04-027",
@@ -354,11 +915,17 @@
       "en": "Do you have a lunch set?",
       "zh-TW": "有午餐套餐嗎？",
       "vi": "Có set bữa trưa không?",
-      "ko": "런치 세트 있나요?"
+      "ko": "런치 세트 있나요?",
+      "ruby": [
+        {
+          "text": "ランチメニューはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ランチメニューはありますか。"
     },
     {
       "jp": "お子様メニューはありますか。",
-      "furigana": "おこさまめにゅーはありますか。",
       "zh": "有儿童套餐吗？",
       "scene": "点餐",
       "id": "s04-028",
@@ -367,11 +934,26 @@
       "en": "Do you have a kids' menu?",
       "zh-TW": "有兒童套餐嗎？",
       "vi": "Có menu cho trẻ em không?",
-      "ko": "어린이 메뉴 있나요?"
+      "ko": "어린이 메뉴 있나요?",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "子様",
+          "isKanji": true,
+          "reading": "こさま"
+        },
+        {
+          "text": "メニューはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おこさまメニューはありますか。"
     },
     {
       "jp": "ネギ抜きでお願いします。",
-      "furigana": "ねぎぬきでおねがいします。",
       "zh": "请不要放葱。",
       "scene": "点餐",
       "id": "s04-029",
@@ -380,11 +962,35 @@
       "en": "Without green onions, please.",
       "zh-TW": "請不要放蔥。",
       "vi": "Không cho hành vào nhé.",
-      "ko": "파 빼주세요."
+      "ko": "파 빼주세요.",
+      "ruby": [
+        {
+          "text": "ネギ",
+          "isKanji": false
+        },
+        {
+          "text": "抜",
+          "isKanji": true,
+          "reading": "ぬ"
+        },
+        {
+          "text": "きでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ネギぬきでおねがいします。"
     },
     {
       "jp": "辛さは控えめにしてください。",
-      "furigana": "つらさはひかえめにしてください。",
       "zh": "请做得不那么辣。",
       "scene": "点餐",
       "id": "s04-030",
@@ -393,11 +999,31 @@
       "en": "Could you make it less spicy?",
       "zh-TW": "請做得不那麼辣。",
       "vi": "Làm ơn cho ít cay thôi nhé.",
-      "ko": "덜 맵게 해주실 수 있나요?"
+      "ko": "덜 맵게 해주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "辛",
+          "isKanji": true,
+          "reading": "つら"
+        },
+        {
+          "text": "さは",
+          "isKanji": false
+        },
+        {
+          "text": "控",
+          "isKanji": true,
+          "reading": "ひか"
+        },
+        {
+          "text": "えめにしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つらさはひかえめにしてください。"
     },
     {
       "jp": "QRコードから注文できますか。",
-      "furigana": "QRこーどからちゅうもんできますか。",
       "zh": "可以扫码点餐吗？",
       "scene": "点餐",
       "id": "s04-031",
@@ -406,11 +1032,26 @@
       "en": "Can I order by scanning the QR code?",
       "zh-TW": "可以掃碼點餐嗎？",
       "vi": "Tôi có thể đặt món bằng mã QR không?",
-      "ko": "QR코드로 주문할 수 있나요?"
+      "ko": "QR코드로 주문할 수 있나요?",
+      "ruby": [
+        {
+          "text": "QRコードから",
+          "isKanji": false
+        },
+        {
+          "text": "注文",
+          "isKanji": true,
+          "reading": "ちゅうもん"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "QRコードからちゅうもんできますか。"
     },
     {
       "jp": "以上でよろしいですか。",
-      "furigana": "いじょうでよろしいですか。",
       "zh": "这样就可以了吗？",
       "scene": "点餐",
       "id": "s04-032",
@@ -419,11 +1060,22 @@
       "en": "Will that be everything?",
       "zh-TW": "這樣就可以了嗎？",
       "vi": "Quý khách muốn thêm gì nữa không?",
-      "ko": "이상이세요?"
+      "ko": "이상이세요?",
+      "ruby": [
+        {
+          "text": "以上",
+          "isKanji": true,
+          "reading": "いじょう"
+        },
+        {
+          "text": "でよろしいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いじょうでよろしいですか。"
     },
     {
       "jp": "卵アレルギーがあります。",
-      "furigana": "たまごあれるぎーがあります。",
       "zh": "我对鸡蛋过敏。",
       "scene": "过敏・饮食限制",
       "id": "s04-033",
@@ -432,11 +1084,22 @@
       "en": "I'm allergic to eggs.",
       "zh-TW": "我對雞蛋過敏。",
       "vi": "Tôi bị dị ứng với trứng.",
-      "ko": "달걀 알레르기가 있어요."
+      "ko": "달걀 알레르기가 있어요.",
+      "ruby": [
+        {
+          "text": "卵",
+          "isKanji": true,
+          "reading": "たまご"
+        },
+        {
+          "text": "アレルギーがあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たまごアレルギーがあります。"
     },
     {
       "jp": "乳製品アレルギーがあります。",
-      "furigana": "にゅうせいひんあれるぎーがあります。",
       "zh": "我对乳制品过敏。",
       "scene": "过敏・饮食限制",
       "id": "s04-034",
@@ -445,11 +1108,22 @@
       "en": "I'm allergic to dairy.",
       "zh-TW": "我對乳製品過敏。",
       "vi": "Tôi bị dị ứng với sữa.",
-      "ko": "유제품 알레르기가 있어요."
+      "ko": "유제품 알레르기가 있어요.",
+      "ruby": [
+        {
+          "text": "乳製品",
+          "isKanji": true,
+          "reading": "にゅうせいひん"
+        },
+        {
+          "text": "アレルギーがあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にゅうせいひんアレルギーがあります。"
     },
     {
       "jp": "ナッツアレルギーがあります。",
-      "furigana": "なっつあれるぎーがあります。",
       "zh": "我对坚果过敏。",
       "scene": "过敏・饮食限制",
       "id": "s04-035",
@@ -458,11 +1132,17 @@
       "en": "I'm allergic to nuts.",
       "zh-TW": "我對堅果過敏。",
       "vi": "Tôi bị dị ứng với các loại hạt.",
-      "ko": "견과류 알레르기가 있어요."
+      "ko": "견과류 알레르기가 있어요.",
+      "ruby": [
+        {
+          "text": "ナッツアレルギーがあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ナッツアレルギーがあります。"
     },
     {
       "jp": "唐辛子は入っていますか。",
-      "furigana": "とうがらしははいっていますか。",
       "zh": "里面有辣椒吗？",
       "scene": "过敏・饮食限制",
       "id": "s04-036",
@@ -471,11 +1151,31 @@
       "en": "Does this contain chili peppers?",
       "zh-TW": "裡面有辣椒嗎？",
       "vi": "Món này có ớt không?",
-      "ko": "이 음식에 고추가 들어가나요?"
+      "ko": "이 음식에 고추가 들어가나요?",
+      "ruby": [
+        {
+          "text": "唐辛子",
+          "isKanji": true,
+          "reading": "とうがらし"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "っていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "とうがらしははいっていますか。"
     },
     {
       "jp": "豚肉は食べられません。",
-      "furigana": "ぶたにくはたべられません。",
       "zh": "我不吃猪肉。",
       "scene": "过敏・饮食限制",
       "id": "s04-037",
@@ -484,11 +1184,31 @@
       "en": "I don't eat pork.",
       "zh-TW": "我不吃豬肉。",
       "vi": "Tôi không ăn thịt heo.",
-      "ko": "저는 돼지고기를 먹지 않아요."
+      "ko": "저는 돼지고기를 먹지 않아요.",
+      "ruby": [
+        {
+          "text": "豚肉",
+          "isKanji": true,
+          "reading": "ぶたにく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "食",
+          "isKanji": true,
+          "reading": "た"
+        },
+        {
+          "text": "べられません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ぶたにくはたべられません。"
     },
     {
       "jp": "牛肉は食べられません。",
-      "furigana": "ぎゅうにくはたべられません。",
       "zh": "我不吃牛肉。",
       "scene": "过敏・饮食限制",
       "id": "s04-038",
@@ -497,11 +1217,31 @@
       "en": "I don't eat beef.",
       "zh-TW": "我不吃牛肉。",
       "vi": "Tôi không ăn thịt bò.",
-      "ko": "저는 소고기를 먹지 않아요."
+      "ko": "저는 소고기를 먹지 않아요.",
+      "ruby": [
+        {
+          "text": "牛肉",
+          "isKanji": true,
+          "reading": "ぎゅうにく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "食",
+          "isKanji": true,
+          "reading": "た"
+        },
+        {
+          "text": "べられません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ぎゅうにくはたべられません。"
     },
     {
       "jp": "ベジタリアンです。",
-      "furigana": "ベジタリアンです。",
       "zh": "我是素食者。",
       "scene": "过敏・饮食限制",
       "id": "s04-039",
@@ -510,11 +1250,17 @@
       "en": "I'm vegetarian.",
       "zh-TW": "我是素食者。",
       "vi": "Tôi ăn chay.",
-      "ko": "저는 채식주의자예요."
+      "ko": "저는 채식주의자예요.",
+      "ruby": [
+        {
+          "text": "ベジタリアンです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ベジタリアンです。"
     },
     {
       "jp": "ハラール対応していますか。",
-      "furigana": "ハラールたいおうしていますか。",
       "zh": "有清真对应吗？",
       "scene": "过敏・饮食限制",
       "id": "s04-040",
@@ -523,11 +1269,26 @@
       "en": "Do you have halal options?",
       "zh-TW": "有清真對應嗎？",
       "vi": "Có món halal không?",
-      "ko": "할랄 음식 있나요?"
+      "ko": "할랄 음식 있나요?",
+      "ruby": [
+        {
+          "text": "ハラール",
+          "isKanji": false
+        },
+        {
+          "text": "対応",
+          "isKanji": true,
+          "reading": "たいおう"
+        },
+        {
+          "text": "していますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ハラールたいおうしていますか。"
     },
     {
       "jp": "すみません、追加注文いいですか。",
-      "furigana": "すみません、ついかちゅうもんいいですか。",
       "zh": "不好意思，可以追加点餐吗？",
       "scene": "用餐中",
       "id": "s04-041",
@@ -536,11 +1297,31 @@
       "en": "Excuse me, could I add an order?",
       "zh-TW": "不好意思，可以追加點餐嗎？",
       "vi": "Xin lỗi, tôi có thể gọi thêm không?",
-      "ko": "저기요, 추가 주문 가능한가요?"
+      "ko": "저기요, 추가 주문 가능한가요?",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "追加",
+          "isKanji": true,
+          "reading": "ついか"
+        },
+        {
+          "text": "注文",
+          "isKanji": true,
+          "reading": "ちゅうもん"
+        },
+        {
+          "text": "いいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、ついかちゅうもんいいですか。"
     },
     {
       "jp": "はい、かしこまりました。",
-      "furigana": "はい、かしこまりました。",
       "zh": "好的。",
       "zh-TW": "好的。",
       "en": "Certainly.",
@@ -549,11 +1330,17 @@
       "scene": "用餐中",
       "subcategory": "sub04",
       "role": "staff",
-      "id": "s04-042"
+      "id": "s04-042",
+      "ruby": [
+        {
+          "text": "はい、かしこまりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、かしこまりました。"
     },
     {
       "jp": "お水をもう一杯お願いします。",
-      "furigana": "おみずをもういちはいおねがいします。",
       "zh": "请再给我加一杯水。",
       "scene": "用餐中",
       "id": "s04-043",
@@ -562,11 +1349,49 @@
       "en": "Could I have another glass of water?",
       "zh-TW": "請再給我加一杯水。",
       "vi": "Cho tôi thêm một ly nước.",
-      "ko": "물 한 잔 더 주세요."
+      "ko": "물 한 잔 더 주세요.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "水",
+          "isKanji": true,
+          "reading": "みず"
+        },
+        {
+          "text": "をもう",
+          "isKanji": false
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "杯",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おみずをもういちはいおねがいします。"
     },
     {
       "jp": "はい、少々お待ちください。",
-      "furigana": "はい、しょうしょうおまちください。",
       "zh": "好的，请稍等。",
       "zh-TW": "好的，請稍等。",
       "en": "Sure, one moment please.",
@@ -575,11 +1400,35 @@
       "scene": "用餐中",
       "subcategory": "sub04",
       "role": "staff",
-      "id": "s04-044"
+      "id": "s04-044",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、しょうしょうおまちください。"
     },
     {
       "jp": "お箸をください。",
-      "furigana": "おはしをください。",
       "zh": "请给我筷子。",
       "scene": "用餐中",
       "id": "s04-045",
@@ -588,11 +1437,26 @@
       "en": "Could I have some chopsticks?",
       "zh-TW": "請給我筷子。",
       "vi": "Cho tôi đũa.",
-      "ko": "젓가락 주세요."
+      "ko": "젓가락 주세요.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "箸",
+          "isKanji": true,
+          "reading": "はし"
+        },
+        {
+          "text": "をください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おはしをください。"
     },
     {
       "jp": "はい、こちらにどうぞ。",
-      "furigana": "はい、こちらにどうぞ。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Here you go.",
@@ -601,11 +1465,17 @@
       "scene": "用餐中",
       "subcategory": "sub04",
       "role": "staff",
-      "id": "s04-046"
+      "id": "s04-046",
+      "ruby": [
+        {
+          "text": "はい、こちらにどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらにどうぞ。"
     },
     {
       "jp": "おしぼりをいただけますか。",
-      "furigana": "おしぼりをいただけますか。",
       "zh": "可以给我一块擦手巾吗？",
       "scene": "用餐中",
       "id": "s04-047",
@@ -614,11 +1484,17 @@
       "en": "Could I have a wet towel?",
       "zh-TW": "可以給我一塊擦手巾嗎？",
       "vi": "Cho tôi một chiếc khăn ẩm được không?",
-      "ko": "물수건 주실 수 있나요?"
+      "ko": "물수건 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "おしぼりをいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おしぼりをいただけますか。"
     },
     {
       "jp": "はい、すぐにお持ちします。",
-      "furigana": "はい、すぐにおもちします。",
       "zh": "好的，马上给您送来。",
       "zh-TW": "好的，馬上給您送來。",
       "en": "Sure, I'll bring it right away.",
@@ -627,11 +1503,26 @@
       "scene": "用餐中",
       "subcategory": "sub04",
       "role": "staff",
-      "id": "s04-048"
+      "id": "s04-048",
+      "ruby": [
+        {
+          "text": "はい、すぐにお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、すぐにおもちします。"
     },
     {
       "jp": "お会計をお願いします。",
-      "furigana": "おかいけいをおねがいします。",
       "zh": "请结账。",
       "scene": "结账",
       "id": "s04-049",
@@ -640,11 +1531,35 @@
       "en": "Check, please.",
       "zh-TW": "請結帳。",
       "vi": "Cho tôi tính tiền.",
-      "ko": "계산해 주세요."
+      "ko": "계산해 주세요.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "会計",
+          "isKanji": true,
+          "reading": "かいけい"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おかいけいをおねがいします。"
     },
     {
       "jp": "かしこまりました。合計2,400円になります。",
-      "furigana": "かしこまりました。ごうけいにせんよんひゃくえんになります。",
       "zh": "好的，一共是2400日元。",
       "zh-TW": "好的，一共是2400日圓。",
       "en": "Certainly. That'll be 2,400 yen in total.",
@@ -653,11 +1568,35 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-050"
+      "id": "s04-050",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "合計",
+          "isKanji": true,
+          "reading": "ごうけい"
+        },
+        {
+          "text": "2,400",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "になります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。ごうけい2,400えんになります。"
     },
     {
       "jp": "別々でお願いします。",
-      "furigana": "べつべつでおねがいします。",
       "zh": "麻烦分开结账。",
       "scene": "结账",
       "id": "s04-051",
@@ -666,11 +1605,31 @@
       "en": "Separate checks, please.",
       "zh-TW": "麻煩分開結帳。",
       "vi": "Tính tiền riêng giúp chúng tôi nhé?",
-      "ko": "따로 계산해 주세요."
+      "ko": "따로 계산해 주세요.",
+      "ruby": [
+        {
+          "text": "別々",
+          "isKanji": true,
+          "reading": "べつべつ"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "べつべつでおねがいします。"
     },
     {
       "jp": "かしこまりました。それぞれ会計いたします。",
-      "furigana": "かしこまりました。それぞれかいけいいたします。",
       "zh": "好的，分开结账。",
       "zh-TW": "好的，分開結帳。",
       "en": "Certainly, I'll charge you separately.",
@@ -679,11 +1638,26 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-052"
+      "id": "s04-052",
+      "ruby": [
+        {
+          "text": "かしこまりました。それぞれ",
+          "isKanji": false
+        },
+        {
+          "text": "会計",
+          "isKanji": true,
+          "reading": "かいけい"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。それぞれかいけいいたします。"
     },
     {
       "jp": "一緒でお願いします。",
-      "furigana": "いっしょでおねがいします。",
       "zh": "请一起结账。",
       "scene": "结账",
       "id": "s04-053",
@@ -692,11 +1666,31 @@
       "en": "Together, please.",
       "zh-TW": "請一起結帳。",
       "vi": "Tính chung đi.",
-      "ko": "같이 계산해 주세요."
+      "ko": "같이 계산해 주세요.",
+      "ruby": [
+        {
+          "text": "一緒",
+          "isKanji": true,
+          "reading": "いっしょ"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いっしょでおねがいします。"
     },
     {
       "jp": "はい、まとめてお会計いたします。",
-      "furigana": "はい、まとめておかいけいいたします。",
       "zh": "好的，一起结账。",
       "zh-TW": "好的，一起結帳。",
       "en": "Sure, I'll charge it all together.",
@@ -705,11 +1699,26 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-054"
+      "id": "s04-054",
+      "ruby": [
+        {
+          "text": "はい、まとめてお",
+          "isKanji": false
+        },
+        {
+          "text": "会計",
+          "isKanji": true,
+          "reading": "かいけい"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、まとめておかいけいいたします。"
     },
     {
       "jp": "スマホ決済は使えますか。",
-      "furigana": "スマホけっさいはつかえますか。",
       "zh": "可以用手机支付吗？",
       "scene": "结账",
       "id": "s04-055",
@@ -718,11 +1727,35 @@
       "en": "Can I pay by phone?",
       "zh-TW": "可以用手機支付嗎？",
       "vi": "Tôi có thể thanh toán bằng điện thoại không?",
-      "ko": "스마트폰으로 결제할 수 있나요?"
+      "ko": "스마트폰으로 결제할 수 있나요?",
+      "ruby": [
+        {
+          "text": "スマホ",
+          "isKanji": false
+        },
+        {
+          "text": "決済",
+          "isKanji": true,
+          "reading": "けっさい"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホけっさいはつかえますか。"
     },
     {
       "jp": "はい、PayPayとSuicaがご利用いただけます。",
-      "furigana": "はい、ぺいぺいとすいかがごりよういただけます。",
       "zh": "可以的，支持PayPay和Suica。",
       "zh-TW": "可以的，支援PayPay和Suica。",
       "en": "Yes, we accept PayPay and Suica.",
@@ -731,11 +1764,26 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-056"
+      "id": "s04-056",
+      "ruby": [
+        {
+          "text": "はい、PayPayとSuicaがご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "いただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、PayPayとSuicaがごりよういただけます。"
     },
     {
       "jp": "領収書をいただけますか。",
-      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我发票。",
       "scene": "结账",
       "id": "s04-057",
@@ -744,11 +1792,27 @@
       "en": "Could I have a receipt?",
       "zh-TW": "請給我收據。",
       "vi": "Cho tôi xin hóa đơn.",
-      "ko": "영수증 주실 수 있나요?"
+      "ko": "영수증 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "領収",
+          "isKanji": true,
+          "reading": "りょうしゅう"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうしゅうしょをいただけますか。"
     },
     {
       "jp": "はい、少々お待ちください。",
-      "furigana": "はい、しょうしょうおまちください。",
       "zh": "好的，请稍等。",
       "zh-TW": "好的，請稍等。",
       "en": "Sure, one moment please.",
@@ -757,11 +1821,35 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-058"
+      "id": "s04-058",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、しょうしょうおまちください。"
     },
     {
       "jp": "現金しか使えませんか。",
-      "furigana": "げんきんしかつかえませんか。",
       "zh": "只能用现金吗？",
       "scene": "结账",
       "id": "s04-059",
@@ -770,11 +1858,31 @@
       "en": "Is cash the only option?",
       "zh-TW": "只能用現金嗎？",
       "vi": "Chỉ nhận tiền mặt thôi sao?",
-      "ko": "현금만 되나요?"
+      "ko": "현금만 되나요?",
+      "ruby": [
+        {
+          "text": "現金",
+          "isKanji": true,
+          "reading": "げんきん"
+        },
+        {
+          "text": "しか",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えませんか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんきんしかつかえませんか。"
     },
     {
       "jp": "いいえ、カードもご利用いただけます。",
-      "furigana": "いいえ、かーどもごりよういただけます。",
       "zh": "不是的，也可以刷卡。",
       "zh-TW": "不是的，也可以刷卡。",
       "en": "No, we also accept cards.",
@@ -783,11 +1891,26 @@
       "scene": "结账",
       "subcategory": "sub05",
       "role": "staff",
-      "id": "s04-060"
+      "id": "s04-060",
+      "ruby": [
+        {
+          "text": "いいえ、カードもご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "いただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、カードもごりよういただけます。"
     },
     {
       "jp": "持ち帰りをお願いします。",
-      "furigana": "もちかえりをおねがいします。",
       "zh": "我要外带。",
       "scene": "外带",
       "id": "s04-061",
@@ -796,11 +1919,40 @@
       "en": "I'd like to take this to go.",
       "zh-TW": "我要外帶。",
       "vi": "Cho tôi mang về.",
-      "ko": "포장해 주세요."
+      "ko": "포장해 주세요.",
+      "ruby": [
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "帰",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "りをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もちかえりをおねがいします。"
     },
     {
       "jp": "残りを包んでもらえますか。",
-      "furigana": "のこりをつつんでもらえますか。",
       "zh": "可以帮我把剩下的打包吗？",
       "scene": "外带",
       "id": "s04-062",
@@ -809,11 +1961,31 @@
       "en": "Could you wrap up the rest for me?",
       "zh-TW": "可以幫我把剩下的打包嗎？",
       "vi": "Bạn có thể đóng gói phần còn lại cho tôi không?",
-      "ko": "남은 거 포장해 주실 수 있나요?"
+      "ko": "남은 거 포장해 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "残",
+          "isKanji": true,
+          "reading": "のこ"
+        },
+        {
+          "text": "りを",
+          "isKanji": false
+        },
+        {
+          "text": "包",
+          "isKanji": true,
+          "reading": "つつ"
+        },
+        {
+          "text": "んでもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "のこりをつつんでもらえますか。"
     },
     {
       "jp": "申し訳ありませんが、衛生上の理由から、食べ残しのお持ち帰りはご遠慮いただいております。",
-      "furigana": "もうしわけありませんが、えいせいじょうのりゆうから、たべのこしのおもちかえりはごえんりょいただいております。",
       "zh": "非常抱歉，出于卫生原因，我们谢绝打包吃剩的食物。",
       "scene": "外带",
       "id": "s04-063",
@@ -822,7 +1994,96 @@
       "en": "I'm sorry, but for sanitary reasons, we do not allow leftovers to be taken to go.",
       "zh-TW": "非常抱歉，基於衛生原因，我們謝絕打包吃剩的食物。",
       "vi": "Rất tiếc, vì lý do vệ sinh, chúng tôi không hỗ trợ gói đồ ăn thừa mang về.",
-      "ko": "죄송하지만 위생상의 이유로 먹다 남은 음식의 포장은 사양하고 있습니다."
+      "ko": "죄송하지만 위생상의 이유로 먹다 남은 음식의 포장은 사양하고 있습니다.",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ありませんが、",
+          "isKanji": false
+        },
+        {
+          "text": "衛生",
+          "isKanji": true,
+          "reading": "えいせい"
+        },
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "じょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "理由",
+          "isKanji": true,
+          "reading": "りゆう"
+        },
+        {
+          "text": "から、",
+          "isKanji": false
+        },
+        {
+          "text": "食",
+          "isKanji": true,
+          "reading": "た"
+        },
+        {
+          "text": "べ",
+          "isKanji": false
+        },
+        {
+          "text": "残",
+          "isKanji": true,
+          "reading": "のこ"
+        },
+        {
+          "text": "しのお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "帰",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "りはご",
+          "isKanji": false
+        },
+        {
+          "text": "遠慮",
+          "isKanji": true,
+          "reading": "えんりょ"
+        },
+        {
+          "text": "いただいております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけありませんが、えいせいじょうのりゆうから、たべのこしのおもちかえりはごえんりょいただいております。"
     }
   ],
   "subcategories": [
@@ -886,8 +2147,8 @@
   "title_vi": "Ăn uống",
   "title_ko": "식사",
   "description_en": "From entering to paying the bill — all the phrases you need for dining at a restaurant.",
-  "description_ja": "入店から会計まで — レストランで食事する際に必要なフレーズ。",
   "description_zh-TW": "從入店到結帳，在餐廳用餐全流程用到的句子。",
   "description_vi": "Từ khi vào cửa đến khi thanh toán — tất cả các câu cần thiết khi ăn tại nhà hàng.",
-  "description_ko": "입장부터 계산까지 — 레스토랑에서 식사하는 전 과정에 필요한 표현."
+  "description_ko": "입장부터 계산까지 — 레스토랑에서 식사하는 전 과정에 필요한 표현.",
+  "description_ja": "お店に入ってから会計まで、レストランでの食事全体で使えるフレーズです。"
 }

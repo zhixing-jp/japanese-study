@@ -1,16 +1,7 @@
 {
-  "id": "s22",
-  "file": "data/rescue/s22_driving.json",
-  "title": "運転・レンタカー",
-  "title_zh": "开车・租车",
-  "title_en": "Driving & Car Rental",
-  "title_zh-TW": "開車・租車",
-  "title_vi": "Lái xe và thuê xe",
-  "title_ko": "운전・렌터카",
   "items": [
     {
       "jp": "いらっしゃいませ！どうぞそのままお進みください。",
-      "furigana": "いらっしゃいませ！どうぞそのままおすすみください。",
       "zh": "欢迎光临！请直接往前开进来。",
       "zh-TW": "歡迎光臨！請直接往前開進來。",
       "en": "Welcome! Please pull straight forward.",
@@ -19,11 +10,26 @@
       "scene": "人工加油站",
       "id": "s22-001",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ！どうぞそのままお",
+          "isKanji": false
+        },
+        {
+          "text": "進",
+          "isKanji": true,
+          "reading": "すす"
+        },
+        {
+          "text": "みください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ！どうぞそのままおすすみください。"
     },
     {
       "jp": "こんにちは。本日は何になさいますか？",
-      "furigana": "こんにちは。ほんじつはなにになさいますか？",
       "zh": "您好，请问今天需要什么服务？",
       "zh-TW": "您好，請問今天需要什麼服務？",
       "en": "Hello. What can I get for you today?",
@@ -32,11 +38,35 @@
       "scene": "人工加油站",
       "id": "s22-002",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こんにちは。",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "になさいますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんにちは。ほんじつはなにになさいますか？"
     },
     {
       "jp": "レギュラー満タンで、カードでお願いします。",
-      "furigana": "れぎゅらーまんたんで、かーどでおねがいします。",
       "zh": "普通汽油加满，麻烦刷卡。",
       "zh-TW": "普通汽油加滿，麻煩刷卡。",
       "en": "Fill it up with regular, and I'll pay by card, please.",
@@ -45,11 +75,35 @@
       "scene": "人工加油站",
       "id": "s22-003",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "レギュラー",
+          "isKanji": false
+        },
+        {
+          "text": "満",
+          "isKanji": true,
+          "reading": "まん"
+        },
+        {
+          "text": "タンで、カードでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "レギュラーまんタンで、カードでおねがいします。"
     },
     {
       "jp": "レギュラー満タン、カードですね。かしこまりました。窓、拭きましょうか？",
-      "furigana": "れぎゅらーまんたん、かーどですね。かしこまりました。まど、ふきましょうか？",
       "zh": "普通汽油加满，刷卡，好的。需要帮您擦一下车窗吗？",
       "zh-TW": "普通汽油加滿，刷卡，好的。需要幫您擦一下車窗嗎？",
       "en": "Regular, full tank, paying by card. Got it. Would you like me to wipe your windows?",
@@ -58,11 +112,44 @@
       "scene": "人工加油站",
       "id": "s22-004",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "レギュラー",
+          "isKanji": false
+        },
+        {
+          "text": "満",
+          "isKanji": true,
+          "reading": "まん"
+        },
+        {
+          "text": "タン、カードですね。かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "窓",
+          "isKanji": true,
+          "reading": "まど"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "拭",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "きましょうか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "レギュラーまんタン、カードですね。かしこまりました。まど、ふきましょうか？"
     },
     {
       "jp": "はい、お願いします。",
-      "furigana": "はい、おねがいします。",
       "zh": "好，麻烦您了。",
       "zh-TW": "好，麻煩您了。",
       "en": "Yes, please.",
@@ -71,11 +158,26 @@
       "scene": "人工加油站",
       "id": "s22-005",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、おねがいします。"
     },
     {
       "jp": "お待たせいたしました。合計6,200円になります。カードお預かりします。",
-      "furigana": "おまたせいたしました。ごうけい6,200えんになります。かーどおあずかりします。",
       "zh": "让您久等了，总共6,200日元。收您的卡。",
       "zh-TW": "讓您久等了，總共6,200日圓。收您的卡。",
       "en": "Sorry for the wait. That'll be 6,200 yen in total. I'll take your card.",
@@ -84,11 +186,53 @@
       "scene": "人工加油站",
       "id": "s22-006",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせいたしました。",
+          "isKanji": false
+        },
+        {
+          "text": "合計",
+          "isKanji": true,
+          "reading": "ごうけい"
+        },
+        {
+          "text": "6,200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "になります。カードお",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あず"
+        },
+        {
+          "text": "かりします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おまたせいたしました。ごうけい6,200えんになります。カードおあずかりします。"
     },
     {
       "jp": "ありがとうございます。",
-      "furigana": "ありがとうございます。",
       "zh": "谢谢。",
       "zh-TW": "謝謝。",
       "en": "Thank you.",
@@ -97,11 +241,17 @@
       "scene": "人工加油站",
       "id": "s22-007",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。"
     },
     {
       "jp": "ありがとうございました！お気をつけてお越しくださいませ。",
-      "furigana": "ありがとうございました！おきをつけておこしくださいませ。",
       "zh": "谢谢惠顾！请慢走，路上小心。",
       "zh-TW": "謝謝惠顧！請慢走，路上小心。",
       "en": "Thank you very much! Please drive safely.",
@@ -110,11 +260,35 @@
       "scene": "人工加油站",
       "id": "s22-008",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございました！お",
+          "isKanji": false
+        },
+        {
+          "text": "気",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "をつけてお",
+          "isKanji": false
+        },
+        {
+          "text": "越",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "しくださいませ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございました！おきをつけておこしくださいませ。"
     },
     {
       "jp": "すみません、使い方がわからないので教えてもらえますか？この車、レギュラーでいいですか？",
-      "furigana": "すみません、つかいかたがわからないのでおしえてもらえますか？このくるま、れぎゅらーでいいですか？",
       "zh": "不好意思，我不太会操作，能教我一下吗？这辆车用普通汽油可以吗？",
       "zh-TW": "不好意思，我不太會操作，能教我一下嗎？這台車用普通汽油可以嗎？",
       "en": "Excuse me, I don't know how this works — could you show me? Does this car take regular gas?",
@@ -123,11 +297,53 @@
       "scene": "自助加油站求助",
       "id": "s22-009",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "がわからないので",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてもらえますか？この",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "、レギュラーでいいですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、つかいかたがわからないのでおしえてもらえますか？このくるま、レギュラーでいいですか？"
     },
     {
       "jp": "はい、大丈夫ですよ。車検証か給油口の裏に表示がありますので、ご確認ください。",
-      "furigana": "はい、だいじょうぶですよ。くるまけんしょうかきゅうゆぐちのうらにひょうじがありますので、ごかくにんください。",
       "zh": "好的没问题。车检证或加油口内侧会有标示，请确认一下。",
       "zh-TW": "好的沒問題。行照或加油口內側會有標示，請確認一下。",
       "en": "Sure, no problem. There should be a label on your vehicle registration or inside the fuel cap — please check there.",
@@ -136,11 +352,81 @@
       "scene": "自助加油站求助",
       "id": "s22-010",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですよ。",
+          "isKanji": false
+        },
+        {
+          "text": "車検",
+          "isKanji": true,
+          "reading": "しゃけん"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "か",
+          "isKanji": false
+        },
+        {
+          "text": "給油",
+          "isKanji": true,
+          "reading": "きゅうゆ"
+        },
+        {
+          "text": "口",
+          "isKanji": true,
+          "reading": "ぐち"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "裏",
+          "isKanji": true,
+          "reading": "うら"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "表示",
+          "isKanji": true,
+          "reading": "ひょうじ"
+        },
+        {
+          "text": "がありますので、ご",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、だいじょうぶですよ。しゃけんしょうかきゅうゆぐちのうらにひょうじがありますので、ごかくにんください。"
     },
     {
       "jp": "あ、ありました、レギュラーです。",
-      "furigana": "あ、ありました、れぎゅらーです。",
       "zh": "啊，找到了，是普通汽油。",
       "zh-TW": "啊，找到了，是普通汽油。",
       "en": "Oh, found it — it's regular.",
@@ -149,11 +435,17 @@
       "scene": "自助加油站求助",
       "id": "s22-011",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "あ、ありました、レギュラーです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あ、ありました、レギュラーです。"
     },
     {
       "jp": "かしこまりました。ではボタンを押してから、ノズルを給油口に入れてください。",
-      "furigana": "かしこまりました。ではぼたんをおしてから、のずるをきゅうゆぐちにいれてください。",
       "zh": "好的。那请按下按钮后，把油枪插进加油口。",
       "zh-TW": "好的。那請按下按鈕後，把油槍插進加油口。",
       "en": "Got it. Then please press the button and insert the nozzle into the fuel port.",
@@ -162,11 +454,49 @@
       "scene": "自助加油站求助",
       "id": "s22-012",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。ではボタンを",
+          "isKanji": false
+        },
+        {
+          "text": "押",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "してから、ノズルを",
+          "isKanji": false
+        },
+        {
+          "text": "給油",
+          "isKanji": true,
+          "reading": "きゅうゆ"
+        },
+        {
+          "text": "口",
+          "isKanji": true,
+          "reading": "ぐち"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。ではボタンをおしてから、ノズルをきゅうゆぐちにいれてください。"
     },
     {
       "jp": "ありがとうございます、やってみます。",
-      "furigana": "ありがとうございます、やってみます。",
       "zh": "谢谢您，我试试看。",
       "zh-TW": "謝謝您，我試試看。",
       "en": "Thank you, I'll give it a try.",
@@ -175,24 +505,105 @@
       "scene": "自助加油站求助",
       "id": "s22-013",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ありがとうございます、やってみます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます、やってみます。"
     },
     {
-      "jp": "すみません、月極駐車場について問い合わせたいのですが、○○駅の近くで空きはありますか？",
-      "furigana": "すみません、つきぎめちゅうしゃじょうについてといあわせたいのですが、○れいえきのちかくであきはありますか？",
-      "zh": "不好意思，我想咨询一下月租停车场，○○车站附近有空位吗？",
-      "zh-TW": "不好意思，我想諮詢一下月租停車場，○○車站附近有空位嗎？",
-      "en": "Excuse me, I'd like to ask about monthly parking — do you have any open spots near ○○ Station?",
-      "vi": "Xin lỗi, tôi muốn hỏi về bãi đỗ xe thuê theo tháng, gần ga ○○ có chỗ trống không ạ?",
-      "ko": "실례합니다, 월정 주차장에 대해 문의드리고 싶은데요, ○○역 근처에 빈자리가 있나요?",
+      "jp": "すみません、月極駐車場について問い合わせたいのですが、渋谷駅の近くで空きはありますか？",
+      "zh": "不好意思，我想咨询一下月租停车场，渋谷车站附近有空位吗？",
+      "zh-TW": "不好意思，我想諮詢一下月租停車場，澀谷車站附近有空位嗎？",
+      "en": "Excuse me, I'd like to ask about monthly parking — do you have any open spots near Shibuya Station?",
+      "vi": "Xin lỗi, tôi muốn hỏi về bãi đỗ xe thuê theo tháng, gần ga Shibuya có chỗ trống không ạ?",
+      "ko": "실례합니다, 월정 주차장에 대해 문의드리고 싶은데요, 시부야역 근처에 빈자리가 있나요?",
       "scene": "月极停车场签约咨询",
       "id": "s22-014",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "月極",
+          "isKanji": true,
+          "reading": "つきぎめ"
+        },
+        {
+          "text": "駐車",
+          "isKanji": true,
+          "reading": "ちゅうしゃ"
+        },
+        {
+          "text": "場",
+          "isKanji": true,
+          "reading": "じょう"
+        },
+        {
+          "text": "について",
+          "isKanji": false
+        },
+        {
+          "text": "問",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせたいのですが、",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くで",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "きはありますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、つきぎめちゅうしゃじょうについてといあわせたいのですが、しぶやえきのちかくであきはありますか？"
     },
     {
       "jp": "少々お待ちください……はい、1台分空きがございます。月額は1万2千円です。車のサイズはどのくらいですか？",
-      "furigana": "しょうしょうおまちください……はい、1だいぶんあきがございます。げつがくは1まん2せんえんです。くるまのさいずはどのくらいですか？",
       "zh": "请稍等……有，还有一个空位，月租1万2千日元。请问车辆尺寸大概多大？",
       "zh-TW": "請稍等……有，還有一個空位，月租1萬2千日圓。請問車輛尺寸大概多大？",
       "en": "One moment please... Yes, we have one spot available. It's 12,000 yen a month. How big is your car?",
@@ -201,11 +612,91 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-015",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください……はい、1",
+          "isKanji": false
+        },
+        {
+          "text": "台",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ぶん"
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "きがございます。",
+          "isKanji": false
+        },
+        {
+          "text": "月額",
+          "isKanji": true,
+          "reading": "げつがく"
+        },
+        {
+          "text": "は1",
+          "isKanji": false
+        },
+        {
+          "text": "万",
+          "isKanji": true,
+          "reading": "まん"
+        },
+        {
+          "text": "2",
+          "isKanji": false
+        },
+        {
+          "text": "千",
+          "isKanji": true,
+          "reading": "せん"
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "のサイズはどのくらいですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうしょうおまちください……はい、1だいぶんあきがございます。げつがくは1まん2せんえんです。くるまのサイズはどのくらいですか？"
     },
     {
       "jp": "普通のセダンです。契約する場合、何が必要ですか？",
-      "furigana": "ふつうのせだんです。けいやくするばあい、なにがひつようですか？",
       "zh": "是普通轿车。如果要签约的话，需要什么材料？",
       "zh-TW": "是普通轎車。如果要簽約的話，需要什麼資料？",
       "en": "It's a standard sedan. What do I need if I want to sign a contract?",
@@ -214,11 +705,58 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-016",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "普通",
+          "isKanji": true,
+          "reading": "ふつう"
+        },
+        {
+          "text": "のセダンです。",
+          "isKanji": false
+        },
+        {
+          "text": "契約",
+          "isKanji": true,
+          "reading": "けいやく"
+        },
+        {
+          "text": "する",
+          "isKanji": false
+        },
+        {
+          "text": "場合",
+          "isKanji": true,
+          "reading": "ばあい"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふつうのセダンです。けいやくするばあい、なにがひつようですか？"
     },
     {
       "jp": "車検証のコピー、印鑑、それと保証人か引き落とし口座の情報が必要です。基本は1年契約ですが、1ヶ月前にご連絡いただければ途中解約も可能です。",
-      "furigana": "しゃけんしょうのこぴー、いんかん、それとほしょうじんかひきおとしこうざのじょうほうがひつようです。きほんは1ねんけいやくですが、1かげつまえにごれんらくいただければとちゅうかいやくもかのうです。",
       "zh": "需要车检证复印件、印章，还有担保人或扣款账户信息。基本是1年合同，但提前1个月联系的话也可以中途解约。",
       "zh-TW": "需要行照影本、印章，還有保證人或扣款帳戶資訊。基本上是1年合約，但提前1個月聯絡的話也可以中途解約。",
       "en": "You'll need a copy of the vehicle registration, a personal seal, and either a guarantor or bank account details for automatic payment. It's basically a one-year contract, but you can cancel early if you notify us one month in advance.",
@@ -227,11 +765,164 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-017",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "車検",
+          "isKanji": true,
+          "reading": "しゃけん"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "のコピー、",
+          "isKanji": false
+        },
+        {
+          "text": "印鑑",
+          "isKanji": true,
+          "reading": "いんかん"
+        },
+        {
+          "text": "、それと",
+          "isKanji": false
+        },
+        {
+          "text": "保証",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "か",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "落",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "とし",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "情報",
+          "isKanji": true,
+          "reading": "じょうほう"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "基本",
+          "isKanji": true,
+          "reading": "きほん"
+        },
+        {
+          "text": "は1",
+          "isKanji": false
+        },
+        {
+          "text": "年",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "契約",
+          "isKanji": true,
+          "reading": "けいやく"
+        },
+        {
+          "text": "ですが、1",
+          "isKanji": false
+        },
+        {
+          "text": "ヶ月",
+          "isKanji": true,
+          "reading": "かげつ"
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "いただければ",
+          "isKanji": false
+        },
+        {
+          "text": "途中",
+          "isKanji": true,
+          "reading": "とちゅう"
+        },
+        {
+          "text": "解約",
+          "isKanji": true,
+          "reading": "かいやく"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゃけんしょうのコピー、いんかん、それとほしょうじんかひきおとしこうざのじょうほうがひつようです。きほんは1ねんけいやくですが、1かげつまえにごれんらくいただければとちゅうかいやくもかのうです。"
     },
     {
       "jp": "わかりました。実際に駐車スペースを見せていただくことはできますか？",
-      "furigana": "わかりました。じっさいにちゅうしゃすぺーすをみせていただくことはできますか？",
       "zh": "明白了。方便让我实地看一下车位吗？",
       "zh-TW": "明白了。方便讓我實地看一下車位嗎？",
       "en": "I understand. Would it be possible to actually see the parking space?",
@@ -240,11 +931,44 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-018",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        },
+        {
+          "text": "実際",
+          "isKanji": true,
+          "reading": "じっさい"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "駐車",
+          "isKanji": true,
+          "reading": "ちゅうしゃ"
+        },
+        {
+          "text": "スペースを",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただくことはできますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。じっさいにちゅうしゃスペースをみせていただくことはできますか？"
     },
     {
       "jp": "もちろんです。今からご案内しますので、少々お待ちください。",
-      "furigana": "もちろんです。いまからごあんないしますので、しょうしょうおまちください。",
       "zh": "当然可以，我现在带您去看，请稍等。",
       "zh-TW": "當然可以，我現在帶您去看，請稍等。",
       "en": "Of course. I'll show you right now, just a moment please.",
@@ -253,11 +977,53 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-019",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "もちろんです。",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "からご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "しますので、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もちろんです。いまからごあんないしますので、しょうしょうおまちください。"
     },
     {
       "jp": "ありがとうございます、お願いします。",
-      "furigana": "ありがとうございます、おねがいします。",
       "zh": "谢谢，麻烦您了。",
       "zh-TW": "謝謝，麻煩您了。",
       "en": "Thank you, I appreciate it.",
@@ -266,11 +1032,26 @@
       "scene": "月极停车场签约咨询",
       "id": "s22-020",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ありがとうございます、お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます、おねがいします。"
     },
     {
       "jp": "はい、そこの車、左側に寄せて停まってください。",
-      "furigana": "はい、そこのくるま、ひだりがわによせてとままってください。",
       "zh": "好的，那辆车，请靠左边停下。",
       "zh-TW": "好的，那台車，請靠左邊停下。",
       "en": "Yes, you there — please pull over to the left side.",
@@ -279,24 +1060,150 @@
       "scene": "警察临检应对",
       "id": "s22-021",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、そこの",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "左側",
+          "isKanji": true,
+          "reading": "ひだりがわ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "寄",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "せて",
+          "isKanji": false
+        },
+        {
+          "text": "停",
+          "isKanji": true,
+          "reading": "とま"
+        },
+        {
+          "text": "まってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、そこのくるま、ひだりがわによせてとままってください。"
     },
     {
-      "jp": "お疲れ様です。〇〇警察署の者です。検問をやっておりまして、免許証を見せていただけますか。",
-      "furigana": "おつかれさまです。れいれいけいさつしょのものです。けんもんをやっておりまして、めんきょしょうをみせていただけますか。",
-      "zh": "辛苦了。我是〇〇警察署的。正在做临检，能给我看一下驾照吗？",
-      "zh-TW": "辛苦了。我是〇〇警察署的。正在做臨檢，能給我看一下駕照嗎？",
-      "en": "Good evening. I'm with the 〇〇 Police Station. We're conducting a checkpoint — could I see your driver's license, please?",
-      "vi": "Chào anh/chị. Tôi thuộc đồn cảnh sát 〇〇. Chúng tôi đang kiểm tra, anh/chị cho tôi xem bằng lái xe được không ạ?",
-      "ko": "수고하십니다. 〇〇경찰서에서 나왔습니다. 검문 중인데, 면허증 좀 보여주시겠어요?",
+      "jp": "お疲れ様です。渋谷警察署の者です。検問をやっておりまして、免許証を見せていただけますか。",
+      "zh": "辛苦了。我是渋谷警察署的。正在做临检，能给我看一下驾照吗？",
+      "zh-TW": "辛苦了。我是澀谷警察署的。正在做臨檢，能給我看一下駕照嗎？",
+      "en": "Good evening. I'm with the Shibuya Police Station. We're conducting a checkpoint — could I see your driver's license, please?",
+      "vi": "Chào anh/chị. Tôi thuộc đồn cảnh sát Shibuya. Chúng tôi đang kiểm tra, anh/chị cho tôi xem bằng lái xe được không ạ?",
+      "ko": "수고하십니다. 시부야경찰서에서 나왔습니다. 검문 중인데, 면허증 좀 보여주시겠어요?",
       "scene": "警察临检应对",
       "id": "s22-022",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "疲",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "署",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "者",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "検問",
+          "isKanji": true,
+          "reading": "けんもん"
+        },
+        {
+          "text": "をやっておりまして、",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おつかれさまです。しぶやけいさつしょのものです。けんもんをやっておりまして、めんきょしょうをみせていただけますか。"
     },
     {
       "jp": "はい、こちらです。",
-      "furigana": "はい、こちらです。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Sure, here you go.",
@@ -305,11 +1212,17 @@
       "scene": "警察临检应对",
       "id": "s22-023",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、こちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらです。"
     },
     {
       "jp": "ありがとうございます。お酒は飲まれていますか？",
-      "furigana": "ありがとうございます。おさけはのまれていますか？",
       "zh": "谢谢。请问有喝酒吗？",
       "zh-TW": "謝謝。請問有喝酒嗎？",
       "en": "Thank you. Have you been drinking?",
@@ -318,11 +1231,35 @@
       "scene": "警察临检应对",
       "id": "s22-024",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございます。お",
+          "isKanji": false
+        },
+        {
+          "text": "酒",
+          "isKanji": true,
+          "reading": "さけ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "まれていますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。おさけはのまれていますか？"
     },
     {
       "jp": "いいえ、飲んでいません。",
-      "furigana": "いいえ、のんでいません。",
       "zh": "没有，没喝酒。",
       "zh-TW": "沒有，沒喝酒。",
       "en": "No, I haven't.",
@@ -331,11 +1268,26 @@
       "scene": "警察临检应对",
       "id": "s22-025",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "いいえ、",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "んでいません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、のんでいません。"
     },
     {
       "jp": "わかりました。ご協力ありがとうございました。お気をつけてどうぞ。",
-      "furigana": "わかりました。ごきょうりょくありがとうございました。おきをつけてどうぞ。",
       "zh": "明白了，谢谢您的配合，请慢走小心。",
       "zh-TW": "明白了，謝謝您的配合，請慢走小心。",
       "en": "Understood. Thank you for your cooperation. Drive safely.",
@@ -344,11 +1296,35 @@
       "scene": "警察临检应对",
       "id": "s22-026",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "わかりました。ご",
+          "isKanji": false
+        },
+        {
+          "text": "協力",
+          "isKanji": true,
+          "reading": "きょうりょく"
+        },
+        {
+          "text": "ありがとうございました。お",
+          "isKanji": false
+        },
+        {
+          "text": "気",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "をつけてどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。ごきょうりょくありがとうございました。おきをつけてどうぞ。"
     },
     {
       "jp": "はい、ありがとうございます。",
-      "furigana": "はい、ありがとうございます。",
       "zh": "好的，谢谢。",
       "zh-TW": "好的，謝謝。",
       "en": "Okay, thank you.",
@@ -357,11 +1333,17 @@
       "scene": "警察临检应对",
       "id": "s22-027",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、ありがとうございます。"
     },
     {
       "jp": "はい、そこの車、左側に寄せて停まってください。……はい、ブレーキ踏んでエンジン切ってくださいね。",
-      "furigana": "はい、そこのくるま、ひだりがわによせてとままってください。……はい、ぶれーきふんでえんじんきってくださいね。",
       "zh": "好的，那辆车，请靠左边停下。……好，踩刹车、熄火。",
       "zh-TW": "好的，那台車，請靠左邊停下。……好，踩剎車、熄火。",
       "en": "Yes, you there — please pull over to the left. ...Good, step on the brake and turn off the engine.",
@@ -370,24 +1352,164 @@
       "scene": "交通违反现场应对",
       "id": "s22-028",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、そこの",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "左側",
+          "isKanji": true,
+          "reading": "ひだりがわ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "寄",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "せて",
+          "isKanji": false
+        },
+        {
+          "text": "停",
+          "isKanji": true,
+          "reading": "とま"
+        },
+        {
+          "text": "まってください。……はい、ブレーキ",
+          "isKanji": false
+        },
+        {
+          "text": "踏",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "んでエンジン",
+          "isKanji": false
+        },
+        {
+          "text": "切",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "ってくださいね。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、そこのくるま、ひだりがわによせてとままってください。……はい、ブレーキふんでエンジンきってくださいね。"
     },
     {
-      "jp": "お疲れ様です。〇〇警察署の者です。運転免許証を見せていただけますか。",
-      "furigana": "おつかれさまです。れいれいけいさつしょのものです。うんてんめんきょしょうをみせていただけますか。",
-      "zh": "辛苦了。我是〇〇警察署的。能给我看一下驾照吗？",
-      "zh-TW": "辛苦了。我是〇〇警察署的。能給我看一下駕照嗎？",
-      "en": "Good evening. I'm with the 〇〇 Police Station. Could I see your driver's license?",
-      "vi": "Chào anh/chị. Tôi thuộc đồn cảnh sát 〇〇. Anh/chị cho tôi xem bằng lái xe được không ạ?",
-      "ko": "수고하십니다. 〇〇경찰서에서 나왔습니다. 운전면허증 좀 보여주시겠어요?",
+      "jp": "お疲れ様です。渋谷警察署の者です。運転免許証を見せていただけますか。",
+      "zh": "辛苦了。我是渋谷警察署的。能给我看一下驾照吗？",
+      "zh-TW": "辛苦了。我是澀谷警察署的。能給我看一下駕照嗎？",
+      "en": "Good evening. I'm with the Shibuya Police Station. Could I see your driver's license?",
+      "vi": "Chào anh/chị. Tôi thuộc đồn cảnh sát Shibuya. Anh/chị cho tôi xem bằng lái xe được không ạ?",
+      "ko": "수고하십니다. 시부야경찰서에서 나왔습니다. 운전면허증 좀 보여주시겠어요?",
       "scene": "交通违反现场应对",
       "id": "s22-029",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "疲",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "署",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "者",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おつかれさまです。しぶやけいさつしょのものです。うんてんめんきょしょうをみせていただけますか。"
     },
     {
       "jp": "はい、分かりました。",
-      "furigana": "はい、わかりました。",
       "zh": "好的，明白了。",
       "zh-TW": "好的，明白了。",
       "en": "Yes, understood.",
@@ -396,24 +1518,100 @@
       "scene": "交通违反现场应对",
       "id": "s22-030",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "わ"
+        },
+        {
+          "text": "かりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、わかりました。"
     },
     {
-      "jp": "今、〇〇の交差点で一時停止しなかったので、止めさせてもらいました。お心当たりはありますか？",
-      "furigana": "いま、れいれいのこうさてんでいちじていししなかったので、とめさせてもらいました。おこころあたりはありますか？",
-      "zh": "您刚才在〇〇路口没有停车确认，所以拦下您了。您有印象吗？",
-      "zh-TW": "您剛才在〇〇路口沒有停車再開，所以攔下您了。您有印象嗎？",
-      "en": "I stopped you because you didn't come to a stop at the 〇〇 intersection just now. Do you recall that?",
-      "vi": "Tôi dừng anh/chị lại vì anh/chị vừa không dừng lại tạm thời ở ngã tư 〇〇. Anh/chị có nhớ không ạ?",
-      "ko": "방금 〇〇교차로에서 일시정지를 하지 않으셔서 세웠습니다. 기억나시나요?",
+      "jp": "今、渋谷の交差点で一時停止しなかったので、止めさせてもらいました。お心当たりはありますか？",
+      "zh": "您刚才在渋谷路口没有停车确认，所以拦下您了。您有印象吗？",
+      "zh-TW": "您剛才在澀谷路口沒有停車再開，所以攔下您了。您有印象嗎？",
+      "en": "I stopped you because you didn't come to a stop at the Shibuya intersection just now. Do you recall that?",
+      "vi": "Tôi dừng anh/chị lại vì anh/chị vừa không dừng lại tạm thời ở ngã tư Shibuya. Anh/chị có nhớ không ạ?",
+      "ko": "방금 시부야교차로에서 일시정지를 하지 않으셔서 세웠습니다. 기억나시나요?",
       "scene": "交通违反现场应对",
       "id": "s22-031",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交差点",
+          "isKanji": true,
+          "reading": "こうさてん"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "一時",
+          "isKanji": true,
+          "reading": "いちじ"
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "しなかったので、",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "めさせてもらいました。お",
+          "isKanji": false
+        },
+        {
+          "text": "心当",
+          "isKanji": true,
+          "reading": "こころあ"
+        },
+        {
+          "text": "たりはありますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いま、しぶやのこうさてんでいちじていししなかったので、とめさせてもらいました。おこころあたりはありますか？"
     },
     {
       "jp": "あ、すみません、見落としていました。",
-      "furigana": "あ、すみません、みおとしていました。",
       "zh": "啊，不好意思，我没注意到。",
       "zh-TW": "啊，不好意思，我沒注意到。",
       "en": "Oh, I'm sorry, I didn't notice.",
@@ -422,11 +1620,26 @@
       "scene": "交通违反现场应对",
       "id": "s22-032",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "あ、すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "見落",
+          "isKanji": true,
+          "reading": "みお"
+        },
+        {
+          "text": "としていました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あ、すみません、みおとしていました。"
     },
     {
       "jp": "手続きのため、あちらのパトカーのところへ移動しますので、車を動かしてください。",
-      "furigana": "てつづきのため、あちらのぱとかーのところへいどうしますので、くるまをうごかしてください。",
       "zh": "为了办理手续，请把车开到那边警车旁边。",
       "zh-TW": "為了辦理手續，請把車開到那邊警車旁邊。",
       "en": "For the paperwork, please move your car over to the patrol car there.",
@@ -435,11 +1648,49 @@
       "scene": "交通违反现场应对",
       "id": "s22-033",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きのため、あちらのパトカーのところへ",
+          "isKanji": false
+        },
+        {
+          "text": "移動",
+          "isKanji": true,
+          "reading": "いどう"
+        },
+        {
+          "text": "しますので、",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "動",
+          "isKanji": true,
+          "reading": "うご"
+        },
+        {
+          "text": "かしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "てつづきのため、あちらのパトカーのところへいどうしますので、くるまをうごかしてください。"
     },
     {
       "jp": "お名前とご住所を確認しますね。生年月日は？",
-      "furigana": "おなまえとごじゅうしょをかくにんしますね。せいねんがっぴは？",
       "zh": "我确认一下您的姓名和住址，生日是？",
       "zh-TW": "我確認一下您的姓名和住址，生日是？",
       "en": "I'll confirm your name and address. What's your date of birth?",
@@ -448,24 +1699,164 @@
       "scene": "交通违反现场应对",
       "id": "s22-034",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "とご",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "しますね。",
+          "isKanji": false
+        },
+        {
+          "text": "生年月日",
+          "isKanji": true,
+          "reading": "せいねんがっぴ"
+        },
+        {
+          "text": "は？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おなまえとごじゅうしょをかくにんしますね。せいねんがっぴは？"
     },
     {
-      "jp": "はい。名前は〇〇 〇〇、住所は〇〇、生年月日は〇〇です。",
-      "furigana": "はい。なまえはれいれいれいれい、じゅうしょは〇〇、せいねんがっぴはれいれいです。",
-      "zh": "好的，姓名是〇〇〇〇，住址是〇〇，生日是〇〇。",
-      "zh-TW": "好的，姓名是〇〇〇〇，住址是〇〇，生日是〇〇。",
-      "en": "Sure. My name is 〇〇 〇〇, my address is 〇〇, and my date of birth is 〇〇.",
-      "vi": "Vâng. Họ tên tôi là 〇〇 〇〇, địa chỉ là 〇〇, ngày sinh là 〇〇.",
-      "ko": "네. 이름은 〇〇 〇〇, 주소는 〇〇, 생년월일은 〇〇입니다.",
+      "jp": "はい。名前は田中太郎、住所は東京都渋谷区1-2-3、生年月日は1990年5月10日です。",
+      "zh": "好的，姓名是田中太郎，住址是东京都渋谷区1-2-3，生日是1990年5月10日。",
+      "zh-TW": "好的，姓名是田中太郎，住址是東京都澀谷區1-2-3，生日是1990年5月10日。",
+      "en": "Sure. My name is Taro Tanaka, my address is 1-2-3 Shibuya, Tokyo, and my date of birth is May 10, 1990.",
+      "vi": "Vâng. Họ tên tôi là Taro Tanaka, địa chỉ là 1-2-3 Shibuya, Tokyo, ngày sinh là ngày 10 tháng 5 năm 1990.",
+      "ko": "네. 이름은 다나카 타로, 주소는 도쿄도 시부야구 1-2-3, 생년월일은 1990년 5월 10일입니다.",
       "scene": "交通违反现场应对",
       "id": "s22-035",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい。",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "太郎",
+          "isKanji": true,
+          "reading": "たろう"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "都",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "区",
+          "isKanji": true,
+          "reading": "く"
+        },
+        {
+          "text": "1-2-3、",
+          "isKanji": false
+        },
+        {
+          "text": "生年月日",
+          "isKanji": true,
+          "reading": "せいねんがっぴ"
+        },
+        {
+          "text": "は1990",
+          "isKanji": false
+        },
+        {
+          "text": "年",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "5",
+          "isKanji": false
+        },
+        {
+          "text": "月",
+          "isKanji": true,
+          "reading": "がつ"
+        },
+        {
+          "text": "10",
+          "isKanji": false
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい。なまえはたなかたろう、じゅうしょはとうきょうとしぶやく1-2-3、せいねんがっぴは1990ねん5がつ10にちです。"
     },
     {
       "jp": "今回の違反は「一時不停止」で、反則金は7,000円、点数は2点となります。こちらの内容で間違いありませんか？",
-      "furigana": "こんかいのいはんは「いちじふていし」で、はんそくきんは7,000えん、てんすうは2てんとなります。こちらのないようでまちがいありませんか？",
       "zh": "这次的违反是\"未停车确认\"，反则金7,000日元，扣2分。这个内容没有问题吗？",
       "zh-TW": "這次的違規是「未依規定暫停」，罰金7,000日圓，記2點。這個內容沒有問題嗎？",
       "en": "This violation is for \"failure to stop,\" with a fine of 7,000 yen and 2 demerit points. Is this information correct?",
@@ -474,11 +1865,109 @@
       "scene": "交通违反现场应对",
       "id": "s22-036",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "今回",
+          "isKanji": true,
+          "reading": "こんかい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "違反",
+          "isKanji": true,
+          "reading": "いはん"
+        },
+        {
+          "text": "は「",
+          "isKanji": false
+        },
+        {
+          "text": "一時",
+          "isKanji": true,
+          "reading": "いちじ"
+        },
+        {
+          "text": "不",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "」で、",
+          "isKanji": false
+        },
+        {
+          "text": "反則",
+          "isKanji": true,
+          "reading": "はんそく"
+        },
+        {
+          "text": "金",
+          "isKanji": true,
+          "reading": "きん"
+        },
+        {
+          "text": "は7,000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "点数",
+          "isKanji": true,
+          "reading": "てんすう"
+        },
+        {
+          "text": "は2",
+          "isKanji": false
+        },
+        {
+          "text": "点",
+          "isKanji": true,
+          "reading": "てん"
+        },
+        {
+          "text": "となります。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "内容",
+          "isKanji": true,
+          "reading": "ないよう"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "いありませんか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんかいのいはんは「いちじふていし」で、はんそくきんは7,000えん、てんすうは2てんとなります。こちらのないようでまちがいありませんか？"
     },
     {
       "jp": "はい、間違いありません。",
-      "furigana": "はい、まちがいありません。",
       "zh": "是的，没有问题。",
       "zh-TW": "是的，沒有問題。",
       "en": "Yes, that's correct.",
@@ -487,11 +1976,26 @@
       "scene": "交通违反现场应对",
       "id": "s22-037",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "いありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、まちがいありません。"
     },
     {
       "jp": "では、こちらの用紙に署名をお願いします。",
-      "furigana": "では、こちらのようしにしょめいをおねがいします。",
       "zh": "那么请在这张单子上签字。",
       "zh-TW": "那麼請在這張單子上簽名。",
       "en": "Then please sign this form.",
@@ -500,11 +2004,44 @@
       "scene": "交通违反现场应对",
       "id": "s22-038",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "では、こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "用紙",
+          "isKanji": true,
+          "reading": "ようし"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "署名",
+          "isKanji": true,
+          "reading": "しょめい"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "では、こちらのようしにしょめいをおねがいします。"
     },
     {
       "jp": "ここに書けばいいですか？",
-      "furigana": "ここにかけばいいですか？",
       "zh": "写在这里就可以吗？",
       "zh-TW": "寫在這裡就可以嗎？",
       "en": "Should I sign here?",
@@ -513,24 +2050,151 @@
       "scene": "交通违反现场应对",
       "id": "s22-039",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ここに",
+          "isKanji": false
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "けばいいですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここにかけばいいですか？"
     },
     {
-      "jp": "ありがとうございます。こちらが控えと、反則金を納付するための納付書です。納付期限は〇日以内ですので、期限内にお支払いをお願いします。",
-      "furigana": "ありがとうございます。こちらがひかえと、はんそくきんをのうふするためののうふしょです。のうふきげんはれいにちいないですので、きげんないにおしはらいをおねがいします。",
-      "zh": "谢谢。这是您的存根和缴纳反则金用的缴款单，缴纳期限是〇天以内，请在期限内缴纳。",
-      "zh-TW": "謝謝。這是您的存根和繳納罰金用的繳款單，繳納期限是〇天以內，請在期限內繳納。",
-      "en": "Thank you. Here is your copy and the payment slip for the fine. The deadline is within 〇 days, so please pay before then.",
-      "vi": "Cảm ơn anh/chị. Đây là bản lưu và phiếu nộp tiền phạt. Hạn nộp là trong vòng 〇 ngày, xin anh/chị nộp trước hạn.",
-      "ko": "감사합니다. 이것은 사본과 반칙금 납부용 납부서입니다. 납부 기한은 〇일 이내이니 기한 내에 납부해 주세요.",
+      "jp": "ありがとうございます。こちらが控えと、反則金を納付するための納付書です。納付期限は14日以内ですので、期限内にお支払いをお願いします。",
+      "zh": "谢谢。这是您的存根和缴纳反则金用的缴款单，缴纳期限是14天以内，请在期限内缴纳。",
+      "zh-TW": "謝謝。這是您的存根和繳納罰金用的繳款單，繳納期限是14天以內，請在期限內繳納。",
+      "en": "Thank you. Here is your copy and the payment slip for the fine. The deadline is within 14 days, so please pay before then.",
+      "vi": "Cảm ơn anh/chị. Đây là bản lưu và phiếu nộp tiền phạt. Hạn nộp là trong vòng 14 ngày, xin anh/chị nộp trước hạn.",
+      "ko": "감사합니다. 이것은 사본과 반칙금 납부용 납부서입니다. 납부 기한은 14일 이내이니 기한 내에 납부해 주세요.",
       "scene": "交通违反现场应对",
       "id": "s22-040",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございます。こちらが",
+          "isKanji": false
+        },
+        {
+          "text": "控",
+          "isKanji": true,
+          "reading": "ひか"
+        },
+        {
+          "text": "えと、",
+          "isKanji": false
+        },
+        {
+          "text": "反則",
+          "isKanji": true,
+          "reading": "はんそく"
+        },
+        {
+          "text": "金",
+          "isKanji": true,
+          "reading": "きん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "納付",
+          "isKanji": true,
+          "reading": "のうふ"
+        },
+        {
+          "text": "するための",
+          "isKanji": false
+        },
+        {
+          "text": "納付",
+          "isKanji": true,
+          "reading": "のうふ"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "納付",
+          "isKanji": true,
+          "reading": "のうふ"
+        },
+        {
+          "text": "期限",
+          "isKanji": true,
+          "reading": "きげん"
+        },
+        {
+          "text": "は14",
+          "isKanji": false
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "以内",
+          "isKanji": true,
+          "reading": "いない"
+        },
+        {
+          "text": "ですので、",
+          "isKanji": false
+        },
+        {
+          "text": "期限",
+          "isKanji": true,
+          "reading": "きげん"
+        },
+        {
+          "text": "内",
+          "isKanji": true,
+          "reading": "ない"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。こちらがひかえと、はんそくきんをのうふするためののうふしょです。のうふきげんは14にちいないですので、きげんないにおしはらいをおねがいします。"
     },
     {
       "jp": "わかりました。",
-      "furigana": "わかりました。",
       "zh": "明白了。",
       "zh-TW": "明白了。",
       "en": "Understood.",
@@ -539,11 +2203,17 @@
       "scene": "交通违反现场应对",
       "id": "s22-041",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。"
     },
     {
       "jp": "それでは免許証をお返しします。今後は安全運転をお願いします。",
-      "furigana": "それではめんきょしょうをおかえしします。こんごはあんぜんうんてんをおねがいします。",
       "zh": "那么归还您的驾照，今后请注意安全驾驶。",
       "zh-TW": "那麼歸還您的駕照，今後請注意安全駕駛。",
       "en": "Now I'll return your license. Please drive safely from now on.",
@@ -552,11 +2222,72 @@
       "scene": "交通违反现场应对",
       "id": "s22-042",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "それでは",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "返",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "しします。",
+          "isKanji": false
+        },
+        {
+          "text": "今後",
+          "isKanji": true,
+          "reading": "こんご"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "安全",
+          "isKanji": true,
+          "reading": "あんぜん"
+        },
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "それではめんきょしょうをおかえしします。こんごはあんぜんうんてんをおねがいします。"
     },
     {
       "jp": "はい、気をつけます。ありがとうございました。",
-      "furigana": "はい、きをつけます。ありがとうございました。",
       "zh": "好的，我会注意的，谢谢。",
       "zh-TW": "好的，我會注意的，謝謝。",
       "en": "Yes, I'll be careful. Thank you.",
@@ -565,11 +2296,26 @@
       "scene": "交通违反现场应对",
       "id": "s22-043",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "気",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "をつけます。ありがとうございました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、きをつけます。ありがとうございました。"
     },
     {
       "jp": "大丈夫ですか？お怪我はありませんか？",
-      "furigana": "だいじょうぶですか？おけがはありませんか？",
       "zh": "您没事吧？有没有受伤？",
       "zh-TW": "您沒事吧？有沒有受傷？",
       "en": "Are you okay? Are you hurt anywhere?",
@@ -578,11 +2324,31 @@
       "scene": "轻微事故现场应对",
       "id": "s22-044",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですか？お",
+          "isKanji": false
+        },
+        {
+          "text": "怪我",
+          "isKanji": true,
+          "reading": "けが"
+        },
+        {
+          "text": "はありませんか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいじょうぶですか？おけがはありませんか？"
     },
     {
       "jp": "大丈夫です、怪我はないです。そちらは大丈夫ですか？",
-      "furigana": "だいじょうぶです、けがはないです。そちらはだいじょうぶですか？",
       "zh": "我没事，没受伤。您那边还好吗？",
       "zh-TW": "我沒事，沒受傷。您那邊還好嗎？",
       "en": "I'm fine, no injuries. Are you okay on your end?",
@@ -591,11 +2357,40 @@
       "scene": "轻微事故现场应对",
       "id": "s22-045",
       "subcategory": "sub06",
-      "role": "other"
+      "role": "other",
+      "ruby": [
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です、",
+          "isKanji": false
+        },
+        {
+          "text": "怪我",
+          "isKanji": true,
+          "reading": "けが"
+        },
+        {
+          "text": "はないです。そちらは",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいじょうぶです、けがはないです。そちらはだいじょうぶですか？"
     },
     {
       "jp": "はい、大丈夫です。すみません、後ろから当たってしまいました。今から警察を呼びますので、少々お待ちください。",
-      "furigana": "はい、だいじょうぶです。すみません、うしろからあたってしまいました。いまからけいさつをよびますので、しょうしょうおまちください。",
       "zh": "（A・碰撞发起方）是的，我没事。不好意思，我从后面撞上了。我现在报警，请稍等。",
       "zh-TW": "（A・碰撞發起方）是的，我沒事。不好意思，我從後面撞上了。我現在報警，請稍等。",
       "en": "(A - if you hit the other car) Yes, I'm fine. I'm sorry, I hit you from behind. I'll call the police now, please wait a moment.",
@@ -604,11 +2399,89 @@
       "scene": "轻微事故现场应对",
       "id": "s22-046",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "うし"
+        },
+        {
+          "text": "ろから",
+          "isKanji": false
+        },
+        {
+          "text": "当",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "たってしまいました。",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "びますので、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、だいじょうぶです。すみません、うしろからあたってしまいました。いまからけいさつをよびますので、しょうしょうおまちください。"
     },
     {
       "jp": "私は大丈夫です。念のため、警察を呼びますね。",
-      "furigana": "わたしはだいじょうぶです。ねんのため、けいさつをよびますね。",
       "zh": "（B・被碰撞方）我没事。为了保险起见，我先报警。",
       "zh-TW": "（B・被碰撞方）我沒事。為了保險起見，我先報警。",
       "en": "(B - if you were hit) I'm fine. Just to be safe, I'll call the police.",
@@ -617,24 +2490,151 @@
       "scene": "轻微事故现场应对",
       "id": "s22-047",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "私",
+          "isKanji": true,
+          "reading": "わたし"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "念",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "のため、",
+          "isKanji": false
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "びますね。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わたしはだいじょうぶです。ねんのため、けいさつをよびますね。"
     },
     {
-      "jp": "もしもし、交通事故なんですが、〇〇の交差点付近です。怪我人はいません、車の接触事故です。",
-      "furigana": "もしもし、こうつうじこなんですが、れいれいのこうさてんふきんです。けがじんはいません、くるまのせっしょくじこです。",
-      "zh": "喂，是交通事故，在〇〇路口附近。没有人受伤，是车辆碰撞事故。",
-      "zh-TW": "喂，是交通事故，在〇〇路口附近。沒有人受傷，是車輛碰撞事故。",
-      "en": "Hello, I'm reporting a traffic accident near the 〇〇 intersection. No one is injured, it's a vehicle collision.",
-      "vi": "A lô, tôi muốn báo có tai nạn giao thông, gần ngã tư 〇〇. Không có ai bị thương, là va chạm giữa các xe.",
-      "ko": "여보세요, 교통사고인데요, 〇〇교차로 부근입니다. 부상자는 없고, 차량 접촉 사고입니다.",
+      "jp": "もしもし、交通事故なんですが、渋谷の交差点付近です。怪我人はいません、車の接触事故です。",
+      "zh": "喂，是交通事故，在渋谷路口附近。没有人受伤，是车辆碰撞事故。",
+      "zh-TW": "喂，是交通事故，在澀谷路口附近。沒有人受傷，是車輛碰撞事故。",
+      "en": "Hello, I'm reporting a traffic accident near the Shibuya intersection. No one is injured, it's a vehicle collision.",
+      "vi": "A lô, tôi muốn báo có tai nạn giao thông, gần ngã tư Shibuya. Không có ai bị thương, là va chạm giữa các xe.",
+      "ko": "여보세요, 교통사고인데요, 시부야교차로 부근입니다. 부상자는 없고, 차량 접촉 사고입니다.",
       "scene": "轻微事故现场应对",
       "id": "s22-048",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "もしもし、",
+          "isKanji": false
+        },
+        {
+          "text": "交通",
+          "isKanji": true,
+          "reading": "こうつう"
+        },
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "なんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交差点",
+          "isKanji": true,
+          "reading": "こうさてん"
+        },
+        {
+          "text": "付近",
+          "isKanji": true,
+          "reading": "ふきん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "怪我",
+          "isKanji": true,
+          "reading": "けが"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "はいません、",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "接触",
+          "isKanji": true,
+          "reading": "せっしょく"
+        },
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もしもし、こうつうじこなんですが、しぶやのこうさてんふきんです。けがじんはいません、くるまのせっしょくじこです。"
     },
     {
       "jp": "わかりました。今からそちらに向かいますので、車をそのままの状態にして、安全な場所でお待ちください。",
-      "furigana": "わかりました。いまからそちらにむかいますので、くるまをそのままのじょうたいにして、あんぜんなばしょでおまちください。",
       "zh": "明白了，我们现在过去，请保持车辆现状，在安全的地方等候。",
       "zh-TW": "明白了，我們現在過去，請保持車輛現狀，在安全的地方等候。",
       "en": "Understood. We're on our way now. Please leave the vehicles as they are and wait in a safe location.",
@@ -643,11 +2643,80 @@
       "scene": "轻微事故现场应对",
       "id": "s22-049",
       "subcategory": "sub06",
-      "role": "police"
+      "role": "police",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "からそちらに",
+          "isKanji": false
+        },
+        {
+          "text": "向",
+          "isKanji": true,
+          "reading": "む"
+        },
+        {
+          "text": "かいますので、",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "をそのままの",
+          "isKanji": false
+        },
+        {
+          "text": "状態",
+          "isKanji": true,
+          "reading": "じょうたい"
+        },
+        {
+          "text": "にして、",
+          "isKanji": false
+        },
+        {
+          "text": "安全",
+          "isKanji": true,
+          "reading": "あんぜん"
+        },
+        {
+          "text": "な",
+          "isKanji": false
+        },
+        {
+          "text": "場所",
+          "isKanji": true,
+          "reading": "ばしょ"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。いまからそちらにむかいますので、くるまをそのままのじょうたいにして、あんぜんなばしょでおまちください。"
     },
     {
       "jp": "すみません、お名前と連絡先、保険会社を教えていただけますか？",
-      "furigana": "すみません、おなまえとれんらくさき、ほけんかいしゃをおしえていただけますか？",
       "zh": "不好意思，能告诉我您的姓名、联系方式和保险公司吗？",
       "zh-TW": "不好意思，能告訴我您的姓名、聯絡方式和保險公司嗎？",
       "en": "Excuse me, could you give me your name, contact info, and insurance company?",
@@ -656,37 +2725,221 @@
       "scene": "轻微事故现场应对",
       "id": "s22-050",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、お",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、おなまえとれんらくさき、ほけんかいしゃをおしえていただけますか？"
     },
     {
-      "jp": "はい、〇〇と申します。連絡先は〇〇です。保険は〇〇損保に入っています。",
-      "furigana": "はい、れいれいともうします。れんらくさきはれいれいです。ほけんはれいれいそんぽにはいっています。",
-      "zh": "好的，我叫〇〇，联系方式是〇〇，保险是〇〇损保。",
-      "zh-TW": "好的，我叫〇〇，聯絡方式是〇〇，保險是〇〇產險。",
-      "en": "Sure, my name is 〇〇. My contact info is 〇〇. My insurance is with 〇〇 Insurance.",
-      "vi": "Vâng, tôi tên là 〇〇. Thông tin liên lạc là 〇〇. Bảo hiểm của tôi là công ty 〇〇.",
-      "ko": "네, 저는 〇〇라고 합니다. 연락처는 〇〇입니다. 보험은 〇〇손해보험에 가입되어 있습니다.",
+      "jp": "はい、田中と申します。連絡先は090-1234-5678です。保険は東京海上損保に入っています。",
+      "zh": "好的，我叫田中，联系方式是090-1234-5678，保险是东京海上损保。",
+      "zh-TW": "好的，我叫田中，聯絡方式是090-1234-5678，保險是東京海上產險。",
+      "en": "Sure, my name is Tanaka. My contact info is 090-1234-5678. My insurance is with Tokio Marine Insurance.",
+      "vi": "Vâng, tôi tên là Tanaka. Thông tin liên lạc là 090-1234-5678. Bảo hiểm của tôi là công ty Tokio Marine.",
+      "ko": "네, 저는 다나카라고 합니다. 연락처는 090-1234-5678입니다. 보험은 도쿄해상손해보험에 가입되어 있습니다.",
       "scene": "轻微事故现场应对",
       "id": "s22-051",
       "subcategory": "sub06",
-      "role": "other"
+      "role": "other",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "は090-1234-5678です。",
+          "isKanji": false
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "海上",
+          "isKanji": true,
+          "reading": "かいじょう"
+        },
+        {
+          "text": "損保",
+          "isKanji": true,
+          "reading": "そんぽ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "っています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、たなかともうします。れんらくさきは090-1234-5678です。ほけんはとうきょうかいじょうそんぽにはいっています。"
     },
     {
-      "jp": "ありがとうございます。こちらは〇〇です。連絡先は〇〇、保険会社は〇〇です。",
-      "furigana": "ありがとうございます。こちらはれいれいです。れんらくさきは〇〇、ほけんかいしゃはれいれいです。",
-      "zh": "谢谢。我是〇〇，联系方式是〇〇，保险公司是〇〇。",
-      "zh-TW": "謝謝。我是〇〇，聯絡方式是〇〇，保險公司是〇〇。",
-      "en": "Thank you. I'm 〇〇. My contact info is 〇〇, and my insurance company is 〇〇.",
-      "vi": "Cảm ơn anh/chị. Tôi là 〇〇. Thông tin liên lạc là 〇〇, công ty bảo hiểm là 〇〇.",
-      "ko": "감사합니다. 저는 〇〇입니다. 연락처는 〇〇, 보험회사는 〇〇입니다.",
+      "jp": "ありがとうございます。こちらは田中です。連絡先は090-1234-5678、保険会社は東京海上です。",
+      "zh": "谢谢。我是田中，联系方式是090-1234-5678，保险公司是东京海上。",
+      "zh-TW": "謝謝。我是田中，聯絡方式是090-1234-5678，保險公司是東京海上。",
+      "en": "Thank you. I'm Tanaka. My contact info is 090-1234-5678, and my insurance company is Tokio Marine.",
+      "vi": "Cảm ơn anh/chị. Tôi là Tanaka. Thông tin liên lạc là 090-1234-5678, công ty bảo hiểm là Tokio Marine.",
+      "ko": "감사합니다. 저는 다나카입니다. 연락처는 090-1234-5678, 보험회사는 도쿄해상입니다.",
       "scene": "轻微事故现场应对",
       "id": "s22-052",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ありがとうございます。こちらは",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "は090-1234-5678、",
+          "isKanji": false
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "海上",
+          "isKanji": true,
+          "reading": "かいじょう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。こちらはたなかです。れんらくさきは090-1234-5678、ほけんかいしゃはとうきょうかいじょうです。"
     },
     {
       "jp": "念のため、車の状態を写真に撮ってもいいですか？",
-      "furigana": "ねんのため、くるまのじょうたいをしゃしんにとってもいいですか？",
       "zh": "为了保险起见，我可以拍一下车辆现状的照片吗？",
       "zh-TW": "為了保險起見，我可以拍一下車輛現狀的照片嗎？",
       "en": "Just to be safe, may I take some photos of the vehicle damage?",
@@ -695,11 +2948,58 @@
       "scene": "轻微事故现场应对",
       "id": "s22-053",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "念",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "のため、",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "状態",
+          "isKanji": true,
+          "reading": "じょうたい"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "写真",
+          "isKanji": true,
+          "reading": "しゃしん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "撮",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "ってもいいですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ねんのため、くるまのじょうたいをしゃしんにとってもいいですか？"
     },
     {
       "jp": "はい、どうぞ。",
-      "furigana": "はい、どうぞ。",
       "zh": "好的，请。",
       "zh-TW": "好的，請。",
       "en": "Sure, go ahead.",
@@ -708,11 +3008,17 @@
       "scene": "轻微事故现场应对",
       "id": "s22-054",
       "subcategory": "sub06",
-      "role": "other"
+      "role": "other",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。"
     },
     {
       "jp": "状況を確認します。お二人とも免許証をお願いします。",
-      "furigana": "じょうきょうをかくにんします。おににんともめんきょしょうをおねがいします。",
       "zh": "我确认一下情况，请两位都出示驾照。",
       "zh-TW": "我確認一下情況，請兩位都出示駕照。",
       "en": "I'll check the situation. Could both of you show me your licenses, please?",
@@ -721,11 +3027,68 @@
       "scene": "轻微事故现场应对",
       "id": "s22-055",
       "subcategory": "sub06",
-      "role": "police"
+      "role": "police",
+      "ruby": [
+        {
+          "text": "状況",
+          "isKanji": true,
+          "reading": "じょうきょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "します。お",
+          "isKanji": false
+        },
+        {
+          "text": "二",
+          "isKanji": true,
+          "reading": "に"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "とも",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じょうきょうをかくにんします。おににんともめんきょしょうをおねがいします。"
     },
     {
       "jp": "はい、こちらです。",
-      "furigana": "はい、こちらです。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Sure, here you go.",
@@ -734,11 +3097,17 @@
       "scene": "轻微事故现场应对",
       "id": "s22-056",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、こちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらです。"
     },
     {
       "jp": "状況を教えてください。何があったんですか？",
-      "furigana": "じょうきょうをおしえてください。なにがあったんですか？",
       "zh": "请告诉我情况，发生了什么？",
       "zh-TW": "請告訴我情況，發生了什麼事？",
       "en": "Please tell me what happened here.",
@@ -747,11 +3116,40 @@
       "scene": "轻微事故现场应对",
       "id": "s22-057",
       "subcategory": "sub06",
-      "role": "police"
+      "role": "police",
+      "ruby": [
+        {
+          "text": "状況",
+          "isKanji": true,
+          "reading": "じょうきょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "があったんですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じょうきょうをおしえてください。なにがあったんですか？"
     },
     {
       "jp": "前の車が信号で止まったのに気づくのが遅れて、追突してしまいました。",
-      "furigana": "まえのくるまがしんごうでとまったのにきづくのがおくれて、ついとつしてしまいました。",
       "zh": "（A・碰撞发起方）前车在信号灯前停下，我反应慢了，追尾了。",
       "zh-TW": "（A・碰撞發起方）前車在紅綠燈前停下，我反應慢了，追撞了。",
       "en": "(A - if you hit the other car) I noticed too late that the car in front had stopped at the light, and I rear-ended it.",
@@ -760,11 +3158,76 @@
       "scene": "轻微事故现场应对",
       "id": "s22-058",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "信号",
+          "isKanji": true,
+          "reading": "しんごう"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まったのに",
+          "isKanji": false
+        },
+        {
+          "text": "気",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "づくのが",
+          "isKanji": false
+        },
+        {
+          "text": "遅",
+          "isKanji": true,
+          "reading": "おく"
+        },
+        {
+          "text": "れて、",
+          "isKanji": false
+        },
+        {
+          "text": "追突",
+          "isKanji": true,
+          "reading": "ついとつ"
+        },
+        {
+          "text": "してしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まえのくるまがしんごうでとまったのにきづくのがおくれて、ついとつしてしまいました。"
     },
     {
       "jp": "信号待ちで停止していたら、後ろから追突されました。",
-      "furigana": "しんごうまちでていししていたら、うしろからついとつされました。",
       "zh": "（B・被碰撞方）我在信号灯前停车等待时，被后车追尾了。",
       "zh-TW": "（B・被碰撞方）我在紅綠燈前停車等待時，被後車追撞了。",
       "en": "(B - if you were hit) I was stopped waiting at the light when I was rear-ended.",
@@ -773,11 +3236,54 @@
       "scene": "轻微事故现场应对",
       "id": "s22-059",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "信号",
+          "isKanji": true,
+          "reading": "しんごう"
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちで",
+          "isKanji": false
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "していたら、",
+          "isKanji": false
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "うし"
+        },
+        {
+          "text": "ろから",
+          "isKanji": false
+        },
+        {
+          "text": "追突",
+          "isKanji": true,
+          "reading": "ついとつ"
+        },
+        {
+          "text": "されました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんごうまちでていししていたら、うしろからついとつされました。"
     },
     {
       "jp": "事故証明書は後日、必要でしたら発行できますので、保険会社に申請してもらってください。",
-      "furigana": "じこしょうめいしょはごじつ、ひつようでしたらはっこうできますので、ほけんかいしゃにしんせいしてもらってください。",
       "zh": "事故证明书之后如需要可以开具，请让保险公司来申请。",
       "zh-TW": "事故證明書之後如需要可以開立，請讓保險公司來申請。",
       "en": "We can issue an accident certificate later if you need one — please have your insurance company request it.",
@@ -786,11 +3292,82 @@
       "scene": "轻微事故现场应对",
       "id": "s22-060",
       "subcategory": "sub06",
-      "role": "police"
+      "role": "police",
+      "ruby": [
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "証明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "後日",
+          "isKanji": true,
+          "reading": "ごじつ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "でしたら",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "できますので、",
+          "isKanji": false
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "申請",
+          "isKanji": true,
+          "reading": "しんせい"
+        },
+        {
+          "text": "してもらってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じこしょうめいしょはごじつ、ひつようでしたらはっこうできますので、ほけんかいしゃにしんせいしてもらってください。"
     },
     {
       "jp": "わかりました、ありがとうございます。",
-      "furigana": "わかりました、ありがとうございます。",
       "zh": "明白了，谢谢。",
       "zh-TW": "明白了，謝謝。",
       "en": "Understood, thank you.",
@@ -799,24 +3376,86 @@
       "scene": "轻微事故现场应对",
       "id": "s22-061",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました、ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました、ありがとうございます。"
     },
     {
-      "jp": "もしもし、〇〇です。先ほど交通事故に遭いまして、ご連絡しました。",
-      "furigana": "もしもし、れいれいです。さきほどこうつうじこにあいまして、ごれんらくしました。",
-      "zh": "喂，我是〇〇。刚才发生了交通事故，联系一下您这边。",
-      "zh-TW": "喂，我是〇〇。剛才發生了交通事故，聯絡一下您這邊。",
-      "en": "Hello, this is 〇〇. I'm calling because I was just in a traffic accident.",
-      "vi": "A lô, tôi là 〇〇. Tôi vừa gặp tai nạn giao thông nên gọi điện thông báo.",
-      "ko": "여보세요, 〇〇입니다. 방금 교통사고를 당해서 연락드렸습니다.",
+      "jp": "もしもし、田中です。先ほど交通事故に遭いまして、ご連絡しました。",
+      "zh": "喂，我是田中。刚才发生了交通事故，联系一下您这边。",
+      "zh-TW": "喂，我是田中。剛才發生了交通事故，聯絡一下您這邊。",
+      "en": "Hello, this is Tanaka. I'm calling because I was just in a traffic accident.",
+      "vi": "A lô, tôi là Tanaka. Tôi vừa gặp tai nạn giao thông nên gọi điện thông báo.",
+      "ko": "여보세요, 다나카입니다. 방금 교통사고를 당해서 연락드렸습니다.",
       "scene": "轻微事故现场应对",
       "id": "s22-062",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "もしもし、",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "ほど",
+          "isKanji": false
+        },
+        {
+          "text": "交通",
+          "isKanji": true,
+          "reading": "こうつう"
+        },
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "遭",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いまして、ご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もしもし、たなかです。さきほどこうつうじこにあいまして、ごれんらくしました。"
     },
     {
       "jp": "ご連絡ありがとうございます。事故の状況を教えていただけますか？",
-      "furigana": "ごれんらくありがとうございます。じこのじょうきょうをおしえていただけますか？",
       "zh": "谢谢您的联系。能告诉我事故的情况吗？",
       "zh-TW": "謝謝您的聯絡。能告訴我事故的情況嗎？",
       "en": "Thank you for contacting us. Could you tell me the details of the accident?",
@@ -825,24 +3464,131 @@
       "scene": "轻微事故现场应对",
       "id": "s22-063",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        },
+        {
+          "text": "事故",
+          "isKanji": true,
+          "reading": "じこ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "状況",
+          "isKanji": true,
+          "reading": "じょうきょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごれんらくありがとうございます。じこのじょうきょうをおしえていただけますか？"
     },
     {
-      "jp": "はい、〇〇の交差点で、相手の車と接触しました。怪我人はいません。",
-      "furigana": "はい、れいれいのこうさてんで、あいてのくるまとせっしょくしました。けがじんはいません。",
-      "zh": "好的，在〇〇路口和对方车辆发生了碰撞，没有人受伤。",
-      "zh-TW": "好的，在〇〇路口和對方車輛發生了碰撞，沒有人受傷。",
-      "en": "Yes, I had a collision with another car at the 〇〇 intersection. No one was injured.",
-      "vi": "Vâng, tại ngã tư 〇〇, tôi đã va chạm với xe đối phương. Không có ai bị thương.",
-      "ko": "네, 〇〇교차로에서 상대 차량과 접촉했습니다. 부상자는 없습니다.",
+      "jp": "はい、渋谷の交差点で、相手の車と接触しました。怪我人はいません。",
+      "zh": "好的，在渋谷路口和对方车辆发生了碰撞，没有人受伤。",
+      "zh-TW": "好的，在澀谷路口和對方車輛發生了碰撞，沒有人受傷。",
+      "en": "Yes, I had a collision with another car at the Shibuya intersection. No one was injured.",
+      "vi": "Vâng, tại ngã tư Shibuya, tôi đã va chạm với xe đối phương. Không có ai bị thương.",
+      "ko": "네, 시부야교차로에서 상대 차량과 접촉했습니다. 부상자는 없습니다.",
       "scene": "轻微事故现场应对",
       "id": "s22-064",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "渋谷",
+          "isKanji": true,
+          "reading": "しぶや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交差点",
+          "isKanji": true,
+          "reading": "こうさてん"
+        },
+        {
+          "text": "で、",
+          "isKanji": false
+        },
+        {
+          "text": "相手",
+          "isKanji": true,
+          "reading": "あいて"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "接触",
+          "isKanji": true,
+          "reading": "せっしょく"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        },
+        {
+          "text": "怪我",
+          "isKanji": true,
+          "reading": "けが"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "はいません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、しぶやのこうさてんで、あいてのくるまとせっしょくしました。けがじんはいません。"
     },
     {
       "jp": "承知しました。担当者から折り返しご連絡いたしますので、少々お待ちください。",
-      "furigana": "しょうちしました。たんとうしゃからおりかえしごれんらくいたしますので、しょうしょうおまちください。",
       "zh": "明白了，我们会安排负责人给您回电，请稍等。",
       "zh-TW": "明白了，我們會安排負責人回電給您，請稍等。",
       "en": "Understood. Our representative will call you back shortly, please wait a moment.",
@@ -851,11 +3597,81 @@
       "scene": "轻微事故现场应对",
       "id": "s22-065",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "承知",
+          "isKanji": true,
+          "reading": "しょうち"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        },
+        {
+          "text": "担当",
+          "isKanji": true,
+          "reading": "たんとう"
+        },
+        {
+          "text": "者",
+          "isKanji": true,
+          "reading": "しゃ"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "折",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "返",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "しご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "いたしますので、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうちしました。たんとうしゃからおりかえしごれんらくいたしますので、しょうしょうおまちください。"
     },
     {
       "jp": "すみません、予約なしなんですが、今から車を借りることはできますか？",
-      "furigana": "すみません、よやくなしなんですが、いまからくるまをかりることはできますか？",
       "zh": "不好意思，我没有预约，现在可以租车吗？",
       "zh-TW": "不好意思，我沒有預約，現在可以租車嗎？",
       "en": "Excuse me, I don't have a reservation — is it possible to rent a car right now?",
@@ -864,11 +3680,53 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-066",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "なしなんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "借",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "りることはできますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、よやくなしなんですが、いまからくるまをかりることはできますか？"
     },
     {
       "jp": "はい、空いている車がございますので、大丈夫ですよ。いつからいつまでご利用ですか？",
-      "furigana": "はい、あいているくるまがございますので、だいじょうぶですよ。いつからいつまでごりようですか？",
       "zh": "可以的，我们现在有空车。请问用车时间是从什么时候到什么时候？",
       "zh-TW": "可以的，我們現在有空車。請問用車時間是從什麼時候到什麼時候？",
       "en": "Yes, we have cars available, so that's no problem. From when to when would you like to use it?",
@@ -877,11 +3735,53 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-067",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いている",
+          "isKanji": false
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "くるま"
+        },
+        {
+          "text": "がございますので、",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですよ。いつからいつまでご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "ですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あいているくるまがございますので、だいじょうぶですよ。いつからいつまでごりようですか？"
     },
     {
       "jp": "今日の午後から明日の夕方までお願いします。",
-      "furigana": "きょうのごごからあしたのゆうがたまでおねがいします。",
       "zh": "从今天下午到明天傍晚，麻烦了。",
       "zh-TW": "從今天下午到明天傍晚，麻煩了。",
       "en": "From this afternoon until tomorrow evening, please.",
@@ -890,11 +3790,58 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-068",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "午後",
+          "isKanji": true,
+          "reading": "ごご"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "明日",
+          "isKanji": true,
+          "reading": "あした"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夕方",
+          "isKanji": true,
+          "reading": "ゆうがた"
+        },
+        {
+          "text": "までお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きょうのごごからあしたのゆうがたまでおねがいします。"
     },
     {
       "jp": "かしこまりました。車種のご希望はありますか？人数やお荷物の量に合わせてご案内できますよ。",
-      "furigana": "かしこまりました。しゃしゅのごきぼうはありますか？にんずうやおにもつのりょうにあわせてごあんないできますよ。",
       "zh": "好的。车型有什么要求吗？可以根据人数和行李量帮您推荐。",
       "zh-TW": "好的。車型有什麼要求嗎？可以根據人數和行李量幫您推薦。",
       "en": "Certainly. Do you have a preference for the car type? We can recommend one based on the number of people and luggage.",
@@ -903,11 +3850,80 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-069",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "車種",
+          "isKanji": true,
+          "reading": "しゃしゅ"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "希望",
+          "isKanji": true,
+          "reading": "きぼう"
+        },
+        {
+          "text": "はありますか？",
+          "isKanji": false
+        },
+        {
+          "text": "人数",
+          "isKanji": true,
+          "reading": "にんずう"
+        },
+        {
+          "text": "やお",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "量",
+          "isKanji": true,
+          "reading": "りょう"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせてご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "できますよ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。しゃしゅのごきぼうはありますか？にんずうやおにもつのりょうにあわせてごあんないできますよ。"
     },
     {
       "jp": "大人2人です。一番安いクラスでお願いします。",
-      "furigana": "おとな2にんです。いちばんやすいくらすでおねがいします。",
       "zh": "大人2位，请给我最便宜的级别就好。",
       "zh-TW": "大人2位，請給我最便宜的等級就好。",
       "en": "Two adults. Please give me the cheapest class available.",
@@ -916,11 +3932,54 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-070",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "2",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "一番",
+          "isKanji": true,
+          "reading": "いちばん"
+        },
+        {
+          "text": "安",
+          "isKanji": true,
+          "reading": "やす"
+        },
+        {
+          "text": "いクラスでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おとな2にんです。いちばんやすいクラスでおねがいします。"
     },
     {
       "jp": "かしこまりました。それでは免許証を見せていただけますか？",
-      "furigana": "かしこまりました。それではめんきょしょうをみせていただけますか？",
       "zh": "好的，那么请给我看一下驾照。",
       "zh-TW": "好的，那麼請給我看一下駕照。",
       "en": "Certainly. Then could I see your driver's license, please?",
@@ -929,11 +3988,40 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-071",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。それでは",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。それではめんきょしょうをみせていただけますか？"
     },
     {
       "jp": "はい、こちらです。",
-      "furigana": "はい、こちらです。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Sure, here you go.",
@@ -942,11 +4030,17 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-072",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、こちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらです。"
     },
     {
       "jp": "料金の総額を教えてもらえますか？",
-      "furigana": "りょうきんのそうがくをおしえてもらえますか？",
       "zh": "能告诉我总金额是多少吗？",
       "zh-TW": "能告訴我總金額是多少嗎？",
       "en": "Could you tell me the total cost?",
@@ -955,24 +4049,78 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-073",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "料金",
+          "isKanji": true,
+          "reading": "りょうきん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "総額",
+          "isKanji": true,
+          "reading": "そうがく"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてもらえますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうきんのそうがくをおしえてもらえますか？"
     },
     {
-      "jp": "保険込みで〇〇円になります。",
-      "furigana": "ほけんこみでれいれいえんになります。",
-      "zh": "含保险总共〇〇日元。",
-      "zh-TW": "含保險總共〇〇日圓。",
-      "en": "Including insurance, it comes to 〇〇 yen.",
-      "vi": "Bao gồm cả bảo hiểm là 〇〇 yên ạ.",
-      "ko": "보험 포함해서 〇〇엔입니다.",
+      "jp": "保険込みで8000円になります。",
+      "zh": "含保险总共8000日元。",
+      "zh-TW": "含保險總共8000日圓。",
+      "en": "Including insurance, it comes to 8,000 yen.",
+      "vi": "Bao gồm cả bảo hiểm là 8.000 yên ạ.",
+      "ko": "보험 포함해서 8,000엔입니다.",
       "scene": "租车柜台现场无预约询问",
       "id": "s22-074",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みで8000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "になります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ほけんこみで8000えんになります。"
     },
     {
       "jp": "わかりました、それでお願いします。",
-      "furigana": "わかりました、それでおねがいします。",
       "zh": "明白了，就这个吧。",
       "zh-TW": "明白了，就這個吧。",
       "en": "Understood, let's go with that.",
@@ -981,11 +4129,26 @@
       "scene": "租车柜台现场无预约询问",
       "id": "s22-075",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました、それでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました、それでおねがいします。"
     },
     {
       "jp": "いらっしゃいませ。本日のご予約のお客様でしょうか？",
-      "furigana": "いらっしゃいませ。ほんじつのごよやくのおきゃくさまでしょうか？",
       "zh": "欢迎光临，请问是今天有预约的客人吗？",
       "zh-TW": "歡迎光臨，請問是今天有預約的客人嗎？",
       "en": "Welcome. Are you the customer with a reservation for today?",
@@ -994,24 +4157,90 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-076",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "客様",
+          "isKanji": true,
+          "reading": "きゃくさま"
+        },
+        {
+          "text": "でしょうか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。ほんじつのごよやくのおきゃくさまでしょうか？"
     },
     {
-      "jp": "はい、〇〇の名前で予約しています。",
-      "furigana": "はい、れいれいのなまえでよやくしています。",
-      "zh": "是的，我用〇〇的名字预约了。",
-      "zh-TW": "是的，我用〇〇的名字預約了。",
-      "en": "Yes, I have a reservation under the name 〇〇.",
-      "vi": "Vâng, tôi đã đặt hẹn với tên là 〇〇.",
-      "ko": "네, 〇〇이라는 이름으로 예약했습니다.",
+      "jp": "はい、田中の名前で予約しています。",
+      "zh": "是的，我用田中的名字预约了。",
+      "zh-TW": "是的，我用田中的名字預約了。",
+      "en": "Yes, I have a reservation under the name Tanaka.",
+      "vi": "Vâng, tôi đã đặt hẹn với tên là Tanaka.",
+      "ko": "네, 다나카라는 이름으로 예약했습니다.",
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-077",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、たなかのなまえでよやくしています。"
     },
     {
       "jp": "確認いたします。運転される方の免許証を見せていただけますか？",
-      "furigana": "かくにんいたします。うんてんされるほうのめんきょしょうをみせていただけますか？",
       "zh": "我确认一下，能给我看一下驾驶人的驾照吗？",
       "zh-TW": "我確認一下，能給我看一下駕駛人的駕照嗎？",
       "en": "Let me check. Could I see the license of the person who will be driving?",
@@ -1020,11 +4249,63 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-078",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        },
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "される",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "ほう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたします。うんてんされるほうのめんきょしょうをみせていただけますか？"
     },
     {
       "jp": "はい、こちらです。",
-      "furigana": "はい、こちらです。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Sure, here you go.",
@@ -1033,11 +4314,17 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-079",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、こちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらです。"
     },
     {
       "jp": "ありがとうございます。保険はどうされますか？免責補償制度への加入もおすすめしております。",
-      "furigana": "ありがとうございます。ほけんはどうされますか？めんせきほしょうせいどへのかにゅうもおすすめしております。",
       "zh": "谢谢。保险方面怎么安排？我们也推荐加入免责补偿制度。",
       "zh-TW": "謝謝。保險方面怎麼安排？我們也推薦加入免責補償制度。",
       "en": "Thank you. How would you like to handle insurance? We also recommend joining the collision damage waiver plan.",
@@ -1046,11 +4333,54 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-080",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        },
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "はどうされますか？",
+          "isKanji": false
+        },
+        {
+          "text": "免責",
+          "isKanji": true,
+          "reading": "めんせき"
+        },
+        {
+          "text": "補償",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "制度",
+          "isKanji": true,
+          "reading": "せいど"
+        },
+        {
+          "text": "への",
+          "isKanji": false
+        },
+        {
+          "text": "加入",
+          "isKanji": true,
+          "reading": "かにゅう"
+        },
+        {
+          "text": "もおすすめしております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。ほけんはどうされますか？めんせきほしょうせいどへのかにゅうもおすすめしております。"
     },
     {
       "jp": "免責補償も付けてください。",
-      "furigana": "めんせきほしょうもつけてください。",
       "zh": "免责补偿也一起加上吧。",
       "zh-TW": "免責補償也一起加上吧。",
       "en": "Please add the collision damage waiver too.",
@@ -1059,24 +4389,109 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-081",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "免責",
+          "isKanji": true,
+          "reading": "めんせき"
+        },
+        {
+          "text": "補償",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "付",
+          "isKanji": true,
+          "reading": "つ"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "めんせきほしょうもつけてください。"
     },
     {
-      "jp": "かしこまりました。車両は〇〇クラスでご用意しております。返却は本日18時、こちらの店舗でよろしいですか？",
-      "furigana": "かしこまりました。しゃりょうはれいれいくらすでごよういしております。へんきゃくはほんじつ18じ、こちらのてんぽでよろしいですか？",
-      "zh": "好的。车辆是〇〇级别，还车是今天18点，在这家店可以吗？",
-      "zh-TW": "好的。車輛是〇〇等級，還車是今天18點，在這家店可以嗎？",
-      "en": "Certainly. We have a 〇〇 class vehicle ready for you. Is returning it today at 6 PM at this location okay?",
-      "vi": "Vâng, đã rõ. Xe chúng tôi chuẩn bị là hạng 〇〇. Trả xe vào 18 giờ hôm nay, tại cửa hàng này có được không ạ?",
-      "ko": "알겠습니다. 차량은 〇〇클래스로 준비되어 있습니다. 반납은 오늘 18시, 이 지점으로 괜찮으신가요?",
+      "jp": "かしこまりました。車両はコンパクトクラスでご用意しております。返却は本日18時、こちらの店舗でよろしいですか？",
+      "zh": "好的。车辆是コンパクト级别，还车是今天18点，在这家店可以吗？",
+      "zh-TW": "好的。車輛是コンパクト等級，還車是今天18點，在這家店可以嗎？",
+      "en": "Certainly. We have a compact class vehicle ready for you. Is returning it today at 6 PM at this location okay?",
+      "vi": "Vâng, đã rõ. Xe chúng tôi chuẩn bị là hạng compact. Trả xe vào 18 giờ hôm nay, tại cửa hàng này có được không ạ?",
+      "ko": "알겠습니다. 차량은 컴팩트 클래스로 준비되어 있습니다. 반납은 오늘 18시, 이 지점으로 괜찮으신가요?",
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-082",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "車両",
+          "isKanji": true,
+          "reading": "しゃりょう"
+        },
+        {
+          "text": "はコンパクトクラスでご",
+          "isKanji": false
+        },
+        {
+          "text": "用意",
+          "isKanji": true,
+          "reading": "ようい"
+        },
+        {
+          "text": "しております。",
+          "isKanji": false
+        },
+        {
+          "text": "返却",
+          "isKanji": true,
+          "reading": "へんきゃく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "18",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "、こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "店舗",
+          "isKanji": true,
+          "reading": "てんぽ"
+        },
+        {
+          "text": "でよろしいですか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。しゃりょうはコンパクトクラスでごよういしております。へんきゃくはほんじつ18じ、こちらのてんぽでよろしいですか？"
     },
     {
       "jp": "はい、大丈夫です。",
-      "furigana": "はい、だいじょうぶです。",
       "zh": "是的，没问题。",
       "zh-TW": "是的，沒問題。",
       "en": "Yes, that's fine.",
@@ -1085,11 +4500,26 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-083",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、だいじょうぶです。"
     },
     {
       "jp": "それでは車両のご案内をしますので、こちらへどうぞ。",
-      "furigana": "それではしゃりょうのごあんないをしますので、こちらへどうぞ。",
       "zh": "那么我带您去看车，这边请。",
       "zh-TW": "那麼我帶您去看車，這邊請。",
       "en": "Now I'll show you to the vehicle, this way please.",
@@ -1098,11 +4528,35 @@
       "scene": "租车柜台手续（持日本国内驾照）",
       "id": "s22-084",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "それでは",
+          "isKanji": false
+        },
+        {
+          "text": "車両",
+          "isKanji": true,
+          "reading": "しゃりょう"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "をしますので、こちらへどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "それではしゃりょうのごあんないをしますので、こちらへどうぞ。"
     },
     {
       "jp": "いらっしゃいませ。本日のご予約のお客様でしょうか？",
-      "furigana": "いらっしゃいませ。ほんじつのごよやくのおきゃくさまでしょうか？",
       "zh": "欢迎光临，请问是今天有预约的客人吗？",
       "zh-TW": "歡迎光臨，請問是今天有預約的客人嗎？",
       "en": "Welcome. Are you the customer with a reservation for today?",
@@ -1111,24 +4565,90 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-085",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "客様",
+          "isKanji": true,
+          "reading": "きゃくさま"
+        },
+        {
+          "text": "でしょうか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。ほんじつのごよやくのおきゃくさまでしょうか？"
     },
     {
-      "jp": "はい、〇〇の名前で予約しています。",
-      "furigana": "はい、れいれいのなまえでよやくしています。",
-      "zh": "是的，我用〇〇的名字预约了。",
-      "zh-TW": "是的，我用〇〇的名字預約了。",
-      "en": "Yes, I have a reservation under the name 〇〇.",
-      "vi": "Vâng, tôi đã đặt hẹn với tên là 〇〇.",
-      "ko": "네, 〇〇이라는 이름으로 예약했습니다.",
+      "jp": "はい、田中の名前で予約しています。",
+      "zh": "是的，我用田中的名字预约了。",
+      "zh-TW": "是的，我用田中的名字預約了。",
+      "en": "Yes, I have a reservation under the name Tanaka.",
+      "vi": "Vâng, tôi đã đặt hẹn với tên là Tanaka.",
+      "ko": "네, 다나카라는 이름으로 예약했습니다.",
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-086",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "しています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、たなかのなまえでよやくしています。"
     },
     {
       "jp": "国際運転免許証をお持ちですね。パスポートと、念のため本国の免許証もお持ちでしたら見せていただけますか？",
-      "furigana": "こくさいうんてんめんきょしょうをおもちですね。ぱすぽーとと、ねんのためほんごくのめんきょしょうもおもちでしたらみせていただけますか？",
       "zh": "您带的是国际驾照对吧。请给我看一下护照，如果方便的话本国的驾照也麻烦一并出示。",
       "zh-TW": "您帶的是國際駕照對吧。請給我看一下護照，如果方便的話本國的駕照也麻煩一併出示。",
       "en": "You have an International Driving Permit, correct? Could I also see your passport, and if you have it with you, your home country license as well, just to be sure?",
@@ -1137,11 +4657,96 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-087",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "国際",
+          "isKanji": true,
+          "reading": "こくさい"
+        },
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちですね。パスポートと、",
+          "isKanji": false
+        },
+        {
+          "text": "念",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "のため",
+          "isKanji": false
+        },
+        {
+          "text": "本国",
+          "isKanji": true,
+          "reading": "ほんごく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "もお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちでしたら",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こくさいうんてんめんきょしょうをおもちですね。パスポートと、ねんのためほんごくのめんきょしょうもおもちでしたらみせていただけますか？"
     },
     {
       "jp": "はい、こちらです。",
-      "furigana": "はい、こちらです。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Sure, here you go.",
@@ -1150,11 +4755,17 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-088",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、こちらです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらです。"
     },
     {
       "jp": "入国日を確認させていただきますね。",
-      "furigana": "にゅうこくびをかくにんさせていただきますね。",
       "zh": "我确认一下您的入境日期。",
       "zh-TW": "我確認一下您的入境日期。",
       "en": "Let me confirm your date of entry into Japan.",
@@ -1163,24 +4774,82 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-089",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "入国",
+          "isKanji": true,
+          "reading": "にゅうこく"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "させていただきますね。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にゅうこくびをかくにんさせていただきますね。"
     },
     {
-      "jp": "はい、〇月〇日に入国しました。",
-      "furigana": "はい、〇つきれいにちににゅうこくしました。",
-      "zh": "好的，我是〇月〇日入境的。",
-      "zh-TW": "好的，我是〇月〇日入境的。",
-      "en": "Yes, I entered Japan on 〇月〇日.",
-      "vi": "Vâng, tôi nhập cảnh vào ngày 〇 tháng 〇.",
-      "ko": "네, 〇월 〇일에 입국했습니다.",
+      "jp": "はい、3月15日に入国しました。",
+      "zh": "好的，我是3月15日入境的。",
+      "zh-TW": "好的，我是3月15日入境的。",
+      "en": "Yes, I entered Japan on March 15.",
+      "vi": "Vâng, tôi nhập cảnh vào ngày 15 tháng 3.",
+      "ko": "네, 3월 15일에 입국했습니다.",
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-090",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、3",
+          "isKanji": false
+        },
+        {
+          "text": "月",
+          "isKanji": true,
+          "reading": "がつ"
+        },
+        {
+          "text": "15",
+          "isKanji": false
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "入国",
+          "isKanji": true,
+          "reading": "にゅうこく"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、3がつ15にちににゅうこくしました。"
     },
     {
       "jp": "ありがとうございます。国際免許証は入国日から1年間有効ですので、その範囲内でご利用いただけます。",
-      "furigana": "ありがとうございます。こくさいめんきょしょうはにゅうこくびから1ねんかんゆうこうですので、そのはんいないでごりよういただけます。",
       "zh": "谢谢。国际驾照从入境日起1年内有效，在这个期限内可以使用。",
       "zh-TW": "謝謝。國際駕照從入境日起1年內有效，在這個期限內可以使用。",
       "en": "Thank you. Your International Driving Permit is valid for one year from your date of entry, so you can use it within that period.",
@@ -1189,11 +4858,87 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-091",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        },
+        {
+          "text": "国際",
+          "isKanji": true,
+          "reading": "こくさい"
+        },
+        {
+          "text": "免許",
+          "isKanji": true,
+          "reading": "めんきょ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "入国",
+          "isKanji": true,
+          "reading": "にゅうこく"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "から1",
+          "isKanji": false
+        },
+        {
+          "text": "年間",
+          "isKanji": true,
+          "reading": "ねんかん"
+        },
+        {
+          "text": "有効",
+          "isKanji": true,
+          "reading": "ゆうこう"
+        },
+        {
+          "text": "ですので、その",
+          "isKanji": false
+        },
+        {
+          "text": "範囲",
+          "isKanji": true,
+          "reading": "はんい"
+        },
+        {
+          "text": "内",
+          "isKanji": true,
+          "reading": "ない"
+        },
+        {
+          "text": "でご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "いただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。こくさいめんきょしょうはにゅうこくびから1ねんかんゆうこうですので、そのはんいないでごりよういただけます。"
     },
     {
       "jp": "わかりました。",
-      "furigana": "わかりました。",
       "zh": "明白了。",
       "zh-TW": "明白了。",
       "en": "Understood.",
@@ -1202,11 +4947,17 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-092",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。"
     },
     {
       "jp": "保険はどうされますか？免責補償制度への加入もおすすめしております。",
-      "furigana": "ほけんはどうされますか？めんせきほしょうせいどへのかにゅうもおすすめしております。",
       "zh": "保险方面怎么安排？我们也推荐加入免责补偿制度。",
       "zh-TW": "保險方面怎麼安排？我們也推薦加入免責補償制度。",
       "en": "How would you like to handle insurance? We also recommend joining the collision damage waiver plan.",
@@ -1215,11 +4966,50 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-093",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "保険",
+          "isKanji": true,
+          "reading": "ほけん"
+        },
+        {
+          "text": "はどうされますか？",
+          "isKanji": false
+        },
+        {
+          "text": "免責",
+          "isKanji": true,
+          "reading": "めんせき"
+        },
+        {
+          "text": "補償",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "制度",
+          "isKanji": true,
+          "reading": "せいど"
+        },
+        {
+          "text": "への",
+          "isKanji": false
+        },
+        {
+          "text": "加入",
+          "isKanji": true,
+          "reading": "かにゅう"
+        },
+        {
+          "text": "もおすすめしております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ほけんはどうされますか？めんせきほしょうせいどへのかにゅうもおすすめしております。"
     },
     {
       "jp": "免責補償も付けてください。",
-      "furigana": "めんせきほしょうもつけてください。",
       "zh": "免责补偿也一起加上吧。",
       "zh-TW": "免責補償也一起加上吧。",
       "en": "Please add the collision damage waiver too.",
@@ -1228,11 +5018,36 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-094",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "免責",
+          "isKanji": true,
+          "reading": "めんせき"
+        },
+        {
+          "text": "補償",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "付",
+          "isKanji": true,
+          "reading": "つ"
+        },
+        {
+          "text": "けてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "めんせきほしょうもつけてください。"
     },
     {
       "jp": "かしこまりました。それでは車両のご案内をしますので、こちらへどうぞ。",
-      "furigana": "かしこまりました。それではしゃりょうのごあんないをしますので、こちらへどうぞ。",
       "zh": "好的，那么我带您去看车，这边请。",
       "zh-TW": "好的，那麼我帶您去看車，這邊請。",
       "en": "Certainly. Now I'll show you to the vehicle, this way please.",
@@ -1241,7 +5056,32 @@
       "scene": "租车柜台手续（持国际驾照）",
       "id": "s22-095",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。それでは",
+          "isKanji": false
+        },
+        {
+          "text": "車両",
+          "isKanji": true,
+          "reading": "しゃりょう"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "をしますので、こちらへどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。それではしゃりょうのごあんないをしますので、こちらへどうぞ。"
     }
   ]
 }

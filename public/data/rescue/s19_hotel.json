@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "いらっしゃいませ。",
-      "furigana": "いらっしゃいませ。",
       "zh": "欢迎光临。",
       "zh-TW": "歡迎光臨。",
       "en": "Welcome.",
@@ -16,24 +15,63 @@
       "scene": "チェックイン",
       "id": "s19-001",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。"
     },
     {
-      "jp": "チェックインをお願いします。予約の [名前] です。",
-      "furigana": "ちぇっくいんをおねがいします。よやくの[なまえ]です。",
-      "zh": "我要办理入住，预约的是[姓名]。",
-      "zh-TW": "我要辦理入住，預約的是[姓名]。",
-      "en": "I'd like to check in. I have a reservation under [name].",
-      "vi": "Tôi muốn làm thủ tục nhận phòng. Tôi đã đặt phòng dưới tên [tên].",
-      "ko": "체크인 부탁드립니다. 예약한 [이름]입니다.",
+      "jp": "チェックインをお願いします。予約の田中です。",
+      "zh": "我要办理入住，预约的是田中。",
+      "zh-TW": "我要辦理入住，預約的是田中。",
+      "en": "I'd like to check in. I have a reservation under Tanaka.",
+      "vi": "Tôi muốn làm thủ tục nhận phòng. Tôi đã đặt phòng dưới tên Tanaka.",
+      "ko": "체크인 부탁드립니다. 예약한 다나카입니다.",
       "scene": "チェックイン",
       "id": "s19-002",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "チェックインをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "チェックインをおねがいします。よやくのたなかです。"
     },
     {
       "jp": "ご予約の確認をいたします。パスポートをご提示いただけますか。",
-      "furigana": "ごよやくのかくにんをいたします。ぱすぽーとをごていじいただけますか。",
       "zh": "我来确认您的预约，请出示护照。",
       "zh-TW": "我來確認您的預約，請出示護照。",
       "en": "Let me confirm your reservation. Could I see your passport?",
@@ -42,11 +80,44 @@
       "scene": "チェックイン",
       "id": "s19-003",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "をいたします。パスポートをご",
+          "isKanji": false
+        },
+        {
+          "text": "提示",
+          "isKanji": true,
+          "reading": "ていじ"
+        },
+        {
+          "text": "いただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごよやくのかくにんをいたします。パスポートをごていじいただけますか。"
     },
     {
       "jp": "はい、どうぞ。",
-      "furigana": "はい、どうぞ。",
       "zh": "好的，给您。",
       "zh-TW": "好的，給您。",
       "en": "Here you go.",
@@ -55,24 +126,77 @@
       "scene": "チェックイン",
       "id": "s19-004",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。"
     },
     {
-      "jp": "お支払いはカードでよろしいですか。宿泊税が別途 [X] 円かかります。",
-      "furigana": "おしはらいはかーどでよろしいですか。しゅくはくぜいがべっと[X]えんかかります。",
-      "zh": "请问用信用卡结账可以吗？另外需要支付 [X] 円的住宿税。",
-      "zh-TW": "請問用信用卡結帳可以嗎？另外需要支付 [X] 円的住宿稅。",
-      "en": "Would you like to pay by card? There is also an accommodation tax of [X] yen.",
-      "vi": "Bạn thanh toán bằng thẻ có được không? Ngoài ra có thuế lưu trú là [X] yên.",
-      "ko": "카드로 결제하시겠어요? 숙박세가 별도로 [X]엔 부과됩니다.",
+      "jp": "お支払いはカードでよろしいですか。宿泊税が別途200円かかります。",
+      "zh": "请问用信用卡结账可以吗？另外需要支付200円的住宿税。",
+      "zh-TW": "請問用信用卡結帳可以嗎？另外需要支付200円的住宿稅。",
+      "en": "Would you like to pay by card? There is also an accommodation tax of 200 yen.",
+      "vi": "Bạn thanh toán bằng thẻ có được không? Ngoài ra có thuế lưu trú là 200 yên.",
+      "ko": "카드로 결제하시겠어요? 숙박세가 별도로 200엔 부과됩니다.",
       "scene": "チェックイン",
       "id": "s19-005",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いはカードでよろしいですか。",
+          "isKanji": false
+        },
+        {
+          "text": "宿泊",
+          "isKanji": true,
+          "reading": "しゅくはく"
+        },
+        {
+          "text": "税",
+          "isKanji": true,
+          "reading": "ぜい"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "別途",
+          "isKanji": true,
+          "reading": "べっと"
+        },
+        {
+          "text": "200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "かかります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おしはらいはカードでよろしいですか。しゅくはくぜいがべっと200えんかかります。"
     },
     {
       "jp": "カードで払います。",
-      "furigana": "かーどではらいます。",
       "zh": "我用信用卡付款。",
       "zh-TW": "我用信用卡付款。",
       "en": "I'll pay by card.",
@@ -81,24 +205,72 @@
       "scene": "チェックイン",
       "id": "s19-006",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "カードで",
+          "isKanji": false
+        },
+        {
+          "text": "払",
+          "isKanji": true,
+          "reading": "はら"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードではらいます。"
     },
     {
-      "jp": "ありがとうございました。こちらがルームキーです。お部屋は [X] 号室、エレベーターは右手にございます。",
-      "furigana": "ありがとうございました。こちらがるーむきーです。おへやは[X]ごうしつ、えれべーたーはみぎてにございます。",
-      "zh": "谢谢您。这是您的房卡，房间是 [X] 号，电梯在右侧。",
-      "zh-TW": "謝謝您。這是您的房卡，房間是 [X] 號，電梯在右側。",
-      "en": "Thank you. Here is your room key. Your room is [X], and the elevator is on your right.",
-      "vi": "Cảm ơn quý khách. Đây là chìa khóa phòng số [X], thang máy ở bên phải.",
-      "ko": "감사합니다. 룸키입니다. 객실은 [X]호이고, 엘리베이터는 오른쪽에 있습니다.",
+      "jp": "ありがとうございました。こちらがルームキーです。お部屋は305号室、エレベーターは右手にございます。",
+      "zh": "谢谢您。这是您的房卡，房间是305号，电梯在右侧。",
+      "zh-TW": "謝謝您。這是您的房卡，房間是305號，電梯在右側。",
+      "en": "Thank you. Here is your room key. Your room is 305, and the elevator is on your right.",
+      "vi": "Cảm ơn quý khách. Đây là chìa khóa phòng số 305, thang máy ở bên phải.",
+      "ko": "감사합니다. 룸키입니다. 객실은 305호이고, 엘리베이터는 오른쪽에 있습니다.",
       "scene": "チェックイン",
       "id": "s19-007",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございました。こちらがルームキーです。お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "は305",
+          "isKanji": false
+        },
+        {
+          "text": "号室",
+          "isKanji": true,
+          "reading": "ごうしつ"
+        },
+        {
+          "text": "、エレベーターは",
+          "isKanji": false
+        },
+        {
+          "text": "右手",
+          "isKanji": true,
+          "reading": "みぎて"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございました。こちらがルームキーです。おへやは305ごうしつ、エレベーターはみぎてにございます。"
     },
     {
       "jp": "わかりました。ありがとうございます。",
-      "furigana": "わかりました。ありがとうございます。",
       "zh": "明白了，谢谢您。",
       "zh-TW": "明白了，謝謝您。",
       "en": "Got it, thank you.",
@@ -107,11 +279,17 @@
       "scene": "チェックイン",
       "id": "s19-008",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。ありがとうございます。"
     },
     {
       "jp": "いらっしゃいませ。",
-      "furigana": "いらっしゃいませ。",
       "zh": "欢迎光临。",
       "zh-TW": "歡迎光臨。",
       "en": "Welcome.",
@@ -120,24 +298,90 @@
       "scene": "予約トラブル",
       "id": "s19-009",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。"
     },
     {
-      "jp": "チェックインをお願いします。予約の [名前] ですが、予約が見つからないと言われまして…",
-      "furigana": "ちぇっくいんをおねがいします。よやくの[なまえ]ですが、よやくがみつからないといわれまして…",
-      "zh": "我要办理入住，预约的是[姓名]，但被告知找不到我的预约……",
-      "zh-TW": "我要辦理入住，預約的是[姓名]，但被告知找不到我的預約……",
-      "en": "I'd like to check in. My name is [name], but I was told my reservation couldn't be found...",
-      "vi": "Tôi muốn làm thủ tục nhận phòng. Tôi đặt phòng dưới tên [tên], nhưng được cho biết không tìm thấy đặt phòng...",
-      "ko": "체크인 부탁드립니다. 예약한 [이름]인데, 예약을 찾을 수 없다고 해서요…",
+      "jp": "チェックインをお願いします。予約の田中ですが、予約が見つからないと言われまして…",
+      "zh": "我要办理入住，预约的是田中，但被告知找不到我的预约……",
+      "zh-TW": "我要辦理入住，預約的是田中，但被告知找不到我的預約……",
+      "en": "I'd like to check in. My name is Tanaka, but I was told my reservation couldn't be found...",
+      "vi": "Tôi muốn làm thủ tục nhận phòng. Tôi đặt phòng dưới tên Tanaka, nhưng được cho biết không tìm thấy đặt phòng...",
+      "ko": "체크인 부탁드립니다. 예약한 다나카인데, 예약을 찾을 수 없다고 해서요…",
       "scene": "予約トラブル",
       "id": "s19-010",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "チェックインをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "ですが、",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "つからないと",
+          "isKanji": false
+        },
+        {
+          "text": "言",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "われまして…",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "チェックインをおねがいします。よやくのたなかですが、よやくがみつからないといわれまして…"
     },
     {
       "jp": "もう一度お名前とご予約サイトをお聞かせいただけますか。",
-      "furigana": "もういちどおなまえとごよやくさいとをおきかせいただけますか。",
       "zh": "请再告诉我一下您的姓名和预约平台。",
       "zh-TW": "請再告訴我一下您的姓名和預約平台。",
       "en": "Could you tell me your name and the booking site you used again?",
@@ -146,24 +390,99 @@
       "scene": "予約トラブル",
       "id": "s19-011",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "もう",
+          "isKanji": false
+        },
+        {
+          "text": "一度",
+          "isKanji": true,
+          "reading": "いちど"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "とご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "サイトをお",
+          "isKanji": false
+        },
+        {
+          "text": "聞",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "かせいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もういちどおなまえとごよやくサイトをおきかせいただけますか。"
     },
     {
-      "jp": "[Booking.com] で予約しました。確認メールがあります。見せましょうか。",
-      "furigana": "[Booking.com]でよやくしました。かくにんめーるがあります。みせましょうか。",
-      "zh": "我在 [Booking.com] 上预约的，我有确认邮件，要给您看吗？",
-      "zh-TW": "我在 [Booking.com] 上預約的，我有確認郵件，要給您看嗎？",
-      "en": "I booked on [Booking.com]. I have a confirmation email. Would you like to see it?",
-      "vi": "Tôi đặt phòng trên [Booking.com]. Tôi có email xác nhận. Bạn có muốn xem không?",
-      "ko": "[Booking.com]에서 예약했어요. 확인 이메일이 있는데 보여드릴까요?",
+      "jp": "Booking.comで予約しました。確認メールがあります。見せましょうか。",
+      "zh": "我在Booking.com上预约的，我有确认邮件，要给您看吗？",
+      "zh-TW": "我在Booking.com上預約的，我有確認郵件，要給您看嗎？",
+      "en": "I booked on Booking.com. I have a confirmation email. Would you like to see it?",
+      "vi": "Tôi đặt phòng trên Booking.com. Tôi có email xác nhận. Bạn có muốn xem không?",
+      "ko": "Booking.com에서 예약했어요. 확인 이메일이 있는데 보여드릴까요?",
       "scene": "予約トラブル",
       "id": "s19-012",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "Booking.comで",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "メールがあります。",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せましょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Booking.comでよやくしました。かくにんメールがあります。みせましょうか。"
     },
     {
       "jp": "ありがとうございます。少々お待ちください。…お待たせいたしました。確認が取れました。大変失礼いたしました。",
-      "furigana": "ありがとうございます。しょうしょうおまちください。…おまたせいたしました。かくにんがとれました。たいへんしつれいいたしました。",
       "zh": "谢谢，请稍等……久等了，已确认您的预约。非常抱歉给您带来不便。",
       "zh-TW": "謝謝，請稍等……久等了，已確認您的預約。非常抱歉給您帶來不便。",
       "en": "Thank you. Please wait a moment... Sorry for the wait. We've confirmed your reservation. We sincerely apologize for the confusion.",
@@ -172,37 +491,201 @@
       "scene": "予約トラブル",
       "id": "s19-013",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。…お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせいたしました。",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "れました。",
+          "isKanji": false
+        },
+        {
+          "text": "大変",
+          "isKanji": true,
+          "reading": "たいへん"
+        },
+        {
+          "text": "失礼",
+          "isKanji": true,
+          "reading": "しつれい"
+        },
+        {
+          "text": "いたしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。しょうしょうおまちください。…おまたせいたしました。かくにんがとれました。たいへんしつれいいたしました。"
     },
     {
-      "jp": "名前の綴りが違うのかもしれません。[パスポート名] で調べてもらえますか。",
-      "furigana": "なまえのつづりがちがうのかもしれません。[ぱすぽーとめい]でしらべてもらえますか。",
-      "zh": "可能是姓名拼写有误，可以用[护照上的姓名]查一下吗？",
-      "zh-TW": "可能是姓名拼寫有誤，可以用[護照上的姓名]查一下嗎？",
-      "en": "The spelling might be wrong. Could you check under [passport name]?",
-      "vi": "Có thể tên bị sai chính tả. Bạn có thể kiểm tra dưới tên [tên hộ chiếu] không?",
-      "ko": "이름 철자가 다를 수도 있어요. [여권 이름]으로 찾아봐 주시겠어요?",
+      "jp": "名前の綴りが違うのかもしれません。パスポートの名前で調べてもらえますか。",
+      "zh": "可能是姓名拼写有误，可以用护照上的姓名查一下吗？",
+      "zh-TW": "可能是姓名拼寫有誤，可以用護照上的姓名查一下嗎？",
+      "en": "The spelling might be wrong. Could you check under the name on my passport?",
+      "vi": "Có thể tên bị sai chính tả. Bạn có thể kiểm tra dưới tên trên hộ chiếu của tôi không?",
+      "ko": "이름 철자가 다를 수도 있어요. 여권에 적힌 이름으로 찾아봐 주시겠어요?",
       "scene": "予約トラブル",
       "id": "s19-014",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "綴",
+          "isKanji": true,
+          "reading": "つづ"
+        },
+        {
+          "text": "りが",
+          "isKanji": false
+        },
+        {
+          "text": "違",
+          "isKanji": true,
+          "reading": "ちが"
+        },
+        {
+          "text": "うのかもしれません。パスポートの",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "調",
+          "isKanji": true,
+          "reading": "しら"
+        },
+        {
+          "text": "べてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なまえのつづりがちがうのかもしれません。パスポートのなまえでしらべてもらえますか。"
     },
     {
-      "jp": "電車の遅延で、到着が [X] 時頃になりそうです。チェックインは可能ですか。",
-      "furigana": "でんしゃのちえんで、とうちゃくが[X]じごろになりそうです。ちぇっくいんはかのうですか。",
-      "zh": "因电车延误，我大约 [X] 点才能到，那时候还能办理入住吗？",
-      "zh-TW": "因電車延誤，我大約 [X] 點才能到，那時候還能辦理入住嗎？",
-      "en": "Due to train delays, I'll arrive around [X] o'clock. Is it still possible to check in?",
-      "vi": "Do tàu bị trễ, tôi sẽ đến khoảng [X] giờ. Tôi vẫn có thể làm thủ tục nhận phòng không?",
-      "ko": "전철 지연으로 [X]시쯤 도착할 것 같습니다. 체크인이 가능한가요?",
+      "jp": "電車の遅延で、到着が6時頃になりそうです。チェックインは可能ですか。",
+      "zh": "因电车延误，我大约6点才能到，那时候还能办理入住吗？",
+      "zh-TW": "因電車延誤，我大約6點才能到，那時候還能辦理入住嗎？",
+      "en": "Due to train delays, I'll arrive around 6 o'clock. Is it still possible to check in?",
+      "vi": "Do tàu bị trễ, tôi sẽ đến khoảng 6 giờ. Tôi vẫn có thể làm thủ tục nhận phòng không?",
+      "ko": "전철 지연으로 6시쯤 도착할 것 같습니다. 체크인이 가능한가요?",
       "scene": "深夜到着",
       "id": "s19-015",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "遅延",
+          "isKanji": true,
+          "reading": "ちえん"
+        },
+        {
+          "text": "で、",
+          "isKanji": false
+        },
+        {
+          "text": "到着",
+          "isKanji": true,
+          "reading": "とうちゃく"
+        },
+        {
+          "text": "が6",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "頃",
+          "isKanji": true,
+          "reading": "ごろ"
+        },
+        {
+          "text": "になりそうです。チェックインは",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしゃのちえんで、とうちゃくが6じごろになりそうです。チェックインはかのうですか。"
     },
     {
       "jp": "かしこまりました。フロントは24時間対応しておりますので、お気をつけてお越しください。",
-      "furigana": "かしこまりました。ふろんとは24じかんたいおうしておりますので、おきをつけておこしください。",
       "zh": "明白了，前台24小时都有人值班，请路上注意安全。",
       "zh-TW": "明白了，前台24小時都有人值班，請路上注意安全。",
       "en": "Understood. Our front desk is open 24 hours, so please take care on your way.",
@@ -211,24 +694,100 @@
       "scene": "深夜到着",
       "id": "s19-016",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。フロントは24",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "対応",
+          "isKanji": true,
+          "reading": "たいおう"
+        },
+        {
+          "text": "しておりますので、お",
+          "isKanji": false
+        },
+        {
+          "text": "気",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "をつけてお",
+          "isKanji": false
+        },
+        {
+          "text": "越",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "しください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。フロントは24じかんたいおうしておりますので、おきをつけておこしください。"
     },
     {
-      "jp": "遅くなってすみません。予約の [名前] です。チェックインをお願いします。",
-      "furigana": "おそくなってすみません。よやくの[なまえ]です。ちぇっくいんをおねがいします。",
-      "zh": "抱歉来晚了，我是预约的[姓名]，请帮我办理入住。",
-      "zh-TW": "抱歉來晚了，我是預約的[姓名]，請幫我辦理入住。",
-      "en": "Sorry for the late arrival. I'm [name] with a reservation. I'd like to check in.",
-      "vi": "Xin lỗi vì đến muộn. Tôi là [tên] có đặt phòng. Tôi muốn làm thủ tục nhận phòng.",
-      "ko": "늦어서 죄송합니다. 예약한 [이름]입니다. 체크인 부탁드립니다.",
+      "jp": "遅くなってすみません。予約の田中です。チェックインをお願いします。",
+      "zh": "抱歉来晚了，我是预约的田中，请帮我办理入住。",
+      "zh-TW": "抱歉來晚了，我是預約的田中，請幫我辦理入住。",
+      "en": "Sorry for the late arrival. I'm Tanaka with a reservation. I'd like to check in.",
+      "vi": "Xin lỗi vì đến muộn. Tôi là Tanaka có đặt phòng. Tôi muốn làm thủ tục nhận phòng.",
+      "ko": "늦어서 죄송합니다. 예약한 다나카입니다. 체크인 부탁드립니다.",
       "scene": "深夜到着",
       "id": "s19-017",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "遅",
+          "isKanji": true,
+          "reading": "おそ"
+        },
+        {
+          "text": "くなってすみません。",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "です。チェックインをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おそくなってすみません。よやくのたなかです。チェックインをおねがいします。"
     },
     {
       "jp": "お疲れ様でした。パスポートをお願いします。",
-      "furigana": "おつかれさまでした。ぱすぽーとをおねがいします。",
       "zh": "您辛苦了，请出示护照。",
       "zh-TW": "您辛苦了，請出示護照。",
       "en": "You must be tired. May I see your passport?",
@@ -237,11 +796,44 @@
       "scene": "深夜到着",
       "id": "s19-018",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "疲",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "でした。パスポートをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おつかれさまでした。パスポートをおねがいします。"
     },
     {
       "jp": "もし空室があれば、今日泊まれますか。予約はしていないのですが。",
-      "furigana": "もしそらしつがあれば、きょうとまれますか。よやくはしていないのですが。",
       "zh": "请问今天如果有空房，可以入住吗？我没有预约。",
       "zh-TW": "請問今天如果有空房，可以入住嗎？我沒有預約。",
       "en": "If you have any available rooms, could I stay tonight? I don't have a reservation.",
@@ -250,24 +842,114 @@
       "scene": "予約なし",
       "id": "s19-019",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "もし",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "そら"
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "があれば、",
+          "isKanji": false
+        },
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まれますか。",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "はしていないのですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もしそらしつがあれば、きょうとまれますか。よやくはしていないのですが。"
     },
     {
-      "jp": "本日は [シングル] のお部屋が [X] 室ございます。1泊 [X] 円からになります。",
-      "furigana": "ほんじつは[しんぐる]のおへやが[X]しつございます。1はく[X]えんからになります。",
-      "zh": "今天还有 [X] 间[单人房]，每晚从 [X] 円起。",
-      "zh-TW": "今天還有 [X] 間[單人房]，每晚從 [X] 円起。",
-      "en": "We have [X] [single] rooms available tonight, starting from [X] yen per night.",
-      "vi": "Hôm nay chúng tôi còn [X] phòng [đơn], giá từ [X] yên mỗi đêm.",
-      "ko": "오늘 [싱글] 객실이 [X]실 있습니다. 1박 [X]엔부터입니다.",
+      "jp": "本日はシングルのお部屋が3室ございます。1泊8000円からになります。",
+      "zh": "今天还有3间单人房，每晚从8000円起。",
+      "zh-TW": "今天還有3間單人房，每晚從8000円起。",
+      "en": "We have 3 single rooms available tonight, starting from 8,000 yen per night.",
+      "vi": "Hôm nay chúng tôi còn 3 phòng đơn, giá từ 8.000 yên mỗi đêm.",
+      "ko": "오늘 싱글 객실이 3실 있습니다. 1박 8,000엔부터입니다.",
       "scene": "予約なし",
       "id": "s19-020",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "はシングルのお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "が3",
+          "isKanji": false
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "ございます。1",
+          "isKanji": false
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "はく"
+        },
+        {
+          "text": "8000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "からになります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ほんじつはシングルのおへやが3しつございます。1はく8000えんからになります。"
     },
     {
       "jp": "お願いします。朝食は付いていますか。",
-      "furigana": "おねがいします。ちょうしょくはついていますか。",
       "zh": "好的，请帮我安排。请问含早餐吗？",
       "zh-TW": "好的，請幫我安排。請問含早餐嗎？",
       "en": "I'll take it. Does it include breakfast?",
@@ -276,24 +958,104 @@
       "scene": "予約なし",
       "id": "s19-021",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        },
+        {
+          "text": "朝食",
+          "isKanji": true,
+          "reading": "ちょうしょく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "付",
+          "isKanji": true,
+          "reading": "つ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おねがいします。ちょうしょくはついていますか。"
     },
     {
-      "jp": "申し訳ございません、本日は満室でございます。近くですと [ホテル名] がございます。",
-      "furigana": "もうしわけございません、ほんじつはまんしつでございます。ちかくですと[ほてるめい]がございます。",
-      "zh": "非常抱歉，今天已经客满了。附近的话，有[酒店名]。",
-      "zh-TW": "非常抱歉，今天已經客滿了。附近的話，有[酒店名]。",
-      "en": "I'm very sorry, we are fully booked tonight. Nearby, there is [hotel name].",
-      "vi": "Xin lỗi, hôm nay chúng tôi đã hết phòng. Gần đây có [tên khách sạn].",
-      "ko": "죄송합니다, 오늘은 만실입니다. 근처에 [호텔명]이 있습니다.",
+      "jp": "申し訳ございません、本日は満室でございます。近くですとサンライズホテルがございます。",
+      "zh": "非常抱歉，今天已经客满了。附近的话，有サンライズ酒店。",
+      "zh-TW": "非常抱歉，今天已經客滿了。附近的話，有サンライズ飯店。",
+      "en": "I'm very sorry, we are fully booked tonight. Nearby, there is the Sunrise Hotel.",
+      "vi": "Xin lỗi, hôm nay chúng tôi đã hết phòng. Gần đây có khách sạn Sunrise.",
+      "ko": "죄송합니다, 오늘은 만실입니다. 근처에 선라이즈 호텔이 있습니다.",
       "scene": "予約なし",
       "id": "s19-022",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません、",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "満室",
+          "isKanji": true,
+          "reading": "まんしつ"
+        },
+        {
+          "text": "でございます。",
+          "isKanji": false
+        },
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くですとサンライズホテルがございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません、ほんじつはまんしつでございます。ちかくですとサンライズホテルがございます。"
     },
     {
       "jp": "チェックイン前ですが、荷物を預かっていただけますか。",
-      "furigana": "ちぇっくいんまえですが、にもつをあずかっていただけますか。",
       "zh": "我还没到入住时间，可以帮我寄存行李吗？",
       "zh-TW": "我還沒到入住時間，可以幫我寄存行李嗎？",
       "en": "I haven't checked in yet. Could you store my luggage?",
@@ -302,11 +1064,44 @@
       "scene": "荷物預かり",
       "id": "s19-023",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "チェックイン",
+          "isKanji": false
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "ですが、",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あず"
+        },
+        {
+          "text": "かっていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "チェックインまえですが、にもつをあずかっていただけますか。"
     },
     {
       "jp": "かしこまりました。こちらの引換証をお持ちください。",
-      "furigana": "かしこまりました。こちらのひきかえしょうをおもちください。",
       "zh": "好的，请保管好这张取件凭证。",
       "zh-TW": "好的，請保管好這張取件憑證。",
       "en": "Of course. Please keep this claim ticket.",
@@ -315,11 +1110,40 @@
       "scene": "荷物預かり",
       "id": "s19-024",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "引換",
+          "isKanji": true,
+          "reading": "ひきかえ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。こちらのひきかえしょうをおもちください。"
     },
     {
       "jp": "チェックアウト後ですが、夕方まで荷物を預かっていただけますか。",
-      "furigana": "ちぇっくあうとごですが、ゆうがたまでにもつをあずかっていただけますか。",
       "zh": "我已经退房了，可以帮我把行李保管到傍晚吗？",
       "zh-TW": "我已經退房了，可以幫我把行李保管到傍晚嗎？",
       "en": "I've already checked out. Could you store my luggage until the evening?",
@@ -328,11 +1152,53 @@
       "scene": "荷物預かり",
       "id": "s19-025",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "チェックアウト",
+          "isKanji": false
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "ですが、",
+          "isKanji": false
+        },
+        {
+          "text": "夕方",
+          "isKanji": true,
+          "reading": "ゆうがた"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あず"
+        },
+        {
+          "text": "かっていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "チェックアウトごですが、ゆうがたまでにもつをあずかっていただけますか。"
     },
     {
       "jp": "かしこまりました。こちらの引換証をお持ちください。何時頃お戻りですか。",
-      "furigana": "かしこまりました。こちらのひきかえしょうをおもちください。なんじごろおもどりですか。",
       "zh": "好的，请保管好这张取件凭证。您大约几点回来？",
       "zh-TW": "好的，請保管好這張取件憑證。您大約幾點回來？",
       "en": "Of course. Please keep this claim ticket. Around what time will you be back?",
@@ -341,11 +1207,68 @@
       "scene": "荷物預かり",
       "id": "s19-026",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "引換",
+          "isKanji": true,
+          "reading": "ひきかえ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "頃",
+          "isKanji": true,
+          "reading": "ごろ"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "戻",
+          "isKanji": true,
+          "reading": "もど"
+        },
+        {
+          "text": "りですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。こちらのひきかえしょうをおもちください。なんじごろおもどりですか。"
     },
     {
       "jp": "夕方6時頃に戻ります。",
-      "furigana": "ゆうがた6じごろにもどります。",
       "zh": "我大约傍晚6点回来。",
       "zh-TW": "我大約傍晚6點回來。",
       "en": "I'll be back around 6 in the evening.",
@@ -354,11 +1277,45 @@
       "scene": "荷物預かり",
       "id": "s19-027",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "夕方",
+          "isKanji": true,
+          "reading": "ゆうがた"
+        },
+        {
+          "text": "6",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "頃",
+          "isKanji": true,
+          "reading": "ごろ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "戻",
+          "isKanji": true,
+          "reading": "もど"
+        },
+        {
+          "text": "ります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゆうがた6じごろにもどります。"
     },
     {
       "jp": "荷物を引き取りに来ました。こちらが引換証です。",
-      "furigana": "にもつをひきとりにきました。こちらがひきかえしょうです。",
       "zh": "我来取行李，这是取件凭证。",
       "zh-TW": "我來取行李，這是取件憑證。",
       "en": "I'm here to pick up my luggage. Here is my claim ticket.",
@@ -367,11 +1324,63 @@
       "scene": "荷物預かり",
       "id": "s19-028",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "りに",
+          "isKanji": false
+        },
+        {
+          "text": "来",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "ました。こちらが",
+          "isKanji": false
+        },
+        {
+          "text": "引換",
+          "isKanji": true,
+          "reading": "ひきかえ"
+        },
+        {
+          "text": "証",
+          "isKanji": true,
+          "reading": "しょう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつをひきとりにきました。こちらがひきかえしょうです。"
     },
     {
       "jp": "少々お待ちください。…お待たせいたしました。こちらでございます。",
-      "furigana": "しょうしょうおまちください。…おまたせいたしました。こちらでございます。",
       "zh": "请稍等……让您久等了，这是您的行李。",
       "zh-TW": "請稍等……讓您久等了，這是您的行李。",
       "en": "Please wait a moment... Sorry to keep you waiting. Here it is.",
@@ -380,11 +1389,40 @@
       "scene": "荷物預かり",
       "id": "s19-029",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。…お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせいたしました。こちらでございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうしょうおまちください。…おまたせいたしました。こちらでございます。"
     },
     {
       "jp": "スリッパと歯ブラシを追加でいただけますか。",
-      "furigana": "すりっぱとはぶらしをついかでいただけますか。",
       "zh": "能再给我一双拖鞋和一支牙刷吗？",
       "zh-TW": "能再給我一雙拖鞋和一支牙刷嗎？",
       "en": "Could I have extra slippers and a toothbrush?",
@@ -393,11 +1431,35 @@
       "scene": "アメニティ",
       "id": "s19-030",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "スリッパと",
+          "isKanji": false
+        },
+        {
+          "text": "歯",
+          "isKanji": true,
+          "reading": "は"
+        },
+        {
+          "text": "ブラシを",
+          "isKanji": false
+        },
+        {
+          "text": "追加",
+          "isKanji": true,
+          "reading": "ついか"
+        },
+        {
+          "text": "でいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スリッパとはブラシをついかでいただけますか。"
     },
     {
       "jp": "アメニティは1階のアメニティバーからお持ちいただけます。お部屋までお持ちしましょうか。",
-      "furigana": "あめにてぃは1かいのあめにてぃばーからおもちいただけます。おへやまでおもちしましょうか。",
       "zh": "备品可以在1楼的备品区自取，需要送到您房间吗？",
       "zh-TW": "備品可以在1樓的備品區自取，需要送到您房間嗎？",
       "en": "Amenities are available at the amenity bar on the 1st floor. Shall I bring them to your room?",
@@ -406,11 +1468,53 @@
       "scene": "アメニティ",
       "id": "s19-031",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "アメニティは1",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "のアメニティバーからお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちいただけます。お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "までお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちしましょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "アメニティは1かいのアメニティバーからおもちいただけます。おへやまでおもちしましょうか。"
     },
     {
       "jp": "部屋まで持ってきてもらえると助かります。お願いします。",
-      "furigana": "へやまでもってきてもらえるとたすかります。おねがいします。",
       "zh": "如果能送到房间就太好了，麻烦您了。",
       "zh-TW": "如果能送到房間就太好了，麻煩您了。",
       "en": "It would be helpful if you could bring them to my room. Please.",
@@ -419,11 +1523,49 @@
       "scene": "アメニティ",
       "id": "s19-032",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ってきてもらえると",
+          "isKanji": false
+        },
+        {
+          "text": "助",
+          "isKanji": true,
+          "reading": "たす"
+        },
+        {
+          "text": "かります。お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "へやまでもってきてもらえるとたすかります。おねがいします。"
     },
     {
       "jp": "かしこまりました。少々お待ちください。",
-      "furigana": "かしこまりました。しょうしょうおまちください。",
       "zh": "好的，请稍等。",
       "zh-TW": "好的，請稍等。",
       "en": "Certainly. Please wait a moment.",
@@ -432,11 +1574,35 @@
       "scene": "アメニティ",
       "id": "s19-033",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。しょうしょうおまちください。"
     },
     {
       "jp": "部屋のエアコンが動かないのですが、見てもらえますか。",
-      "furigana": "へやのえあこんがうごかないのですが、みてもらえますか。",
       "zh": "房间的空调不工作了，可以帮我看看吗？",
       "zh-TW": "房間的空調不工作了，可以幫我看看嗎？",
       "en": "The air conditioner in my room isn't working. Could you take a look?",
@@ -445,11 +1611,40 @@
       "scene": "部屋トラブル",
       "id": "s19-034",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "のエアコンが",
+          "isKanji": false
+        },
+        {
+          "text": "動",
+          "isKanji": true,
+          "reading": "うご"
+        },
+        {
+          "text": "かないのですが、",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "てもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "へやのエアコンがうごかないのですが、みてもらえますか。"
     },
     {
       "jp": "ご不便をおかけして申し訳ございません。すぐスタッフをお部屋に派遣いたします。",
-      "furigana": "ごふべんをおかけしてもうしわけございません。すぐすたっふをおへやにはけんいたします。",
       "zh": "非常抱歉给您带来不便，我们马上派人到您房间处理。",
       "zh-TW": "非常抱歉給您帶來不便，我們馬上派人到您房間處理。",
       "en": "We're very sorry for the inconvenience. We'll send a staff member to your room right away.",
@@ -458,11 +1653,62 @@
       "scene": "部屋トラブル",
       "id": "s19-035",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "不便",
+          "isKanji": true,
+          "reading": "ふべん"
+        },
+        {
+          "text": "をおかけして",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。すぐスタッフをお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "派遣",
+          "isKanji": true,
+          "reading": "はけん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごふべんをおかけしてもうしわけございません。すぐスタッフをおへやにはけんいたします。"
     },
     {
       "jp": "Wi-Fiのパスワードを教えてもらえますか。つながらないのですが。",
-      "furigana": "Wi-Fiのぱすわーどをおしえてもらえますか。つながらないのですが。",
       "zh": "可以告诉我Wi-Fi密码吗？我连不上网。",
       "zh-TW": "可以告訴我Wi-Fi密碼嗎？我連不上網。",
       "en": "Could you tell me the Wi-Fi password? I can't connect.",
@@ -471,11 +1717,26 @@
       "scene": "部屋トラブル",
       "id": "s19-036",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "Wi-Fiのパスワードを",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてもらえますか。つながらないのですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Wi-Fiのパスワードをおしえてもらえますか。つながらないのですが。"
     },
     {
       "jp": "Wi-Fiのパスワードはルームカードの封筒に記載されております。それでも繋がらない場合はご連絡ください。",
-      "furigana": "Wi-Fiのぱすわーどはるーむかーどのふうとうにきさいされております。それでもつながらないばあいはごれんらくください。",
       "zh": "Wi-Fi密码写在房卡信封上，如果还是连不上请联系我们。",
       "zh-TW": "Wi-Fi密碼寫在房卡信封上，如果還是連不上請聯繫我們。",
       "en": "The Wi-Fi password is written on the room card envelope. If you still can't connect, please let us know.",
@@ -484,11 +1745,62 @@
       "scene": "部屋トラブル",
       "id": "s19-037",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "Wi-Fiのパスワードはルームカードの",
+          "isKanji": false
+        },
+        {
+          "text": "封筒",
+          "isKanji": true,
+          "reading": "ふうとう"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "記載",
+          "isKanji": true,
+          "reading": "きさい"
+        },
+        {
+          "text": "されております。それでも",
+          "isKanji": false
+        },
+        {
+          "text": "繋",
+          "isKanji": true,
+          "reading": "つな"
+        },
+        {
+          "text": "がらない",
+          "isKanji": false
+        },
+        {
+          "text": "場合",
+          "isKanji": true,
+          "reading": "ばあい"
+        },
+        {
+          "text": "はご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Wi-Fiのパスワードはルームカードのふうとうにきさいされております。それでもつながらないばあいはごれんらくください。"
     },
     {
       "jp": "電子レンジはどこにありますか。",
-      "furigana": "でんしれんじはどこにありますか。",
       "zh": "微波炉在哪里？",
       "zh-TW": "微波爐在哪裡？",
       "en": "Where is the microwave?",
@@ -497,24 +1809,73 @@
       "scene": "館内設備",
       "id": "s19-038",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "電子",
+          "isKanji": true,
+          "reading": "でんし"
+        },
+        {
+          "text": "レンジはどこにありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしレンジはどこにありますか。"
     },
     {
-      "jp": "電子レンジは [3階] の自販機コーナーの横にございます。",
-      "furigana": "でんしれんじは[3かい]のじはんきこーなーのよこにございます。",
-      "zh": "微波炉在[3楼]自动售货机旁边。",
-      "zh-TW": "微波爐在[3樓]自動販賣機旁邊。",
-      "en": "The microwave is next to the vending machine area on the [3rd] floor.",
-      "vi": "Lò vi sóng ở cạnh khu vực máy bán hàng tự động trên tầng [3].",
-      "ko": "전자레인지는 [3층] 자판기 코너 옆에 있습니다.",
+      "jp": "電子レンジは3階の自販機コーナーの横にございます。",
+      "zh": "微波炉在3楼自动售货机旁边。",
+      "zh-TW": "微波爐在3樓自動販賣機旁邊。",
+      "en": "The microwave is next to the vending machine area on the 3rd floor.",
+      "vi": "Lò vi sóng ở cạnh khu vực máy bán hàng tự động trên tầng 3.",
+      "ko": "전자레인지는 3층 자판기 코너 옆에 있습니다.",
       "scene": "館内設備",
       "id": "s19-039",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "電子",
+          "isKanji": true,
+          "reading": "でんし"
+        },
+        {
+          "text": "レンジは3",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "自販機",
+          "isKanji": true,
+          "reading": "じはんき"
+        },
+        {
+          "text": "コーナーの",
+          "isKanji": false
+        },
+        {
+          "text": "横",
+          "isKanji": true,
+          "reading": "よこ"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしレンジは3かいのじはんきコーナーのよこにございます。"
     },
     {
       "jp": "製氷機はどこですか。",
-      "furigana": "せいひょうきはどこですか。",
       "zh": "制冰机在哪里？",
       "zh-TW": "製冰機在哪裡？",
       "en": "Where is the ice machine?",
@@ -523,24 +1884,101 @@
       "scene": "館内設備",
       "id": "s19-040",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "製氷",
+          "isKanji": true,
+          "reading": "せいひょう"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せいひょうきはどこですか。"
     },
     {
-      "jp": "製氷機も同じ [3階] にございます。紙コップは機械の横にあります。",
-      "furigana": "せいひょうきもおなじ[3かい]にございます。かみこっぷはきかいのよこにあります。",
-      "zh": "制冰机也在同一个[3楼]，纸杯在机器旁边。",
-      "zh-TW": "製冰機也在同一個[3樓]，紙杯在機器旁邊。",
-      "en": "The ice machine is also on the [3rd] floor. Paper cups are next to the machine.",
-      "vi": "Máy làm đá cũng ở tầng [3]. Cốc giấy ở bên cạnh máy.",
-      "ko": "제빙기도 같은 [3층]에 있습니다. 종이컵은 기계 옆에 있어요.",
+      "jp": "製氷機も同じ3階にございます。紙コップは機械の横にあります。",
+      "zh": "制冰机也在同一个3楼，纸杯在机器旁边。",
+      "zh-TW": "製冰機也在同一個3樓，紙杯在機器旁邊。",
+      "en": "The ice machine is also on the 3rd floor. Paper cups are next to the machine.",
+      "vi": "Máy làm đá cũng ở tầng 3. Cốc giấy ở bên cạnh máy.",
+      "ko": "제빙기도 같은 3층에 있습니다. 종이컵은 기계 옆에 있어요.",
       "scene": "館内設備",
       "id": "s19-041",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "製氷",
+          "isKanji": true,
+          "reading": "せいひょう"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "同",
+          "isKanji": true,
+          "reading": "おな"
+        },
+        {
+          "text": "じ3",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        },
+        {
+          "text": "紙",
+          "isKanji": true,
+          "reading": "かみ"
+        },
+        {
+          "text": "コップは",
+          "isKanji": false
+        },
+        {
+          "text": "機械",
+          "isKanji": true,
+          "reading": "きかい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "横",
+          "isKanji": true,
+          "reading": "よこ"
+        },
+        {
+          "text": "にあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せいひょうきもおなじ3かいにございます。かみコップはきかいのよこにあります。"
     },
     {
       "jp": "コインランドリーはありますか。",
-      "furigana": "こいんらんどりーはありますか。",
       "zh": "有投币洗衣机吗？",
       "zh-TW": "有投幣洗衣機嗎？",
       "en": "Is there a coin laundry?",
@@ -549,24 +1987,100 @@
       "scene": "館内設備",
       "id": "s19-042",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "コインランドリーはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "コインランドリーはありますか。"
     },
     {
-      "jp": "はい、[地下1階] にコインランドリーがございます。洗剤は自動販売機でお買い求めいただけます。",
-      "furigana": "はい、[ちか1かい]にこいんらんどりーがございます。せんざいはじどうはんばいきでおかいもとめいただけます。",
-      "zh": "有的，在[地下1楼]有投币洗衣机，洗衣液可以在自动售货机购买。",
-      "zh-TW": "有的，在[地下1樓]有投幣洗衣機，洗衣液可以在自動販賣機購買。",
-      "en": "Yes, there is a coin laundry on [Basement 1]. Detergent is available from the vending machine.",
-      "vi": "Có, tầng [hầm 1] có máy giặt tự phục vụ. Bột giặt có thể mua tại máy bán hàng tự động.",
-      "ko": "네, [지하 1층]에 코인 세탁기가 있습니다. 세제는 자판기에서 구매하실 수 있습니다.",
+      "jp": "はい、地下1階にコインランドリーがございます。洗剤は自動販売機でお買い求めいただけます。",
+      "zh": "有的，在地下1楼有投币洗衣机，洗衣液可以在自动售货机购买。",
+      "zh-TW": "有的，在地下1樓有投幣洗衣機，洗衣液可以在自動販賣機購買。",
+      "en": "Yes, there is a coin laundry on Basement 1. Detergent is available from the vending machine.",
+      "vi": "Có, tầng hầm 1 có máy giặt tự phục vụ. Bột giặt có thể mua tại máy bán hàng tự động.",
+      "ko": "네, 지하 1층에 코인 세탁기가 있습니다. 세제는 자판기에서 구매하실 수 있습니다.",
       "scene": "館内設備",
       "id": "s19-043",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "地下",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "1",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "にコインランドリーがございます。",
+          "isKanji": false
+        },
+        {
+          "text": "洗剤",
+          "isKanji": true,
+          "reading": "せんざい"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "自動",
+          "isKanji": true,
+          "reading": "じどう"
+        },
+        {
+          "text": "販売",
+          "isKanji": true,
+          "reading": "はんばい"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "求",
+          "isKanji": true,
+          "reading": "もと"
+        },
+        {
+          "text": "めいただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、ちか1かいにコインランドリーがございます。せんざいはじどうはんばいきでおかいもとめいただけます。"
     },
     {
       "jp": "今日は部屋の掃除はしないでください。タオルだけドアの前に置いてください。",
-      "furigana": "きょうはへやのそうじはしないでください。たおるだけどあのまえにおいてください。",
       "zh": "今天请不要打扫房间，只需把毛巾放在门口就好。",
       "zh-TW": "今天請不要打掃房間，只需把毛巾放在門口就好。",
       "en": "Please don't clean the room today. Just leave the towels in front of the door.",
@@ -575,11 +2089,58 @@
       "scene": "清掃・タオル",
       "id": "s19-044",
       "subcategory": "sub10",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "掃除",
+          "isKanji": true,
+          "reading": "そうじ"
+        },
+        {
+          "text": "はしないでください。タオルだけドアの",
+          "isKanji": false
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "いてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きょうはへやのそうじはしないでください。タオルだけドアのまえにおいてください。"
     },
     {
       "jp": "かしこまりました。清掃はなしで、タオルのみドアの前に置きますね。",
-      "furigana": "かしこまりました。せいそうはなしで、たおるのみどあのまえにおきますね。",
       "zh": "好的，不打扫，只把毛巾放在门口。",
       "zh-TW": "好的，不打掃，只把毛巾放在門口。",
       "en": "Understood. No cleaning, and we'll leave fresh towels in front of the door.",
@@ -588,11 +2149,44 @@
       "scene": "清掃・タオル",
       "id": "s19-045",
       "subcategory": "sub10",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "清掃",
+          "isKanji": true,
+          "reading": "せいそう"
+        },
+        {
+          "text": "はなしで、タオルのみドアの",
+          "isKanji": false
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "きますね。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。せいそうはなしで、タオルのみドアのまえにおきますね。"
     },
     {
       "jp": "新しいバスタオルを2枚もらえますか。",
-      "furigana": "あたらしいばすたおるを2まいもらえますか。",
       "zh": "可以再给我两条浴巾吗？",
       "zh-TW": "可以再給我兩條浴巾嗎？",
       "en": "Could I have two fresh bath towels?",
@@ -601,11 +2195,31 @@
       "scene": "清掃・タオル",
       "id": "s19-046",
       "subcategory": "sub10",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "新",
+          "isKanji": true,
+          "reading": "あたら"
+        },
+        {
+          "text": "しいバスタオルを2",
+          "isKanji": false
+        },
+        {
+          "text": "枚",
+          "isKanji": true,
+          "reading": "まい"
+        },
+        {
+          "text": "もらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あたらしいバスタオルを2まいもらえますか。"
     },
     {
       "jp": "はい、わかりました。新しいタオルをお持ちします。",
-      "furigana": "はい、わかりました。あたらしいたおるをおもちします。",
       "zh": "好的，我们会给您送新毛巾。",
       "zh-TW": "好的，我們會給您送新毛巾。",
       "en": "Of course. We'll bring fresh towels for you.",
@@ -614,11 +2228,35 @@
       "scene": "清掃・タオル",
       "id": "s19-047",
       "subcategory": "sub10",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、わかりました。",
+          "isKanji": false
+        },
+        {
+          "text": "新",
+          "isKanji": true,
+          "reading": "あたら"
+        },
+        {
+          "text": "しいタオルをお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、わかりました。あたらしいタオルをおもちします。"
     },
     {
       "jp": "チェックアウトをお願いします。ルームキーです。",
-      "furigana": "ちぇっくあうとをおねがいします。るーむきーです。",
       "zh": "我要退房，这是房卡。",
       "zh-TW": "我要退房，這是房卡。",
       "en": "I'd like to check out. Here is my room key.",
@@ -627,11 +2265,26 @@
       "scene": "チェックアウト",
       "id": "s19-048",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "チェックアウトをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。ルームキーです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "チェックアウトをおねがいします。ルームキーです。"
     },
     {
       "jp": "ありがとうございました。お手続きは以上です。またのご利用をお待ちしております。",
-      "furigana": "ありがとうございました。おてつづきはいじょうです。またのごりようをおまちしております。",
       "zh": "谢谢您，手续已完成，期待您下次光临。",
       "zh-TW": "謝謝您，手續已完成，期待您下次光臨。",
       "en": "Thank you. Your check-out is complete. We hope to see you again.",
@@ -640,11 +2293,53 @@
       "scene": "チェックアウト",
       "id": "s19-049",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ありがとうございました。お",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きは",
+          "isKanji": false
+        },
+        {
+          "text": "以上",
+          "isKanji": true,
+          "reading": "いじょう"
+        },
+        {
+          "text": "です。またのご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちしております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございました。おてつづきはいじょうです。またのごりようをおまちしております。"
     },
     {
       "jp": "冷蔵庫のお飲み物を利用しました。精算をお願いします。",
-      "furigana": "れいぞうこのおのみものをりようしました。せいさんをおねがいします。",
       "zh": "我喝了冰箱里的饮料，请帮我结算。",
       "zh-TW": "我喝了冰箱裡的飲料，請幫我結算。",
       "en": "I used some drinks from the minibar. Could you add them to my bill?",
@@ -653,24 +2348,131 @@
       "scene": "追加精算",
       "id": "s19-050",
       "subcategory": "sub20",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "冷蔵庫",
+          "isKanji": true,
+          "reading": "れいぞうこ"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        },
+        {
+          "text": "精算",
+          "isKanji": true,
+          "reading": "せいさん"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "れいぞうこのおのみものをりようしました。せいさんをおねがいします。"
     },
     {
-      "jp": "かしこまりました。ご利用の品目を確認いたします。[X] 円のご請求となります。",
-      "furigana": "かしこまりました。ごりようのひんもくをかくにんいたします。[X]えんのごせいきゅうとなります。",
-      "zh": "好的，我来确认您使用的项目，合计 [X] 円。",
-      "zh-TW": "好的，我來確認您使用的項目，合計 [X] 円。",
-      "en": "Certainly. Let me confirm the items used. The total charge is [X] yen.",
-      "vi": "Vâng, để tôi xác nhận các mục bạn đã dùng. Tổng cộng là [X] yên.",
-      "ko": "알겠습니다. 이용 항목을 확인하겠습니다. [X]엔 청구됩니다.",
+      "jp": "かしこまりました。ご利用の品目を確認いたします。3200円のご請求となります。",
+      "zh": "好的，我来确认您使用的项目，合计3200円。",
+      "zh-TW": "好的，我來確認您使用的項目，合計3200円。",
+      "en": "Certainly. Let me confirm the items used. The total charge is 3,200 yen.",
+      "vi": "Vâng, để tôi xác nhận các mục bạn đã dùng. Tổng cộng là 3.200 yên.",
+      "ko": "알겠습니다. 이용 항목을 확인하겠습니다. 3,200엔 청구됩니다.",
       "scene": "追加精算",
       "id": "s19-051",
       "subcategory": "sub20",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。ご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "品目",
+          "isKanji": true,
+          "reading": "ひんもく"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。3200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "請求",
+          "isKanji": true,
+          "reading": "せいきゅう"
+        },
+        {
+          "text": "となります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。ごりようのひんもくをかくにんいたします。3200えんのごせいきゅうとなります。"
     },
     {
       "jp": "宿泊税はいくらですか。",
-      "furigana": "しゅくはくぜいはいくらですか。",
       "zh": "住宿税是多少？",
       "zh-TW": "住宿稅是多少？",
       "en": "How much is the accommodation tax?",
@@ -679,37 +2481,190 @@
       "scene": "追加精算",
       "id": "s19-052",
       "subcategory": "sub20",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "宿泊",
+          "isKanji": true,
+          "reading": "しゅくはく"
+        },
+        {
+          "text": "税",
+          "isKanji": true,
+          "reading": "ぜい"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅくはくぜいはいくらですか。"
     },
     {
-      "jp": "宿泊税はお一人様1泊につき [X] 円です。宿泊料金とは別途現金でのお支払いとなります。",
-      "furigana": "しゅくはくぜいはおいちにんさま1はくにつき[X]えんです。しゅくはくりょうきんとはべっとげんきんでのおしはらいとなります。",
-      "zh": "住宿税为每人每晚 [X] 円，需与住宿费分开用现金支付。",
-      "zh-TW": "住宿稅為每人每晚 [X] 円，需與住宿費分開用現金支付。",
-      "en": "The accommodation tax is [X] yen per person per night, and must be paid separately in cash.",
-      "vi": "Thuế lưu trú là [X] yên mỗi người mỗi đêm, phải thanh toán bằng tiền mặt riêng biệt.",
-      "ko": "숙박세는 1인 1박 [X]엔입니다. 숙박비와 별도로 현금으로 지불하셔야 합니다.",
+      "jp": "宿泊税はお一人様1泊につき200円です。宿泊料金とは別途現金でのお支払いとなります。",
+      "zh": "住宿税为每人每晚200円，需与住宿费分开用现金支付。",
+      "zh-TW": "住宿稅為每人每晚200円，需與住宿費分開用現金支付。",
+      "en": "The accommodation tax is 200 yen per person per night, and must be paid separately in cash.",
+      "vi": "Thuế lưu trú là 200 yên mỗi người mỗi đêm, phải thanh toán bằng tiền mặt riêng biệt.",
+      "ko": "숙박세는 1인 1박 200엔입니다. 숙박비와 별도로 현금으로 지불하셔야 합니다.",
       "scene": "追加精算",
       "id": "s19-053",
       "subcategory": "sub20",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "宿泊",
+          "isKanji": true,
+          "reading": "しゅくはく"
+        },
+        {
+          "text": "税",
+          "isKanji": true,
+          "reading": "ぜい"
+        },
+        {
+          "text": "はお",
+          "isKanji": false
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "1",
+          "isKanji": false
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "はく"
+        },
+        {
+          "text": "につき200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "宿泊",
+          "isKanji": true,
+          "reading": "しゅくはく"
+        },
+        {
+          "text": "料金",
+          "isKanji": true,
+          "reading": "りょうきん"
+        },
+        {
+          "text": "とは",
+          "isKanji": false
+        },
+        {
+          "text": "別途",
+          "isKanji": true,
+          "reading": "べっと"
+        },
+        {
+          "text": "現金",
+          "isKanji": true,
+          "reading": "げんきん"
+        },
+        {
+          "text": "でのお",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いとなります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅくはくぜいはおいちにんさま1はくにつき200えんです。しゅくはくりょうきんとはべっとげんきんでのおしはらいとなります。"
     },
     {
-      "jp": "さきほどチェックアウトした [名前] ですが、部屋に充電器を忘れてしまいました。",
-      "furigana": "さきほどちぇっくあうとした[なまえ]ですが、へやにじゅうでんきをわすれてしまいました。",
-      "zh": "我刚才退房的[姓名]，忘记把充电器留在房间里了。",
-      "zh-TW": "我剛才退房的[姓名]，忘記把充電器留在房間裡了。",
-      "en": "I just checked out. My name is [name]. I left my charger in the room.",
-      "vi": "Tôi vừa trả phòng. Tên tôi là [tên]. Tôi đã quên bộ sạc trong phòng.",
-      "ko": "방금 체크아웃한 [이름]인데요, 방에 충전기를 두고 나왔어요.",
+      "jp": "さきほどチェックアウトした田中ですが、部屋に充電器を忘れてしまいました。",
+      "zh": "我刚才退房的田中，忘记把充电器留在房间里了。",
+      "zh-TW": "我剛才退房的田中，忘記把充電器留在房間裡了。",
+      "en": "I just checked out. My name is Tanaka. I left my charger in the room.",
+      "vi": "Tôi vừa trả phòng. Tên tôi là Tanaka. Tôi đã quên bộ sạc trong phòng.",
+      "ko": "방금 체크아웃한 다나카인데요, 방에 충전기를 두고 나왔어요.",
       "scene": "忘れ物",
       "id": "s19-054",
       "subcategory": "sub22",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "さきほどチェックアウトした",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "ですが、",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "器",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さきほどチェックアウトしたたなかですが、へやにじゅうでんきをわすれてしまいました。"
     },
     {
       "jp": "お部屋の番号と忘れ物の特徴をお聞かせいただけますか。",
-      "furigana": "おへやのばんごうとわすれもののとくちょうをおきかせいただけますか。",
       "zh": "请告诉我您的房间号和遗忘物品的特征。",
       "zh-TW": "請告訴我您的房間號和遺忘物品的特徵。",
       "en": "Could you tell me your room number and describe the item you left behind?",
@@ -718,24 +2673,122 @@
       "scene": "忘れ物",
       "id": "s19-055",
       "subcategory": "sub22",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "特徴",
+          "isKanji": true,
+          "reading": "とくちょう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "聞",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "かせいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おへやのばんごうとわすれもののとくちょうをおきかせいただけますか。"
     },
     {
-      "jp": "[X号室] です。白いスマホの充電器です。",
-      "furigana": "[Xごうしつ]です。しろいスマホのじゅうでんきです。",
-      "zh": "[X] 号房，是一个白色的手机充电器。",
-      "zh-TW": "[X] 號房，是一個白色的手機充電器。",
-      "en": "Room [X]. It's a white phone charger.",
-      "vi": "Phòng [X]. Đó là bộ sạc điện thoại màu trắng.",
-      "ko": "[X]호실입니다. 흰색 스마트폰 충전기입니다.",
+      "jp": "305号室です。白いスマホの充電器です。",
+      "zh": "305号房，是一个白色的手机充电器。",
+      "zh-TW": "305號房，是一個白色的手機充電器。",
+      "en": "Room 305. It's a white phone charger.",
+      "vi": "Phòng 305. Đó là bộ sạc điện thoại màu trắng.",
+      "ko": "305호실입니다. 흰색 스마트폰 충전기입니다.",
       "scene": "忘れ物",
       "id": "s19-056",
       "subcategory": "sub22",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "305",
+          "isKanji": false
+        },
+        {
+          "text": "号室",
+          "isKanji": true,
+          "reading": "ごうしつ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "白",
+          "isKanji": true,
+          "reading": "しろ"
+        },
+        {
+          "text": "いスマホの",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "器",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "305ごうしつです。しろいスマホのじゅうでんきです。"
     },
     {
       "jp": "確認いたします。…お部屋にございました。郵送をご希望ですか。",
-      "furigana": "かくにんいたします。…おへやにございました。ゆうそうをごきぼうですか。",
       "zh": "我来确认……在房间找到了，您需要邮寄给您吗？",
       "zh-TW": "我來確認……在房間找到了，您需要郵寄給您嗎？",
       "en": "Let me check... We found it in the room. Would you like us to mail it to you?",
@@ -744,11 +2797,49 @@
       "scene": "忘れ物",
       "id": "s19-057",
       "subcategory": "sub22",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。…お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "にございました。",
+          "isKanji": false
+        },
+        {
+          "text": "郵送",
+          "isKanji": true,
+          "reading": "ゆうそう"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "希望",
+          "isKanji": true,
+          "reading": "きぼう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたします。…おへやにございました。ゆうそうをごきぼうですか。"
     },
     {
       "jp": "郵送をお願いします。送料はいくらですか。",
-      "furigana": "ゆうそうをおねがいします。そうりょうはいくらですか。",
       "zh": "请帮我邮寄，邮费是多少？",
       "zh-TW": "請幫我郵寄，郵費是多少？",
       "en": "Please mail it to me. How much is the shipping fee?",
@@ -757,11 +2848,40 @@
       "scene": "忘れ物",
       "id": "s19-058",
       "subcategory": "sub22",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "郵送",
+          "isKanji": true,
+          "reading": "ゆうそう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        },
+        {
+          "text": "送料",
+          "isKanji": true,
+          "reading": "そうりょう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゆうそうをおねがいします。そうりょうはいくらですか。"
     },
     {
       "jp": "部屋を変えてもらえますか。隣の部屋の音がうるさくて眠れないのです。",
-      "furigana": "へやをかえてもらえますか。となりのへやのおとがうるさくてねむれないのです。",
       "zh": "可以帮我换个房间吗？隔壁房间太吵了，我睡不着。",
       "zh-TW": "可以幫我換個房間嗎？隔壁房間太吵了，我睡不著。",
       "en": "Could I change rooms? The noise from the next room is too loud to sleep.",
@@ -770,11 +2890,67 @@
       "scene": "部屋変更",
       "id": "s19-059",
       "subcategory": "sub23",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "変",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えてもらえますか。",
+          "isKanji": false
+        },
+        {
+          "text": "隣",
+          "isKanji": true,
+          "reading": "となり"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "音",
+          "isKanji": true,
+          "reading": "おと"
+        },
+        {
+          "text": "がうるさくて",
+          "isKanji": false
+        },
+        {
+          "text": "眠",
+          "isKanji": true,
+          "reading": "ねむ"
+        },
+        {
+          "text": "れないのです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "へやをかえてもらえますか。となりのへやのおとがうるさくてねむれないのです。"
     },
     {
       "jp": "大変申し訳ございません。空き室を確認いたします。少々お待ちください。",
-      "furigana": "たいへんもうしわけございません。あきしつをかくにんいたします。しょうしょうおまちください。",
       "zh": "非常抱歉，我来确认一下空房情况，请稍等。",
       "zh-TW": "非常抱歉，我來確認一下空房情況，請稍等。",
       "en": "We're very sorry. Let me check for available rooms. Please wait a moment.",
@@ -783,11 +2959,81 @@
       "scene": "部屋変更",
       "id": "s19-060",
       "subcategory": "sub23",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "大変",
+          "isKanji": true,
+          "reading": "たいへん"
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たいへんもうしわけございません。あきしつをかくにんいたします。しょうしょうおまちください。"
     },
     {
       "jp": "高い階の部屋か、景色のいい部屋はありますか。",
-      "furigana": "たかいかいのへやか、けしきのいいへやはありますか。",
       "zh": "有高层的房间或者景观好的房间吗？",
       "zh-TW": "有高層的房間或者景觀好的房間嗎？",
       "en": "Do you have a room on a higher floor or with a better view?",
@@ -796,11 +3042,58 @@
       "scene": "部屋変更",
       "id": "s19-061",
       "subcategory": "sub23",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "高",
+          "isKanji": true,
+          "reading": "たか"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "か、",
+          "isKanji": false
+        },
+        {
+          "text": "景色",
+          "isKanji": true,
+          "reading": "けしき"
+        },
+        {
+          "text": "のいい",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たかいかいのへやか、けしきのいいへやはありますか。"
     },
     {
       "jp": "近くにおすすめのレストランはありますか。",
-      "furigana": "ちかくにおすすめのれすとらんはありますか。",
       "zh": "附近有推荐的餐厅吗？",
       "zh-TW": "附近有推薦的餐廳嗎？",
       "en": "Are there any recommended restaurants nearby?",
@@ -809,24 +3102,73 @@
       "scene": "周辺案内",
       "id": "s19-062",
       "subcategory": "sub24",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くにおすすめのレストランはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちかくにおすすめのレストランはありますか。"
     },
     {
-      "jp": "タクシーを呼んでもらえますか。[駅] まで行きたいのですが。",
-      "furigana": "たくしーをよんでもらえますか。[えき]までいきたいのですが。",
-      "zh": "可以帮我叫出租车吗？我想去[车站]。",
-      "zh-TW": "可以幫我叫計程車嗎？我想去[車站]。",
-      "en": "Could you call a taxi for me? I'd like to go to [station].",
-      "vi": "Bạn có thể gọi taxi cho tôi không? Tôi muốn đến [ga].",
-      "ko": "택시를 불러주시겠어요? [역]까지 가고 싶은데요.",
+      "jp": "タクシーを呼んでもらえますか。東京駅まで行きたいのですが。",
+      "zh": "可以帮我叫出租车吗？我想去东京车站。",
+      "zh-TW": "可以幫我叫計程車嗎？我想去東京車站。",
+      "en": "Could you call a taxi for me? I'd like to go to Tokyo Station.",
+      "vi": "Bạn có thể gọi taxi cho tôi không? Tôi muốn đến ga Tokyo.",
+      "ko": "택시를 불러주시겠어요? 도쿄역까지 가고 싶은데요.",
       "scene": "周辺案内",
       "id": "s19-063",
       "subcategory": "sub24",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "タクシーを",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "んでもらえますか。",
+          "isKanji": false
+        },
+        {
+          "text": "東京",
+          "isKanji": true,
+          "reading": "とうきょう"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きたいのですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "タクシーをよんでもらえますか。とうきょうえきまでいきたいのですが。"
     },
     {
       "jp": "かしこまりました。ただいまお呼びいたします。玄関でお待ちください。",
-      "furigana": "かしこまりました。ただいまおよびいたします。げんかんでおまちください。",
       "zh": "好的，我马上帮您叫，请在门口等候。",
       "zh-TW": "好的，我馬上幫您叫，請在門口等候。",
       "en": "Certainly. I'll call one right away. Please wait at the entrance.",
@@ -835,11 +3177,44 @@
       "scene": "周辺案内",
       "id": "s19-064",
       "subcategory": "sub24",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。ただいまお",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "びいたします。",
+          "isKanji": false
+        },
+        {
+          "text": "玄関",
+          "isKanji": true,
+          "reading": "げんかん"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。ただいまおよびいたします。げんかんでおまちください。"
     },
     {
       "jp": "もう1泊延長したいのですが、可能ですか。",
-      "furigana": "もう1はくえんちょうしたいのですが、かのうですか。",
       "zh": "我想再多住一晚，可以吗？",
       "zh-TW": "我想再多住一晚，可以嗎？",
       "en": "I'd like to extend my stay by one more night. Is that possible?",
@@ -848,24 +3223,123 @@
       "scene": "延長・早期退出",
       "id": "s19-065",
       "subcategory": "sub25",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "もう1",
+          "isKanji": false
+        },
+        {
+          "text": "泊",
+          "isKanji": true,
+          "reading": "はく"
+        },
+        {
+          "text": "延長",
+          "isKanji": true,
+          "reading": "えんちょう"
+        },
+        {
+          "text": "したいのですが、",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もう1はくえんちょうしたいのですが、かのうですか。"
     },
     {
-      "jp": "確認いたします。…本日は [X] 号室のみ空いております。お部屋の移動はご容赦いただけますか。",
-      "furigana": "かくにんいたします。…ほんじつは[X]ごうしつのみあいております。おへやのいどうはごようしゃいただけますか。",
-      "zh": "我来确认……今天只有[X]号房间有空，请问您介意换房间吗？",
-      "zh-TW": "我來確認……今天只有[X]號房間有空，請問您介意換房間嗎？",
-      "en": "Let me check... Only room [X] is available tonight. Would you mind moving rooms?",
-      "vi": "Để tôi kiểm tra... Hôm nay chỉ còn phòng [X]. Bạn có phiền khi chuyển phòng không?",
-      "ko": "확인해 보겠습니다... 오늘은 [X]호실만 비어 있습니다. 방을 옮기셔도 괜찮으시겠어요?",
+      "jp": "確認いたします。…本日は412号室のみ空いております。お部屋の移動はご容赦いただけますか。",
+      "zh": "我来确认……今天只有412号房间有空，请问您介意换房间吗？",
+      "zh-TW": "我來確認……今天只有412號房間有空，請問您介意換房間嗎？",
+      "en": "Let me check... Only room 412 is available tonight. Would you mind moving rooms?",
+      "vi": "Để tôi kiểm tra... Hôm nay chỉ còn phòng 412. Bạn có phiền khi chuyển phòng không?",
+      "ko": "확인해 보겠습니다... 오늘은 412호실만 비어 있습니다. 방을 옮기셔도 괜찮으시겠어요?",
       "scene": "延長・早期退出",
       "id": "s19-066",
       "subcategory": "sub25",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。…",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "は412",
+          "isKanji": false
+        },
+        {
+          "text": "号",
+          "isKanji": true,
+          "reading": "ごう"
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "のみ",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いております。お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "移動",
+          "isKanji": true,
+          "reading": "いどう"
+        },
+        {
+          "text": "はご",
+          "isKanji": false
+        },
+        {
+          "text": "容赦",
+          "isKanji": true,
+          "reading": "ようしゃ"
+        },
+        {
+          "text": "いただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたします。…ほんじつは412ごうしつのみあいております。おへやのいどうはごようしゃいただけますか。"
     },
     {
       "jp": "予定より早くチェックアウトしたいのですが、キャンセル料はかかりますか。",
-      "furigana": "よていよりはやくちぇっくあうとしたいのですが、きゃんせるりょうはかかりますか。",
       "zh": "我想提前退房，会有取消费用吗？",
       "zh-TW": "我想提前退房，會有取消費用嗎？",
       "en": "I'd like to check out earlier than planned. Will there be a cancellation fee?",
@@ -874,11 +3348,40 @@
       "scene": "延長・早期退出",
       "id": "s19-067",
       "subcategory": "sub25",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "予定",
+          "isKanji": true,
+          "reading": "よてい"
+        },
+        {
+          "text": "より",
+          "isKanji": false
+        },
+        {
+          "text": "早",
+          "isKanji": true,
+          "reading": "はや"
+        },
+        {
+          "text": "くチェックアウトしたいのですが、キャンセル",
+          "isKanji": false
+        },
+        {
+          "text": "料",
+          "isKanji": true,
+          "reading": "りょう"
+        },
+        {
+          "text": "はかかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "よていよりはやくチェックアウトしたいのですが、キャンセルりょうはかかりますか。"
     },
     {
       "jp": "ご予約のプランによって異なります。確認いたしますので、少々お待ちください。",
-      "furigana": "ごよやくのぷらんによってことなります。かくにんいたしますので、しょうしょうおまちください。",
       "zh": "这取决于您的预约方案，请稍等，我来确认一下。",
       "zh-TW": "這取決於您的預約方案，請稍等，我來確認一下。",
       "en": "It depends on your reservation plan. Please wait a moment while I check.",
@@ -887,11 +3390,62 @@
       "scene": "延長・早期退出",
       "id": "s19-068",
       "subcategory": "sub25",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "のプランによって",
+          "isKanji": false
+        },
+        {
+          "text": "異",
+          "isKanji": true,
+          "reading": "こと"
+        },
+        {
+          "text": "なります。",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたしますので、",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごよやくのプランによってことなります。かくにんいたしますので、しょうしょうおまちください。"
     },
     {
       "jp": "おはようございます。朝食会場はどこですか。何時までですか。",
-      "furigana": "おはようございます。ちょうしょくかいじょうはどこですか。いつまでですか。",
       "zh": "早上好，请问早餐在哪里用？几点结束？",
       "zh-TW": "早上好，請問早餐在哪裡用？幾點結束？",
       "en": "Good morning. Where is the breakfast area? Until what time?",
@@ -900,24 +3454,127 @@
       "scene": "レストラン・朝食",
       "id": "s19-069",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "おはようございます。",
+          "isKanji": false
+        },
+        {
+          "text": "朝食",
+          "isKanji": true,
+          "reading": "ちょうしょく"
+        },
+        {
+          "text": "会場",
+          "isKanji": true,
+          "reading": "かいじょう"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        },
+        {
+          "text": "何時",
+          "isKanji": true,
+          "reading": "いつ"
+        },
+        {
+          "text": "までですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おはようございます。ちょうしょくかいじょうはどこですか。いつまでですか。"
     },
     {
-      "jp": "おはようございます。朝食会場は [2階のレストラン] でございます。時間は [7時から10時まで、入場は9時半まで] です。",
-      "furigana": "おはようございます。ちょうしょくかいじょうは[2かいのれすとらん]でございます。じかんは[7じから10じまで、にゅうじょうは9じはんまで]です。",
-      "zh": "早上好，早餐在[2楼餐厅]，时间是[7点到10点，9点半停止入场]。",
-      "zh-TW": "早上好，早餐在[2樓餐廳]，時間是[7點到10點，9點半停止入場]。",
-      "en": "Good morning. Breakfast is served at the [2nd floor restaurant], from [7:00 to 10:00, last entry at 9:30].",
-      "vi": "Chào buổi sáng. Bữa sáng được phục vụ tại [nhà hàng tầng 2], từ [7 giờ đến 10 giờ, vào cửa trước 9 giờ 30].",
-      "ko": "안녕하세요. 조식 장소는 [2층 레스토랑]이며, 시간은 [7시부터 10시까지, 입장은 9시 30분까지]입니다.",
+      "jp": "おはようございます。朝食会場は2階のレストランでございます。時間は7時から10時まで、入場は9時半までです。",
+      "zh": "早上好，早餐在2楼餐厅，时间是7点到10点，9点半停止入场。",
+      "zh-TW": "早上好，早餐在2樓餐廳，時間是7點到10點，9點半停止入場。",
+      "en": "Good morning. Breakfast is served at the 2nd floor restaurant, from 7:00 to 10:00, last entry at 9:30.",
+      "vi": "Chào buổi sáng. Bữa sáng được phục vụ tại nhà hàng tầng 2, từ 7 giờ đến 10 giờ, vào cửa trước 9 giờ 30.",
+      "ko": "안녕하세요. 조식 장소는 2층 레스토랑이며, 시간은 7시부터 10시까지, 입장은 9시 30분까지입니다.",
       "scene": "レストラン・朝食",
       "id": "s19-070",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "おはようございます。",
+          "isKanji": false
+        },
+        {
+          "text": "朝食",
+          "isKanji": true,
+          "reading": "ちょうしょく"
+        },
+        {
+          "text": "会場",
+          "isKanji": true,
+          "reading": "かいじょう"
+        },
+        {
+          "text": "は2",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "のレストランでございます。",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "は7",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "から10",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "まで、",
+          "isKanji": false
+        },
+        {
+          "text": "入場",
+          "isKanji": true,
+          "reading": "にゅうじょう"
+        },
+        {
+          "text": "は9",
+          "isKanji": false
+        },
+        {
+          "text": "時半",
+          "isKanji": true,
+          "reading": "じはん"
+        },
+        {
+          "text": "までです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おはようございます。ちょうしょくかいじょうは2かいのレストランでございます。じかんは7じから10じまで、にゅうじょうは9じはんまでです。"
     },
     {
       "jp": "朝食券は必要ですか。",
-      "furigana": "ちょうしょくけんはひつようですか。",
       "zh": "需要早餐券吗？",
       "zh-TW": "需要早餐券嗎？",
       "en": "Do I need a breakfast voucher?",
@@ -926,11 +3583,36 @@
       "scene": "レストラン・朝食",
       "id": "s19-071",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "朝食",
+          "isKanji": true,
+          "reading": "ちょうしょく"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちょうしょくけんはひつようですか。"
     },
     {
       "jp": "はい、こちらの朝食券をご提示ください。お席へどうぞ。こちらの「食事中」の札をお使いください。",
-      "furigana": "はい、こちらのちょうしょくけんをごていじください。おせきへどうぞ。こちらの「しょくじちゅう」のさつをおつかいください。",
       "zh": "是的，请出示早餐券。请到座位就坐，请使用这个「用餐中」的牌子。",
       "zh-TW": "是的，請出示早餐券。請到座位就坐，請使用這個「用餐中」的牌子。",
       "en": "Yes, please show your breakfast voucher. Please take a seat and use this 'Occupied' sign.",
@@ -939,24 +3621,146 @@
       "scene": "レストラン・朝食",
       "id": "s19-072",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "朝食",
+          "isKanji": true,
+          "reading": "ちょうしょく"
+        },
+        {
+          "text": "券",
+          "isKanji": true,
+          "reading": "けん"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "提示",
+          "isKanji": true,
+          "reading": "ていじ"
+        },
+        {
+          "text": "ください。お",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "へどうぞ。こちらの「",
+          "isKanji": false
+        },
+        {
+          "text": "食事",
+          "isKanji": true,
+          "reading": "しょくじ"
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "ちゅう"
+        },
+        {
+          "text": "」の",
+          "isKanji": false
+        },
+        {
+          "text": "札",
+          "isKanji": true,
+          "reading": "さつ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらのちょうしょくけんをごていじください。おせきへどうぞ。こちらの「しょくじちゅう」のさつをおつかいください。"
     },
     {
-      "jp": "現在、大変混み合っておりまして、[10分] ほどお待ちいただけますか。",
-      "furigana": "げんざい、たいへんこみあっておりまして、[10ふん]ほどおまちいただけますか。",
-      "zh": "现在非常拥挤，请问您可以等大约[10分钟]吗？",
-      "zh-TW": "現在非常擁擠，請問您可以等大約[10分鐘]嗎？",
-      "en": "It's very busy right now. Could you wait about [10 minutes]?",
-      "vi": "Hiện tại rất đông, bạn có thể chờ khoảng [10 phút] không?",
-      "ko": "지금 매우 혼잡합니다. [10분] 정도 기다려 주실 수 있나요?",
+      "jp": "現在、大変混み合っておりまして、10分ほどお待ちいただけますか。",
+      "zh": "现在非常拥挤，请问您可以等大约10分钟吗？",
+      "zh-TW": "現在非常擁擠，請問您可以等大約10分鐘嗎？",
+      "en": "It's very busy right now. Could you wait about 10 minutes?",
+      "vi": "Hiện tại rất đông, bạn có thể chờ khoảng 10 phút không?",
+      "ko": "지금 매우 혼잡합니다. 10분 정도 기다려 주실 수 있나요?",
       "scene": "レストラン・朝食",
       "id": "s19-073",
       "subcategory": "sub12",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "現在",
+          "isKanji": true,
+          "reading": "げんざい"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "大変",
+          "isKanji": true,
+          "reading": "たいへん"
+        },
+        {
+          "text": "混",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "っておりまして、10",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "ほどお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんざい、たいへんこみあっておりまして、10ふんほどおまちいただけますか。"
     },
     {
       "jp": "わかりました。どこで待てばいいですか。",
-      "furigana": "わかりました。どこでまてばいいですか。",
       "zh": "好的，请问在哪里等？",
       "zh-TW": "好的，請問在哪裡等？",
       "en": "Understood. Where should I wait?",
@@ -965,11 +3769,26 @@
       "scene": "レストラン・朝食",
       "id": "s19-074",
       "subcategory": "sub12",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。どこで",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "てばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。どこでまてばいいですか。"
     },
     {
       "jp": "こちらの椅子でお待ちください。お名前をお願いします。お呼びいたします。",
-      "furigana": "こちらのいすでおまちください。おなまえをおねがいします。およびいたします。",
       "zh": "请在这里的椅子上等候，请告诉我您的姓名，我会叫您的。",
       "zh-TW": "請在這裡的椅子上等候，請告訴我您的姓名，我會叫您的。",
       "en": "Please wait on these chairs. May I have your name? We'll call you when ready.",
@@ -978,11 +3797,62 @@
       "scene": "レストラン・朝食",
       "id": "s19-075",
       "subcategory": "sub12",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "椅子",
+          "isKanji": true,
+          "reading": "いす"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。お",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。お",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "びいたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらのいすでおまちください。おなまえをおねがいします。およびいたします。"
     },
     {
       "jp": "すみません、コーヒーのおかわりはできますか。",
-      "furigana": "すみません、こーひーのおかわりはできますか。",
       "zh": "不好意思，可以续杯咖啡吗？",
       "zh-TW": "不好意思，可以續杯咖啡嗎？",
       "en": "Excuse me, can I have a refill of coffee?",
@@ -991,11 +3861,17 @@
       "scene": "レストラン・朝食",
       "id": "s19-076",
       "subcategory": "sub13",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、コーヒーのおかわりはできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、コーヒーのおかわりはできますか。"
     },
     {
       "jp": "はい、あちらのドリンクバーをご自由にお使いください。",
-      "furigana": "はい、あちらのどりんくばーをごじゆうにおつかいください。",
       "zh": "好的，请随意使用那边的饮料吧台。",
       "zh-TW": "好的，請隨意使用那邊的飲料吧台。",
       "en": "Yes, please feel free to use the drink bar over there.",
@@ -1004,11 +3880,35 @@
       "scene": "レストラン・朝食",
       "id": "s19-077",
       "subcategory": "sub13",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、あちらのドリンクバーをご",
+          "isKanji": false
+        },
+        {
+          "text": "自由",
+          "isKanji": true,
+          "reading": "じゆう"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あちらのドリンクバーをごじゆうにおつかいください。"
     },
     {
       "jp": "子供用の椅子と食器をいただけますか。",
-      "furigana": "こどもようのいすとしょっきをいただけますか。",
       "zh": "可以给我儿童椅和儿童餐具吗？",
       "zh-TW": "可以給我兒童椅和兒童餐具嗎？",
       "en": "Could I have a high chair and children's tableware?",
@@ -1017,11 +3917,45 @@
       "scene": "レストラン・朝食",
       "id": "s19-078",
       "subcategory": "sub13",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "子供",
+          "isKanji": true,
+          "reading": "こども"
+        },
+        {
+          "text": "用",
+          "isKanji": true,
+          "reading": "よう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "椅子",
+          "isKanji": true,
+          "reading": "いす"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "食器",
+          "isKanji": true,
+          "reading": "しょっき"
+        },
+        {
+          "text": "をいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こどもようのいすとしょっきをいただけますか。"
     },
     {
       "jp": "今日の夜、レストランを予約したいんですが、空いていますか。",
-      "furigana": "きょうのよる、れすとらんをよやくしたいんですが、あいていますか。",
       "zh": "我想预约今晚的餐厅，请问有位子吗？",
       "zh-TW": "我想預約今晚的餐廳，請問有位子嗎？",
       "en": "I'd like to make a dinner reservation for tonight. Do you have availability?",
@@ -1030,11 +3964,49 @@
       "scene": "レストラン予約",
       "id": "s19-079",
       "subcategory": "sub14",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夜",
+          "isKanji": true,
+          "reading": "よる"
+        },
+        {
+          "text": "、レストランを",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "したいんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きょうのよる、レストランをよやくしたいんですが、あいていますか。"
     },
     {
       "jp": "何名様で、何時をご希望ですか。",
-      "furigana": "なにめいさまで、いつをごきぼうですか。",
       "zh": "请问几位，希望几点用餐？",
       "zh-TW": "請問幾位，希望幾點用餐？",
       "en": "How many people, and what time would you like?",
@@ -1043,63 +4015,249 @@
       "scene": "レストラン予約",
       "id": "s19-080",
       "subcategory": "sub14",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "で、",
+          "isKanji": false
+        },
+        {
+          "text": "何時",
+          "isKanji": true,
+          "reading": "いつ"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "希望",
+          "isKanji": true,
+          "reading": "きぼう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なにめいさまで、いつをごきぼうですか。"
     },
     {
-      "jp": "[2] 人で、[7] 時ごろがいいです。",
-      "furigana": "[2]じんで、[7]じごろがいいです。",
-      "zh": "[2]人，大约[7]点左右。",
-      "zh-TW": "[2]人，大約[7]點左右。",
-      "en": "[2] people, around [7] o'clock.",
-      "vi": "[2] người, khoảng [7] giờ.",
-      "ko": "[2]명이고, [7]시쯤이 좋겠습니다.",
+      "jp": "2人で、7時ごろがいいです。",
+      "zh": "2人，大约7点左右。",
+      "zh-TW": "2人，大約7點左右。",
+      "en": "2 people, around 7 o'clock.",
+      "vi": "2 người, khoảng 7 giờ.",
+      "ko": "2명이고, 7시쯤이 좋겠습니다.",
       "scene": "レストラン予約",
       "id": "s19-081",
       "subcategory": "sub14",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "2",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "で、7",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ごろがいいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "2にんで、7じごろがいいです。"
     },
     {
-      "jp": "[7] 時ですね、お席をご用意できます。お部屋番号とお名前をお願いします。",
-      "furigana": "[7]じですね、おせきをごよういできます。おへやばんごうとおなまえをおねがいします。",
-      "zh": "[7]点可以，我们为您安排座位。请告诉我您的房间号和姓名。",
-      "zh-TW": "[7]點可以，我們為您安排座位。請告訴我您的房間號和姓名。",
-      "en": "[7] o'clock, we can arrange a table. Could I have your room number and name?",
-      "vi": "[7] giờ được, chúng tôi có thể chuẩn bị chỗ. Cho tôi số phòng và tên của bạn.",
-      "ko": "[7]시 가능합니다. 객실 번호와 성함을 알려주세요.",
+      "jp": "7時ですね、お席をご用意できます。お部屋番号とお名前をお願いします。",
+      "zh": "7点可以，我们为您安排座位。请告诉我您的房间号和姓名。",
+      "zh-TW": "7點可以，我們為您安排座位。請告訴我您的房間號和姓名。",
+      "en": "7 o'clock, we can arrange a table. Could I have your room number and name?",
+      "vi": "7 giờ được, chúng tôi có thể chuẩn bị chỗ. Cho tôi số phòng và tên của bạn.",
+      "ko": "7시 가능합니다. 객실 번호와 성함을 알려주세요.",
       "scene": "レストラン予約",
       "id": "s19-082",
       "subcategory": "sub14",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "7",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ですね、お",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "用意",
+          "isKanji": true,
+          "reading": "ようい"
+        },
+        {
+          "text": "できます。お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "とお",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "7じですね、おせきをごよういできます。おへやばんごうとおなまえをおねがいします。"
     },
     {
-      "jp": "[X号室] の [ローマ字の苗字] です。",
-      "furigana": "[Xごうしつ]の[ろーまじのみょうじ]です。",
-      "zh": "[X号]房的[姓名]。",
-      "zh-TW": "[X號]房的[姓名]。",
-      "en": "Room [X], name is [surname in Roman letters].",
-      "vi": "Phòng [X], tên là [họ bằng chữ Latinh].",
-      "ko": "[X]호실의 [로마자 성]입니다.",
+      "jp": "512号室のTANAKAです。",
+      "zh": "512号房的田中。",
+      "zh-TW": "512號房的田中。",
+      "en": "Room 512, name is TANAKA.",
+      "vi": "Phòng 512, tên là TANAKA.",
+      "ko": "512호실의 다나카입니다.",
       "scene": "レストラン予約",
       "id": "s19-083",
       "subcategory": "sub14",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "512",
+          "isKanji": false
+        },
+        {
+          "text": "号",
+          "isKanji": true,
+          "reading": "ごう"
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "のTANAKAです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "512ごうしつのTANAKAです。"
     },
     {
-      "jp": "承知いたしました。では、今夜 [7] 時にお待ちしております。",
-      "furigana": "しょうちいたしました。では、こんや[7]じにおまちしております。",
-      "zh": "好的，今晚[7]点恭候您的光临。",
-      "zh-TW": "好的，今晚[7]點恭候您的光臨。",
-      "en": "Understood. We'll be expecting you tonight at [7] o'clock.",
-      "vi": "Vâng. Chúng tôi sẽ chờ bạn tối nay lúc [7] giờ.",
-      "ko": "알겠습니다. 오늘 저녁 [7]시에 기다리겠습니다.",
+      "jp": "承知いたしました。では、今夜7時にお待ちしております。",
+      "zh": "好的，今晚7点恭候您的光临。",
+      "zh-TW": "好的，今晚7點恭候您的光臨。",
+      "en": "Understood. We'll be expecting you tonight at 7 o'clock.",
+      "vi": "Vâng. Chúng tôi sẽ chờ bạn tối nay lúc 7 giờ.",
+      "ko": "알겠습니다. 오늘 저녁 7시에 기다리겠습니다.",
       "scene": "レストラン予約",
       "id": "s19-084",
       "subcategory": "sub14",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "承知",
+          "isKanji": true,
+          "reading": "しょうち"
+        },
+        {
+          "text": "いたしました。では、",
+          "isKanji": false
+        },
+        {
+          "text": "今夜",
+          "isKanji": true,
+          "reading": "こんや"
+        },
+        {
+          "text": "7",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちしております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうちいたしました。では、こんや7じにおまちしております。"
     },
     {
       "jp": "あいにく今夜のディナーは満席となっております。",
-      "furigana": "あいにくこんやのでぃなーはまんせきとなっております。",
       "zh": "很遗憾，今晚的晚餐已经全部订满了。",
       "zh-TW": "很遺憾，今晚的晚餐已經全部訂滿了。",
       "en": "Unfortunately, tonight's dinner is fully booked.",
@@ -1108,11 +4266,35 @@
       "scene": "レストラン予約",
       "id": "s19-085",
       "subcategory": "sub15",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あいにく",
+          "isKanji": false
+        },
+        {
+          "text": "今夜",
+          "isKanji": true,
+          "reading": "こんや"
+        },
+        {
+          "text": "のディナーは",
+          "isKanji": false
+        },
+        {
+          "text": "満席",
+          "isKanji": true,
+          "reading": "まんせき"
+        },
+        {
+          "text": "となっております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あいにくこんやのディナーはまんせきとなっております。"
     },
     {
       "jp": "わかりました。近くに歩いて行けるレストランはありますか。",
-      "furigana": "わかりました。ちかくにあるいていけるれすとらんはありますか。",
       "zh": "好的，附近有可以步行到的餐厅吗？",
       "zh-TW": "好的，附近有可以步行到的餐廳嗎？",
       "en": "I see. Are there any restaurants nearby that I can walk to?",
@@ -1121,11 +4303,44 @@
       "scene": "レストラン予約",
       "id": "s19-086",
       "subcategory": "sub15",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        },
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くに",
+          "isKanji": false
+        },
+        {
+          "text": "歩",
+          "isKanji": true,
+          "reading": "ある"
+        },
+        {
+          "text": "いて",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "けるレストランはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。ちかくにあるいていけるレストランはありますか。"
     },
     {
       "jp": "はい、ホテルの周辺に飲食店がいくつかございます。こちらの周辺マップをご覧ください。",
-      "furigana": "はい、ほてるのしゅうへんにいんしょくてんがいくつかございます。こちらのしゅうへんまっぷをごらんください。",
       "zh": "有的，酒店周边有几家餐厅，请参考这份周边地图。",
       "zh-TW": "有的，酒店周邊有幾家餐廳，請參考這份周邊地圖。",
       "en": "Yes, there are several restaurants around the hotel. Please take a look at this area map.",
@@ -1134,11 +4349,58 @@
       "scene": "レストラン予約",
       "id": "s19-087",
       "subcategory": "sub15",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、ホテルの",
+          "isKanji": false
+        },
+        {
+          "text": "周辺",
+          "isKanji": true,
+          "reading": "しゅうへん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "飲食",
+          "isKanji": true,
+          "reading": "いんしょく"
+        },
+        {
+          "text": "店",
+          "isKanji": true,
+          "reading": "てん"
+        },
+        {
+          "text": "がいくつかございます。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "周辺",
+          "isKanji": true,
+          "reading": "しゅうへん"
+        },
+        {
+          "text": "マップをご",
+          "isKanji": false
+        },
+        {
+          "text": "覧",
+          "isKanji": true,
+          "reading": "らん"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、ホテルのしゅうへんにいんしょくてんがいくつかございます。こちらのしゅうへんマップをごらんください。"
     },
     {
       "jp": "ルームサービスをお願いしたいんですが。",
-      "furigana": "るーむさーびすをおねがいしたいんですが。",
       "zh": "我想点客房服务。",
       "zh-TW": "我想點客房服務。",
       "en": "I'd like to order room service.",
@@ -1147,11 +4409,26 @@
       "scene": "ルームサービス",
       "id": "s19-088",
       "subcategory": "sub16",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ルームサービスをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ルームサービスをおねがいしたいんですが。"
     },
     {
       "jp": "お電話ありがとうございます。メニューはお決まりでしょうか。",
-      "furigana": "おでんわありがとうございます。めにゅーはおきまりでしょうか。",
       "zh": "感谢您的来电，请问您决定好点什么了吗？",
       "zh-TW": "感謝您的來電，請問您決定好點什麼了嗎？",
       "en": "Thank you for calling. Have you decided on your order?",
@@ -1160,37 +4437,159 @@
       "scene": "ルームサービス",
       "id": "s19-089",
       "subcategory": "sub16",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "ありがとうございます。メニューはお",
+          "isKanji": false
+        },
+        {
+          "text": "決",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "まりでしょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おでんわありがとうございます。メニューはおきまりでしょうか。"
     },
     {
-      "jp": "[ハンバーグセット] を [1] つと、[ビール] を [1] 本お願いします。",
-      "furigana": "[はんばーぐせっと]を[1]つと、[びーる]を[1]ほんおねがいします。",
-      "zh": "请给我[1]份[汉堡套餐]和[1]瓶[啤酒]。",
-      "zh-TW": "請給我[1]份[漢堡套餐]和[1]瓶[啤酒]。",
-      "en": "I'd like [1] [hamburger set] and [1] [beer], please.",
-      "vi": "Cho tôi [1] [set hamburger] và [1] chai [bia].",
-      "ko": "[햄버그 세트] [1]개와 [맥주] [1]병 부탁드립니다.",
+      "jp": "ハンバーグセットを1つと、ビールを1本お願いします。",
+      "zh": "请给我1份汉堡套餐和1瓶啤酒。",
+      "zh-TW": "請給我1份漢堡套餐和1瓶啤酒。",
+      "en": "I'd like 1 hamburger set and 1 beer, please.",
+      "vi": "Cho tôi 1 set hamburger và 1 chai bia.",
+      "ko": "햄버그 세트 1개와 맥주 1병 부탁드립니다.",
       "scene": "ルームサービス",
       "id": "s19-090",
       "subcategory": "sub16",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ハンバーグセットを1つと、ビールを1",
+          "isKanji": false
+        },
+        {
+          "text": "本",
+          "isKanji": true,
+          "reading": "ほん"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ハンバーグセットを1つと、ビールを1ほんおねがいします。"
     },
     {
-      "jp": "かしこまりました。お届けまで [30分] ほどかかります。お支払いはチェックアウト時にお部屋代と合わせて清算いたします。",
-      "furigana": "かしこまりました。おとどけまで[30ふん]ほどかかります。おしはらいはちぇっくあうとじにおへやだいとあわせてせいさんいたします。",
-      "zh": "好的，大约需要[30分钟]送达。费用将在退房时与住宿费一起结算。",
-      "zh-TW": "好的，大約需要[30分鐘]送達。費用將在退房時與住宿費一起結算。",
-      "en": "Certainly. Delivery will take about [30 minutes]. Payment will be added to your room bill at check-out.",
-      "vi": "Vâng. Sẽ mất khoảng [30 phút] để giao. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
-      "ko": "알겠습니다. 배달까지 약 [30분] 걸립니다. 결제는 체크아웃 시 숙박비와 함께 정산됩니다.",
+      "jp": "かしこまりました。お届けまで30分ほどかかります。お支払いはチェックアウト時にお部屋代と合わせて清算いたします。",
+      "zh": "好的，大约需要30分钟送达。费用将在退房时与住宿费一起结算。",
+      "zh-TW": "好的，大約需要30分鐘送達。費用將在退房時與住宿費一起結算。",
+      "en": "Certainly. Delivery will take about 30 minutes. Payment will be added to your room bill at check-out.",
+      "vi": "Vâng. Sẽ mất khoảng 30 phút để giao. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
+      "ko": "알겠습니다. 배달까지 약 30분 걸립니다. 결제는 체크아웃 시 숙박비와 함께 정산됩니다.",
       "scene": "ルームサービス",
       "id": "s19-091",
       "subcategory": "sub16",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。お",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "けまで30",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "ほどかかります。お",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いはチェックアウト",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "代",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせて",
+          "isKanji": false
+        },
+        {
+          "text": "清算",
+          "isKanji": true,
+          "reading": "せいさん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。おとどけまで30ふんほどかかります。おしはらいはチェックアウトじにおへやだいとあわせてせいさんいたします。"
     },
     {
       "jp": "ルームサービスでございます。失礼いたします。",
-      "furigana": "るーむさーびすでございます。しつれいいたします。",
       "zh": "您好，客房服务到了，打扰了。",
       "zh-TW": "您好，客房服務到了，打擾了。",
       "en": "Room service. Excuse me.",
@@ -1199,11 +4598,26 @@
       "scene": "ルームサービス",
       "id": "s19-092",
       "subcategory": "sub17",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ルームサービスでございます。",
+          "isKanji": false
+        },
+        {
+          "text": "失礼",
+          "isKanji": true,
+          "reading": "しつれい"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ルームサービスでございます。しつれいいたします。"
     },
     {
       "jp": "はい、どうぞ。",
-      "furigana": "はい、どうぞ。",
       "zh": "好的，请进。",
       "zh-TW": "好的，請進。",
       "en": "Yes, come in.",
@@ -1212,24 +4626,77 @@
       "scene": "ルームサービス",
       "id": "s19-093",
       "subcategory": "sub17",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。"
     },
     {
-      "jp": "こちら [ハンバーグセット] と [ビール] でございます。こちらの伝票にお部屋番号とお名前をご記入ください。",
-      "furigana": "こちら[はんばーぐせっと]と[びーる]でございます。こちらのでんぴょうにおへやばんごうとおなまえをごきにゅうください。",
-      "zh": "这是您点的[汉堡套餐]和[啤酒]，请在这张单据上填写房间号和姓名。",
-      "zh-TW": "這是您點的[漢堡套餐]和[啤酒]，請在這張單據上填寫房間號和姓名。",
-      "en": "Here is your [hamburger set] and [beer]. Please write your room number and name on this slip.",
-      "vi": "Đây là [set hamburger] và [bia] của bạn. Vui lòng điền số phòng và tên vào phiếu này.",
-      "ko": "[햄버그 세트]와 [맥주]입니다. 이 전표에 객실 번호와 성함을 기재해 주세요.",
+      "jp": "こちらハンバーグセットとビールでございます。こちらの伝票にお部屋番号とお名前をご記入ください。",
+      "zh": "这是您点的汉堡套餐和啤酒，请在这张单据上填写房间号和姓名。",
+      "zh-TW": "這是您點的漢堡套餐和啤酒，請在這張單據上填寫房間號和姓名。",
+      "en": "Here is your hamburger set and beer. Please write your room number and name on this slip.",
+      "vi": "Đây là set hamburger và bia của bạn. Vui lòng điền số phòng và tên vào phiếu này.",
+      "ko": "햄버그 세트와 맥주입니다. 이 전표에 객실 번호와 성함을 기재해 주세요.",
       "scene": "ルームサービス",
       "id": "s19-094",
       "subcategory": "sub17",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらハンバーグセットとビールでございます。こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "伝票",
+          "isKanji": true,
+          "reading": "でんぴょう"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "とお",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらハンバーグセットとビールでございます。こちらのでんぴょうにおへやばんごうとおなまえをごきにゅうください。"
     },
     {
       "jp": "ごゆっくりどうぞ。",
-      "furigana": "ごゆっくりどうぞ。",
       "zh": "请慢用。",
       "zh-TW": "請慢用。",
       "en": "Please enjoy your meal.",
@@ -1238,11 +4705,17 @@
       "scene": "ルームサービス",
       "id": "s19-095",
       "subcategory": "sub17",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ごゆっくりどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごゆっくりどうぞ。"
     },
     {
       "jp": "コインランドリーはどこにありますか。",
-      "furigana": "こいんらんどりーはどこにありますか。",
       "zh": "投币洗衣机在哪里？",
       "zh-TW": "投幣洗衣機在哪裡？",
       "en": "Where is the coin laundry?",
@@ -1251,24 +4724,100 @@
       "scene": "ランドリー",
       "id": "s19-096",
       "subcategory": "sub18",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "コインランドリーはどこにありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "コインランドリーはどこにありますか。"
     },
     {
-      "jp": "コインランドリーは [2階] の自動販売機コーナーの横にございます。1回 [300円] です。両替はフロントでできます。",
-      "furigana": "こいんらんどりーは[2かい]のじどうはんばいきこーなーのよこにございます。1かい[300えん]です。りょうがえはふろんとでできます。",
-      "zh": "投币洗衣机在[2楼]自动售货机旁边，每次[300円]，前台可以换零钱。",
-      "zh-TW": "投幣洗衣機在[2樓]自動販賣機旁邊，每次[300円]，前台可以換零錢。",
-      "en": "The coin laundry is next to the vending machine area on the [2nd] floor. It costs [300 yen] per use. You can get change at the front desk.",
-      "vi": "Máy giặt tự phục vụ ở cạnh khu vực máy bán hàng tự động tầng [2], giá [300 yên] mỗi lần. Bạn có thể đổi tiền lẻ tại lễ tân.",
-      "ko": "코인 세탁기는 [2층] 자판기 코너 옆에 있습니다. 1회 [300엔]이며, 프런트에서 환전 가능합니다.",
+      "jp": "コインランドリーは2階の自動販売機コーナーの横にございます。1回300円です。両替はフロントでできます。",
+      "zh": "投币洗衣机在2楼自动售货机旁边，每次300円，前台可以换零钱。",
+      "zh-TW": "投幣洗衣機在2樓自動販賣機旁邊，每次300円，前台可以換零錢。",
+      "en": "The coin laundry is next to the vending machine area on the 2nd floor. It costs 300 yen per use. You can get change at the front desk.",
+      "vi": "Máy giặt tự phục vụ ở cạnh khu vực máy bán hàng tự động tầng 2, giá 300 yên mỗi lần. Bạn có thể đổi tiền lẻ tại lễ tân.",
+      "ko": "코인 세탁기는 2층 자판기 코너 옆에 있습니다. 1회 300엔이며, 프런트에서 환전 가능합니다.",
       "scene": "ランドリー",
       "id": "s19-097",
       "subcategory": "sub18",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "コインランドリーは2",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "自動",
+          "isKanji": true,
+          "reading": "じどう"
+        },
+        {
+          "text": "販売",
+          "isKanji": true,
+          "reading": "はんばい"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "コーナーの",
+          "isKanji": false
+        },
+        {
+          "text": "横",
+          "isKanji": true,
+          "reading": "よこ"
+        },
+        {
+          "text": "にございます。1",
+          "isKanji": false
+        },
+        {
+          "text": "回",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "300",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "はフロントでできます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "コインランドリーは2かいのじどうはんばいきコーナーのよこにございます。1かい300えんです。りょうがえはフロントでできます。"
     },
     {
       "jp": "乾燥機もありますか。",
-      "furigana": "かんそうきもありますか。",
       "zh": "有烘干机吗？",
       "zh-TW": "有烘乾機嗎？",
       "en": "Is there also a dryer?",
@@ -1277,24 +4826,78 @@
       "scene": "ランドリー",
       "id": "s19-098",
       "subcategory": "sub18",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "乾燥",
+          "isKanji": true,
+          "reading": "かんそう"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "もありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かんそうきもありますか。"
     },
     {
-      "jp": "はい、乾燥機は [30分 100円] です。",
-      "furigana": "はい、かんそうきは[30ふん100えん]です。",
-      "zh": "有的，烘干机[30分钟100円]。",
-      "zh-TW": "有的，烘乾機[30分鐘100円]。",
-      "en": "Yes, the dryer costs [100 yen for 30 minutes].",
-      "vi": "Có, máy sấy giá [100 yên cho 30 phút].",
-      "ko": "네, 건조기는 [30분에 100엔]입니다.",
+      "jp": "はい、乾燥機は30分100円です。",
+      "zh": "有的，烘干机30分钟100円。",
+      "zh-TW": "有的，烘乾機30分鐘100円。",
+      "en": "Yes, the dryer costs 100 yen for 30 minutes.",
+      "vi": "Có, máy sấy giá 100 yên cho 30 phút.",
+      "ko": "네, 건조기는 30분에 100엔입니다.",
       "scene": "ランドリー",
       "id": "s19-099",
       "subcategory": "sub18",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "乾燥",
+          "isKanji": true,
+          "reading": "かんそう"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "は30",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "100",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、かんそうきは30ふん100えんです。"
     },
     {
       "jp": "ワイシャツのクリーニングをお願いしたいんですが、どうすればいいですか。",
-      "furigana": "わいしゃつのくりーにんぐをおねがいしたいんですが、どうすればいいですか。",
       "zh": "我想送洗衬衫，应该怎么做？",
       "zh-TW": "我想送洗襯衫，應該怎麼做？",
       "en": "I'd like to have my shirt dry-cleaned. How do I do that?",
@@ -1303,24 +4906,117 @@
       "scene": "クリーニング",
       "id": "s19-100",
       "subcategory": "sub19",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ワイシャツのクリーニングをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいんですが、どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ワイシャツのクリーニングをおねがいしたいんですが、どうすればいいですか。"
     },
     {
-      "jp": "クローゼットの中に専用のバッグと伝票がございます。ご記入の上、午前 [10時] までにフロントへお持ちください。",
-      "furigana": "クローゼットのなかにせんようのばっぐとでんぴょうがございます。ごきにゅうのうえ、ごぜん[10じ]までにふろんとへおもちください。",
-      "zh": "衣柜里有专用袋和单据，填好后请在上午[10点]前送到前台。",
-      "zh-TW": "衣櫃裡有專用袋和單據，填好後請在上午[10點]前送到前台。",
-      "en": "There is a special bag and form in the closet. Please fill it out and bring it to the front desk by [10:00 AM].",
-      "vi": "Trong tủ quần áo có túi chuyên dụng và phiếu. Vui lòng điền vào và mang đến lễ tân trước [10 giờ sáng].",
-      "ko": "옷장 안에 전용 백과 전표가 있습니다. 기재 후 오전 [10시]까지 프런트에 가져다 주세요.",
+      "jp": "クローゼットの中に専用のバッグと伝票がございます。ご記入の上、午前10時までにフロントへお持ちください。",
+      "zh": "衣柜里有专用袋和单据，填好后请在上午10点前送到前台。",
+      "zh-TW": "衣櫃裡有專用袋和單據，填好後請在上午10點前送到前台。",
+      "en": "There is a special bag and form in the closet. Please fill it out and bring it to the front desk by 10:00 AM.",
+      "vi": "Trong tủ quần áo có túi chuyên dụng và phiếu. Vui lòng điền vào và mang đến lễ tân trước 10 giờ sáng.",
+      "ko": "옷장 안에 전용 백과 전표가 있습니다. 기재 후 오전 10시까지 프런트에 가져다 주세요.",
       "scene": "クリーニング",
       "id": "s19-101",
       "subcategory": "sub19",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "クローゼットの",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "のバッグと",
+          "isKanji": false
+        },
+        {
+          "text": "伝票",
+          "isKanji": true,
+          "reading": "でんぴょう"
+        },
+        {
+          "text": "がございます。ご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "うえ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "午前",
+          "isKanji": true,
+          "reading": "ごぜん"
+        },
+        {
+          "text": "10",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "までにフロントへお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "クローゼットのなかにせんようのバッグとでんぴょうがございます。ごきにゅうのうえ、ごぜん10じまでにフロントへおもちください。"
     },
     {
       "jp": "今日の夕方には仕上がりますか。",
-      "furigana": "きょうのゆうがたにはしあがりますか。",
       "zh": "今天傍晚能洗好吗？",
       "zh-TW": "今天傍晚能洗好嗎？",
       "en": "Will it be ready by this evening?",
@@ -1329,164 +5025,174 @@
       "scene": "クリーニング",
       "id": "s19-102",
       "subcategory": "sub19",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夕方",
+          "isKanji": true,
+          "reading": "ゆうがた"
+        },
+        {
+          "text": "には",
+          "isKanji": false
+        },
+        {
+          "text": "仕上",
+          "isKanji": true,
+          "reading": "しあ"
+        },
+        {
+          "text": "がりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きょうのゆうがたにはしあがりますか。"
     },
     {
-      "jp": "はい、朝 [10時] までのお預かりで、本日の夕方 [6時] 頃に仕上がります。料金はチェックアウト時にお部屋代と合わせて清算いたします。",
-      "furigana": "はい、あさ[10じ]までのおあずかりで、ほんじつのゆうがた[6じ]ごろにしあがります。りょうきんはちぇっくあうとじにおへやだいとあわせてせいさんいたします。",
-      "zh": "是的，上午[10点]前送来的话，今天傍晚[6点]左右可以洗好。费用将在退房时与住宿费一起结算。",
-      "zh-TW": "是的，上午[10點]前送來的話，今天傍晚[6點]左右可以洗好。費用將在退房時與住宿費一起結算。",
-      "en": "Yes, if dropped off by [10:00 AM], it will be ready around [6:00 PM] today. Payment will be added to your room bill at check-out.",
-      "vi": "Vâng, nếu mang đến trước [10 giờ sáng], sẽ xong vào khoảng [6 giờ chiều] hôm nay. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
-      "ko": "네, 오전 [10시]까지 맡기시면 오늘 저녁 [6시]쯤 완성됩니다. 요금은 체크아웃 시 숙박비와 함께 정산됩니다.",
+      "jp": "はい、朝10時までのお預かりで、本日の夕方6時頃に仕上がります。料金はチェックアウト時にお部屋代と合わせて清算いたします。",
+      "zh": "是的，上午10点前送来的话，今天傍晚6点左右可以洗好。费用将在退房时与住宿费一起结算。",
+      "zh-TW": "是的，上午10點前送來的話，今天傍晚6點左右可以洗好。費用將在退房時與住宿費一起結算。",
+      "en": "Yes, if dropped off by 10:00 AM, it will be ready around 6:00 PM today. Payment will be added to your room bill at check-out.",
+      "vi": "Vâng, nếu mang đến trước 10 giờ sáng, sẽ xong vào khoảng 6 giờ chiều hôm nay. Thanh toán sẽ được tính vào hóa đơn phòng khi trả phòng.",
+      "ko": "네, 오전 10시까지 맡기시면 오늘 저녁 6시쯤 완성됩니다. 요금은 체크아웃 시 숙박비와 함께 정산됩니다.",
       "scene": "クリーニング",
       "id": "s19-103",
       "subcategory": "sub19",
-      "role": "staff"
-    },
-    {
-      "jp": "チェックアウトです。",
-      "furigana": "ちぇっくあうとです。",
-      "zh": "我要退房。",
-      "zh-TW": "我要退房。",
-      "en": "I'd like to check out.",
-      "vi": "Tôi muốn trả phòng.",
-      "ko": "체크아웃하겠습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-104",
-      "subcategory": "sub21",
-      "role": "user"
-    },
-    {
-      "jp": "おはようございます。かしこまりました。",
-      "furigana": "おはようございます。かしこまりました。",
-      "zh": "早上好，好的。",
-      "zh-TW": "早上好，好的。",
-      "en": "Good morning. Certainly.",
-      "vi": "Chào buổi sáng. Vâng ạ.",
-      "ko": "안녕하세요. 알겠습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-105",
-      "subcategory": "sub21",
-      "role": "staff"
-    },
-    {
-      "jp": "少々お待ちくださいませ。ご滞在中、追加のご利用がございました。合計で[金額]円の追加費用が発生しております。",
-      "furigana": "しょうしょうおまちくださいませ。ごたいざいちゅう、ついかのごりようがございました。ごうけいで[きんがく]えんのついかひようがはっせいしております。",
-      "zh": "请稍等。您入住期间有一些额外消费，共产生 [金额] 日元的追加费用。",
-      "zh-TW": "請稍等。您入住期間有一些額外消費，共產生 [金額] 日圓的追加費用。",
-      "en": "One moment please. There were some additional charges during your stay, totaling [amount] yen.",
-      "vi": "Xin quý khách chờ một chút. Trong thời gian lưu trú có phát sinh một số chi phí phụ, tổng cộng là [số tiền] yên.",
-      "ko": "잠시만 기다려 주십시오. 숙박 중에 추가 이용 내역이 있어 총 [금액]엔의 추가 요금이 발생했습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-106",
-      "subcategory": "sub21",
-      "role": "staff"
-    },
-    {
-      "jp": "内訳を教えてもらえますか？",
-      "furigana": "うちわけをおしえてもらえますか？",
-      "zh": "能告诉我明细吗？",
-      "zh-TW": "能告訴我明細嗎？",
-      "en": "Could you tell me the breakdown?",
-      "vi": "Anh/chị có thể cho tôi biết chi tiết được không?",
-      "ko": "내역을 알려주실 수 있나요?",
-      "scene": "チェックアウト",
-      "id": "s19-107",
-      "subcategory": "sub21",
-      "role": "user"
-    },
-    {
-      "jp": "ミニバーのご利用が[金額]円、ルームサービスが[金額]円となっております。",
-      "furigana": "みにばーのごりようが[きんがく]えん、るーむさーびすが[きんがく]えんとなっております。",
-      "zh": "迷你吧消费 [金额] 日元，客房服务 [金额] 日元。",
-      "zh-TW": "迷你吧消費 [金額] 日圓，客房服務 [金額] 日圓。",
-      "en": "The minibar usage was [amount] yen, and room service was [amount] yen.",
-      "vi": "Minibar hết [số tiền] yên, dịch vụ phòng hết [số tiền] yên.",
-      "ko": "미니바 이용이 [금액]엔, 룸서비스가 [금액]엔입니다.",
-      "scene": "チェックアウト",
-      "id": "s19-108",
-      "subcategory": "sub21",
-      "role": "staff"
-    },
-    {
-      "jp": "確認できました。",
-      "furigana": "かくにんできました。",
-      "zh": "我确认了。",
-      "zh-TW": "我確認了。",
-      "en": "I've confirmed it.",
-      "vi": "Tôi đã xác nhận rồi.",
-      "ko": "확인했습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-109",
-      "subcategory": "sub21",
-      "role": "user"
-    },
-    {
-      "jp": "宿泊料金と合わせまして、総額で[金額]円となります。お支払い方法はいかがいたしますか？",
-      "furigana": "しゅくはくりょうきんとあわせまして、そうがくで[きんがく]えんとなります。おしはらいほうほうはいかがいたしますか？",
-      "zh": "加上住宿费，总额是 [金额] 日元。请问要用什么方式支付？",
-      "zh-TW": "加上住宿費，總額是 [金額] 日圓。請問要用什麼方式支付？",
-      "en": "Including the room charge, the total comes to [amount] yen. How would you like to pay?",
-      "vi": "Cộng với tiền phòng, tổng cộng là [số tiền] yên. Quý khách muốn thanh toán bằng hình thức nào?",
-      "ko": "숙박 요금을 합쳐서 총액은 [금액]엔입니다. 결제는 어떻게 하시겠습니까?",
-      "scene": "チェックアウト",
-      "id": "s19-110",
-      "subcategory": "sub21",
-      "role": "staff"
-    },
-    {
-      "jp": "カードでお願いします。",
-      "furigana": "かーどでおねがいします。",
-      "zh": "用信用卡支付。",
-      "zh-TW": "用信用卡支付。",
-      "en": "By card, please.",
-      "vi": "Tôi trả bằng thẻ.",
-      "ko": "카드로 하겠습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-111",
-      "subcategory": "sub21",
-      "role": "user"
-    },
-    {
-      "jp": "現金で払います。",
-      "furigana": "げんきんではらいます。",
-      "zh": "我用现金支付。",
-      "zh-TW": "我用現金支付。",
-      "en": "I'll pay in cash.",
-      "vi": "Tôi trả bằng tiền mặt.",
-      "ko": "현금으로 내겠습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-112",
-      "subcategory": "sub21",
-      "role": "user"
-    },
-    {
-      "jp": "承知いたしました。お手続き完了いたしました。こちらが領収書です。",
-      "furigana": "しょうちいたしました。おてつづきかんりょういたしました。こちらがりょうしゅうしょです。",
-      "zh": "好的。手续已经办好了，这是收据。",
-      "zh-TW": "好的。手續已經辦好了，這是收據。",
-      "en": "Certainly. That's all completed. Here is your receipt.",
-      "vi": "Vâng ạ. Thủ tục đã hoàn tất. Đây là biên lai của quý khách.",
-      "ko": "알겠습니다. 절차가 완료되었습니다. 이것이 영수증입니다.",
-      "scene": "チェックアウト",
-      "id": "s19-113",
-      "subcategory": "sub21",
-      "role": "staff"
-    },
-    {
-      "jp": "ご滞在ありがとうございました。またのお越しをお待ちしております。",
-      "furigana": "ごたいざいありがとうございました。またのおこしをおまちしております。",
-      "zh": "感谢您的入住，期待您再次光临。",
-      "zh-TW": "感謝您的入住，期待您再次光臨。",
-      "en": "Thank you for staying with us. We hope to see you again.",
-      "vi": "Cảm ơn quý khách đã lưu trú. Rất mong được đón tiếp quý khách lần sau.",
-      "ko": "머물러 주셔서 감사합니다. 다음에 또 뵙기를 기다리겠습니다.",
-      "scene": "チェックアウト",
-      "id": "s19-114",
-      "subcategory": "sub21",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "朝",
+          "isKanji": true,
+          "reading": "あさ"
+        },
+        {
+          "text": "10",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "までのお",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あず"
+        },
+        {
+          "text": "かりで、",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夕方",
+          "isKanji": true,
+          "reading": "ゆうがた"
+        },
+        {
+          "text": "6",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "頃",
+          "isKanji": true,
+          "reading": "ごろ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "仕上",
+          "isKanji": true,
+          "reading": "しあ"
+        },
+        {
+          "text": "がります。",
+          "isKanji": false
+        },
+        {
+          "text": "料金",
+          "isKanji": true,
+          "reading": "りょうきん"
+        },
+        {
+          "text": "はチェックアウト",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "代",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせて",
+          "isKanji": false
+        },
+        {
+          "text": "清算",
+          "isKanji": true,
+          "reading": "せいさん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あさ10じまでのおあずかりで、ほんじつのゆうがた6じごろにしあがります。りょうきんはチェックアウトじにおへやだいとあわせてせいさんいたします。"
     }
-  ],
-  "count": 114
+  ]
 }

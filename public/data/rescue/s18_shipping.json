@@ -65,376 +65,1144 @@
       "subcategory": "sub01",
       "role": "user",
       "jp": "宅配便を送りたいです。",
-      "furigana": "たくはいびんをおくりたいです。",
       "zh": "我想寄快递。",
       "en": "I'd like to send a parcel.",
       "zh-TW": "我想寄快遞。",
       "vi": "Tôi muốn gửi bưu kiện.",
-      "ko": "택배를 보내고 싶어요."
+      "ko": "택배를 보내고 싶어요.",
+      "ruby": [
+        {
+          "text": "宅配",
+          "isKanji": true,
+          "reading": "たくはい"
+        },
+        {
+          "text": "便",
+          "isKanji": true,
+          "reading": "びん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "送",
+          "isKanji": true,
+          "reading": "おく"
+        },
+        {
+          "text": "りたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たくはいびんをおくりたいです。"
     },
     {
       "id": "s18-002",
       "subcategory": "sub01",
       "role": "user",
       "jp": "箱はありますか。",
-      "furigana": "はこはありますか。",
       "zh": "有纸箱卖吗？",
       "en": "Do you have any boxes for sale?",
       "zh-TW": "有紙箱賣嗎？",
       "vi": "Có hộp carton bán không?",
-      "ko": "박스 파나요?"
+      "ko": "박스 파나요?",
+      "ruby": [
+        {
+          "text": "箱",
+          "isKanji": true,
+          "reading": "はこ"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はこはありますか。"
     },
     {
       "id": "s18-003",
       "subcategory": "sub01",
       "role": "user",
       "jp": "重さを量ってもらえますか。",
-      "furigana": "おもさをはかってもらえますか。",
       "zh": "可以帮我称一下重量吗？",
       "en": "Could you weigh this for me?",
       "zh-TW": "可以幫我稱一下重量嗎？",
       "vi": "Bạn có thể cân giúp tôi không?",
-      "ko": "무게를 재주실 수 있나요?"
+      "ko": "무게를 재주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "重",
+          "isKanji": true,
+          "reading": "おも"
+        },
+        {
+          "text": "さを",
+          "isKanji": false
+        },
+        {
+          "text": "量",
+          "isKanji": true,
+          "reading": "はか"
+        },
+        {
+          "text": "ってもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おもさをはかってもらえますか。"
     },
     {
       "id": "s18-004",
       "subcategory": "sub01",
       "role": "user",
       "jp": "伝票をもらえますか。",
-      "furigana": "でんぴょうをもらえますか。",
       "zh": "可以给我一张快递单吗？",
       "en": "Could I have a delivery slip?",
       "zh-TW": "可以給我一張快遞單嗎？",
       "vi": "Bạn có thể cho tôi phiếu giao hàng không?",
-      "ko": "송장을 주실 수 있나요?"
+      "ko": "송장을 주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "伝票",
+          "isKanji": true,
+          "reading": "でんぴょう"
+        },
+        {
+          "text": "をもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんぴょうをもらえますか。"
     },
     {
       "id": "s18-005",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "伝票にお名前・住所・電話番号をご記入ください。",
-      "furigana": "でんぴょうにおなまえ・じゅうしょ・でんわばんごうをごきにゅうください。",
       "zh": "请在快递单上填写姓名、地址、电话。",
       "en": "Please fill in your name, address, and phone number on the delivery slip.",
       "zh-TW": "請在快遞單上填寫姓名、地址、電話。",
       "vi": "Vui lòng điền tên, địa chỉ và số điện thoại vào phiếu giao hàng.",
-      "ko": "송장에 이름, 주소, 전화번호를 기입해 주세요."
+      "ko": "송장에 이름, 주소, 전화번호를 기입해 주세요.",
+      "ruby": [
+        {
+          "text": "伝票",
+          "isKanji": true,
+          "reading": "でんぴょう"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "・",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "・",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんぴょうにおなまえ・じゅうしょ・でんわばんごうをごきにゅうください。"
     },
     {
       "id": "s18-006",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "こちらが控えです。なくさないようにお持ちください。",
-      "furigana": "こちらがひかえです。なくさないようにおもちください。",
       "zh": "这是您的存根，请妥善保管。",
       "en": "Here is your receipt. Please keep it safe.",
       "zh-TW": "這是您的存根，請妥善保管。",
       "vi": "Đây là phiếu nhận của bạn. Vui lòng giữ cẩn thận.",
-      "ko": "이것이 고객용 영수증입니다. 잃어버리지 않도록 보관해 주세요."
+      "ko": "이것이 고객용 영수증입니다. 잃어버리지 않도록 보관해 주세요.",
+      "ruby": [
+        {
+          "text": "こちらが",
+          "isKanji": false
+        },
+        {
+          "text": "控",
+          "isKanji": true,
+          "reading": "ひか"
+        },
+        {
+          "text": "えです。なくさないようにお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらがひかえです。なくさないようにおもちください。"
     },
     {
       "id": "s18-007",
       "subcategory": "sub02",
       "role": "user",
       "jp": "この荷物を送りたいです。",
-      "furigana": "このにもつをおくりたいです。",
       "zh": "我想寄这个包裹。",
       "en": "I'd like to send this package.",
       "zh-TW": "我想寄這個包裹。",
       "vi": "Tôi muốn gửi gói hàng này.",
-      "ko": "이 짐을 보내고 싶어요."
+      "ko": "이 짐을 보내고 싶어요.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "送",
+          "isKanji": true,
+          "reading": "おく"
+        },
+        {
+          "text": "りたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このにもつをおくりたいです。"
     },
     {
       "id": "s18-008",
       "subcategory": "sub02",
       "role": "user",
       "jp": "安く送れる方法はどれですか。",
-      "furigana": "やすくおくれるほうほうはどれですか。",
       "zh": "哪种方式最便宜？",
       "en": "Which is the cheapest way to send it?",
       "zh-TW": "哪種方式最便宜？",
       "vi": "Cách nào gửi rẻ nhất?",
-      "ko": "가장 저렴한 방법이 어떤 건가요?"
+      "ko": "가장 저렴한 방법이 어떤 건가요?",
+      "ruby": [
+        {
+          "text": "安",
+          "isKanji": true,
+          "reading": "やす"
+        },
+        {
+          "text": "く",
+          "isKanji": false
+        },
+        {
+          "text": "送",
+          "isKanji": true,
+          "reading": "おく"
+        },
+        {
+          "text": "れる",
+          "isKanji": false
+        },
+        {
+          "text": "方法",
+          "isKanji": true,
+          "reading": "ほうほう"
+        },
+        {
+          "text": "はどれですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "やすくおくれるほうほうはどれですか。"
     },
     {
       "id": "s18-009",
       "subcategory": "sub02",
       "role": "user",
       "jp": "ゆうパックでお願いします。",
-      "furigana": "ゆうぱっくでおねがいします。",
       "zh": "请用ゆうパック寄。",
       "en": "By Yu-Pack, please.",
       "zh-TW": "請用ゆうパック寄。",
       "vi": "Gửi bằng Yu-Pack nhé.",
-      "ko": "유팩으로 부탁드립니다."
+      "ko": "유팩으로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "ゆうパックでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ゆうパックでおねがいします。"
     },
     {
       "id": "s18-010",
       "subcategory": "sub02",
       "role": "user",
       "jp": "書留でお願いします。",
-      "furigana": "かきとめでおねがいします。",
       "zh": "请用挂号寄。",
       "en": "By registered mail, please.",
       "zh-TW": "請用掛號寄。",
       "vi": "Gửi thư đảm bảo nhé.",
-      "ko": "등기로 부탁드립니다."
+      "ko": "등기로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "書留",
+          "isKanji": true,
+          "reading": "かきとめ"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かきとめでおねがいします。"
     },
     {
       "id": "s18-011",
       "subcategory": "sub02",
       "role": "user",
       "jp": "壊れやすいものが入っています。",
-      "furigana": "こわれやすいものがはいっています。",
       "zh": "里面有易碎物品。",
       "en": "There are fragile items inside.",
       "zh-TW": "裡面有易碎物品。",
       "vi": "Bên trong có đồ dễ vỡ.",
-      "ko": "안에 깨지기 쉬운 물건이 있어요."
+      "ko": "안에 깨지기 쉬운 물건이 있어요.",
+      "ruby": [
+        {
+          "text": "壊",
+          "isKanji": true,
+          "reading": "こわ"
+        },
+        {
+          "text": "れやすいものが",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "っています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こわれやすいものがはいっています。"
     },
     {
       "id": "s18-012",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "中身を教えていただけますか。",
-      "furigana": "なかみをおしえていただけますか。",
       "zh": "请告诉我里面装的是什么。",
       "en": "Could you tell me what's inside?",
       "zh-TW": "請告訴我裡面裝的是什麼。",
       "vi": "Bạn có thể cho tôi biết bên trong có gì không?",
-      "ko": "안에 뭐가 들어 있는지 알려주세요."
+      "ko": "안에 뭐가 들어 있는지 알려주세요.",
+      "ruby": [
+        {
+          "text": "中身",
+          "isKanji": true,
+          "reading": "なかみ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なかみをおしえていただけますか。"
     },
     {
       "id": "s18-013",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "重さを量ります。",
-      "furigana": "おもさをはかります。",
       "zh": "我来称一下重量。",
       "en": "I'll weigh it.",
       "zh-TW": "我來稱一下重量。",
       "vi": "Tôi sẽ cân.",
-      "ko": "무게를 달아보겠습니다."
+      "ko": "무게를 달아보겠습니다.",
+      "ruby": [
+        {
+          "text": "重",
+          "isKanji": true,
+          "reading": "おも"
+        },
+        {
+          "text": "さを",
+          "isKanji": false
+        },
+        {
+          "text": "量",
+          "isKanji": true,
+          "reading": "はか"
+        },
+        {
+          "text": "ります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おもさをはかります。"
     },
     {
       "id": "s18-014",
       "subcategory": "sub03",
       "role": "user",
       "jp": "集荷をお願いしたいです。",
-      "furigana": "しゅうかをおねがいしたいです。",
       "zh": "我想预约上门取件。",
       "en": "I'd like to arrange a pickup.",
       "zh-TW": "我想預約上門取件。",
       "vi": "Tôi muốn đặt lịch lấy hàng tận nơi.",
-      "ko": "집하를 신청하고 싶어요."
+      "ko": "집하를 신청하고 싶어요.",
+      "ruby": [
+        {
+          "text": "集荷",
+          "isKanji": true,
+          "reading": "しゅうか"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゅうかをおねがいしたいです。"
     },
     {
       "id": "s18-015",
       "subcategory": "sub03",
       "role": "user",
       "jp": "明日の午前中にお願いできますか。",
-      "furigana": "あしたのごぜんちゅうにおねがいできますか。",
       "zh": "可以明天上午来取吗？",
       "en": "Could you come tomorrow morning?",
       "zh-TW": "可以明天上午來取嗎？",
       "vi": "Bạn có thể đến lấy vào sáng mai không?",
-      "ko": "내일 오전에 와주실 수 있나요?"
+      "ko": "내일 오전에 와주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "明日",
+          "isKanji": true,
+          "reading": "あした"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "午前",
+          "isKanji": true,
+          "reading": "ごぜん"
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "ちゅう"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あしたのごぜんちゅうにおねがいできますか。"
     },
     {
       "id": "s18-016",
       "subcategory": "sub03",
       "role": "user",
       "jp": "元払いでお願いします。",
-      "furigana": "もとばらいでおねがいします。",
       "zh": "请用预付方式。",
       "en": "Sender pays, please.",
       "zh-TW": "請用預付方式。",
       "vi": "Người gửi trả phí nhé.",
-      "ko": "선불로 부탁드립니다."
+      "ko": "선불로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "元払",
+          "isKanji": true,
+          "reading": "もとばら"
+        },
+        {
+          "text": "いでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もとばらいでおねがいします。"
     },
     {
       "id": "s18-017",
       "subcategory": "sub03",
       "role": "user",
       "jp": "着払いでお願いします。",
-      "furigana": "ちゃくばらいでおねがいします。",
       "zh": "请用到付方式。",
       "en": "Recipient pays, please.",
       "zh-TW": "請用到付方式。",
       "vi": "Người nhận trả phí nhé.",
-      "ko": "착불로 부탁드립니다."
+      "ko": "착불로 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "着払",
+          "isKanji": true,
+          "reading": "ちゃくばら"
+        },
+        {
+          "text": "いでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちゃくばらいでおねがいします。"
     },
     {
       "id": "s18-018",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "ご依頼主のお名前と電話番号をお願いします。",
-      "furigana": "ごいらいぬしのおなまえとでんわばんごうをおねがいします。",
       "zh": "请告诉我寄件人姓名和电话。",
       "en": "Could I have the sender's name and phone number?",
       "zh-TW": "請告訴我寄件人姓名和電話。",
       "vi": "Cho tôi xin tên và số điện thoại người gửi.",
-      "ko": "발송인 성함과 전화번호를 알려주세요."
+      "ko": "발송인 성함과 전화번호를 알려주세요.",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "依頼",
+          "isKanji": true,
+          "reading": "いらい"
+        },
+        {
+          "text": "主",
+          "isKanji": true,
+          "reading": "ぬし"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごいらいぬしのおなまえとでんわばんごうをおねがいします。"
     },
     {
       "id": "s18-019",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "宅急便です。お届けにまいりました。",
-      "furigana": "たっきゅうびんです。おとどけにまいりました。",
       "zh": "是快递，我来送货了。",
       "en": "This is a delivery. I'm here to drop off your package.",
       "zh-TW": "是快遞，我來送貨了。",
       "vi": "Đây là bưu kiện, tôi đến giao hàng.",
-      "ko": "택배입니다. 배달 왔습니다."
+      "ko": "택배입니다. 배달 왔습니다.",
+      "ruby": [
+        {
+          "text": "宅急便",
+          "isKanji": true,
+          "reading": "たっきゅうびん"
+        },
+        {
+          "text": "です。お",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "けにまいりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たっきゅうびんです。おとどけにまいりました。"
     },
     {
       "id": "s18-020",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "受領印（またはサイン）をお願いします。",
-      "furigana": "じゅりょういん（またはさいん）をおねがいします。",
       "zh": "请签收（盖章或签名）。",
       "en": "Please sign or stamp here.",
       "zh-TW": "請簽收（蓋章或簽名）。",
       "vi": "Vui lòng ký hoặc đóng dấu xác nhận.",
-      "ko": "도장 또는 서명을 부탁드립니다."
+      "ko": "도장 또는 서명을 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "受領",
+          "isKanji": true,
+          "reading": "じゅりょう"
+        },
+        {
+          "text": "印",
+          "isKanji": true,
+          "reading": "いん"
+        },
+        {
+          "text": "（またはサイン）をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じゅりょういん（またはサイン）をおねがいします。"
     },
     {
       "id": "s18-021",
       "subcategory": "sub04",
       "role": "user",
       "jp": "不在票が入っていました。",
-      "furigana": "ふざいひょうがはいっていました。",
       "zh": "收到了不在通知单。",
       "en": "A non-delivery notice was left.",
       "zh-TW": "收到了不在通知單。",
       "vi": "Có phiếu báo vắng mặt.",
-      "ko": "부재 통지서가 왔어요."
+      "ko": "부재 통지서가 왔어요.",
+      "ruby": [
+        {
+          "text": "不在",
+          "isKanji": true,
+          "reading": "ふざい"
+        },
+        {
+          "text": "票",
+          "isKanji": true,
+          "reading": "ひょう"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "っていました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふざいひょうがはいっていました。"
     },
     {
       "id": "s18-022",
       "subcategory": "sub04",
       "role": "user",
       "jp": "再配達をお願いしたいです。",
-      "furigana": "さいはいたつをおねがいしたいです。",
       "zh": "我想重新预约配送。",
       "en": "I'd like to arrange a redelivery.",
       "zh-TW": "我想重新預約配送。",
       "vi": "Tôi muốn đặt lịch giao lại.",
-      "ko": "재배달을 신청하고 싶어요."
+      "ko": "재배달을 신청하고 싶어요.",
+      "ruby": [
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "配達",
+          "isKanji": true,
+          "reading": "はいたつ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいはいたつをおねがいしたいです。"
     },
     {
       "id": "s18-023",
       "subcategory": "sub04",
       "role": "user",
       "jp": "明日の夜間に再配達をお願いします。",
-      "furigana": "あしたのやかんにさいはいたつをおねがいします。",
       "zh": "请明天晚上重新配送。",
       "en": "Please redeliver tomorrow evening.",
       "zh-TW": "請明天晚上重新配送。",
       "vi": "Vui lòng giao lại vào tối mai.",
-      "ko": "내일 저녁에 재배달 부탁드립니다."
+      "ko": "내일 저녁에 재배달 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "明日",
+          "isKanji": true,
+          "reading": "あした"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "夜間",
+          "isKanji": true,
+          "reading": "やかん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "配達",
+          "isKanji": true,
+          "reading": "はいたつ"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あしたのやかんにさいはいたつをおねがいします。"
     },
     {
       "id": "s18-024",
       "subcategory": "sub04",
       "role": "user",
       "jp": "宅配ボックスに入れてください。",
-      "furigana": "たくはいぼっくすにいれてください。",
       "zh": "请放进快递柜。",
       "en": "Please put it in the parcel locker.",
       "zh-TW": "請放進快遞櫃。",
       "vi": "Vui lòng để vào tủ nhận hàng.",
-      "ko": "택배함에 넣어주세요."
+      "ko": "택배함에 넣어주세요.",
+      "ruby": [
+        {
+          "text": "宅配",
+          "isKanji": true,
+          "reading": "たくはい"
+        },
+        {
+          "text": "ボックスに",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たくはいボックスにいれてください。"
     },
     {
       "id": "s18-025",
       "subcategory": "sub04",
       "role": "user",
       "jp": "玄関前に置いてください。",
-      "furigana": "げんかんまえにおいてください。",
       "zh": "请放在门口。",
       "en": "Please leave it at the door.",
       "zh-TW": "請放在門口。",
       "vi": "Vui lòng để ở cửa.",
-      "ko": "현관 앞에 두고 가주세요."
+      "ko": "현관 앞에 두고 가주세요.",
+      "ruby": [
+        {
+          "text": "玄関",
+          "isKanji": true,
+          "reading": "げんかん"
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "いてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんかんまえにおいてください。"
     },
     {
       "id": "s18-026",
       "subcategory": "sub05",
       "role": "user",
       "jp": "追跡番号を教えてください。",
-      "furigana": "ついせきばんごうをおしえてください。",
       "zh": "请告诉我追踪号码。",
       "en": "Could you give me the tracking number?",
       "zh-TW": "請告訴我追蹤號碼。",
       "vi": "Cho tôi mã theo dõi.",
-      "ko": "추적 번호를 알려주세요."
+      "ko": "추적 번호를 알려주세요.",
+      "ruby": [
+        {
+          "text": "追跡",
+          "isKanji": true,
+          "reading": "ついせき"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ついせきばんごうをおしえてください。"
     },
     {
       "id": "s18-027",
       "subcategory": "sub05",
       "role": "user",
       "jp": "何日くらいで届きますか。",
-      "furigana": "なんにちくらいでとどきますか。",
       "zh": "大概几天能到？",
       "en": "About how many days will it take to arrive?",
       "zh-TW": "大概幾天能到？",
       "vi": "Mất khoảng mấy ngày để đến nơi?",
-      "ko": "대략 며칠이면 도착하나요?"
+      "ko": "대략 며칠이면 도착하나요?",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "くらいで",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "きますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんにちくらいでとどきますか。"
     },
     {
       "id": "s18-028",
       "subcategory": "sub05",
       "role": "user",
       "jp": "配達済みになっていますが、届いていません。",
-      "furigana": "はいたつずみになっていますが、とどいていません。",
       "zh": "显示已送达但我没有收到。",
       "en": "It says delivered, but I haven't received it.",
       "zh-TW": "顯示已送達但我沒有收到。",
       "vi": "Hiển thị đã giao nhưng tôi chưa nhận được.",
-      "ko": "배달 완료로 뜨는데 받지 못했어요."
+      "ko": "배달 완료로 뜨는데 받지 못했어요.",
+      "ruby": [
+        {
+          "text": "配達",
+          "isKanji": true,
+          "reading": "はいたつ"
+        },
+        {
+          "text": "済",
+          "isKanji": true,
+          "reading": "ず"
+        },
+        {
+          "text": "みになっていますが、",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "いていません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はいたつずみになっていますが、とどいていません。"
     },
     {
       "id": "s18-029",
       "subcategory": "sub05",
       "role": "user",
       "jp": "荷物が破損していました。補償の申請をしたいです。",
-      "furigana": "にもつがはそんしていました。ほしょうのしんせいをしたいです。",
       "zh": "包裹破损了，我想申请赔偿。",
       "en": "The package arrived damaged. I'd like to file a compensation claim.",
       "zh-TW": "包裹破損了，我想申請賠償。",
       "vi": "Bưu kiện bị hỏng. Tôi muốn yêu cầu bồi thường.",
-      "ko": "짐이 파손됐어요. 배상 신청을 하고 싶어요."
+      "ko": "짐이 파손됐어요. 배상 신청을 하고 싶어요.",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "破損",
+          "isKanji": true,
+          "reading": "はそん"
+        },
+        {
+          "text": "していました。",
+          "isKanji": false
+        },
+        {
+          "text": "補償",
+          "isKanji": true,
+          "reading": "ほしょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "申請",
+          "isKanji": true,
+          "reading": "しんせい"
+        },
+        {
+          "text": "をしたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつがはそんしていました。ほしょうのしんせいをしたいです。"
     },
     {
       "id": "s18-030",
       "subcategory": "sub05",
       "role": "user",
       "jp": "荷物がまだ届いていません。",
-      "furigana": "にもつがまだとどいていません。",
       "zh": "包裹还没到。",
       "en": "The package hasn't arrived yet.",
       "zh-TW": "包裹還沒到。",
       "vi": "Bưu kiện vẫn chưa đến.",
-      "ko": "택배가 아직 안 왔어요."
+      "ko": "택배가 아직 안 왔어요.",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "がまだ",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "いていません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつがまだとどいていません。"
     },
     {
       "id": "s18-031",
       "subcategory": "sub05",
       "role": "user",
       "jp": "領収書をいただけますか。",
-      "furigana": "りょうしゅうしょをいただけますか。",
       "zh": "请给我收据。",
       "en": "Could I have a receipt?",
       "zh-TW": "請給我收據。",
       "vi": "Cho tôi xin biên lai.",
-      "ko": "영수증 주세요."
+      "ko": "영수증 주세요.",
+      "ruby": [
+        {
+          "text": "領収",
+          "isKanji": true,
+          "reading": "りょうしゅう"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "をいただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうしゅうしょをいただけますか。"
     },
     {
       "jp": "追跡番号はこちらの伝票に記載されています。",
-      "furigana": "ついせきばんごうはこちらのでんぴょうにきさいされています。",
       "zh": "追踪号码写在这张单据上。",
       "id": "s18-032",
       "subcategory": "sub05",
@@ -442,11 +1210,45 @@
       "en": "The tracking number is written on this slip.",
       "zh-TW": "追蹤號碼寫在這張單據上。",
       "vi": "Mã theo dõi được ghi trên phiếu này.",
-      "ko": "추적 번호는 이 전표에 기재되어 있습니다."
+      "ko": "추적 번호는 이 전표에 기재되어 있습니다.",
+      "ruby": [
+        {
+          "text": "追跡",
+          "isKanji": true,
+          "reading": "ついせき"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "はこちらの",
+          "isKanji": false
+        },
+        {
+          "text": "伝票",
+          "isKanji": true,
+          "reading": "でんぴょう"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "記載",
+          "isKanji": true,
+          "reading": "きさい"
+        },
+        {
+          "text": "されています。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ついせきばんごうはこちらのでんぴょうにきさいされています。"
     },
     {
       "jp": "確認いたします。少々お待ちください。",
-      "furigana": "かくにんいたします。しょうしょうおまちください。",
       "zh": "我来确认一下，请稍等。",
       "id": "s18-033",
       "subcategory": "sub05",
@@ -454,11 +1256,40 @@
       "en": "I'll check on that. Please wait a moment.",
       "zh-TW": "我來確認一下，請稍等。",
       "vi": "Tôi sẽ kiểm tra. Xin vui lòng chờ một chút.",
-      "ko": "확인하겠습니다. 잠시만 기다려 주세요."
+      "ko": "확인하겠습니다. 잠시만 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        },
+        {
+          "text": "少々",
+          "isKanji": true,
+          "reading": "しょうしょう"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かくにんいたします。しょうしょうおまちください。"
     },
     {
       "jp": "申し訳ございません。改めてお調べして、ご連絡いたします。",
-      "furigana": "もうしわけございません。あらためておしらべして、ごれんらくいたします。",
       "zh": "非常抱歉，我们会重新调查后联系您。",
       "id": "s18-034",
       "subcategory": "sub05",
@@ -466,7 +1297,55 @@
       "en": "We apologize. We'll look into it further and get back to you.",
       "zh-TW": "非常抱歉，我們會重新調查後聯繫您。",
       "vi": "Xin lỗi quý khách. Chúng tôi sẽ kiểm tra lại và liên hệ sau.",
-      "ko": "죄송합니다. 다시 조사하여 연락드리겠습니다."
+      "ko": "죄송합니다. 다시 조사하여 연락드리겠습니다.",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。",
+          "isKanji": false
+        },
+        {
+          "text": "改",
+          "isKanji": true,
+          "reading": "あらた"
+        },
+        {
+          "text": "めてお",
+          "isKanji": false
+        },
+        {
+          "text": "調",
+          "isKanji": true,
+          "reading": "しら"
+        },
+        {
+          "text": "べして、ご",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません。あらためておしらべして、ごれんらくいたします。"
     }
   ],
   "title_ja": "宅配便・郵送"

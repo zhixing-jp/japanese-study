@@ -29,6 +29,14 @@
   let speaking = false;
   let paused = false;
 
+  // Chrome/WebKit 长期存在的已知问题：SpeechSynthesisUtterance 若创建后
+  // 没有被外部持续引用（只在函数局部变量里），有一定概率被垃圾回收，
+  // 导致 speechSynthesis.speak() 静默失败——不报错、不触发 onerror，
+  // 就是完全不出声，而且是间歇性的（不是每次都发生，取决于GC时机），
+  // 这正是"点了没反应，偶尔又正常"这类朗读失灵报告的典型成因。
+  // 用模块级变量长期持有引用，从根本上避免被回收。
+  let currentUtterance = null;
+
   /**
    * 朗读一段文字。
    * opts: {
@@ -39,32 +47,44 @@
    *   onEnd   — 读完回调
    *   onError — 出错回调
    * }
-   * 返回创建的 utterance，供调用方需要时读取/追踪。
+   * 注意：为了避开上述Chrome的cancel+speak过快连续调用时的已知丢失问题，
+   * 这里改为异步（cancel后等一小段时间再真正开始朗读），所以不再同步
+   * 返回 utterance——目前站内没有调用方依赖这个同步返回值。
    */
   function speak(text, opts) {
     opts = opts || {};
     if (!isSupported() || !text) return null;
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = opts.lang || 'ja-JP';
-    utterance.rate = typeof opts.rate === 'number' ? opts.rate : 1;
-    utterance.pitch = typeof opts.pitch === 'number' ? opts.pitch : 1;
-    if (opts.voice) utterance.voice = opts.voice;
+    // 开始新的朗读前，先清掉队列里可能残留的内容（若当前本就空闲，
+    // 这是安全的空操作，不影响正常播放）。
+    window.speechSynthesis.cancel();
 
-    utterance.onstart = function () { speaking = true; paused = false; };
-    utterance.onend = function () {
-      speaking = false;
-      paused = false;
-      if (typeof opts.onEnd === 'function') opts.onEnd();
-    };
-    utterance.onerror = function (e) {
-      speaking = false;
-      paused = false;
-      if (typeof opts.onError === 'function') opts.onError(e);
-    };
+    setTimeout(function () {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = opts.lang || 'ja-JP';
+      utterance.rate = typeof opts.rate === 'number' ? opts.rate : 1;
+      utterance.pitch = typeof opts.pitch === 'number' ? opts.pitch : 1;
+      if (opts.voice) utterance.voice = opts.voice;
 
-    window.speechSynthesis.speak(utterance);
-    return utterance;
+      utterance.onstart = function () { speaking = true; paused = false; };
+      utterance.onend = function () {
+        speaking = false;
+        paused = false;
+        currentUtterance = null;
+        if (typeof opts.onEnd === 'function') opts.onEnd();
+      };
+      utterance.onerror = function (e) {
+        speaking = false;
+        paused = false;
+        currentUtterance = null;
+        if (typeof opts.onError === 'function') opts.onError(e);
+      };
+
+      currentUtterance = utterance; // 持有引用，防止被GC回收导致静默失败
+      window.speechSynthesis.speak(utterance);
+    }, 80);
+
+    return null;
   }
 
   /**
@@ -149,6 +169,7 @@
     }
     speaking = false;
     paused = false;
+    currentUtterance = null;
   }
 
   function isSpeaking() {

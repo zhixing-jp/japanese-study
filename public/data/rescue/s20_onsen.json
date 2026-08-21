@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "いらっしゃいませ。大人何名様ですか。",
-      "furigana": "いらっしゃいませ。おとななんめいさまですか。",
       "zh": "欢迎光临，请问几位大人？",
       "zh-TW": "歡迎光臨，請問幾位大人？",
       "en": "Welcome. How many adults?",
@@ -16,11 +15,41 @@
       "scene": "入場・受付",
       "id": "s20-001",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        },
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。おとななんめいさまですか。"
     },
     {
       "jp": "大人2人です。何時まで入れますか。最終入館は何時ですか。",
-      "furigana": "おとな2にんです。いつまでいれますか。さいしゅうにゅうかんはなんじですか。",
       "zh": "2位大人。请问几点前可以入场？最晚几点截止入场？",
       "zh-TW": "2位大人。請問幾點前可以入場？最晚幾點截止入場？",
       "en": "Two adults. Until what time can we enter? What is the last admission time?",
@@ -29,24 +58,133 @@
       "scene": "入場・受付",
       "id": "s20-002",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "2",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "何時",
+          "isKanji": true,
+          "reading": "いつ"
+        },
+        {
+          "text": "まで",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        },
+        {
+          "text": "最終",
+          "isKanji": true,
+          "reading": "さいしゅう"
+        },
+        {
+          "text": "入館",
+          "isKanji": true,
+          "reading": "にゅうかん"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おとな2にんです。いつまでいれますか。さいしゅうにゅうかんはなんじですか。"
     },
     {
-      "jp": "営業は [22時] までで、最終入館は [21時] です。",
-      "furigana": "えいぎょうは[22じ]までで、さいしゅうにゅうかんは[21じ]です。",
-      "zh": "营业到[22点]，最晚入场时间是[21点]。",
-      "zh-TW": "營業到[22點]，最晚入場時間是[21點]。",
-      "en": "We are open until [10 PM], and the last admission is at [9 PM].",
-      "vi": "Chúng tôi mở cửa đến [22 giờ], giờ vào cuối cùng là [21 giờ].",
-      "ko": "영업은 [22시]까지이며, 마지막 입장은 [21시]입니다.",
+      "jp": "営業は22時までで、最終入館は21時です。",
+      "zh": "营业到22点，最晚入场时间是21点。",
+      "zh-TW": "營業到22點，最晚入場時間是21點。",
+      "en": "We are open until 10 PM, and the last admission is at 9 PM.",
+      "vi": "Chúng tôi mở cửa đến 22 giờ, giờ vào cuối cùng là 21 giờ.",
+      "ko": "영업은 22시까지이며, 마지막 입장은 21시입니다.",
       "scene": "入場・受付",
       "id": "s20-003",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "営業",
+          "isKanji": true,
+          "reading": "えいぎょう"
+        },
+        {
+          "text": "は22",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "までで、",
+          "isKanji": false
+        },
+        {
+          "text": "最終",
+          "isKanji": true,
+          "reading": "さいしゅう"
+        },
+        {
+          "text": "入館",
+          "isKanji": true,
+          "reading": "にゅうかん"
+        },
+        {
+          "text": "は21",
+          "isKanji": false
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "えいぎょうは22じまでで、さいしゅうにゅうかんは21じです。"
     },
     {
       "jp": "入浴料はいくらですか。",
-      "furigana": "にゅうよくりょうはいくらですか。",
       "zh": "入浴费是多少？",
       "zh-TW": "入浴費是多少？",
       "en": "How much is the admission fee?",
@@ -55,24 +193,92 @@
       "scene": "入場・受付",
       "id": "s20-004",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "入浴",
+          "isKanji": true,
+          "reading": "にゅうよく"
+        },
+        {
+          "text": "料",
+          "isKanji": true,
+          "reading": "りょう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にゅうよくりょうはいくらですか。"
     },
     {
-      "jp": "大人1人 [450円] です。券売機でチケットをお買いください。",
-      "furigana": "おとな1にん[450えん]です。けんばいきでちけっとをおかいください。",
-      "zh": "大人每位[450円]，请在自动售票机购票。",
-      "zh-TW": "大人每位[450円]，請在自動售票機購票。",
-      "en": "It's [450 yen] per adult. Please purchase a ticket at the vending machine.",
-      "vi": "Người lớn [450 yên] mỗi người. Vui lòng mua vé tại máy bán vé.",
-      "ko": "어른 1인 [450엔]입니다. 자판기에서 티켓을 구매해 주세요.",
+      "jp": "大人1人450円です。券売機でチケットをお買いください。",
+      "zh": "大人每位450円，请在自动售票机购票。",
+      "zh-TW": "大人每位450円，請在自動售票機購票。",
+      "en": "It's 450 yen per adult. Please purchase a ticket at the vending machine.",
+      "vi": "Người lớn 450 yên mỗi người. Vui lòng mua vé tại máy bán vé.",
+      "ko": "어른 1인 450엔입니다. 자판기에서 티켓을 구매해 주세요.",
       "scene": "入場・受付",
       "id": "s20-005",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "1",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "450",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "券売",
+          "isKanji": true,
+          "reading": "けんばい"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "でチケットをお",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "いください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おとな1にん450えんです。けんばいきでチケットをおかいください。"
     },
     {
       "jp": "タオルのレンタルはありますか。いくらですか。",
-      "furigana": "たおるのれんたるはありますか。いくらですか。",
       "zh": "有毛巾出租吗？多少钱？",
       "zh-TW": "有毛巾出租嗎？多少錢？",
       "en": "Do you have towel rentals? How much?",
@@ -81,24 +287,54 @@
       "scene": "入場・受付",
       "id": "s20-006",
       "subcategory": "sub01",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "タオルのレンタルはありますか。いくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "タオルのレンタルはありますか。いくらですか。"
     },
     {
-      "jp": "フェイスタオルは [100円]、バスタオルは [200円] でレンタルできます。",
-      "furigana": "ふぇいすたおるは[100えん]、ばすたおるは[200えん]でれんたるできます。",
-      "zh": "小毛巾[100円]，大浴巾[200円]可以出租。",
-      "zh-TW": "小毛巾[100円]，大浴巾[200円]可以出租。",
-      "en": "Face towels are [100 yen] and bath towels are [200 yen] to rent.",
-      "vi": "Khăn mặt thuê [100 yên], khăn tắm [200 yên].",
-      "ko": "페이스 타월은 [100엔], 배스 타월은 [200엔]에 대여 가능합니다.",
+      "jp": "フェイスタオルは100円、バスタオルは200円でレンタルできます。",
+      "zh": "小毛巾100円，大浴巾200円可以出租。",
+      "zh-TW": "小毛巾100円，大浴巾200円可以出租。",
+      "en": "Face towels are 100 yen and bath towels are 200 yen to rent.",
+      "vi": "Khăn mặt thuê 100 yên, khăn tắm 200 yên.",
+      "ko": "페이스 타월은 100엔, 배스 타월은 200엔에 대여 가능합니다.",
       "scene": "入場・受付",
       "id": "s20-007",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "フェイスタオルは100",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "、バスタオルは200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "でレンタルできます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "フェイスタオルは100えん、バスタオルは200えんでレンタルできます。"
     },
     {
       "jp": "すみません、大浴場はどこですか。",
-      "furigana": "すみません、だいよくじょうはどこですか。",
       "zh": "请问大浴场在哪里？",
       "zh-TW": "請問大浴場在哪裡？",
       "en": "Excuse me, where is the large bath?",
@@ -107,24 +343,132 @@
       "scene": "入場・受付",
       "id": "s20-008",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "大",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "浴場",
+          "isKanji": true,
+          "reading": "よくじょう"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、だいよくじょうはどこですか。"
     },
     {
-      "jp": "大浴場は [2階] にございます。カードキーが必要ですので、お持ちください。男性の入口は右、女性は左です。",
-      "furigana": "だいよくじょうは[2かい]にございます。かーどきーがひつようですので、おもちください。だんせいのいりぐちはみぎ、じょせいはひだりです。",
-      "zh": "大浴场在[2楼]，需要房卡，请随身携带。男性入口在右边，女性在左边。",
-      "zh-TW": "大浴場在[2樓]，需要房卡，請隨身攜帶。男性入口在右邊，女性在左邊。",
-      "en": "The large bath is on the [2nd floor]. You'll need your key card. The men's entrance is on the right, women's on the left.",
-      "vi": "Khu tắm lớn ở tầng [2]. Bạn cần thẻ phòng. Lối vào nam ở bên phải, nữ ở bên trái.",
-      "ko": "대욕장은 [2층]에 있습니다. 카드키가 필요하니 지참해 주세요. 남성 입구는 오른쪽, 여성은 왼쪽입니다.",
+      "jp": "大浴場は2階にございます。カードキーが必要ですので、お持ちください。男性の入口は右、女性は左です。",
+      "zh": "大浴场在2楼，需要房卡，请随身携带。男性入口在右边，女性在左边。",
+      "zh-TW": "大浴場在2樓，需要房卡，請隨身攜帶。男性入口在右邊，女性在左邊。",
+      "en": "The large bath is on the 2nd floor. You'll need your key card. The men's entrance is on the right, women's on the left.",
+      "vi": "Khu tắm lớn ở tầng 2. Bạn cần thẻ phòng. Lối vào nam ở bên phải, nữ ở bên trái.",
+      "ko": "대욕장은 2층에 있습니다. 카드키가 필요하니 지참해 주세요. 남성 입구는 오른쪽, 여성은 왼쪽입니다.",
       "scene": "入場・受付",
       "id": "s20-009",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "大",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "浴場",
+          "isKanji": true,
+          "reading": "よくじょう"
+        },
+        {
+          "text": "は2",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "にございます。カードキーが",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですので、お",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        },
+        {
+          "text": "男性",
+          "isKanji": true,
+          "reading": "だんせい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "入口",
+          "isKanji": true,
+          "reading": "いりぐち"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "右",
+          "isKanji": true,
+          "reading": "みぎ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "女性",
+          "isKanji": true,
+          "reading": "じょせい"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "左",
+          "isKanji": true,
+          "reading": "ひだり"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいよくじょうは2かいにございます。カードキーがひつようですので、おもちください。だんせいのいりぐちはみぎ、じょせいはひだりです。"
     },
     {
       "jp": "タオルは部屋から持っていきますか。",
-      "furigana": "たおるはへやからもっていきますか。",
       "zh": "毛巾需要从房间带过去吗？",
       "zh-TW": "毛巾需要從房間帶過去嗎？",
       "en": "Should I bring a towel from my room?",
@@ -133,11 +477,35 @@
       "scene": "入場・受付",
       "id": "s20-010",
       "subcategory": "sub02",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "タオルは",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "っていきますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "タオルはへやからもっていきますか。"
     },
     {
       "jp": "はい、お部屋のタオルをお使いください。大浴場にはご用意しておりません。",
-      "furigana": "はい、おへやのたおるをおつかいください。だいよくじょうにはごよういしておりません。",
       "zh": "是的，请使用房间里的毛巾。大浴场没有提供毛巾。",
       "zh-TW": "是的，請使用房間裡的毛巾。大浴場沒有提供毛巾。",
       "en": "Yes, please use the towel from your room. Towels are not provided at the large bath.",
@@ -146,11 +514,58 @@
       "scene": "入場・受付",
       "id": "s20-011",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、お",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "のタオルをお",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いください。",
+          "isKanji": false
+        },
+        {
+          "text": "大",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "浴場",
+          "isKanji": true,
+          "reading": "よくじょう"
+        },
+        {
+          "text": "にはご",
+          "isKanji": false
+        },
+        {
+          "text": "用意",
+          "isKanji": true,
+          "reading": "ようい"
+        },
+        {
+          "text": "しておりません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、おへやのタオルをおつかいください。だいよくじょうにはごよういしておりません。"
     },
     {
       "jp": "貸切風呂（家族風呂）は空いていますか。",
-      "furigana": "かしきりふろ（かぞくふろ）はあいていますか。",
       "zh": "包间浴室（家庭浴室）有空吗？",
       "zh-TW": "包間浴室（家庭浴室）有空嗎？",
       "en": "Is the private bath (family bath) available?",
@@ -159,24 +574,110 @@
       "scene": "入場・受付",
       "id": "s20-012",
       "subcategory": "sub03",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "貸切",
+          "isKanji": true,
+          "reading": "かしきり"
+        },
+        {
+          "text": "風呂",
+          "isKanji": true,
+          "reading": "ふろ"
+        },
+        {
+          "text": "（",
+          "isKanji": false
+        },
+        {
+          "text": "家族",
+          "isKanji": true,
+          "reading": "かぞく"
+        },
+        {
+          "text": "風呂",
+          "isKanji": true,
+          "reading": "ふろ"
+        },
+        {
+          "text": "）は",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしきりふろ（かぞくふろ）はあいていますか。"
     },
     {
-      "jp": "ただいま [1室] 空いております。1時間 [2000円] です。ご予約されますか。",
-      "furigana": "ただいま[1しつ]あいております。1じかん[2000えん]です。ごよやくされますか。",
-      "zh": "现在有[1间]空着，每小时[2000円]，您要预约吗？",
-      "zh-TW": "現在有[1間]空著，每小時[2000円]，您要預約嗎？",
-      "en": "We have [1] room available now. It's [2,000 yen] per hour. Would you like to reserve it?",
-      "vi": "Hiện có [1] phòng trống. Giá [2,000 yên] mỗi giờ. Bạn có muốn đặt không?",
-      "ko": "현재 [1실] 비어 있습니다. 1시간 [2,000엔]입니다. 예약하시겠어요?",
+      "jp": "ただいま1室空いております。1時間2000円です。ご予約されますか。",
+      "zh": "现在有1间空着，每小时2000円，您要预约吗？",
+      "zh-TW": "現在有1間空著，每小時2000円，您要預約嗎？",
+      "en": "We have 1 room available now. It's 2,000 yen per hour. Would you like to reserve it?",
+      "vi": "Hiện có 1 phòng trống. Giá 2.000 yên mỗi giờ. Bạn có muốn đặt không?",
+      "ko": "현재 1실 비어 있습니다. 1시간 2,000엔입니다. 예약하시겠어요?",
       "scene": "入場・受付",
       "id": "s20-013",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ただいま1",
+          "isKanji": false
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いております。1",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "2000",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。ご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "されますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ただいま1しつあいております。1じかん2000えんです。ごよやくされますか。"
     },
     {
       "jp": "あいにく本日は予約でいっぱいです。大浴場のみとなります。",
-      "furigana": "あいにくほんじつはよやくでいっぱいです。だいよくじょうのみとなります。",
       "zh": "很遗憾，今天已经全部预约满了，只能使用大浴场。",
       "zh-TW": "很遺憾，今天已經全部預約滿了，只能使用大浴場。",
       "en": "Unfortunately, all private baths are fully booked today. Only the large bath is available.",
@@ -185,11 +686,49 @@
       "scene": "入場・受付",
       "id": "s20-014",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あいにく",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "でいっぱいです。",
+          "isKanji": false
+        },
+        {
+          "text": "大",
+          "isKanji": true,
+          "reading": "だい"
+        },
+        {
+          "text": "浴場",
+          "isKanji": true,
+          "reading": "よくじょう"
+        },
+        {
+          "text": "のみとなります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あいにくほんじつはよやくでいっぱいです。だいよくじょうのみとなります。"
     },
     {
       "jp": "ロッカーはどこでもいいですか。",
-      "furigana": "ろっかーはどこでもいいですか。",
       "zh": "储物柜可以用任意一个吗？",
       "zh-TW": "儲物櫃可以用任意一個嗎？",
       "en": "Can I use any locker?",
@@ -198,11 +737,17 @@
       "scene": "更衣室",
       "id": "s20-015",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ロッカーはどこでもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ロッカーはどこでもいいですか。"
     },
     {
       "jp": "はい、空いているところをご利用ください。100円硬貨が必要なタイプです。返却時に戻ります。",
-      "furigana": "はい、あいているところをごりようください。100えんこうかがひつようなたいぷです。へんきゃくじにもどります。",
       "zh": "是的，请使用空着的任意一个。需要100円硬币，退出时会退还。",
       "zh-TW": "是的，請使用空著的任意一個。需要100円硬幣，退出時會退還。",
       "en": "Yes, please use any available one. It requires a 100-yen coin, which will be returned when you leave.",
@@ -211,11 +756,81 @@
       "scene": "更衣室",
       "id": "s20-016",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いているところをご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "ください。100",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "硬貨",
+          "isKanji": true,
+          "reading": "こうか"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "なタイプです。",
+          "isKanji": false
+        },
+        {
+          "text": "返却",
+          "isKanji": true,
+          "reading": "へんきゃく"
+        },
+        {
+          "text": "時",
+          "isKanji": true,
+          "reading": "じ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "戻",
+          "isKanji": true,
+          "reading": "もど"
+        },
+        {
+          "text": "ります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あいているところをごりようください。100えんこうかがひつようなタイプです。へんきゃくじにもどります。"
     },
     {
       "jp": "100円玉がないんですが、両替できますか。",
-      "furigana": "100えんだまがないんですが、りょうがえできますか。",
       "zh": "我没有100円硬币，可以换零钱吗？",
       "zh-TW": "我沒有100円硬幣，可以換零錢嗎？",
       "en": "I don't have a 100-yen coin. Can I get change?",
@@ -224,11 +839,40 @@
       "scene": "更衣室",
       "id": "s20-017",
       "subcategory": "sub04",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "100",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "玉",
+          "isKanji": true,
+          "reading": "だま"
+        },
+        {
+          "text": "がないんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "100えんだまがないんですが、りょうがえできますか。"
     },
     {
       "jp": "脱衣所に両替機がございます。",
-      "furigana": "だついしょにりょうがえきがございます。",
       "zh": "更衣室里有换币机。",
       "zh-TW": "更衣室裡有換幣機。",
       "en": "There is a change machine in the changing room.",
@@ -237,11 +881,41 @@
       "scene": "更衣室",
       "id": "s20-018",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "脱衣",
+          "isKanji": true,
+          "reading": "だつい"
+        },
+        {
+          "text": "所",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "がございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だついしょにりょうがえきがございます。"
     },
     {
       "jp": "申し訳ございません。タトゥーのある方は入浴をご遠慮いただいております。",
-      "furigana": "もうしわけございません。タトゥーのあるほうはにゅうよくをごえんりょいただいております。",
       "zh": "非常抱歉，有纹身的客人恕不能入浴。",
       "zh-TW": "非常抱歉，有紋身的客人恕不能入浴。",
       "en": "We're sorry, but guests with tattoos are not permitted to use the baths.",
@@ -250,11 +924,58 @@
       "scene": "更衣室",
       "id": "s20-019",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。タトゥーのある",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "ほう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "入浴",
+          "isKanji": true,
+          "reading": "にゅうよく"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "遠慮",
+          "isKanji": true,
+          "reading": "えんりょ"
+        },
+        {
+          "text": "いただいております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません。タトゥーのあるほうはにゅうよくをごえんりょいただいております。"
     },
     {
       "jp": "小さいタトゥーですが、シールで隠せますか。",
-      "furigana": "ちいさいタトゥーですが、しーるでかくせますか。",
       "zh": "我的纹身很小，可以用贴纸遮住吗？",
       "zh-TW": "我的紋身很小，可以用貼紙遮住嗎？",
       "en": "My tattoo is small. Can I cover it with a sticker?",
@@ -263,11 +984,31 @@
       "scene": "更衣室",
       "id": "s20-020",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "小",
+          "isKanji": true,
+          "reading": "ちい"
+        },
+        {
+          "text": "さいタトゥーですが、シールで",
+          "isKanji": false
+        },
+        {
+          "text": "隠",
+          "isKanji": true,
+          "reading": "かく"
+        },
+        {
+          "text": "せますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちいさいタトゥーですが、シールでかくせますか。"
     },
     {
       "jp": "はい、そのサイズなら大丈夫です。こちらのシールをお使いください。",
-      "furigana": "はい、そのさいずならだいじょうぶです。こちらのしーるをおつかいください。",
       "zh": "是的，那个大小没问题，请使用这张贴纸。",
       "zh-TW": "是的，那個大小沒問題，請使用這張貼紙。",
       "en": "Yes, that size is fine. Please use this sticker.",
@@ -276,11 +1017,35 @@
       "scene": "更衣室",
       "id": "s20-021",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、そのサイズなら",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。こちらのシールをお",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、そのサイズならだいじょうぶです。こちらのシールをおつかいください。"
     },
     {
       "jp": "お風呂の中にスマホを持ち込んでもいいですか。",
-      "furigana": "おふろのなかにスマホをもちこんでもいいですか。",
       "zh": "可以把手机带进浴场吗？",
       "zh-TW": "可以把手機帶進浴場嗎？",
       "en": "Can I bring my smartphone into the bath area?",
@@ -289,11 +1054,53 @@
       "scene": "更衣室",
       "id": "s20-022",
       "subcategory": "sub05",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "風呂",
+          "isKanji": true,
+          "reading": "ふろ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "にスマホを",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "んでもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おふろのなかにスマホをもちこんでもいいですか。"
     },
     {
       "jp": "いいえ、脱衣所より先は撮影禁止です。スマホはロッカーに置いてください。",
-      "furigana": "いいえ、だついしょよりさきはさつえいきんしです。すまほはろっかーにおいてください。",
       "zh": "不可以，更衣室以内禁止拍照，请把手机放在储物柜里。",
       "zh-TW": "不可以，更衣室以內禁止拍照，請把手機放在儲物櫃裡。",
       "en": "No, photography is prohibited beyond the changing room. Please leave your phone in the locker.",
@@ -302,11 +1109,63 @@
       "scene": "更衣室",
       "id": "s20-023",
       "subcategory": "sub05",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いいえ、",
+          "isKanji": false
+        },
+        {
+          "text": "脱衣",
+          "isKanji": true,
+          "reading": "だつい"
+        },
+        {
+          "text": "所",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "より",
+          "isKanji": false
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "撮影",
+          "isKanji": true,
+          "reading": "さつえい"
+        },
+        {
+          "text": "禁止",
+          "isKanji": true,
+          "reading": "きんし"
+        },
+        {
+          "text": "です。スマホはロッカーに",
+          "isKanji": false
+        },
+        {
+          "text": "置",
+          "isKanji": true,
+          "reading": "お"
+        },
+        {
+          "text": "いてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、だついしょよりさきはさつえいきんしです。スマホはロッカーにおいてください。"
     },
     {
       "jp": "すみません、このシャワーはどうやって出しますか。",
-      "furigana": "すみません、このしゃわーはどうやってだしますか。",
       "zh": "请问这个淋浴怎么出水？",
       "zh-TW": "請問這個淋浴怎麼出水？",
       "en": "Excuse me, how do I turn on this shower?",
@@ -315,11 +1174,26 @@
       "scene": "浴場内",
       "id": "s20-024",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、このシャワーはどうやって",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "しますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、このシャワーはどうやってだしますか。"
     },
     {
       "jp": "ボタンを長押ししてください。",
-      "furigana": "ぼたんをなげしししてください。",
       "zh": "请长按按钮。",
       "zh-TW": "請長按按鈕。",
       "en": "Please press and hold the button.",
@@ -328,11 +1202,26 @@
       "scene": "浴場内",
       "id": "s20-025",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ボタンを",
+          "isKanji": false
+        },
+        {
+          "text": "長押",
+          "isKanji": true,
+          "reading": "なげし"
+        },
+        {
+          "text": "ししてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ボタンをなげしししてください。"
     },
     {
       "jp": "蛇口を回してください。",
-      "furigana": "じゃぐちをまわしてください。",
       "zh": "请转动水龙头。",
       "zh-TW": "請轉動水龍頭。",
       "en": "Please turn the faucet.",
@@ -341,11 +1230,31 @@
       "scene": "浴場内",
       "id": "s20-026",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "蛇口",
+          "isKanji": true,
+          "reading": "じゃぐち"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "回",
+          "isKanji": true,
+          "reading": "まわ"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じゃぐちをまわしてください。"
     },
     {
       "jp": "温度は変えられますか。",
-      "furigana": "おんどはかえられますか。",
       "zh": "可以调节温度吗？",
       "zh-TW": "可以調節溫度嗎？",
       "en": "Can I adjust the temperature?",
@@ -354,11 +1263,31 @@
       "scene": "浴場内",
       "id": "s20-027",
       "subcategory": "sub06",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "温度",
+          "isKanji": true,
+          "reading": "おんど"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "変",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えられますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おんどはかえられますか。"
     },
     {
       "jp": "はい、そちらのレバーで調整できます。",
-      "furigana": "はい、そちらのればーでちょうせいできます。",
       "zh": "可以，用那边的拉杆调节。",
       "zh-TW": "可以，用那邊的拉桿調節。",
       "en": "Yes, you can adjust it with that lever over there.",
@@ -367,11 +1296,26 @@
       "scene": "浴場内",
       "id": "s20-028",
       "subcategory": "sub06",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、そちらのレバーで",
+          "isKanji": false
+        },
+        {
+          "text": "調整",
+          "isKanji": true,
+          "reading": "ちょうせい"
+        },
+        {
+          "text": "できます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、そちらのレバーでちょうせいできます。"
     },
     {
       "jp": "このお湯は熱いですか。何度ですか。",
-      "furigana": "このおゆはあついですか。なんどですか。",
       "zh": "这个池子的水热吗？几度？",
       "zh-TW": "這個池子的水熱嗎？幾度？",
       "en": "Is this bath hot? What temperature is it?",
@@ -380,24 +1324,109 @@
       "scene": "浴場内",
       "id": "s20-029",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "このお",
+          "isKanji": false
+        },
+        {
+          "text": "湯",
+          "isKanji": true,
+          "reading": "ゆ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "熱",
+          "isKanji": true,
+          "reading": "あつ"
+        },
+        {
+          "text": "いですか。",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "度",
+          "isKanji": true,
+          "reading": "ど"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このおゆはあついですか。なんどですか。"
     },
     {
-      "jp": "少し熱めの [42度] です。あちらのぬるめのお湯は [39度] です。",
-      "furigana": "すこしねつめの[42ど]です。あちらのぬるめのおゆは[39ど]です。",
-      "zh": "稍微偏热，[42度]。那边温一点的是[39度]。",
-      "zh-TW": "稍微偏熱，[42度]。那邊溫一點的是[39度]。",
-      "en": "It's a bit hot at [42°C]. The warmer over there is [39°C].",
-      "vi": "Hơi nóng một chút, [42°C]. Cái ấm hơn ở đó là [39°C].",
-      "ko": "약간 뜨거운 [42도]입니다. 저쪽 미지근한 탕은 [39도]입니다.",
+      "jp": "少し熱めの42度です。あちらのぬるめのお湯は39度です。",
+      "zh": "稍微偏热，42度。那边温一点的是39度。",
+      "zh-TW": "稍微偏熱，42度。那邊溫一點的是39度。",
+      "en": "It's a bit hot at 42°C. The warmer over there is 39°C.",
+      "vi": "Hơi nóng một chút, 42°C. Cái ấm hơn ở đó là 39°C.",
+      "ko": "약간 뜨거운 42도입니다. 저쪽 미지근한 탕은 39도입니다.",
       "scene": "浴場内",
       "id": "s20-030",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "少",
+          "isKanji": true,
+          "reading": "すこ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "熱",
+          "isKanji": true,
+          "reading": "ねつ"
+        },
+        {
+          "text": "めの42",
+          "isKanji": false
+        },
+        {
+          "text": "度",
+          "isKanji": true,
+          "reading": "ど"
+        },
+        {
+          "text": "です。あちらのぬるめのお",
+          "isKanji": false
+        },
+        {
+          "text": "湯",
+          "isKanji": true,
+          "reading": "ゆ"
+        },
+        {
+          "text": "は39",
+          "isKanji": false
+        },
+        {
+          "text": "度",
+          "isKanji": true,
+          "reading": "ど"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すこしねつめの42どです。あちらのぬるめのおゆは39どです。"
     },
     {
       "jp": "何分くらい入るのがいいですか。",
-      "furigana": "なにぶんくらいはいるのがいいですか。",
       "zh": "泡多久比较好？",
       "zh-TW": "泡多久比較好？",
       "en": "How long should I stay in the bath?",
@@ -406,24 +1435,100 @@
       "scene": "浴場内",
       "id": "s20-031",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "何分",
+          "isKanji": true,
+          "reading": "なにぶん"
+        },
+        {
+          "text": "くらい",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "るのがいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なにぶんくらいはいるのがいいですか。"
     },
     {
-      "jp": "最初は [10〜15分] を目安に、こまめに休憩を挟んでください。のぼせに注意してください。",
-      "furigana": "さいしょは[10〜15ふん]をめやすに、こまめにきゅうけいをはさんでください。のぼせにちゅういしてください。",
-      "zh": "第一次以[10〜15分钟]为标准，要经常休息，注意不要过热。",
-      "zh-TW": "第一次以[10〜15分鐘]為標準，要經常休息，注意不要過熱。",
-      "en": "Aim for [10-15 minutes] at first, and take frequent breaks. Be careful not to overheat.",
-      "vi": "Lần đầu nên ngâm khoảng [10-15 phút], nghỉ thường xuyên. Cẩn thận đừng để cơ thể quá nóng.",
-      "ko": "처음에는 [10~15분]을 기준으로, 자주 휴식을 취해 주세요. 어지러움에 주의하세요.",
+      "jp": "最初は10〜15分を目安に、こまめに休憩を挟んでください。のぼせに注意してください。",
+      "zh": "第一次以10〜15分钟为标准，要经常休息，注意不要过热。",
+      "zh-TW": "第一次以10〜15分鐘為標準，要經常休息，注意不要過熱。",
+      "en": "Aim for 10-15 minutes at first, and take frequent breaks. Be careful not to overheat.",
+      "vi": "Lần đầu nên ngâm khoảng 10-15 phút, nghỉ thường xuyên. Cẩn thận đừng để cơ thể quá nóng.",
+      "ko": "처음에는 10~15분을 기준으로, 자주 휴식을 취해 주세요. 어지러움에 주의하세요.",
       "scene": "浴場内",
       "id": "s20-032",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "最初",
+          "isKanji": true,
+          "reading": "さいしょ"
+        },
+        {
+          "text": "は10〜15",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "目安",
+          "isKanji": true,
+          "reading": "めやす"
+        },
+        {
+          "text": "に、こまめに",
+          "isKanji": false
+        },
+        {
+          "text": "休憩",
+          "isKanji": true,
+          "reading": "きゅうけい"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "挟",
+          "isKanji": true,
+          "reading": "はさ"
+        },
+        {
+          "text": "んでください。のぼせに",
+          "isKanji": false
+        },
+        {
+          "text": "注意",
+          "isKanji": true,
+          "reading": "ちゅうい"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいしょは10〜15ふんをめやすに、こまめにきゅうけいをはさんでください。のぼせにちゅういしてください。"
     },
     {
       "jp": "露天風呂はどこですか。",
-      "furigana": "ろてんぶろはどこですか。",
       "zh": "露天温泉在哪里？",
       "zh-TW": "露天溫泉在哪裡？",
       "en": "Where is the outdoor bath?",
@@ -432,11 +1537,22 @@
       "scene": "浴場内",
       "id": "s20-033",
       "subcategory": "sub07",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "露天風呂",
+          "isKanji": true,
+          "reading": "ろてんぶろ"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ろてんぶろはどこですか。"
     },
     {
       "jp": "あちらの扉の外にございます。",
-      "furigana": "あちらのとびらのそとにございます。",
       "zh": "在那扇门的外面。",
       "zh-TW": "在那扇門的外面。",
       "en": "It's outside through that door over there.",
@@ -445,11 +1561,35 @@
       "scene": "浴場内",
       "id": "s20-034",
       "subcategory": "sub07",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらの",
+          "isKanji": false
+        },
+        {
+          "text": "扉",
+          "isKanji": true,
+          "reading": "とびら"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "外",
+          "isKanji": true,
+          "reading": "そと"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらのとびらのそとにございます。"
     },
     {
       "jp": "ここは混浴ですか。女性専用のお風呂はありますか。",
-      "furigana": "ここはこんよくですか。じょせいせんようのおふろはありますか。",
       "zh": "这里是混浴吗？有女性专用浴池吗？",
       "zh-TW": "這裡是混浴嗎？有女性專用浴池嗎？",
       "en": "Is this a mixed-gender bath? Is there a women-only bath?",
@@ -458,11 +1598,49 @@
       "scene": "浴場内",
       "id": "s20-035",
       "subcategory": "sub08",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ここは",
+          "isKanji": false
+        },
+        {
+          "text": "混浴",
+          "isKanji": true,
+          "reading": "こんよく"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        },
+        {
+          "text": "女性",
+          "isKanji": true,
+          "reading": "じょせい"
+        },
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "風呂",
+          "isKanji": true,
+          "reading": "ふろ"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここはこんよくですか。じょせいせんようのおふろはありますか。"
     },
     {
       "jp": "こちらは男女別です。女性用は向かい側にございます。",
-      "furigana": "こちらはだんじょべつです。じょせいようはむかいがわにございます。",
       "zh": "这里是男女分开的，女性浴场在对面。",
       "zh-TW": "這裡是男女分開的，女性浴場在對面。",
       "en": "This is gender-separated. The women's bath is on the other side.",
@@ -471,11 +1649,63 @@
       "scene": "浴場内",
       "id": "s20-036",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらは",
+          "isKanji": false
+        },
+        {
+          "text": "男女",
+          "isKanji": true,
+          "reading": "だんじょ"
+        },
+        {
+          "text": "別",
+          "isKanji": true,
+          "reading": "べつ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "女性",
+          "isKanji": true,
+          "reading": "じょせい"
+        },
+        {
+          "text": "用",
+          "isKanji": true,
+          "reading": "よう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "向",
+          "isKanji": true,
+          "reading": "む"
+        },
+        {
+          "text": "かい",
+          "isKanji": false
+        },
+        {
+          "text": "側",
+          "isKanji": true,
+          "reading": "がわ"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらはだんじょべつです。じょせいようはむかいがわにございます。"
     },
     {
       "jp": "こちらは混浴となっております。水着着用でお入りください。",
-      "furigana": "こちらはこんよくとなっております。みずぎちゃくようでおはいりください。",
       "zh": "这里是混浴，请穿着泳衣入浴。",
       "zh-TW": "這裡是混浴，請穿著泳衣入浴。",
       "en": "This is a mixed-gender bath. Please wear a swimsuit.",
@@ -484,11 +1714,49 @@
       "scene": "浴場内",
       "id": "s20-037",
       "subcategory": "sub08",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらは",
+          "isKanji": false
+        },
+        {
+          "text": "混浴",
+          "isKanji": true,
+          "reading": "こんよく"
+        },
+        {
+          "text": "となっております。",
+          "isKanji": false
+        },
+        {
+          "text": "水着",
+          "isKanji": true,
+          "reading": "みずぎ"
+        },
+        {
+          "text": "着用",
+          "isKanji": true,
+          "reading": "ちゃくよう"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "りください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらはこんよくとなっております。みずぎちゃくようでおはいりください。"
     },
     {
       "jp": "マッサージ機を使いたいんですが、何分でいくらですか。",
-      "furigana": "まっさーじきをつかいたいんですが、なにぶんでいくらですか。",
       "zh": "我想用按摩椅，多少分钟多少钱？",
       "zh-TW": "我想用按摩椅，多少分鐘多少錢？",
       "en": "I'd like to use the massage chair. How much is it and for how long?",
@@ -497,24 +1765,90 @@
       "scene": "休憩・設備",
       "id": "s20-038",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "マッサージ",
+          "isKanji": false
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いたいんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "何分",
+          "isKanji": true,
+          "reading": "なにぶん"
+        },
+        {
+          "text": "でいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "マッサージきをつかいたいんですが、なにぶんでいくらですか。"
     },
     {
-      "jp": "15分で [200円] です。フロントで両替できます。",
-      "furigana": "15ふんで[200えん]です。ふろんとでりょうがえできます。",
-      "zh": "15分钟[200円]，前台可以换零钱。",
-      "zh-TW": "15分鐘[200円]，前台可以換零錢。",
-      "en": "[200 yen] for 15 minutes. You can get change at the front desk.",
-      "vi": "[200 yên] cho 15 phút. Bạn có thể đổi tiền tại lễ tân.",
-      "ko": "15분에 [200엔]입니다. 프런트에서 환전할 수 있습니다.",
+      "jp": "15分で200円です。フロントで両替できます。",
+      "zh": "15分钟200円，前台可以换零钱。",
+      "zh-TW": "15分鐘200円，前台可以換零錢。",
+      "en": "200 yen for 15 minutes. You can get change at the front desk.",
+      "vi": "200 yên cho 15 phút. Bạn có thể đổi tiền tại lễ tân.",
+      "ko": "15분에 200엔입니다. 프런트에서 환전할 수 있습니다.",
       "scene": "休憩・設備",
       "id": "s20-039",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "15",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "で200",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。フロントで",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "できます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "15ふんで200えんです。フロントでりょうがえできます。"
     },
     {
       "jp": "冷たい飲み物はありますか。",
-      "furigana": "つめたいのみものはありますか。",
       "zh": "有冷饮吗？",
       "zh-TW": "有冷飲嗎？",
       "en": "Do you have cold drinks?",
@@ -523,24 +1857,110 @@
       "scene": "休憩・設備",
       "id": "s20-040",
       "subcategory": "sub09",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "冷",
+          "isKanji": true,
+          "reading": "つめ"
+        },
+        {
+          "text": "たい",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つめたいのみものはありますか。"
     },
     {
-      "jp": "ロビーの自動販売機をご利用ください。一番人気は [フルーツ牛乳] です。",
-      "furigana": "ろびーのじどうはんばいきをごりようください。いちばんにんきは[ふるーつぎゅうにゅう]です。",
-      "zh": "请使用大厅的自动售货机，最受欢迎的是[水果牛奶]。",
-      "zh-TW": "請使用大廳的自動販賣機，最受歡迎的是[水果牛奶]。",
-      "en": "Please use the vending machine in the lobby. The most popular item is [fruit milk].",
-      "vi": "Vui lòng dùng máy bán hàng tự động ở sảnh. Phổ biến nhất là [sữa trái cây].",
-      "ko": "로비 자판기를 이용해 주세요. 가장 인기 있는 것은 [과일 우유]입니다.",
+      "jp": "ロビーの自動販売機をご利用ください。一番人気はフルーツ牛乳です。",
+      "zh": "请使用大厅的自动售货机，最受欢迎的是水果牛奶。",
+      "zh-TW": "請使用大廳的自動販賣機，最受歡迎的是水果牛奶。",
+      "en": "Please use the vending machine in the lobby. The most popular item is fruit milk.",
+      "vi": "Vui lòng dùng máy bán hàng tự động ở sảnh. Phổ biến nhất là sữa trái cây.",
+      "ko": "로비 자판기를 이용해 주세요. 가장 인기 있는 것은 과일 우유입니다.",
       "scene": "休憩・設備",
       "id": "s20-041",
       "subcategory": "sub09",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ロビーの",
+          "isKanji": false
+        },
+        {
+          "text": "自動",
+          "isKanji": true,
+          "reading": "じどう"
+        },
+        {
+          "text": "販売",
+          "isKanji": true,
+          "reading": "はんばい"
+        },
+        {
+          "text": "機",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        },
+        {
+          "text": "一番",
+          "isKanji": true,
+          "reading": "いちばん"
+        },
+        {
+          "text": "人気",
+          "isKanji": true,
+          "reading": "にんき"
+        },
+        {
+          "text": "はフルーツ",
+          "isKanji": false
+        },
+        {
+          "text": "牛乳",
+          "isKanji": true,
+          "reading": "ぎゅうにゅう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ロビーのじどうはんばいきをごりようください。いちばんにんきはフルーツぎゅうにゅうです。"
     },
     {
       "jp": "さっきお風呂の中にメガネを忘れたかもしれません。確認してもらえますか。",
-      "furigana": "さっきおふろのなかにめがねをわすれたかもしれません。かくにんしてもらえますか。",
       "zh": "我可能把眼镜忘在浴场里了，可以帮我确认一下吗？",
       "zh-TW": "我可能把眼鏡忘在浴場裡了，可以幫我確認一下嗎？",
       "en": "I may have left my glasses in the bath earlier. Could you check for me?",
@@ -549,11 +1969,53 @@
       "scene": "忘れ物",
       "id": "s20-042",
       "subcategory": "sub10",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "さっきお",
+          "isKanji": false
+        },
+        {
+          "text": "風呂",
+          "isKanji": true,
+          "reading": "ふろ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "にメガネを",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れたかもしれません。",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "してもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さっきおふろのなかにメガネをわすれたかもしれません。かくにんしてもらえますか。"
     },
     {
       "jp": "お名前とロッカー番号をお願いします。すぐ確認いたします。",
-      "furigana": "おなまえとろっかーばんごうをおねがいします。すぐかくにんいたします。",
       "zh": "请告诉我您的姓名和储物柜号码，我马上去确认。",
       "zh-TW": "請告訴我您的姓名和儲物櫃號碼，我馬上去確認。",
       "en": "Could I have your name and locker number? I'll check right away.",
@@ -562,11 +2024,53 @@
       "scene": "忘れ物",
       "id": "s20-043",
       "subcategory": "sub10",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "とロッカー",
+          "isKanji": false
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。すぐ",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おなまえとロッカーばんごうをおねがいします。すぐかくにんいたします。"
     },
     {
       "jp": "お待たせしました。こちらにございました。",
-      "furigana": "おまたせしました。こちらにございました。",
       "zh": "让您久等了，找到了在这里。",
       "zh-TW": "讓您久等了，找到了在這裡。",
       "en": "Sorry for the wait. We found it here.",
@@ -575,11 +2079,26 @@
       "scene": "忘れ物",
       "id": "s20-044",
       "subcategory": "sub10",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "たせしました。こちらにございました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おまたせしました。こちらにございました。"
     },
     {
       "jp": "岩盤浴も利用したいんですが、どうすればいいですか。",
-      "furigana": "がんばんよくもりようしたいんですが、どうすればいいですか。",
       "zh": "我也想体验岩盘浴，应该怎么做？",
       "zh-TW": "我也想體驗岩盤浴，應該怎麼做？",
       "en": "I'd also like to use the hot stone bath. What should I do?",
@@ -588,11 +2107,36 @@
       "scene": "岩盤浴",
       "id": "s20-045",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "したいんですが、どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がんばんよくもりようしたいんですが、どうすればいいですか。"
     },
     {
       "jp": "岩盤浴は専用の館内着とマットが必要です。入浴＋岩盤浴のセットプランがお得です。",
-      "furigana": "がんばんよくはせんようのかんないぎとまっとがひつようです。にゅうよくたすがんばんよくのせっとぷらんがおとくです。",
       "zh": "岩盘浴需要专用的馆内服和垫子，入浴+岩盘浴的套餐比较划算。",
       "zh-TW": "岩盤浴需要專用的館內服和墊子，入浴+岩盤浴的套餐比較划算。",
       "en": "The hot stone bath requires special indoor wear and a mat. The bath + hot stone bath set plan is a great deal.",
@@ -601,11 +2145,91 @@
       "scene": "岩盤浴",
       "id": "s20-046",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "館内",
+          "isKanji": true,
+          "reading": "かんない"
+        },
+        {
+          "text": "着",
+          "isKanji": true,
+          "reading": "ぎ"
+        },
+        {
+          "text": "とマットが",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "入浴",
+          "isKanji": true,
+          "reading": "にゅうよく"
+        },
+        {
+          "text": "＋",
+          "isKanji": false
+        },
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "のセットプランがお",
+          "isKanji": false
+        },
+        {
+          "text": "得",
+          "isKanji": true,
+          "reading": "とく"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がんばんよくはせんようのかんないぎとマットがひつようです。にゅうよく＋がんばんよくのセットプランがおとくです。"
     },
     {
       "jp": "料金はいくらですか。",
-      "furigana": "りょうきんはいくらですか。",
       "zh": "费用是多少？",
       "zh-TW": "費用是多少？",
       "en": "How much does it cost?",
@@ -614,24 +2238,92 @@
       "scene": "岩盤浴",
       "id": "s20-047",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "料金",
+          "isKanji": true,
+          "reading": "りょうきん"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうきんはいくらですか。"
     },
     {
-      "jp": "大人1人 [1500円] です。タオルセットと岩盤浴着をこちらでお渡しします。",
-      "furigana": "おとな1にん[1500えん]です。たおるせっととがんばんよくぎをこちらでおわたしします。",
-      "zh": "大人每位[1500円]，毛巾套装和岩盘浴服在这里领取。",
-      "zh-TW": "大人每位[1500円]，毛巾套裝和岩盤浴服在這裡領取。",
-      "en": "[1,500 yen] per adult. We'll provide a towel set and hot stone bath wear here.",
-      "vi": "[1,500 yên] mỗi người lớn. Chúng tôi sẽ cung cấp bộ khăn và trang phục đá nóng tại đây.",
-      "ko": "어른 1인 [1,500엔]입니다. 수건 세트와 암반욕복은 여기서 드립니다.",
+      "jp": "大人1人1500円です。タオルセットと岩盤浴着をこちらでお渡しします。",
+      "zh": "大人每位1500円，毛巾套装和岩盘浴服在这里领取。",
+      "zh-TW": "大人每位1500円，毛巾套裝和岩盤浴服在這裡領取。",
+      "en": "1,500 yen per adult. We'll provide a towel set and hot stone bath wear here.",
+      "vi": "1.500 yên mỗi người lớn. Chúng tôi sẽ cung cấp bộ khăn và trang phục đá nóng tại đây.",
+      "ko": "어른 1인 1,500엔입니다. 수건 세트와 암반욕복은 여기서 드립니다.",
       "scene": "岩盤浴",
       "id": "s20-048",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "大人",
+          "isKanji": true,
+          "reading": "おとな"
+        },
+        {
+          "text": "1",
+          "isKanji": false
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "にん"
+        },
+        {
+          "text": "1500",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "です。タオルセットと",
+          "isKanji": false
+        },
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "着",
+          "isKanji": true,
+          "reading": "ぎ"
+        },
+        {
+          "text": "をこちらでお",
+          "isKanji": false
+        },
+        {
+          "text": "渡",
+          "isKanji": true,
+          "reading": "わた"
+        },
+        {
+          "text": "しします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おとな1にん1500えんです。タオルセットとがんばんよくぎをこちらでおわたしします。"
     },
     {
       "jp": "岩盤浴の利用に制限時間はありますか。",
-      "furigana": "がんばんよくのりようにせいげんじかんはありますか。",
       "zh": "岩盘浴有时间限制吗？",
       "zh-TW": "岩盤浴有時間限制嗎？",
       "en": "Is there a time limit for the hot stone bath?",
@@ -640,11 +2332,50 @@
       "scene": "岩盤浴",
       "id": "s20-049",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "制限",
+          "isKanji": true,
+          "reading": "せいげん"
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がんばんよくのりようにせいげんじかんはありますか。"
     },
     {
       "jp": "いいえ、営業時間内なら無制限でご利用いただけます。専用の休憩エリアもございます。",
-      "furigana": "いいえ、えいぎょうじかんないならむせいげんでごりよういただけます。せんようのきゅうけいえりあもございます。",
       "zh": "没有，营业时间内可以无限次使用，还有专用休息区。",
       "zh-TW": "沒有，營業時間內可以無限次使用，還有專用休息區。",
       "en": "No, you can use it unlimited times during business hours. There is also a dedicated rest area.",
@@ -653,11 +2384,72 @@
       "scene": "岩盤浴",
       "id": "s20-050",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いいえ、",
+          "isKanji": false
+        },
+        {
+          "text": "営業",
+          "isKanji": true,
+          "reading": "えいぎょう"
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "内",
+          "isKanji": true,
+          "reading": "ない"
+        },
+        {
+          "text": "なら",
+          "isKanji": false
+        },
+        {
+          "text": "無制限",
+          "isKanji": true,
+          "reading": "むせいげん"
+        },
+        {
+          "text": "でご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "いただけます。",
+          "isKanji": false
+        },
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "休憩",
+          "isKanji": true,
+          "reading": "きゅうけい"
+        },
+        {
+          "text": "エリアもございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、えいぎょうじかんないならむせいげんでごりよういただけます。せんようのきゅうけいエリアもございます。"
     },
     {
       "jp": "子供も岩盤浴に入れますか。",
-      "furigana": "こどももがんばんよくにいれますか。",
       "zh": "小孩也可以使用岩盘浴吗？",
       "zh-TW": "小孩也可以使用岩盤浴嗎？",
       "en": "Can children use the hot stone bath?",
@@ -666,24 +2458,115 @@
       "scene": "岩盤浴",
       "id": "s20-051",
       "subcategory": "sub11",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "子供",
+          "isKanji": true,
+          "reading": "こども"
+        },
+        {
+          "text": "も",
+          "isKanji": false
+        },
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こどももがんばんよくにいれますか。"
     },
     {
-      "jp": "申し訳ございません。岩盤浴は [12歳] 以上のみご利用いただけます。",
-      "furigana": "もうしわけございません。がんばんよくは[12さい]いじょうのみごりよういただけます。",
-      "zh": "非常抱歉，岩盘浴仅限[12岁]以上使用。",
-      "zh-TW": "非常抱歉，岩盤浴僅限[12歲]以上使用。",
-      "en": "I'm sorry. The hot stone bath is only available for guests aged [12] and above.",
-      "vi": "Xin lỗi. Phòng đá nóng chỉ dành cho khách từ [12 tuổi] trở lên.",
-      "ko": "죄송합니다. 암반욕은 [12세] 이상만 이용 가능합니다.",
+      "jp": "申し訳ございません。岩盤浴は12歳以上のみご利用いただけます。",
+      "zh": "非常抱歉，岩盘浴仅限12岁以上使用。",
+      "zh-TW": "非常抱歉，岩盤浴僅限12歲以上使用。",
+      "en": "I'm sorry. The hot stone bath is only available for guests aged 12 and above.",
+      "vi": "Xin lỗi. Phòng đá nóng chỉ dành cho khách từ 12 tuổi trở lên.",
+      "ko": "죄송합니다. 암반욕은 12세 이상만 이용 가능합니다.",
       "scene": "岩盤浴",
       "id": "s20-052",
       "subcategory": "sub11",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません。",
+          "isKanji": false
+        },
+        {
+          "text": "岩盤",
+          "isKanji": true,
+          "reading": "がんばん"
+        },
+        {
+          "text": "浴",
+          "isKanji": true,
+          "reading": "よく"
+        },
+        {
+          "text": "は12",
+          "isKanji": false
+        },
+        {
+          "text": "歳",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "以上",
+          "isKanji": true,
+          "reading": "いじょう"
+        },
+        {
+          "text": "のみご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "いただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません。がんばんよくは12さいいじょうのみごりよういただけます。"
     },
     {
       "jp": "マットはどう使うんですか。",
-      "furigana": "まっとはどうつかうんですか。",
       "zh": "垫子怎么用？",
       "zh-TW": "墊子怎麼用？",
       "en": "How do I use the mat?",
@@ -692,11 +2575,26 @@
       "scene": "岩盤浴",
       "id": "s20-053",
       "subcategory": "sub12",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "マットはどう",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "うんですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "マットはどうつかうんですか。"
     },
     {
       "jp": "専用のマットを床に敷いて、その上に横になってください。",
-      "furigana": "せんようのまっとをゆかにしいて、そのうえによこになってください。",
       "zh": "把专用垫子铺在地上，然后躺在上面。",
       "zh-TW": "把專用墊子鋪在地上，然後躺在上面。",
       "en": "Please lay the special mat on the floor and lie down on top of it.",
@@ -705,11 +2603,58 @@
       "scene": "岩盤浴",
       "id": "s20-054",
       "subcategory": "sub12",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "のマットを",
+          "isKanji": false
+        },
+        {
+          "text": "床",
+          "isKanji": true,
+          "reading": "ゆか"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "敷",
+          "isKanji": true,
+          "reading": "し"
+        },
+        {
+          "text": "いて、その",
+          "isKanji": false
+        },
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "うえ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "横",
+          "isKanji": true,
+          "reading": "よこ"
+        },
+        {
+          "text": "になってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せんようのマットをゆかにしいて、そのうえによこになってください。"
     },
     {
       "jp": "中にペットボトルなどの飲み物は持ち込めますか。",
-      "furigana": "なかにぺっとぼとるなどののみものはもちこめますか。",
       "zh": "可以带瓶装水等饮料进去吗？",
       "zh-TW": "可以帶瓶裝水等飲料進去嗎？",
       "en": "Can I bring in drinks like bottled water?",
@@ -718,11 +2663,58 @@
       "scene": "岩盤浴",
       "id": "s20-055",
       "subcategory": "sub12",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "中",
+          "isKanji": true,
+          "reading": "なか"
+        },
+        {
+          "text": "にペットボトルなどの",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "めますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なかにペットボトルなどののみものはもちこめますか。"
     },
     {
       "jp": "はい、水分補給用の飲み物は持ち込み可能です。ロビーの自販機でお買い求めいただけます。",
-      "furigana": "はい、すいぶんほきゅうようののみものはもちこみかのうです。ろびーのじはんきでおかいもとめいただけます。",
       "zh": "可以，补水用的饮料可以带进去，可以在大厅的自动售货机购买。",
       "zh-TW": "可以，補水用的飲料可以帶進去，可以在大廳的自動販賣機購買。",
       "en": "Yes, drinks for hydration are allowed. You can purchase them from the vending machine in the lobby.",
@@ -731,11 +2723,108 @@
       "scene": "岩盤浴",
       "id": "s20-056",
       "subcategory": "sub12",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "水分",
+          "isKanji": true,
+          "reading": "すいぶん"
+        },
+        {
+          "text": "補給",
+          "isKanji": true,
+          "reading": "ほきゅう"
+        },
+        {
+          "text": "用",
+          "isKanji": true,
+          "reading": "よう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "飲",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "物",
+          "isKanji": true,
+          "reading": "もの"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ち",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "です。ロビーの",
+          "isKanji": false
+        },
+        {
+          "text": "自販機",
+          "isKanji": true,
+          "reading": "じはんき"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "求",
+          "isKanji": true,
+          "reading": "もと"
+        },
+        {
+          "text": "めいただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、すいぶんほきゅうようののみものはもちこみかのうです。ロビーのじはんきでおかいもとめいただけます。"
     },
     {
       "jp": "熱くなったときはどうしますか。",
-      "furigana": "あつくなったときはどうしますか。",
       "zh": "感觉热的时候怎么办？",
       "zh-TW": "感覺熱的時候怎麼辦？",
       "en": "What should I do if I feel too hot?",
@@ -744,11 +2833,22 @@
       "scene": "岩盤浴",
       "id": "s20-057",
       "subcategory": "sub12",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "熱",
+          "isKanji": true,
+          "reading": "あつ"
+        },
+        {
+          "text": "くなったときはどうしますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あつくなったときはどうしますか。"
     },
     {
       "jp": "無理をせず、こまめに休憩室でクールダウンしてください。気分が悪くなったらスタッフにお声がけください。",
-      "furigana": "むりをせず、こまめにきゅうけいしつでくーるだうんしてください。きぶんがわるくなったらすたっふにおこえがけください。",
       "zh": "不要勉强，要经常在休息室降温，如果感觉不舒服，请告知工作人员。",
       "zh-TW": "不要勉強，要經常在休息室降溫，如果感覺不舒服，請告知工作人員。",
       "en": "Don't push yourself. Cool down frequently in the rest room. If you feel unwell, please tell a staff member.",
@@ -757,11 +2857,63 @@
       "scene": "岩盤浴",
       "id": "s20-058",
       "subcategory": "sub12",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "無理",
+          "isKanji": true,
+          "reading": "むり"
+        },
+        {
+          "text": "をせず、こまめに",
+          "isKanji": false
+        },
+        {
+          "text": "休憩",
+          "isKanji": true,
+          "reading": "きゅうけい"
+        },
+        {
+          "text": "室",
+          "isKanji": true,
+          "reading": "しつ"
+        },
+        {
+          "text": "でクールダウンしてください。",
+          "isKanji": false
+        },
+        {
+          "text": "気分",
+          "isKanji": true,
+          "reading": "きぶん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "悪",
+          "isKanji": true,
+          "reading": "わる"
+        },
+        {
+          "text": "くなったらスタッフにお",
+          "isKanji": false
+        },
+        {
+          "text": "声",
+          "isKanji": true,
+          "reading": "こえ"
+        },
+        {
+          "text": "がけください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "むりをせず、こまめにきゅうけいしつでクールダウンしてください。きぶんがわるくなったらスタッフにおこえがけください。"
     },
     {
       "jp": "漫画や雑誌が読める休憩スペースはどこですか。",
-      "furigana": "まんがやざっしがよめるきゅうけいすぺーすはどこですか。",
       "zh": "可以看漫画和杂志的休息区在哪里？",
       "zh-TW": "可以看漫畫和雜誌的休息區在哪裡？",
       "en": "Where is the rest area where I can read manga and magazines?",
@@ -770,24 +2922,95 @@
       "scene": "休憩室",
       "id": "s20-059",
       "subcategory": "sub13",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "漫画",
+          "isKanji": true,
+          "reading": "まんが"
+        },
+        {
+          "text": "や",
+          "isKanji": false
+        },
+        {
+          "text": "雑誌",
+          "isKanji": true,
+          "reading": "ざっし"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "読",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "める",
+          "isKanji": false
+        },
+        {
+          "text": "休憩",
+          "isKanji": true,
+          "reading": "きゅうけい"
+        },
+        {
+          "text": "スペースはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まんがやざっしがよめるきゅうけいスペースはどこですか。"
     },
     {
-      "jp": "[3階] のラウンジエリアにございます。ご自由にお読みいただけます。",
-      "furigana": "[3かい]のらうんじえりあにございます。ごじゆうにおよみいただけます。",
-      "zh": "在[3楼]的休息区，可以随意阅读。",
-      "zh-TW": "在[3樓]的休息區，可以隨意閱讀。",
-      "en": "It's in the lounge area on the [3rd] floor. Please feel free to read.",
-      "vi": "Ở khu vực lounge tầng [3]. Bạn có thể đọc thoải mái.",
-      "ko": "[3층] 라운지 구역에 있습니다. 자유롭게 읽으실 수 있습니다.",
+      "jp": "3階のラウンジエリアにございます。ご自由にお読みいただけます。",
+      "zh": "在3楼的休息区，可以随意阅读。",
+      "zh-TW": "在3樓的休息區，可以隨意閱讀。",
+      "en": "It's in the lounge area on the 3rd floor. Please feel free to read.",
+      "vi": "Ở khu vực lounge tầng 3. Bạn có thể đọc thoải mái.",
+      "ko": "3층 라운지 구역에 있습니다. 자유롭게 읽으실 수 있습니다.",
       "scene": "休憩室",
       "id": "s20-060",
       "subcategory": "sub13",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "3",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "のラウンジエリアにございます。ご",
+          "isKanji": false
+        },
+        {
+          "text": "自由",
+          "isKanji": true,
+          "reading": "じゆう"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "読",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "みいただけます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "3かいのラウンジエリアにございます。ごじゆうにおよみいただけます。"
     },
     {
       "jp": "リクライニングチェアで寝てもいいですか。",
-      "furigana": "りくらいにんぐちぇあでねてもいいですか。",
       "zh": "可以在躺椅上睡觉吗？",
       "zh-TW": "可以在躺椅上睡覺嗎？",
       "en": "Is it okay to sleep in the reclining chair?",
@@ -796,11 +3019,26 @@
       "scene": "休憩室",
       "id": "s20-061",
       "subcategory": "sub13",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "リクライニングチェアで",
+          "isKanji": false
+        },
+        {
+          "text": "寝",
+          "isKanji": true,
+          "reading": "ね"
+        },
+        {
+          "text": "てもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "リクライニングチェアでねてもいいですか。"
     },
     {
       "jp": "はい、どうぞ。他の方のために場所取りはご遠慮ください。",
-      "furigana": "はい、どうぞ。たのほうのためにばしょとりはごえんりょください。",
       "zh": "可以，请便。请不要占位，为其他客人着想。",
       "zh-TW": "可以，請便。請不要佔位，為其他客人著想。",
       "en": "Yes, please go ahead. Please refrain from reserving seats for others' consideration.",
@@ -809,11 +3047,58 @@
       "scene": "休憩室",
       "id": "s20-062",
       "subcategory": "sub13",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        },
+        {
+          "text": "他",
+          "isKanji": true,
+          "reading": "た"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "ほう"
+        },
+        {
+          "text": "のために",
+          "isKanji": false
+        },
+        {
+          "text": "場所",
+          "isKanji": true,
+          "reading": "ばしょ"
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "りはご",
+          "isKanji": false
+        },
+        {
+          "text": "遠慮",
+          "isKanji": true,
+          "reading": "えんりょ"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。たのほうのためにばしょとりはごえんりょください。"
     },
     {
       "jp": "コンセントが使える席はありますか。",
-      "furigana": "こんせんとがつかえるせきはありますか。",
       "zh": "有可以插电的座位吗？",
       "zh-TW": "有可以插電的座位嗎？",
       "en": "Are there seats with power outlets?",
@@ -822,11 +3107,35 @@
       "scene": "休憩室",
       "id": "s20-063",
       "subcategory": "sub13",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "コンセントが",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "える",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "コンセントがつかえるせきはありますか。"
     },
     {
       "jp": "窓側のカウンター席に電源とWi-Fiがございます。",
-      "furigana": "まどがわのかうんたーせきにでんげんとWi-Fiがございます。",
       "zh": "靠窗的吧台座位有电源和Wi-Fi。",
       "zh-TW": "靠窗的吧台座位有電源和Wi-Fi。",
       "en": "The counter seats by the window have power outlets and Wi-Fi.",
@@ -835,11 +3144,40 @@
       "scene": "休憩室",
       "id": "s20-064",
       "subcategory": "sub13",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "窓側",
+          "isKanji": true,
+          "reading": "まどがわ"
+        },
+        {
+          "text": "のカウンター",
+          "isKanji": false
+        },
+        {
+          "text": "席",
+          "isKanji": true,
+          "reading": "せき"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "電源",
+          "isKanji": true,
+          "reading": "でんげん"
+        },
+        {
+          "text": "とWi-Fiがございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まどがわのカウンターせきにでんげんとWi-Fiがございます。"
     },
     {
       "jp": "こちらの個室（リラックスブース）は予約が必要ですか。",
-      "furigana": "こちらのこしつ（りらっくすぶーす）はよやくがひつようですか。",
       "zh": "这个包间（休闲包厢）需要预约吗？",
       "zh-TW": "這個包間（休閒包廂）需要預約嗎？",
       "en": "Do I need a reservation for this private booth?",
@@ -848,24 +3186,136 @@
       "scene": "休憩室",
       "id": "s20-065",
       "subcategory": "sub14",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "個室",
+          "isKanji": true,
+          "reading": "こしつ"
+        },
+        {
+          "text": "（リラックスブース）は",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらのこしつ（リラックスブース）はよやくがひつようですか。"
     },
     {
-      "jp": "はい、専用端末で事前予約と有料（1時間 [300円]）のお支払いが必要です。",
-      "furigana": "はい、せんようたんまつでじぜんよやくとゆうりょう（1じかん[300えん]）のおしはらいがひつようです。",
-      "zh": "是的，需要在专用终端机提前预约并支付费用（每小时[300円]）。",
-      "zh-TW": "是的，需要在專用終端機提前預約並支付費用（每小時[300円]）。",
-      "en": "Yes, you need to make a reservation in advance at the dedicated terminal and pay the fee (1 hour: [300 yen]).",
-      "vi": "Vâng, bạn cần đặt trước tại thiết bị chuyên dụng và trả phí (1 giờ: [300 yên]).",
-      "ko": "네, 전용 단말기에서 사전 예약과 유료(1시간 [300엔]) 결제가 필요합니다.",
+      "jp": "はい、専用端末で事前予約と有料（1時間300円）のお支払いが必要です。",
+      "zh": "是的，需要在专用终端机提前预约并支付费用（每小时300円）。",
+      "zh-TW": "是的，需要在專用終端機提前預約並支付費用（每小時300円）。",
+      "en": "Yes, you need to make a reservation in advance at the dedicated terminal and pay the fee (1 hour: 300 yen).",
+      "vi": "Vâng, bạn cần đặt trước tại thiết bị chuyên dụng và trả phí (1 giờ: 300 yên).",
+      "ko": "네, 전용 단말기에서 사전 예약과 유료(1시간 300엔) 결제가 필요합니다.",
       "scene": "休憩室",
       "id": "s20-066",
       "subcategory": "sub14",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "専用",
+          "isKanji": true,
+          "reading": "せんよう"
+        },
+        {
+          "text": "端末",
+          "isKanji": true,
+          "reading": "たんまつ"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "事前",
+          "isKanji": true,
+          "reading": "じぜん"
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "有料",
+          "isKanji": true,
+          "reading": "ゆうりょう"
+        },
+        {
+          "text": "（1",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "300",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "）のお",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いが",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、せんようたんまつでじぜんよやくとゆうりょう（1じかん300えん）のおしはらいがひつようです。"
     },
     {
       "jp": "わかりました。操作を手伝ってもらえますか。",
-      "furigana": "わかりました。そうさをてつだってもらえますか。",
       "zh": "明白了，可以帮我操作吗？",
       "zh-TW": "明白了，可以幫我操作嗎？",
       "en": "I see. Could you help me with the operation?",
@@ -874,11 +3324,35 @@
       "scene": "休憩室",
       "id": "s20-067",
       "subcategory": "sub14",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。",
+          "isKanji": false
+        },
+        {
+          "text": "操作",
+          "isKanji": true,
+          "reading": "そうさ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "手伝",
+          "isKanji": true,
+          "reading": "てつだ"
+        },
+        {
+          "text": "ってもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。そうさをてつだってもらえますか。"
     },
     {
       "jp": "はい、こちらへどうぞ。",
-      "furigana": "はい、こちらへどうぞ。",
       "zh": "好的，请跟我来。",
       "zh-TW": "好的，請跟我來。",
       "en": "Yes, please come this way.",
@@ -887,11 +3361,17 @@
       "scene": "休憩室",
       "id": "s20-068",
       "subcategory": "sub14",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、こちらへどうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、こちらへどうぞ。"
     },
     {
       "jp": "今からマッサージを受けたいんですが、空いていますか。",
-      "furigana": "いまからまっさーじをうけたいんですが、あいていますか。",
       "zh": "我现在想预约按摩，有空位吗？",
       "zh-TW": "我現在想預約按摩，有空位嗎？",
       "en": "I'd like to get a massage now. Is there availability?",
@@ -900,11 +3380,40 @@
       "scene": "マッサージ",
       "id": "s20-069",
       "subcategory": "sub15",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "からマッサージを",
+          "isKanji": false
+        },
+        {
+          "text": "受",
+          "isKanji": true,
+          "reading": "う"
+        },
+        {
+          "text": "けたいんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "いていますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いまからマッサージをうけたいんですが、あいていますか。"
     },
     {
       "jp": "空き状況を確認します。何分コースをご希望ですか。",
-      "furigana": "あきじょうきょうをかくにんします。なにぶんこーすをごきぼうですか。",
       "zh": "我来确认一下，您想要几分钟的课程？",
       "zh-TW": "我來確認一下，您想要幾分鐘的課程？",
       "en": "Let me check availability. How many minutes would you like?",
@@ -913,76 +3422,362 @@
       "scene": "マッサージ",
       "id": "s20-070",
       "subcategory": "sub15",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "空",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "状況",
+          "isKanji": true,
+          "reading": "じょうきょう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        },
+        {
+          "text": "何分",
+          "isKanji": true,
+          "reading": "なにぶん"
+        },
+        {
+          "text": "コースをご",
+          "isKanji": false
+        },
+        {
+          "text": "希望",
+          "isKanji": true,
+          "reading": "きぼう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あきじょうきょうをかくにんします。なにぶんコースをごきぼうですか。"
     },
     {
-      "jp": "ボディケアの [40分] コースをお願いします。",
-      "furigana": "ぼでぃけあの[40ふん]こーすをおねがいします。",
-      "zh": "请给我身体护理的[40分钟]课程。",
-      "zh-TW": "請給我身體護理的[40分鐘]課程。",
-      "en": "I'd like the body care [40-minute] course, please.",
-      "vi": "Cho tôi gói chăm sóc cơ thể [40 phút].",
-      "ko": "보디케어 [40분] 코스 부탁드립니다.",
+      "jp": "ボディケアの40分コースをお願いします。",
+      "zh": "请给我身体护理的40分钟课程。",
+      "zh-TW": "請給我身體護理的40分鐘課程。",
+      "en": "I'd like the body care 40-minute course, please.",
+      "vi": "Cho tôi gói chăm sóc cơ thể 40 phút.",
+      "ko": "보디케어 40분 코스 부탁드립니다.",
       "scene": "マッサージ",
       "id": "s20-071",
       "subcategory": "sub15",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ボディケアの40",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "コースをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ボディケアの40ふんコースをおねがいします。"
     },
     {
-      "jp": "ただいま混み合っておりまして、一番早いご案内が [午後4時半] からになりますが、よろしいですか。",
-      "furigana": "ただいまこみあっておりまして、いちばんはやいごあんないが[ごご4じはん]からになりますが、よろしいですか。",
-      "zh": "现在很忙，最早可以安排的时间是[下午4点半]，可以吗？",
-      "zh-TW": "現在很忙，最早可以安排的時間是[下午4點半]，可以嗎？",
-      "en": "We're quite busy right now. The earliest available time is [4:30 PM]. Is that okay?",
-      "vi": "Hiện tại khá bận. Thời gian sớm nhất có thể là [4:30 chiều]. Có được không?",
-      "ko": "지금 많이 바빠서 가장 빠른 안내가 [오후 4시 30분]부터인데, 괜찮으시겠어요?",
+      "jp": "ただいま混み合っておりまして、一番早いご案内が午後4時半からになりますが、よろしいですか。",
+      "zh": "现在很忙，最早可以安排的时间是下午4点半，可以吗？",
+      "zh-TW": "現在很忙，最早可以安排的時間是下午4點半，可以嗎？",
+      "en": "We're quite busy right now. The earliest available time is 4:30 PM. Is that okay?",
+      "vi": "Hiện tại khá bận. Thời gian sớm nhất có thể là 4:30 chiều. Có được không?",
+      "ko": "지금 많이 바빠서 가장 빠른 안내가 오후 4시 30분부터인데, 괜찮으시겠어요?",
       "scene": "マッサージ",
       "id": "s20-072",
       "subcategory": "sub15",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ただいま",
+          "isKanji": false
+        },
+        {
+          "text": "混",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "っておりまして、",
+          "isKanji": false
+        },
+        {
+          "text": "一番",
+          "isKanji": true,
+          "reading": "いちばん"
+        },
+        {
+          "text": "早",
+          "isKanji": true,
+          "reading": "はや"
+        },
+        {
+          "text": "いご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "午後",
+          "isKanji": true,
+          "reading": "ごご"
+        },
+        {
+          "text": "4",
+          "isKanji": false
+        },
+        {
+          "text": "時半",
+          "isKanji": true,
+          "reading": "じはん"
+        },
+        {
+          "text": "からになりますが、よろしいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ただいまこみあっておりまして、いちばんはやいごあんないがごご4じはんからになりますが、よろしいですか。"
     },
     {
-      "jp": "わかりました。[4時半] でお願いします。",
-      "furigana": "わかりました。[4じはん]でおねがいします。",
-      "zh": "好的，就[4点半]吧。",
-      "zh-TW": "好的，就[4點半]吧。",
-      "en": "Understood. Please book me in at [4:30].",
-      "vi": "Vâng. Cho tôi lúc [4:30].",
-      "ko": "알겠습니다. [4시 30분]으로 부탁드립니다.",
+      "jp": "わかりました。4時半でお願いします。",
+      "zh": "好的，就4点半吧。",
+      "zh-TW": "好的，就4點半吧。",
+      "en": "Understood. Please book me in at 4:30.",
+      "vi": "Vâng. Cho tôi lúc 4:30.",
+      "ko": "알겠습니다. 4시 30분으로 부탁드립니다.",
       "scene": "マッサージ",
       "id": "s20-073",
       "subcategory": "sub15",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "わかりました。4",
+          "isKanji": false
+        },
+        {
+          "text": "時半",
+          "isKanji": true,
+          "reading": "じはん"
+        },
+        {
+          "text": "でお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "わかりました。4じはんでおねがいします。"
     },
     {
-      "jp": "承知いたしました。ご予約時間の10分前までに、[2階] のマッサージ受付にお越しください。",
-      "furigana": "しょうちいたしました。ごよやくじかんの10ふんまえまでに、[2かい]のまっさーじうけつけにおこしください。",
-      "zh": "好的，请在预约时间10分钟前到[2楼]的按摩前台。",
-      "zh-TW": "好的，請在預約時間10分鐘前到[2樓]的按摩前台。",
-      "en": "Understood. Please come to the massage reception on the [2nd] floor at least 10 minutes before your appointment.",
-      "vi": "Vâng. Vui lòng đến quầy lễ tân massage tầng [2] trước giờ hẹn 10 phút.",
-      "ko": "알겠습니다. 예약 시간 10분 전까지 [2층] 마사지 접수처로 와 주세요.",
+      "jp": "承知いたしました。ご予約時間の10分前までに、2階のマッサージ受付にお越しください。",
+      "zh": "好的，请在预约时间10分钟前到2楼的按摩前台。",
+      "zh-TW": "好的，請在預約時間10分鐘前到2樓的按摩前台。",
+      "en": "Understood. Please come to the massage reception on the 2nd floor at least 10 minutes before your appointment.",
+      "vi": "Vâng. Vui lòng đến quầy lễ tân massage tầng 2 trước giờ hẹn 10 phút.",
+      "ko": "알겠습니다. 예약 시간 10분 전까지 2층 마사지 접수처로 와 주세요.",
       "scene": "マッサージ",
       "id": "s20-074",
       "subcategory": "sub15",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "承知",
+          "isKanji": true,
+          "reading": "しょうち"
+        },
+        {
+          "text": "いたしました。ご",
+          "isKanji": false
+        },
+        {
+          "text": "予約",
+          "isKanji": true,
+          "reading": "よやく"
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "の10",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "前",
+          "isKanji": true,
+          "reading": "まえ"
+        },
+        {
+          "text": "までに、2",
+          "isKanji": false
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "のマッサージ",
+          "isKanji": false
+        },
+        {
+          "text": "受付",
+          "isKanji": true,
+          "reading": "うけつけ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "越",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "しください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうちいたしました。ごよやくじかんの10ふんまえまでに、2かいのマッサージうけつけにおこしください。"
     },
     {
-      "jp": "いらっしゃいませ。担当の [田中] です。本日のコースはボディケア [40分] ですね。強さの好みはございますか。",
-      "furigana": "いらっしゃいませ。たんとうの[たなか]です。ほんじつのこーすはぼでぃけあ[40ふん]ですね。つよさのこのみはございますか。",
-      "zh": "欢迎，我是负责您的[田中]。今天的课程是身体护理[40分钟]对吧，您对力度有什么偏好吗？",
-      "zh-TW": "歡迎，我是負責您的[田中]。今天的課程是身體護理[40分鐘]對吧，您對力度有什麼偏好嗎？",
-      "en": "Welcome. I'm [Tanaka], your therapist. Today's course is body care for [40 minutes]. Do you have a preference for pressure?",
-      "vi": "Xin chào. Tôi là [Tanaka], người phụ trách bạn. Hôm nay là gói chăm sóc cơ thể [40 phút] đúng không? Bạn có sở thích về lực ấn không?",
-      "ko": "어서 오세요. 담당 [타나카]입니다. 오늘 코스는 보디케어 [40분]이시죠. 강도 선호도가 있으신가요?",
+      "jp": "いらっしゃいませ。担当の田中です。本日のコースはボディケア40分ですね。強さの好みはございますか。",
+      "zh": "欢迎，我是负责您的田中。今天的课程是身体护理40分钟对吧，您对力度有什么偏好吗？",
+      "zh-TW": "歡迎，我是負責您的田中。今天的課程是身體護理40分鐘對吧，您對力度有什麼偏好嗎？",
+      "en": "Welcome. I'm Tanaka, your therapist. Today's course is body care for 40 minutes. Do you have a preference for pressure?",
+      "vi": "Xin chào. Tôi là Tanaka, người phụ trách bạn. Hôm nay là gói chăm sóc cơ thể 40 phút đúng không? Bạn có sở thích về lực ấn không?",
+      "ko": "어서 오세요. 담당 타나카입니다. 오늘 코스는 보디케어 40분이시죠. 강도 선호도가 있으신가요?",
       "scene": "マッサージ",
       "id": "s20-075",
       "subcategory": "sub16",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いらっしゃいませ。",
+          "isKanji": false
+        },
+        {
+          "text": "担当",
+          "isKanji": true,
+          "reading": "たんとう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "田中",
+          "isKanji": true,
+          "reading": "たなか"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "のコースはボディケア40",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "ですね。",
+          "isKanji": false
+        },
+        {
+          "text": "強",
+          "isKanji": true,
+          "reading": "つよ"
+        },
+        {
+          "text": "さの",
+          "isKanji": false
+        },
+        {
+          "text": "好",
+          "isKanji": true,
+          "reading": "この"
+        },
+        {
+          "text": "みはございますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いらっしゃいませ。たんとうのたなかです。ほんじつのコースはボディケア40ふんですね。つよさのこのみはございますか。"
     },
     {
       "jp": "少し強めでお願いします。",
-      "furigana": "すこしつよめでおねがいします。",
       "zh": "请稍微用力一点。",
       "zh-TW": "請稍微用力一點。",
       "en": "A little stronger, please.",
@@ -991,11 +3786,40 @@
       "scene": "マッサージ",
       "id": "s20-076",
       "subcategory": "sub16",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "少",
+          "isKanji": true,
+          "reading": "すこ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "強",
+          "isKanji": true,
+          "reading": "つよ"
+        },
+        {
+          "text": "めでお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すこしつよめでおねがいします。"
     },
     {
       "jp": "もう少し弱くしてください。",
-      "furigana": "もうすこしよわくしてください。",
       "zh": "请再轻一点。",
       "zh-TW": "請再輕一點。",
       "en": "A little softer, please.",
@@ -1004,11 +3828,35 @@
       "scene": "マッサージ",
       "id": "s20-077",
       "subcategory": "sub16",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "もう",
+          "isKanji": false
+        },
+        {
+          "text": "少",
+          "isKanji": true,
+          "reading": "すこ"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "弱",
+          "isKanji": true,
+          "reading": "よわ"
+        },
+        {
+          "text": "くしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうすこしよわくしてください。"
     },
     {
       "jp": "腰が特に痛いです。そこを重点的にお願いします。",
-      "furigana": "こしがとくにいたいです。そこをじゅうてんてきにおねがいします。",
       "zh": "腰部特别痛，请重点按摩那里。",
       "zh-TW": "腰部特別痛，請重點按摩那裡。",
       "en": "My lower back is especially sore. Please focus on that area.",
@@ -1017,11 +3865,58 @@
       "scene": "マッサージ",
       "id": "s20-078",
       "subcategory": "sub16",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "腰",
+          "isKanji": true,
+          "reading": "こし"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "特",
+          "isKanji": true,
+          "reading": "とく"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "痛",
+          "isKanji": true,
+          "reading": "いた"
+        },
+        {
+          "text": "いです。そこを",
+          "isKanji": false
+        },
+        {
+          "text": "重点的",
+          "isKanji": true,
+          "reading": "じゅうてんてき"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こしがとくにいたいです。そこをじゅうてんてきにおねがいします。"
     },
     {
       "jp": "承知いたしました。うつ伏せになってください。",
-      "furigana": "しょうちいたしました。うつふせになってください。",
       "zh": "明白了，请趴下。",
       "zh-TW": "明白了，請趴下。",
       "en": "Understood. Please lie face down.",
@@ -1030,11 +3925,31 @@
       "scene": "マッサージ",
       "id": "s20-079",
       "subcategory": "sub16",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "承知",
+          "isKanji": true,
+          "reading": "しょうち"
+        },
+        {
+          "text": "いたしました。うつ",
+          "isKanji": false
+        },
+        {
+          "text": "伏",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "せになってください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうちいたしました。うつふせになってください。"
     },
     {
       "jp": "お疲れ様でした。お支払いはどうすればいいですか。",
-      "furigana": "おつかれさまでした。おしはらいはどうすればいいですか。",
       "zh": "辛苦了，请问怎么付款？",
       "zh-TW": "辛苦了，請問怎麼付款？",
       "en": "Thank you. How should I pay?",
@@ -1043,11 +3958,44 @@
       "scene": "マッサージ",
       "id": "s20-080",
       "subcategory": "sub17",
-      "role": "user"
+      "role": "user",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "疲",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "れ",
+          "isKanji": false
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "でした。お",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いはどうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おつかれさまでした。おしはらいはどうすればいいですか。"
     },
     {
       "jp": "フロントでのお支払い、またはお部屋付けが可能です。",
-      "furigana": "ふろんとでのおしはらい、またはおへやづけがかのうです。",
       "zh": "可以在前台付款，或者记入房间账单。",
       "zh-TW": "可以在前台付款，或者記入房間帳單。",
       "en": "You can pay at the front desk or have it added to your room bill.",
@@ -1056,7 +4004,46 @@
       "scene": "マッサージ",
       "id": "s20-081",
       "subcategory": "sub17",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "フロントでのお",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "い、またはお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "付",
+          "isKanji": true,
+          "reading": "づ"
+        },
+        {
+          "text": "けが",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "フロントでのおしはらい、またはおへやづけがかのうです。"
     }
   ]
 }

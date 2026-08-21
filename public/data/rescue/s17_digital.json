@@ -65,388 +65,1101 @@
       "subcategory": "sub01",
       "role": "user",
       "jp": "SIMカードを買いたいです。",
-      "furigana": "SIMかーどをかいたいです。",
       "zh": "我想买SIM卡。",
       "en": "I'd like to buy a SIM card.",
       "zh-TW": "我想買SIM卡。",
       "vi": "Tôi muốn mua SIM card.",
-      "ko": "SIM 카드를 사고 싶어요."
+      "ko": "SIM 카드를 사고 싶어요.",
+      "ruby": [
+        {
+          "text": "SIMカードを",
+          "isKanji": false
+        },
+        {
+          "text": "買",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "いたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "SIMカードをかいたいです。"
     },
     {
       "id": "s17-002",
       "subcategory": "sub01",
       "role": "user",
       "jp": "どのプランがいいですか。",
-      "furigana": "どのぷらんがいいですか。",
       "zh": "哪个套餐比较好？",
       "en": "Which plan would you recommend?",
       "zh-TW": "哪個套餐比較好？",
       "vi": "Gói cước nào tốt hơn?",
-      "ko": "어떤 요금제가 좋을까요?"
+      "ko": "어떤 요금제가 좋을까요?",
+      "ruby": [
+        {
+          "text": "どのプランがいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どのプランがいいですか。"
     },
     {
       "id": "s17-003",
       "subcategory": "sub01",
       "role": "user",
       "jp": "データ通信だけでいいです。",
-      "furigana": "でーたつうしんだけでいいです。",
       "zh": "我只需要数据流量。",
       "en": "Data only is fine.",
       "zh-TW": "我只需要數據流量。",
       "vi": "Chỉ cần data là được.",
-      "ko": "데이터만 있으면 괜찮아요."
+      "ko": "데이터만 있으면 괜찮아요.",
+      "ruby": [
+        {
+          "text": "データ",
+          "isKanji": false
+        },
+        {
+          "text": "通信",
+          "isKanji": true,
+          "reading": "つうしん"
+        },
+        {
+          "text": "だけでいいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "データつうしんだけでいいです。"
     },
     {
       "id": "s17-004",
       "subcategory": "sub01",
       "role": "user",
       "jp": "このスマホで使えますか。",
-      "furigana": "このスマホでつかえますか。",
       "zh": "这台手机可以用吗？",
       "en": "Can I use it with this phone?",
       "zh-TW": "這台手機可以用嗎？",
       "vi": "Điện thoại này dùng được không?",
-      "ko": "이 폰에서 쓸 수 있나요?"
+      "ko": "이 폰에서 쓸 수 있나요?",
+      "ruby": [
+        {
+          "text": "このスマホで",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このスマホでつかえますか。"
     },
     {
       "id": "s17-005",
       "subcategory": "sub01",
       "role": "user",
       "jp": "電話番号を変えずに乗り換えたいです。",
-      "furigana": "でんわばんごうをかえずにのりかえたいです。",
       "zh": "我想保号换运营商。",
       "en": "I'd like to switch carriers without changing my number.",
       "zh-TW": "我想保號換運營商。",
       "vi": "Tôi muốn chuyển mạng mà vẫn giữ số.",
-      "ko": "번호 유지하면서 통신사를 바꾸고 싶어요."
+      "ko": "번호 유지하면서 통신사를 바꾸고 싶어요.",
+      "ruby": [
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "変",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えずに",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "換",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんわばんごうをかえずにのりかえたいです。"
     },
     {
       "id": "s17-006",
       "subcategory": "sub01",
       "role": "user",
       "jp": "新規でスマホの契約をしたいんですが。",
-      "furigana": "しんきでスマホのけいやくをしたいんですが。",
       "zh": "我想新办一个手机合同。",
       "en": "I'd like to sign up for a new phone contract.",
       "zh-TW": "我想新辦一個手機合約。",
       "vi": "Tôi muốn đăng ký hợp đồng điện thoại mới.",
-      "ko": "스마트폰 새로 계약하고 싶어요."
+      "ko": "스마트폰 새로 계약하고 싶어요.",
+      "ruby": [
+        {
+          "text": "新規",
+          "isKanji": true,
+          "reading": "しんき"
+        },
+        {
+          "text": "でスマホの",
+          "isKanji": false
+        },
+        {
+          "text": "契約",
+          "isKanji": true,
+          "reading": "けいやく"
+        },
+        {
+          "text": "をしたいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんきでスマホのけいやくをしたいんですが。"
     },
     {
       "id": "s17-007",
       "subcategory": "sub01",
       "role": "user",
       "jp": "他社から乗り換え（MNP）の手続きをお願いします。",
-      "furigana": "たしゃからのりかえ（MNP）のてつづきをおねがいします。",
       "zh": "我想办理从其他运营商携号转网（MNP）的手续。",
       "en": "I'd like to transfer my number from another carrier (MNP).",
       "zh-TW": "我想辦理從其他運營商攜號轉網（MNP）的手續。",
       "vi": "Tôi muốn chuyển số từ nhà mạng khác (MNP).",
-      "ko": "다른 통신사에서 번호이동(MNP) 수속을 하고 싶어요."
+      "ko": "다른 통신사에서 번호이동(MNP) 수속을 하고 싶어요.",
+      "ruby": [
+        {
+          "text": "他社",
+          "isKanji": true,
+          "reading": "たしゃ"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "乗",
+          "isKanji": true,
+          "reading": "の"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "換",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "え（MNP）の",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きをお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たしゃからのりかえ（MNP）のてつづきをおねがいします。"
     },
     {
       "id": "s17-008",
       "subcategory": "sub01",
       "role": "user",
       "jp": "料金プランを変更したいんですが。",
-      "furigana": "りょうきんぷらんをへんこうしたいんですが。",
       "zh": "我想更改资费套餐。",
       "en": "I'd like to change my rate plan.",
       "zh-TW": "我想更改資費套餐。",
       "vi": "Tôi muốn đổi gói cước.",
-      "ko": "요금제를 변경하고 싶어요."
+      "ko": "요금제를 변경하고 싶어요.",
+      "ruby": [
+        {
+          "text": "料金",
+          "isKanji": true,
+          "reading": "りょうきん"
+        },
+        {
+          "text": "プランを",
+          "isKanji": false
+        },
+        {
+          "text": "変更",
+          "isKanji": true,
+          "reading": "へんこう"
+        },
+        {
+          "text": "したいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "りょうきんプランをへんこうしたいんですが。"
     },
     {
       "id": "s17-009",
       "subcategory": "sub01",
       "role": "user",
       "jp": "解約したいです。",
-      "furigana": "かいやくしたいです。",
       "zh": "我想解约。",
       "en": "I'd like to cancel my contract.",
       "zh-TW": "我想解約。",
       "vi": "Tôi muốn hủy hợp đồng.",
-      "ko": "해지하고 싶어요."
+      "ko": "해지하고 싶어요.",
+      "ruby": [
+        {
+          "text": "解約",
+          "isKanji": true,
+          "reading": "かいやく"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいやくしたいです。"
     },
     {
       "id": "s17-010",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "ご本人様確認書類（在留カードなど）をお出しください。",
-      "furigana": "ごほんにんさまかくにんしょるい（ざいりゅうかーどなど）をおだしください。",
       "zh": "请出示您的身份证明文件（在留卡等）。",
       "en": "Please present your ID (residence card, etc.).",
       "zh-TW": "請出示您的身份證明文件（在留卡等）。",
       "vi": "Vui lòng xuất trình giấy tờ tùy thân (thẻ cư trú, v.v.).",
-      "ko": "본인 확인 서류(재류카드 등)를 제시해 주세요."
+      "ko": "본인 확인 서류(재류카드 등)를 제시해 주세요.",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "本人",
+          "isKanji": true,
+          "reading": "ほんにん"
+        },
+        {
+          "text": "様",
+          "isKanji": true,
+          "reading": "さま"
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "書類",
+          "isKanji": true,
+          "reading": "しょるい"
+        },
+        {
+          "text": "（",
+          "isKanji": false
+        },
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "カードなど）をお",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "しください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごほんにんさまかくにんしょるい（ざいりゅうカードなど）をおだしください。"
     },
     {
       "id": "s17-011",
       "subcategory": "sub01",
       "role": "user",
       "jp": "設定を手伝ってもらえますか。",
-      "furigana": "せっていをてつだってもらえますか。",
       "zh": "可以帮我设置吗？",
       "en": "Could you help me set it up?",
       "zh-TW": "可以幫我設置嗎？",
       "vi": "Bạn có thể giúp tôi cài đặt không?",
-      "ko": "설정 도와주실 수 있나요?"
+      "ko": "설정 도와주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "設定",
+          "isKanji": true,
+          "reading": "せってい"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "手伝",
+          "isKanji": true,
+          "reading": "てつだ"
+        },
+        {
+          "text": "ってもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "せっていをてつだってもらえますか。"
     },
     {
       "id": "s17-012",
       "subcategory": "sub02",
       "role": "user",
       "jp": "インターネットを申し込みたいです。",
-      "furigana": "いんたーねっとをもうしこみたいです。",
       "zh": "我想申请网络。",
       "en": "I'd like to sign up for internet service.",
       "zh-TW": "我想申請網路。",
       "vi": "Tôi muốn đăng ký dịch vụ internet.",
-      "ko": "인터넷을 신청하고 싶어요."
+      "ko": "인터넷을 신청하고 싶어요.",
+      "ruby": [
+        {
+          "text": "インターネットを",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "インターネットをもうしこみたいです。"
     },
     {
       "id": "s17-013",
       "subcategory": "sub02",
       "role": "user",
       "jp": "家でインターネット（光回線）を使いたいんですが、工事は必要ですか。",
-      "furigana": "いえでいんたーねっと（ひかりかいせん）をつかいたいんですが、こうじはひつようですか。",
       "zh": "我想在家里用网络（光纤），需要施工吗？",
       "en": "I'd like to use fiber internet at home. Is installation required?",
       "zh-TW": "我想在家裡用網路（光纖），需要施工嗎？",
       "vi": "Tôi muốn dùng internet cáp quang ở nhà. Có cần lắp đặt không?",
-      "ko": "집에서 인터넷(광회선)을 쓰고 싶은데요, 공사가 필요한가요?"
+      "ko": "집에서 인터넷(광회선)을 쓰고 싶은데요, 공사가 필요한가요?",
+      "ruby": [
+        {
+          "text": "家",
+          "isKanji": true,
+          "reading": "いえ"
+        },
+        {
+          "text": "でインターネット（",
+          "isKanji": false
+        },
+        {
+          "text": "光",
+          "isKanji": true,
+          "reading": "ひかり"
+        },
+        {
+          "text": "回線",
+          "isKanji": true,
+          "reading": "かいせん"
+        },
+        {
+          "text": "）を",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "いたいんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "工事",
+          "isKanji": true,
+          "reading": "こうじ"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いえでインターネット（ひかりかいせん）をつかいたいんですが、こうじはひつようですか。"
     },
     {
       "id": "s17-014",
       "subcategory": "sub02",
       "role": "user",
       "jp": "工事にはどのくらい時間がかかりますか。",
-      "furigana": "こうじにはどのくらいじかんがかかりますか。",
       "zh": "施工大概需要多长时间？",
       "en": "How long will the installation take?",
       "zh-TW": "施工大概需要多長時間？",
       "vi": "Việc lắp đặt mất bao lâu?",
-      "ko": "공사는 얼마나 걸리나요?"
+      "ko": "공사는 얼마나 걸리나요?",
+      "ruby": [
+        {
+          "text": "工事",
+          "isKanji": true,
+          "reading": "こうじ"
+        },
+        {
+          "text": "にはどのくらい",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "がかかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうじにはどのくらいじかんがかかりますか。"
     },
     {
       "id": "s17-015",
       "subcategory": "sub02",
       "role": "user",
       "jp": "Wi-Fiに接続したいです。",
-      "furigana": "Wi-Fiにせつぞくしたいです。",
       "zh": "我想连接Wi-Fi。",
       "en": "I'd like to connect to Wi-Fi.",
       "zh-TW": "我想連接Wi-Fi。",
       "vi": "Tôi muốn kết nối Wi-Fi.",
-      "ko": "Wi-Fi에 연결하고 싶어요."
+      "ko": "Wi-Fi에 연결하고 싶어요.",
+      "ruby": [
+        {
+          "text": "Wi-Fiに",
+          "isKanji": false
+        },
+        {
+          "text": "接続",
+          "isKanji": true,
+          "reading": "せつぞく"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Wi-Fiにせつぞくしたいです。"
     },
     {
       "id": "s17-016",
       "subcategory": "sub02",
       "role": "user",
       "jp": "Wi-Fiの接続パスワードを教えていただけますか。",
-      "furigana": "Wi-Fiのせつぞくぱすわーどをおしえていただけますか。",
       "zh": "可以告诉我Wi-Fi的连接密码吗？",
       "en": "Could you tell me the Wi-Fi password?",
       "zh-TW": "可以告訴我Wi-Fi的連接密碼嗎？",
       "vi": "Bạn có thể cho tôi biết mật khẩu Wi-Fi không?",
-      "ko": "Wi-Fi 비밀번호를 알려주실 수 있나요?"
+      "ko": "Wi-Fi 비밀번호를 알려주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "Wi-Fiの",
+          "isKanji": false
+        },
+        {
+          "text": "接続",
+          "isKanji": true,
+          "reading": "せつぞく"
+        },
+        {
+          "text": "パスワードを",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Wi-Fiのせつぞくパスワードをおしえていただけますか。"
     },
     {
       "id": "s17-017",
       "subcategory": "sub02",
       "role": "user",
       "jp": "つながりません。",
-      "furigana": "つながりません。",
       "zh": "连不上。",
       "en": "It won't connect.",
       "zh-TW": "連不上。",
       "vi": "Không kết nối được.",
-      "ko": "연결이 안 돼요."
+      "ko": "연결이 안 돼요.",
+      "ruby": [
+        {
+          "text": "つながりません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つながりません。"
     },
     {
       "id": "s17-018",
       "subcategory": "sub02",
       "role": "user",
       "jp": "Wi-Fiが遅いです。",
-      "furigana": "Wi-Fiがおそいです。",
       "zh": "Wi-Fi很慢。",
       "en": "The Wi-Fi is slow.",
       "zh-TW": "Wi-Fi很慢。",
       "vi": "Wi-Fi chậm lắm.",
-      "ko": "Wi-Fi가 느려요."
+      "ko": "Wi-Fi가 느려요.",
+      "ruby": [
+        {
+          "text": "Wi-Fiが",
+          "isKanji": false
+        },
+        {
+          "text": "遅",
+          "isKanji": true,
+          "reading": "おそ"
+        },
+        {
+          "text": "いです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "Wi-Fiがおそいです。"
     },
     {
       "id": "s17-019",
       "subcategory": "sub02",
       "role": "user",
       "jp": "ネットが急につながらなくなりました。",
-      "furigana": "ねっとがきゅうにつながらなくなりました。",
       "zh": "网络突然连不上了。",
       "en": "The internet suddenly stopped working.",
       "zh-TW": "網路突然連不上了。",
       "vi": "Internet đột nhiên ngắt kết nối.",
-      "ko": "인터넷이 갑자기 안 돼요."
+      "ko": "인터넷이 갑자기 안 돼요.",
+      "ruby": [
+        {
+          "text": "ネットが",
+          "isKanji": false
+        },
+        {
+          "text": "急",
+          "isKanji": true,
+          "reading": "きゅう"
+        },
+        {
+          "text": "につながらなくなりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ネットがきゅうにつながらなくなりました。"
     },
     {
       "id": "s17-020",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "ルーターのコンセントを一度抜いて、もう一度挿してみてください。",
-      "furigana": "ルーターのこんせんとをいちどぬいて、もういちどさしてみてください。",
       "zh": "请把路由器的插头拔掉一次，然后再插上试试。",
       "en": "Please try unplugging the router and plugging it back in.",
       "zh-TW": "請把路由器的插頭拔掉一次，然後再插上試試。",
       "vi": "Vui lòng thử rút phích cắm bộ định tuyến và cắm lại.",
-      "ko": "공유기 콘센트를 한 번 뽑았다가 다시 꽂아보세요."
+      "ko": "공유기 콘센트를 한 번 뽑았다가 다시 꽂아보세요.",
+      "ruby": [
+        {
+          "text": "ルーターのコンセントを",
+          "isKanji": false
+        },
+        {
+          "text": "一度",
+          "isKanji": true,
+          "reading": "いちど"
+        },
+        {
+          "text": "抜",
+          "isKanji": true,
+          "reading": "ぬ"
+        },
+        {
+          "text": "いて、もう",
+          "isKanji": false
+        },
+        {
+          "text": "一度",
+          "isKanji": true,
+          "reading": "いちど"
+        },
+        {
+          "text": "挿",
+          "isKanji": true,
+          "reading": "さ"
+        },
+        {
+          "text": "してみてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ルーターのコンセントをいちどぬいて、もういちどさしてみてください。"
     },
     {
       "id": "s17-021",
       "subcategory": "sub02",
       "role": "user",
       "jp": "スマホの充電が切れそうです。充電できる場所はありますか。",
-      "furigana": "スマホのじゅうでんがきれそうです。じゅうでんできるばしょはありますか。",
       "zh": "手机快没电了，有可以充电的地方吗？",
       "en": "My phone is about to die. Is there somewhere I can charge it?",
       "zh-TW": "手機快沒電了，有可以充電的地方嗎？",
       "vi": "Điện thoại tôi sắp hết pin. Có chỗ nào có thể sạc không?",
-      "ko": "스마트폰 배터리가 거의 없어요. 충전할 수 있는 곳이 있나요?"
+      "ko": "스마트폰 배터리가 거의 없어요. 충전할 수 있는 곳이 있나요?",
+      "ruby": [
+        {
+          "text": "スマホの",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "切",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "れそうです。",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "できる",
+          "isKanji": false
+        },
+        {
+          "text": "場所",
+          "isKanji": true,
+          "reading": "ばしょ"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホのじゅうでんがきれそうです。じゅうでんできるばしょはありますか。"
     },
     {
       "id": "s17-022",
       "subcategory": "sub02",
       "role": "user",
       "jp": "この辺は電波が弱いです。",
-      "furigana": "このあたりはでんぱがよわいです。",
       "zh": "这附近信号很弱。",
       "en": "The signal is weak around here.",
       "zh-TW": "這附近信號很弱。",
       "vi": "Tín hiệu ở khu vực này rất yếu.",
-      "ko": "이 근처는 신호가 약해요."
+      "ko": "이 근처는 신호가 약해요.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "辺",
+          "isKanji": true,
+          "reading": "あたり"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "電波",
+          "isKanji": true,
+          "reading": "でんぱ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "弱",
+          "isKanji": true,
+          "reading": "よわ"
+        },
+        {
+          "text": "いです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このあたりはでんぱがよわいです。"
     },
     {
       "id": "s17-023",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "QRコードをスキャンしてください。",
-      "furigana": "QRこーどをすきゃんしてください。",
       "zh": "请扫描二维码。",
       "en": "Please scan the QR code.",
       "zh-TW": "請掃描二維碼。",
       "vi": "Vui lòng quét mã QR.",
-      "ko": "QR코드를 스캔해 주세요."
+      "ko": "QR코드를 스캔해 주세요.",
+      "ruby": [
+        {
+          "text": "QRコードをスキャンしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "QRコードをスキャンしてください。"
     },
     {
       "id": "s17-024",
       "subcategory": "sub03",
       "role": "user",
       "jp": "どこでスキャンすればいいですか。",
-      "furigana": "どこですきゃんすればいいですか。",
       "zh": "应该在哪里扫？",
       "en": "Where should I scan it?",
       "zh-TW": "應該在哪裡掃？",
       "vi": "Tôi quét ở đâu vậy?",
-      "ko": "어디서 스캔하면 되나요?"
+      "ko": "어디서 스캔하면 되나요?",
+      "ruby": [
+        {
+          "text": "どこでスキャンすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どこでスキャンすればいいですか。"
     },
     {
       "id": "s17-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "うまく読み取れません。",
-      "furigana": "うまくよみとれません。",
       "zh": "无法成功读取。",
       "en": "It won't scan properly.",
       "zh-TW": "無法成功讀取。",
       "vi": "Không quét được.",
-      "ko": "잘 안 읽혀요."
+      "ko": "잘 안 읽혀요.",
+      "ruby": [
+        {
+          "text": "うまく",
+          "isKanji": false
+        },
+        {
+          "text": "読",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "み",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "れません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うまくよみとれません。"
     },
     {
       "id": "s17-026",
       "subcategory": "sub03",
       "role": "user",
       "jp": "QRコードはどこですか。",
-      "furigana": "QRこーどはどこですか。",
       "zh": "二维码在哪里？",
       "en": "Where is the QR code?",
       "zh-TW": "二維碼在哪裡？",
       "vi": "Mã QR ở đâu?",
-      "ko": "QR코드는 어디에 있나요?"
+      "ko": "QR코드는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "QRコードはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "QRコードはどこですか。"
     },
     {
       "id": "s17-027",
       "subcategory": "sub03",
       "role": "user",
       "jp": "スクリーンショットを見せてもいいですか。",
-      "furigana": "すくりーんしょっとをみせてもいいですか。",
       "zh": "我可以给您看截图吗？",
       "en": "May I show you a screenshot?",
       "zh-TW": "我可以給您看截圖嗎？",
       "vi": "Tôi có thể cho bạn xem ảnh chụp màn hình không?",
-      "ko": "스크린샷을 보여드려도 될까요?"
+      "ko": "스크린샷을 보여드려도 될까요?",
+      "ruby": [
+        {
+          "text": "スクリーンショットを",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せてもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スクリーンショットをみせてもいいですか。"
     },
     {
       "id": "s17-028",
       "subcategory": "sub04",
       "role": "user",
       "jp": "アカウントを作りたいです。",
-      "furigana": "あかうんとをつくりたいです。",
       "zh": "我想创建账号。",
       "en": "I'd like to create an account.",
       "zh-TW": "我想創建帳號。",
       "vi": "Tôi muốn tạo tài khoản.",
-      "ko": "계정을 만들고 싶어요."
+      "ko": "계정을 만들고 싶어요.",
+      "ruby": [
+        {
+          "text": "アカウントを",
+          "isKanji": false
+        },
+        {
+          "text": "作",
+          "isKanji": true,
+          "reading": "つく"
+        },
+        {
+          "text": "りたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "アカウントをつくりたいです。"
     },
     {
       "id": "s17-029",
       "subcategory": "sub04",
       "role": "user",
       "jp": "ログインできません。",
-      "furigana": "ろぐいんできません。",
       "zh": "无法登录。",
       "en": "I can't log in.",
       "zh-TW": "無法登入。",
       "vi": "Tôi không thể đăng nhập.",
-      "ko": "로그인이 안 돼요."
+      "ko": "로그인이 안 돼요.",
+      "ruby": [
+        {
+          "text": "ログインできません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ログインできません。"
     },
     {
       "id": "s17-030",
       "subcategory": "sub04",
       "role": "user",
       "jp": "パスワードを忘れてしまったので、再設定したいです。",
-      "furigana": "ぱすわーどをわすれてしまったので、さいせっていしたいです。",
       "zh": "我忘记密码了，想重新设置。",
       "en": "I've forgotten my password and would like to reset it.",
       "zh-TW": "我忘記密碼了，想重新設置。",
       "vi": "Tôi quên mật khẩu và muốn đặt lại.",
-      "ko": "비밀번호를 잊어버려서 재설정하고 싶어요."
+      "ko": "비밀번호를 잊어버려서 재설정하고 싶어요.",
+      "ruby": [
+        {
+          "text": "パスワードを",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れてしまったので、",
+          "isKanji": false
+        },
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "設定",
+          "isKanji": true,
+          "reading": "せってい"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスワードをわすれてしまったので、さいせっていしたいです。"
     },
     {
       "id": "s17-031",
       "subcategory": "sub04",
       "role": "user",
       "jp": "日本語を中国語に変えられますか。",
-      "furigana": "にほんごをちゅうごくごにかえられますか。",
       "zh": "可以把日语改成中文吗？",
       "en": "Can I change the language from Japanese to Chinese?",
       "zh-TW": "可以把日語改成中文嗎？",
       "vi": "Tôi có thể đổi từ tiếng Nhật sang tiếng Trung không?",
-      "ko": "일본어를 중국어로 바꿀 수 있나요?"
+      "ko": "일본어를 중국어로 바꿀 수 있나요?",
+      "ruby": [
+        {
+          "text": "日本語",
+          "isKanji": true,
+          "reading": "にほんご"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "中国",
+          "isKanji": true,
+          "reading": "ちゅうごく"
+        },
+        {
+          "text": "語",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "変",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えられますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にほんごをちゅうごくごにかえられますか。"
     },
     {
       "id": "s17-032",
       "subcategory": "sub04",
       "role": "user",
       "jp": "このアプリの使い方を教えてもらえますか。",
-      "furigana": "このアプリのつかいかたをおしえてもらえますか。",
       "zh": "可以告诉我这个App怎么用吗？",
       "en": "Could you show me how to use this app?",
       "zh-TW": "可以告訴我這個App怎麼用嗎？",
       "vi": "Bạn có thể chỉ cho tôi cách dùng ứng dụng này không?",
-      "ko": "이 앱 사용 방법을 알려주실 수 있나요?"
+      "ko": "이 앱 사용 방법을 알려주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "このアプリの",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてもらえますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このアプリのつかいかたをおしえてもらえますか。"
     },
     {
       "jp": "パスワード再設定のメールをお送りしました。",
-      "furigana": "ぱすわーどさいせっていのめーるをおおくりしました。",
       "zh": "已经给您发送了重设密码的邮件。",
       "id": "s17-033",
       "subcategory": "sub04",
@@ -454,11 +1167,40 @@
       "en": "We've sent you a password reset email.",
       "zh-TW": "已經給您發送了重設密碼的郵件。",
       "vi": "Chúng tôi đã gửi email đặt lại mật khẩu cho quý khách.",
-      "ko": "비밀번호 재설정 메일을 보내드렸습니다."
+      "ko": "비밀번호 재설정 메일을 보내드렸습니다.",
+      "ruby": [
+        {
+          "text": "パスワード",
+          "isKanji": false
+        },
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "設定",
+          "isKanji": true,
+          "reading": "せってい"
+        },
+        {
+          "text": "のメールをお",
+          "isKanji": false
+        },
+        {
+          "text": "送",
+          "isKanji": true,
+          "reading": "おく"
+        },
+        {
+          "text": "りしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスワードさいせっていのメールをおおくりしました。"
     },
     {
       "jp": "言語設定は、右上のメニューから変更できます。",
-      "furigana": "げんごせっていは、みぎうえのめにゅーからへんこうできます。",
       "zh": "语言设置可以从右上角的菜单更改。",
       "id": "s17-034",
       "subcategory": "sub04",
@@ -466,71 +1208,214 @@
       "en": "You can change the language setting from the menu in the top right.",
       "zh-TW": "語言設定可以從右上角的選單更改。",
       "vi": "Có thể thay đổi ngôn ngữ từ menu ở góc trên bên phải.",
-      "ko": "언어 설정은 오른쪽 상단 메뉴에서 변경할 수 있습니다."
+      "ko": "언어 설정은 오른쪽 상단 메뉴에서 변경할 수 있습니다.",
+      "ruby": [
+        {
+          "text": "言語",
+          "isKanji": true,
+          "reading": "げんご"
+        },
+        {
+          "text": "設定",
+          "isKanji": true,
+          "reading": "せってい"
+        },
+        {
+          "text": "は、",
+          "isKanji": false
+        },
+        {
+          "text": "右",
+          "isKanji": true,
+          "reading": "みぎ"
+        },
+        {
+          "text": "上",
+          "isKanji": true,
+          "reading": "じょう"
+        },
+        {
+          "text": "のメニューから",
+          "isKanji": false
+        },
+        {
+          "text": "変更",
+          "isKanji": true,
+          "reading": "へんこう"
+        },
+        {
+          "text": "できます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "げんごせっていは、みぎじょうのメニューからへんこうできます。"
     },
     {
       "id": "s17-035",
       "subcategory": "sub05",
       "role": "user",
       "jp": "SMS（ショートメール）の認証コードが届きません。",
-      "furigana": "SMS（しょーとめーる）のにんしょうこーどがとどきません。",
       "zh": "收不到短信的验证码。",
       "en": "I'm not receiving the SMS verification code.",
       "zh-TW": "收不到簡訊的驗證碼。",
       "vi": "Tôi không nhận được mã xác minh qua SMS.",
-      "ko": "SMS 인증코드가 오지 않아요."
+      "ko": "SMS 인증코드가 오지 않아요.",
+      "ruby": [
+        {
+          "text": "SMS（ショートメール）の",
+          "isKanji": false
+        },
+        {
+          "text": "認証",
+          "isKanji": true,
+          "reading": "にんしょう"
+        },
+        {
+          "text": "コードが",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "きません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "SMS（ショートメール）のにんしょうコードがとどきません。"
     },
     {
       "id": "s17-036",
       "subcategory": "sub05",
       "role": "user",
       "jp": "何度やってもエラーになります。",
-      "furigana": "なんどやってもえらーになります。",
       "zh": "不管做几次都出错。",
       "en": "No matter how many times I try, it keeps giving an error.",
       "zh-TW": "不管做幾次都出錯。",
       "vi": "Dù thử bao nhiêu lần vẫn báo lỗi.",
-      "ko": "몇 번을 해도 오류가 나요."
+      "ko": "몇 번을 해도 오류가 나요.",
+      "ruby": [
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なん"
+        },
+        {
+          "text": "度",
+          "isKanji": true,
+          "reading": "ど"
+        },
+        {
+          "text": "やってもエラーになります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なんどやってもエラーになります。"
     },
     {
       "id": "s17-037",
       "subcategory": "sub05",
       "role": "user",
       "jp": "アカウントがロックされました。",
-      "furigana": "あかうんとがろっくされました。",
       "zh": "账号被锁定了。",
       "en": "My account has been locked.",
       "zh-TW": "帳號被鎖定了。",
       "vi": "Tài khoản của tôi bị khóa rồi.",
-      "ko": "계정이 잠겼어요."
+      "ko": "계정이 잠겼어요.",
+      "ruby": [
+        {
+          "text": "アカウントがロックされました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "アカウントがロックされました。"
     },
     {
       "id": "s17-038",
       "subcategory": "sub05",
       "role": "user",
       "jp": "このアプリでクレジットカードの登録エラーが出ます。",
-      "furigana": "このアプリでくれじっとかーどのとうろくえらーがでます。",
       "zh": "这个App提示信用卡注册错误。",
       "en": "This app is showing a credit card registration error.",
       "zh-TW": "這個App提示信用卡注冊錯誤。",
       "vi": "Ứng dụng này báo lỗi đăng ký thẻ tín dụng.",
-      "ko": "이 앱에서 신용카드 등록 오류가 떠요."
+      "ko": "이 앱에서 신용카드 등록 오류가 떠요.",
+      "ruby": [
+        {
+          "text": "このアプリでクレジットカードの",
+          "isKanji": false
+        },
+        {
+          "text": "登録",
+          "isKanji": true,
+          "reading": "とうろく"
+        },
+        {
+          "text": "エラーが",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "ます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このアプリでクレジットカードのとうろくエラーがでます。"
     },
     {
       "id": "s17-039",
       "subcategory": "sub05",
       "role": "user",
       "jp": "認証コードの有効期限が切れてしまいました。",
-      "furigana": "にんしょうこーどのゆうこうきげんがきれてしまいました。",
       "zh": "验证码已过期了。",
       "en": "The verification code has expired.",
       "zh-TW": "驗證碼已過期了。",
       "vi": "Mã xác minh đã hết hạn.",
-      "ko": "인증코드 유효기간이 지나버렸어요."
+      "ko": "인증코드 유효기간이 지나버렸어요.",
+      "ruby": [
+        {
+          "text": "認証",
+          "isKanji": true,
+          "reading": "にんしょう"
+        },
+        {
+          "text": "コードの",
+          "isKanji": false
+        },
+        {
+          "text": "有効",
+          "isKanji": true,
+          "reading": "ゆうこう"
+        },
+        {
+          "text": "期限",
+          "isKanji": true,
+          "reading": "きげん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "切",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "れてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にんしょうコードのゆうこうきげんがきれてしまいました。"
     },
     {
       "jp": "SMSが届くまで、少しお待ちください。",
-      "furigana": "えすえむえすがとどくまで、すこしおまちください。",
       "zh": "请稍等一下，等短信送达。",
       "id": "s17-040",
       "subcategory": "sub05",
@@ -538,11 +1423,44 @@
       "en": "Please wait a moment for the SMS to arrive.",
       "zh-TW": "請稍等一下，等簡訊送達。",
       "vi": "Vui lòng chờ một chút để tin nhắn SMS đến.",
-      "ko": "SMS가 도착할 때까지 잠시 기다려 주세요."
+      "ko": "SMS가 도착할 때까지 잠시 기다려 주세요.",
+      "ruby": [
+        {
+          "text": "SMSが",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "くまで、",
+          "isKanji": false
+        },
+        {
+          "text": "少",
+          "isKanji": true,
+          "reading": "すこ"
+        },
+        {
+          "text": "しお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "SMSがとどくまで、すこしおまちください。"
     },
     {
       "jp": "念のため、電話番号をもう一度ご確認ください。",
-      "furigana": "ねんのため、でんわばんごうをもういちどごかくにんください。",
       "zh": "为保险起见，请再次确认一下电话号码。",
       "id": "s17-041",
       "subcategory": "sub05",
@@ -550,11 +1468,54 @@
       "en": "Just to be safe, please double-check your phone number.",
       "zh-TW": "為保險起見，請再次確認一下電話號碼。",
       "vi": "Để chắc chắn, xin vui lòng kiểm tra lại số điện thoại.",
-      "ko": "혹시 모르니 전화번호를 다시 한번 확인해 주세요."
+      "ko": "혹시 모르니 전화번호를 다시 한번 확인해 주세요.",
+      "ruby": [
+        {
+          "text": "念",
+          "isKanji": true,
+          "reading": "ねん"
+        },
+        {
+          "text": "のため、",
+          "isKanji": false
+        },
+        {
+          "text": "電話",
+          "isKanji": true,
+          "reading": "でんわ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "をもう",
+          "isKanji": false
+        },
+        {
+          "text": "一度",
+          "isKanji": true,
+          "reading": "いちど"
+        },
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ねんのため、でんわばんごうをもういちどごかくにんください。"
     },
     {
       "jp": "セキュリティのため、24時間後に再度お試しください。",
-      "furigana": "せきゅりてぃのため、にじゅうよじかんごにさいどおためしください。",
       "zh": "出于安全考虑，请在24小时后再重试。",
       "id": "s17-042",
       "subcategory": "sub05",
@@ -562,7 +1523,46 @@
       "en": "For security reasons, please try again after 24 hours.",
       "zh-TW": "出於安全考量，請在24小時後再重試。",
       "vi": "Vì lý do bảo mật, vui lòng thử lại sau 24 giờ.",
-      "ko": "보안을 위해 24시간 후에 다시 시도해 주세요."
+      "ko": "보안을 위해 24시간 후에 다시 시도해 주세요.",
+      "ruby": [
+        {
+          "text": "セキュリティのため、24",
+          "isKanji": false
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "ご"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "再度",
+          "isKanji": true,
+          "reading": "さいど"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "試",
+          "isKanji": true,
+          "reading": "ため"
+        },
+        {
+          "text": "しください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "セキュリティのため、24じかんごにさいどおためしください。"
     }
   ],
   "title_ja": "スマホ・ネット"

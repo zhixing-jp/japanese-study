@@ -7,7 +7,6 @@
   "items": [
     {
       "jp": "すみません、新宿駅はどこですか。",
-      "furigana": "すみません、しんじゅくえきはどこですか。",
       "zh": "不好意思，新宿站在哪里？",
       "scene": "问路・步行",
       "id": "s02-001",
@@ -16,11 +15,31 @@
       "en": "Excuse me, where is Shinjuku station?",
       "zh-TW": "不好意思，新宿站在哪裡？",
       "vi": "Xin lỗi, ga Shinjuku ở đâu ạ?",
-      "ko": "저기요, 신주쿠역이 어디예요?"
+      "ko": "저기요, 신주쿠역이 어디예요?",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、しんじゅくえきはどこですか。"
     },
     {
       "jp": "この近くに駅はありますか。",
-      "furigana": "このちかくにえきはありますか。",
       "zh": "这附近有车站吗？",
       "scene": "问路・步行",
       "id": "s02-002",
@@ -29,11 +48,35 @@
       "en": "Is there a train station nearby?",
       "zh-TW": "這附近有車站嗎？",
       "vi": "Gần đây có ga tàu không?",
-      "ko": "이 근처에 역이 있나요?"
+      "ko": "이 근처에 역이 있나요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くに",
+          "isKanji": false
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "はありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このちかくにえきはありますか。"
     },
     {
       "jp": "市役所へはどうやって行けばいいですか。",
-      "furigana": "しやくしょへはどうやっていけばいいですか。",
       "zh": "去市役所怎么走？",
       "scene": "问路・步行",
       "id": "s02-003",
@@ -42,11 +85,31 @@
       "en": "How do I get to the city hall?",
       "zh-TW": "去市役所怎麼走？",
       "vi": "Đi đến tòa thị chính như thế nào?",
-      "ko": "시청은 어떻게 가면 되나요?"
+      "ko": "시청은 어떻게 가면 되나요?",
+      "ruby": [
+        {
+          "text": "市役所",
+          "isKanji": true,
+          "reading": "しやくしょ"
+        },
+        {
+          "text": "へはどうやって",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "けばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しやくしょへはどうやっていけばいいですか。"
     },
     {
       "jp": "この住所に行きたいんですが、どう行けばいいですか。",
-      "furigana": "このじゅうしょにいきたいんですが、どういけばいいですか。",
       "zh": "我想去这个地址，请问怎么走？（出示手机）",
       "scene": "问路・步行",
       "id": "s02-004",
@@ -55,11 +118,44 @@
       "en": "I want to go to this address. How do I get there? (showing phone)",
       "zh-TW": "我想去這個地址，請問怎麼走？（出示手機）",
       "vi": "Tôi muốn đến địa chỉ này. Đi như thế nào? (Cho xem điện thoại)",
-      "ko": "이 주소로 가고 싶은데요, 어떻게 가면 되나요? (스마트폰 제시)"
+      "ko": "이 주소로 가고 싶은데요, 어떻게 가면 되나요? (스마트폰 제시)",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きたいんですが、どう",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "けばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このじゅうしょにいきたいんですが、どういけばいいですか。"
     },
     {
       "jp": "歩いてどのくらいかかりますか。",
-      "furigana": "あるいてどのくらいかかりますか。",
       "zh": "走路大概需要多长时间？",
       "scene": "问路・步行",
       "id": "s02-005",
@@ -68,11 +164,22 @@
       "en": "How long does it take on foot?",
       "zh-TW": "走路大概需要多長時間？",
       "vi": "Đi bộ mất khoảng bao lâu?",
-      "ko": "걸어서 얼마나 걸려요?"
+      "ko": "걸어서 얼마나 걸려요?",
+      "ruby": [
+        {
+          "text": "歩",
+          "isKanji": true,
+          "reading": "ある"
+        },
+        {
+          "text": "いてどのくらいかかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あるいてどのくらいかかりますか。"
     },
     {
       "jp": "右ですか、左ですか。",
-      "furigana": "みぎですか、ひだりですか。",
       "zh": "是右边还是左边？",
       "scene": "问路・步行",
       "id": "s02-006",
@@ -81,11 +188,31 @@
       "en": "Is it on the right or left?",
       "zh-TW": "是右邊還是左邊？",
       "vi": "Bên phải hay bên trái?",
-      "ko": "오른쪽인가요, 왼쪽인가요?"
+      "ko": "오른쪽인가요, 왼쪽인가요?",
+      "ruby": [
+        {
+          "text": "右",
+          "isKanji": true,
+          "reading": "みぎ"
+        },
+        {
+          "text": "ですか、",
+          "isKanji": false
+        },
+        {
+          "text": "左",
+          "isKanji": true,
+          "reading": "ひだり"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "みぎですか、ひだりですか。"
     },
     {
       "jp": "まっすぐ行けばいいですか。",
-      "furigana": "まっすぐいけばいいですか。",
       "zh": "一直往前走就行吗？",
       "scene": "问路・步行",
       "id": "s02-007",
@@ -94,11 +221,26 @@
       "en": "Should I just go straight?",
       "zh-TW": "一直往前走就行嗎？",
       "vi": "Cứ đi thẳng là được không?",
-      "ko": "쭉 직진하면 되나요?"
+      "ko": "쭉 직진하면 되나요?",
+      "ruby": [
+        {
+          "text": "まっすぐ",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "けばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "まっすぐいけばいいですか。"
     },
     {
       "jp": "ここから遠いですか。",
-      "furigana": "ここからとおいですか。",
       "zh": "离这里远吗？",
       "scene": "问路・步行",
       "id": "s02-008",
@@ -107,11 +249,26 @@
       "en": "Is it far from here?",
       "zh-TW": "離這裡遠嗎？",
       "vi": "Có xa đây không?",
-      "ko": "여기서 멀어요?"
+      "ko": "여기서 멀어요?",
+      "ruby": [
+        {
+          "text": "ここから",
+          "isKanji": false
+        },
+        {
+          "text": "遠",
+          "isKanji": true,
+          "reading": "とお"
+        },
+        {
+          "text": "いですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここからとおいですか。"
     },
     {
       "jp": "お手洗いはどこですか。",
-      "furigana": "おてあらいはどこですか。",
       "zh": "洗手间在哪里？",
       "scene": "找设施",
       "id": "s02-009",
@@ -120,11 +277,26 @@
       "en": "Where is the restroom?",
       "zh-TW": "洗手間在哪裡？",
       "vi": "Nhà vệ sinh ở đâu?",
-      "ko": "화장실은 어디에 있나요?"
+      "ko": "화장실은 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "手洗",
+          "isKanji": true,
+          "reading": "てあら"
+        },
+        {
+          "text": "いはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おてあらいはどこですか。"
     },
     {
       "jp": "近くにコンビニやATMはありますか。",
-      "furigana": "ちかくにこんびにやATMはありますか。",
       "zh": "附近有便利店或ATM吗？",
       "scene": "找设施",
       "id": "s02-010",
@@ -133,11 +305,22 @@
       "en": "Is there a convenience store or ATM nearby?",
       "zh-TW": "附近有便利店或ATM嗎？",
       "vi": "Gần đây có cửa hàng tiện lợi hoặc ATM không?",
-      "ko": "근처에 편의점이나 ATM이 있나요?"
+      "ko": "근처에 편의점이나 ATM이 있나요?",
+      "ruby": [
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くにコンビニやATMはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちかくにコンビニやATMはありますか。"
     },
     {
       "jp": "エレベーターはどこですか。",
-      "furigana": "えれべーたーはどこですか。",
       "zh": "电梯在哪里？",
       "scene": "找设施",
       "id": "s02-011",
@@ -146,11 +329,17 @@
       "en": "Where is the elevator?",
       "zh-TW": "電梯在哪裡？",
       "vi": "Thang máy ở đâu?",
-      "ko": "엘리베이터는 어디에 있나요?"
+      "ko": "엘리베이터는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "エレベーターはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エレベーターはどこですか。"
     },
     {
       "jp": "エスカレーターはどこですか。",
-      "furigana": "えすかれーたーはどこですか。",
       "zh": "自动扶梯在哪里？",
       "scene": "找设施",
       "id": "s02-012",
@@ -159,11 +348,17 @@
       "en": "Where is the escalator?",
       "zh-TW": "手扶梯在哪裡？",
       "vi": "Thang cuốn ở đâu?",
-      "ko": "에스컬레이터는 어디에 있나요?"
+      "ko": "에스컬레이터는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "エスカレーターはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エスカレーターはどこですか。"
     },
     {
       "jp": "入口はどこですか。",
-      "furigana": "いりぐちはどこですか。",
       "zh": "入口在哪里？",
       "scene": "找设施",
       "id": "s02-013",
@@ -172,11 +367,22 @@
       "en": "Where is the entrance?",
       "zh-TW": "入口在哪裡？",
       "vi": "Lối vào ở đâu?",
-      "ko": "입구는 어디에 있나요?"
+      "ko": "입구는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "入口",
+          "isKanji": true,
+          "reading": "いりぐち"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いりぐちはどこですか。"
     },
     {
       "jp": "出口はどこですか。",
-      "furigana": "でぐちはどこですか。",
       "zh": "出口在哪里？",
       "scene": "找设施",
       "id": "s02-014",
@@ -185,11 +391,22 @@
       "en": "Where is the exit?",
       "zh-TW": "出口在哪裡？",
       "vi": "Lối ra ở đâu?",
-      "ko": "출구는 어디에 있나요?"
+      "ko": "출구는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "出口",
+          "isKanji": true,
+          "reading": "でぐち"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でぐちはどこですか。"
     },
     {
       "jp": "サービスカウンターはどこですか。",
-      "furigana": "さーびすかうんたーはどこですか。",
       "zh": "服务台在哪里？",
       "scene": "找设施",
       "id": "s02-015",
@@ -198,11 +415,17 @@
       "en": "Where is the service counter?",
       "zh-TW": "服務台在哪裡？",
       "vi": "Quầy dịch vụ ở đâu?",
-      "ko": "서비스 카운터는 어디에 있나요?"
+      "ko": "서비스 카운터는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "サービスカウンターはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "サービスカウンターはどこですか。"
     },
     {
       "jp": "荷物を預けるロッカーはありますか。",
-      "furigana": "にもつをあずけるろっかーはありますか。",
       "zh": "有寄存行李的储物柜吗？",
       "scene": "找设施",
       "id": "s02-016",
@@ -211,11 +434,31 @@
       "en": "Is there a locker where I can store my luggage?",
       "zh-TW": "有可以寄放行李的儲物櫃嗎？",
       "vi": "Có tủ khóa để gửi hành lý không?",
-      "ko": "짐을 맡길 수 있는 로커가 있나요?"
+      "ko": "짐을 맡길 수 있는 로커가 있나요?",
+      "ruby": [
+        {
+          "text": "荷物",
+          "isKanji": true,
+          "reading": "にもつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あづ"
+        },
+        {
+          "text": "けるロッカーはありますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にもつをあづけるロッカーはありますか。"
     },
     {
       "jp": "ベビーカーで入れますか。",
-      "furigana": "べびーかーでいれますか。",
       "zh": "推婴儿车可以进吗？",
       "scene": "找设施",
       "id": "s02-017",
@@ -224,11 +467,26 @@
       "en": "Can I come in with a stroller?",
       "zh-TW": "推嬰兒車可以進去嗎？",
       "vi": "Tôi có thể vào với xe đẩy em bé không?",
-      "ko": "유모차를 끌고 들어갈 수 있나요?"
+      "ko": "유모차를 끌고 들어갈 수 있나요?",
+      "ruby": [
+        {
+          "text": "ベビーカーで",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ベビーカーでいれますか。"
     },
     {
       "jp": "携帯の充電が切れたんですが、ここで充電できますか。",
-      "furigana": "けいたいのじゅうでんがきれたんですが、ここでじゅうでんできますか。",
       "zh": "手机没电了，这里可以充电吗？",
       "scene": "找设施",
       "id": "s02-018",
@@ -237,11 +495,49 @@
       "en": "My phone is out of battery. Can I charge it here?",
       "zh-TW": "手機沒電了，這裡可以充電嗎？",
       "vi": "Điện thoại tôi hết pin rồi. Tôi có thể sạc ở đây không?",
-      "ko": "폰 배터리가 없는데, 여기서 충전할 수 있나요?"
+      "ko": "폰 배터리가 없는데, 여기서 충전할 수 있나요?",
+      "ruby": [
+        {
+          "text": "携帯",
+          "isKanji": true,
+          "reading": "けいたい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "切",
+          "isKanji": true,
+          "reading": "き"
+        },
+        {
+          "text": "れたんですが、ここで",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "けいたいのじゅうでんがきれたんですが、ここでじゅうでんできますか。"
     },
     {
       "jp": "写真を撮ってもいいですか。",
-      "furigana": "しゃしんをとってもいいですか。",
       "zh": "可以拍照吗？",
       "scene": "找设施",
       "id": "s02-019",
@@ -250,11 +546,31 @@
       "en": "May I take photos here?",
       "zh-TW": "這裡可以拍照嗎？",
       "vi": "Tôi có thể chụp ảnh ở đây không?",
-      "ko": "여기서 사진 찍어도 되나요?"
+      "ko": "여기서 사진 찍어도 되나요?",
+      "ruby": [
+        {
+          "text": "写真",
+          "isKanji": true,
+          "reading": "しゃしん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "撮",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "ってもいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しゃしんをとってもいいですか。"
     },
     {
       "jp": "道に迷いました。",
-      "furigana": "みちにまよいました。",
       "zh": "我走错路了。",
       "scene": "迷路时",
       "id": "s02-020",
@@ -263,11 +579,31 @@
       "en": "I've gotten lost.",
       "zh-TW": "我迷路了。",
       "vi": "Tôi bị lạc rồi.",
-      "ko": "길을 잃었어요."
+      "ko": "길을 잃었어요.",
+      "ruby": [
+        {
+          "text": "道",
+          "isKanji": true,
+          "reading": "みち"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "迷",
+          "isKanji": true,
+          "reading": "まよ"
+        },
+        {
+          "text": "いました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "みちにまよいました。"
     },
     {
       "jp": "ここはどこですか。",
-      "furigana": "ここはどこですか。",
       "zh": "这里是哪里？",
       "scene": "迷路时",
       "id": "s02-021",
@@ -276,11 +612,17 @@
       "en": "Where am I right now?",
       "zh-TW": "這裡是哪裡？",
       "vi": "Tôi đang ở đâu vậy?",
-      "ko": "지금 여기가 어디예요?"
+      "ko": "지금 여기가 어디예요?",
+      "ruby": [
+        {
+          "text": "ここはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ここはどこですか。"
     },
     {
       "jp": "スマホの地図を見てほしいのですが、ここはどこですか。",
-      "furigana": "スマホのちずをみてほしいのですが、ここはどこですか。",
       "zh": "能帮我看一下手机地图吗，这里是哪里？",
       "scene": "迷路时",
       "id": "s02-022",
@@ -289,11 +631,35 @@
       "en": "Could you look at the map on my phone and tell me where I am?",
       "zh-TW": "能幫我看一下手機地圖嗎，這裡是哪裡？",
       "vi": "Bạn có thể xem bản đồ trên điện thoại của tôi và cho biết tôi đang ở đâu không?",
-      "ko": "제 폰 지도를 봐주실 수 있나요? 여기가 어디예요?"
+      "ko": "제 폰 지도를 봐주실 수 있나요? 여기가 어디예요?",
+      "ruby": [
+        {
+          "text": "スマホの",
+          "isKanji": false
+        },
+        {
+          "text": "地図",
+          "isKanji": true,
+          "reading": "ちず"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "てほしいのですが、ここはどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホのちずをみてほしいのですが、ここはどこですか。"
     },
     {
       "jp": "新宿駅はどこですか。",
-      "furigana": "しんじゅくえきはどこですか。",
       "zh": "新宿站在哪里？",
       "scene": "迷路时",
       "id": "s02-023",
@@ -302,11 +668,27 @@
       "en": "Where is Shinjuku station?",
       "zh-TW": "新宿站在哪裡？",
       "vi": "Ga Shinjuku ở đâu vậy?",
-      "ko": "신주쿠역이 어디예요?"
+      "ko": "신주쿠역이 어디예요?",
+      "ruby": [
+        {
+          "text": "新宿",
+          "isKanji": true,
+          "reading": "しんじゅく"
+        },
+        {
+          "text": "駅",
+          "isKanji": true,
+          "reading": "えき"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しんじゅくえきはどこですか。"
     },
     {
       "jp": "財布をなくしました。交番はどこですか。",
-      "furigana": "さいふをなくしました。こうばんはどこですか。",
       "zh": "我把钱包弄丢了。派出所在哪里？",
       "scene": "突发状况",
       "id": "s02-024",
@@ -315,11 +697,31 @@
       "en": "I lost my wallet. Where is the nearest police box?",
       "zh-TW": "我把錢包弄丟了。派出所在哪裡？",
       "vi": "Tôi đánh mất ví. Đồn cảnh sát ở đâu?",
-      "ko": "지갑을 잃어버렸어요. 파출소는 어디에 있나요?"
+      "ko": "지갑을 잃어버렸어요. 파출소는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "財布",
+          "isKanji": true,
+          "reading": "さいふ"
+        },
+        {
+          "text": "をなくしました。",
+          "isKanji": false
+        },
+        {
+          "text": "交番",
+          "isKanji": true,
+          "reading": "こうばん"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいふをなくしました。こうばんはどこですか。"
     },
     {
       "jp": "スマホをなくしました。交番はどこですか。",
-      "furigana": "スマホをなくしました。こうばんはどこですか。",
       "zh": "我把手机弄丢了。派出所在哪里？",
       "scene": "突发状况",
       "id": "s02-025",
@@ -328,11 +730,26 @@
       "en": "I lost my phone. Where is the nearest police box?",
       "zh-TW": "我把手機弄丟了。派出所在哪裡？",
       "vi": "Tôi đánh mất điện thoại. Đồn cảnh sát ở đâu?",
-      "ko": "스마트폰을 잃어버렸어요. 파출소는 어디에 있나요?"
+      "ko": "스마트폰을 잃어버렸어요. 파출소는 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "スマホをなくしました。",
+          "isKanji": false
+        },
+        {
+          "text": "交番",
+          "isKanji": true,
+          "reading": "こうばん"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "スマホをなくしました。こうばんはどこですか。"
     },
     {
       "jp": "具合が悪くなりました。近くの病院はどこですか。",
-      "furigana": "ぐあいがわるくなりました。ちかくのびょういんはどこですか。",
       "zh": "我身体不舒服，附近的医院在哪里？",
       "scene": "突发状况",
       "id": "s02-026",
@@ -341,11 +758,49 @@
       "en": "I'm not feeling well. Where is the nearest hospital?",
       "zh-TW": "我身體不舒服，附近的醫院在哪裡？",
       "vi": "Tôi không khỏe. Bệnh viện gần nhất ở đâu?",
-      "ko": "몸이 안 좋아요. 근처 병원이 어디에 있나요?"
+      "ko": "몸이 안 좋아요. 근처 병원이 어디에 있나요?",
+      "ruby": [
+        {
+          "text": "具合",
+          "isKanji": true,
+          "reading": "ぐあい"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "悪",
+          "isKanji": true,
+          "reading": "わる"
+        },
+        {
+          "text": "くなりました。",
+          "isKanji": false
+        },
+        {
+          "text": "近",
+          "isKanji": true,
+          "reading": "ちか"
+        },
+        {
+          "text": "くの",
+          "isKanji": false
+        },
+        {
+          "text": "病院",
+          "isKanji": true,
+          "reading": "びょういん"
+        },
+        {
+          "text": "はどこですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ぐあいがわるくなりました。ちかくのびょういんはどこですか。"
     },
     {
       "jp": "電車が止まっています。どうすればいいですか。",
-      "furigana": "でんしゃがとまっています。どうすればいいですか。",
       "zh": "电车停运了，我该怎么办？",
       "scene": "突发状况",
       "id": "s02-027",
@@ -354,11 +809,31 @@
       "en": "The train has stopped. What should I do?",
       "zh-TW": "電車停運了，我該怎麼辦？",
       "vi": "Tàu đã dừng rồi. Tôi phải làm gì bây giờ?",
-      "ko": "전철이 멈췄는데, 어떻게 해야 하나요?"
+      "ko": "전철이 멈췄는데, 어떻게 해야 하나요?",
+      "ruby": [
+        {
+          "text": "電車",
+          "isKanji": true,
+          "reading": "でんしゃ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "止",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "まっています。どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "でんしゃがとまっています。どうすればいいですか。"
     },
     {
       "jp": "あちらの信号を渡って、まっすぐ行くとあります。",
-      "furigana": "あちらのしんごうをわたって、まっすぐいくとあります。",
       "zh": "过那边的红绿灯，一直走就到了。",
       "zh-TW": "過那邊的紅綠燈，一直走就到了。",
       "en": "Cross the traffic light over there and go straight — you'll find it.",
@@ -367,11 +842,44 @@
       "scene": "问路・步行",
       "id": "s02-028",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらの",
+          "isKanji": false
+        },
+        {
+          "text": "信号",
+          "isKanji": true,
+          "reading": "しんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "渡",
+          "isKanji": true,
+          "reading": "わた"
+        },
+        {
+          "text": "って、まっすぐ",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "くとあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらのしんごうをわたって、まっすぐいくとあります。"
     },
     {
       "jp": "はい、歩いて5分ほどのところにあります。",
-      "furigana": "はい、あるいてごふんほどのところにあります。",
       "zh": "有的，走路大概5分钟。",
       "zh-TW": "有的，走路大概5分鐘。",
       "en": "Yes, it's about a 5-minute walk.",
@@ -380,11 +888,35 @@
       "scene": "问路・步行",
       "id": "s02-029",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "歩",
+          "isKanji": true,
+          "reading": "ある"
+        },
+        {
+          "text": "いて5",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "ほどのところにあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あるいて5ふんほどのところにあります。"
     },
     {
       "jp": "この道をまっすぐ行って、二つ目の交差点を右です。",
-      "furigana": "このみちをまっすぐいって、ふたつめのこうさてんをみぎです。",
       "zh": "沿这条路一直走，第二个路口右转。",
       "zh-TW": "沿這條路一直走，第二個路口右轉。",
       "en": "Go straight down this street, then turn right at the second intersection.",
@@ -393,11 +925,71 @@
       "scene": "问路・步行",
       "id": "s02-030",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "道",
+          "isKanji": true,
+          "reading": "みち"
+        },
+        {
+          "text": "をまっすぐ",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "って、",
+          "isKanji": false
+        },
+        {
+          "text": "二",
+          "isKanji": true,
+          "reading": "ふた"
+        },
+        {
+          "text": "つ",
+          "isKanji": false
+        },
+        {
+          "text": "目",
+          "isKanji": true,
+          "reading": "め"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交差点",
+          "isKanji": true,
+          "reading": "こうさてん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "右",
+          "isKanji": true,
+          "reading": "みぎ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このみちをまっすぐいって、ふたつめのこうさてんをみぎです。"
     },
     {
       "jp": "すみません、ちょっとわかりません。地図アプリで調べてみてください。",
-      "furigana": "すみません、ちょっとわかりません。ちずあぷりでしらべてみてください。",
       "zh": "不好意思，我不太清楚，您用地图App查一下吧。",
       "zh-TW": "不好意思，我不太清楚，您用地圖App查一下吧。",
       "en": "Sorry, I'm not sure. Could you check with a map app?",
@@ -406,11 +998,35 @@
       "scene": "问路・步行",
       "id": "s02-031",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "すみません、ちょっとわかりません。",
+          "isKanji": false
+        },
+        {
+          "text": "地図",
+          "isKanji": true,
+          "reading": "ちず"
+        },
+        {
+          "text": "アプリで",
+          "isKanji": false
+        },
+        {
+          "text": "調",
+          "isKanji": true,
+          "reading": "しら"
+        },
+        {
+          "text": "べてみてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、ちょっとわかりません。ちずアプリでしらべてみてください。"
     },
     {
       "jp": "10分くらいだと思います。",
-      "furigana": "じゅっぷんくらいだとおもいます。",
       "zh": "我想大概10分钟。",
       "zh-TW": "我想大概10分鐘。",
       "en": "I think it takes about 10 minutes.",
@@ -419,11 +1035,35 @@
       "scene": "问路・步行",
       "id": "s02-032",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "10",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "ふん"
+        },
+        {
+          "text": "くらいだと",
+          "isKanji": false
+        },
+        {
+          "text": "思",
+          "isKanji": true,
+          "reading": "おも"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "10ふんくらいだとおもいます。"
     },
     {
       "jp": "右です。",
-      "furigana": "みぎです。",
       "zh": "右边。",
       "zh-TW": "右邊。",
       "en": "To the right.",
@@ -432,11 +1072,22 @@
       "scene": "问路・步行",
       "id": "s02-033",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "右",
+          "isKanji": true,
+          "reading": "みぎ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "みぎです。"
     },
     {
       "jp": "はい、そのまままっすぐで大丈夫です。",
-      "furigana": "はい、そのままますぐでだいじょうぶです。",
       "zh": "对，一直走就行。",
       "zh-TW": "對，一直走就行。",
       "en": "Yes, just keep going straight.",
@@ -445,11 +1096,26 @@
       "scene": "问路・步行",
       "id": "s02-034",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、そのまままっすぐで",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、そのまままっすぐでだいじょうぶです。"
     },
     {
       "jp": "いいえ、そんなに遠くないですよ。",
-      "furigana": "いいえ、そんなにとおくないですよ。",
       "zh": "不会，没有很远。",
       "zh-TW": "不會，沒有很遠。",
       "en": "No, it's not that far.",
@@ -458,11 +1124,26 @@
       "scene": "问路・步行",
       "id": "s02-035",
       "subcategory": "sub01",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "いいえ、そんなに",
+          "isKanji": false
+        },
+        {
+          "text": "遠",
+          "isKanji": true,
+          "reading": "とお"
+        },
+        {
+          "text": "くないですよ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いいえ、そんなにとおくないですよ。"
     },
     {
       "jp": "あちらにございます。",
-      "furigana": "あちらにございます。",
       "zh": "在那边。",
       "zh-TW": "在那邊。",
       "en": "It's over there.",
@@ -471,11 +1152,17 @@
       "scene": "找设施",
       "id": "s02-036",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらにございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらにございます。"
     },
     {
       "jp": "はい、すぐそこにコンビニがあります。",
-      "furigana": "はい、すぐそこにこんびにがあります。",
       "zh": "有的，附近就有便利店。",
       "zh-TW": "有的，附近就有便利商店。",
       "en": "Yes, there's a convenience store right nearby.",
@@ -484,11 +1171,17 @@
       "scene": "找设施",
       "id": "s02-037",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、すぐそこにコンビニがあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、すぐそこにコンビニがあります。"
     },
     {
       "jp": "あちらの角にございます。",
-      "furigana": "あちらのかどにございます。",
       "zh": "在那边的拐角处。",
       "zh-TW": "在那邊的轉角處。",
       "en": "It's around that corner.",
@@ -497,11 +1190,26 @@
       "scene": "找设施",
       "id": "s02-038",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらの",
+          "isKanji": false
+        },
+        {
+          "text": "角",
+          "isKanji": true,
+          "reading": "かど"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらのかどにございます。"
     },
     {
       "jp": "エレベーターの隣にございます。",
-      "furigana": "えれべーたーのとなりにございます。",
       "zh": "在电梯旁边。",
       "zh-TW": "在電梯旁邊。",
       "en": "It's right next to the elevator.",
@@ -510,11 +1218,26 @@
       "scene": "找设施",
       "id": "s02-039",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "エレベーターの",
+          "isKanji": false
+        },
+        {
+          "text": "隣",
+          "isKanji": true,
+          "reading": "となり"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エレベーターのとなりにございます。"
     },
     {
       "jp": "こちらが入口になります。",
-      "furigana": "こちらがいりぐちになります。",
       "zh": "这边就是入口。",
       "zh-TW": "這邊就是入口。",
       "en": "This is the entrance.",
@@ -523,11 +1246,26 @@
       "scene": "找设施",
       "id": "s02-040",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらが",
+          "isKanji": false
+        },
+        {
+          "text": "入口",
+          "isKanji": true,
+          "reading": "いりぐち"
+        },
+        {
+          "text": "になります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらがいりぐちになります。"
     },
     {
       "jp": "あちらが出口です。",
-      "furigana": "あちらがでぐちです。",
       "zh": "那边是出口。",
       "zh-TW": "那邊是出口。",
       "en": "That's the exit over there.",
@@ -536,11 +1274,26 @@
       "scene": "找设施",
       "id": "s02-041",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "あちらが",
+          "isKanji": false
+        },
+        {
+          "text": "出口",
+          "isKanji": true,
+          "reading": "でぐち"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あちらがでぐちです。"
     },
     {
       "jp": "一階の中央にございます。",
-      "furigana": "いっかいのちゅうおうにございます。",
       "zh": "在一楼中央。",
       "zh-TW": "在一樓中央。",
       "en": "It's in the center of the first floor.",
@@ -549,11 +1302,36 @@
       "scene": "找设施",
       "id": "s02-042",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "階",
+          "isKanji": true,
+          "reading": "かい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "中央",
+          "isKanji": true,
+          "reading": "ちゅうおう"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いちかいのちゅうおうにございます。"
     },
     {
       "jp": "はい、あちらにコインロッカーがございます。",
-      "furigana": "はい、あちらにこいんろっかーがございます。",
       "zh": "有的，那边有投币寄存柜。",
       "zh-TW": "有的，那邊有投幣寄物櫃。",
       "en": "Yes, there are coin lockers over there.",
@@ -562,11 +1340,17 @@
       "scene": "找设施",
       "id": "s02-043",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、あちらにコインロッカーがございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、あちらにコインロッカーがございます。"
     },
     {
       "jp": "はい、大丈夫です。",
-      "furigana": "はい、だいじょうぶです。",
       "zh": "可以的，没问题。",
       "zh-TW": "可以的，沒問題。",
       "en": "Yes, that's fine.",
@@ -575,11 +1359,26 @@
       "scene": "找设施",
       "id": "s02-044",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、",
+          "isKanji": false
+        },
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、だいじょうぶです。"
     },
     {
       "jp": "申し訳ございません、充電サービスはございません。",
-      "furigana": "もうしわけございません、じゅうでんさーびすはございません。",
       "zh": "非常抱歉，这里没有提供充电服务。",
       "zh-TW": "非常抱歉，這裡沒有提供充電服務。",
       "en": "I'm sorry, we don't offer a charging service here.",
@@ -588,11 +1387,40 @@
       "scene": "找设施",
       "id": "s02-045",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ございません、",
+          "isKanji": false
+        },
+        {
+          "text": "充電",
+          "isKanji": true,
+          "reading": "じゅうでん"
+        },
+        {
+          "text": "サービスはございません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけございません、じゅうでんサービスはございません。"
     },
     {
       "jp": "はい、どうぞ。",
-      "furigana": "はい、どうぞ。",
       "zh": "可以的，请拍吧。",
       "zh-TW": "可以的，請拍吧。",
       "en": "Yes, go ahead.",
@@ -601,11 +1429,17 @@
       "scene": "找设施",
       "id": "s02-046",
       "subcategory": "sub02",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "はい、どうぞ。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はい、どうぞ。"
     },
     {
       "jp": "どちらまで行かれますか。",
-      "furigana": "どちらまでいかれますか。",
       "zh": "您要去哪里呢？",
       "zh-TW": "您要去哪裡呢？",
       "en": "Where are you trying to go?",
@@ -614,11 +1448,26 @@
       "scene": "迷路时",
       "id": "s02-047",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "どちらまで",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "かれますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "どちらまでいかれますか。"
     },
     {
       "jp": "こちらは靖国通りです。",
-      "furigana": "こちらはやすくにどおりです。",
       "zh": "这里是靖国通。",
       "zh-TW": "這裡是靖國通。",
       "en": "This is Yasukuni Street.",
@@ -627,11 +1476,31 @@
       "scene": "迷路时",
       "id": "s02-048",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "こちらは",
+          "isKanji": false
+        },
+        {
+          "text": "靖国",
+          "isKanji": true,
+          "reading": "やすくに"
+        },
+        {
+          "text": "通",
+          "isKanji": true,
+          "reading": "どお"
+        },
+        {
+          "text": "りです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらはやすくにどおりです。"
     },
     {
       "jp": "ちょっと見せてください。……ここは今この辺りですね。",
-      "furigana": "ちょっとみせてください。……ここはいまこのあたりですね。",
       "zh": "给我看一下……您现在在这附近。",
       "zh-TW": "給我看一下……您現在在這附近。",
       "en": "Let me take a look... You're around here right now.",
@@ -640,11 +1509,44 @@
       "scene": "迷路时",
       "id": "s02-049",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ちょっと",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せてください。……ここは",
+          "isKanji": false
+        },
+        {
+          "text": "今",
+          "isKanji": true,
+          "reading": "いま"
+        },
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "辺",
+          "isKanji": true,
+          "reading": "あた"
+        },
+        {
+          "text": "りですね。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ちょっとみせてください。……ここはいまこのあたりですね。"
     },
     {
       "jp": "この道をまっすぐ行くとございます。",
-      "furigana": "このみちをまっすぐいくとございます。",
       "zh": "沿这条路一直走就到了。",
       "zh-TW": "沿這條路一直走就到了。",
       "en": "Just go straight down this street.",
@@ -653,11 +1555,35 @@
       "scene": "迷路时",
       "id": "s02-050",
       "subcategory": "sub03",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "道",
+          "isKanji": true,
+          "reading": "みち"
+        },
+        {
+          "text": "をまっすぐ",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "くとございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このみちをまっすぐいくとございます。"
     },
     {
       "jp": "すぐそこの角にございます。一緒に行きましょうか。",
-      "furigana": "すぐそこのかどにございます。いっしょにいきましょうか。",
       "zh": "就在那个拐角，我陪您一起去吧。",
       "zh-TW": "就在那個轉角，我陪您一起去吧。",
       "en": "It's just around that corner. Shall I go with you?",
@@ -666,11 +1592,44 @@
       "scene": "突发状况",
       "id": "s02-051",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "すぐそこの",
+          "isKanji": false
+        },
+        {
+          "text": "角",
+          "isKanji": true,
+          "reading": "かど"
+        },
+        {
+          "text": "にございます。",
+          "isKanji": false
+        },
+        {
+          "text": "一緒",
+          "isKanji": true,
+          "reading": "いっしょ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "きましょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すぐそこのかどにございます。いっしょにいきましょうか。"
     },
     {
       "jp": "駅前の交番にご案内します。",
-      "furigana": "えきまえのこうばんにごあんないします。",
       "zh": "我带您去车站前的警岗。",
       "zh-TW": "我帶您去車站前的警崗。",
       "en": "I'll take you to the police box in front of the station.",
@@ -679,11 +1638,40 @@
       "scene": "突发状况",
       "id": "s02-052",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "駅前",
+          "isKanji": true,
+          "reading": "えきまえ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "交番",
+          "isKanji": true,
+          "reading": "こうばん"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "えきまえのこうばんにごあんないします。"
     },
     {
       "jp": "大丈夫ですか。救急車を呼びましょうか。",
-      "furigana": "だいじょうぶですか。きゅうきゅうしゃをよびましょうか。",
       "zh": "您还好吗？要帮您叫救护车吗？",
       "zh-TW": "您還好嗎？要幫您叫救護車嗎？",
       "en": "Are you okay? Should I call an ambulance?",
@@ -692,11 +1680,45 @@
       "scene": "突发状况",
       "id": "s02-053",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "大丈夫",
+          "isKanji": true,
+          "reading": "だいじょうぶ"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        },
+        {
+          "text": "救急",
+          "isKanji": true,
+          "reading": "きゅうきゅう"
+        },
+        {
+          "text": "車",
+          "isKanji": true,
+          "reading": "しゃ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "呼",
+          "isKanji": true,
+          "reading": "よ"
+        },
+        {
+          "text": "びましょうか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "だいじょうぶですか。きゅうきゅうしゃをよびましょうか。"
     },
     {
       "jp": "運転再開まで、こちらでお待ちください。",
-      "furigana": "うんてんさいかいまで、こちらでおまちください。",
       "zh": "在恢复运行之前，请在这边等候。",
       "zh-TW": "在恢復運行之前，請在這邊等候。",
       "en": "Please wait here until service resumes.",
@@ -705,7 +1727,33 @@
       "scene": "突发状况",
       "id": "s02-054",
       "subcategory": "sub04",
-      "role": "staff"
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "運転",
+          "isKanji": true,
+          "reading": "うんてん"
+        },
+        {
+          "text": "再開",
+          "isKanji": true,
+          "reading": "さいかい"
+        },
+        {
+          "text": "まで、こちらでお",
+          "isKanji": false
+        },
+        {
+          "text": "待",
+          "isKanji": true,
+          "reading": "ま"
+        },
+        {
+          "text": "ちください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うんてんさいかいまで、こちらでおまちください。"
     }
   ],
   "subcategories": [
@@ -751,8 +1799,8 @@
   "title_vi": "Ra ngoài",
   "title_ko": "외출",
   "description_en": "Phrases for asking directions, finding facilities, and dealing with getting lost.",
-  "description_ja": "道を尋ねたり、施設を見つけたり、迷子になった際のフレーズ。",
   "description_zh-TW": "出門在外，問路、找設施、迷路時用到的句子。",
   "description_vi": "Câu dùng khi hỏi đường, tìm cơ sở, và khi bị lạc.",
-  "description_ko": "외출 시 길 묻기, 시설 찾기, 길을 잃었을 때 사용하는 표현."
+  "description_ko": "외출 시 길 묻기, 시설 찾기, 길을 잃었을 때 사용하는 표현.",
+  "description_ja": "外出先で、道を聞いたり、施設を探したり、迷子になった時に使えるフレーズです。"
 }

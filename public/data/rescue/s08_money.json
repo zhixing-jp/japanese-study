@@ -92,960 +92,3649 @@
       "subcategory": "sub01",
       "role": "user",
       "jp": "銀行口座を開設したいんですが。",
-      "furigana": "ぎんこうこうざをかいせつしたいんですが。",
       "zh": "我想在开一个银行账户。",
       "en": "I'd like to open a bank account.",
       "zh-TW": "我想開一個銀行帳戶。",
       "vi": "Tôi muốn mở tài khoản ngân hàng.",
-      "ko": "은행 계좌를 개설하고 싶어요."
+      "ko": "은행 계좌를 개설하고 싶어요.",
+      "ruby": [
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "開設",
+          "isKanji": true,
+          "reading": "かいせつ"
+        },
+        {
+          "text": "したいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ぎんこうこうざをかいせつしたいんですが。"
     },
     {
       "id": "s08-002",
       "subcategory": "sub01",
       "role": "user",
       "jp": "外国人でも口座を開設できますか。",
-      "furigana": "がいこくじんでもこうざをかいせつできますか。",
       "zh": "外国人也可以开户吗？",
       "en": "Can foreign nationals open a bank account?",
       "zh-TW": "外國人也可以開戶嗎？",
       "vi": "Người nước ngoài có thể mở tài khoản không?",
-      "ko": "외국인도 계좌를 개설할 수 있나요?"
+      "ko": "외국인도 계좌를 개설할 수 있나요?",
+      "ruby": [
+        {
+          "text": "外国",
+          "isKanji": true,
+          "reading": "がいこく"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "でも",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "開設",
+          "isKanji": true,
+          "reading": "かいせつ"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がいこくじんでもこうざをかいせつできますか。"
     },
     {
       "id": "s08-003",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "在留カードをお持ちですか。",
-      "furigana": "ざいりゅうかーどをおもちですか。",
       "zh": "您带了在留卡吗？",
       "en": "Do you have your residence card?",
       "zh-TW": "您帶了在留卡嗎？",
       "vi": "Bạn có mang theo thẻ cư trú không?",
-      "ko": "재류카드를 가지고 계신가요?"
+      "ko": "재류카드를 가지고 계신가요?",
+      "ruby": [
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "カードをお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざいりゅうカードをおもちですか。"
     },
     {
       "id": "s08-004",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "在留カードと、現在お住まいの住所が確認できるものをご用意ください。",
-      "furigana": "ざいりゅうかーどと、げんざいおすまいのじゅうしょがかくにんできるものをごよういください。",
       "zh": "请准备在留卡以及能证明您目前住址的材料。",
       "en": "Please prepare your residence card and something that confirms your current address.",
       "zh-TW": "請準備在留卡以及能證明您目前住址的材料。",
       "vi": "Vui lòng chuẩn bị thẻ cư trú và giấy tờ xác nhận địa chỉ hiện tại của bạn.",
-      "ko": "재류카드와 현재 주소를 확인할 수 있는 서류를 준비해 주세요."
+      "ko": "재류카드와 현재 주소를 확인할 수 있는 서류를 준비해 주세요.",
+      "ruby": [
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "カードと、",
+          "isKanji": false
+        },
+        {
+          "text": "現在",
+          "isKanji": true,
+          "reading": "げんざい"
+        },
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "住",
+          "isKanji": true,
+          "reading": "す"
+        },
+        {
+          "text": "まいの",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "できるものをご",
+          "isKanji": false
+        },
+        {
+          "text": "用意",
+          "isKanji": true,
+          "reading": "ようい"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざいりゅうカードと、げんざいおすまいのじゅうしょがかくにんできるものをごよういください。"
     },
     {
       "id": "s08-005",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "在留資格や在留期間などを確認させていただきます。",
-      "furigana": "ざいりゅうしかくやざいりゅうきかんなどをかくにんさせていただきます。",
       "zh": "我们需要确认您的在留资格和在留期间等信息。",
       "en": "We will need to verify your residence status and period of stay.",
       "zh-TW": "我們需要確認您的在留資格和在留期間等信息。",
       "vi": "Chúng tôi sẽ xác nhận tư cách cư trú và thời gian lưu trú của bạn.",
-      "ko": "재류자격과 재류기간 등을 확인하겠습니다."
+      "ko": "재류자격과 재류기간 등을 확인하겠습니다.",
+      "ruby": [
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "資格",
+          "isKanji": true,
+          "reading": "しかく"
+        },
+        {
+          "text": "や",
+          "isKanji": false
+        },
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "期間",
+          "isKanji": true,
+          "reading": "きかん"
+        },
+        {
+          "text": "などを",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "させていただきます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざいりゅうしかくやざいりゅうきかんなどをかくにんさせていただきます。"
     },
     {
       "id": "s08-006",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "場合によってはお申し込みいただけないことがあります。",
-      "furigana": "ばあいによってはおもうしこみいただけないことがあります。",
       "zh": "根据情况，有时可能无法受理申请。",
       "en": "Depending on the circumstances, we may not be able to accept your application.",
       "zh-TW": "根據情況，有時可能無法受理申請。",
       "vi": "Tùy trường hợp, đôi khi chúng tôi có thể không thể chấp nhận đơn đăng ký của bạn.",
-      "ko": "경우에 따라서는 신청이 불가능할 수도 있습니다."
+      "ko": "경우에 따라서는 신청이 불가능할 수도 있습니다.",
+      "ruby": [
+        {
+          "text": "場合",
+          "isKanji": true,
+          "reading": "ばあい"
+        },
+        {
+          "text": "によってはお",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みいただけないことがあります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ばあいによってはおもうしこみいただけないことがあります。"
     },
     {
       "id": "s08-007",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "口座のご利用目的を教えてください。",
-      "furigana": "こうざのごりようもくてきをおしえてください。",
       "zh": "请告诉我您开户的用途。",
       "en": "Could you tell us the purpose of opening this account?",
       "zh-TW": "請告訴我您開戶的用途。",
       "vi": "Vui lòng cho biết mục đích sử dụng tài khoản.",
-      "ko": "계좌 이용 목적을 알려주세요."
+      "ko": "계좌 이용 목적을 알려주세요.",
+      "ruby": [
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "目的",
+          "isKanji": true,
+          "reading": "もくてき"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうざのごりようもくてきをおしえてください。"
     },
     {
       "id": "s08-008",
       "subcategory": "sub01",
       "role": "user",
       "jp": "給与の受け取りと、生活費の支払いに使います。",
-      "furigana": "きゅうよのうけとりと、せいかつひのしはらいにつかいます。",
       "zh": "用于接收工资和支付生活费。",
       "en": "I'll use it to receive my salary and pay living expenses.",
       "zh-TW": "用於接收工資和支付生活費。",
       "vi": "Tôi sẽ dùng để nhận lương và thanh toán chi phí sinh hoạt.",
-      "ko": "급여 수령과 생활비 지불에 사용할 예정입니다."
+      "ko": "급여 수령과 생활비 지불에 사용할 예정입니다.",
+      "ruby": [
+        {
+          "text": "給与",
+          "isKanji": true,
+          "reading": "きゅうよ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "受",
+          "isKanji": true,
+          "reading": "う"
+        },
+        {
+          "text": "け",
+          "isKanji": false
+        },
+        {
+          "text": "取",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "りと、",
+          "isKanji": false
+        },
+        {
+          "text": "生活",
+          "isKanji": true,
+          "reading": "せいかつ"
+        },
+        {
+          "text": "費",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "いに",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きゅうよのうけとりと、せいかつひのしはらいにつかいます。"
     },
     {
       "id": "s08-009",
       "subcategory": "sub01",
       "role": "user",
       "jp": "パスポートだけでも口座を作れますか。",
-      "furigana": "ぱすぽーとだけでもこうざをつくれますか。",
       "zh": "只有护照也可以开户吗？",
       "en": "Can I open an account with just my passport?",
       "zh-TW": "只有護照也可以開戶嗎？",
       "vi": "Chỉ có hộ chiếu thì có thể mở tài khoản không?",
-      "ko": "여권만으로도 계좌를 만들 수 있나요?"
+      "ko": "여권만으로도 계좌를 만들 수 있나요?",
+      "ruby": [
+        {
+          "text": "パスポートだけでも",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "作",
+          "isKanji": true,
+          "reading": "つく"
+        },
+        {
+          "text": "れますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスポートだけでもこうざをつくれますか。"
     },
     {
       "id": "s08-010",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "申し訳ありません。パスポートだけではお手続きできません。在留カードなどが必要です。",
-      "furigana": "もうしわけありません。ぱすぽーとだけではおてつづきできません。ざいりゅうかーどなどがひつようです。",
       "zh": "非常抱歉，仅凭护照无法办理，还需要在留卡等证件。",
       "en": "I'm sorry, we cannot process your application with just a passport. A residence card is also required.",
       "zh-TW": "非常抱歉，僅憑護照無法辦理，還需要在留卡等證件。",
       "vi": "Xin lỗi, chỉ có hộ chiếu thì không thể làm thủ tục. Cần có thẻ cư trú.",
-      "ko": "죄송합니다. 여권만으로는 수속이 불가능합니다. 재류카드 등이 필요합니다."
+      "ko": "죄송합니다. 여권만으로는 수속이 불가능합니다. 재류카드 등이 필요합니다.",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ありません。パスポートだけではお",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きできません。",
+          "isKanji": false
+        },
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "カードなどが",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけありません。パスポートだけではおてつづきできません。ざいりゅうカードなどがひつようです。"
     },
     {
       "id": "s08-011",
       "subcategory": "sub01",
       "role": "user",
       "jp": "口座の住所変更をお願いしたいのですが。",
-      "furigana": "こうざのじゅうしょへんこうをおねがいしたいのですが。",
       "zh": "我想办理账户的住址变更。",
       "en": "I'd like to update my address for my account.",
       "zh-TW": "我想辦理帳戶的住址變更。",
       "vi": "Tôi muốn thay đổi địa chỉ tài khoản ngân hàng.",
-      "ko": "계좌 주소를 변경하고 싶습니다만."
+      "ko": "계좌 주소를 변경하고 싶습니다만.",
+      "ruby": [
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "変更",
+          "isKanji": true,
+          "reading": "へんこう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いしたいのですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうざのじゅうしょへんこうをおねがいしたいのですが。"
     },
     {
       "id": "s08-012",
       "subcategory": "sub01",
       "role": "staff",
       "jp": "かしこまりました。それでは、本人確認書類と通帳をご提示いただけますか。",
-      "furigana": "かしこまりました。それでは、ほんにんかくにんしょるいとかよいちょうをごていじいただけますか。",
       "zh": "好的。那么，请出示您的身份证明文件和银行卡。",
       "en": "Certainly. Could you please show me your identification and cash card?",
       "zh-TW": "好的。那麼，請出示您的身份證明文件和金融卡。",
       "vi": "Vâng, tôi hiểu rồi. Anh/Chị vui lòng xuất trình giấy tờ tùy thân và thẻ ngân hàng nhé.",
-      "ko": "알겠습니다. 그럼 신분증과 현금IC카드를 제시해 주시겠습니까?"
+      "ko": "알겠습니다. 그럼 신분증과 현금IC카드를 제시해 주시겠습니까?",
+      "ruby": [
+        {
+          "text": "かしこまりました。それでは、",
+          "isKanji": false
+        },
+        {
+          "text": "本人",
+          "isKanji": true,
+          "reading": "ほんにん"
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "書類",
+          "isKanji": true,
+          "reading": "しょるい"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "通帳",
+          "isKanji": true,
+          "reading": "かよいちょう"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "提示",
+          "isKanji": true,
+          "reading": "ていじ"
+        },
+        {
+          "text": "いただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。それでは、ほんにんかくにんしょるいとかよいちょうをごていじいただけますか。"
     },
     {
       "id": "s08-013",
       "subcategory": "sub02",
       "role": "user",
       "jp": "この手続きをしたいんですが、どの窓口に行けばいいですか。",
-      "furigana": "このてつづきをしたいんですが、どのまどぐちにいけばいいですか。",
       "zh": "我想办这个手续，应该去哪个窗口？",
       "en": "I'd like to do this procedure. Which counter should I go to?",
       "zh-TW": "我想辦這個手續，應該去哪個窗口？",
       "vi": "Tôi muốn làm thủ tục này. Tôi cần đến quầy nào?",
-      "ko": "이 수속을 하고 싶은데요, 어느 창구로 가면 되나요?"
+      "ko": "이 수속을 하고 싶은데요, 어느 창구로 가면 되나요?",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きをしたいんですが、どの",
+          "isKanji": false
+        },
+        {
+          "text": "窓口",
+          "isKanji": true,
+          "reading": "まどぐち"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "けばいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このてつづきをしたいんですが、どのまどぐちにいけばいいですか。"
     },
     {
       "id": "s08-014",
       "subcategory": "sub02",
       "role": "user",
       "jp": "口座の残高を確認したいです。",
-      "furigana": "こうざのざんだかをかくにんしたいです。",
       "zh": "我想确认账户余额。",
       "en": "I'd like to check my account balance.",
       "zh-TW": "我想確認帳戶餘額。",
       "vi": "Tôi muốn kiểm tra số dư tài khoản.",
-      "ko": "계좌 잔액을 확인하고 싶어요."
+      "ko": "계좌 잔액을 확인하고 싶어요.",
+      "ruby": [
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "残高",
+          "isKanji": true,
+          "reading": "ざんだか"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうざのざんだかをかくにんしたいです。"
     },
     {
       "id": "s08-015",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "通帳またはキャッシュカードをお持ちですか。",
-      "furigana": "かよいちょうまたはきゃっしゅかーどをおもちですか。",
       "zh": "您带了存折或银行卡吗？",
       "en": "Do you have your passbook or cash card?",
       "zh-TW": "您帶了存折或銀行卡嗎？",
       "vi": "Bạn có mang theo sổ tiết kiệm hoặc thẻ ATM không?",
-      "ko": "통장 또는 현금카드를 가지고 계신가요?"
+      "ko": "통장 또는 현금카드를 가지고 계신가요?",
+      "ruby": [
+        {
+          "text": "通帳",
+          "isKanji": true,
+          "reading": "かよいちょう"
+        },
+        {
+          "text": "またはキャッシュカードをお",
+          "isKanji": false
+        },
+        {
+          "text": "持",
+          "isKanji": true,
+          "reading": "も"
+        },
+        {
+          "text": "ちですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かよいちょうまたはキャッシュカードをおもちですか。"
     },
     {
       "id": "s08-016",
       "subcategory": "sub02",
       "role": "user",
       "jp": "在留カードを更新しました。銀行にも届け出が必要ですか。",
-      "furigana": "ざいりゅうかーどをこうしんしました。ぎんこうにもとどけでがひつようですか。",
       "zh": "我更新了在留卡，银行这边也需要申报吗？",
       "en": "I've renewed my residence card. Do I need to notify the bank?",
       "zh-TW": "我更新了在留卡，銀行這邊也需要申報嗎？",
       "vi": "Tôi đã gia hạn thẻ cư trú. Tôi có cần thông báo cho ngân hàng không?",
-      "ko": "재류카드를 갱신했는데요, 은행에도 신고가 필요한가요?"
+      "ko": "재류카드를 갱신했는데요, 은행에도 신고가 필요한가요?",
+      "ruby": [
+        {
+          "text": "在留",
+          "isKanji": true,
+          "reading": "ざいりゅう"
+        },
+        {
+          "text": "カードを",
+          "isKanji": false
+        },
+        {
+          "text": "更新",
+          "isKanji": true,
+          "reading": "こうしん"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "にも",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "け",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざいりゅうカードをこうしんしました。ぎんこうにもとどけでがひつようですか。"
     },
     {
       "id": "s08-017",
       "subcategory": "sub02",
       "role": "user",
       "jp": "この書類の書き方がよく分からないんですが。",
-      "furigana": "このしょるいのかきかたがよくわからないんですが。",
       "zh": "我不太明白这份材料怎么填。",
       "en": "I'm not sure how to fill out this form.",
       "zh-TW": "我不太明白這份材料怎麼填。",
       "vi": "Tôi không biết cách điền vào mẫu này.",
-      "ko": "이 서류 작성 방법을 잘 모르겠어요."
+      "ko": "이 서류 작성 방법을 잘 모르겠어요.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "書類",
+          "isKanji": true,
+          "reading": "しょるい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "方",
+          "isKanji": true,
+          "reading": "かた"
+        },
+        {
+          "text": "がよく",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "わ"
+        },
+        {
+          "text": "からないんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このしょるいのかきかたがよくわからないんですが。"
     },
     {
       "id": "s08-018",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "こちらの欄にご記入ください。分からないところがあればお手伝いします。",
-      "furigana": "こちらのらんにごきにゅうください。わからないところがあればおてつだいします。",
       "zh": "请填写这一栏。如有不明白的地方，我来帮您。",
       "en": "Please fill in this section. If there's anything you don't understand, I'll help you.",
       "zh-TW": "請填寫這一欄。如有不明白的地方，我來幫您。",
       "vi": "Vui lòng điền vào ô này. Nếu có gì không hiểu, tôi sẽ giúp bạn.",
-      "ko": "이 칸에 기입해 주세요. 모르는 부분이 있으면 도와드리겠습니다."
+      "ko": "이 칸에 기입해 주세요. 모르는 부분이 있으면 도와드리겠습니다.",
+      "ruby": [
+        {
+          "text": "こちらの",
+          "isKanji": false
+        },
+        {
+          "text": "欄",
+          "isKanji": true,
+          "reading": "らん"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "記入",
+          "isKanji": true,
+          "reading": "きにゅう"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "わ"
+        },
+        {
+          "text": "からないところがあればお",
+          "isKanji": false
+        },
+        {
+          "text": "手伝",
+          "isKanji": true,
+          "reading": "てつだ"
+        },
+        {
+          "text": "いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こちらのらんにごきにゅうください。わからないところがあればおてつだいします。"
     },
     {
       "id": "s08-019",
       "subcategory": "sub02",
       "role": "user",
       "jp": "通帳をなくしてしまいました。再発行をお願いできますか。",
-      "furigana": "かよいちょうをなくしてしまいました。さいはっこうをおねがいできますか。",
       "zh": "我把存折弄丢了，可以帮我补办吗？",
       "en": "I've lost my passbook. Could you reissue one?",
       "zh-TW": "我把存折弄丟了，可以幫我補辦嗎？",
       "vi": "Tôi mất sổ tiết kiệm. Bạn có thể cấp lại không?",
-      "ko": "통장을 잃어버렸어요. 재발급 부탁드립니다."
+      "ko": "통장을 잃어버렸어요. 재발급 부탁드립니다.",
+      "ruby": [
+        {
+          "text": "通帳",
+          "isKanji": true,
+          "reading": "かよいちょう"
+        },
+        {
+          "text": "をなくしてしまいました。",
+          "isKanji": false
+        },
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "さい"
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "をお",
+          "isKanji": false
+        },
+        {
+          "text": "願",
+          "isKanji": true,
+          "reading": "ねが"
+        },
+        {
+          "text": "いできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かよいちょうをなくしてしまいました。さいはっこうをおねがいできますか。"
     },
     {
       "id": "s08-020",
       "subcategory": "sub02",
       "role": "user",
       "jp": "残高証明書を発行してください。",
-      "furigana": "ざんだかしょうめいしょをはっこうしてください。",
       "zh": "请帮我开具存款余额证明。",
       "en": "Please issue a balance certificate.",
       "zh-TW": "請幫我開具存款餘額證明。",
       "vi": "Vui lòng cấp giấy chứng nhận số dư tài khoản.",
-      "ko": "잔액 증명서를 발행해 주세요."
+      "ko": "잔액 증명서를 발행해 주세요.",
+      "ruby": [
+        {
+          "text": "残高",
+          "isKanji": true,
+          "reading": "ざんだか"
+        },
+        {
+          "text": "証明",
+          "isKanji": true,
+          "reading": "しょうめい"
+        },
+        {
+          "text": "書",
+          "isKanji": true,
+          "reading": "しょ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ざんだかしょうめいしょをはっこうしてください。"
     },
     {
       "id": "s08-021",
       "subcategory": "sub02",
       "role": "user",
       "jp": "口座を解約したいんですが。",
-      "furigana": "こうざをかいやくしたいんですが。",
       "zh": "我想销户。",
       "en": "I'd like to close my account.",
       "zh-TW": "我想銷戶。",
       "vi": "Tôi muốn đóng tài khoản.",
-      "ko": "계좌를 해지하고 싶어요."
+      "ko": "계좌를 해지하고 싶어요.",
+      "ruby": [
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "解約",
+          "isKanji": true,
+          "reading": "かいやく"
+        },
+        {
+          "text": "したいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こうざをかいやくしたいんですが。"
     },
     {
       "id": "s08-022",
       "subcategory": "sub02",
       "role": "staff",
       "jp": "通帳（またはキャッシュカード）の発行には一週間ほどかかります。",
-      "furigana": "かよいちょう（またはきゃっしゅかーど）のはっこうにはいちしゅうかんほどかかります。",
       "zh": "制作存折（或银行卡）大约需要一周时间。",
       "en": "It takes about one week to issue a passbook or cash card.",
       "zh-TW": "製作存折（或銀行卡）大約需要一週時間。",
       "vi": "Mất khoảng một tuần để phát hành sổ tiết kiệm hoặc thẻ ATM.",
-      "ko": "통장(또는 현금카드) 발행에는 약 1주일이 걸립니다."
+      "ko": "통장(또는 현금카드) 발행에는 약 1주일이 걸립니다.",
+      "ruby": [
+        {
+          "text": "通帳",
+          "isKanji": true,
+          "reading": "かよいちょう"
+        },
+        {
+          "text": "（またはキャッシュカード）の",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "には",
+          "isKanji": false
+        },
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "週間",
+          "isKanji": true,
+          "reading": "しゅうかん"
+        },
+        {
+          "text": "ほどかかります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かよいちょう（またはキャッシュカード）のはっこうにはいちしゅうかんほどかかります。"
     },
     {
       "id": "s08-023",
       "subcategory": "sub03",
       "role": "user",
       "jp": "お金を引き出したいんですが、どうすればいいですか。",
-      "furigana": "おかねをひきだしたいんですが、どうすればいいですか。",
       "zh": "我想取钱，应该怎么操作？",
       "en": "I'd like to withdraw money. How do I do it?",
       "zh-TW": "我想取錢，應該怎麼操作？",
       "vi": "Tôi muốn rút tiền. Tôi làm thế nào?",
-      "ko": "돈을 인출하고 싶은데요, 어떻게 하면 되나요?"
+      "ko": "돈을 인출하고 싶은데요, 어떻게 하면 되나요?",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "金",
+          "isKanji": true,
+          "reading": "かね"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "したいんですが、どうすればいいですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おかねをひきだしたいんですが、どうすればいいですか。"
     },
     {
       "id": "s08-024",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "キャッシュカードを入れて、暗証番号を入力してください。",
-      "furigana": "きゃっしゅかーどをいれて、あんしょうばんごうをにゅうりょくしてください。",
       "zh": "请插入银行卡，然后输入密码。",
       "en": "Please insert your cash card and enter your PIN.",
       "zh-TW": "請插入銀行卡，然後輸入密碼。",
       "vi": "Vui lòng cho thẻ vào và nhập mã PIN.",
-      "ko": "현금카드를 넣고 비밀번호를 입력해 주세요."
+      "ko": "현금카드를 넣고 비밀번호를 입력해 주세요.",
+      "ruby": [
+        {
+          "text": "キャッシュカードを",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れて、",
+          "isKanji": false
+        },
+        {
+          "text": "暗証",
+          "isKanji": true,
+          "reading": "あんしょう"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "入力",
+          "isKanji": true,
+          "reading": "にゅうりょく"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "キャッシュカードをいれて、あんしょうばんごうをにゅうりょくしてください。"
     },
     {
       "id": "s08-025",
       "subcategory": "sub03",
       "role": "user",
       "jp": "このATMで現金を預け入れることはできますか。",
-      "furigana": "このATMでげんきんをあづけいれることはできますか。",
       "zh": "这台ATM可以存现金吗？",
       "en": "Can I deposit cash at this ATM?",
       "zh-TW": "這台ATM可以存現金嗎？",
       "vi": "Tôi có thể gửi tiền mặt tại ATM này không?",
-      "ko": "이 ATM에서 현금을 입금할 수 있나요?"
+      "ko": "이 ATM에서 현금을 입금할 수 있나요?",
+      "ruby": [
+        {
+          "text": "このATMで",
+          "isKanji": false
+        },
+        {
+          "text": "現金",
+          "isKanji": true,
+          "reading": "げんきん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あづ"
+        },
+        {
+          "text": "け",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れることはできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このATMでげんきんをあづけいれることはできますか。"
     },
     {
       "id": "s08-026",
       "subcategory": "sub03",
       "role": "user",
       "jp": "海外で発行されたカードでも、このATMを利用できますか。",
-      "furigana": "かいがいではっこうされたかーどでも、このATMをりようできますか。",
       "zh": "海外发行的银行卡也可以使用这台ATM吗？",
       "en": "Can I use a card issued overseas at this ATM?",
       "zh-TW": "海外發行的銀行卡也可以使用這台ATM嗎？",
       "vi": "Thẻ phát hành ở nước ngoài có thể dùng tại ATM này không?",
-      "ko": "해외에서 발급된 카드로도 이 ATM을 이용할 수 있나요?"
+      "ko": "해외에서 발급된 카드로도 이 ATM을 이용할 수 있나요?",
+      "ruby": [
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "されたカードでも、このATMを",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいがいではっこうされたカードでも、このATMをりようできますか。"
     },
     {
       "id": "s08-027",
       "subcategory": "sub03",
       "role": "user",
       "jp": "画面の言語を英語に変えたいんですが。",
-      "furigana": "がめんのげんごをえいごにかえたいんですが。",
       "zh": "我想把屏幕语言换成英语。",
       "en": "I'd like to change the screen language to English.",
       "zh-TW": "我想把螢幕語言換成英語。",
       "vi": "Tôi muốn chuyển ngôn ngữ màn hình sang tiếng Anh.",
-      "ko": "화면 언어를 영어로 바꾸고 싶어요."
+      "ko": "화면 언어를 영어로 바꾸고 싶어요.",
+      "ruby": [
+        {
+          "text": "画面",
+          "isKanji": true,
+          "reading": "がめん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "言語",
+          "isKanji": true,
+          "reading": "げんご"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "英語",
+          "isKanji": true,
+          "reading": "えいご"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "変",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えたいんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "がめんのげんごをえいごにかえたいんですが。"
     },
     {
       "id": "s08-028",
       "subcategory": "sub03",
       "role": "user",
       "jp": "カードを入れたんですが、お金を引き出せません。",
-      "furigana": "かーどをいれたんですが、おかねをひきだせません。",
       "zh": "我插入了银行卡，但取不出钱来。",
       "en": "I inserted my card, but I can't withdraw money.",
       "zh-TW": "我插入了銀行卡，但取不出錢來。",
       "vi": "Tôi đã cho thẻ vào nhưng không thể rút tiền.",
-      "ko": "카드를 넣었는데 돈을 인출할 수 없어요."
+      "ko": "카드를 넣었는데 돈을 인출할 수 없어요.",
+      "ruby": [
+        {
+          "text": "カードを",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "い"
+        },
+        {
+          "text": "れたんですが、お",
+          "isKanji": false
+        },
+        {
+          "text": "金",
+          "isKanji": true,
+          "reading": "かね"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "せません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードをいれたんですが、おかねをひきだせません。"
     },
     {
       "id": "s08-029",
       "subcategory": "sub03",
       "role": "user",
       "jp": "カードが出てきません。",
-      "furigana": "かーどがでてきません。",
       "zh": "卡出不来了。",
       "en": "My card won't come out.",
       "zh-TW": "卡出不來了。",
       "vi": "Thẻ của tôi không ra được.",
-      "ko": "카드가 나오지 않아요."
+      "ko": "카드가 나오지 않아요.",
+      "ruby": [
+        {
+          "text": "カードが",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "てきません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードがでてきません。"
     },
     {
       "id": "s08-030",
       "subcategory": "sub03",
       "role": "user",
       "jp": "暗証番号を間違えました。",
-      "furigana": "あんしょうばんごうをまちがえました。",
       "zh": "我输错密码了。",
       "en": "I entered the wrong PIN.",
       "zh-TW": "我輸錯密碼了。",
       "vi": "Tôi nhập sai mã PIN.",
-      "ko": "비밀번호를 잘못 입력했어요."
+      "ko": "비밀번호를 잘못 입력했어요.",
+      "ruby": [
+        {
+          "text": "暗証",
+          "isKanji": true,
+          "reading": "あんしょう"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "えました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あんしょうばんごうをまちがえました。"
     },
     {
       "id": "s08-031",
       "subcategory": "sub03",
       "role": "user",
       "jp": "手数料はいくらかかりますか。",
-      "furigana": "てすうりょうはいくらかかりますか。",
       "zh": "需要多少手续费？",
       "en": "How much is the fee?",
       "zh-TW": "需要多少手續費？",
       "vi": "Phí là bao nhiêu?",
-      "ko": "수수료는 얼마인가요?"
+      "ko": "수수료는 얼마인가요?",
+      "ruby": [
+        {
+          "text": "手数料",
+          "isKanji": true,
+          "reading": "てすうりょう"
+        },
+        {
+          "text": "はいくらかかりますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "てすうりょうはいくらかかりますか。"
     },
     {
       "id": "s08-032",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "ご利用時間やカードによって異なります。",
-      "furigana": "ごりようじかんやかーどによってことなります。",
       "zh": "根据使用时间和卡种不同而有所不同。",
       "en": "It varies depending on the time of use and the type of card.",
       "zh-TW": "根據使用時間和卡種不同而有所不同。",
       "vi": "Tùy thuộc vào thời gian sử dụng và loại thẻ.",
-      "ko": "이용 시간과 카드 종류에 따라 다릅니다."
+      "ko": "이용 시간과 카드 종류에 따라 다릅니다.",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "時間",
+          "isKanji": true,
+          "reading": "じかん"
+        },
+        {
+          "text": "やカードによって",
+          "isKanji": false
+        },
+        {
+          "text": "異",
+          "isKanji": true,
+          "reading": "こと"
+        },
+        {
+          "text": "なります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごりようじかんやカードによってことなります。"
     },
     {
       "id": "s08-033",
       "subcategory": "sub03",
       "role": "user",
       "jp": "一日にいくらまで引き出せますか。",
-      "furigana": "いちにちにいくらまでひきだせますか。",
       "zh": "一天最多可以取多少钱？",
       "en": "How much can I withdraw per day?",
       "zh-TW": "一天最多可以取多少錢？",
       "vi": "Tôi có thể rút tối đa bao nhiêu trong một ngày?",
-      "ko": "하루에 얼마까지 인출할 수 있나요?"
+      "ko": "하루에 얼마까지 인출할 수 있나요?",
+      "ruby": [
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "にち"
+        },
+        {
+          "text": "にいくらまで",
+          "isKanji": false
+        },
+        {
+          "text": "引",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "だ"
+        },
+        {
+          "text": "せますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いちにちにいくらまでひきだせますか。"
     },
     {
       "id": "s08-034",
       "subcategory": "sub03",
       "role": "staff",
       "jp": "カードの種類によって限度額が異なります。",
-      "furigana": "かーどのしゅるいによってげんどがくがことなります。",
       "zh": "根据卡的种类不同，限额也不同。",
       "en": "The limit varies depending on the type of card.",
       "zh-TW": "根據卡的種類不同，限額也不同。",
       "vi": "Hạn mức tùy thuộc vào loại thẻ.",
-      "ko": "카드 종류에 따라 한도액이 다릅니다."
+      "ko": "카드 종류에 따라 한도액이 다릅니다.",
+      "ruby": [
+        {
+          "text": "カードの",
+          "isKanji": false
+        },
+        {
+          "text": "種類",
+          "isKanji": true,
+          "reading": "しゅるい"
+        },
+        {
+          "text": "によって",
+          "isKanji": false
+        },
+        {
+          "text": "限度",
+          "isKanji": true,
+          "reading": "げんど"
+        },
+        {
+          "text": "額",
+          "isKanji": true,
+          "reading": "がく"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "異",
+          "isKanji": true,
+          "reading": "こと"
+        },
+        {
+          "text": "なります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードのしゅるいによってげんどがくがことなります。"
     },
     {
       "id": "s08-035",
       "subcategory": "sub04",
       "role": "user",
       "jp": "この口座にお金を振り込みたいです。",
-      "furigana": "このこうざにおかねをふりこみたいです。",
       "zh": "我想往这个账户汇款。",
       "en": "I'd like to transfer money to this account.",
       "zh-TW": "我想往這個帳戶匯款。",
       "vi": "Tôi muốn chuyển tiền vào tài khoản này.",
-      "ko": "이 계좌로 돈을 이체하고 싶어요."
+      "ko": "이 계좌로 돈을 이체하고 싶어요.",
+      "ruby": [
+        {
+          "text": "この",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "金",
+          "isKanji": true,
+          "reading": "かね"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "振",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このこうざにおかねをふりこみたいです。"
     },
     {
       "id": "s08-036",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "振込先の銀行名と支店名、口座番号をご確認ください。",
-      "furigana": "ふりこみさきのぎんこうめいとしてんめい、こうざばんごうをごかくにんください。",
       "zh": "请确认收款方的银行名称、支行名称和账号。",
       "en": "Please confirm the recipient's bank name, branch name, and account number.",
       "zh-TW": "請確認收款方的銀行名稱、支行名稱和帳號。",
       "vi": "Vui lòng xác nhận tên ngân hàng, tên chi nhánh và số tài khoản của người nhận.",
-      "ko": "수취인의 은행명, 지점명, 계좌번호를 확인해 주세요."
+      "ko": "수취인의 은행명, 지점명, 계좌번호를 확인해 주세요.",
+      "ruby": [
+        {
+          "text": "振込",
+          "isKanji": true,
+          "reading": "ふりこみ"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "支店",
+          "isKanji": true,
+          "reading": "してん"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふりこみさきのぎんこうめいとしてんめい、こうざばんごうをごかくにんください。"
     },
     {
       "id": "s08-037",
       "subcategory": "sub04",
       "role": "user",
       "jp": "家賃を振り込みたいんですが、ATMからできますか。",
-      "furigana": "やちんをふりこみたいんですが、ATMからできますか。",
       "zh": "我想汇房租，可以从ATM操作吗？",
       "en": "I'd like to transfer rent. Can I do it from an ATM?",
       "zh-TW": "我想匯房租，可以從ATM操作嗎？",
       "vi": "Tôi muốn chuyển tiền thuê nhà. Tôi có thể làm từ ATM không?",
-      "ko": "집세를 이체하고 싶은데요, ATM에서 할 수 있나요?"
+      "ko": "집세를 이체하고 싶은데요, ATM에서 할 수 있나요?",
+      "ruby": [
+        {
+          "text": "家賃",
+          "isKanji": true,
+          "reading": "やちん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "振",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みたいんですが、ATMからできますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "やちんをふりこみたいんですが、ATMからできますか。"
     },
     {
       "id": "s08-038",
       "subcategory": "sub04",
       "role": "user",
       "jp": "振込先の口座番号を間違えてしまったかもしれません。",
-      "furigana": "ふりこみさきのこうざばんごうをまちがえてしまったかもしれません。",
       "zh": "我可能填错了收款账户的账号。",
       "en": "I may have entered the wrong account number for the transfer.",
       "zh-TW": "我可能填錯了收款帳戶的帳號。",
       "vi": "Tôi có thể đã nhập sai số tài khoản người nhận.",
-      "ko": "수취인 계좌번호를 잘못 입력한 것 같아요."
+      "ko": "수취인 계좌번호를 잘못 입력한 것 같아요.",
+      "ruby": [
+        {
+          "text": "振込",
+          "isKanji": true,
+          "reading": "ふりこみ"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "間違",
+          "isKanji": true,
+          "reading": "まちが"
+        },
+        {
+          "text": "えてしまったかもしれません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふりこみさきのこうざばんごうをまちがえてしまったかもしれません。"
     },
     {
       "id": "s08-039",
       "subcategory": "sub04",
       "role": "user",
       "jp": "振込手数料はいくらですか。",
-      "furigana": "ふりこみてすうりょうはいくらですか。",
       "zh": "转账手续费是多少钱？",
       "en": "How much is the transfer fee?",
       "zh-TW": "轉帳手續費是多少錢？",
       "vi": "Phí chuyển tiền là bao nhiêu?",
-      "ko": "이체 수수료는 얼마인가요?"
+      "ko": "이체 수수료는 얼마인가요?",
+      "ruby": [
+        {
+          "text": "振込",
+          "isKanji": true,
+          "reading": "ふりこみ"
+        },
+        {
+          "text": "手数料",
+          "isKanji": true,
+          "reading": "てすうりょう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふりこみてすうりょうはいくらですか。"
     },
     {
       "id": "s08-040",
       "subcategory": "sub04",
       "role": "user",
       "jp": "振り込みをしようとしたんですが、できませんでした。",
-      "furigana": "ふりこみをしようとしたんですが、できませんでした。",
       "zh": "我尝试转账，但没有成功。",
       "en": "I tried to make a transfer, but it didn't go through.",
       "zh-TW": "我嘗試轉帳，但沒有成功。",
       "vi": "Tôi đã cố chuyển tiền nhưng không thành công.",
-      "ko": "이체를 시도했는데 안 됐어요."
+      "ko": "이체를 시도했는데 안 됐어요.",
+      "ruby": [
+        {
+          "text": "振",
+          "isKanji": true,
+          "reading": "ふ"
+        },
+        {
+          "text": "り",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みをしようとしたんですが、できませんでした。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふりこみをしようとしたんですが、できませんでした。"
     },
     {
       "id": "s08-041",
       "subcategory": "sub04",
       "role": "staff",
       "jp": "エラーの内容を確認しますので、画面を見せていただけますか。",
-      "furigana": "えらーのないようをかくにんしますので、がめんをみせていただけますか。",
       "zh": "我来确认一下错误内容，可以给我看一下屏幕吗？",
       "en": "I'll check the error. Could you show me the screen?",
       "zh-TW": "我來確認一下錯誤內容，可以給我看一下螢幕嗎？",
       "vi": "Tôi sẽ kiểm tra lỗi. Bạn có thể cho tôi xem màn hình không?",
-      "ko": "오류 내용을 확인할게요. 화면을 보여주실 수 있나요?"
+      "ko": "오류 내용을 확인할게요. 화면을 보여주실 수 있나요?",
+      "ruby": [
+        {
+          "text": "エラーの",
+          "isKanji": false
+        },
+        {
+          "text": "内容",
+          "isKanji": true,
+          "reading": "ないよう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "しますので、",
+          "isKanji": false
+        },
+        {
+          "text": "画面",
+          "isKanji": true,
+          "reading": "がめん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "せていただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "エラーのないようをかくにんしますので、がめんをみせていただけますか。"
     },
     {
       "id": "s08-042",
       "subcategory": "sub05",
       "role": "user",
       "jp": "日本から海外の口座に送金したいです。",
-      "furigana": "にっぽんからかいがいのこうざにそうきんしたいです。",
       "zh": "我想从日本向海外账户汇款。",
       "en": "I'd like to send money from Japan to an overseas account.",
       "zh-TW": "我想從日本向海外帳戶匯款。",
       "vi": "Tôi muốn gửi tiền từ Nhật Bản đến tài khoản ở nước ngoài.",
-      "ko": "일본에서 해외 계좌로 송금하고 싶어요."
+      "ko": "일본에서 해외 계좌로 송금하고 싶어요.",
+      "ruby": [
+        {
+          "text": "日本",
+          "isKanji": true,
+          "reading": "にっぽん"
+        },
+        {
+          "text": "から",
+          "isKanji": false
+        },
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にっぽんからかいがいのこうざにそうきんしたいです。"
     },
     {
       "id": "s08-043",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "送金先の国と銀行情報をご用意ください。",
-      "furigana": "そうきんさきのくにとぎんこうじょうほうをごよういください。",
       "zh": "请准备好收款方所在国家和银行信息。",
       "en": "Please prepare the destination country and bank information.",
       "zh-TW": "請準備好收款方所在國家和銀行信息。",
       "vi": "Vui lòng chuẩn bị thông tin quốc gia và ngân hàng đích.",
-      "ko": "송금 대상 국가와 은행 정보를 준비해 주세요."
+      "ko": "송금 대상 국가와 은행 정보를 준비해 주세요.",
+      "ruby": [
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "国",
+          "isKanji": true,
+          "reading": "くに"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "情報",
+          "isKanji": true,
+          "reading": "じょうほう"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "用意",
+          "isKanji": true,
+          "reading": "ようい"
+        },
+        {
+          "text": "ください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そうきんさきのくにとぎんこうじょうほうをごよういください。"
     },
     {
       "id": "s08-044",
       "subcategory": "sub05",
       "role": "user",
       "jp": "海外送金には何が必要ですか。",
-      "furigana": "かいがいそうきんにはなにがひつようですか。",
       "zh": "海外汇款需要准备什么？",
       "en": "What do I need for an international transfer?",
       "zh-TW": "海外匯款需要準備什麼？",
       "vi": "Cần gì để chuyển tiền quốc tế?",
-      "ko": "해외 송금에는 무엇이 필요한가요?"
+      "ko": "해외 송금에는 무엇이 필요한가요?",
+      "ruby": [
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "には",
+          "isKanji": false
+        },
+        {
+          "text": "何",
+          "isKanji": true,
+          "reading": "なに"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "ですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいがいそうきんにはなにがひつようですか。"
     },
     {
       "id": "s08-045",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "受取人の名前、住所、銀行名、口座番号などが必要です。",
-      "furigana": "うけとりじんのなまえ、じゅうしょ、ぎんこうめい、こうざばんごうなどがひつようです。",
       "zh": "需要收款人的姓名、地址、银行名称、账号等信息。",
       "en": "You'll need the recipient's name, address, bank name, and account number.",
       "zh-TW": "需要收款人的姓名、地址、銀行名稱、帳號等信息。",
       "vi": "Cần tên, địa chỉ, tên ngân hàng và số tài khoản của người nhận.",
-      "ko": "수취인의 이름, 주소, 은행명, 계좌번호 등이 필요합니다."
+      "ko": "수취인의 이름, 주소, 은행명, 계좌번호 등이 필요합니다.",
+      "ruby": [
+        {
+          "text": "受取",
+          "isKanji": true,
+          "reading": "うけとり"
+        },
+        {
+          "text": "人",
+          "isKanji": true,
+          "reading": "じん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "名前",
+          "isKanji": true,
+          "reading": "なまえ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "住所",
+          "isKanji": true,
+          "reading": "じゅうしょ"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "名",
+          "isKanji": true,
+          "reading": "めい"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "などが",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "うけとりじんのなまえ、じゅうしょ、ぎんこうめい、こうざばんごうなどがひつようです。"
     },
     {
       "id": "s08-046",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "送金の目的を教えてください。",
-      "furigana": "そうきんのもくてきをおしえてください。",
       "zh": "请告诉我汇款用途。",
       "en": "Could you tell us the purpose of the transfer?",
       "zh-TW": "請告訴我匯款用途。",
       "vi": "Vui lòng cho biết mục đích chuyển tiền.",
-      "ko": "송금 목적을 알려주세요."
+      "ko": "송금 목적을 알려주세요.",
+      "ruby": [
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "目的",
+          "isKanji": true,
+          "reading": "もくてき"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そうきんのもくてきをおしえてください。"
     },
     {
       "id": "s08-047",
       "subcategory": "sub05",
       "role": "user",
       "jp": "家族への生活費です。",
-      "furigana": "かぞくへのせいかつひです。",
       "zh": "是给家人的生活费。",
       "en": "It's living expenses for my family.",
       "zh-TW": "是給家人的生活費。",
       "vi": "Đây là tiền sinh hoạt cho gia đình.",
-      "ko": "가족에게 보내는 생활비입니다."
+      "ko": "가족에게 보내는 생활비입니다.",
+      "ruby": [
+        {
+          "text": "家族",
+          "isKanji": true,
+          "reading": "かぞく"
+        },
+        {
+          "text": "への",
+          "isKanji": false
+        },
+        {
+          "text": "生活",
+          "isKanji": true,
+          "reading": "せいかつ"
+        },
+        {
+          "text": "費",
+          "isKanji": true,
+          "reading": "ひ"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かぞくへのせいかつひです。"
     },
     {
       "id": "s08-048",
       "subcategory": "sub05",
       "role": "user",
       "jp": "海外送金の手数料はいくらですか。",
-      "furigana": "かいがいそうきんのてすうりょうはいくらですか。",
       "zh": "海外汇款的手续费是多少？",
       "en": "How much is the fee for an international transfer?",
       "zh-TW": "海外匯款的手續費是多少？",
       "vi": "Phí chuyển tiền quốc tế là bao nhiêu?",
-      "ko": "해외 송금 수수료는 얼마인가요?"
+      "ko": "해외 송금 수수료는 얼마인가요?",
+      "ruby": [
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "手数料",
+          "isKanji": true,
+          "reading": "てすうりょう"
+        },
+        {
+          "text": "はいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいがいそうきんのてすうりょうはいくらですか。"
     },
     {
       "id": "s08-049",
       "subcategory": "sub05",
       "role": "user",
       "jp": "送金してから、どのくらいで相手の口座に入りますか。",
-      "furigana": "そうきんしてから、どのくらいであいてのこうざにはいりますか。",
       "zh": "汇款之后，大概多久能到对方账户？",
       "en": "How long does it take for the money to arrive in the recipient's account?",
       "zh-TW": "匯款之後，大概多久能到對方帳戶？",
       "vi": "Sau khi chuyển tiền, mất bao lâu để tiền vào tài khoản người nhận?",
-      "ko": "송금 후 상대방 계좌에 입금되기까지 얼마나 걸리나요?"
+      "ko": "송금 후 상대방 계좌에 입금되기까지 얼마나 걸리나요?",
+      "ruby": [
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "してから、どのくらいで",
+          "isKanji": false
+        },
+        {
+          "text": "相手",
+          "isKanji": true,
+          "reading": "あいて"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "口座",
+          "isKanji": true,
+          "reading": "こうざ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "りますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "そうきんしてから、どのくらいであいてのこうざにはいりますか。"
     },
     {
       "id": "s08-050",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "通常は数営業日かかりますが、送金先の銀行によって異なります。",
-      "furigana": "つうじょうはすうえいぎょうびかかりますが、そうきんさきのぎんこうによってことなります。",
       "zh": "通常需要几个工作日，但根据收款银行不同会有所不同。",
       "en": "It usually takes a few business days, but it varies depending on the recipient's bank.",
       "zh-TW": "通常需要幾個工作日，但根據收款銀行不同會有所不同。",
       "vi": "Thường mất vài ngày làm việc, nhưng tùy thuộc vào ngân hàng của người nhận.",
-      "ko": "보통 수 영업일이 걸리지만 수취 은행에 따라 다릅니다."
+      "ko": "보통 수 영업일이 걸리지만 수취 은행에 따라 다릅니다.",
+      "ruby": [
+        {
+          "text": "通常",
+          "isKanji": true,
+          "reading": "つうじょう"
+        },
+        {
+          "text": "は",
+          "isKanji": false
+        },
+        {
+          "text": "数",
+          "isKanji": true,
+          "reading": "すう"
+        },
+        {
+          "text": "営業",
+          "isKanji": true,
+          "reading": "えいぎょう"
+        },
+        {
+          "text": "日",
+          "isKanji": true,
+          "reading": "び"
+        },
+        {
+          "text": "かかりますが、",
+          "isKanji": false
+        },
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "先",
+          "isKanji": true,
+          "reading": "さき"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "によって",
+          "isKanji": false
+        },
+        {
+          "text": "異",
+          "isKanji": true,
+          "reading": "こと"
+        },
+        {
+          "text": "なります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "つうじょうはすうえいぎょうびかかりますが、そうきんさきのぎんこうによってことなります。"
     },
     {
       "id": "s08-051",
       "subcategory": "sub05",
       "role": "staff",
       "jp": "今回の送金について、追加で確認が必要です。",
-      "furigana": "こんかいのそうきんについて、ついかでかくにんがひつようです。",
       "zh": "关于这次汇款，需要追加确认一些信息。",
       "en": "We need to confirm some additional information regarding this transfer.",
       "zh-TW": "關於這次匯款，需要追加確認一些信息。",
       "vi": "Chúng tôi cần xác nhận thêm một số thông tin về lần chuyển tiền này.",
-      "ko": "이번 송금에 대해 추가 확인이 필요합니다."
+      "ko": "이번 송금에 대해 추가 확인이 필요합니다.",
+      "ruby": [
+        {
+          "text": "今回",
+          "isKanji": true,
+          "reading": "こんかい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "送金",
+          "isKanji": true,
+          "reading": "そうきん"
+        },
+        {
+          "text": "について、",
+          "isKanji": false
+        },
+        {
+          "text": "追加",
+          "isKanji": true,
+          "reading": "ついか"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "必要",
+          "isKanji": true,
+          "reading": "ひつよう"
+        },
+        {
+          "text": "です。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こんかいのそうきんについて、ついかでかくにんがひつようです。"
     },
     {
       "id": "s08-052",
       "subcategory": "sub06",
       "role": "user",
       "jp": "日本円を中国元に両替したいです。",
-      "furigana": "にほんえんをちゅうごくもとにりょうがえしたいです。",
       "zh": "我想把日元换成人民币。",
       "en": "I'd like to exchange Japanese yen for Chinese yuan.",
       "zh-TW": "我想把日元換成人民幣。",
       "vi": "Tôi muốn đổi yên Nhật sang nhân dân tệ.",
-      "ko": "일본 엔화를 중국 위안화로 환전하고 싶어요."
+      "ko": "일본 엔화를 중국 위안화로 환전하고 싶어요.",
+      "ruby": [
+        {
+          "text": "日本円",
+          "isKanji": true,
+          "reading": "にほんえん"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "中国",
+          "isKanji": true,
+          "reading": "ちゅうごく"
+        },
+        {
+          "text": "元",
+          "isKanji": true,
+          "reading": "もと"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "したいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にほんえんをちゅうごくもとにりょうがえしたいです。"
     },
     {
       "id": "s08-053",
       "subcategory": "sub06",
       "role": "user",
       "jp": "このドルを日本円に両替できますか。",
-      "furigana": "このどるをにほんえんにりょうがえできますか。",
       "zh": "可以把这些美元换成日元吗？",
       "en": "Can I exchange these dollars for Japanese yen?",
       "zh-TW": "可以把這些美元換成日元嗎？",
       "vi": "Tôi có thể đổi những đô la này sang yên Nhật không?",
-      "ko": "이 달러를 엔화로 바꿀 수 있나요?"
+      "ko": "이 달러를 엔화로 바꿀 수 있나요?",
+      "ruby": [
+        {
+          "text": "このドルを",
+          "isKanji": false
+        },
+        {
+          "text": "日本円",
+          "isKanji": true,
+          "reading": "にほんえん"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "このドルをにほんえんにりょうがえできますか。"
     },
     {
       "id": "s08-054",
       "subcategory": "sub06",
       "role": "staff",
       "jp": "パスポートを確認させていただきます。",
-      "furigana": "ぱすぽーとをかくにんさせていただきます。",
       "zh": "请让我确认一下您的护照。",
       "en": "Please let me check your passport.",
       "zh-TW": "請讓我確認一下您的護照。",
       "vi": "Vui lòng cho tôi xác nhận hộ chiếu của bạn.",
-      "ko": "여권을 확인하겠습니다."
+      "ko": "여권을 확인하겠습니다.",
+      "ruby": [
+        {
+          "text": "パスポートを",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "させていただきます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "パスポートをかくにんさせていただきます。"
     },
     {
       "id": "s08-055",
       "subcategory": "sub06",
       "role": "user",
       "jp": "今日の為替レートはいくらですか。",
-      "furigana": "きょうのかわせれーとはいくらですか。",
       "zh": "今天的汇率是多少？",
       "en": "What is today's exchange rate?",
       "zh-TW": "今天的匯率是多少？",
       "vi": "Tỷ giá hôm nay là bao nhiêu?",
-      "ko": "오늘 환율은 얼마인가요?"
+      "ko": "오늘 환율은 얼마인가요?",
+      "ruby": [
+        {
+          "text": "今日",
+          "isKanji": true,
+          "reading": "きょう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "為替",
+          "isKanji": true,
+          "reading": "かわせ"
+        },
+        {
+          "text": "レートはいくらですか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "きょうのかわせレートはいくらですか。"
     },
     {
       "id": "s08-056",
       "subcategory": "sub06",
       "role": "user",
       "jp": "一万円札を千円札に両替できますか。",
-      "furigana": "いちまんえんさつをせんえんさつにりょうがえできますか。",
       "zh": "可以把一万日元纸币换成千元纸币吗？",
       "en": "Can I change a 10,000-yen note into 1,000-yen notes?",
       "zh-TW": "可以把一萬日元紙幣換成千元紙幣嗎？",
       "vi": "Tôi có thể đổi tờ 10.000 yên thành tờ 1.000 yên không?",
-      "ko": "만 엔짜리를 천 엔짜리로 바꿀 수 있나요?"
+      "ko": "만 엔짜리를 천 엔짜리로 바꿀 수 있나요?",
+      "ruby": [
+        {
+          "text": "一",
+          "isKanji": true,
+          "reading": "いち"
+        },
+        {
+          "text": "万",
+          "isKanji": true,
+          "reading": "まん"
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "札",
+          "isKanji": true,
+          "reading": "さつ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "千",
+          "isKanji": true,
+          "reading": "せん"
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "札",
+          "isKanji": true,
+          "reading": "さつ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "両替",
+          "isKanji": true,
+          "reading": "りょうがえ"
+        },
+        {
+          "text": "できますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いちまんえんさつをせんえんさつにりょうがえできますか。"
     },
     {
       "id": "s08-057",
       "subcategory": "sub06",
       "role": "user",
       "jp": "小銭がたくさんあるんですが、紙幣に替えられますか。",
-      "furigana": "こぜにがたくさんあるんですが、しへいにかえられますか。",
       "zh": "我有很多硬币，可以换成纸币吗？",
       "en": "I have a lot of coins. Can I exchange them for bills?",
       "zh-TW": "我有很多硬幣，可以換成紙幣嗎？",
       "vi": "Tôi có nhiều tiền xu. Tôi có thể đổi sang tiền giấy không?",
-      "ko": "동전이 많은데요, 지폐로 바꿀 수 있나요?"
+      "ko": "동전이 많은데요, 지폐로 바꿀 수 있나요?",
+      "ruby": [
+        {
+          "text": "小銭",
+          "isKanji": true,
+          "reading": "こぜに"
+        },
+        {
+          "text": "がたくさんあるんですが、",
+          "isKanji": false
+        },
+        {
+          "text": "紙幣",
+          "isKanji": true,
+          "reading": "しへい"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "替",
+          "isKanji": true,
+          "reading": "か"
+        },
+        {
+          "text": "えられますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "こぜにがたくさんあるんですが、しへいにかえられますか。"
     },
     {
       "id": "s08-058",
       "subcategory": "sub06",
       "role": "staff",
       "jp": "対応している機械をご案内します。",
-      "furigana": "たいおうしているきかいをごあんないします。",
       "zh": "我带您去使用相应的机器。",
       "en": "I'll show you to the machine that handles that.",
       "zh-TW": "我帶您去使用相應的機器。",
       "vi": "Tôi sẽ hướng dẫn bạn đến máy có thể xử lý việc đó.",
-      "ko": "해당 기계로 안내해 드리겠습니다."
+      "ko": "해당 기계로 안내해 드리겠습니다.",
+      "ruby": [
+        {
+          "text": "対応",
+          "isKanji": true,
+          "reading": "たいおう"
+        },
+        {
+          "text": "している",
+          "isKanji": false
+        },
+        {
+          "text": "機械",
+          "isKanji": true,
+          "reading": "きかい"
+        },
+        {
+          "text": "をご",
+          "isKanji": false
+        },
+        {
+          "text": "案内",
+          "isKanji": true,
+          "reading": "あんない"
+        },
+        {
+          "text": "します。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "たいおうしているきかいをごあんないします。"
     },
     {
       "id": "s08-059",
       "subcategory": "sub07",
       "role": "user",
       "jp": "日本でクレジットカードを作りたいです。",
-      "furigana": "にっぽんでくれじっとかーどをつくりたいです。",
       "zh": "我想在日本申请信用卡。",
       "en": "I'd like to apply for a credit card in Japan.",
       "zh-TW": "我想在日本申請信用卡。",
       "vi": "Tôi muốn đăng ký thẻ tín dụng ở Nhật Bản.",
-      "ko": "일본에서 신용카드를 만들고 싶어요."
+      "ko": "일본에서 신용카드를 만들고 싶어요.",
+      "ruby": [
+        {
+          "text": "日本",
+          "isKanji": true,
+          "reading": "にっぽん"
+        },
+        {
+          "text": "でクレジットカードを",
+          "isKanji": false
+        },
+        {
+          "text": "作",
+          "isKanji": true,
+          "reading": "つく"
+        },
+        {
+          "text": "りたいです。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "にっぽんでクレジットカードをつくりたいです。"
     },
     {
       "id": "s08-060",
       "subcategory": "sub07",
       "role": "staff",
       "jp": "お申し込みには審査があります。",
-      "furigana": "おもうしこみにはしんさがあります。",
       "zh": "申请需要经过审查。",
       "en": "Applications are subject to a credit check.",
       "zh-TW": "申請需要經過審查。",
       "vi": "Đơn đăng ký sẽ được thẩm định.",
-      "ko": "신청에는 심사가 있습니다."
+      "ko": "신청에는 심사가 있습니다.",
+      "ruby": [
+        {
+          "text": "お",
+          "isKanji": false
+        },
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "込",
+          "isKanji": true,
+          "reading": "こ"
+        },
+        {
+          "text": "みには",
+          "isKanji": false
+        },
+        {
+          "text": "審査",
+          "isKanji": true,
+          "reading": "しんさ"
+        },
+        {
+          "text": "があります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "おもうしこみにはしんさがあります。"
     },
     {
       "id": "s08-061",
       "subcategory": "sub07",
       "role": "user",
       "jp": "海外で発行されたクレジットカードは使えますか。",
-      "furigana": "かいがいではっこうされたくれじっとかーどはつかえますか。",
       "zh": "海外发行的信用卡可以使用吗？",
       "en": "Can I use a credit card issued overseas?",
       "zh-TW": "海外發行的信用卡可以使用嗎？",
       "vi": "Thẻ tín dụng phát hành ở nước ngoài có thể sử dụng không?",
-      "ko": "해외에서 발급된 신용카드는 사용할 수 있나요?"
+      "ko": "해외에서 발급된 신용카드는 사용할 수 있나요?",
+      "ruby": [
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "で",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "されたクレジットカードは",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいがいではっこうされたクレジットカードはつかえますか。"
     },
     {
       "id": "s08-062",
       "subcategory": "sub07",
       "role": "user",
       "jp": "カードが使えないんですが。",
-      "furigana": "かーどがつかえないんですが。",
       "zh": "我的卡无法使用。",
       "en": "My card isn't working.",
       "zh-TW": "我的卡無法使用。",
       "vi": "Thẻ của tôi không dùng được.",
-      "ko": "카드가 사용이 안 돼요."
+      "ko": "카드가 사용이 안 돼요.",
+      "ruby": [
+        {
+          "text": "カードが",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えないんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードがつかえないんですが。"
     },
     {
       "id": "s08-063",
       "subcategory": "sub07",
       "role": "staff",
       "jp": "申し訳ありません。カード会社にご確認いただけますか。",
-      "furigana": "もうしわけありません。かーどかいしゃにごかくにんいただけますか。",
       "zh": "非常抱歉，请联系信用卡公司确认一下。",
       "en": "I'm sorry. Could you please check with your card company?",
       "zh-TW": "非常抱歉，請聯繫信用卡公司確認一下。",
       "vi": "Xin lỗi. Bạn có thể kiểm tra với công ty thẻ không?",
-      "ko": "죄송합니다. 카드사에 확인해 주시겠어요?"
+      "ko": "죄송합니다. 카드사에 확인해 주시겠어요?",
+      "ruby": [
+        {
+          "text": "申",
+          "isKanji": true,
+          "reading": "もう"
+        },
+        {
+          "text": "し",
+          "isKanji": false
+        },
+        {
+          "text": "訳",
+          "isKanji": true,
+          "reading": "わけ"
+        },
+        {
+          "text": "ありません。カード",
+          "isKanji": false
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "にご",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いただけますか。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "もうしわけありません。カードかいしゃにごかくにんいただけますか。"
     },
     {
       "id": "s08-064",
       "subcategory": "sub07",
       "role": "user",
       "jp": "暗証番号を忘れてしまいました。",
-      "furigana": "あんしょうばんごうをわすれてしまいました。",
       "zh": "我忘记密码了。",
       "en": "I've forgotten my PIN.",
       "zh-TW": "我忘記密碼了。",
       "vi": "Tôi quên mã PIN rồi.",
-      "ko": "비밀번호를 잊어버렸어요."
+      "ko": "비밀번호를 잊어버렸어요.",
+      "ruby": [
+        {
+          "text": "暗証",
+          "isKanji": true,
+          "reading": "あんしょう"
+        },
+        {
+          "text": "番号",
+          "isKanji": true,
+          "reading": "ばんごう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "忘",
+          "isKanji": true,
+          "reading": "わす"
+        },
+        {
+          "text": "れてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あんしょうばんごうをわすれてしまいました。"
     },
     {
       "id": "s08-065",
       "subcategory": "sub07",
       "role": "staff",
       "jp": "カード会社にお問い合わせください。",
-      "furigana": "かーどかいしゃにおといあわせください。",
       "zh": "请联系信用卡公司。",
       "en": "Please contact your card company.",
       "zh-TW": "請聯繫信用卡公司。",
       "vi": "Vui lòng liên hệ với công ty thẻ của bạn.",
-      "ko": "카드사에 문의해 주세요."
+      "ko": "카드사에 문의해 주세요.",
+      "ruby": [
+        {
+          "text": "カード",
+          "isKanji": false
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "問",
+          "isKanji": true,
+          "reading": "と"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "合",
+          "isKanji": true,
+          "reading": "あ"
+        },
+        {
+          "text": "わせください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードかいしゃにおといあわせください。"
     },
     {
       "id": "s08-066",
       "subcategory": "sub07",
       "role": "user",
       "jp": "身に覚えのない請求があるんですが。",
-      "furigana": "みにおぼえのないせいきゅうがあるんですが。",
       "zh": "账单上有我没有消费过的扣款。",
       "en": "There's a charge on my bill that I don't recognize.",
       "zh-TW": "賬單上有我沒有消費過的扣款。",
       "vi": "Có một khoản thu không phải của tôi trên hóa đơn.",
-      "ko": "기억에 없는 청구 내역이 있어요."
+      "ko": "기억에 없는 청구 내역이 있어요.",
+      "ruby": [
+        {
+          "text": "身",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "覚",
+          "isKanji": true,
+          "reading": "おぼ"
+        },
+        {
+          "text": "えのない",
+          "isKanji": false
+        },
+        {
+          "text": "請求",
+          "isKanji": true,
+          "reading": "せいきゅう"
+        },
+        {
+          "text": "があるんですが。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "みにおぼえのないせいきゅうがあるんですが。"
     },
     {
       "id": "s08-067",
       "subcategory": "sub07",
       "role": "user",
       "jp": "自分が使ったものではありません。",
-      "furigana": "じぶんがつかったものではありません。",
       "zh": "这不是我消费的。",
       "en": "This is not a charge I made.",
       "zh-TW": "這不是我消費的。",
       "vi": "Đây không phải là giao dịch của tôi.",
-      "ko": "제가 사용한 것이 아니에요."
+      "ko": "제가 사용한 것이 아니에요.",
+      "ruby": [
+        {
+          "text": "自分",
+          "isKanji": true,
+          "reading": "じぶん"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "ったものではありません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "じぶんがつかったものではありません。"
     },
     {
       "id": "s08-068",
       "subcategory": "sub07",
       "role": "staff",
       "jp": "不正利用の可能性がありますので、カードを停止いたします。",
-      "furigana": "ふせいりようのかのうせいがありますので、かーどをていしいたします。",
       "zh": "可能存在不当使用，我们将冻结您的卡片。",
       "en": "There may be fraudulent use, so we will suspend your card.",
       "zh-TW": "可能存在不當使用，我們將凍結您的卡片。",
       "vi": "Có khả năng bị sử dụng trái phép, chúng tôi sẽ tạm dừng thẻ của bạn.",
-      "ko": "부정 이용 가능성이 있으므로 카드를 정지하겠습니다."
+      "ko": "부정 이용 가능성이 있으므로 카드를 정지하겠습니다.",
+      "ruby": [
+        {
+          "text": "不正",
+          "isKanji": true,
+          "reading": "ふせい"
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "性",
+          "isKanji": true,
+          "reading": "せい"
+        },
+        {
+          "text": "がありますので、カードを",
+          "isKanji": false
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "いたします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふせいりようのかのうせいがありますので、カードをていしいたします。"
     },
     {
       "id": "s08-069",
       "subcategory": "sub08",
       "role": "user",
       "jp": "クレジットカードをなくしてしまいました。",
-      "furigana": "くれじっとかーどをなくしてしまいました。",
       "zh": "我的信用卡丢了。",
       "en": "I've lost my credit card.",
       "zh-TW": "我的信用卡丟了。",
       "vi": "Tôi đánh mất thẻ tín dụng.",
-      "ko": "신용카드를 잃어버렸어요."
+      "ko": "신용카드를 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "クレジットカードをなくしてしまいました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "クレジットカードをなくしてしまいました。"
     },
     {
       "id": "s08-070",
       "subcategory": "sub08",
       "role": "user",
       "jp": "キャッシュカードをなくしました。",
-      "furigana": "きゃっしゅかーどをなくしました。",
       "zh": "我的银行卡丢了。",
       "en": "I've lost my cash card.",
       "zh-TW": "我的銀行卡丟了。",
       "vi": "Tôi đánh mất thẻ ATM.",
-      "ko": "현금카드를 잃어버렸어요."
+      "ko": "현금카드를 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "キャッシュカードをなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "キャッシュカードをなくしました。"
     },
     {
       "id": "s08-071",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "すぐにカードの利用停止手続きをしてください。",
-      "furigana": "すぐにかーどのりようていしてつづきをしてください。",
       "zh": "请立即办理卡片冻结手续。",
       "en": "Please immediately proceed with suspending your card.",
       "zh-TW": "請立即辦理卡片凍結手續。",
       "vi": "Vui lòng ngay lập tức làm thủ tục tạm dừng thẻ.",
-      "ko": "즉시 카드 이용 정지 수속을 해주세요."
+      "ko": "즉시 카드 이용 정지 수속을 해주세요.",
+      "ruby": [
+        {
+          "text": "すぐにカードの",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きをしてください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すぐにカードのりようていしてつづきをしてください。"
     },
     {
       "id": "s08-072",
       "subcategory": "sub08",
       "role": "user",
       "jp": "いつ、どこでなくしたのか分かりません。",
-      "furigana": "いつ、どこでなくしたのかわかりません。",
       "zh": "我不知道是什么时候、在哪里丢的。",
       "en": "I don't know when or where I lost it.",
       "zh-TW": "我不知道是什麼時候、在哪裡丟的。",
       "vi": "Tôi không biết mất lúc nào và ở đâu.",
-      "ko": "언제 어디서 잃어버렸는지 모르겠어요."
+      "ko": "언제 어디서 잃어버렸는지 모르겠어요.",
+      "ruby": [
+        {
+          "text": "いつ、どこでなくしたのか",
+          "isKanji": false
+        },
+        {
+          "text": "分",
+          "isKanji": true,
+          "reading": "わ"
+        },
+        {
+          "text": "かりません。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "いつ、どこでなくしたのかわかりません。"
     },
     {
       "id": "s08-073",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "不正利用を防ぐため、まずカードを停止しましょう。",
-      "furigana": "ふせいりようをふせぐため、まずかーどをていししましょう。",
       "zh": "为了防止不当使用，我们先冻结卡片。",
       "en": "To prevent fraudulent use, let's suspend the card first.",
       "zh-TW": "為了防止不當使用，我們先凍結卡片。",
       "vi": "Để ngăn chặn việc sử dụng trái phép, hãy tạm dừng thẻ trước.",
-      "ko": "부정 이용을 방지하기 위해 먼저 카드를 정지합시다."
+      "ko": "부정 이용을 방지하기 위해 먼저 카드를 정지합시다.",
+      "ruby": [
+        {
+          "text": "不正",
+          "isKanji": true,
+          "reading": "ふせい"
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "防",
+          "isKanji": true,
+          "reading": "ふせ"
+        },
+        {
+          "text": "ぐため、まずカードを",
+          "isKanji": false
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "しましょう。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ふせいりようをふせぐため、まずカードをていししましょう。"
     },
     {
       "id": "s08-074",
       "subcategory": "sub08",
       "role": "user",
       "jp": "財布を盗まれて、カードも入っていました。",
-      "furigana": "さいふをぬすまれて、かーどもはいっていました。",
       "zh": "我的钱包被偷了，里面有卡。",
       "en": "My wallet was stolen and my cards were in it.",
       "zh-TW": "我的錢包被偷了，裡面有卡。",
       "vi": "Ví của tôi bị trộm và thẻ cũng ở trong đó.",
-      "ko": "지갑을 도둑맞았는데 카드도 들어 있었어요."
+      "ko": "지갑을 도둑맞았는데 카드도 들어 있었어요.",
+      "ruby": [
+        {
+          "text": "財布",
+          "isKanji": true,
+          "reading": "さいふ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "盗",
+          "isKanji": true,
+          "reading": "ぬす"
+        },
+        {
+          "text": "まれて、カードも",
+          "isKanji": false
+        },
+        {
+          "text": "入",
+          "isKanji": true,
+          "reading": "はい"
+        },
+        {
+          "text": "っていました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "さいふをぬすまれて、カードもはいっていました。"
     },
     {
       "id": "s08-075",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "カードの利用停止手続きを行います。警察にも届け出てください。",
-      "furigana": "かーどのりようていしてつづきをおこないます。けいさつにもとどけでてください。",
       "zh": "我们将办理卡片冻结手续，请同时向警察报案。",
       "en": "We'll suspend your card. Please also report it to the police.",
       "zh-TW": "我們將辦理卡片凍結手續，請同時向警察報案。",
       "vi": "Chúng tôi sẽ tạm dừng thẻ của bạn. Vui lòng cũng trình báo với cảnh sát.",
-      "ko": "카드 이용 정지 수속을 진행하겠습니다. 경찰에도 신고해 주세요."
+      "ko": "카드 이용 정지 수속을 진행하겠습니다. 경찰에도 신고해 주세요.",
+      "ruby": [
+        {
+          "text": "カードの",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きを",
+          "isKanji": false
+        },
+        {
+          "text": "行",
+          "isKanji": true,
+          "reading": "おこな"
+        },
+        {
+          "text": "います。",
+          "isKanji": false
+        },
+        {
+          "text": "警察",
+          "isKanji": true,
+          "reading": "けいさつ"
+        },
+        {
+          "text": "にも",
+          "isKanji": false
+        },
+        {
+          "text": "届",
+          "isKanji": true,
+          "reading": "とど"
+        },
+        {
+          "text": "け",
+          "isKanji": false
+        },
+        {
+          "text": "出",
+          "isKanji": true,
+          "reading": "で"
+        },
+        {
+          "text": "てください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードのりようていしてつづきをおこないます。けいさつにもとどけでてください。"
     },
     {
       "id": "s08-076",
       "subcategory": "sub08",
       "role": "user",
       "jp": "海外の銀行が発行したカードを日本でなくしました。",
-      "furigana": "かいがいのぎんこうがはっこうしたかーどをにっぽんでなくしました。",
       "zh": "我在日本丢失了海外银行发行的卡。",
       "en": "I've lost a card issued by an overseas bank here in Japan.",
       "zh-TW": "我在日本丟失了海外銀行發行的卡。",
       "vi": "Tôi đã mất thẻ do ngân hàng nước ngoài phát hành tại Nhật Bản.",
-      "ko": "해외 은행에서 발급된 카드를 일본에서 잃어버렸어요."
+      "ko": "해외 은행에서 발급된 카드를 일본에서 잃어버렸어요.",
+      "ruby": [
+        {
+          "text": "海外",
+          "isKanji": true,
+          "reading": "かいがい"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "が",
+          "isKanji": false
+        },
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "したカードを",
+          "isKanji": false
+        },
+        {
+          "text": "日本",
+          "isKanji": true,
+          "reading": "にっぽん"
+        },
+        {
+          "text": "でなくしました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かいがいのぎんこうがはっこうしたカードをにっぽんでなくしました。"
     },
     {
       "id": "s08-077",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "発行元の銀行またはカード会社に連絡してください。",
-      "furigana": "はっこうもとのぎんこうまたはかーどかいしゃにれんらくしてください。",
       "zh": "请联系发卡银行或信用卡公司。",
       "en": "Please contact the issuing bank or card company.",
       "zh-TW": "請聯繫發卡銀行或信用卡公司。",
       "vi": "Vui lòng liên hệ với ngân hàng phát hành hoặc công ty thẻ.",
-      "ko": "발급 은행 또는 카드사에 연락해 주세요."
+      "ko": "발급 은행 또는 카드사에 연락해 주세요.",
+      "ruby": [
+        {
+          "text": "発行",
+          "isKanji": true,
+          "reading": "はっこう"
+        },
+        {
+          "text": "元",
+          "isKanji": true,
+          "reading": "もと"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "銀行",
+          "isKanji": true,
+          "reading": "ぎんこう"
+        },
+        {
+          "text": "またはカード",
+          "isKanji": false
+        },
+        {
+          "text": "会社",
+          "isKanji": true,
+          "reading": "かいしゃ"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "連絡",
+          "isKanji": true,
+          "reading": "れんらく"
+        },
+        {
+          "text": "してください。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "はっこうもとのぎんこうまたはカードかいしゃにれんらくしてください。"
     },
     {
       "id": "s08-078",
       "subcategory": "sub08",
       "role": "user",
       "jp": "カードをなくした後、知らない利用履歴があります。",
-      "furigana": "かーどをなくしたのち、しらないりようりれきがあります。",
       "zh": "丢卡之后，出现了不明消费记录。",
       "en": "After losing my card, there are transactions I don't recognize.",
       "zh-TW": "丟卡之後，出現了不明消費記錄。",
       "vi": "Sau khi mất thẻ, có các giao dịch tôi không nhận ra.",
-      "ko": "카드를 잃어버린 후 모르는 이용 내역이 있어요."
+      "ko": "카드를 잃어버린 후 모르는 이용 내역이 있어요.",
+      "ruby": [
+        {
+          "text": "カードをなくした",
+          "isKanji": false
+        },
+        {
+          "text": "後",
+          "isKanji": true,
+          "reading": "のち"
+        },
+        {
+          "text": "、",
+          "isKanji": false
+        },
+        {
+          "text": "知",
+          "isKanji": true,
+          "reading": "し"
+        },
+        {
+          "text": "らない",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "履歴",
+          "isKanji": true,
+          "reading": "りれき"
+        },
+        {
+          "text": "があります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "カードをなくしたのち、しらないりようりれきがあります。"
     },
     {
       "id": "s08-079",
       "subcategory": "sub08",
       "role": "user",
       "jp": "なくしたカードが見つかりました。",
-      "furigana": "なくしたかーどがみつかりました。",
       "zh": "我找到丢失的卡了。",
       "en": "I've found the card I lost.",
       "zh-TW": "我找到丟失的卡了。",
       "vi": "Tôi đã tìm thấy thẻ bị mất.",
-      "ko": "잃어버린 카드를 찾았어요."
+      "ko": "잃어버린 카드를 찾았어요.",
+      "ruby": [
+        {
+          "text": "なくしたカードが",
+          "isKanji": false
+        },
+        {
+          "text": "見",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "つかりました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "なくしたカードがみつかりました。"
     },
     {
       "id": "s08-080",
       "subcategory": "sub08",
       "role": "staff",
       "jp": "すでに利用停止の手続きをされている場合は、そのカードは再び使えない可能性があります。",
-      "furigana": "すでにりようていしのてつづきをされているばあいは、そのかーどはふたたびつかえないかのうせいがあります。",
       "zh": "如果已经办理了冻结手续，该卡可能无法再次使用。",
       "en": "If you've already suspended the card, it may not be usable again.",
       "zh-TW": "如果已經辦理了凍結手續，該卡可能無法再次使用。",
       "vi": "Nếu bạn đã làm thủ tục tạm dừng thẻ, thẻ đó có thể không thể sử dụng lại.",
-      "ko": "이미 이용 정지 수속을 하셨다면 해당 카드는 다시 사용할 수 없을 수 있습니다."
+      "ko": "이미 이용 정지 수속을 하셨다면 해당 카드는 다시 사용할 수 없을 수 있습니다.",
+      "ruby": [
+        {
+          "text": "すでに",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "停止",
+          "isKanji": true,
+          "reading": "ていし"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "きをされている",
+          "isKanji": false
+        },
+        {
+          "text": "場合",
+          "isKanji": true,
+          "reading": "ばあい"
+        },
+        {
+          "text": "は、そのカードは",
+          "isKanji": false
+        },
+        {
+          "text": "再",
+          "isKanji": true,
+          "reading": "ふたた"
+        },
+        {
+          "text": "び",
+          "isKanji": false
+        },
+        {
+          "text": "使",
+          "isKanji": true,
+          "reading": "つか"
+        },
+        {
+          "text": "えない",
+          "isKanji": false
+        },
+        {
+          "text": "可能",
+          "isKanji": true,
+          "reading": "かのう"
+        },
+        {
+          "text": "性",
+          "isKanji": true,
+          "reading": "せい"
+        },
+        {
+          "text": "があります。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すでにりようていしのてつづきをされているばあいは、そのカードはふたたびつかえないかのうせいがあります。"
     }
   ],
   "title_ja": "お金"
