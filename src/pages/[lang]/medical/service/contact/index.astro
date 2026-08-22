@@ -1,0 +1,190 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import referral from '../../../../../../public/data/medical/referral.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+function t(obj: Record<string, string>): string {
+  return obj[lang] || obj.zh || '';
+}
+
+const cp = referral.contactPage;
+const title = `${t(cp.title)} | Living Japanese`;
+const description = t(cp.subtitle);
+const serviceUrl = `/${lang}/medical/service/`;
+
+const breadcrumbLabels: Record<string, string> = {
+  'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
+};
+---
+
+<Base title={title} description={description} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href={`/${lang}/medical/`}>{breadcrumbLabels[lang] || breadcrumbLabels.en}</a>
+    <span aria-hidden="true">›</span>
+    <a href={serviceUrl}>{t(referral.page.title)}</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{t(cp.title)}</span>
+  </nav>
+
+  <div class="med-contact-page" id="medContactPage">
+
+    <div id="medContactFormView">
+      <h1 class="med-contact-title">{t(cp.title)}</h1>
+      <p class="med-contact-subtitle">{t(cp.subtitle)}</p>
+
+      <form id="medConsultForm" class="med-consult-form" novalidate>
+        <input type="hidden" name="lang" value={lang} />
+
+        <div class="med-consult-field">
+          <label for="fName">{t(cp.fieldName)} <span class="med-consult-required">*{t(cp.requiredMark)}</span></label>
+          <input type="text" id="fName" name="name" required maxlength="80" autocomplete="name" />
+          <p class="med-consult-field-error" data-error-for="name"></p>
+        </div>
+
+        <div class="med-consult-field">
+          <label for="fContact">{t(cp.fieldContact)} <span class="med-consult-required">*{t(cp.requiredMark)}</span></label>
+          <input type="text" id="fContact" name="contact" required maxlength="160" autocomplete="email" />
+          <p class="med-consult-field-hint">{t(cp.fieldContactHint)}</p>
+          <p class="med-consult-field-error" data-error-for="contact"></p>
+        </div>
+
+        <div class="med-consult-field">
+          <label for="fUrgency">{t(cp.fieldUrgency)} <span class="med-consult-required">*{t(cp.requiredMark)}</span></label>
+          <select id="fUrgency" name="urgency" required>
+            <option value="">{t(cp.selectPlaceholder)}</option>
+            <option value="urgent">{t(cp.urgencyUrgent)}</option>
+            <option value="soon">{t(cp.urgencySoon)}</option>
+            <option value="planning">{t(cp.urgencyPlanning)}</option>
+          </select>
+          <p class="med-consult-field-error" data-error-for="urgency"></p>
+        </div>
+
+        <div class="med-consult-field">
+          <label for="fMessage">{t(cp.fieldMessage)}</label>
+          <textarea id="fMessage" name="message" rows="5" maxlength="1000" placeholder={t(cp.fieldMessageHint)}></textarea>
+        </div>
+
+        <p class="med-consult-privacy">{t(cp.privacyNote)}</p>
+
+        <button type="submit" class="med-consult-submit" id="medConsultSubmitBtn">
+          <span class="med-consult-submit-label">{t(cp.submit)}</span>
+        </button>
+
+        <p class="med-consult-form-error" id="medConsultFormError" role="alert" style="display:none"></p>
+      </form>
+    </div>
+
+    <div id="medContactSuccessView" class="med-contact-success" style="display:none">
+      <div class="med-contact-success-icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+      </div>
+      <h1 class="med-contact-success-title">{t(cp.successTitle)}</h1>
+      <p class="med-contact-success-body">{t(cp.successBody)}</p>
+      <a href={serviceUrl} class="med-contact-back-link">← {t(cp.backToService)}</a>
+    </div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">{t(cp.title)} {t(cp.subtitle)}</div>
+
+  <script is:inline define:vars={{
+    labels: {
+      submitting: t(referral.contactPage.submitting),
+      submit: t(referral.contactPage.submit),
+      errorBody: t(referral.contactPage.errorBody),
+      notReadyBody: t(referral.contactPage.notReadyBody),
+      fieldRequiredError: t(referral.contactPage.fieldRequiredError),
+      fieldSelectError: t(referral.contactPage.fieldSelectError)
+    }
+  }}>
+    (function () {
+      function init() {
+        const form = document.getElementById('medConsultForm');
+        if (!form) return;
+        const submitBtn = document.getElementById('medConsultSubmitBtn');
+        const submitLabel = submitBtn.querySelector('.med-consult-submit-label');
+        const formErrorEl = document.getElementById('medConsultFormError');
+        const formView = document.getElementById('medContactFormView');
+        const successView = document.getElementById('medContactSuccessView');
+
+        function clearFieldErrors() {
+          form.querySelectorAll('.med-consult-field-error').forEach(function (el) { el.textContent = ''; });
+          form.querySelectorAll('.med-consult-field--invalid').forEach(function (el) {
+            el.classList.remove('med-consult-field--invalid');
+          });
+        }
+
+        function showFieldError(name, message) {
+          const errEl = form.querySelector('[data-error-for="' + name + '"]');
+          if (errEl) errEl.textContent = message;
+          const fieldEl = form.querySelector('[name="' + name + '"]');
+          if (fieldEl) fieldEl.closest('.med-consult-field').classList.add('med-consult-field--invalid');
+        }
+
+        function validate(payload) {
+          let ok = true;
+          if (!payload.name || !payload.name.trim()) { showFieldError('name', labels.fieldRequiredError); ok = false; }
+          if (!payload.contact || !payload.contact.trim()) { showFieldError('contact', labels.fieldRequiredError); ok = false; }
+          if (!payload.urgency) { showFieldError('urgency', labels.fieldSelectError); ok = false; }
+          return ok;
+        }
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          clearFieldErrors();
+          formErrorEl.style.display = 'none';
+
+          const formData = new FormData(form);
+          const payload = Object.fromEntries(formData.entries());
+
+          if (!validate(payload)) return;
+
+          payload.source_page = document.referrer || 'direct';
+          payload.page_path = window.location.pathname;
+          payload.submitted_at = new Date().toISOString();
+
+          submitBtn.disabled = true;
+          submitLabel.textContent = labels.submitting;
+
+          if (!(window.ljConsult && typeof window.ljConsult.submit === 'function')) {
+            formErrorEl.textContent = labels.notReadyBody;
+            formErrorEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitLabel.textContent = labels.submit;
+            return;
+          }
+
+          window.ljConsult.submit(payload)
+            .then(function () {
+              if (typeof window.gtag === 'function') {
+                window.gtag('event', 'referral_form_submit', { urgency: payload.urgency || 'unknown' });
+              }
+              formView.style.display = 'none';
+              successView.style.display = 'block';
+              successView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            })
+            .catch(function () {
+              formErrorEl.textContent = labels.errorBody;
+              formErrorEl.style.display = 'block';
+            })
+            .finally(function () {
+              submitBtn.disabled = false;
+              submitLabel.textContent = labels.submit;
+            });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script is:inline src="/js/consult-form.js"></script>
+
+</Base>

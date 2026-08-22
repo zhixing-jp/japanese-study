@@ -1,0 +1,111 @@
+---
+import Base from '../../../layouts/Base.astro';
+import referral from '../../../../public/data/medical/referral.json';
+
+const lang = 'zh';
+
+function t(obj: Record<string, string>): string {
+  return obj[lang] || obj.zh || '';
+}
+function tArr(obj: Record<string, string[]>): string[] {
+  return obj[lang] || obj.zh || [];
+}
+
+const page = referral.page;
+const title = `${t(page.title)} | Living Japanese · 日活`;
+const description = t(page.intro);
+const contactUrl = '/medical/service/contact/';
+---
+
+<Base title={title} description={description} medicalCss={true}>
+
+  <nav class="med-breadcrumb" aria-label="breadcrumb">
+    <a href="/medical/">就医指南</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">{t(page.title)}</span>
+  </nav>
+
+  <div class="med-service-page" id="medServicePage">
+
+    <h1 class="med-service-title">{t(page.title)}</h1>
+    <p class="med-service-intro">{t(page.intro)}</p>
+
+    <section class="med-service-section">
+      <h2>{t(page.scenariosTitle)}</h2>
+      <ul class="med-service-scenario-list">
+        {tArr(page.scenarios).map((s) => <li>{s}</li>)}
+      </ul>
+    </section>
+
+    <section class="med-service-section">
+      <h2>{t(page.pricingTitle)}</h2>
+      <p class="med-service-pricing-body">{t(page.pricingBody)}</p>
+    </section>
+
+    <section class="med-service-section med-service-cta-section">
+      <a
+        href={contactUrl}
+        class="med-service-consult-cta"
+        data-ga-event="referral_consult_click"
+      >
+        <span class="med-service-consult-cta-title">{t(page.consultCta)}</span>
+        <span class="med-service-consult-cta-sub">{t(page.consultCtaSub)}</span>
+      </a>
+    </section>
+
+    <section class="med-service-section">
+      <h2>{t(page.directTitle)}</h2>
+      <div class="med-service-contact-list">
+        <a
+          href="https://line.me/ti/p/REPLACE_WITH_LINE_ID"
+          class="med-service-contact-item med-service-contact-item--line"
+          data-ga-event="referral_contact_click"
+          data-ga-channel="line"
+          target="_blank" rel="noopener"
+        >
+          <span class="med-service-contact-label">LINE</span>
+        </a>
+        <a
+          href="/assets/medical/wechat-qr.png"
+          class="med-service-contact-item med-service-contact-item--wechat"
+          data-ga-event="referral_contact_click"
+          data-ga-channel="wechat"
+          target="_blank" rel="noopener"
+        >
+          <span class="med-service-contact-label">微信</span>
+        </a>
+        <a
+          href="mailto:zhixing.jp@gmail.com"
+          class="med-service-contact-item med-service-contact-item--email"
+          data-ga-event="referral_contact_click"
+          data-ga-channel="email"
+        >
+          <span class="med-service-contact-label">邮箱</span>
+          <span class="med-service-contact-sub">zhixing.jp@gmail.com</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">{t(page.title)} {t(page.intro)}</div>
+
+  <script is:inline>
+    (function () {
+      function init() {
+        document.querySelectorAll('[data-ga-event]').forEach(function (el) {
+          el.addEventListener('click', function () {
+            if (typeof window.gtag !== 'function') return;
+            const eventName = el.getAttribute('data-ga-event');
+            const channel = el.getAttribute('data-ga-channel');
+            window.gtag('event', eventName, channel ? { contact_channel: channel } : {});
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

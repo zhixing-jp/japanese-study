@@ -1,0 +1,221 @@
+{
+  "banner": {
+    "text": {
+      "zh": "语言障碍较大、情况紧急？可以直接找人帮你",
+      "zh-TW": "語言障礙較大、情況緊急？可以直接找人幫你",
+      "en": "Language barrier or urgent situation? Get direct help",
+      "vi": "Rào cản ngôn ngữ hoặc tình huống khẩn cấp? Nhờ hỗ trợ trực tiếp",
+      "ko": "언어 장벽이나 긴급 상황? 바로 도움을 받으세요",
+      "ja": "言葉の壁や急を要する状況？直接サポートを依頼できます"
+    },
+    "cta": {
+      "zh": "了解详情", "zh-TW": "了解詳情", "en": "Learn more", "vi": "Tìm hiểu", "ko": "자세히 보기", "ja": "詳しく見る"
+    }
+  },
+  "page": {
+    "title": {
+      "zh": "医疗协调服务",
+      "zh-TW": "醫療協調服務",
+      "en": "Medical Coordination Support",
+      "vi": "Dịch vụ điều phối y tế",
+      "ko": "의료 코디네이션 서비스",
+      "ja": "医療コーディネートサービス"
+    },
+    "intro": {
+      "zh": "20年在日生活与医疗协调经验，帮助语言不通、情况复杂的在日外国人，处理挂号、陪同就诊、电话沟通与紧急情况协助。",
+      "zh-TW": "20年在日生活與醫療協調經驗，幫助語言不通、情況複雜的在日外國人，處理掛號、陪同就診、電話溝通與緊急情況協助。",
+      "en": "20 years of living in Japan and medical coordination experience, helping foreign residents facing language barriers or complex situations with registration, accompaniment, phone communication, and emergency support.",
+      "vi": "20 năm kinh nghiệm sinh sống tại Nhật và điều phối y tế, hỗ trợ người nước ngoài gặp rào cản ngôn ngữ hoặc tình huống phức tạp trong việc đăng ký khám, đồng hành, liên lạc qua điện thoại và hỗ trợ khẩn cấp.",
+      "ko": "일본 거주 및 의료 코디네이션 경력 20년으로, 언어 장벽이나 복잡한 상황에 처한 재일 외국인의 접수, 동행, 전화 소통, 긴급 지원을 돕습니다.",
+      "ja": "在日20年、医療コーディネート経験を活かし、言葉の壁や複雑な状況を抱える在日外国人の受付対応、同行、電話でのコミュニケーション、緊急時のサポートを行います。"
+    },
+    "scenariosTitle": {
+      "zh": "适合什么情况",
+      "zh-TW": "適合什麼情況",
+      "en": "When this helps",
+      "vi": "Phù hợp với tình huống nào",
+      "ko": "이런 경우에 도움이 됩니다",
+      "ja": "こんな時に"
+    },
+    "scenarios": {
+      "zh": ["日语完全说不通，需要电话或现场翻译陪同", "情况紧急（夜间急诊、叫救护车），来不及慢慢查资料", "需要向医生说明复杂病情或既往病史", "初次在日本就医，完全不知道流程和该准备什么", "需要有人帮忙判断该去哪个科室、要不要去急诊"],
+      "zh-TW": ["日語完全說不通，需要電話或現場翻譯陪同", "情況緊急（夜間急診、叫救護車），來不及慢慢查資料", "需要向醫生說明複雜病情或既往病史", "初次在日本就醫，完全不知道流程和該準備什麼", "需要有人幫忙判斷該去哪個科室、要不要去急診"],
+      "en": ["You can't communicate in Japanese at all and need phone or in-person interpretation support", "The situation is urgent (night emergency clinic, calling an ambulance) and there's no time to research", "You need to explain a complex condition or medical history to a doctor", "It's your first time seeing a doctor in Japan and you don't know the process or what to prepare", "You need help deciding which department to visit or whether to go to the ER"],
+      "vi": ["Bạn hoàn toàn không thể giao tiếp bằng tiếng Nhật và cần hỗ trợ phiên dịch qua điện thoại hoặc trực tiếp", "Tình huống khẩn cấp (phòng cấp cứu ban đêm, gọi xe cứu thương) không kịp tra cứu", "Cần giải thích tình trạng bệnh phức tạp hoặc tiền sử bệnh với bác sĩ", "Lần đầu khám bệnh tại Nhật, không biết quy trình và cần chuẩn bị gì", "Cần người giúp phán đoán nên đến khoa nào hoặc có nên đến cấp cứu không"],
+      "ko": ["일본어로 전혀 의사소통이 안 되어 전화 또는 동행 통역이 필요한 경우", "상황이 급해서(야간 응급실, 구급차 호출) 자료를 찾아볼 시간이 없는 경우", "복잡한 증상이나 병력을 의사에게 설명해야 하는 경우", "일본에서 처음 진료를 받아 절차와 준비물을 전혀 모르는 경우", "어느 진료과로 가야 할지, 응급실에 가야 할지 판단이 필요한 경우"],
+      "ja": ["日本語でのコミュニケーションが難しく、電話または同行での通訳サポートが必要な場合", "状況が急を要し（夜間救急、救急車要請）、調べる時間がない場合", "複雑な症状や既往歴を医師に説明する必要がある場合", "日本での受診が初めてで、流れや準備が分からない場合", "どの診療科に行くべきか、救急に行くべきか判断が必要な場合"]
+    },
+    "pricingTitle": {
+      "zh": "费用说明",
+      "zh-TW": "費用說明",
+      "en": "Pricing",
+      "vi": "Chi phí",
+      "ko": "비용 안내",
+      "ja": "料金について"
+    },
+    "pricingBody": {
+      "zh": "费用根据紧急程度、是否需要现场陪同、沟通时长等具体情况而定，我们会在了解你的情况后明确告知，不会有隐藏收费。",
+      "zh-TW": "費用根據緊急程度、是否需要現場陪同、溝通時長等具體情況而定，我們會在了解你的情況後明確告知，不會有隱藏收費。",
+      "en": "Pricing depends on urgency, whether in-person accompaniment is needed, and communication time. We'll confirm the exact cost after understanding your situation, with no hidden fees.",
+      "vi": "Chi phí tùy thuộc vào mức độ khẩn cấp, có cần đồng hành trực tiếp hay không và thời gian hỗ trợ. Chúng tôi sẽ báo giá cụ thể sau khi hiểu rõ tình huống của bạn, không có phí ẩn.",
+      "ko": "비용은 긴급도, 현장 동행 필요 여부, 소통 시간 등에 따라 달라집니다. 상황을 파악한 후 정확한 비용을 안내해 드리며, 숨겨진 비용은 없습니다.",
+      "ja": "料金は緊急度、現地同行の要否、対応時間などによって異なります。状況を伺った上で正式な金額をお伝えしますので、隠れた費用はありません。"
+    },
+    "contactTitle": {
+      "zh": "联系方式",
+      "zh-TW": "聯繫方式",
+      "en": "Get in touch",
+      "vi": "Liên hệ",
+      "ko": "연락처",
+      "ja": "お問い合わせ"
+    },
+    "consultCta": {
+      "zh": "留言咨询",
+      "zh-TW": "留言諮詢",
+      "en": "Send an inquiry",
+      "vi": "Gửi yêu cầu tư vấn",
+      "ko": "문의 남기기",
+      "ja": "お問い合わせフォームへ"
+    },
+    "consultCtaSub": {
+      "zh": "填写你的情况，我们会尽快通过你留下的联系方式回复",
+      "zh-TW": "填寫你的情況，我們會盡快透過你留下的聯繫方式回覆",
+      "en": "Tell us what's going on — we'll get back to you via the contact info you provide",
+      "vi": "Cho chúng tôi biết tình huống — chúng tôi sẽ liên hệ qua thông tin bạn cung cấp",
+      "ko": "상황을 알려주시면 남겨주신 연락처로 빠르게 답변드리겠습니다",
+      "ja": "状況をお知らせいただければ、ご記入の連絡先に早めにご連絡します"
+    },
+    "directTitle": {
+      "zh": "或者直接联系",
+      "zh-TW": "或者直接聯繫",
+      "en": "Or reach us directly",
+      "vi": "Hoặc liên hệ trực tiếp",
+      "ko": "또는 직접 연락하기",
+      "ja": "または直接ご連絡ください"
+    }
+  },
+  "contactPage": {
+    "title": {
+      "zh": "留言咨询",
+      "zh-TW": "留言諮詢",
+      "en": "Send an Inquiry",
+      "vi": "Gửi yêu cầu tư vấn",
+      "ko": "문의 남기기",
+      "ja": "お問い合わせ"
+    },
+    "subtitle": {
+      "zh": "填写下面的信息，我们会认真看每一条留言，并尽快通过你留下的联系方式回复你。",
+      "zh-TW": "填寫下面的資訊，我們會認真看每一條留言，並盡快透過你留下的聯繫方式回覆你。",
+      "en": "Fill in the details below — we read every message and will get back to you as soon as possible via the contact info you provide.",
+      "vi": "Điền thông tin bên dưới — chúng tôi sẽ đọc từng tin nhắn và phản hồi sớm nhất qua thông tin liên hệ bạn cung cấp.",
+      "ko": "아래 정보를 입력해 주세요. 모든 문의를 꼼꼼히 확인하고, 남겨주신 연락처로 최대한 빨리 답변드리겠습니다.",
+      "ja": "以下にご記入ください。すべてのお問い合わせに目を通し、ご記入の連絡先へできるだけ早くご返信します。"
+    },
+    "fieldName": {
+      "zh": "姓名 / 称呼", "zh-TW": "姓名 / 稱呼", "en": "Name", "vi": "Họ tên", "ko": "이름", "ja": "お名前"
+    },
+    "fieldContact": {
+      "zh": "联系方式（邮箱 / LINE ID / 电话）",
+      "zh-TW": "聯繫方式（Email / LINE ID / 電話）",
+      "en": "Contact info (email, WhatsApp, or phone)",
+      "vi": "Thông tin liên hệ (email, WhatsApp hoặc điện thoại)",
+      "ko": "연락처 (이메일 / WhatsApp / 전화번호)",
+      "ja": "連絡先（メール / LINE ID / 電話番号）"
+    },
+    "fieldContactHint": {
+      "zh": "方便我们联系到你的任意一种方式即可",
+      "zh-TW": "方便我們聯繫到你的任意一種方式即可",
+      "en": "Any way we can reach you works",
+      "vi": "Bất kỳ cách nào chúng tôi có thể liên hệ với bạn",
+      "ko": "저희가 연락드릴 수 있는 방법이면 됩니다",
+      "ja": "ご連絡が取れる方法であれば何でも構いません"
+    },
+    "fieldUrgency": {
+      "zh": "紧急程度", "zh-TW": "緊急程度", "en": "Urgency", "vi": "Mức độ khẩn cấp", "ko": "긴급도", "ja": "緊急度"
+    },
+    "urgencyUrgent": {
+      "zh": "紧急（今天/明天需要处理）", "zh-TW": "緊急（今天/明天需要處理）", "en": "Urgent (today or tomorrow)",
+      "vi": "Khẩn cấp (hôm nay/ngày mai)", "ko": "긴급 (오늘/내일)", "ja": "緊急（今日・明日中）"
+    },
+    "urgencySoon": {
+      "zh": "近期（这周内）", "zh-TW": "近期（這週內）", "en": "Soon (this week)",
+      "vi": "Sắp tới (trong tuần này)", "ko": "가까운 시일 (이번 주)", "ja": "近日中（今週中）"
+    },
+    "urgencyPlanning": {
+      "zh": "还在了解，先咨询", "zh-TW": "還在了解，先諮詢", "en": "Just exploring for now",
+      "vi": "Đang tìm hiểu", "ko": "아직 알아보는 중", "ja": "まだ検討中"
+    },
+    "selectPlaceholder": {
+      "zh": "请选择", "zh-TW": "請選擇", "en": "Please select", "vi": "Vui lòng chọn", "ko": "선택해 주세요", "ja": "選択してください"
+    },
+    "fieldMessage": {
+      "zh": "情况简述", "zh-TW": "情況簡述", "en": "Tell us what's going on",
+      "vi": "Mô tả ngắn gọn tình huống", "ko": "상황을 간단히 설명해 주세요", "ja": "状況を簡単にお聞かせください"
+    },
+    "fieldMessageHint": {
+      "zh": "例如：想去医院但不知道挂哪个科、需要人陪同、需要电话协助沟通等",
+      "zh-TW": "例如：想去醫院但不知道掛哪個科、需要人陪同、需要電話協助溝通等",
+      "en": "e.g. need to see a doctor but not sure which department, need someone to accompany you, need phone interpretation help",
+      "vi": "Ví dụ: cần đi khám nhưng không biết khoa nào, cần người đồng hành, cần hỗ trợ phiên dịch qua điện thoại",
+      "ko": "예: 병원에 가야 하는데 어느 과인지 모르겠음, 동행이 필요함, 전화 통역 지원이 필요함",
+      "ja": "例：受診したいが何科か分からない、同行してほしい、電話での通訳サポートが必要 など"
+    },
+    "requiredMark": {
+      "zh": "必填", "zh-TW": "必填", "en": "Required", "vi": "Bắt buộc", "ko": "필수", "ja": "必須"
+    },
+    "fieldRequiredError": {
+      "zh": "请填写这一项", "zh-TW": "請填寫這一項", "en": "This field is required",
+      "vi": "Vui lòng điền vào ô này", "ko": "이 항목을 입력해 주세요", "ja": "この項目を入力してください"
+    },
+    "fieldSelectError": {
+      "zh": "请选择一项", "zh-TW": "請選擇一項", "en": "Please select an option",
+      "vi": "Vui lòng chọn một mục", "ko": "항목을 선택해 주세요", "ja": "いずれかを選択してください"
+    },
+    "privacyNote": {
+      "zh": "你填写的信息仅用于本次咨询回复，不会用于其他用途或分享给第三方。",
+      "zh-TW": "你填寫的資訊僅用於本次諮詢回覆，不會用於其他用途或分享給第三方。",
+      "en": "The information you submit is used only to respond to this inquiry and will not be used for any other purpose or shared with third parties.",
+      "vi": "Thông tin bạn cung cấp chỉ được sử dụng để phản hồi yêu cầu này, không dùng cho mục đích khác hoặc chia sẻ với bên thứ ba.",
+      "ko": "제출하신 정보는 본 문의에 대한 답변 목적으로만 사용되며, 다른 용도로 사용되거나 제3자와 공유되지 않습니다.",
+      "ja": "ご記入いただいた情報は本お問い合わせへの返信のみに使用し、他の目的での利用や第三者への提供は行いません。"
+    },
+    "submit": {
+      "zh": "提交", "zh-TW": "提交", "en": "Submit", "vi": "Gửi", "ko": "제출", "ja": "送信する"
+    },
+    "submitting": {
+      "zh": "提交中…", "zh-TW": "提交中…", "en": "Submitting…", "vi": "Đang gửi…", "ko": "제출 중…", "ja": "送信中…"
+    },
+    "successTitle": {
+      "zh": "已收到你的留言", "zh-TW": "已收到你的留言", "en": "Your message has been received",
+      "vi": "Đã nhận được tin nhắn của bạn", "ko": "문의가 접수되었습니다", "ja": "お問い合わせを受け付けました"
+    },
+    "successBody": {
+      "zh": "我们会尽快通过你留下的联系方式回复你。如果情况紧急，也可以直接用下方的联系方式找我们。",
+      "zh-TW": "我們會盡快透過你留下的聯繫方式回覆你。如果情況緊急，也可以直接用下方的聯繫方式找我們。",
+      "en": "We'll get back to you soon via the contact info you provided. If it's urgent, feel free to reach us directly using the contact options below.",
+      "vi": "Chúng tôi sẽ liên hệ với bạn sớm qua thông tin bạn đã cung cấp. Nếu khẩn cấp, hãy liên hệ trực tiếp qua các thông tin bên dưới.",
+      "ko": "남겨주신 연락처로 곧 연락드리겠습니다. 긴급한 경우 아래 연락처로 직접 연락해 주셔도 됩니다.",
+      "ja": "ご記入の連絡先へ早めにご連絡します。急を要する場合は、下記の連絡先から直接ご連絡ください。"
+    },
+    "errorBody": {
+      "zh": "提交时遇到问题，你可以直接通过下方的联系方式找我们。",
+      "zh-TW": "提交時遇到問題，你可以直接透過下方的聯繫方式找我們。",
+      "en": "Something went wrong submitting the form — please reach us directly using the contact options below.",
+      "vi": "Có lỗi khi gửi biểu mẫu — vui lòng liên hệ trực tiếp qua thông tin bên dưới.",
+      "ko": "제출 중 문제가 발생했습니다. 아래 연락처로 직접 연락해 주세요.",
+      "ja": "送信中に問題が発生しました。下記の連絡先から直接ご連絡ください。"
+    },
+    "notReadyBody": {
+      "zh": "表单服务暂未就绪，请直接通过下方的联系方式找我们。",
+      "zh-TW": "表單服務暫未就緒，請直接透過下方的聯繫方式找我們。",
+      "en": "The form isn't ready yet — please reach us directly using the contact options below.",
+      "vi": "Biểu mẫu chưa sẵn sàng — vui lòng liên hệ trực tiếp qua thông tin bên dưới.",
+      "ko": "양식이 아직 준비되지 않았습니다. 아래 연락처로 직접 연락해 주세요.",
+      "ja": "フォームがまだご利用いただけません。下記の連絡先から直接ご連絡ください。"
+    },
+    "backToService": {
+      "zh": "返回服务介绍", "zh-TW": "返回服務介紹", "en": "Back to service info",
+      "vi": "Quay lại trang dịch vụ", "ko": "서비스 소개로 돌아가기", "ja": "サービス紹介に戻る"
+    }
+  }
+}

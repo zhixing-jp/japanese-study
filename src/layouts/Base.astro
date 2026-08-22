@@ -21,6 +21,23 @@ const {
 
 const siteUrl = 'https://livingjapanese.app';
 
+// 医疗协调服务浮动banner：贴在就医指南版块全程显示（medicalCss=true 的页面），
+// 落地页/咨询页自己不再显示banner（用户已经在导流终点，不需要再引导一次）。
+const isReferralOwnPage = Astro.url.pathname.includes('/medical/service/');
+const showMedicalReferralBanner = medicalCss && !isReferralOwnPage;
+const medicalServiceUrl = lang === 'zh' ? '/medical/service/' : `/${lang}/medical/service/`;
+const referralBannerText: Record<string, string> = {
+  zh: '语言障碍较大、情况紧急？可以直接找人帮你',
+  'zh-TW': '語言障礙較大、情況緊急？可以直接找人幫你',
+  en: 'Language barrier or urgent situation? Get direct help',
+  vi: 'Rào cản ngôn ngữ hoặc tình huống khẩn cấp? Nhờ hỗ trợ trực tiếp',
+  ko: '언어 장벽이나 긴급 상황? 바로 도움을 받으세요',
+  ja: '言葉の壁や急を要する状況？直接サポートを依頼できます'
+};
+const referralBannerCta: Record<string, string> = {
+  zh: '了解详情', 'zh-TW': '了解詳情', en: 'Learn more', vi: 'Tìm hiểu', ko: '자세히 보기', ja: '詳しく見る'
+};
+
 const langLabels: Record<string, string> = {
   'zh': '简体中文', 'zh-TW': '繁體中文',
   'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어', 'ja': '日本語'
@@ -35,7 +52,7 @@ const langPaths: Record<string, string> = {
 // 说明：learn版块已并入rescue并下线，第2个tab暂时指向/medical/占位页
 // （就医流程・日语版块，内容制作中），medical文案沿用zh.json已有的tab_medical key
 const navLabels: Record<string, Record<string, string>> = {
-  rescue:  { zh: '生活日语学习', en: 'Everyday Japanese', 'zh-TW': '生活日語學習', vi: 'Học Tiếng Nhật Đời Sống', ko: '생활 일본어 학습', ja: '生活日本語学習' },
+  rescue:  { zh: '急救语句', en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
   medical: { zh: '就医指南', en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' }
 };
 
@@ -104,7 +121,7 @@ const jsonLd = {
 
   <!-- Canonical & hreflang -->
   <link rel="canonical" href={Astro.url}>
-  {Object.entries(langPaths).map(([l, prefix]) => {
+  {Object.entries(langPaths).map(([l]) => {
   // 从当前URL路径中去掉语言前缀，得到纯路径
   const currentPath = Astro.url.pathname;
   const strippedPath = currentPath
@@ -190,6 +207,59 @@ const jsonLd = {
   <div id="searchPanel" style="display:none;position:fixed;top:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:100%;background:var(--bg);z-index:500;overflow-y:auto;padding:60px 14px 80px;">
     <div id="searchResults"></div>
   </div>
+
+  {showMedicalReferralBanner && (
+    <div class="med-referral-banner" id="medReferralBanner">
+      <button type="button" class="med-referral-banner-close" id="medReferralBannerClose" aria-label="关闭">✕</button>
+      <span class="med-referral-banner-text">{referralBannerText[lang] || referralBannerText.zh}</span>
+      <a
+        href={medicalServiceUrl}
+        class="med-referral-banner-cta"
+        data-ga-event="referral_banner_click"
+      >
+        {referralBannerCta[lang] || referralBannerCta.zh} →
+      </a>
+    </div>
+  )}
+
+  <script is:inline>
+    (function () {
+      function initReferralBanner() {
+        const banner = document.getElementById('medReferralBanner');
+        if (!banner) return;
+
+        // 同一次访问内关闭过就不再显示（用 sessionStorage，刷新页面/换标签仍会再出现，不做"永久隐藏"）
+        try {
+          if (sessionStorage.getItem('lj_med_referral_dismissed') === '1') {
+            banner.style.display = 'none';
+            return;
+          }
+        } catch (e) {}
+
+        const closeBtn = document.getElementById('medReferralBannerClose');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function () {
+            banner.style.display = 'none';
+            try { sessionStorage.setItem('lj_med_referral_dismissed', '1'); } catch (e) {}
+          });
+        }
+
+        const cta = banner.querySelector('[data-ga-event="referral_banner_click"]');
+        if (cta) {
+          cta.addEventListener('click', function () {
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'referral_banner_click', { page_path: window.location.pathname });
+            }
+          });
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initReferralBanner);
+      } else {
+        initReferralBanner();
+      }
+    })();
+  </script>
 
   <script src="/pagefind/pagefind-ui.js" is:inline></script>
   <script is:inline>

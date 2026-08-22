@@ -290,7 +290,7 @@
 }
 .med-symptom-part-card {
   position: relative;
-  background-color: #0f2a4a;
+  background-color: var(--surface);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -310,7 +310,13 @@
   pointer-events: none;
 }
 .med-symptom-part-card:active { transform: scale(.97); }
-
+/* 除"呼吸与心血管"外，其余8个部位统一挂一个深蓝灰底色，
+   用色呼应"呼吸与心血管"卡片本身图片的深蓝主色调，让9张卡片视觉上更统一；
+   用 background-blend-mode 让色块与背景图自然叠加，而不是完全盖住图片。 */
+.med-symptom-part-card--tinted {
+  background-color: #1b3a5c;
+  background-blend-mode: multiply;
+}
 .med-symptom-part-card-title {
   position: relative;
   font-size: 15.5px;
@@ -814,4 +820,341 @@
 
 @media (min-width: 480px) {
   .med-hub-nav-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ────────────────────────────────
+   九、医疗协调服务浮动banner
+   前缀：.med-referral-banner-*
+   全程贴在就医指南版块底部（样式呼应rescue版块ctrlbar的浮动条形态），
+   落地页/咨询页自身不显示（用户已在导流终点）。
+   调性：轻量邀请，不是硬广告——不遮挡内容，可关闭（当次会话内不再出现）。
+──────────────────────────────── */
+
+.med-referral-banner {
+  position: fixed;
+  bottom: var(--tab-h);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  z-index: 190;
+  background: linear-gradient(135deg, rgba(22,33,62,.96) 0%, rgba(74,29,110,.96) 100%);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: .5px solid rgba(255,255,255,.14);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.med-referral-banner-text {
+  flex: 1;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: rgba(255,255,255,.92);
+}
+
+.med-referral-banner-cta {
+  flex-shrink: 0;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.3);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+.med-referral-banner-cta:active {
+  background: rgba(255,255,255,.24);
+}
+
+.med-referral-banner-close {
+  flex-shrink: 0;
+  order: -1;
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,.55);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* ────────────────────────────────
+   十、医疗协调服务落地页
+   前缀：.med-service-*  /  .med-consult-*
+──────────────────────────────── */
+
+.med-service-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 16px 48px;
+}
+
+.med-service-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 8px 0 12px;
+}
+
+.med-service-intro {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--t2);
+  margin: 0 0 28px;
+}
+
+.med-service-section {
+  margin-bottom: 30px;
+}
+.med-service-section h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 0 0 12px;
+}
+
+.med-service-scenario-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.med-service-scenario-list li {
+  position: relative;
+  padding: 8px 0 8px 22px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--t2);
+  border-bottom: 1px solid var(--line);
+}
+.med-service-scenario-list li:last-child { border-bottom: none; }
+.med-service-scenario-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--t1);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.med-service-pricing-body {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--t2);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 14px 16px;
+  margin: 0;
+}
+
+/* 咨询表单 */
+.med-consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.med-consult-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--t2);
+}
+.med-consult-field input,
+.med-consult-field select,
+.med-consult-field textarea {
+  font: inherit;
+  font-size: 14px;
+  color: var(--t1);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 10px 12px;
+  resize: vertical;
+}
+.med-consult-field input:focus,
+.med-consult-field select:focus,
+.med-consult-field textarea:focus {
+  outline: none;
+  border-color: var(--t1);
+}
+
+.med-consult-submit {
+  align-self: flex-start;
+  background: var(--t1);
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.med-consult-submit:disabled {
+  opacity: .6;
+  cursor: default;
+}
+.med-consult-submit:active:not(:disabled) { opacity: .85; }
+
+/* 落地页 → 咨询表单页 的引导按钮 */
+.med-service-consult-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #16213e 0%, #4a1d6e 100%);
+  box-shadow: 0 2px 10px rgba(22,33,62,.25);
+  border-radius: var(--r-md);
+  padding: 18px 20px;
+}
+.med-service-consult-cta-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #fff;
+}
+.med-service-consult-cta-title::after {
+  content: " →";
+}
+.med-service-consult-cta-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,.75);
+  line-height: 1.5;
+}
+
+/* 表单字段：校验错误态 */
+.med-consult-field--invalid input,
+.med-consult-field--invalid select,
+.med-consult-field--invalid textarea {
+  border-color: #d64545;
+}
+.med-consult-field-error {
+  font-size: 12.5px;
+  color: #d64545;
+  margin: 0;
+  min-height: 0;
+}
+.med-consult-field-hint {
+  font-size: 12px;
+  color: var(--t4);
+  margin: 0;
+}
+.med-consult-required {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--t4);
+}
+
+.med-consult-privacy {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--t4);
+  margin: 0;
+}
+
+.med-consult-form-error {
+  font-size: 13px;
+  color: #d64545;
+  margin: 0;
+}
+
+/* 直接联系渠道 */
+.med-service-contact-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.med-service-contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 16px 10px;
+}
+.med-service-contact-item:active { opacity: .8; }
+.med-service-contact-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--t1);
+}
+.med-service-contact-sub {
+  font-size: 11.5px;
+  color: var(--t4);
+}
+.med-service-contact-item--line .med-service-contact-label { color: #06C755; }
+.med-service-contact-item--whatsapp .med-service-contact-label { color: #25D366; }
+.med-service-contact-item--wechat .med-service-contact-label { color: #07C160; }
+
+/* ────────────────────────────────
+   十一、独立咨询表单页
+   前缀：.med-contact-*
+   参考成熟表单产品的常见模式：清晰标签+必填标记、逐字段校验反馈、
+   提交中禁用态、提交后切换为独立的"已收到"确认视图（不是原地文字替换）
+──────────────────────────────── */
+
+.med-contact-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 8px 16px 48px;
+}
+
+.med-contact-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 8px 0 8px;
+}
+
+.med-contact-subtitle {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--t3);
+  margin: 0 0 26px;
+}
+
+/* 成功确认视图 */
+.med-contact-success {
+  text-align: center;
+  padding: 40px 16px 20px;
+}
+.med-contact-success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(46,163,90,.12);
+  color: #2ea35a;
+  margin-bottom: 18px;
+}
+.med-contact-success-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--t1);
+  margin: 0 0 10px;
+}
+.med-contact-success-body {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--t2);
+  max-width: 440px;
+  margin: 0 auto 24px;
+}
+.med-contact-back-link {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--t1);
+  text-decoration: none;
 }
