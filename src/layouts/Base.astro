@@ -1,5 +1,7 @@
 ---
 import { getLangFromUrl } from '../i18n/index.js';
+import { SECTIONS } from '../data/sections';
+import careerReferral from '../../public/data/career/referral.json';
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -9,6 +11,8 @@ interface Props {
   ogImage?: string;
   rescueCss?: boolean;
   medicalCss?: boolean;
+  careerCss?: boolean;
+  careerGroup?: string;
 }
 
 const {
@@ -16,7 +20,9 @@ const {
   description = '在日本看病、租房、办手续怎么用日语说？23个真实场景对话，真人核实，跟读练习，完全免费。',
   ogImage = 'https://livingjapanese.app/assets/og-image.webp',
   rescueCss = false,
-  medicalCss = false
+  medicalCss = false,
+  careerCss = false,
+  careerGroup
 } = Astro.props;
 
 const siteUrl = 'https://livingjapanese.app';
@@ -38,6 +44,18 @@ const referralBannerCta: Record<string, string> = {
   zh: '了解详情', 'zh-TW': '了解詳情', en: 'Learn more', vi: 'Tìm hiểu', ko: '자세히 보기', ja: '詳しく見る'
 };
 
+// 就职版块悬浮banner：与医疗banner同一套机制，各自独立的dismiss key和GA事件，
+// 两者互斥（页面要么是medicalCss要么是careerCss），不会同时出现。
+// Phase 1仅简体中文，落地页/登记页自身不显示。
+const isCareerReferralOwnPage = Astro.url.pathname.includes('/career/interest/');
+const showCareerReferralBanner = careerCss && !isCareerReferralOwnPage;
+// banner文案按文章所属阶段分组（prep/interview/decide/onboard），未传group（如hub页）时用default兜底
+const careerBannerMap: Record<string, { text: string; cta: string }> = careerReferral.banner;
+const careerBannerData = (careerGroup && careerBannerMap[careerGroup]) || careerBannerMap.default;
+const careerInterestUrl = careerGroup ? `/career/interest/?from=${careerGroup}` : '/career/interest/';
+const careerReferralBannerText = careerBannerData.text;
+const careerReferralBannerCta = careerBannerData.cta;
+
 const langLabels: Record<string, string> = {
   'zh': '简体中文', 'zh-TW': '繁體中文',
   'en': 'English', 'vi': 'Tiếng Việt', 'ko': '한국어', 'ja': '日本語'
@@ -52,14 +70,18 @@ const langPaths: Record<string, string> = {
 // 说明：learn版块已并入rescue并下线，第2个tab暂时指向/medical/占位页
 // （就医流程・日语版块，内容制作中），medical文案沿用zh.json已有的tab_medical key
 const navLabels: Record<string, Record<string, string>> = {
-  rescue:  { zh: '急救语句', en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
-  medical: { zh: '就医指南', en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' }
+  rescue:  { zh: SECTIONS.rescue.label, en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
+  medical: { zh: SECTIONS.medical.label, en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' },
+  // career版块Phase 1仅简体中文，其它语言暂时也显示中文标签（尚未有对应语言内容可跳转）
+  career:  { zh: SECTIONS.career.label }
 };
 
 const rescueUrl  = lang === 'zh' ? '/' : `/${lang}/`;
 // medical是占位页，暂时只有单一路径（无语言子目录），页面内部按当前语言显示对应文案。
 // 等就医版块正式做多语言目录时，这里要改回 lang === 'zh' ? '/medical/' : `/${lang}/medical/` 的形式
-const medicalUrl = '/medical/';
+const medicalUrl = SECTIONS.medical.url;
+// career同medical，Phase 1单一路径（仅简体中文），内部按当前语言显示对应文案
+const careerUrl = SECTIONS.career.url;
 // about同medical，单一路径，内部按当前语言显示对应文案
 const aboutUrl = '/about/';
 
@@ -78,6 +100,7 @@ const footerCopyright: Record<string, string> = {
 
 const currentPath = Astro.url.pathname;
 const isMedical = currentPath.includes('/medical');
+const isCareer = currentPath.includes('/career');
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -145,6 +168,7 @@ const jsonLd = {
   <link rel="stylesheet" href="/css/base.css">
   { rescueCss && <link rel="stylesheet" href="/css/rescue.css" /> }
   { medicalCss && <link rel="stylesheet" href="/css/medical.css" /> }
+  { careerCss && <link rel="stylesheet" href="/css/career.css" /> }
 
   <!-- JSON-LD -->
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -222,6 +246,20 @@ const jsonLd = {
     </div>
   )}
 
+  {showCareerReferralBanner && (
+    <div class="career-referral-banner" id="careerReferralBanner">
+      <button type="button" class="career-referral-banner-close" id="careerReferralBannerClose" aria-label="关闭">✕</button>
+      <span class="career-referral-banner-text">{careerReferralBannerText}</span>
+      <a
+        href={careerInterestUrl}
+        class="career-referral-banner-cta"
+        data-ga-event="career_banner_click"
+      >
+        {careerReferralBannerCta} →
+      </a>
+    </div>
+  )}
+
   <script is:inline>
     (function () {
       function initReferralBanner() {
@@ -257,6 +295,45 @@ const jsonLd = {
         document.addEventListener('DOMContentLoaded', initReferralBanner);
       } else {
         initReferralBanner();
+      }
+    })();
+  </script>
+
+  <script is:inline>
+    (function () {
+      function initCareerReferralBanner() {
+        const banner = document.getElementById('careerReferralBanner');
+        if (!banner) return;
+
+        // 独立的sessionStorage key，关掉医疗banner不会影响这个，反之亦然
+        try {
+          if (sessionStorage.getItem('lj_career_referral_dismissed') === '1') {
+            banner.style.display = 'none';
+            return;
+          }
+        } catch (e) {}
+
+        const closeBtn = document.getElementById('careerReferralBannerClose');
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function () {
+            banner.style.display = 'none';
+            try { sessionStorage.setItem('lj_career_referral_dismissed', '1'); } catch (e) {}
+          });
+        }
+
+        const cta = banner.querySelector('[data-ga-event="career_banner_click"]');
+        if (cta) {
+          cta.addEventListener('click', function () {
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'career_banner_click', { page_path: window.location.pathname });
+            }
+          });
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCareerReferralBanner);
+      } else {
+        initCareerReferralBanner();
       }
     })();
   </script>
@@ -318,13 +395,17 @@ const jsonLd = {
 
   <!-- Bottom Navigation -->
   <nav id="tabBar">
-    <a href={rescueUrl} class={`tab${!isMedical ? ' on' : ''}`}>
+    <a href={rescueUrl} class={`tab${(!isMedical && !isCareer) ? ' on' : ''}`}>
       <div class="tab-icon">🛡️</div>
       {navLabels.rescue[lang] || navLabels.rescue.zh}
     </a>
     <a href={medicalUrl} class={`tab${isMedical ? ' on' : ''}`}>
       <div class="tab-icon">🏥</div>
       {navLabels.medical[lang] || navLabels.medical.zh}
+    </a>
+    <a href={careerUrl} class={`tab${isCareer ? ' on' : ''}`}>
+      <div class="tab-icon">💼</div>
+      {navLabels.career[lang] || navLabels.career.zh}
     </a>
   </nav>
 

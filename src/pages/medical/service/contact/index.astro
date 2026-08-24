@@ -1,5 +1,7 @@
 ---
 import Base from '../../../../layouts/Base.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../../data/sections';
 import referral from '../../../../../public/data/medical/referral.json';
 
 const lang = 'zh';
@@ -16,13 +18,11 @@ const serviceUrl = '/medical/service/';
 
 <Base title={title} description={description} medicalCss={true}>
 
-  <nav class="med-breadcrumb" aria-label="breadcrumb">
-    <a href="/medical/">就医指南</a>
-    <span aria-hidden="true">›</span>
-    <a href={serviceUrl}>{t(referral.page.title)}</a>
-    <span aria-hidden="true">›</span>
-    <span aria-current="page">{t(cp.title)}</span>
-  </nav>
+  <Breadcrumb crumbs={[
+    { label: SECTIONS.medical.label, url: SECTIONS.medical.url },
+    { label: t(referral.page.title), url: serviceUrl },
+    { label: t(cp.title) }
+  ]} cssClass="med-breadcrumb" />
 
   <div class="med-contact-page" id="medContactPage">
 

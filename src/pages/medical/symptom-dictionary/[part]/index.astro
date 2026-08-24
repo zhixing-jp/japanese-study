@@ -1,5 +1,7 @@
 ---
 import Base from '../../../../layouts/Base.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../../data/sections';
 import { readFile } from 'node:fs/promises';
 
 // ---- 数据结构类型定义（对应 public/data/medical/symptom-dictionary.json） ----
@@ -150,13 +152,11 @@ const pageDesc = `${partTitle}相关的日语症状表达，配例句、假名�
 
 <Base title={pageTitle} description={pageDesc} medicalCss={true}>
 
-  <nav class="med-breadcrumb" aria-label="breadcrumb">
-    <a href="/medical/">就医指南</a>
-    <span aria-hidden="true">›</span>
-    <a href="/medical/symptom-dictionary/">症状指认词库</a>
-    <span aria-hidden="true">›</span>
-    <span aria-current="page">{partTitle}</span>
-  </nav>
+  <Breadcrumb crumbs={[
+    { label: SECTIONS.medical.label, url: SECTIONS.medical.url },
+    { label: '症状指认词库', url: '/medical/symptom-dictionary/' },
+    { label: partTitle }
+  ]} cssClass="med-breadcrumb" />
 
   <div class="med-symptom-page" id="medSymptomPage">
 

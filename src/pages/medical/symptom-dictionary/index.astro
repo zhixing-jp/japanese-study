@@ -1,7 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../data/sections';
 import { readFile } from 'node:fs/promises';
 import disclaimer from '../../../../public/data/medical/disclaimer.json';
+
 const lang = 'zh';
 
 let symptomData: any = { body_parts: [] };
@@ -51,11 +54,7 @@ function getPartStats(part: any) {
 
 <Base title={pageTitles[lang] || pageTitles.zh} description={pageDescs[lang] || pageDescs.zh} medicalCss={true}>
 
-  <nav class="med-breadcrumb" aria-label="breadcrumb">
-    <a href="/medical/">就医指南</a>
-    <span aria-hidden="true">›</span>
-    <span aria-current="page">{pageTitles[lang] || pageTitles.zh}</span>
-  </nav>
+  <Breadcrumb crumbs={[{ label: SECTIONS.medical.label, url: SECTIONS.medical.url }, { label: pageTitles[lang] || pageTitles.zh }]} cssClass="med-breadcrumb" />
 
   <div class="med-symptom-landing" id="medSymptomLanding">
 
@@ -82,7 +81,7 @@ function getPartStats(part: any) {
         return (
           <a
             href={`/medical/symptom-dictionary/${part.id}/`}
-              class="med-symptom-part-card"
+            class={`med-symptom-part-card${part.id === 'respiratory-cardiac' ? '' : ' med-symptom-part-card--tinted'}`}
             style={`background-image: url(${bgImage})`}
           >
             <div class="med-symptom-part-card-title">{getPartTitle(part, lang)}</div>

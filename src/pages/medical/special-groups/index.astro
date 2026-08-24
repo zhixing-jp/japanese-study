@@ -1,9 +1,9 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../data/sections';
 import { readFile } from 'node:fs/promises';
 import disclaimer from '../../../../public/data/medical/disclaimer.json';
-
-const lang = 'zh';
 
 let pageData: any = { sections: [] };
 try {
@@ -16,11 +16,7 @@ try {
 
 <Base title={`${pageData.title || '特殊人群速查'} | Living Japanese · 日活`} description={pageData.description || ''} medicalCss={true}>
 
-  <nav class="med-breadcrumb" aria-label="breadcrumb">
-    <a href="/medical/">就医指南</a>
-    <span aria-hidden="true">›</span>
-    <span aria-current="page">{pageData.title}</span>
-  </nav>
+  <Breadcrumb crumbs={[{ label: SECTIONS.medical.label, url: SECTIONS.medical.url }, { label: pageData.title }]} cssClass="med-breadcrumb" />
 
   <p class="med-disclaimer">{disclaimer.page_full.zh}</p>
 

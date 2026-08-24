@@ -1,0 +1,60 @@
+{
+  "pages": [
+    {
+      "id": "resume-vs-career-history",
+      "group": "prep",
+      "title": "履歴書与職務経歴書到底有什么区别？",
+      "description": "两份文件各自的用途、该写什么、常见误区，一次说清楚。",
+      "url": "/career/resume-vs-career-history/"
+    },
+    {
+      "id": "interview-failure-story",
+      "group": "interview",
+      "title": "日本企业为什么问「失败经历」？",
+      "description": "这不是找茬，背后是日企判断人的一套逻辑，理解了才能答好。",
+      "url": "/career/interview-failure-story/"
+    },
+    {
+      "id": "resignation-reason",
+      "group": "interview",
+      "title": "日本转职时，如何解释离职理由？",
+      "description": "真实理由和面试该怎么说，是两件事——怎么把握分寸不踩雷。",
+      "url": "/career/resignation-reason/"
+    },
+    {
+      "id": "self-pr-mismatch",
+      "group": "interview",
+      "title": "中国式自我PR为什么常在日本面试中失效？",
+      "description": "同样是「我很优秀」，为什么讲法不同，效果差很多。",
+      "url": "/career/self-pr-mismatch/"
+    },
+    {
+      "id": "job-posting-checklist",
+      "group": "decide",
+      "title": "年收高不等于工作更适合：看求人时必须确认的6项",
+      "description": "求人票上不会主动告诉你的信息，怎么自己挖出来。",
+      "url": "/career/job-posting-checklist/"
+    },
+    {
+      "id": "fixed-overtime-pay",
+      "group": "decide",
+      "title": "固定残业代是什么意思？面试时该问什么？",
+      "description": "薪资条上一个常被忽略的数字，可能决定你实际到手多少、加班多少。",
+      "url": "/career/fixed-overtime-pay/"
+    },
+    {
+      "id": "offer-checklist",
+      "group": "decide",
+      "title": "拿到Offer后，先确认这10件事",
+      "description": "签字前的最后一次自查，比事后维权容易太多。",
+      "url": "/career/offer-checklist/"
+    },
+    {
+      "id": "first-week-horenso",
+      "group": "onboard",
+      "title": "入职第一周如何做好報連相",
+      "description": "日企职场最基础也最重要的沟通习惯，新人最容易在这里失分。",
+      "url": "/career/first-week-horenso/"
+    }
+  ]
+}

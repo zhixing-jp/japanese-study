@@ -1,0 +1,32 @@
+---
+// 全站共用的面包屑组件。
+// 用法：<Breadcrumb crumbs={[{label: '日本就医指南', url: '/medical/'}, {label: pageData.title}]} cssClass="med-breadcrumb" />
+// 数组最后一项不需要 url（会渲染成不可点击的当前页），前面的项都需要 url。
+// cssClass 传对应版块已有的breadcrumb样式类名（med-breadcrumb / career-breadcrumb），
+// 不新建通用CSS类，避免同时改动 medical.css / career.css 引入额外风险。
+
+export interface Crumb {
+  label: string;
+  url?: string;
+}
+
+interface Props {
+  crumbs: Crumb[];
+  cssClass?: string;
+}
+
+const { crumbs, cssClass = 'med-breadcrumb' } = Astro.props;
+---
+
+<nav class={cssClass} aria-label="breadcrumb">
+  {crumbs.map((c, i) => (
+    <>
+      {i > 0 && <span aria-hidden="true">›</span>}
+      {i === crumbs.length - 1 ? (
+        <span aria-current="page">{c.label}</span>
+      ) : (
+        <a href={c.url}>{c.label}</a>
+      )}
+    </>
+  ))}
+</nav>

@@ -1,0 +1,174 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../data/sections';
+import referral from '../../../../public/data/career/referral.json';
+
+const cp = referral.contactPage;
+const hubUrl = SECTIONS.career.url;
+
+// 从悬浮banner点击跳转过来时，?from=分组key（prep/interview/decide/onboard），
+// 用来让登记页标题上方呼应banner说的场景，避免"banner说得很准，落地页却很泛"的落差感。
+//
+// 注意：这个页面是SSG静态页面，只有一份构建好的HTML，不会针对每个?from=值单独生成页面，
+// 服务器端拿不到访问者URL上的query参数（Astro.url.searchParams在构建时永远是空的）。
+// 所以这里不能像文章页banner分组那样在构建时选文案，必须在浏览器里读当前URL后再显示——
+// 下面把完整的banner文案表传给客户端脚本，运行时根据?from=的值查表、再展示对应的一行小字。
+const careerBannerMap: Record<string, { text: string; cta: string }> = referral.banner;
+---
+
+<Base title={`${cp.title} | Living Japanese · 日活`} description={cp.subtitle} careerCss={true}>
+
+  <Breadcrumb crumbs={[{ label: SECTIONS.career.label, url: hubUrl }, { label: cp.title }]} cssClass="career-breadcrumb" />
+
+  <div class="career-contact-page" id="careerContactPage">
+
+    <div id="careerContactFormView">
+      <p class="career-contact-scenario" id="ccScenarioLine" style="display:none"></p>
+      <h1 class="career-contact-title">{cp.title}</h1>
+      <p class="career-contact-subtitle">{cp.subtitle}</p>
+
+      <form id="careerConsultForm" class="career-consult-form" novalidate>
+        <input type="hidden" name="source_slug" id="ccSourceSlug" value="" />
+
+        <div class="career-consult-field">
+          <label for="ccContact">{cp.fieldContact} <span class="career-consult-required">*{cp.requiredMark}</span></label>
+          <input type="text" id="ccContact" name="contact" required maxlength="160" autocomplete="email" />
+          <p class="career-consult-field-hint">{cp.fieldContactHint}</p>
+          <p class="career-consult-field-error" data-error-for="contact"></p>
+        </div>
+
+        <div class="career-consult-field">
+          <label for="ccTopic">{cp.fieldTopic}</label>
+          <textarea id="ccTopic" name="topic" rows="4" maxlength="500" placeholder={cp.fieldTopicHint}></textarea>
+        </div>
+
+        <p class="career-consult-privacy">{cp.privacyNote}</p>
+
+        <button type="submit" class="career-consult-submit" id="careerConsultSubmitBtn">
+          <span class="career-consult-submit-label">{cp.submit}</span>
+        </button>
+
+        <p class="career-consult-form-error" id="careerConsultFormError" role="alert" style="display:none"></p>
+      </form>
+    </div>
+
+    <div id="careerContactSuccessView" class="career-contact-success" style="display:none">
+      <div class="career-contact-success-icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9.5"/></svg>
+      </div>
+      <h1 class="career-contact-success-title">{cp.successTitle}</h1>
+      <p class="career-contact-success-body">{cp.successBody}</p>
+      <a href={hubUrl} class="career-contact-back-link">← {cp.backToHub}</a>
+    </div>
+
+  </div>
+
+  <div data-pagefind-body style="display:none">{cp.title} {cp.subtitle}</div>
+
+  <script is:inline define:vars={{
+    labels: {
+      submitting: cp.submitting,
+      submit: cp.submit,
+      errorBody: cp.errorBody,
+      notReadyBody: cp.notReadyBody,
+      fieldRequiredError: cp.fieldRequiredError
+    },
+    careerBannerMap
+  }}>
+    (function () {
+      function init() {
+        const form = document.getElementById('careerConsultForm');
+        if (!form) return;
+        const submitBtn = document.getElementById('careerConsultSubmitBtn');
+        const submitLabel = submitBtn.querySelector('.career-consult-submit-label');
+        const formErrorEl = document.getElementById('careerConsultFormError');
+        const formView = document.getElementById('careerContactFormView');
+        const successView = document.getElementById('careerContactSuccessView');
+        const sourceSlugField = document.getElementById('ccSourceSlug');
+        const scenarioLineEl = document.getElementById('ccScenarioLine');
+
+        // 从悬浮banner点击跳转过来时，?from=分组key（prep/interview/decide/onboard），
+        // 记录的是"来自哪个场景分组"而不是具体哪篇文章（banner本身就是按分组展示的，见Base.astro）。
+        // 同时用这个分组key在careerBannerMap里查对应文案，显示呼应banner的那一行小字。
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const from = params.get('from');
+          if (from && sourceSlugField) sourceSlugField.value = from;
+          if (from && scenarioLineEl && careerBannerMap[from]) {
+            scenarioLineEl.textContent = careerBannerMap[from].text;
+            scenarioLineEl.style.display = 'block';
+          }
+        } catch (e) {}
+
+        function clearFieldErrors() {
+          form.querySelectorAll('.career-consult-field-error').forEach(function (el) { el.textContent = ''; });
+          form.querySelectorAll('.career-consult-field--invalid').forEach(function (el) {
+            el.classList.remove('career-consult-field--invalid');
+          });
+        }
+
+        function showFieldError(name, message) {
+          const errEl = form.querySelector('[data-error-for="' + name + '"]');
+          if (errEl) errEl.textContent = message;
+          const fieldEl = form.querySelector('[name="' + name + '"]');
+          if (fieldEl) fieldEl.closest('.career-consult-field').classList.add('career-consult-field--invalid');
+        }
+
+        function validate(payload) {
+          let ok = true;
+          if (!payload.contact || !payload.contact.trim()) { showFieldError('contact', labels.fieldRequiredError); ok = false; }
+          return ok;
+        }
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          clearFieldErrors();
+          formErrorEl.style.display = 'none';
+
+          const formData = new FormData(form);
+          const payload = Object.fromEntries(formData.entries());
+
+          if (!validate(payload)) return;
+
+          payload.page_path = window.location.pathname;
+          payload.submitted_at = new Date().toISOString();
+
+          submitBtn.disabled = true;
+          submitLabel.textContent = labels.submitting;
+
+          if (!(window.ljCareerInterest && typeof window.ljCareerInterest.submit === 'function')) {
+            formErrorEl.textContent = labels.notReadyBody;
+            formErrorEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitLabel.textContent = labels.submit;
+            return;
+          }
+
+          window.ljCareerInterest.submit(payload)
+            .then(function () {
+              if (typeof window.gtag === 'function') {
+                window.gtag('event', 'career_interest_submit', { source_slug: payload.source_slug || 'direct' });
+              }
+              formView.style.display = 'none';
+              successView.style.display = 'block';
+              successView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            })
+            .catch(function () {
+              formErrorEl.textContent = labels.errorBody;
+              formErrorEl.style.display = 'block';
+            })
+            .finally(function () {
+              submitBtn.disabled = false;
+              submitLabel.textContent = labels.submit;
+            });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+  <script is:inline src="/js/career-interest.js"></script>
+
+</Base>

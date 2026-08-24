@@ -1,0 +1,77 @@
+---
+// 就职版块所有文章的统一模板（动态路由）。
+// 以前每篇文章是单独复制出来的一个Astro文件（8份几乎一模一样的代码），
+// 现在改成：这一个文件负责展示逻辑，public/data/career/index.json 里列了有哪些文章，
+// 每篇文章的具体内容各自放在 public/data/career/{slug}.json。
+// 以后新增一篇文章，只需要：1) 在 index.json 里加一条 2) 新建对应的内容json，
+// 不需要再复制/新建Astro文件。
+import Base from '../../../layouts/Base.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../data/sections';
+import { readFile } from 'node:fs/promises';
+import careerIndex from '../../../../public/data/career/index.json';
+import disclaimer from '../../../../public/data/career/disclaimer.json';
+
+export async function getStaticPaths() {
+  const pages = careerIndex.pages || [];
+  const results = [];
+  for (const p of pages) {
+    let pageData: any = {};
+    try {
+      const raw = await readFile(`public/data/career/${p.id}.json`, 'utf-8');
+      pageData = JSON.parse(raw);
+    } catch (e) {
+      pageData = {};
+    }
+    // group字段只存在于index.json（文章列表），不在每篇文章各自的内容json里，
+    // 需要在这里合并进pageData，模板才能读到pageData.group传给悬浮banner分组
+    pageData.group = p.group;
+    results.push({
+      params: { slug: p.id },
+      props: { slug: p.id, pageData }
+    });
+  }
+  return results;
+}
+
+interface Props {
+  slug: string;
+  pageData: any;
+}
+
+const { slug, pageData } = Astro.props as Props;
+---
+
+<Base title={`${pageData.title} | Living Japanese · 日活`} description={pageData.description} careerCss={true} careerGroup={pageData.group}>
+
+  <Breadcrumb crumbs={[{ label: SECTIONS.career.label, url: SECTIONS.career.url }, { label: pageData.title }]} cssClass="career-breadcrumb" />
+
+  <p class="career-disclaimer">{disclaimer.page_full.zh}</p>
+
+  <div class="career-article-page" id="careerArticlePage">
+    <h1 class="career-article-title">{pageData.title}</h1>
+
+    {pageData.intro && <p class="career-article-intro">{pageData.intro}</p>}
+
+    {(pageData.sections || []).map((section: any) => (
+      <section class="career-article-section">
+        <h2 class="career-article-section-title">{section.heading}</h2>
+        {(section.body || []).map((para: string) => (
+          <p>{para}</p>
+        ))}
+      </section>
+    ))}
+
+    {pageData.takeaways && pageData.takeaways.length > 0 && (
+      <div class="career-article-takeaways">
+        <p class="career-article-takeaways-title">要点小结</p>
+        <ul>
+          {pageData.takeaways.map((t: string) => (<li>{t}</li>))}
+        </ul>
+      </div>
+    )}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageData.title} {pageData.description}</div>
+
+</Base>

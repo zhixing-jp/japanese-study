@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import careerIndex from '../../../public/data/career/index.json';
+import disclaimer from '../../../public/data/career/disclaimer.json';
+
+const titles: Record<string, string> = {
+  prep: '简历准备', interview: '面试应对', decide: '职位判断', onboard: '入职适应'
+};
+const groupOrder = ['prep', 'interview', 'decide', 'onboard'];
+
+const groups: Record<string, any[]> = { prep: [], interview: [], decide: [], onboard: [] };
+for (const p of careerIndex.pages) {
+  (groups[p.group] || (groups[p.group] = [])).push(p);
+}
+---
+
+<Base title="就职・转职指南 | Living Japanese · 日活" description="在日本求职、转职，从简历到面试到入职适应，真实经验一站式指南。" careerCss={true}>
+
+  <div class="career-hub-page" id="careerHubPage">
+    <h1>就职・转职指南</h1>
+    <p class="career-hub-intro">帮助在日外国人建立稳定的职业生活，不是教你"快速拿到offer的面试技巧"，而是从简历、面试到入职后的适应，讲清楚日本职场真正的做事逻辑。</p>
+    <p class="career-disclaimer">{disclaimer.hub_short.zh}</p>
+
+    {groupOrder.map((groupKey) => (
+      groups[groupKey] && groups[groupKey].length > 0 && (
+        <section class="career-hub-group">
+          <h2>{titles[groupKey] || groupKey}</h2>
+          <div class="career-hub-nav-grid">
+            {groups[groupKey].map((p: any) => (
+              <a href={p.url} class={`career-hub-nav-card career-hub-nav-card--${groupKey}`}>
+                <div class="career-hub-nav-card-title">{p.title}</div>
+                <div class="career-hub-nav-card-desc">{p.description}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">就职转职 在日本求职 简历 面试 offer 报连相 中文</div>
+
+</Base>
