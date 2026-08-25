@@ -10,12 +10,12 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.props;
 
-let pageData: any = { sections: [] };
+let pageData: any = { questions: [] };
 try {
-  const raw = await readFile('public/data/medical/special-groups.json', 'utf-8');
+  const raw = await readFile('public/data/medical/faq.json', 'utf-8');
   pageData = JSON.parse(raw);
 } catch (e) {
-  pageData = { sections: [] };
+  pageData = { questions: [] };
 }
 
 function tf(obj: any, field: string, lang: string): string {
@@ -33,6 +33,24 @@ const titleField = `title_${lang}`;
 // 不要把 as 类型断言直接写在模板表达式区域（模板区域解析泛型语法的行为和 frontmatter 不一致）。
 const disclaimerPageFull = disclaimer.page_full as Record<string, string>;
 const pageFullText = disclaimerPageFull[lang] || disclaimerPageFull.zh;
+
+// 分享按钮：文案模板+按钮标签按语言准备，与career多语言文章页使用同一套翻译内容
+const shareTextTemplates: Record<string, string> = {
+  'zh-TW': '這篇講得挺實在：{title}',
+  en: 'This one\u2019s worth a read: {title}',
+  vi: 'B\u00e0i n\u00e0y kh\u00e1 th\u1ef1c t\u1ebf: {title}',
+  ko: '\uc774 \uae00 \uafe4 \uc720\uc775\ud574\uc694: {title}',
+  ja: '\u3053\u306e\u8a18\u4e8b\u3001\u5b9f\u969b\u5f79\u306b\u7acb\u3061\u307e\u3059\uff1a{title}'
+};
+const shareLabels: Record<string, Record<string, string>> = {
+  'zh-TW': { line: 'LINE\u5206\u4eab', whatsapp: 'WhatsApp\u5206\u4eab', wechat: '\u5fae\u4fe1\u5206\u4eab\uff08\u8907\u88fd\u9023\u7d50\uff09', wechatCopied: '\u9023\u7d50\u5df2\u8907\u88fd\uff0c\u53bb\u5fae\u4fe1\u88e1\u8cbc\u4e0a\u767c\u9001\u5427' },
+  en: { line: 'Share on LINE', whatsapp: 'Share on WhatsApp', wechat: 'Share on WeChat (copy link)', wechatCopied: 'Link copied \u2014 paste it in WeChat' },
+  vi: { line: 'Chia s\u1ebb qua LINE', whatsapp: 'Chia s\u1ebb qua WhatsApp', wechat: 'Chia s\u1ebb qua WeChat (sao ch\u00e9p link)', wechatCopied: '\u0110\u00e3 sao ch\u00e9p link, d\u00e1n v\u00e0o WeChat \u0111\u1ec3 g\u1eedi nh\u00e9' },
+  ko: { line: 'LINE\ub85c \uacf5\uc720', whatsapp: 'WhatsApp\ub85c \uacf5\uc720', wechat: 'WeChat\ub85c \uacf5\uc720(\ub9c1\ud06c \ubcf5\uc0ac)', wechatCopied: '\ub9c1\ud06c\uac00 \ubcf5\uc0ac\ub418\uc5c8\uc5b4\uc694, WeChat\uc5d0 \ubd99\uc5ec\ub123\uc73c\uc138\uc694' },
+  ja: { line: 'LINE\u3067\u5171\u6709', whatsapp: 'WhatsApp\u3067\u5171\u6709', wechat: 'WeChat\u3067\u5171\u6709\uff08\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc\uff09', wechatCopied: '\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f\u3002WeChat\u3067\u8cbc\u308a\u4ed8\u3051\u3066\u9001\u4fe1\u3057\u3066\u304f\u3060\u3055\u3044' }
+};
+const currentShareLabels = shareLabels[lang] || shareLabels.en;
+const shareText = (shareTextTemplates[lang] || shareTextTemplates.en).replace('{title}', pageData[titleField] || pageData.title);
 ---
 
 <Base title={`${pageData[titleField] || pageData.title} | Living Japanese`} description={tf(pageData, 'description', lang)} medicalCss={true}>
@@ -48,29 +66,27 @@ const pageFullText = disclaimerPageFull[lang] || disclaimerPageFull.zh;
   <div class="med-ref-page" id="medRefPage">
     <h1>{pageData[titleField] || pageData.title}</h1>
 
-    {pageData.verified_note && (
-      <div class="med-ref-verified-note">
-        Verified: {pageData.verified_note.verified_date} — Sources: {(pageData.verified_note.sources || []).join(', ')}
-      </div>
-    )}
-
-    <nav class="med-ref-anchor-nav">
-      {(pageData.sections || []).map((s: any) => (
-        <a href={`#${s.id}`}>{tf(s, 'heading', lang)}</a>
-      ))}
-    </nav>
-
-    {(pageData.sections || []).map((section: any) => (
-      <div class="med-ref-section" id={section.id}>
-        <h2 class="med-ref-section-heading">
-          {tf(section, 'heading', lang)}
-          {section.uncertain && <span class="med-ref-uncertain-tag">⚠️</span>}
-        </h2>
-        <div class="med-ref-body">{tf(section, 'body', lang)}</div>
+    {(pageData.questions || []).map((q: any) => (
+      <div class={`med-ref-faq-item ${q.is_referral ? 'med-ref-faq-item--referral' : ''}`}>
+        <div class="med-ref-faq-question">{tf(q, 'question', lang)}</div>
+        <div class="med-ref-faq-answer">{tf(q, 'answer', lang)}</div>
       </div>
     ))}
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="share"></div>
   </div>
 
   <div data-pagefind-body style="display:none">{pageData[titleField] || pageData.title} {tf(pageData, 'description', lang)}</div>
+
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: shareText,
+      labels: currentShareLabels,
+      gaEvent: 'medical_page_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
 
 </Base>

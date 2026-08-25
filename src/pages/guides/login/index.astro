@@ -1,0 +1,101 @@
+---
+// 专业指南 —— 购买者登录页。邮箱验证码（OTP），不设密码。
+import Base from '../../../layouts/Base.astro';
+import { SECTIONS } from '../../../data/sections';
+
+const title = `登录 | ${SECTIONS.guides.label} | Living Japanese · 日活`;
+---
+
+<Base title={title} description="登录查看你的购买记录" guidesCss={true} noindex={true}>
+
+  <div class="guides-auth-page" id="guidesLoginPage">
+    <h1 class="guides-auth-title">登录查看购买记录</h1>
+    <p class="guides-auth-subtitle">输入你购买时使用的邮箱，我们会发一个验证码到这个邮箱，不需要设置密码。</p>
+
+    <div id="guidesLoginStep1">
+      <div class="guides-auth-field">
+        <label for="glEmail">邮箱</label>
+        <input type="email" id="glEmail" autocomplete="email" required />
+      </div>
+      <button type="button" class="guides-auth-submit" id="glRequestOtpBtn">发送验证码</button>
+    </div>
+
+    <div id="guidesLoginStep2" style="display:none">
+      <div class="guides-auth-field">
+        <label for="glCode">验证码</label>
+        <input type="text" id="glCode" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required />
+      </div>
+      <button type="button" class="guides-auth-submit" id="glVerifyBtn">登录</button>
+    </div>
+
+    <div id="guidesLoginMessage"></div>
+  </div>
+
+  <script is:inline src="/js/guides-auth.js"></script>
+  <script is:inline>
+    (function () {
+      function init() {
+        var step1 = document.getElementById('guidesLoginStep1');
+        var step2 = document.getElementById('guidesLoginStep2');
+        var msgEl = document.getElementById('guidesLoginMessage');
+        var emailInput = document.getElementById('glEmail');
+        var codeInput = document.getElementById('glCode');
+        var requestBtn = document.getElementById('glRequestOtpBtn');
+        var verifyBtn = document.getElementById('glVerifyBtn');
+
+        // 已经登录过了，直接跳转到购买记录页
+        if (window.ljGuidesAuth && window.ljGuidesAuth.getSession()) {
+          window.location.href = '/guides/my-purchases/';
+          return;
+        }
+
+        function showMessage(text, type) {
+          msgEl.textContent = text;
+          msgEl.className = 'guides-auth-message guides-auth-message--' + (type || 'info');
+        }
+
+        requestBtn.addEventListener('click', function () {
+          var email = emailInput.value.trim();
+          if (!email) { showMessage('请输入邮箱', 'error'); return; }
+          if (!(window.ljGuidesAuth && window.ljGuidesAuth.isConfigured())) {
+            showMessage('登录服务暂未就绪，请稍后重试', 'error');
+            return;
+          }
+          requestBtn.disabled = true;
+          requestBtn.textContent = '发送中…';
+          window.ljGuidesAuth.requestOtp(email).then(function () {
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+            showMessage('验证码已发送到 ' + email + '，请查收邮件（可能在垃圾邮件夹）', 'info');
+            codeInput.focus();
+          }).catch(function () {
+            showMessage('发送失败，请确认邮箱地址正确后重试', 'error');
+          }).finally(function () {
+            requestBtn.disabled = false;
+            requestBtn.textContent = '发送验证码';
+          });
+        });
+
+        verifyBtn.addEventListener('click', function () {
+          var email = emailInput.value.trim();
+          var code = codeInput.value.trim();
+          if (!code) { showMessage('请输入验证码', 'error'); return; }
+          verifyBtn.disabled = true;
+          verifyBtn.textContent = '登录中…';
+          window.ljGuidesAuth.verifyOtp(email, code).then(function () {
+            window.location.href = '/guides/my-purchases/';
+          }).catch(function () {
+            showMessage('验证码不正确或已过期，请重新发送', 'error');
+          }).finally(function () {
+            verifyBtn.disabled = false;
+            verifyBtn.textContent = '登录';
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

@@ -33,5 +33,180 @@
     "坏消息越早说越好，拖延只会让问题变复杂、让上司觉得你在隐瞒",
     "语言不熟练不是少沟通的理由，主动沟通本身就是建立信任的方式",
     "第一周养成每天简短汇报、遇到不确定及时确认的习惯，比语言流利更重要"
+  ],
+  "title_zh-TW": "到職第一週如何做好報連相",
+  "description_zh-TW": "日企職場最基礎也最重要的溝通習慣，新人最容易在這裡失分。",
+  "intro_zh-TW": "「報連相」（報告・連絡・相談，即匯報、聯絡、商量）是日本職場溝通文化裡最基礎的概念，幾乎每一本日企新人培訓手冊都會提到。對剛到職的外國員工來說，這不是一句口號，而是直接影響主管和同事對你「靠不靠譜」第一印象的具體行為習慣。",
+  "sections_zh-TW": [
+    {
+      "heading": "報連相分別指什麼",
+      "body": [
+        "報告（匯報）：工作進度、結果、遇到的問題，主動向主管說明，不需要等對方來問。尤其是「壞消息」——出現問題、進度延遲、犯了錯——越早報告，處理起來越簡單，拖到最後才說往往會讓問題變複雜，也會讓主管覺得你在隱瞞。",
+        "連絡（聯絡）：單純的資訊共享，比如「我今天下午會外出辦事」「這份資料已經發給客戶了」，不需要對方給出指示或回饋，純粹是讓相關的人知情，避免資訊不對稱造成協作失誤。",
+        "相談（商量）：在自己沒有把握、需要別人意見時主動提出討論，而不是自己悶頭決定或者一直卡住不推進。日本職場普遍認為「不懂就問」比「自己瞎猜然後做錯」更值得肯定。"
+      ]
+    },
+    {
+      "heading": "為什麼新人特別容易在這裡失分",
+      "body": [
+        "很多剛從其他工作環境轉過來的人，習慣了「只有做出成果才匯報」或者「遇到問題先自己想辦法解決，解決不了才找人」，這種思路放在日本職場容易被解讀為「不夠透明」「讓人不放心」——即使最終結果是好的，過程中缺少溝通本身就會被扣分。",
+        "另一個常見情況是，因為語言還不夠熟練，擔心匯報或提問會顯得自己能力不足，於是選擇盡量少說話、少麻煩別人。這種顧慮可以理解，但實際效果往往相反：主動、簡短、頻繁的溝通，比長期沉默更容易建立信任，哪怕日語表達還不完全流暢，態度上的主動本身就是加分項。"
+      ]
+    },
+    {
+      "heading": "第一週具體可以怎麼做",
+      "body": [
+        "每天工作結束前，用幾句話向直屬主管簡單匯報當天做了什麼、明天打算做什麼，不需要長篇大論，簡潔清楚即可。",
+        "遇到任務要求不清楚的地方，第一時間提出確認，而不是自己猜測著做，等做完了才發現方向錯了——這種情況在語言和文化都還在適應期的新人身上尤其容易發生，越早問清楚，返工成本越低。",
+        "如果預感某個任務可能會延遲或者遇到困難，提前告知，而不是等到最後期限才說——哪怕只是「目前進度可能會比預期慢一點，正在想辦法」這樣一句簡單的提前預警，也比事後突然交不出來要好得多。",
+        "可以準備一個簡單的固定句式，比如「〜についてご報告いたします」（關於〜向您匯報）、「〜について確認させてください」（關於〜想跟您確認一下），提前熟悉這類表達，能降低語言上的心理負擔，讓自己更容易開口。"
+      ]
+    }
+  ],
+  "takeaways_zh-TW": [
+    "報連相 = 主動匯報、主動聯絡、主動商量，核心是不讓別人靠猜來了解你的工作狀態",
+    "壞消息越早說越好，拖延只會讓問題變複雜、讓主管覺得你在隱瞞",
+    "語言不熟練不是少溝通的理由，主動溝通本身就是建立信任的方式",
+    "第一週養成每天簡短匯報、遇到不確定及時確認的習慣，比語言流利更重要"
+  ],
+  "title_en": "How to Get Ho-Ren-So Right in Your First Week",
+  "description_en": "The most basic — and most important — communication habit in a Japanese workplace, and the one new hires most often lose points on.",
+  "intro_en": "\"Ho-Ren-So\" (報連相 — hōkoku/report, renraku/inform, sōdan/consult) is the single most foundational concept in Japanese workplace communication culture, and it shows up in almost every Japanese company's new-hire training manual. For a foreign employee who's just joined, this isn't just a slogan — it's the specific set of habits that directly shapes whether your manager and colleagues see you as someone reliable.",
+  "sections_en": [
+    {
+      "heading": "What each part of Ho-Ren-So means",
+      "body": [
+        "報告 (hōkoku, report): proactively telling your manager about progress, results, and problems you've run into — without waiting to be asked. \"Bad news\" especially — a problem, a delay, a mistake — is easier to handle the earlier you report it. Sitting on it until the last moment tends to make the problem worse, and makes your manager feel like you were hiding it.",
+        "連絡 (renraku, inform): pure information-sharing, like \"I'll be out this afternoon for an errand\" or \"I've already sent this document to the client.\" It doesn't require any instruction or feedback from the other person — it's purely about keeping relevant people in the loop, so mismatched information doesn't cause a collaboration failure.",
+        "相談 (sōdan, consult): proactively raising something for discussion when you're unsure, rather than quietly deciding on your own or getting stuck without moving forward. Japanese workplaces generally see \"asking when you don't know\" as far more commendable than \"guessing and getting it wrong on your own.\""
+      ]
+    },
+    {
+      "heading": "Why new hires so often lose points here",
+      "body": [
+        "Many people coming from a different work culture are used to \"only report once there's a result to show\" or \"try to solve a problem myself first, and only ask for help if I really can't.\" In a Japanese workplace, this approach tends to read as \"not transparent enough\" or \"hard to feel confident about\" — even if the eventual outcome is fine, the lack of communication along the way costs you points on its own.",
+        "Another common situation is worrying that reporting or asking questions in imperfect Japanese will make you look less capable, so you default to saying as little as possible and avoiding \"bothering\" people. That concern is understandable, but the actual effect tends to run the opposite way: proactive, brief, frequent communication builds trust far more effectively than prolonged silence. Even if your Japanese isn't fully fluent yet, the proactive attitude itself is a point in your favor."
+      ]
+    },
+    {
+      "heading": "What this looks like concretely in your first week",
+      "body": [
+        "Before wrapping up each day, give your direct manager a short, few-sentence update on what you did today and what you plan to do tomorrow. It doesn't need to be long — concise and clear is all that's needed.",
+        "When a task's requirements aren't clear, ask for clarification right away rather than guessing your way through it and finding out only after finishing that you went in the wrong direction. This is especially likely to happen while you're still adjusting to both the language and the culture — the sooner you ask, the less rework it costs you.",
+        "If you sense a task might slip or run into trouble, flag it early rather than waiting until the deadline. Even something as simple as \"progress might be a bit slower than expected — I'm working on it\" said in advance is far better than suddenly failing to deliver at the last minute.",
+        "It can help to prepare a few fixed phrases in advance, like 「〜についてご報告いたします」(\"I'd like to report on...\") or 「〜について確認させてください」(\"I'd like to confirm something about...\"). Getting comfortable with these ahead of time lowers the language-related psychological barrier and makes it easier to actually speak up."
+      ]
+    }
+  ],
+  "takeaways_en": [
+    "Ho-Ren-So = proactive reporting, informing, and consulting — the core idea is never leaving people to guess at your work status",
+    "The earlier you report bad news, the better — delaying only makes the problem bigger and makes your manager feel you were hiding it",
+    "Imperfect Japanese isn't a reason to communicate less — proactive communication is itself how trust gets built",
+    "Building the habit of a short daily update and asking early when unsure matters more in week one than fluent Japanese does"
+  ],
+  "title_vi": "Làm sao để thực hiện tốt Houren-sou trong tuần đầu tiên đi làm",
+  "description_vi": "Thói quen giao tiếp cơ bản nhất và cũng quan trọng nhất trong công sở Nhật, là điều nhân viên mới dễ mất điểm nhất.",
+  "intro_vi": "\"Houren-sou\" (報連相 — báo cáo・liên lạc・bàn bạc) là khái niệm cơ bản nhất trong văn hóa giao tiếp công sở Nhật, hầu như cuốn sổ tay đào tạo nhân viên mới nào của doanh nghiệp Nhật cũng nhắc đến. Đối với nhân viên nước ngoài mới vào làm, đây không chỉ là một khẩu hiệu, mà là thói quen hành vi cụ thể ảnh hưởng trực tiếp đến ấn tượng đầu tiên của sếp và đồng nghiệp về việc bạn có \"đáng tin cậy\" hay không.",
+  "sections_vi": [
+    {
+      "heading": "Houren-sou lần lượt là những gì",
+      "body": [
+        "報告 (Houkoku - báo cáo): chủ động báo cáo với sếp về tiến độ công việc, kết quả, vấn đề gặp phải, không cần đợi được hỏi mới nói. Đặc biệt là \"tin xấu\" — xuất hiện vấn đề, tiến độ chậm trễ, mắc lỗi — báo cáo càng sớm càng dễ xử lý, để đến phút cuối mới nói thường khiến vấn đề trở nên phức tạp hơn, cũng khiến sếp cảm thấy bạn đang giấu giếm.",
+        "連絡 (Renraku - liên lạc): chia sẻ thông tin đơn thuần, ví dụ \"chiều nay tôi sẽ ra ngoài giải quyết việc\", \"tài liệu này đã gửi cho khách hàng rồi\", không cần đối phương đưa ra chỉ thị hay phản hồi, đơn thuần là để những người liên quan nắm được thông tin, tránh việc thông tin không đồng bộ gây ra sai sót trong phối hợp.",
+        "相談 (Soudan - bàn bạc): chủ động đưa ra thảo luận khi bản thân chưa chắc chắn, cần ý kiến người khác, thay vì tự mình âm thầm quyết định hoặc bị kẹt lại không tiến triển được. Công sở Nhật nhìn chung cho rằng \"không hiểu thì hỏi\" đáng được đánh giá cao hơn nhiều so với \"tự đoán mò rồi làm sai\"."
+      ]
+    },
+    {
+      "heading": "Vì sao nhân viên mới đặc biệt dễ mất điểm ở đây",
+      "body": [
+        "Nhiều người vừa chuyển từ môi trường làm việc khác sang thường quen với việc \"chỉ báo cáo khi có kết quả\" hoặc \"gặp vấn đề thì tự tìm cách giải quyết trước, không giải quyết được mới tìm người hỗ trợ\". Cách suy nghĩ này đặt trong công sở Nhật dễ bị hiểu là \"thiếu minh bạch\", \"khiến người khác không yên tâm\" — dù kết quả cuối cùng có tốt đi nữa, việc thiếu giao tiếp trong quá trình vẫn tự nó bị trừ điểm.",
+        "Một tình huống thường gặp khác là do tiếng Nhật chưa đủ thành thạo, lo lắng việc báo cáo hay đặt câu hỏi sẽ khiến bản thân trông thiếu năng lực, nên chọn cách nói càng ít càng tốt, ít làm phiền người khác. Sự lo lắng này có thể hiểu được, nhưng hiệu quả thực tế thường ngược lại: giao tiếp chủ động, ngắn gọn, thường xuyên dễ xây dựng lòng tin hơn nhiều so với im lặng kéo dài, dù tiếng Nhật chưa hoàn toàn trôi chảy, thái độ chủ động bản thân nó đã là điểm cộng."
+      ]
+    },
+    {
+      "heading": "Tuần đầu tiên cụ thể có thể làm gì",
+      "body": [
+        "Mỗi ngày trước khi kết thúc công việc, dùng vài câu ngắn gọn báo cáo với sếp trực tiếp về việc hôm nay đã làm gì, ngày mai định làm gì, không cần dài dòng, chỉ cần ngắn gọn rõ ràng.",
+        "Khi gặp yêu cầu công việc không rõ ràng, hãy hỏi xác nhận ngay lập tức, thay vì tự đoán rồi làm, đến khi làm xong mới phát hiện đi sai hướng — tình huống này đặc biệt dễ xảy ra với nhân viên mới còn đang trong giai đoạn thích nghi cả về ngôn ngữ lẫn văn hóa, hỏi càng sớm thì chi phí làm lại càng thấp.",
+        "Nếu cảm thấy một công việc nào đó có thể bị chậm trễ hoặc gặp khó khăn, hãy báo trước, thay vì đợi đến hạn chót mới nói — dù chỉ là một câu cảnh báo đơn giản như \"tiến độ hiện tại có thể chậm hơn dự kiến một chút, tôi đang tìm cách xử lý\" cũng tốt hơn nhiều so với việc đột nhiên không hoàn thành được vào phút cuối.",
+        "Có thể chuẩn bị sẵn vài mẫu câu cố định đơn giản, ví dụ 「〜についてご報告いたします」(xin báo cáo về việc...), 「〜について確認させてください」(cho tôi xác nhận về việc...), làm quen trước với những cách nói này có thể giảm bớt áp lực tâm lý về ngôn ngữ, giúp bản thân dễ mở lời hơn."
+      ]
+    }
+  ],
+  "takeaways_vi": [
+    "Houren-sou = chủ động báo cáo, chủ động liên lạc, chủ động bàn bạc, cốt lõi là không để người khác phải đoán mới hiểu được tình trạng công việc của bạn",
+    "Tin xấu nói càng sớm càng tốt, trì hoãn chỉ khiến vấn đề phức tạp hơn và khiến sếp cảm thấy bạn đang che giấu",
+    "Tiếng Nhật chưa thành thạo không phải lý do để giao tiếp ít đi, chủ động giao tiếp chính là cách xây dựng lòng tin",
+    "Tuần đầu tiên rèn thói quen báo cáo ngắn gọn mỗi ngày, gặp điều chưa chắc chắn thì xác nhận kịp thời — quan trọng hơn cả việc nói tiếng Nhật trôi chảy"
+  ],
+  "title_ko": "입사 첫 주, 호렌소를 잘하는 법",
+  "description_ko": "일본 직장에서 가장 기본적이면서도 가장 중요한 소통 습관. 신입이 가장 감점당하기 쉬운 부분입니다.",
+  "intro_ko": "'호렌소'(報連相 — 호코쿠/보고, 렌라쿠/연락, 소단/상담)는 일본 직장 소통 문화에서 가장 기본이 되는 개념으로, 일본 기업의 신입사원 교육 매뉴얼이라면 거의 예외 없이 언급됩니다. 갓 입사한 외국인 직원에게 이는 단순한 구호가 아니라, 상사와 동료가 당신을 '믿을 만한 사람'으로 볼지 말지를 직접적으로 좌우하는 구체적인 행동 습관입니다.",
+  "sections_ko": [
+    {
+      "heading": "호렌소는 각각 무엇을 의미하나",
+      "body": [
+        "報告(호코쿠, 보고): 업무 진행 상황, 결과, 발생한 문제를 상대가 물어볼 때까지 기다리지 않고 먼저 상사에게 설명하는 것입니다. 특히 '나쁜 소식' — 문제 발생, 일정 지연, 실수 — 은 빨리 보고할수록 처리하기 쉬워집니다. 마지막까지 미루면 문제가 더 복잡해지고, 상사는 당신이 숨기고 있다고 느끼기 쉽습니다.",
+        "連絡(렌라쿠, 연락): 순수한 정보 공유입니다. 예를 들어 '오늘 오후에 외근이 있습니다', '이 자료는 이미 고객에게 발송했습니다' 같은 것으로, 상대의 지시나 피드백이 필요한 게 아니라 관련된 사람들이 상황을 알도록 해, 정보 비대칭으로 인한 협업 실수를 막는 것이 목적입니다.",
+        "相談(소단, 상담): 스스로 확신이 없거나 다른 사람의 의견이 필요할 때 먼저 논의를 요청하는 것으로, 혼자 결정하거나 계속 막혀서 진행하지 못하는 것과는 다릅니다. 일본 직장에서는 대체로 '모르면 물어보는 것'이 '혼자 짐작해서 틀리는 것'보다 훨씬 긍정적으로 평가받습니다."
+      ]
+    },
+    {
+      "heading": "신입사원이 특히 여기서 감점당하기 쉬운 이유",
+      "body": [
+        "다른 직장 환경에서 막 옮겨온 사람들은 '성과가 나왔을 때만 보고한다' 혹은 '문제가 생기면 일단 혼자 해결해보고, 정말 안 되면 그때 도움을 청한다'는 방식에 익숙한 경우가 많습니다. 이런 사고방식은 일본 직장에서 '투명하지 않다', '불안하게 만든다'로 해석되기 쉽습니다 — 최종 결과가 좋더라도, 과정에서 소통이 부족했다는 것만으로도 감점 요인이 됩니다.",
+        "또 다른 흔한 경우는, 언어가 아직 능숙하지 않다 보니 보고나 질문을 하면 능력이 부족해 보일까 봐 걱정되어 최대한 말을 아끼고 남에게 폐를 덜 끼치려는 것입니다. 이런 걱정은 이해할 수 있지만, 실제 효과는 오히려 반대인 경우가 많습니다: 능동적이고 간결하며 빈번한 소통이 오랜 침묵보다 신뢰를 쌓기에 훨씬 효과적입니다. 일본어 표현이 아직 완전히 유창하지 않더라도, 적극적인 태도 자체가 가점 요소입니다."
+      ]
+    },
+    {
+      "heading": "첫 주에 구체적으로 할 수 있는 것들",
+      "body": [
+        "매일 업무를 마치기 전, 직속 상사에게 몇 마디로 오늘 무엇을 했고 내일 무엇을 할 계획인지 간단히 보고합니다. 길게 늘어놓을 필요 없이 간결하고 명확하면 됩니다.",
+        "업무 지시 중 불명확한 부분이 있으면, 혼자 추측해서 진행하다가 다 끝난 뒤에 방향이 틀렸다는 것을 깨닫기보다, 즉시 확인을 요청해야 합니다. 이런 상황은 언어와 문화 모두 적응 중인 신입사원에게 특히 자주 일어나므로, 빨리 물어볼수록 재작업 비용이 줄어듭니다.",
+        "어떤 업무가 지연되거나 어려움을 겪을 것 같은 예감이 들면, 마감 직전이 아니라 미리 알려주세요 — '현재 진행 상황이 예상보다 조금 늦어질 수 있어 방법을 찾고 있습니다'와 같은 간단한 사전 경고 한마디만으로도, 갑자기 마감을 못 지키는 것보다 훨씬 낫습니다.",
+        "「〜についてご報告いたします」(~에 대해 보고드립니다), 「〜について確認させてください」(~에 대해 확인하고 싶습니다)처럼 간단한 정형 문형을 미리 준비해두면, 언어적인 심리적 부담을 줄여 좀 더 쉽게 입을 뗄 수 있습니다."
+      ]
+    }
+  ],
+  "takeaways_ko": [
+    "호렌소 = 능동적인 보고, 연락, 상담. 핵심은 상대가 짐작하게 만들지 않고 당신의 업무 상태를 알게 하는 것",
+    "나쁜 소식일수록 빨리 말하는 것이 좋다. 미루면 문제가 커지고 상사는 당신이 숨기고 있다고 느끼게 된다",
+    "일본어가 서툰 것은 소통을 줄일 이유가 되지 않는다. 능동적인 소통 자체가 신뢰를 쌓는 방법이다",
+    "첫 주에 매일 짧게 보고하고, 불확실한 부분은 즉시 확인하는 습관을 들이는 것이 유창한 일본어보다 중요하다"
+  ],
+  "title_ja": "入社1週目に「報連相」をきちんとやるには",
+  "description_ja": "日本の職場で最も基本的で、最も重要なコミュニケーション習慣。新人が最も減点されやすいポイントです。",
+  "intro_ja": "「報連相」（報告・連絡・相談）は日本の職場コミュニケーション文化の中で最も基本的な概念であり、日本企業の新人研修マニュアルにはほぼ必ず登場します。入社したばかりの外国人社員にとって、これは単なるスローガンではなく、上司や同僚があなたを「頼れる人かどうか」判断する第一印象を直接左右する、具体的な行動習慣です。",
+  "sections_ja": [
+    {
+      "heading": "報連相はそれぞれ何を指すのか",
+      "body": [
+        "報告：仕事の進捗、結果、直面した問題を、聞かれる前に自分から上司に伝えることです。特に「悪い知らせ」——問題の発生、進捗の遅れ、ミス——は早く報告するほど対処が簡単になります。ぎりぎりまで黙っていると、問題が複雑になるだけでなく、上司に「隠していたのでは」と思わせてしまいます。",
+        "連絡：単純な情報共有です。「今日の午後は外出します」「この資料はもうお客様に送りました」など、相手からの指示やフィードバックを必要とせず、関係者に状況を知らせて、情報の食い違いによる連携ミスを防ぐことが目的です。",
+        "相談：自分に自信がなかったり他人の意見が必要なときに、自分から話し合いを持ちかけることです。一人で黙って決めてしまったり、行き詰まったまま進められずにいるのとは違います。日本の職場では一般的に、「わからないことは聞く」ほうが「自己流で判断して間違える」よりずっと評価されます。"
+      ]
+    },
+    {
+      "heading": "なぜ新人は特にここで減点されやすいのか",
+      "body": [
+        "他の職場環境から移ってきたばかりの人は、「成果が出てから報告する」「問題が起きたらまず自分で解決しようとし、どうしても無理なときだけ人に頼る」というやり方に慣れていることが多いです。こうした考え方は日本の職場では「透明性に欠ける」「安心できない」と受け取られがちです——最終的な結果が良くても、プロセスの中でコミュニケーションが不足していること自体が減点対象になります。",
+        "もう一つよくあるのは、まだ言葉に自信がないため、報告や質問をすると能力が低く見られるのではと心配し、できるだけ発言を控え、人に迷惑をかけないようにしてしまうことです。この不安は理解できますが、実際の効果はむしろ逆であることが多いです：能動的で簡潔、頻繁なコミュニケーションのほうが、長い沈黙よりずっと信頼を築きやすいのです。日本語の表現がまだ完全に流暢でなくても、積極的な姿勢そのものがプラスに評価されます。"
+      ]
+    },
+    {
+      "heading": "1週目に具体的にできること",
+      "body": [
+        "毎日仕事を終える前に、直属の上司に今日やったことと明日やる予定のことを短く報告しましょう。長々と話す必要はなく、簡潔でわかりやすければ十分です。",
+        "タスクの内容が不明確な部分があれば、自分で推測して進めて、終わってから方向性が違っていたと気づくのではなく、すぐに確認しましょう。これは言語と文化の両方にまだ慣れていない新人に特に起きやすいことで、早く確認するほどやり直しのコストは低くなります。",
+        "あるタスクが遅れそうだったり困難にぶつかりそうだと感じたら、締め切り直前ではなく早めに知らせましょう。「現在の進捗が予定より少し遅れそうで、対策を考えています」といった簡単な一言の事前警告だけでも、突然間に合わなくなるよりずっとましです。",
+        "「〜についてご報告いたします」「〜について確認させてください」のような簡単な定型フレーズをあらかじめ準備しておくと、言葉に対する心理的なハードルが下がり、自分から声をかけやすくなります。"
+      ]
+    }
+  ],
+  "takeaways_ja": [
+    "報連相＝能動的な報告・連絡・相談。核心は、相手に推測させずにあなたの仕事の状況を伝えること",
+    "悪い知らせほど早く伝えるべき。先延ばしにすると問題が大きくなり、上司に隠していたと思われる",
+    "日本語が未熟なことはコミュニケーションを減らす理由にはならない。能動的なコミュニケーションそのものが信頼構築の方法",
+    "1週目に毎日短く報告し、不確かなことはすぐ確認する習慣をつけることは、流暢な日本語よりも重要"
   ]
 }

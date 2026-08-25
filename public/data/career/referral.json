@@ -6,6 +6,41 @@
     "onboard":   { "text": "入职头一个月最容易踩坑？我们在整理新人生存指南", "cta": "抢先了解" },
     "default":   { "text": "简历投了没回音？日语面试总卡壳？我们在做更系统的求职指南", "cta": "抢先了解" }
   },
+  "banner_zh-TW": {
+    "prep":      { "text": "履歷總是已讀不回？我們正在整理一套改履歷的系統方法", "cta": "搶先了解" },
+    "interview": { "text": "日語面試總卡關？這幾個日企常問的問題，我們在做系統拆解", "cta": "搶先了解" },
+    "decide":    { "text": "Offer到手別急著簽，這幾項沒確認清楚可能吃大虧", "cta": "搶先了解" },
+    "onboard":   { "text": "到職頭一個月最容易踩雷？我們在整理新人生存指南", "cta": "搶先了解" },
+    "default":   { "text": "履歷投了沒回音？日語面試總卡關？我們在做更系統的求職指南", "cta": "搶先了解" }
+  },
+  "banner_en": {
+    "prep":      { "text": "Résumé going nowhere? We're putting together a systematic way to fix it.", "cta": "Get early access" },
+    "interview": { "text": "Blanking on Japanese interview questions? We're breaking down what Japanese companies actually ask.", "cta": "Get early access" },
+    "decide":    { "text": "Got an offer? Don't sign yet — a few unchecked details could cost you.", "cta": "Get early access" },
+    "onboard":   { "text": "First month on the job is the easiest to get wrong. We're putting together a survival guide.", "cta": "Get early access" },
+    "default":   { "text": "No replies to your applications? Stuck in interviews? We're building a more systematic career guide.", "cta": "Get early access" }
+  },
+  "banner_vi": {
+    "prep":      { "text": "Nộp hồ sơ mãi không thấy hồi âm? Chúng tôi đang xây dựng phương pháp chỉnh sửa hồ sơ bài bản.", "cta": "Tìm hiểu sớm" },
+    "interview": { "text": "Phỏng vấn tiếng Nhật hay bí? Chúng tôi đang phân tích những câu hỏi doanh nghiệp Nhật thường hỏi.", "cta": "Tìm hiểu sớm" },
+    "decide":    { "text": "Có Offer rồi đừng vội ký, vài mục chưa xác nhận kỹ có thể khiến bạn thiệt lớn.", "cta": "Tìm hiểu sớm" },
+    "onboard":   { "text": "Tháng đầu đi làm dễ vấp nhất? Chúng tôi đang tổng hợp cẩm nang sinh tồn cho nhân viên mới.", "cta": "Tìm hiểu sớm" },
+    "default":   { "text": "Nộp hồ sơ không thấy hồi âm? Phỏng vấn tiếng Nhật hay bí? Chúng tôi đang xây dựng hướng dẫn xin việc bài bản hơn.", "cta": "Tìm hiểu sớm" }
+  },
+  "banner_ko": {
+    "prep":      { "text": "이력서 넣어도 감감무소식? 체계적인 이력서 개선법을 준비 중입니다", "cta": "먼저 알아보기" },
+    "interview": { "text": "일본어 면접에서 자꾸 막히나요? 일본 기업이 자주 묻는 질문들을 체계적으로 정리 중입니다", "cta": "먼저 알아보기" },
+    "decide":    { "text": "오퍼 받았다고 바로 서명하지 마세요, 확인 안 하면 손해 볼 수 있는 항목들이 있습니다", "cta": "먼저 알아보기" },
+    "onboard":   { "text": "입사 첫 달이 가장 실수하기 쉽다? 신입 생존 가이드를 준비 중입니다", "cta": "먼저 알아보기" },
+    "default":   { "text": "이력서 넣어도 답이 없나요? 일본어 면접에서 자꾸 막히나요? 더 체계적인 구직 가이드를 준비 중입니다", "cta": "먼저 알아보기" }
+  },
+  "banner_ja": {
+    "prep":      { "text": "履歴書を送っても返事が来ない？体系的な改善方法をまとめています", "cta": "先行案内を受け取る" },
+    "interview": { "text": "日本語面接でいつも詰まってしまう？日本企業がよく聞く質問を体系的に整理しています", "cta": "先行案内を受け取る" },
+    "decide":    { "text": "内定が出てもすぐサインしないで。確認していないと損する項目があります", "cta": "先行案内を受け取る" },
+    "onboard":   { "text": "入社1ヶ月目が一番つまずきやすい？新人サバイバルガイドを準備中です", "cta": "先行案内を受け取る" },
+    "default":   { "text": "応募しても返事が来ない？日本語面接で詰まってしまう？より体系的な転職ガイドを準備中です", "cta": "先行案内を受け取る" }
+  },
   "articleCta": {
     "title": "这只是开始——更系统的付费指南即将上线",
     "sub": "简历修改、模拟面试、职位判断……告诉我们你最想先解决哪个问题，早期登记的用户我们会优先通知、优先联系"
@@ -27,5 +62,95 @@
     "errorBody": "提交时遇到问题，请稍后重试。",
     "notReadyBody": "表单服务暂未就绪，请稍后再试。",
     "backToHub": "返回就职・转职指南"
+  },
+  "contactPage_zh-TW": {
+    "title": "登記你的需求",
+    "subtitle": "我們正在把這些經驗整理成更系統的付費指南和服務（履歷修改、模擬面試、職位判斷PDF等）。告訴我們你最想優先解決的問題，早期登記的用戶，新內容上線時我們會第一時間通知、優先聯繫。",
+    "fieldContact": "聯絡方式（Email／微信／LINE）",
+    "fieldContactHint": "方便我們聯繫到你的任意一種方式即可",
+    "fieldTopic": "你希望優先看到的內容方向",
+    "fieldTopicHint": "例如：面試常見問題的日語表達／履歷修改服務／特定產業的轉職經驗……（選填）",
+    "requiredMark": "必填",
+    "fieldRequiredError": "請填寫這一項",
+    "privacyNote": "你填寫的資訊僅用於本次登記回覆，不會用於其他用途或分享給第三方。",
+    "submit": "提交",
+    "submitting": "提交中…",
+    "successTitle": "已收到你的登記",
+    "successBody": "謝謝你的反饋，這會直接幫助我們決定接下來優先做哪些內容。新內容上線時，如果你留了聯絡方式，我們會第一時間通知你。",
+    "errorBody": "提交時遇到問題，請稍後重試。",
+    "notReadyBody": "表單服務暫未就緒，請稍後再試。",
+    "backToHub": "返回就職・轉職指南"
+  },
+  "contactPage_en": {
+    "title": "Tell Us What You Need",
+    "subtitle": "We're turning this experience into more structured paid guides and services (résumé review, mock interviews, job-offer evaluation PDFs, and more). Let us know which problem you'd most like us to solve first — if you register early, we'll notify and reach out to you first when new content launches.",
+    "fieldContact": "Contact info (email / WeChat / LINE)",
+    "fieldContactHint": "Any way for us to reach you works",
+    "fieldTopic": "What content would you like to see first?",
+    "fieldTopicHint": "E.g. common interview phrases in Japanese / résumé review service / transfer experience in a specific industry... (optional)",
+    "requiredMark": "required",
+    "fieldRequiredError": "Please fill in this field",
+    "privacyNote": "The information you provide is used only to respond to this registration and won't be used for any other purpose or shared with third parties.",
+    "submit": "Submit",
+    "submitting": "Submitting…",
+    "successTitle": "We've received your registration",
+    "successBody": "Thanks for your input — it directly helps us decide what to prioritize next. If you left your contact info, we'll notify you first when new content launches.",
+    "errorBody": "Something went wrong while submitting. Please try again shortly.",
+    "notReadyBody": "The form service isn't ready yet. Please try again shortly.",
+    "backToHub": "Back to the Career Guide"
+  },
+  "contactPage_vi": {
+    "title": "Đăng ký nhu cầu của bạn",
+    "subtitle": "Chúng tôi đang chuyển hóa những kinh nghiệm này thành các hướng dẫn và dịch vụ trả phí bài bản hơn (chỉnh sửa hồ sơ, phỏng vấn thử, đánh giá offer dưới dạng PDF...). Hãy cho chúng tôi biết vấn đề bạn muốn được giải quyết ưu tiên nhất. Nếu đăng ký sớm, khi có nội dung mới ra mắt, chúng tôi sẽ thông báo và liên hệ với bạn trước tiên.",
+    "fieldContact": "Thông tin liên hệ (email / WeChat / LINE)",
+    "fieldContactHint": "Bất kỳ cách nào giúp chúng tôi liên hệ được với bạn là được",
+    "fieldTopic": "Bạn muốn xem nội dung nào trước tiên",
+    "fieldTopicHint": "Ví dụ: cách diễn đạt tiếng Nhật thường dùng khi phỏng vấn / dịch vụ chỉnh sửa hồ sơ / kinh nghiệm chuyển việc trong ngành cụ thể... (không bắt buộc)",
+    "requiredMark": "bắt buộc",
+    "fieldRequiredError": "Vui lòng điền mục này",
+    "privacyNote": "Thông tin bạn cung cấp chỉ được dùng để phản hồi đăng ký lần này, không dùng cho mục đích khác hay chia sẻ cho bên thứ ba.",
+    "submit": "Gửi",
+    "submitting": "Đang gửi…",
+    "successTitle": "Đã nhận được đăng ký của bạn",
+    "successBody": "Cảm ơn phản hồi của bạn, điều này giúp chúng tôi quyết định nội dung nào cần ưu tiên tiếp theo. Khi có nội dung mới, nếu bạn để lại thông tin liên hệ, chúng tôi sẽ thông báo cho bạn đầu tiên.",
+    "errorBody": "Có sự cố khi gửi, vui lòng thử lại sau.",
+    "notReadyBody": "Dịch vụ biểu mẫu chưa sẵn sàng, vui lòng thử lại sau.",
+    "backToHub": "Quay lại Hướng dẫn xin việc・chuyển việc"
+  },
+  "contactPage_ko": {
+    "title": "필요한 내용을 알려주세요",
+    "subtitle": "저희는 이 경험을 더 체계적인 유료 가이드와 서비스(이력서 첨삭, 모의 면접, 오퍼 검토 PDF 등)로 만들고 있습니다. 가장 먼저 해결하고 싶은 문제가 무엇인지 알려주세요. 조기 등록하시면 새 콘텐츠 출시 시 가장 먼저 알려드리고 연락드립니다.",
+    "fieldContact": "연락처 (이메일 / 위챗 / LINE)",
+    "fieldContactHint": "저희가 연락드릴 수 있는 방법이면 무엇이든 괜찮습니다",
+    "fieldTopic": "가장 먼저 보고 싶은 콘텐츠 방향",
+    "fieldTopicHint": "예: 면접에서 자주 쓰는 일본어 표현 / 이력서 첨삭 서비스 / 특정 업계의 이직 경험... (선택 사항)",
+    "requiredMark": "필수",
+    "fieldRequiredError": "이 항목을 입력해 주세요",
+    "privacyNote": "입력하신 정보는 이번 등록 응답에만 사용되며, 다른 용도로 사용되거나 제3자에게 공유되지 않습니다.",
+    "submit": "제출",
+    "submitting": "제출 중…",
+    "successTitle": "등록이 접수되었습니다",
+    "successBody": "소중한 의견 감사합니다. 이는 앞으로 어떤 콘텐츠를 우선 제작할지 결정하는 데 직접적인 도움이 됩니다. 연락처를 남겨주셨다면 새 콘텐츠 출시 시 가장 먼저 알려드리겠습니다.",
+    "errorBody": "제출 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+    "notReadyBody": "양식 서비스가 아직 준비되지 않았습니다. 잠시 후 다시 시도해 주세요.",
+    "backToHub": "취업・이직 가이드로 돌아가기"
+  },
+  "contactPage_ja": {
+    "title": "ご要望を教えてください",
+    "subtitle": "私たちはこれまでの経験を、より体系的な有料ガイドやサービス（履歴書添削、模擬面接、オファー確認PDFなど）に整えているところです。最も優先して解決してほしい課題を教えてください。早めにご登録いただいた方には、新しいコンテンツが公開された際に真っ先にお知らせ・ご連絡いたします。",
+    "fieldContact": "連絡先（メール／WeChat／LINE）",
+    "fieldContactHint": "こちらからご連絡できる方法であれば何でも構いません",
+    "fieldTopic": "優先して見たい内容",
+    "fieldTopicHint": "例：面接でよく使う日本語表現／履歴書添削サービス／特定業界での転職経験など（任意）",
+    "requiredMark": "必須",
+    "fieldRequiredError": "この項目を入力してください",
+    "privacyNote": "ご入力いただいた情報は今回の登録への返信にのみ使用し、他の目的での利用や第三者への提供は行いません。",
+    "submit": "送信",
+    "submitting": "送信中…",
+    "successTitle": "登録を受け付けました",
+    "successBody": "ご回答ありがとうございます。今後どの内容を優先的に制作するかを決める上で、直接的な助けになります。連絡先をご記入いただいた方には、新しいコンテンツが公開され次第、真っ先にお知らせします。",
+    "errorBody": "送信中に問題が発生しました。しばらくしてからもう一度お試しください。",
+    "notReadyBody": "フォームサービスがまだ準備できていません。しばらくしてからもう一度お試しください。",
+    "backToHub": "就職・転職ガイドに戻る"
   }
 }

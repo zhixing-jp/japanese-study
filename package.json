@@ -9,13 +9,11 @@
     "dev": "astro dev",
     "build": "astro build && npx pagefind --site dist",
     "preview": "astro preview",
-    "astro": "astro",
-    "furigana": "node scripts/add-furigana.cjs"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.1.6",
-    "mecab-async": "^0.1.2",
     "pagefind": "^1.5.2"
   },
   "devDependencies": {

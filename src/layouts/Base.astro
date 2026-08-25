@@ -13,6 +13,8 @@ interface Props {
   medicalCss?: boolean;
   careerCss?: boolean;
   careerGroup?: string;
+  guidesCss?: boolean;
+  noindex?: boolean;
 }
 
 const {
@@ -22,7 +24,9 @@ const {
   rescueCss = false,
   medicalCss = false,
   careerCss = false,
-  careerGroup
+  careerGroup,
+  guidesCss = false,
+  noindex = false
 } = Astro.props;
 
 const siteUrl = 'https://livingjapanese.app';
@@ -49,10 +53,15 @@ const referralBannerCta: Record<string, string> = {
 // Phase 1仅简体中文，落地页/登记页自身不显示。
 const isCareerReferralOwnPage = Astro.url.pathname.includes('/career/interest/');
 const showCareerReferralBanner = careerCss && !isCareerReferralOwnPage;
-// banner文案按文章所属阶段分组（prep/interview/decide/onboard），未传group（如hub页）时用default兜底
-const careerBannerMap: Record<string, { text: string; cta: string }> = careerReferral.banner;
+// banner文案按文章所属阶段分组（prep/interview/decide/onboard），未传group（如hub页）时用default兜底。
+// referral.json里banner是中文版，其它语言存在banner_{lang}键（banner_en/banner_ja等），
+// 用当前lang动态取值时需要先转成Record<string, unknown>宽类型，避免精确字面量类型报ts(7053)。
+const careerReferralUntyped = careerReferral as unknown as Record<string, unknown>;
+const careerBannerMap: Record<string, { text: string; cta: string }> =
+  (careerReferralUntyped[`banner_${lang}`] as Record<string, { text: string; cta: string }>) || careerReferral.banner;
 const careerBannerData = (careerGroup && careerBannerMap[careerGroup]) || careerBannerMap.default;
-const careerInterestUrl = careerGroup ? `/career/interest/?from=${careerGroup}` : '/career/interest/';
+const careerInterestBasePath = lang === 'zh' ? '/career/interest/' : `/${lang}/career/interest/`;
+const careerInterestUrl = careerGroup ? `${careerInterestBasePath}?from=${careerGroup}` : careerInterestBasePath;
 const careerReferralBannerText = careerBannerData.text;
 const careerReferralBannerCta = careerBannerData.cta;
 
@@ -72,16 +81,20 @@ const langPaths: Record<string, string> = {
 const navLabels: Record<string, Record<string, string>> = {
   rescue:  { zh: SECTIONS.rescue.label, en: 'Phrase Rescue',  'zh-TW': '急救語句', vi: 'Câu Cứu Cấp',  ko: '긴급 표현', ja: '緊急フレーズ' },
   medical: { zh: SECTIONS.medical.label, en: 'Medical Guide', 'zh-TW': '就醫指南', vi: 'Hướng Dẫn Y Tế', ko: '진료 안내', ja: '受診ガイド' },
-  // career版块Phase 1仅简体中文，其它语言暂时也显示中文标签（尚未有对应语言内容可跳转）
-  career:  { zh: SECTIONS.career.label }
+  // career版块已完成多语言（zh-TW/en/vi/ko/ja），标签按语言显示
+  career:  { zh: SECTIONS.career.label, 'zh-TW': '日本就職轉職指南', en: 'Career Guide', vi: 'Hướng dẫn việc làm', ko: '취업・이직 가이드', ja: '就職・転職ガイド' },
+  // guides（专业指南）目前仅简体中文，暂无多语言版本
+  guides:  { zh: SECTIONS.guides.label }
 };
 
 const rescueUrl  = lang === 'zh' ? '/' : `/${lang}/`;
-// medical是占位页，暂时只有单一路径（无语言子目录），页面内部按当前语言显示对应文案。
-// 等就医版块正式做多语言目录时，这里要改回 lang === 'zh' ? '/medical/' : `/${lang}/medical/` 的形式
-const medicalUrl = SECTIONS.medical.url;
-// career同medical，Phase 1单一路径（仅简体中文），内部按当前语言显示对应文案
-const careerUrl = SECTIONS.career.url;
+// medical已有 [lang]/medical/* 多语言目录，此前一直误留着旧的单一路径写法
+// （占位页时代遗留），实际已可以按语言跳转，这里一并修正
+const medicalUrl = lang === 'zh' ? '/medical/' : `/${lang}/medical/`;
+// career已完成 [lang]/career/* 多语言目录，按语言跳转
+const careerUrl = lang === 'zh' ? '/career/' : `/${lang}/career/`;
+// guides暂无多语言版本，Phase 1单一路径（仅简体中文）
+const guidesUrl = SECTIONS.guides.url;
 // about同medical，单一路径，内部按当前语言显示对应文案
 const aboutUrl = '/about/';
 
@@ -101,6 +114,7 @@ const footerCopyright: Record<string, string> = {
 const currentPath = Astro.url.pathname;
 const isMedical = currentPath.includes('/medical');
 const isCareer = currentPath.includes('/career');
+const isGuides = currentPath.includes('/guides') || currentPath.includes('/download');
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -121,7 +135,7 @@ const jsonLd = {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FF3B30">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'}>
   <meta name="author" content="日活 Living Japanese">
 
   <title>{title}</title>
@@ -169,6 +183,7 @@ const jsonLd = {
   { rescueCss && <link rel="stylesheet" href="/css/rescue.css" /> }
   { medicalCss && <link rel="stylesheet" href="/css/medical.css" /> }
   { careerCss && <link rel="stylesheet" href="/css/career.css" /> }
+  { guidesCss && <link rel="stylesheet" href="/css/guides.css" /> }
 
   <!-- JSON-LD -->
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -395,7 +410,7 @@ const jsonLd = {
 
   <!-- Bottom Navigation -->
   <nav id="tabBar">
-    <a href={rescueUrl} class={`tab${(!isMedical && !isCareer) ? ' on' : ''}`}>
+    <a href={rescueUrl} class={`tab${(!isMedical && !isCareer && !isGuides) ? ' on' : ''}`}>
       <div class="tab-icon">🛡️</div>
       {navLabels.rescue[lang] || navLabels.rescue.zh}
     </a>
@@ -406,6 +421,10 @@ const jsonLd = {
     <a href={careerUrl} class={`tab${isCareer ? ' on' : ''}`}>
       <div class="tab-icon">💼</div>
       {navLabels.career[lang] || navLabels.career.zh}
+    </a>
+    <a href={guidesUrl} class={`tab${isGuides ? ' on' : ''}`}>
+      <div class="tab-icon">📘</div>
+      {navLabels.guides[lang] || navLabels.guides.zh}
     </a>
   </nav>
 

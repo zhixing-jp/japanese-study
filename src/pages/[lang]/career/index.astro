@@ -1,0 +1,88 @@
+---
+import Base from '../../../layouts/Base.astro';
+import careerIndex from '../../../../public/data/career/index.json';
+import disclaimer from '../../../../public/data/career/disclaimer.json';
+
+export async function getStaticPaths() {
+  const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  return SUPPORTED_LANGS.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+const titles: Record<string, Record<string, string>> = {
+  prep:      { 'zh-TW': '履歷準備', en: 'Resume Prep', vi: 'Chuẩn bị hồ sơ', ko: '이력서 준비', ja: '履歴書準備' },
+  interview: { 'zh-TW': '面試應對', en: 'Interviews', vi: 'Phỏng vấn', ko: '면접 대응', ja: '面接対応' },
+  decide:    { 'zh-TW': '職位判斷', en: 'Evaluating Offers', vi: 'Đánh giá công việc', ko: '직무 판단', ja: '職務判断' },
+  onboard:   { 'zh-TW': '到職適應', en: 'Onboarding', vi: 'Hòa nhập công việc', ko: '입사 적응', ja: '入社適応' }
+};
+const groupOrder = ['prep', 'interview', 'decide', 'onboard'];
+
+const pageTitles: Record<string, string> = {
+  'zh-TW': '日本就職轉職指南 | Living Japanese',
+  en: 'Japan Job & Career Guide | Living Japanese',
+  vi: 'Hướng dẫn xin việc & chuyển việc tại Nhật | Living Japanese',
+  ko: '일본 취업・이직 가이드 | Living Japanese',
+  ja: '日本での就職・転職ガイド | Living Japanese'
+};
+const pageDescs: Record<string, string> = {
+  'zh-TW': '在日本求職、轉職，從履歷到面試到到職適應，真實經驗一站式指南。',
+  en: 'Job hunting and career transfers in Japan — from résumés to interviews to onboarding, a practical guide built on real experience.',
+  vi: 'Xin việc, chuyển việc tại Nhật — từ hồ sơ đến phỏng vấn đến hòa nhập công việc, hướng dẫn thực tế dựa trên kinh nghiệm thật.',
+  ko: '일본에서의 구직과 이직 — 이력서부터 면접, 입사 적응까지, 실제 경험을 바탕으로 한 실전 가이드.',
+  ja: '日本での転職・就職活動——履歴書から面接、入社後の適応まで、実体験に基づく実践ガイド。'
+};
+const pageIntros: Record<string, string> = {
+  'zh-TW': '幫助在日外國人建立穩定的職業生活，不是教你「快速拿到offer的面試技巧」，而是從履歷、面試到到職後的適應，講清楚日本職場真正的做事邏輯。',
+  en: 'This guide is here to help foreign residents build a stable career in Japan — not a list of \"tricks to land an offer fast,\" but a clear explanation of how the Japanese workplace actually works, from résumés and interviews through your first months on the job.',
+  vi: 'Giúp người nước ngoài tại Nhật xây dựng sự nghiệp ổn định — không phải là dạy bạn \"mẹo phỏng vấn để nhanh có offer\", mà giải thích rõ logic vận hành thực sự của công sở Nhật, từ hồ sơ, phỏng vấn cho đến quá trình thích nghi sau khi vào làm.',
+  ko: '일본에 거주하는 외국인이 안정적인 커리어를 쌓을 수 있도록 돕습니다. \"빠르게 오퍼를 받는 면접 기술\"이 아니라, 이력서·면접부터 입사 후 적응까지 일본 직장이 실제로 돌아가는 방식을 명확히 설명합니다.',
+  ja: '日本で暮らす外国人が安定したキャリアを築くための手助けをします。「すぐに内定をもらうための面接テクニック」ではなく、履歴書・面接から入社後の適応まで、日本の職場が実際にどう回っているのかを明確に説明します。'
+};
+
+function tf(p: any, field: string, lang: string): string {
+  return p[`${field}_${lang}`] || p[field] || p[`${field}_zh`] || '';
+}
+
+const groups: Record<string, any[]> = { prep: [], interview: [], decide: [], onboard: [] };
+for (const p of careerIndex.pages) {
+  (groups[p.group] || (groups[p.group] = [])).push(p);
+}
+
+const langPathPrefix = `/${lang}`;
+
+// disclaimer.json 是直接 import 的 JSON 模块，TS 会按字面量内容推断出精确类型，
+// 导致用运行时变量 lang 去做动态取值时报类型错误。按协作铁律第6条，
+// 这种运行时变量拼接/索引访问，要在 frontmatter 里用 Record<string, string> 断言处理好，
+// 不要把 as 类型断言直接写在模板表达式区域（模板区域解析泛型语法的行为和 frontmatter 不一致）。
+const disclaimerHubShort = disclaimer.hub_short as Record<string, string>;
+const hubShortText = disclaimerHubShort[lang] || disclaimerHubShort.zh;
+---
+
+<Base title={pageTitles[lang] || pageTitles.en} description={pageDescs[lang] || pageDescs.en} careerCss={true}>
+
+  <div class="career-hub-page" id="careerHubPage">
+    <h1>{(pageTitles[lang] || pageTitles.en).split(' | ')[0]}</h1>
+    <p class="career-hub-intro">{pageIntros[lang] || pageIntros.en}</p>
+    <p class="career-disclaimer">{hubShortText}</p>
+
+    {groupOrder.map((groupKey) => (
+      groups[groupKey] && groups[groupKey].length > 0 && (
+        <section class="career-hub-group">
+          <h2>{titles[groupKey]?.[lang] || titles[groupKey]?.en || groupKey}</h2>
+          <div class="career-hub-nav-grid">
+            {groups[groupKey].map((p: any) => (
+              <a href={`${langPathPrefix}${p.url}`} class={`career-hub-nav-card career-hub-nav-card--${groupKey}`}>
+                <div class="career-hub-nav-card-title">{tf(p, 'title', lang)}</div>
+                <div class="career-hub-nav-card-desc">{tf(p, 'description', lang)}</div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    ))}
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageTitles[lang]} {pageDescs[lang]}</div>
+
+</Base>

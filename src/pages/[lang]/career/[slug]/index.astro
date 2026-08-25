@@ -1,0 +1,149 @@
+---
+// 就职版块文章多语言版模板。与中文版 src/pages/career/[slug]/index.astro
+// 是同一套数据源（public/data/career/{slug}.json），差别在于：
+// 1) 多了一层lang循环（每篇文章要为5种语言各生成一个静态页面）
+// 2) 取字段时用 tf() 按 `${field}_${lang}` 取值，取不到则退回中文
+// 3) sections/takeaways 是整段数组按语言复制（sections_en整个数组），不是逐字段翻译
+import Base from '../../../../layouts/Base.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import { SECTIONS } from '../../../../data/sections';
+import { readFile } from 'node:fs/promises';
+
+const SUPPORTED_LANGS = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+
+// 注意：Astro 的 getStaticPaths() 在独立的隔离作用域中执行，无法引用
+// 该函数外部定义的其他函数/变量，所以数据读取逻辑必须写在函数内部。
+export async function getStaticPaths() {
+  const raw = await readFile('public/data/career/index.json', 'utf-8');
+  const careerIndex = JSON.parse(raw);
+  const pages = careerIndex.pages || [];
+  const langs = ['zh-TW', 'en', 'vi', 'ko', 'ja'];
+  const results = [];
+  for (const lang of langs) {
+    for (const p of pages) {
+      let pageData: any = {};
+      try {
+        const articleRaw = await readFile(`public/data/career/${p.id}.json`, 'utf-8');
+        pageData = JSON.parse(articleRaw);
+      } catch (e) {
+        pageData = {};
+      }
+      // group字段只存在于index.json（文章列表），不在每篇文章各自的内容json里，
+      // 需要在这里合并进pageData，模板才能读到pageData.group传给悬浮banner分组
+      pageData.group = p.group;
+      results.push({
+        params: { lang, slug: p.id },
+        props: { lang, slug: p.id, pageData }
+      });
+    }
+  }
+  return results;
+}
+
+interface Props {
+  lang: string;
+  slug: string;
+  pageData: any;
+}
+
+const { lang, slug, pageData } = Astro.props as Props;
+
+// 统一的动态字段取值：优先取当前语言版本（title_en等），取不到退回中文原文（title/title_zh）。
+// 参数类型用unknown而不是Record<string, unknown>，避免在.astro模板区域内联尖括号泛型断言
+// 触发Astro/TS解析器把尖括号误判成JSX标签定界符的已知缺陷（详见协作铁律第6条）。
+function tf(obj: unknown, field: string, lang: string): string {
+  const map = obj as Record<string, string | undefined>;
+  return map[`${field}_${lang}`] || map[field] || map[`${field}_zh`] || '';
+}
+function tfArray(obj: unknown, field: string, lang: string): any[] {
+  const map = obj as Record<string, any[] | undefined>;
+  return map[`${field}_${lang}`] || map[field] || map[`${field}_zh`] || [];
+}
+
+const pageTitle = tf(pageData, 'title', lang);
+const pageDesc = tf(pageData, 'description', lang);
+const pageIntro = tf(pageData, 'intro', lang);
+const sections = tfArray(pageData, 'sections', lang);
+const takeaways = tfArray(pageData, 'takeaways', lang);
+
+const hubLabels: Record<string, string> = {
+  'zh-TW': '日本就職轉職指南', en: 'Japan Job & Career Guide', vi: 'Hướng dẫn xin việc & chuyển việc tại Nhật',
+  ko: '일본 취업・이직 가이드', ja: '日本での就職・転職ガイド'
+};
+const takeawaysLabels: Record<string, string> = {
+  'zh-TW': '要點小結', en: 'Key Takeaways', vi: 'Tóm tắt ý chính', ko: '핵심 요약', ja: 'ポイントまとめ'
+};
+
+const langPathPrefix = `/${lang}`;
+const hubUrl = `${langPathPrefix}${SECTIONS.career.url}`;
+
+import disclaimer from '../../../../../public/data/career/disclaimer.json';
+const disclaimerPageFull = disclaimer.page_full as Record<string, string>;
+const disclaimerText = disclaimerPageFull[lang] || disclaimerPageFull.zh;
+
+// 分享按钮：文案模板+按钮标签按语言准备，运行时拼上当前文章标题传给share-buttons.js
+const shareTextTemplates: Record<string, string> = {
+  'zh-TW': '這篇講得挺實在：{title}',
+  en: 'This one’s worth a read: {title}',
+  vi: 'Bài này khá thực tế: {title}',
+  ko: '이 글 꽤 유익해요: {title}',
+  ja: 'この記事、実際役に立ちます：{title}'
+};
+const shareText = (shareTextTemplates[lang] || shareTextTemplates.en).replace('{title}', pageTitle);
+const shareLabels: Record<string, Record<string, string>> = {
+  'zh-TW': { line: 'LINE分享', whatsapp: 'WhatsApp分享', wechat: '微信分享（複製連結）', wechatCopied: '連結已複製，去微信裡貼上發送吧' },
+  en: { line: 'Share on LINE', whatsapp: 'Share on WhatsApp', wechat: 'Share on WeChat (copy link)', wechatCopied: 'Link copied — paste it in WeChat' },
+  vi: { line: 'Chia sẻ qua LINE', whatsapp: 'Chia sẻ qua WhatsApp', wechat: 'Chia sẻ qua WeChat (sao chép link)', wechatCopied: 'Đã sao chép link, dán vào WeChat để gửi nhé' },
+  ko: { line: 'LINE로 공유', whatsapp: 'WhatsApp로 공유', wechat: 'WeChat로 공유(링크 복사)', wechatCopied: '링크가 복사되었어요, WeChat에 붙여넣으세요' },
+  ja: { line: 'LINEで共有', whatsapp: 'WhatsAppで共有', wechat: 'WeChatで共有（リンクをコピー）', wechatCopied: 'リンクをコピーしました。WeChatで貼り付けて送信してください' }
+};
+const currentShareLabels = shareLabels[lang] || shareLabels.en;
+---
+
+<Base title={`${pageTitle} | Living Japanese · 日活`} description={pageDesc} careerCss={true} careerGroup={pageData.group}>
+
+  <Breadcrumb crumbs={[{ label: hubLabels[lang] || hubLabels.en, url: hubUrl }, { label: pageTitle }]} cssClass="career-breadcrumb" />
+
+  <p class="career-disclaimer">{disclaimerText}</p>
+
+  <div class="career-article-page" id="careerArticlePage">
+    <h1 class="career-article-title">{pageTitle}</h1>
+
+    {pageIntro && <p class="career-article-intro">{pageIntro}</p>}
+
+    {sections.map((section: any) => (
+      <section class="career-article-section">
+        <h2 class="career-article-section-title">{section.heading}</h2>
+        {(section.body || []).map((para: string) => (
+          <p>{para}</p>
+        ))}
+      </section>
+    ))}
+
+    {takeaways && takeaways.length > 0 && (
+      <div class="career-article-takeaways">
+        <p class="career-article-takeaways-title">{takeawaysLabels[lang] || takeawaysLabels.en}</p>
+        <ul>
+          {takeaways.map((t: string) => (<li>{t}</li>))}
+        </ul>
+      </div>
+    )}
+
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="share"></div>
+  </div>
+
+  <div data-pagefind-body style="display:none">{pageTitle} {pageDesc}</div>
+
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: shareText,
+      labels: currentShareLabels,
+      gaEvent: 'career_article_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
+
+</Base>

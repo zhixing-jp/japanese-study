@@ -1158,3 +1158,30 @@
   color: var(--t1);
   text-decoration: none;
 }
+
+/* ────────────────────────────────
+   分享按钮（就医指南内容分类页/症状词库工具页末尾）
+   与guides.css/career.css里的.guides-share-*同名同款式，
+   各CSS文件独立引入互不依赖，这里单独复制一份定义
+──────────────────────────────── */
+.guides-share-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.guides-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--t1);
+  background: rgba(0,0,0,.05);
+  border-radius: 999px;
+  padding: 8px 14px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.guides-share-btn:active { opacity: .7; }

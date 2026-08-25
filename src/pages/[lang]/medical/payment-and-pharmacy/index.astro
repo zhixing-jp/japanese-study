@@ -9,10 +9,6 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.props;
-const disclaimerPageFull: Record<string, string> =
-  disclaimer.page_full && typeof disclaimer.page_full === 'object'
-    ? (disclaimer.page_full as Record<string, string>)
-    : {};
 
 let pageData: any = { sections: [] };
 try {
@@ -35,6 +31,31 @@ const breadcrumbLabels: Record<string, string> = {
   'zh-TW': '就醫指南', en: 'Medical Guide', vi: 'Hướng dẫn y tế', ko: '의료 가이드', ja: '医療ガイド'
 };
 const titleField = `title_${lang}`;
+
+// disclaimer.json 是直接 import 的 JSON 模块，TS 会按字面量内容推断出精确类型，
+// 导致用运行时变量 lang 去做动态取值时报类型错误。按协作铁律第6条，
+// 这种运行时变量拼接/索引访问，要在 frontmatter 里用 Record<string, string> 断言处理好，
+// 不要把 as 类型断言直接写在模板表达式区域（模板区域解析泛型语法的行为和 frontmatter 不一致）。
+const disclaimerPageFull = disclaimer.page_full as Record<string, string>;
+const pageFullText = disclaimerPageFull[lang] || disclaimerPageFull.zh;
+
+// 分享按钮：文案模板+按钮标签按语言准备，与career多语言文章页使用同一套翻译内容
+const shareTextTemplates: Record<string, string> = {
+  'zh-TW': '這篇講得挺實在：{title}',
+  en: 'This one\u2019s worth a read: {title}',
+  vi: 'B\u00e0i n\u00e0y kh\u00e1 th\u1ef1c t\u1ebf: {title}',
+  ko: '\uc774 \uae00 \uafe4 \uc720\uc775\ud574\uc694: {title}',
+  ja: '\u3053\u306e\u8a18\u4e8b\u3001\u5b9f\u969b\u5f79\u306b\u7acb\u3061\u307e\u3059\uff1a{title}'
+};
+const shareLabels: Record<string, Record<string, string>> = {
+  'zh-TW': { line: 'LINE\u5206\u4eab', whatsapp: 'WhatsApp\u5206\u4eab', wechat: '\u5fae\u4fe1\u5206\u4eab\uff08\u8907\u88fd\u9023\u7d50\uff09', wechatCopied: '\u9023\u7d50\u5df2\u8907\u88fd\uff0c\u53bb\u5fae\u4fe1\u88e1\u8cbc\u4e0a\u767c\u9001\u5427' },
+  en: { line: 'Share on LINE', whatsapp: 'Share on WhatsApp', wechat: 'Share on WeChat (copy link)', wechatCopied: 'Link copied \u2014 paste it in WeChat' },
+  vi: { line: 'Chia s\u1ebb qua LINE', whatsapp: 'Chia s\u1ebb qua WhatsApp', wechat: 'Chia s\u1ebb qua WeChat (sao ch\u00e9p link)', wechatCopied: '\u0110\u00e3 sao ch\u00e9p link, d\u00e1n v\u00e0o WeChat \u0111\u1ec3 g\u1eedi nh\u00e9' },
+  ko: { line: 'LINE\ub85c \uacf5\uc720', whatsapp: 'WhatsApp\ub85c \uacf5\uc720', wechat: 'WeChat\ub85c \uacf5\uc720(\ub9c1\ud06c \ubcf5\uc0ac)', wechatCopied: '\ub9c1\ud06c\uac00 \ubcf5\uc0ac\ub418\uc5c8\uc5b4\uc694, WeChat\uc5d0 \ubd99\uc5ec\ub123\uc73c\uc138\uc694' },
+  ja: { line: 'LINE\u3067\u5171\u6709', whatsapp: 'WhatsApp\u3067\u5171\u6709', wechat: 'WeChat\u3067\u5171\u6709\uff08\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc\uff09', wechatCopied: '\u30ea\u30f3\u30af\u3092\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f\u3002WeChat\u3067\u8cbc\u308a\u4ed8\u3051\u3066\u9001\u4fe1\u3057\u3066\u304f\u3060\u3055\u3044' }
+};
+const currentShareLabels = shareLabels[lang] || shareLabels.en;
+const shareText = (shareTextTemplates[lang] || shareTextTemplates.en).replace('{title}', pageData[titleField] || pageData.title);
 ---
 
 <Base title={`${pageData[titleField] || pageData.title} | Living Japanese`} description={tf(pageData, 'description', lang)} medicalCss={true}>
@@ -45,7 +66,7 @@ const titleField = `title_${lang}`;
     <span aria-current="page">{pageData[titleField] || pageData.title}</span>
   </nav>
 
-  <p class="med-disclaimer">{disclaimerPageFull[lang] || disclaimerPageFull.zh}</p>
+  <p class="med-disclaimer">{pageFullText}</p>
 
   <div class="med-action-page" id="medActionPage">
     <h1 class="med-action-title">{pageData[titleField] || pageData.title}</h1>
@@ -73,6 +94,7 @@ const titleField = `title_${lang}`;
         ))}
       </section>
     ))}
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="share"></div>
   </div>
 
   <div data-pagefind-body style="display:none">{pageData[titleField] || pageData.title} {tf(pageData, 'description', lang)}</div>
@@ -96,5 +118,17 @@ const titleField = `title_${lang}`;
       } else { init(); }
     })();
   </script>
+
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: shareText,
+      labels: currentShareLabels,
+      gaEvent: 'medical_page_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
 
 </Base>

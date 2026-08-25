@@ -1,0 +1,73 @@
+---
+// 下载校验页。任何人都能访问这个页面本身（不需要登录），
+// 但页面本身不含PDF内容——加载后拿URL里的?token=去调用受保护的Edge Function（verify-download），
+// 该函数校验这个token是否对应一笔真实的购买记录、有没有超过下载次数上限，
+// 校验通过才会返回真正的PDF下载地址（Supabase Storage的私有bucket签名URL，限时有效）。
+//
+// 这个token不是"账号登录会话"，是购买成功后邮件里发的、绑定这一笔具体交易的专属令牌，
+// 即使用户没有在/guides/login/注册登录，也能靠邮件里的链接直接下载——
+// 账号登录（我的购买记录页）是"更方便地找回历史链接"的锦上添花，不是下载本身的前提条件。
+import Base from '../../layouts/Base.astro';
+
+const title = '下载 | Living Japanese · 日活';
+---
+
+<Base title={title} description="验证购买信息并下载" guidesCss={true}>
+
+  <div class="guides-download-page" id="guidesDownloadPage">
+    <p class="guides-download-status" id="gdStatus">正在验证下载链接…</p>
+  </div>
+
+  <script is:inline>
+    (function () {
+      // 与Edge Function约定的调用地址，实际值在Supabase部署完成后确定
+      var VERIFY_DOWNLOAD_ENDPOINT = 'https://igpvqipsojmbrbpjjzse.supabase.co/functions/v1/verify-download';
+
+      function init() {
+        var statusEl = document.getElementById('gdStatus');
+        var params = new URLSearchParams(window.location.search);
+        var token = params.get('token');
+
+        if (!token) {
+          statusEl.textContent = '下载链接不完整，请检查你收到的邮件中的链接是否完整，或联系我们（zhixing.jp@gmail.com）';
+          statusEl.classList.add('guides-download-status--error');
+          return;
+        }
+
+        fetch(VERIFY_DOWNLOAD_ENDPOINT + '?token=' + encodeURIComponent(token))
+          .then(function (res) {
+            if (!res.ok) {
+              return res.json().catch(function () { return {}; }).then(function (body) {
+                throw new Error(body.error || ('verify-download failed: ' + res.status));
+              });
+            }
+            return res.json();
+          })
+          .then(function (data) {
+            if (!data.downloadUrl) throw new Error('no downloadUrl in response');
+            statusEl.textContent = '验证成功，正在开始下载…如果没有自动开始，请点击下方链接';
+            var link = document.createElement('a');
+            link.href = data.downloadUrl;
+            link.textContent = '点击这里下载 ' + (data.productTitle || 'PDF文件');
+            link.style.display = 'inline-block';
+            link.style.marginTop = '16px';
+            document.getElementById('guidesDownloadPage').appendChild(link);
+            window.location.href = data.downloadUrl;
+          })
+          .catch(function (err) {
+            var msg = String(err && err.message || '');
+            var friendly = '该链接无效或已过期，请联系我们（zhixing.jp@gmail.com）为你重新处理。';
+            if (msg.indexOf('limit') !== -1) {
+              friendly = '该链接的下载次数已用完，请联系我们（zhixing.jp@gmail.com）为你重新处理。';
+            }
+            statusEl.textContent = friendly;
+            statusEl.classList.add('guides-download-status--error');
+          });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

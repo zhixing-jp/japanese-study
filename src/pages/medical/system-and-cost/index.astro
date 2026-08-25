@@ -44,8 +44,20 @@ try {
         <div class="med-ref-body">{section.body_zh}</div>
       </div>
     ))}
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="分享给朋友"></div>
   </div>
 
   <div data-pagefind-body style="display:none">{pageData.title} {pageData.description}</div>
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: `这篇讲得挺实在：${pageData.title}`,
+      labels: { line: 'LINE分享', whatsapp: 'WhatsApp分享', wechat: '微信分享（复制链接）', wechatCopied: '链接已复制，去微信里粘贴发送吧' },
+      gaEvent: 'medical_page_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
 
 </Base>

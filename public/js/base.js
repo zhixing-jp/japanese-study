@@ -56,6 +56,9 @@ function switchLang(lang) {
   // 不是客户端动态换语言的页面，所以切换语言要跳转到"同一子路径对应语言版本"，
   // 而不是走 loadLocale() 原地刷新那一套（那一套只适用于 about 这种单一路径页面）。
   const medicalMatch = path.match(/^(?:\/(?:zh-TW|en|vi|ko|ja))?\/medical(\/.*)?\/?$/);
+  // career 同 medical，[lang]/career/* 目录已按语言各自生成静态页面，
+  // 切换语言时跳转到"同一子路径对应语言版本"，而不是原地刷新。
+  const careerMatch = path.match(/^(?:\/(?:zh-TW|en|vi|ko|ja))?\/career(\/.*)?\/?$/);
   // about 是单一路径（无语言子目录），页面内容按 currentLang 在客户端动态显示，
   // 不需要跳转页面——只需重新 loadLocale 并重新渲染，原地刷新即可
   const singlePathMatch = path.match(/^\/(about)\/?$/);
@@ -69,6 +72,10 @@ function switchLang(lang) {
     const prefix = langPaths[lang] === '/' ? '' : langPaths[lang].slice(0, -1);
     const subPath = medicalMatch[1] || '/';
     window.location.href = `${prefix}/medical${subPath}`;
+  } else if (careerMatch) {
+    const prefix = langPaths[lang] === '/' ? '' : langPaths[lang].slice(0, -1);
+    const subPath = careerMatch[1] || '/';
+    window.location.href = `${prefix}/career${subPath}`;
   } else if (singlePathMatch) {
     loadLocale(lang).then(() => {
       document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang } }));

@@ -240,11 +240,25 @@ const pageDesc = `${partTitle}相关的日语症状表达，配例句、假名�
 
     <div id="medDangerTipContainer"></div>
 
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="分享给朋友"></div>
+
   </div>
 
   <div data-pagefind-body style="display:none">
     {pageTitle} {pageDesc}
   </div>
+
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: `这篇讲得挺实在：${partTitle}`,
+      labels: { line: 'LINE分享', whatsapp: 'WhatsApp分享', wechat: '微信分享（复制链接）', wechatCopied: '链接已复制，去微信里粘贴发送吧' },
+      gaEvent: 'medical_page_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
 
   <script is:inline src="/js/tts-core.js"></script>
   <script is:inline src="/js/medical-ui.js"></script>

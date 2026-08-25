@@ -11,8 +11,9 @@ export interface SectionInfo {
   url: string;
 }
 
-export const SECTIONS: Record<'rescue' | 'medical' | 'career', SectionInfo> = {
+export const SECTIONS: Record<'rescue' | 'medical' | 'career' | 'guides', SectionInfo> = {
   rescue:  { label: '生活日语学习', url: '/' },
   medical: { label: '日本就医指南', url: '/medical/' },
-  career:  { label: '日本就职转职指南', url: '/career/' }
+  career:  { label: '日本就职转职指南', url: '/career/' },
+  guides:  { label: '专业指南', url: '/guides/' }
 };

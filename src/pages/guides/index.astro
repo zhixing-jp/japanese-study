@@ -1,0 +1,159 @@
+---
+// 专业指南商品展示页。数据驱动，读取 public/data/guides/products.json，
+// 以后加新商品只需要往这份json里加一条，不需要改这个页面的代码。
+//
+// type: "digital" 的商品走Stripe购买（跳转到stripePaymentLink），
+// type: "consult" 的商品是需要人工介入的服务（医疗协调、简历检查等），
+// 直接跳转到该服务已有的咨询/登记落地页，不接Stripe，不产生自动交付流程。
+import Base from '../../layouts/Base.astro';
+import { SECTIONS } from '../../data/sections';
+import productsData from '../../../public/data/guides/products.json';
+
+const { categories, products } = productsData;
+
+function productsInCategory(categoryId: string) {
+  return products.filter((p) => p.category === categoryId);
+}
+
+const title = `${SECTIONS.guides.label} | Living Japanese · 日活`;
+const description = '经过筛选提炼的付费方法论、清单与模板，以及需要人工协助的专业服务，帮助你在日本少走弯路。';
+---
+
+<Base title={title} description={description} guidesCss={true}>
+
+  <div class="guides-page" id="guidesPage">
+    <h1 class="guides-title">{SECTIONS.guides.label}</h1>
+    <p class="guides-intro">{description}</p>
+
+    {categories.map((cat) => {
+      const items = productsInCategory(cat.id);
+      if (items.length === 0) return null;
+      return (
+        <section class="guides-category">
+          <h2 class="guides-category-title">{cat.label}</h2>
+          <div class="guides-product-grid">
+            {items.map((p) => (
+              <div class="guides-product-card" data-product-id={p.id}>
+                <h3 class="guides-product-title">{p.title}</h3>
+                <p class="guides-product-desc">{p.description}</p>
+
+                {p.type === 'digital' && (
+                  <div class="guides-product-footer">
+                    <span class="guides-product-price">¥{(p.price ?? 0).toLocaleString('ja-JP')}</span>
+                    <a
+                      href={p.stripePaymentLink}
+                      class="guides-product-cta guides-product-cta--buy"
+                      data-ga-event="guides_buy_click"
+                      data-ga-product={p.id}
+                      target="_blank" rel="noopener"
+                    >
+                      购买 →
+                    </a>
+                  </div>
+                )}
+
+                {p.type === 'consult' && (
+                  <div class="guides-product-footer">
+                    <a
+                      href={p.consultUrl}
+                      class="guides-product-cta guides-product-cta--consult"
+                      data-ga-event="guides_consult_click"
+                      data-ga-product={p.id}
+                    >
+                      咨询 →
+                    </a>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      );
+    })}
+
+    <section class="guides-share-row" aria-label="分享给朋友">
+      <a
+        class="guides-share-btn"
+        data-share="line"
+        href="#"
+        data-ga-event="guides_share_click"
+        data-ga-product="line"
+      >LINE分享</a>
+      <a
+        class="guides-share-btn"
+        data-share="whatsapp"
+        href="#"
+        data-ga-event="guides_share_click"
+        data-ga-product="whatsapp"
+      >WhatsApp分享</a>
+      <button
+        type="button"
+        class="guides-share-btn"
+        data-share="wechat"
+        data-ga-event="guides_share_click"
+        data-ga-product="wechat"
+      >微信分享（复制链接）</button>
+    </section>
+
+    <section class="guides-login-entry">
+      <a href="/guides/my-purchases/" class="guides-login-link">已购买过？查看我的购买记录 →</a>
+    </section>
+
+    <p class="guides-disclaimer">
+      购买数字商品时，我们会用你填写的邮箱发送下载链接；这个邮箱之后也可能用于联系你，包括未来的社区活动邀请等，你可以随时通过邮件回复告知我们不希望被联系。
+    </p>
+  </div>
+
+  <div data-pagefind-body style="display:none">{SECTIONS.guides.label} {description}</div>
+
+  <script is:inline>
+    (function () {
+      function init() {
+        document.querySelectorAll('[data-ga-event]').forEach(function (el) {
+          el.addEventListener('click', function () {
+            if (typeof window.gtag !== 'function') return;
+            const eventName = el.getAttribute('data-ga-event');
+            const productId = el.getAttribute('data-ga-product');
+            window.gtag('event', eventName, productId ? { product_id: productId } : {});
+          });
+        });
+
+        // 分享按钮：LINE/WhatsApp有现成的URL scheme可以直接跳转分享面板，
+        // 微信没有对应的网页分享API（微信生态封闭），只能退而求其次做"复制链接"，
+        // 提示用户自己粘贴到微信里发送。
+        var shareUrl = window.location.href;
+        var shareText = document.title;
+
+        var lineBtn = document.querySelector('[data-share="line"]');
+        if (lineBtn) {
+          lineBtn.href = 'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(shareUrl);
+          lineBtn.target = '_blank';
+          lineBtn.rel = 'noopener';
+        }
+
+        var waBtn = document.querySelector('[data-share="whatsapp"]');
+        if (waBtn) {
+          waBtn.href = 'https://wa.me/?text=' + encodeURIComponent(shareText + ' ' + shareUrl);
+          waBtn.target = '_blank';
+          waBtn.rel = 'noopener';
+        }
+
+        var wechatBtn = document.querySelector('[data-share="wechat"]');
+        if (wechatBtn) {
+          wechatBtn.addEventListener('click', function () {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(shareUrl).then(function () {
+                wechatBtn.textContent = '链接已复制，去微信里粘贴发送吧';
+                setTimeout(function () { wechatBtn.textContent = '微信分享（复制链接）'; }, 3000);
+              });
+            }
+          });
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

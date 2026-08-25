@@ -31,5 +31,170 @@
     "職務経歴書 = 自由格式的能力证明书，重点是「课题-行动-结果」的逻辑",
     "两份文件不要内容重复，職務経歴書要按目标岗位调整重点",
     "避免逐字翻译中文简历，学习日语职务经历书本身的行文习惯"
+  ],
+  "title_zh-TW": "履歷書與職務經歷書到底有什麼區別？",
+  "description_zh-TW": "兩份文件各自的用途、該寫什麼、常見誤區，一次說清楚。",
+  "intro_zh-TW": "在日本求職，幾乎所有正式管道都會要求你同時提交「履歷書」和「職務經歷書」兩份文件。很多剛開始轉職的人第一反應是：不就是履歷嗎，為什麼要寫兩份？把兩者搞混、或內容大量重複，是HR和用人部門最先注意到的「不熟悉日本求職習慣」的訊號之一。",
+  "sections_zh-TW": [
+    {
+      "heading": "履歷書：證明「你是誰」",
+      "body": [
+        "履歷書更接近一份標準化的個人資料表，格式高度統一——市面上買到的履歷書用紙、求職網站的線上範本，欄位基本固定：姓名、出生年月日、現居地址、聯絡方式、學歷與工作經歷的時間軸（只列公司名、部門、到職離職年月，不展開做了什麼）、持有證照、通勤時間、扶養家屬狀況、本人希望欄（薪資、職務等要求）。",
+        "它的作用是讓對方快速核對你的基本身份資訊和履歷時間軸是否完整、有沒有說不通的空白期。日本企業的人事、總務部門在存檔和後續行政手續（到職登記、社保辦理）上也會直接用到履歷書上的這些欄位，所以格式規範、字跡清晰（如果是手寫）、沒有遺漏項目，比「寫得有個性」更重要。"
+      ]
+    },
+    {
+      "heading": "職務經歷書：證明「你做過什麼、做得怎麼樣」",
+      "body": [
+        "職務經歷書沒有全國統一格式，由你自己組織內容和排版，本質上是一份「工作經歷的詳細說明書」。這裡才是真正展現你專業能力的地方：每一段工作經歷具體負責什麼專案、用什麼方法解決了什麼問題、帶來了什麼可以量化的成果（業績數字、效率提升、團隊規模等）。",
+        "日本企業在書類選考（履歷初篩）階段，職務經歷書往往比履歷書權重更高——因為它直接回答「這個人能不能勝任我們的職位」。同一份職務經歷，投遞不同職位時，職務經歷書的重點應該跟著調整：哪些經歷放前面、哪些細節展開講、哪些一筆帶過，都需要根據目標職位的要求重新組織，而不是一份範本投所有公司。"
+      ]
+    },
+    {
+      "heading": "最常見的誤區",
+      "body": [
+        "第一個誤區是兩份文件內容高度重複——履歷書裡的工作經歷欄也想寫清楚做了什麼，結果職務經歷書裡又寫一遍類似的話。正確的分工是：履歷書只列時間軸和公司/部門名稱，具體內容留給職務經歷書展開。",
+        "第二個誤區是職務經歷書寫成了「日常工作職責清單」，比如「負責客戶對接、負責資料整理」，這種寫法看不出你和其他候選人的差別。日本企業更想看到的是「課題是什麼、你做了什麼、結果如何」這個邏輯鏈條，哪怕只是很小的改善也值得寫清楚。",
+        "第三個誤區是把中文履歷直接翻譯成日文，句子結構和用詞習慣會顯得不自然。職務經歷書有自己的行文習慣（比如常用「〜を担当」「〜に貢献」「〜を実現」這類固定表達），建議參考幾份日本本地的職務經歷書範例，學習句式和資訊密度，而不是逐字翻譯自己的中文履歷。"
+      ]
+    }
+  ],
+  "takeaways_zh-TW": [
+    "履歷書= 標準化身份資料表，重點是格式規範、時間軸完整",
+    "職務經歷書 = 自由格式的能力證明書，重點是「課題-行動-結果」的邏輯",
+    "兩份文件不要內容重複，職務經歷書要按目標職位調整重點",
+    "避免逐字翻譯中文履歷，學習日文職務經歷書本身的行文習慣"
+  ],
+  "title_en": "Rirekisho vs. Shokumu Keirekisho: What's the Real Difference?",
+  "description_en": "What each document is for, what goes in it, and the mistakes people make most often.",
+  "intro_en": "Almost every formal job application in Japan asks for two separate documents: the rirekisho (履歴書) and the shokumu keirekisho (職務経歴書). If you're new to job hunting here, your first thought is probably \"isn't that just a resume — why do I need two?\" Confusing the two, or letting their content overlap heavily, is one of the fastest ways HR spots someone unfamiliar with how hiring works in Japan.",
+  "sections_en": [
+    {
+      "heading": "Rirekisho: proof of who you are",
+      "body": [
+        "The rirekisho is closer to a standardized personal information form. Its layout is fixed almost everywhere — whether it's a paper form bought at a store or a template on a job site, the fields don't change: name, date of birth, current address, contact information, a timeline of education and work history (just company names, departments, and start/end dates — no description of what you actually did), any licenses or certifications you hold, commute time, dependents, and a \"desired conditions\" section for salary or role preferences.",
+        "Its job is to let the employer quickly verify your basic identity and check that your history timeline is complete, with no unexplained gaps. HR and general affairs departments also pull directly from these fields for onboarding paperwork and social insurance procedures — so a clean, correctly formatted document with no missing fields matters more here than trying to make it stand out."
+      ]
+    },
+    {
+      "heading": "Shokumu keirekisho: proof of what you actually did and how well",
+      "body": [
+        "There's no nationally fixed format for the shokumu keirekisho — you organize the content and layout yourself. It's essentially a detailed account of your professional experience, and this is where you actually demonstrate your abilities: what specific projects you were responsible for in each role, what methods you used to solve what problems, and what measurable results came out of it (numbers, efficiency gains, team size, and so on).",
+        "During the initial document screening stage, Japanese companies often weigh the shokumu keirekisho more heavily than the rirekisho, because it answers the real question directly: can this person actually do the job? The same work history should be reorganized for each position you apply to — which experiences go first, which details get expanded, which get a single line — rather than sending the same version to every company."
+      ]
+    },
+    {
+      "heading": "The most common mistakes",
+      "body": [
+        "The first mistake is letting the two documents overlap heavily — trying to spell out what you did in the rirekisho's work history field, then writing something similar again in the shokumu keirekisho. The correct division is: the rirekisho lists only the timeline and company/department names; the actual substance belongs in the shokumu keirekisho.",
+        "The second mistake is writing the shokumu keirekisho as a list of daily duties — \"handled client communication,\" \"managed data organization\" — which tells the reader nothing that sets you apart from other candidates. What Japanese employers want to see is a logical chain: what the challenge was, what you did about it, and what happened as a result. Even a small improvement is worth spelling out clearly.",
+        "The third mistake is translating a Chinese resume directly into Japanese — the sentence structures and word choices tend to read as unnatural. The shokumu keirekisho has its own conventions (fixed expressions like 〜を担当, 〜に貢献, 〜を実現 show up constantly). It's worth studying a few real Japanese-market samples to pick up the sentence patterns and information density, rather than translating your existing resume word for word."
+      ]
+    }
+  ],
+  "takeaways_en": [
+    "Rirekisho = a standardized identity form — the priority is correct formatting and a complete timeline",
+    "Shokumu keirekisho = a free-format proof of ability — the priority is the challenge → action → result logic",
+    "Don't let the two documents repeat each other; tailor the shokumu keirekisho's emphasis to each job posting",
+    "Avoid word-for-word translation from Chinese — learn the native conventions of Japanese career documents instead"
+  ],
+  "title_vi": "Rirekisho và Shokumu Keirekisho khác nhau thế nào?",
+  "description_vi": "Công dụng của từng loại hồ sơ, nên viết gì, và những hiểu lầm thường gặp — giải thích rõ trong một bài.",
+  "intro_vi": "Khi xin việc ở Nhật, hầu như mọi kênh tuyển dụng chính thức đều yêu cầu bạn nộp cùng lúc hai loại hồ sơ: rirekisho (履歴書) và shokumu keirekisho (職務経歴書). Nhiều người mới bắt đầu chuyển việc thường thắc mắc: chẳng phải đều là sơ yếu lý lịch sao, tại sao phải viết hai bản? Việc nhầm lẫn hai loại này, hoặc để nội dung trùng lặp quá nhiều, là một trong những dấu hiệu đầu tiên khiến HR và bộ phận tuyển dụng nhận ra bạn chưa quen với cách xin việc ở Nhật.",
+  "sections_vi": [
+    {
+      "heading": "Rirekisho: chứng minh \"bạn là ai\"",
+      "body": [
+        "Rirekisho giống một bản khai thông tin cá nhân theo mẫu chuẩn, định dạng gần như thống nhất — dù là mẫu giấy bán sẵn hay mẫu điền online trên trang tuyển dụng, các mục đều cố định: họ tên, ngày sinh, địa chỉ hiện tại, thông tin liên lạc, dòng thời gian học vấn và kinh nghiệm làm việc (chỉ liệt kê tên công ty, phòng ban, thời gian vào - nghỉ việc, không cần mô tả chi tiết công việc), các chứng chỉ đang có, thời gian di chuyển đến chỗ làm, tình trạng người phụ thuộc, và mục nguyện vọng bản thân (lương, vị trí mong muốn...).",
+        "Vai trò của nó là giúp nhà tuyển dụng nhanh chóng kiểm tra thông tin cơ bản và dòng thời gian làm việc của bạn có đầy đủ, hợp lý hay không, có khoảng trống khó giải thích hay không. Bộ phận nhân sự, tổng vụ của công ty Nhật cũng dùng trực tiếp các thông tin này để lưu hồ sơ và làm thủ tục hành chính sau khi nhận việc (đăng ký nhập công ty, bảo hiểm xã hội...), vì vậy định dạng chuẩn, chữ viết rõ ràng (nếu viết tay), không thiếu mục nào — quan trọng hơn nhiều so với việc viết cho \"có cá tính\"."
+      ]
+    },
+    {
+      "heading": "Shokumu keirekisho: chứng minh \"bạn đã làm gì, làm tốt đến đâu\"",
+      "body": [
+        "Shokumu keirekisho không có mẫu thống nhất trên toàn quốc, bạn tự sắp xếp nội dung và bố cục — về bản chất đây là một bản mô tả chi tiết về quá trình làm việc. Đây mới là nơi thực sự thể hiện năng lực chuyên môn của bạn: mỗi giai đoạn công việc bạn phụ trách dự án gì cụ thể, dùng phương pháp nào để giải quyết vấn đề gì, mang lại kết quả có thể đo lường được ra sao (số liệu thành tích, cải thiện hiệu suất, quy mô đội nhóm...).",
+        "Ở vòng sàng lọc hồ sơ (書類選考), shokumu keirekisho thường được đánh giá quan trọng hơn rirekisho — vì nó trả lời trực tiếp câu hỏi \"người này có đảm đương được vị trí của chúng tôi không\". Cùng một quá trình làm việc, khi ứng tuyển vị trí khác nhau, trọng tâm của shokumu keirekisho cũng nên thay đổi theo: kinh nghiệm nào đưa lên trước, chi tiết nào cần khai triển, chi tiết nào chỉ lướt qua — cần tổ chức lại theo yêu cầu của từng vị trí, chứ không dùng một bản duy nhất gửi cho tất cả công ty."
+      ]
+    },
+    {
+      "heading": "Những hiểu lầm phổ biến nhất",
+      "body": [
+        "Hiểu lầm đầu tiên là để nội dung hai bản hồ sơ trùng lặp quá nhiều — mục kinh nghiệm làm việc trong rirekisho cũng muốn viết rõ đã làm gì, rồi shokumu keirekisho lại viết lại những ý tương tự. Cách phân chia đúng là: rirekisho chỉ liệt kê dòng thời gian và tên công ty/phòng ban, còn nội dung cụ thể để dành cho shokumu keirekisho triển khai.",
+        "Hiểu lầm thứ hai là viết shokumu keirekisho thành \"danh sách công việc thường ngày\", ví dụ \"phụ trách liên hệ khách hàng, phụ trách tổng hợp dữ liệu\" — cách viết này không cho thấy sự khác biệt giữa bạn và các ứng viên khác. Điều nhà tuyển dụng Nhật muốn thấy là chuỗi logic \"vấn đề là gì — bạn đã làm gì — kết quả ra sao\", dù chỉ là một cải tiến nhỏ cũng đáng được viết rõ ràng.",
+        "Hiểu lầm thứ ba là dịch thẳng sơ yếu lý lịch tiếng Trung/tiếng Việt sang tiếng Nhật, khiến cấu trúc câu và cách dùng từ trở nên thiếu tự nhiên. Shokumu keirekisho có văn phong riêng (thường dùng các cụm cố định như 〜を担当, 〜に貢献, 〜を実現), nên tham khảo vài mẫu shokumu keirekisho thực tế của người Nhật để học cách hành văn và mật độ thông tin, thay vì dịch từng câu từ hồ sơ cũ của mình."
+      ]
+    }
+  ],
+  "takeaways_vi": [
+    "Rirekisho = bản khai thông tin cá nhân theo mẫu chuẩn, quan trọng nhất là định dạng đúng và dòng thời gian đầy đủ",
+    "Shokumu keirekisho = bản chứng minh năng lực theo định dạng tự do, quan trọng nhất là logic \"vấn đề - hành động - kết quả\"",
+    "Đừng để nội dung hai bản hồ sơ trùng lặp, shokumu keirekisho cần điều chỉnh trọng tâm theo từng vị trí ứng tuyển",
+    "Tránh dịch từng câu từ hồ sơ tiếng mẹ đẻ, hãy học cách hành văn riêng của shokumu keirekisho tiếng Nhật"
+  ],
+  "title_ko": "이력서와 쇼쿠무케이레키쇼, 정확히 뭐가 다를까?",
+  "description_ko": "두 서류의 용도, 무엇을 써야 하는지, 흔히 하는 실수까지 한 번에 정리.",
+  "intro_ko": "일본에서 구직할 때는 거의 모든 정식 지원 경로에서 「履歴書(이력서)」와 「職務経歴書(쇼쿠무케이레키쇼)」 두 가지 서류를 함께 요구합니다. 이직을 처음 준비하는 분들은 대부분 '이력서 아닌가, 왜 두 개나 써야 하지?'라고 생각하기 쉽습니다. 이 둘을 혼동하거나 내용이 크게 겹치는 것은 인사담당자와 현업 부서가 '일본 구직 방식에 익숙하지 않다'는 것을 가장 먼저 알아채는 신호 중 하나입니다.",
+  "sections_ko": [
+    {
+      "heading": "이력서: '당신이 누구인지'를 증명하는 문서",
+      "body": [
+        "이력서는 표준화된 개인정보 양식에 가깝고 형식이 거의 통일되어 있습니다. 시중에서 파는 이력서 용지든 구직 사이트의 온라인 템플릿이든 항목은 대체로 고정되어 있습니다: 이름, 생년월일, 현주소, 연락처, 학력과 경력의 타임라인(회사명·부서·입사와 퇴사 연월만 기재하고 구체적으로 무엇을 했는지는 쓰지 않음), 보유 자격증, 통근 시간, 부양가족 여부, 본인 희망란(급여·직무 등 조건)까지 포함됩니다.",
+        "이력서의 역할은 상대방이 당신의 기본 신원 정보와 경력 타임라인이 빠짐없이 이어지는지, 설명되지 않는 공백기가 없는지 빠르게 확인하도록 돕는 것입니다. 일본 기업의 인사·총무 부서는 입사 등록이나 사회보험 처리 같은 행정 절차에서도 이력서의 이 항목들을 그대로 활용하기 때문에, '개성 있게 쓰는 것'보다 형식이 정확하고 글씨가 또렷하며(수기로 작성하는 경우) 누락된 항목이 없는 것이 훨씬 중요합니다."
+      ]
+    },
+    {
+      "heading": "쇼쿠무케이레키쇼: '무엇을 했고, 얼마나 잘했는지'를 증명하는 문서",
+      "body": [
+        "쇼쿠무케이레키쇼는 전국 공통 양식이 없어서 내용과 구성을 본인이 직접 정합니다. 본질적으로는 '경력에 대한 상세 설명서'라고 할 수 있습니다. 여기가 바로 실질적인 역량을 보여주는 곳입니다: 각 경력 단계에서 구체적으로 어떤 프로젝트를 맡았는지, 어떤 방법으로 어떤 문제를 해결했는지, 수치로 확인 가능한 성과(실적 수치, 효율 개선, 팀 규모 등)가 무엇이었는지를 담습니다.",
+        "서류전형 단계에서 일본 기업들은 이력서보다 쇼쿠무케이레키쇼의 비중을 더 크게 두는 경우가 많습니다. '이 사람이 우리 업무를 실제로 소화할 수 있는가'라는 질문에 직접 답하는 서류이기 때문입니다. 같은 경력이라도 지원하는 직무에 따라 쇼쿠무케이레키쇼의 강조점은 달라져야 합니다 — 어떤 경험을 앞에 배치할지, 어떤 부분을 자세히 풀어 쓸지, 어떤 부분은 간단히 넘어갈지를 지원하는 회사의 요구에 맞춰 다시 구성해야지, 하나의 템플릿을 모든 회사에 그대로 보내면 안 됩니다."
+      ]
+    },
+    {
+      "heading": "가장 흔한 실수",
+      "body": [
+        "첫 번째 실수는 두 서류의 내용이 크게 겹치는 것입니다 — 이력서의 경력란에도 무엇을 했는지 자세히 쓰려다 보니, 쇼쿠무케이레키쇼에서 비슷한 내용을 또 쓰게 되는 경우입니다. 올바른 역할 분담은 이렇습니다: 이력서는 타임라인과 회사·부서명만 기재하고, 구체적인 내용은 쇼쿠무케이레키쇼에서 풀어냅니다.",
+        "두 번째 실수는 쇼쿠무케이레키쇼를 '일상 업무 목록'처럼 써버리는 것입니다. 예를 들어 '고객 응대 담당', '데이터 정리 담당' 같은 표현은 다른 지원자와의 차별점을 전혀 보여주지 못합니다. 일본 기업이 보고 싶어 하는 것은 '과제가 무엇이었고, 무엇을 했고, 결과가 어땠는지'라는 논리적 흐름입니다. 아주 작은 개선이라도 이 흐름으로 정리할 가치가 있습니다.",
+        "세 번째 실수는 한국어 이력서를 그대로 일본어로 번역하는 것입니다. 문장 구조와 표현 방식이 부자연스러워 보이기 쉽습니다. 쇼쿠무케이레키쇼에는 특유의 문체가 있습니다(〜を担当, 〜に貢献, 〜を実現처럼 자주 쓰이는 고정 표현들). 기존 이력서를 그대로 옮기기보다, 일본 현지의 쇼쿠무케이레키쇼 샘플 몇 개를 참고해 문장 구조와 정보 밀도를 익히는 것을 추천합니다."
+      ]
+    }
+  ],
+  "takeaways_ko": [
+    "이력서 = 표준화된 신원정보 서류. 핵심은 정확한 형식과 빠짐없는 타임라인",
+    "쇼쿠무케이레키쇼 = 자유 양식의 역량 증명서. 핵심은 '과제-행동-결과'의 논리",
+    "두 서류의 내용이 겹치지 않게 하고, 쇼쿠무케이레키쇼는 지원 직무에 맞춰 강조점을 조정할 것",
+    "직역을 피하고, 일본어 쇼쿠무케이레키쇼 특유의 문체를 익힐 것"
+  ],
+  "title_ja": "履歴書と職務経歴書、実際何が違うの？",
+  "description_ja": "それぞれの役割、書くべき内容、よくある誤解を一気に整理します。",
+  "intro_ja": "日本での転職活動では、正式な応募ルートのほとんどで「履歴書」と「職務経歴書」の両方の提出が求められます。転職活動を始めたばかりの方の多くは「履歴書だけじゃダメなの？」と感じるかもしれません。この2つを混同したり、内容が大きく重複していたりすることは、採用担当者が「日本の転職慣習に不慣れだ」と最初に気づくポイントの一つです。",
+  "sections_ja": [
+    {
+      "heading": "履歴書：「あなたが誰か」を証明する書類",
+      "body": [
+        "履歴書は標準化された個人情報シートに近く、フォーマットがほぼ統一されています。市販の履歴書用紙でも求人サイトのオンラインテンプレートでも、項目はほぼ固定です：氏名、生年月日、現住所、連絡先、学歴・職歴のタイムライン（会社名・部署・入退社年月のみで、具体的な業務内容までは書かない）、保有資格、通勤時間、扶養家族の状況、本人希望欄（給与・職種などの希望条件）。",
+        "その役割は、基本的な身元情報と職歴のタイムラインに抜け漏れがないか、説明のつかない空白期間がないかを、相手が素早く確認できるようにすることです。人事・総務部門は入社手続きや社会保険関連の事務にもこの項目をそのまま使うため、「個性的に書く」ことより、フォーマットが整っていて、字が丁寧で（手書きの場合）、記入漏れがないことのほうがずっと重要です。"
+      ]
+    },
+    {
+      "heading": "職務経歴書：「何をしてきたか、どれだけできるか」を証明する書類",
+      "body": [
+        "職務経歴書には全国統一のフォーマットがなく、内容と構成は自分で決めます。本質的には「職務経験の詳細説明書」であり、ここでこそ本当の専門性を示すことができます：それぞれの職務でどんなプロジェクトを担当し、どんな方法でどんな課題を解決し、どんな定量的な成果（実績数値、効率改善、チーム規模など）につながったか。",
+        "書類選考の段階では、履歴書よりも職務経歴書の比重を重く見る企業が多くあります。「この人が実際に自社の業務をこなせるか」に直接答える書類だからです。同じ職務経歴でも、応募する職種によって職務経歴書の重点は変えるべきです——どの経験を前に出すか、どの部分を詳しく書くか、どこは簡潔に済ませるかを、応募先の求める人物像に合わせて組み立て直す必要があり、同じテンプレートをすべての企業に使い回すべきではありません。"
+      ]
+    },
+    {
+      "heading": "よくある誤解",
+      "body": [
+        "1つ目の誤解は、2つの書類の内容が大きく重複してしまうことです——履歴書の職歴欄にも具体的な業務内容を書こうとして、結局職務経歴書でも似たようなことをもう一度書いてしまう。正しい役割分担は、履歴書にはタイムラインと会社名・部署名のみを記載し、具体的な内容は職務経歴書で展開することです。",
+        "2つ目の誤解は、職務経歴書が「日常業務のリスト」になってしまうことです。例えば「顧客対応を担当」「データ整理を担当」といった書き方は、他の候補者との違いが見えません。日本企業が見たいのは「課題は何だったか、何をしたか、結果はどうだったか」という論理の流れです。小さな改善であっても、この流れで明確に書く価値があります。",
+        "3つ目の誤解は、母国語の履歴書をそのまま日本語に翻訳してしまうことです。文の構造や言葉遣いが不自然になりがちです。職務経歴書には独特の文体があり（「〜を担当」「〜に貢献」「〜を実現」といった定型表現がよく使われます）、実際の日本の職務経歴書のサンプルをいくつか参考にして、文の型や情報量の感覚をつかむことをおすすめします。既存の履歴書を逐語訳するのではなく。"
+      ]
+    }
+  ],
+  "takeaways_ja": [
+    "履歴書＝標準化された身元情報シート。重要なのはフォーマットの正確さとタイムラインの完全性",
+    "職務経歴書＝自由形式の能力証明書。重要なのは「課題→行動→結果」というロジック",
+    "2つの書類の内容を重複させず、職務経歴書は応募先ごとに重点を調整する",
+    "逐語訳を避け、日本語の職務経歴書ならではの書き方を身につける"
   ]
 }

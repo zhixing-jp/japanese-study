@@ -10,7 +10,7 @@
       ]
     },
     {
-      "heading": "2. みなし残業（视为加班）时长上限",
+      "heading": "2. みなし残业（视为加班）时长上限",
       "body": [
         "如果薪资结构里包含固定残业代，一定要确认对应的是多少小时的「みなし残业」，以及超出这个时长之后，公司是否会另外支付加班费。这个信息通常不会写在求人票的显眼位置，需要在面试时直接询问，具体做法可以参考同系列另一篇《固定残业代是什么意思》。"
       ]
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "heading": "5. 実際の残業時间（而不是制度上的规定）",
+      "heading": "5. 実際の残业時间（而不是制度上的规定）",
       "body": [
         "求人票上写的「残業月平均20時間程度」，和团队实际情况可能有出入，尤其是旺季或特定岗位。如果有机会在面试中和未来的直属上司或同事交流，可以礼貌地问一下团队实际的加班情况和忙季时间段，比只看数字更有参考价值。"
       ]
@@ -45,5 +45,240 @@
     "试用期待遇、转勤可能性、评价制度，这些信息求人票通常不会主动写明",
     "面试是双向了解的机会，主动问这些问题不会减分，反而显得认真",
     "同样的年收数字，工作强度和长期发展空间可能完全不同"
+  ],
+  "title_zh-TW": "年薪高不等於工作更適合：看求才資訊時必須確認的6項",
+  "description_zh-TW": "求才資訊上不會主動告訴你的資訊，怎麼自己挖出來。",
+  "intro_zh-TW": "求才資訊上寫的年薪數字，很容易成為判斷一份工作好不好的第一標準，但年薪只是整體待遇和工作強度的其中一個變數。同樣寫著「年収500万円」的兩份工作，實際的工作時間、加班強度、職責範圍可能完全不同。以下6項是求才資訊上容易被忽略、但直接影響你實際體驗的資訊。",
+  "sections_zh-TW": [
+    {
+      "heading": "1. 年薪的構成：基本給還是含加班費",
+      "body": [
+        "「年収500万円」這個數字裡，多少是基本給（固定月薪×12+獎金），多少是預先包含的加班費（固定残業代），求才資訊不一定會寫清楚，需要在面試或簽offer前主動確認。同樣的年薪數字，基本給占比越高，代表這份收入越「穩」；如果相當一部分是固定加班費，意味著這個數字本身已經假設你會加班到一定時長。"
+      ]
+    },
+    {
+      "heading": "2. みなし残業（視為加班）時長上限",
+      "body": [
+        "如果薪資結構裡包含固定加班費，一定要確認對應的是多少小時的「みなし残業」，以及超出這個時長之後，公司是否會另外支付加班費。這個資訊通常不會寫在求才資訊的顯眼位置，需要在面試時直接詢問，具體做法可以參考同系列另一篇《固定加班費是什麼意思》。"
+      ]
+    },
+    {
+      "heading": "3. 試用期間的待遇差異",
+      "body": [
+        "不少公司在試用期內（一般3-6個月）會有不同的薪資或雇用條件，有的甚至試用期是「契約社員」身份，轉正後才變為「正社員」。求才資訊上如果只寫了轉正後的待遇，需要主動確認試用期內的具體條件和轉正標準是什麼。"
+      ]
+    },
+    {
+      "heading": "4. 轉勤（異地調動）的可能性",
+      "body": [
+        "如果公司有多個分部或全國性業務，需要確認職位是否存在「転勤あり」的可能性，以及是否可以拒絕。對於持有在留資格、家庭在特定城市安頓下來的人來說，這一項容易被忽略但影響很大，轉勤條件通常寫在雇用契約書裡，求才資訊階段就該問清楚。"
+      ]
+    },
+    {
+      "heading": "5. 實際加班時間（而不是制度上的規定）",
+      "body": [
+        "求才資訊上寫的「残業月平均20時間程度」，和團隊實際情況可能有出入，尤其是旺季或特定職位。如果有機會在面試中和未來的直屬主管或同事交流，可以禮貌地問一下團隊實際的加班情況和忙季時間段，比只看數字更有參考價值。"
+      ]
+    },
+    {
+      "heading": "6. 評價制度與升遷路徑",
+      "body": [
+        "年薪高但如果評價體系不透明、升遷路徑模糊，長期看未必是更好的選擇。可以在面試中詢問「評價是按什麼週期、依據什麼標準進行的」，以及「過去有沒有類似背景的人在這個職位上的成長路徑可以參考」，這類問題也能反過來體現你對長期發展的認真程度，是雙向都有好處的提問。"
+      ]
+    }
+  ],
+  "takeaways_zh-TW": [
+    "年薪數字要拆開看：基本給和固定加班費的比例決定了這份收入有多「穩」",
+    "試用期待遇、轉勤可能性、評價制度，這些資訊求才資訊通常不會主動寫明",
+    "面試是雙向了解的機會，主動問這些問題不會扣分，反而顯得認真",
+    "同樣的年薪數字，工作強度和長期發展空間可能完全不同"
+  ],
+  "title_en": "A High Salary Doesn't Mean a Better Fit: 6 Things to Check in Any Job Posting",
+  "description_en": "What job postings won't tell you upfront — and how to dig it out yourself.",
+  "intro_en": "The annual salary figure on a Japanese job posting (求人票) is an easy default for judging whether a job is good, but salary is just one variable in the overall picture of compensation and workload. Two postings that both say \"annual salary ¥5,000,000\" can involve completely different actual hours, overtime intensity, and scope of responsibility. Here are 6 things postings tend to leave out that directly affect what the job is actually like.",
+  "sections_en": [
+    {
+      "heading": "1. What the salary figure is made of: base pay or overtime included",
+      "body": [
+        "Of that ¥5,000,000 annual figure, how much is base pay (fixed monthly salary × 12 + bonus) and how much is overtime pay bundled in ahead of time (fixed overtime pay)? Postings don't always spell this out — you need to confirm it directly during the interview or before accepting an offer. For the same total figure, the higher the base pay portion, the more stable that income actually is; if a significant chunk is fixed overtime pay, the number already assumes you'll be working a certain amount of overtime."
+      ]
+    },
+    {
+      "heading": "2. The cap on \"deemed overtime\" hours",
+      "body": [
+        "If the salary structure includes fixed overtime pay, confirm exactly how many hours of \"deemed overtime\" (みなし残業) that corresponds to, and whether the company pays extra once you go over that. This detail is rarely displayed prominently in the posting — you need to ask directly in the interview. See the companion article on fixed overtime pay for more on how to approach this."
+      ]
+    },
+    {
+      "heading": "3. Different conditions during the probation period",
+      "body": [
+        "Many companies apply different pay or employment terms during the probation period (usually 3–6 months) — some even hire you as a contract employee (契約社員) during probation, converting to full employee (正社員) status only afterward. If the posting only lists post-conversion terms, confirm directly what the probation-period conditions are and what the standard is for becoming a full employee."
+      ]
+    },
+    {
+      "heading": "4. The possibility of forced relocation (転勤)",
+      "body": [
+        "If the company has multiple offices or nationwide operations, confirm whether the role carries a possibility of forced relocation and whether you can decline it. For anyone on a specific visa status or with family settled in a particular city, this detail is easy to overlook but has major consequences. Relocation terms are usually spelled out in the employment contract, but you should ask about it while you're still at the job-posting stage."
+      ]
+    },
+    {
+      "heading": "5. Actual overtime hours, not just the official figure",
+      "body": [
+        "A posting that says \"average overtime around 20 hours/month\" may not match what a specific team actually experiences, especially during busy seasons or for particular roles. If you get a chance to talk with your future direct manager or future colleagues during the interview process, politely asking about the team's real overtime patterns and busy periods is far more useful than the headline number."
+      ]
+    },
+    {
+      "heading": "6. The evaluation system and promotion path",
+      "body": [
+        "A high salary paired with an opaque evaluation system and unclear promotion path isn't necessarily the better long-term choice. You can ask in the interview what cycle and criteria evaluations run on, and whether there's an example of someone with a similar background who's grown in this role — questions like these also signal that you're seriously thinking about your long-term development, which works in your favor either way."
+      ]
+    }
+  ],
+  "takeaways_en": [
+    "Break down the salary figure: the ratio of base pay to fixed overtime pay determines how stable that income actually is",
+    "Probation-period terms, relocation possibility, and the evaluation system are things postings usually don't spell out",
+    "An interview is a two-way conversation — asking these questions doesn't cost you points, it signals seriousness",
+    "The same salary figure can hide very different workloads and very different long-term prospects"
+  ],
+  "title_vi": "Lương cao chưa chắc là công việc phù hợp: 6 điều bắt buộc phải xác nhận khi xem tin tuyển dụng",
+  "description_vi": "Những thông tin tin tuyển dụng không tự nói cho bạn biết — làm sao để tự tìm ra.",
+  "intro_vi": "Con số lương năm ghi trên tin tuyển dụng (求人票) rất dễ trở thành tiêu chí đầu tiên để đánh giá một công việc có tốt hay không, nhưng lương năm chỉ là một biến số trong toàn bộ đãi ngộ và cường độ công việc. Hai công việc cùng ghi \"lương năm 5.000.000 yên\" có thể có thời gian làm việc thực tế, cường độ tăng ca, phạm vi trách nhiệm hoàn toàn khác nhau. Dưới đây là 6 thông tin dễ bị bỏ qua trên tin tuyển dụng nhưng ảnh hưởng trực tiếp đến trải nghiệm thực tế của bạn.",
+  "sections_vi": [
+    {
+      "heading": "1. Cấu thành của lương năm: lương cơ bản hay đã gồm tiền tăng ca",
+      "body": [
+        "Trong con số \"lương năm 5.000.000 yên\", bao nhiêu là lương cơ bản (lương tháng cố định × 12 + thưởng), bao nhiêu là tiền tăng ca đã được tính gộp sẵn (固定残業代 - tiền tăng ca cố định), tin tuyển dụng chưa chắc ghi rõ, cần chủ động xác nhận khi phỏng vấn hoặc trước khi ký offer. Cùng một con số lương năm, tỷ lệ lương cơ bản càng cao thì thu nhập càng \"ổn định\"; nếu phần lớn là tiền tăng ca cố định, nghĩa là con số đó đã giả định bạn sẽ tăng ca đến một mức thời gian nhất định."
+      ]
+    },
+    {
+      "heading": "2. Giới hạn thời gian của \"tăng ca coi như\" (みなし残業)",
+      "body": [
+        "Nếu cơ cấu lương có bao gồm tiền tăng ca cố định, nhất định phải xác nhận rõ con số đó tương ứng với bao nhiêu giờ \"みなし残業\", và sau khi vượt quá thời gian này, công ty có trả thêm tiền tăng ca hay không. Thông tin này thường không được ghi ở vị trí dễ thấy trên tin tuyển dụng, cần hỏi trực tiếp khi phỏng vấn, có thể tham khảo thêm bài viết cùng series về \"tiền tăng ca cố định là gì\"."
+      ]
+    },
+    {
+      "heading": "3. Sự khác biệt về đãi ngộ trong thời gian thử việc",
+      "body": [
+        "Không ít công ty có mức lương hoặc điều kiện tuyển dụng khác trong thời gian thử việc (thường là 3-6 tháng), thậm chí có công ty trong thời gian thử việc lấy tư cách \"nhân viên hợp đồng\" (契約社員), sau khi chuyển chính thức mới thành \"nhân viên chính thức\" (正社員). Nếu tin tuyển dụng chỉ ghi đãi ngộ sau khi chuyển chính thức, cần chủ động xác nhận điều kiện cụ thể trong thời gian thử việc và tiêu chuẩn chuyển chính thức là gì."
+      ]
+    },
+    {
+      "heading": "4. Khả năng bị điều chuyển công tác (転勤)",
+      "body": [
+        "Nếu công ty có nhiều chi nhánh hoặc hoạt động trên toàn quốc, cần xác nhận vị trí này có khả năng \"có điều chuyển\" hay không, và có thể từ chối hay không. Đối với người đang giữ tư cách lưu trú, gia đình đã ổn định ở một thành phố cụ thể, điều này dễ bị bỏ qua nhưng ảnh hưởng rất lớn. Điều kiện điều chuyển thường được ghi trong hợp đồng lao động, nhưng nên hỏi rõ ngay từ giai đoạn xem tin tuyển dụng."
+      ]
+    },
+    {
+      "heading": "5. Thời gian tăng ca thực tế (chứ không phải con số quy định trên giấy)",
+      "body": [
+        "Con số \"tăng ca trung bình khoảng 20 giờ/tháng\" ghi trên tin tuyển dụng có thể khác với tình hình thực tế của đội nhóm, đặc biệt vào mùa cao điểm hoặc với một số vị trí nhất định. Nếu có cơ hội trò chuyện với sếp trực tiếp hoặc đồng nghiệp tương lai trong quá trình phỏng vấn, hãy lịch sự hỏi về tình hình tăng ca thực tế và giai đoạn bận rộn của đội nhóm — điều này có giá trị tham khảo hơn nhiều so với chỉ nhìn con số."
+      ]
+    },
+    {
+      "heading": "6. Chế độ đánh giá và lộ trình thăng tiến",
+      "body": [
+        "Lương cao nhưng nếu hệ thống đánh giá không minh bạch, lộ trình thăng tiến mơ hồ, thì về lâu dài chưa chắc là lựa chọn tốt hơn. Bạn có thể hỏi trong buổi phỏng vấn \"việc đánh giá được thực hiện theo chu kỳ nào, dựa trên tiêu chí gì\", và \"trước đây có ai có background tương tự đã phát triển ở vị trí này theo lộ trình nào để tham khảo không\" — những câu hỏi này cũng thể hiện sự nghiêm túc của bạn với sự phát triển lâu dài, có lợi cho cả hai bên."
+      ]
+    }
+  ],
+  "takeaways_vi": [
+    "Cần tách con số lương năm ra để xem: tỷ lệ lương cơ bản và tiền tăng ca cố định quyết định thu nhập này \"ổn định\" đến đâu",
+    "Đãi ngộ thời gian thử việc, khả năng điều chuyển, chế độ đánh giá — đây là những thông tin tin tuyển dụng thường không ghi rõ",
+    "Phỏng vấn là cơ hội tìm hiểu hai chiều, chủ động hỏi những câu này không bị trừ điểm mà còn thể hiện sự nghiêm túc",
+    "Cùng một con số lương năm, cường độ công việc và không gian phát triển lâu dài có thể hoàn toàn khác nhau"
+  ],
+  "title_ko": "연봉이 높다고 더 좋은 자리는 아니다: 채용공고에서 반드시 확인해야 할 6가지",
+  "description_ko": "채용공고가 먼저 알려주지 않는 정보들, 스스로 어떻게 찾아낼까.",
+  "intro_ko": "채용공고(求人票)에 적힌 연봉 숫자는 그 일자리가 좋은지 나쁜지를 판단하는 첫 번째 기준이 되기 쉽지만, 연봉은 전체 처우와 업무 강도를 이루는 여러 변수 중 하나일 뿐입니다. 똑같이 '연수 500만엔'이라고 적힌 두 자리라도 실제 근무 시간, 야근 강도, 담당 범위는 완전히 다를 수 있습니다. 아래 6가지는 채용공고에서 간과하기 쉽지만 실제 근무 경험에 직접적인 영향을 주는 정보입니다.",
+  "sections_ko": [
+    {
+      "heading": "1. 연봉의 구성: 기본급인가, 잔업수당이 포함된 것인가",
+      "body": [
+        "'연수 500만엔'이라는 숫자 중 얼마가 기본급(고정 월급×12+상여금)이고, 얼마가 미리 포함된 잔업수당(고정잔업수당)인지 채용공고에 명확히 적혀 있지 않을 수 있습니다. 면접이나 오퍼 수락 전에 직접 확인해야 합니다. 같은 연봉 숫자라도 기본급 비중이 높을수록 그 수입은 더 '안정적'이며, 상당 부분이 고정잔업수당이라면 그 숫자 자체가 이미 일정 시간의 야근을 전제로 하고 있다는 뜻입니다."
+      ]
+    },
+    {
+      "heading": "2. 간주 잔업(みなし残業) 시간 상한",
+      "body": [
+        "급여 구조에 고정잔업수당이 포함되어 있다면, 반드시 그것이 몇 시간의 '간주 잔업'에 해당하는지, 그리고 이 시간을 초과할 경우 회사가 추가로 잔업수당을 지급하는지 확인해야 합니다. 이 정보는 보통 채용공고의 눈에 띄는 위치에 적혀 있지 않으므로 면접 때 직접 물어봐야 합니다. 구체적인 방법은 같은 시리즈의 다른 글 '고정잔업수당이란 무엇인가'를 참고하세요."
+      ]
+    },
+    {
+      "heading": "3. 수습 기간의 처우 차이",
+      "body": [
+        "많은 회사가 수습 기간(보통 3~6개월) 동안 다른 급여나 고용 조건을 적용하며, 일부는 수습 기간에는 '계약직(契約社員)' 신분이었다가 정규직 전환 후에야 '정사원(正社員)'이 됩니다. 채용공고에 정규직 전환 후 처우만 적혀 있다면, 수습 기간 중 구체적인 조건과 정규직 전환 기준이 무엇인지 직접 확인해야 합니다."
+      ]
+    },
+    {
+      "heading": "4. 전근(転勤) 가능성",
+      "body": [
+        "회사에 여러 지점이 있거나 전국 단위 사업을 하고 있다면, 해당 직무에 '전근 있음' 가능성이 있는지, 그리고 거부할 수 있는지 확인해야 합니다. 특정 체류자격을 가지고 있거나 가족이 특정 도시에 정착한 사람에게는 이 항목이 간과되기 쉽지만 영향이 큽니다. 전근 조건은 보통 고용계약서에 명시되지만, 채용공고를 볼 때부터 미리 물어봐야 합니다."
+      ]
+    },
+    {
+      "heading": "5. 제도상 수치가 아닌 실제 잔업 시간",
+      "body": [
+        "채용공고에 적힌 '월평균 잔업 20시간 정도'는 팀의 실제 상황과 차이가 있을 수 있습니다. 특히 성수기나 특정 직무에서는 더욱 그렇습니다. 면접 과정에서 미래의 직속 상사나 동료와 이야기할 기회가 있다면, 팀의 실제 야근 상황과 바쁜 시기에 대해 정중하게 물어보는 것이 숫자만 보는 것보다 훨씬 참고할 가치가 있습니다."
+      ]
+    },
+    {
+      "heading": "6. 평가 제도와 승진 경로",
+      "body": [
+        "연봉이 높아도 평가 체계가 불투명하고 승진 경로가 모호하다면, 장기적으로는 반드시 더 나은 선택이라고 할 수 없습니다. 면접에서 '평가는 어떤 주기로, 어떤 기준으로 이루어지는지', '비슷한 배경을 가진 사람이 이 직무에서 성장한 사례가 있는지' 등을 물어볼 수 있습니다. 이런 질문은 장기적인 발전에 대한 진지함을 보여주는 효과도 있어 양쪽 모두에게 도움이 됩니다."
+      ]
+    }
+  ],
+  "takeaways_ko": [
+    "연봉 숫자는 나눠서 봐야 한다: 기본급과 고정잔업수당의 비율이 그 수입의 '안정성'을 결정한다",
+    "수습 기간 처우, 전근 가능성, 평가 제도 — 채용공고가 보통 먼저 밝히지 않는 정보들이다",
+    "면접은 양방향으로 알아가는 기회이며, 이런 질문을 먼저 하는 것은 감점이 아니라 오히려 진지함을 보여준다",
+    "같은 연봉 숫자라도 업무 강도와 장기적인 성장 가능성은 완전히 다를 수 있다"
+  ],
+  "title_ja": "年収の高さは「合っている仕事」を意味しない：求人票で必ず確認すべき6項目",
+  "description_ja": "求人票が自分からは教えてくれない情報を、どう自分で掘り起こすか。",
+  "intro_ja": "求人票に書かれた年収の数字は、その仕事が良いかどうかを判断する第一基準になりがちですが、年収は待遇全体や仕事の強度を構成する変数の一つにすぎません。同じ「年収500万円」と書かれた2つの仕事でも、実際の労働時間、残業の強度、職務範囲はまったく異なることがあります。以下の6項目は、求人票で見落とされがちですが、実際の働き方に直接影響する情報です。",
+  "sections_ja": [
+    {
+      "heading": "1. 年収の内訳：基本給か、残業代込みか",
+      "body": [
+        "「年収500万円」という数字のうち、どれだけが基本給（固定月給×12＋賞与）で、どれだけが事前に含まれた残業代（固定残業代）なのか、求人票には明記されていないこともあります。面接時や内定承諾前に自分から確認する必要があります。同じ年収の数字でも、基本給の割合が高いほどその収入は「安定的」であり、かなりの部分が固定残業代であれば、その数字自体がすでに一定時間の残業を前提にしていることになります。"
+      ]
+    },
+    {
+      "heading": "2. みなし残業の時間の上限",
+      "body": [
+        "給与体系に固定残業代が含まれている場合、それが何時間分の「みなし残業」に対応しているのか、そしてその時間を超えた場合に別途残業代が支払われるのかを必ず確認しましょう。この情報は求人票の目立つ場所に書かれていないことが多く、面接で直接聞く必要があります。具体的な聞き方は同シリーズの別記事「固定残業代とは何か」も参考にしてください。"
+      ]
+    },
+    {
+      "heading": "3. 試用期間中の待遇の違い",
+      "body": [
+        "多くの会社では試用期間中（一般的に3〜6ヶ月）は給与や雇用条件が異なり、中には試用期間は「契約社員」という身分で、本採用後に「正社員」になるケースもあります。求人票に本採用後の待遇しか書かれていない場合は、試用期間中の具体的な条件と本採用の基準は何かを自分から確認する必要があります。"
+      ]
+    },
+    {
+      "heading": "4. 転勤の可能性",
+      "body": [
+        "複数の拠点や全国規模の事業を持つ会社の場合、その職種に「転勤あり」の可能性があるか、また断ることができるかを確認する必要があります。特定の在留資格を持つ人や、家族が特定の都市に落ち着いている人にとって、この項目は見落とされがちですが影響が大きいものです。転勤条件は通常雇用契約書に記載されますが、求人票の段階で聞いておくべきです。"
+      ]
+    },
+    {
+      "heading": "5. 制度上の数字ではなく実際の残業時間",
+      "body": [
+        "求人票に書かれた「残業月平均20時間程度」は、チームの実態とズレがあることがあります。特に繁忙期や特定の職種では顕著です。面接の中で将来の直属の上司や同僚と話す機会があれば、チームの実際の残業状況や繁忙期について丁寧に聞いてみると、数字だけを見るより参考になります。"
+      ]
+    },
+    {
+      "heading": "6. 評価制度と昇進のルート",
+      "body": [
+        "年収が高くても評価体系が不透明で昇進ルートが曖昧な場合、長期的には必ずしも良い選択とは言えません。面接で「評価はどのくらいの周期で、どんな基準で行われるのか」、「似たような背景の人がこのポジションでどう成長してきた例があるか」を聞くこともできます。こうした質問は、長期的なキャリアへの真剣さを示すことにもなり、双方にとってメリットがあります。"
+      ]
+    }
+  ],
+  "takeaways_ja": [
+    "年収の数字は分解して見る：基本給と固定残業代の比率が、その収入の「安定度」を左右する",
+    "試用期間中の待遇、転勤の可能性、評価制度は、求人票が自分から明記しないことが多い情報",
+    "面接は双方向に理解を深める機会であり、こうした質問をしても減点にはならず、むしろ真剣さが伝わる",
+    "同じ年収の数字でも、仕事の強度や長期的な成長の余地はまったく異なることがある"
   ]
 }

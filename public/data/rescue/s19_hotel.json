@@ -5193,6 +5193,515 @@
         }
       ],
       "furigana_flat": "はい、あさ10じまでのおあずかりで、ほんじつのゆうがた6じごろにしあがります。りょうきんはチェックアウトじにおへやだいとあわせてせいさんいたします。"
+    },
+    {
+      "jp": "ご滞在中のご利用料金について確認いたします。505号室のお部屋の冷蔵庫のご利用により、追加費用が1,500円発生しております。",
+      "zh": "关于您滞留期间的费用，我为您确认一下。由于505号室房间冰箱的使用，产生了1,500日元的追加费用。",
+      "zh-TW": "關於您滯留期間的費用，我為您確認一下。由於505號室房間冰箱的使用，產生了1,500日元的追加費用。",
+      "en": "Let me confirm the charges for your stay. Due to the use of the minibar in room 505, an additional charge of 1,500 yen has been incurred.",
+      "vi": "Tôi xin xác nhận chi phí trong thời gian lưu trú của quý khách. Do sử dụng tủ lạnh mini trong phòng 505, đã phát sinh phụ phí 1.500 yên.",
+      "ko": "체류 중 이용 요금에 대해 확인해 드리겠습니다. 505호실 냉장고 이용으로 인해 추가 요금 1,500엔이 발생했습니다.",
+      "scene": "追加精算",
+      "id": "s19-104",
+      "subcategory": "sub21",
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "ご",
+          "isKanji": false
+        },
+        {
+          "text": "滞在中",
+          "isKanji": true,
+          "reading": "たいざいちゅう"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "利用料金",
+          "isKanji": true,
+          "reading": "りようりょうきん"
+        },
+        {
+          "text": "について",
+          "isKanji": false
+        },
+        {
+          "text": "確認",
+          "isKanji": true,
+          "reading": "かくにん"
+        },
+        {
+          "text": "いたします。505",
+          "isKanji": false
+        },
+        {
+          "text": "号室",
+          "isKanji": true,
+          "reading": "ごうしつ"
+        },
+        {
+          "text": "のお",
+          "isKanji": false
+        },
+        {
+          "text": "部屋",
+          "isKanji": true,
+          "reading": "へや"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "冷蔵庫",
+          "isKanji": true,
+          "reading": "れいぞうこ"
+        },
+        {
+          "text": "のご",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "により、",
+          "isKanji": false
+        },
+        {
+          "text": "追加費用",
+          "isKanji": true,
+          "reading": "ついかひよう"
+        },
+        {
+          "text": "が1,500",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "発生",
+          "isKanji": true,
+          "reading": "はっせい"
+        },
+        {
+          "text": "しております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ごたいざいちゅうのごりようりょうきんについてかくにんいたします。505ごうしつのおへやのれいぞうこのごりようにより、ついかひようが1,500えんはっせいしております。"
+    },
+    {
+      "jp": "すみません、身に覚えのない項目があるのですが……その追加費用の内訳を詳しく教えていただけますか？",
+      "zh": "不好意思，有些项目我没有印象……能请您详细告诉我这笔追加费用的明细吗？",
+      "zh-TW": "不好意思，有些項目我沒有印象……能請您詳細告訴我這筆追加費用的明細嗎？",
+      "en": "Excuse me, there's a charge I don't recognize... Could you tell me the breakdown of this additional fee in detail?",
+      "vi": "Xin lỗi, có một khoản tôi không nhớ đã dùng... Anh/chị có thể cho tôi biết chi tiết khoản phụ phí này được không?",
+      "ko": "죄송한데, 기억에 없는 항목이 있어서요…… 이 추가 요금의 내역을 자세히 알려주시겠어요?",
+      "scene": "追加精算",
+      "id": "s19-105",
+      "subcategory": "sub21",
+      "role": "user",
+      "ruby": [
+        {
+          "text": "すみません、",
+          "isKanji": false
+        },
+        {
+          "text": "身",
+          "isKanji": true,
+          "reading": "み"
+        },
+        {
+          "text": "に",
+          "isKanji": false
+        },
+        {
+          "text": "覚",
+          "isKanji": true,
+          "reading": "おぼ"
+        },
+        {
+          "text": "えのない",
+          "isKanji": false
+        },
+        {
+          "text": "項目",
+          "isKanji": true,
+          "reading": "こうもく"
+        },
+        {
+          "text": "があるのですが……その",
+          "isKanji": false
+        },
+        {
+          "text": "追加費用",
+          "isKanji": true,
+          "reading": "ついかひよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "内訳",
+          "isKanji": true,
+          "reading": "うちわけ"
+        },
+        {
+          "text": "を",
+          "isKanji": false
+        },
+        {
+          "text": "詳",
+          "isKanji": true,
+          "reading": "くわ"
+        },
+        {
+          "text": "しく",
+          "isKanji": false
+        },
+        {
+          "text": "教",
+          "isKanji": true,
+          "reading": "おし"
+        },
+        {
+          "text": "えていただけますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "すみません、みにおぼえのないこうもくがあるのですが……そのついかひようのうちわけをくわしくおしえていただけますか？"
+    },
+    {
+      "jp": "失礼いたしました。お調べいたしますね。……内訳といたしましては、昨夜22時頃のビールとスナック代金が1,500円となっております。",
+      "zh": "非常抱歉。我为您查询一下……明细是这样的，昨晚22点左右的啤酒和零食费用是1,500日元。",
+      "zh-TW": "非常抱歉。我為您查詢一下……明細是這樣的，昨晚22點左右的啤酒和零食費用是1,500日元。",
+      "en": "I apologize. Let me look into it... The breakdown shows a charge of 1,500 yen for beer and snacks from around 10 PM last night.",
+      "vi": "Xin lỗi quý khách. Để tôi kiểm tra……Chi tiết là phí bia và đồ ăn nhẹ vào khoảng 22 giờ tối qua là 1.500 yên.",
+      "ko": "죄송합니다. 확인해 드리겠습니다……내역을 보니, 어젯밤 22시경 맥주와 스낵 요금이 1,500엔으로 되어 있습니다.",
+      "scene": "追加精算",
+      "id": "s19-106",
+      "subcategory": "sub21",
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "失礼",
+          "isKanji": true,
+          "reading": "しつれい"
+        },
+        {
+          "text": "いたしました。お",
+          "isKanji": false
+        },
+        {
+          "text": "調",
+          "isKanji": true,
+          "reading": "しら"
+        },
+        {
+          "text": "べいたしますね。……",
+          "isKanji": false
+        },
+        {
+          "text": "内訳",
+          "isKanji": true,
+          "reading": "うちわけ"
+        },
+        {
+          "text": "といたしましては、",
+          "isKanji": false
+        },
+        {
+          "text": "昨夜",
+          "isKanji": true,
+          "reading": "さくや"
+        },
+        {
+          "text": "22",
+          "isKanji": false
+        },
+        {
+          "text": "時頃",
+          "isKanji": true,
+          "reading": "じごろ"
+        },
+        {
+          "text": "のビールとスナック",
+          "isKanji": false
+        },
+        {
+          "text": "代金",
+          "isKanji": true,
+          "reading": "だいきん"
+        },
+        {
+          "text": "が1,500",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "となっております。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しつれいいたしました。おしらべいたしますね。……うちわけといたしましては、さくや22じごろのビールとスナックだいきんが1,500えんとなっております。"
+    },
+    {
+      "jp": "あ、それは利用しました。",
+      "zh": "啊，那个我确实用过。",
+      "zh-TW": "啊，那個我確實用過。",
+      "en": "Oh, I did use that.",
+      "vi": "À, cái đó tôi có dùng.",
+      "ko": "아, 그거 이용했어요.",
+      "scene": "追加精算",
+      "id": "s19-107",
+      "subcategory": "sub21",
+      "role": "user",
+      "ruby": [
+        {
+          "text": "あ、それは",
+          "isKanji": false
+        },
+        {
+          "text": "利用",
+          "isKanji": true,
+          "reading": "りよう"
+        },
+        {
+          "text": "しました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "あ、それはりようしました。"
+    },
+    {
+      "jp": "かしこまりました。本日の追加費用の総額は1,500円となります。お支払い方法はいかがいたしますか？",
+      "zh": "好的。今天的追加费用总额是1,500日元。请问您选择什么支付方式？",
+      "zh-TW": "好的。今天的追加費用總額是1,500日元。請問您選擇什麼支付方式？",
+      "en": "Understood. The total additional charge for today is 1,500 yen. How would you like to pay?",
+      "vi": "Vâng. Tổng phụ phí hôm nay là 1.500 yên. Quý khách muốn thanh toán bằng hình thức nào ạ?",
+      "ko": "알겠습니다. 오늘 추가 요금 총액은 1,500엔입니다. 결제 방법은 어떻게 하시겠어요?",
+      "scene": "追加精算",
+      "id": "s19-108",
+      "subcategory": "sub21",
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "かしこまりました。",
+          "isKanji": false
+        },
+        {
+          "text": "本日",
+          "isKanji": true,
+          "reading": "ほんじつ"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "追加費用",
+          "isKanji": true,
+          "reading": "ついかひよう"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "総額",
+          "isKanji": true,
+          "reading": "そうがく"
+        },
+        {
+          "text": "は1,500",
+          "isKanji": false
+        },
+        {
+          "text": "円",
+          "isKanji": true,
+          "reading": "えん"
+        },
+        {
+          "text": "となります。お",
+          "isKanji": false
+        },
+        {
+          "text": "支払",
+          "isKanji": true,
+          "reading": "しはら"
+        },
+        {
+          "text": "い",
+          "isKanji": false
+        },
+        {
+          "text": "方法",
+          "isKanji": true,
+          "reading": "ほうほう"
+        },
+        {
+          "text": "はいかがいたしますか？",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "かしこまりました。ほんじつのついかひようのそうがくは1,500えんとなります。おしはらいほうほうはいかがいたしますか？"
+    },
+    {
+      "jp": "クレジットカードでお願いします。",
+      "zh": "请用信用卡支付。",
+      "zh-TW": "請用信用卡支付。",
+      "en": "I'll pay by credit card, please.",
+      "vi": "Vui lòng thanh toán bằng thẻ tín dụng.",
+      "ko": "신용카드로 부탁드립니다.",
+      "scene": "追加精算",
+      "id": "s19-109",
+      "subcategory": "sub21",
+      "role": "user",
+      "ruby": [
+        {
+          "text": "クレジットカードでお願いします。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "クレジットカードでお願いします。"
+    },
+    {
+      "jp": "承知いたしました。カードをお預かりします。お手続き完了いたしました。こちらが追加分の明細書と領収書になります。カードの控えと一緒にお返しいたします。ありがとうございました。",
+      "zh": "好的。请出示您的卡。手续已办理完毕。这是追加部分的明细单和收据。连同信用卡回执一并交还给您。谢谢。",
+      "zh-TW": "好的。請出示您的卡。手續已辦理完畢。這是追加部分的明細單和收據。連同信用卡回執一併交還給您。謝謝。",
+      "en": "Certainly. I'll take your card. The transaction is complete. Here is the itemized statement and receipt for the additional charges, along with your card slip. Thank you very much.",
+      "vi": "Vâng, xin quý khách đưa thẻ. Thủ tục đã hoàn tất. Đây là hóa đơn chi tiết và biên lai cho khoản phụ phí, cùng với liên thẻ xin gửi lại quý khách. Xin cảm ơn quý khách.",
+      "ko": "알겠습니다. 카드를 받겠습니다. 처리가 완료되었습니다. 이것이 추가분 명세서와 영수증입니다. 카드 영수증과 함께 돌려드리겠습니다. 감사합니다.",
+      "scene": "追加精算",
+      "id": "s19-110",
+      "subcategory": "sub21",
+      "role": "staff",
+      "ruby": [
+        {
+          "text": "承知",
+          "isKanji": true,
+          "reading": "しょうち"
+        },
+        {
+          "text": "いたしました。カードをお",
+          "isKanji": false
+        },
+        {
+          "text": "預",
+          "isKanji": true,
+          "reading": "あず"
+        },
+        {
+          "text": "かりします。お",
+          "isKanji": false
+        },
+        {
+          "text": "手続",
+          "isKanji": true,
+          "reading": "てつづ"
+        },
+        {
+          "text": "き",
+          "isKanji": false
+        },
+        {
+          "text": "完了",
+          "isKanji": true,
+          "reading": "かんりょう"
+        },
+        {
+          "text": "いたしました。こちらが",
+          "isKanji": false
+        },
+        {
+          "text": "追加分",
+          "isKanji": true,
+          "reading": "ついかぶん"
+        },
+        {
+          "text": "の",
+          "isKanji": false
+        },
+        {
+          "text": "明細書",
+          "isKanji": true,
+          "reading": "めいさいしょ"
+        },
+        {
+          "text": "と",
+          "isKanji": false
+        },
+        {
+          "text": "領収書",
+          "isKanji": true,
+          "reading": "りょうしゅうしょ"
+        },
+        {
+          "text": "になります。カードの",
+          "isKanji": false
+        },
+        {
+          "text": "控",
+          "isKanji": true,
+          "reading": "ひか"
+        },
+        {
+          "text": "えと",
+          "isKanji": false
+        },
+        {
+          "text": "一緒",
+          "isKanji": true,
+          "reading": "いっしょ"
+        },
+        {
+          "text": "にお",
+          "isKanji": false
+        },
+        {
+          "text": "返",
+          "isKanji": true,
+          "reading": "かえ"
+        },
+        {
+          "text": "しいたします。ありがとうございました。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "しょうちいたしました。カードをおあずかりします。おてつづきかんりょういたしました。こちらがついかぶんのめいさいしょとりょうしゅうしょになります。カードのひかえといっしょにおかえしいたします。ありがとうございました。"
+    },
+    {
+      "jp": "ありがとうございます。",
+      "zh": "谢谢。",
+      "zh-TW": "謝謝。",
+      "en": "Thank you.",
+      "vi": "Cảm ơn.",
+      "ko": "감사합니다.",
+      "scene": "追加精算",
+      "id": "s19-111",
+      "subcategory": "sub21",
+      "role": "user",
+      "ruby": [
+        {
+          "text": "ありがとうございます。",
+          "isKanji": false
+        }
+      ],
+      "furigana_flat": "ありがとうございます。"
     }
   ]
 }

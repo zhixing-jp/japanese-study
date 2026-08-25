@@ -1,0 +1,96 @@
+---
+// 专业指南 —— 我的购买记录页。需要先登录（guides-auth.js管理的会话），
+// 页面加载后调用受保护的Edge Function（list-my-purchases），
+// 该函数用access_token反查登录邮箱，只返回这个邮箱名下的购买记录。
+import Base from '../../../layouts/Base.astro';
+import { SECTIONS } from '../../../data/sections';
+
+const title = `我的购买记录 | ${SECTIONS.guides.label} | Living Japanese · 日活`;
+---
+
+<Base title={title} description="查看你的购买记录，随时重新下载" guidesCss={true} noindex={true}>
+
+  <div class="guides-auth-page" id="guidesPurchasesPage">
+    <h1 class="guides-auth-title">我的购买记录</h1>
+    <p class="guides-auth-subtitle" id="gpUserEmail"></p>
+
+    <div id="gpLoading" class="guides-purchases-empty">加载中…</div>
+    <div id="gpList" class="guides-purchases-list" style="display:none"></div>
+    <div id="gpEmpty" class="guides-purchases-empty" style="display:none">还没有购买记录，去<a href="/guides/">专业指南</a>看看吧</div>
+    <div id="gpError" class="guides-auth-message guides-auth-message--error" style="display:none"></div>
+
+    <p style="margin-top:24px;text-align:center">
+      <button type="button" id="gpLogoutBtn" style="background:none;border:none;color:var(--t3);font-size:13px;text-decoration:underline;cursor:pointer;">退出登录</button>
+    </p>
+  </div>
+
+  <script is:inline src="/js/guides-auth.js"></script>
+  <script is:inline>
+    (function () {
+      // 与Edge Function约定的调用地址，实际值在Supabase部署完成后确定
+      var LIST_PURCHASES_ENDPOINT = 'https://igpvqipsojmbrbpjjzse.supabase.co/functions/v1/list-my-purchases';
+
+      function init() {
+        var session = window.ljGuidesAuth && window.ljGuidesAuth.getSession();
+        if (!session) {
+          window.location.href = '/guides/login/';
+          return;
+        }
+
+        document.getElementById('gpUserEmail').textContent = session.email;
+
+        var loadingEl = document.getElementById('gpLoading');
+        var listEl = document.getElementById('gpList');
+        var emptyEl = document.getElementById('gpEmpty');
+        var errorEl = document.getElementById('gpError');
+
+        fetch(LIST_PURCHASES_ENDPOINT, {
+          method: 'GET',
+          headers: { 'Authorization': 'Bearer ' + session.access_token }
+        }).then(function (res) {
+          if (res.status === 401) {
+            window.ljGuidesAuth.logout();
+            window.location.href = '/guides/login/';
+            return null;
+          }
+          if (!res.ok) throw new Error('list-my-purchases failed: ' + res.status);
+          return res.json();
+        }).then(function (data) {
+          if (!data) return;
+          loadingEl.style.display = 'none';
+          var purchases = data.purchases || [];
+          if (purchases.length === 0) {
+            emptyEl.style.display = 'block';
+            return;
+          }
+          listEl.style.display = 'flex';
+          purchases.forEach(function (p) {
+            var item = document.createElement('div');
+            item.className = 'guides-purchase-item';
+            var date = p.created_at ? new Date(p.created_at).toLocaleDateString('zh-CN') : '';
+            item.innerHTML =
+              '<div><div class="guides-purchase-title"></div><div class="guides-purchase-date"></div></div>' +
+              '<a class="guides-purchase-download">重新下载</a>';
+            item.querySelector('.guides-purchase-title').textContent = p.product_title || p.product_id;
+            item.querySelector('.guides-purchase-date').textContent = date ? ('购买于 ' + date) : '';
+            item.querySelector('.guides-purchase-download').href = '/download/?token=' + encodeURIComponent(p.download_token);
+            listEl.appendChild(item);
+          });
+        }).catch(function () {
+          loadingEl.style.display = 'none';
+          errorEl.style.display = 'block';
+          errorEl.textContent = '加载购买记录时遇到问题，请稍后重试';
+        });
+
+        document.getElementById('gpLogoutBtn').addEventListener('click', function () {
+          window.ljGuidesAuth.logout();
+          window.location.href = '/guides/';
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else { init(); }
+    })();
+  </script>
+
+</Base>

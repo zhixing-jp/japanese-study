@@ -1,8 +1,18 @@
 {
   "hub_short": {
-    "zh": "以下内容基于真实在日经验总结，仅供参考，不构成法律、劳动纠纷或签证方面的专业建议。"
+    "zh": "以下内容基于真实在日经验总结，仅供参考，不构成法律、劳动纠纷或签证方面的专业建议。",
+    "zh-TW": "以下內容基於真實在日經驗總結，僅供參考，不構成法律、勞動糾紛或簽證方面的專業建議。",
+    "en": "The following content is based on real experience living and working in Japan. It's for reference only and doesn't constitute professional legal, labor dispute, or visa advice.",
+    "vi": "Nội dung dưới đây được tổng hợp từ kinh nghiệm thực tế sống và làm việc tại Nhật, chỉ mang tính tham khảo, không cấu thành tư vấn chuyên môn về pháp luật, tranh chấp lao động hay visa.",
+    "ko": "아래 내용은 일본에서의 실제 경험을 바탕으로 정리한 것으로, 참고용일 뿐 법률, 노동 분쟁, 비자 관련 전문 자문에 해당하지 않습니다.",
+    "ja": "以下の内容は日本での実体験に基づいてまとめたものであり、参考情報にすぎず、法律・労働紛争・在留資格に関する専門的な助言ではありません。"
   },
   "page_full": {
-    "zh": "本板块内容基于在日生活与求职经验总结，仅供信息参考，不构成法律建议、劳动纠纷处理建议或签证/在留资格方面的专业意见。企业招聘惯例、劳动法规和行政制度可能随时间、行业、企业规模而有差异，具体情况请以雇主的书面说明、劳动合同、或专业律师/劳务士的意见为准。内容如有过时或不准确之处，欢迎反馈，我们会持续更新。"
+    "zh": "本板块内容基于在日生活与求职经验总结，仅供信息参考，不构成法律建议、劳动纠纷处理建议或签证/在留资格方面的专业意见。企业招聘惯例、劳动法规和行政制度可能随时间、行业、企业规模而有差异，具体情况请以雇主的书面说明、劳动合同、或专业律师/劳务士的意见为准。内容如有过时或不准确之处，欢迎反馈，我们会持续更新。",
+    "zh-TW": "本板塊內容基於在日生活與求職經驗總結，僅供資訊參考，不構成法律建議、勞動糾紛處理建議或簽證／在留資格方面的專業意見。企業招聘慣例、勞動法規和行政制度可能隨時間、產業、企業規模而有差異，具體情況請以雇主的書面說明、勞動合約、或專業律師／勞務士的意見為準。內容如有過時或不準確之處，歡迎反饋，我們會持續更新。",
+    "en": "This section is based on a summary of real experience living in Japan and job hunting here. It's intended for informational reference only and does not constitute legal advice, guidance on handling labor disputes, or professional advice on visas or residence status. Hiring practices, labor regulations, and administrative systems can vary over time, by industry, and by company size — for your specific situation, please rely on your employer's written statements, your employment contract, or the advice of a qualified lawyer or labor and social security attorney (sharoushi). If any content here is outdated or inaccurate, we welcome feedback and will keep it updated.",
+    "vi": "Nội dung trong mục này được tổng hợp từ kinh nghiệm thực tế sinh sống và tìm việc tại Nhật, chỉ mang tính tham khảo thông tin, không cấu thành tư vấn pháp lý, hướng dẫn xử lý tranh chấp lao động, hay ý kiến chuyên môn về visa/tư cách lưu trú. Thông lệ tuyển dụng của doanh nghiệp, quy định lao động và chế độ hành chính có thể khác nhau tùy theo thời điểm, ngành nghề, quy mô công ty — với tình huống cụ thể, vui lòng căn cứ vào văn bản của người sử dụng lao động, hợp đồng lao động, hoặc ý kiến của luật sư/chuyên gia lao động (sharoushi). Nếu nội dung có chỗ lỗi thời hoặc không chính xác, rất mong nhận được phản hồi để chúng tôi tiếp tục cập nhật.",
+    "ko": "이 섹션의 내용은 일본에서의 실제 생활 및 구직 경험을 바탕으로 정리한 것으로, 정보 참고용일 뿐 법률 자문, 노동 분쟁 처리에 대한 조언, 비자·재류자격에 관한 전문적인 의견에 해당하지 않습니다. 기업의 채용 관행, 노동 법규, 행정 제도는 시기, 업종, 기업 규모에 따라 차이가 있을 수 있으므로, 구체적인 상황은 고용주의 서면 안내, 근로계약서, 또는 전문 변호사·사회보험노무사(샤로시)의 의견을 기준으로 삼으시기 바랍니다. 내용 중 오래되었거나 부정확한 부분이 있다면 피드백을 환영하며, 지속적으로 업데이트하겠습니다.",
+    "ja": "このセクションの内容は、日本での生活および求職の実体験に基づいてまとめたものであり、情報提供のみを目的としています。法律的な助言、労働紛争への対応に関する助言、または在留資格に関する専門的な意見を構成するものではありません。企業の採用慣行、労働関連法規、行政制度は、時期・業種・企業規模によって異なる場合があります。個別の状況については、雇用主からの書面での説明、雇用契約書、または弁護士・社会保険労務士など専門家の意見を優先してください。内容に古い情報や不正確な点があれば、フィードバックをお待ちしております。随時更新してまいります。"
   }
 }

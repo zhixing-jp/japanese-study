@@ -1,7 +1,7 @@
 {
   "title": "固定残业代是什么意思？面试时该问什么？",
   "description": "薪资条上一个常被忽略的数字，可能决定你实际到手多少、加班多少。",
-  "intro": "「固定残业代」（也叫「みなし残業代」）是日本招聘信息里非常常见、但外国求职者最容易忽略或理解错误的一个薪资概念。它本身是合法的薪资结构，但如果不弄清楚具体规则，很容易在入职后发现实际情况和自己预期的不一样。",
+  "intro": "「固定残业代」（也叫「みなし残业代」）是日本招聘信息里非常常见、但外国求职者最容易忽略或理解错误的一个薪资概念。它本身是合法的薪资结构，但如果不弄清楚具体规则，很容易在入职后发现实际情况和自己预期的不一样。",
   "sections": [
     {
       "heading": "固定残业代到底是什么",
@@ -30,5 +30,165 @@
     "它不等于「必须加班到那个时长」，而是薪资的计算方式",
     "超出约定时长的加班，公司依然有义务另外支付，不能一概而论说「已经包在工资里」",
     "面试时主动确认时长、结算规则、是否含在月给总数内，是正常且必要的提问"
+  ],
+  "title_zh-TW": "固定加班費是什麼意思？面試時該問什麼？",
+  "description_zh-TW": "薪資單上一個常被忽略的數字，可能決定你實際到手多少、加班多少。",
+  "intro_zh-TW": "「固定加班費」（也叫「みなし残業代」）是日本招聘資訊裡非常常見、但外國求職者最容易忽略或理解錯誤的一個薪資概念。它本身是合法的薪資結構，但如果不弄清楚具體規則，很容易在到職後發現實際情況和自己預期的不一樣。",
+  "sections_zh-TW": [
+    {
+      "heading": "固定加班費到底是什麼",
+      "body": [
+        "簡單說，固定加班費是公司把「一定時長的加班費」提前包含在月薪裡，不管你當月實際加班了多少小時，只要不超過約定的時長上限，公司都按這個固定金額支付，不會額外單獨結算。比如「月給30萬円（うち固定残業代5万円/45時間分を含む）」，意思是這30萬裡已經包含了45小時加班量對應的加班費。",
+        "這個制度本身是被日本勞動基準法認可的，關鍵在於兩點：公司必須明確告知你固定加班費對應的具體時長和金額（不能只寫一個模糊的總數），以及超過約定時長的部分，公司仍然有義務另外支付加班費——這兩點如果任何一點沒有被明確寫在雇用契約書或就業規則裡，就屬於不合規的操作。"
+      ]
+    },
+    {
+      "heading": "容易被誤解的地方",
+      "body": [
+        "第一個誤解是把「固定加班費45小時」理解成「公司要求我每個月必須加班45小時」——實際上這只是薪資的計算方式，不是加班時長的強制要求，你不加班或者少加班，理論上固定加班費依然照發。",
+        "第二個誤解是以為「反正加班費已經包在工資裡了，加多少都不會再有錢拿」——這是錯誤的，只要超出約定的時長上限，公司仍然需要按照實際超出的部分另外支付。如果公司以「工資已經包含加班費」為由，長期要求超過約定時長的無償加班，這本身就是違反勞動基準法的做法。"
+      ]
+    },
+    {
+      "heading": "面試或收到offer時該問什麼",
+      "body": [
+        "可以直接、禮貌地確認幾個具體問題：固定加班費對應多少小時（比如是20小時還是45小時，差別很大）；如果當月實際加班超過這個時長，超出部分是否會另外結算，結算方式和週期是什麼；這個固定加班費金額，是包含在求才資訊寫的「月給」總數裡，還是額外單獨列出的。",
+        "這些問題不屬於「不信任對方」的表現，在日本職場裡，主動確認薪資構成細節是求職者的正常權利，大多數正規公司的HR都能清楚回答。如果對方在這個問題上含糊其辭、不願意給出具體時長和結算規則，反而是一個需要謹慎對待的訊號。"
+      ]
+    }
+  ],
+  "takeaways_zh-TW": [
+    "固定加班費 = 提前包含在月薪裡的一定時長加班費，本身是合法制度",
+    "它不等於「必須加班到那個時長」，而是薪資的計算方式",
+    "超出約定時長的加班，公司依然有義務另外支付，不能一概而論說「已經包在工資裡」",
+    "面試時主動確認時長、結算規則、是否含在月給總數內，是正常且必要的提問"
+  ],
+  "title_en": "What Is \"Fixed Overtime Pay\"? What Should You Ask About It in an Interview?",
+  "description_en": "An easily overlooked number on a Japanese pay slip that can determine both how much you take home and how much you're expected to work.",
+  "intro_en": "\"Fixed overtime pay\" (固定残業代, also called みなし残業代) is an extremely common salary concept in Japanese job postings, and one of the things foreign job seekers most often overlook or misunderstand. It's a legitimate salary structure on its own — the risk is finding out after you've joined that the actual situation doesn't match what you assumed.",
+  "sections_en": [
+    {
+      "heading": "What fixed overtime pay actually is",
+      "body": [
+        "In simple terms, fixed overtime pay means the company bundles a set number of overtime hours' worth of pay into your monthly salary in advance. As long as your actual overtime that month doesn't exceed the agreed cap, you're paid the same fixed amount regardless of exactly how many hours you worked, with no separate settlement. For example, \"monthly salary ¥300,000 (including ¥50,000 / 45 hours of fixed overtime pay)\" means that ¥300,000 already includes the overtime pay corresponding to 45 hours of overtime.",
+        "This structure itself is recognized under Japan's Labor Standards Act, but two conditions have to be met: the company must clearly state exactly how many hours and how much money the fixed overtime pay corresponds to (a vague total isn't enough), and the company is still obligated to pay extra for any overtime beyond that agreed amount. If either of these isn't clearly stated in the employment contract or workplace rules, that's a non-compliant arrangement."
+      ]
+    },
+    {
+      "heading": "Common misunderstandings",
+      "body": [
+        "The first misunderstanding is reading \"45 hours of fixed overtime\" as \"the company requires me to work 45 hours of overtime every month.\" In reality, this is just how the salary is calculated, not a mandatory overtime quota — if you work less overtime or none at all, the fixed overtime pay is, in principle, still paid in full.",
+        "The second misunderstanding is assuming \"since overtime pay is already baked into my salary, working more overtime gets me nothing extra.\" This is incorrect — once you exceed the agreed cap, the company still has to pay you separately for the excess. If a company uses \"your salary already includes overtime\" as a justification for regularly demanding unpaid overtime beyond that cap, that itself is a violation of the Labor Standards Act."
+      ]
+    },
+    {
+      "heading": "What to ask during the interview or after receiving an offer",
+      "body": [
+        "You can directly and politely confirm a few specific things: exactly how many hours the fixed overtime pay corresponds to (20 hours versus 45 hours makes a huge difference); whether any overtime beyond that gets paid separately, and what the settlement method and cycle look like; and whether the fixed overtime pay amount is included in the \"monthly salary\" total shown in the posting, or listed separately.",
+        "None of this comes across as \"not trusting the employer.\" In Japanese workplaces, proactively confirming the details of a salary structure is a completely normal right for job seekers, and most legitimate companies' HR staff can answer clearly. If an employer is evasive on this point and won't give you specific hours or a clear settlement method, that itself is a signal worth taking seriously."
+      ]
+    }
+  ],
+  "takeaways_en": [
+    "Fixed overtime pay = a set amount of overtime pay bundled into your monthly salary in advance — a legitimate structure on its own",
+    "It does NOT mean you're required to work that many overtime hours — it's simply how the salary is calculated",
+    "The company must still pay extra for overtime beyond the agreed cap — \"it's already included in your salary\" doesn't apply beyond that limit",
+    "Proactively confirming the hours, the settlement method, and whether it's included in the headline salary figure is a normal and necessary question to ask"
+  ],
+  "title_vi": "Tiền tăng ca cố định là gì? Khi phỏng vấn nên hỏi gì?",
+  "description_vi": "Một con số dễ bị bỏ qua trên phiếu lương, có thể quyết định bạn thực nhận bao nhiêu và phải tăng ca bao nhiêu.",
+  "intro_vi": "\"Tiền tăng ca cố định\" (固定残業代, còn gọi là みなし残業代) là một khái niệm lương rất phổ biến trong tin tuyển dụng ở Nhật, nhưng cũng là điều người nước ngoài dễ bỏ qua hoặc hiểu sai nhất. Bản thân chế độ này hoàn toàn hợp pháp, nhưng nếu không hiểu rõ quy tắc cụ thể, rất dễ sau khi vào làm mới phát hiện tình hình thực tế khác với những gì mình kỳ vọng.",
+  "sections_vi": [
+    {
+      "heading": "Tiền tăng ca cố định thực chất là gì",
+      "body": [
+        "Nói đơn giản, tiền tăng ca cố định là việc công ty tính gộp trước \"tiền tăng ca cho một số giờ nhất định\" vào lương tháng. Bất kể tháng đó bạn thực tế tăng ca bao nhiêu giờ, chỉ cần không vượt quá giới hạn thời gian đã thỏa thuận, công ty vẫn trả đúng số tiền cố định đó, không tính riêng thêm. Ví dụ \"lương tháng 300.000 yên (trong đó gồm 50.000 yên tiền tăng ca cố định tương đương 45 giờ)\", nghĩa là trong 300.000 yên đó đã bao gồm tiền tăng ca tương ứng với 45 giờ.",
+        "Bản thân chế độ này được Luật Tiêu chuẩn Lao động Nhật Bản công nhận, nhưng điểm mấu chốt nằm ở hai điều: công ty phải nói rõ tiền tăng ca cố định tương ứng với bao nhiêu giờ và bao nhiêu tiền cụ thể (không được chỉ ghi một con số tổng mơ hồ), và phần vượt quá thời gian đã thỏa thuận, công ty vẫn có nghĩa vụ trả thêm riêng — nếu một trong hai điều này không được ghi rõ trong hợp đồng lao động hoặc quy chế làm việc, đó là cách làm không đúng quy định."
+      ]
+    },
+    {
+      "heading": "Những hiểu lầm thường gặp",
+      "body": [
+        "Hiểu lầm thứ nhất là coi \"tiền tăng ca cố định 45 giờ\" là \"công ty yêu cầu tôi phải tăng ca đủ 45 giờ mỗi tháng\" — thực ra đây chỉ là cách tính lương, không phải yêu cầu bắt buộc về thời gian tăng ca. Nếu bạn không tăng ca hoặc tăng ca ít hơn, về nguyên tắc tiền tăng ca cố định vẫn được trả đầy đủ.",
+        "Hiểu lầm thứ hai là nghĩ rằng \"đằng nào tiền tăng ca cũng đã gộp vào lương rồi, tăng ca bao nhiêu cũng không được trả thêm\" — đây là sai. Chỉ cần vượt quá giới hạn thời gian đã thỏa thuận, công ty vẫn phải trả thêm cho phần vượt quá theo thực tế. Nếu công ty lấy lý do \"lương đã bao gồm tiền tăng ca\" để yêu cầu tăng ca không lương vượt quá giới hạn một cách kéo dài, bản thân điều đó đã vi phạm Luật Tiêu chuẩn Lao động."
+      ]
+    },
+    {
+      "heading": "Khi phỏng vấn hoặc nhận offer nên hỏi gì",
+      "body": [
+        "Bạn có thể trực tiếp và lịch sự xác nhận vài điều cụ thể: tiền tăng ca cố định tương ứng với bao nhiêu giờ (20 giờ hay 45 giờ khác nhau rất nhiều); nếu tháng đó thực tế tăng ca vượt quá thời gian này, phần vượt quá có được tính thêm hay không, cách tính và chu kỳ thanh toán ra sao; số tiền tăng ca cố định này nằm trong tổng \"lương tháng\" ghi trên tin tuyển dụng, hay được liệt kê riêng.",
+        "Những câu hỏi này không phải là biểu hiện \"không tin tưởng đối phương\". Trong môi trường công sở Nhật, chủ động xác nhận chi tiết cơ cấu lương là quyền bình thường của người xin việc, và hầu hết bộ phận nhân sự của các công ty chính quy đều có thể trả lời rõ ràng. Nếu đối phương né tránh, không chịu đưa ra con số giờ cụ thể và quy tắc thanh toán, đó lại là một tín hiệu cần thận trọng."
+      ]
+    }
+  ],
+  "takeaways_vi": [
+    "Tiền tăng ca cố định = tiền tăng ca cho một số giờ nhất định được gộp sẵn vào lương tháng, bản thân là chế độ hợp pháp",
+    "Nó không có nghĩa là \"bắt buộc phải tăng ca đủ số giờ đó\", mà chỉ là cách tính lương",
+    "Phần tăng ca vượt quá thời gian đã thỏa thuận, công ty vẫn có nghĩa vụ trả thêm, không thể nói chung chung là \"đã gộp trong lương rồi\"",
+    "Chủ động xác nhận số giờ, quy tắc thanh toán, có nằm trong tổng lương tháng hay không khi phỏng vấn là câu hỏi bình thường và cần thiết"
+  ],
+  "title_ko": "고정잔업수당이란 무엇인가? 면접에서 무엇을 물어봐야 할까?",
+  "description_ko": "급여명세서에서 자주 간과되는 숫자 하나가, 실수령액과 야근 시간을 결정할 수 있습니다.",
+  "intro_ko": "'고정잔업수당'(固定残業代, 'みなし残業代'라고도 함)은 일본 채용공고에서 매우 흔히 등장하지만, 외국인 구직자가 가장 간과하거나 오해하기 쉬운 급여 개념입니다. 이 제도 자체는 합법적인 급여 구조이지만, 구체적인 규칙을 제대로 파악하지 못하면 입사 후 실제 상황이 예상과 다르다는 것을 뒤늦게 알게 되기 쉽습니다.",
+  "sections_ko": [
+    {
+      "heading": "고정잔업수당이란 정확히 무엇인가",
+      "body": [
+        "간단히 말하면, 고정잔업수당은 회사가 '일정 시간만큼의 잔업수당'을 미리 월급에 포함시켜 지급하는 방식입니다. 그 달에 실제로 몇 시간을 야근했든, 약정된 시간 상한을 넘지 않는 한 회사는 이 고정 금액을 그대로 지급하며 별도로 정산하지 않습니다. 예를 들어 '월급 30만엔(그중 고정잔업수당 5만엔/45시간분 포함)'이라면, 이 30만엔 안에 이미 45시간의 잔업에 해당하는 수당이 포함되어 있다는 뜻입니다.",
+        "이 제도 자체는 일본 노동기준법상 인정되는 것이지만, 핵심은 두 가지입니다: 회사는 고정잔업수당이 몇 시간, 얼마의 금액에 해당하는지 명확히 알려야 하며(모호한 총액만 적어서는 안 됨), 약정된 시간을 초과한 부분에 대해서는 회사가 여전히 별도로 지급할 의무가 있습니다 — 이 두 가지 중 하나라도 고용계약서나 취업규칙에 명확히 적혀 있지 않다면, 그 자체가 규정 위반에 해당합니다."
+      ]
+    },
+    {
+      "heading": "오해하기 쉬운 부분",
+      "body": [
+        "첫 번째 오해는 '고정잔업수당 45시간'을 '회사가 매달 반드시 45시간 야근하라고 요구하는 것'으로 이해하는 것입니다 — 실제로는 이것은 단지 급여 계산 방식일 뿐, 야근 시간을 강제하는 것이 아닙니다. 야근을 하지 않거나 적게 하더라도 이론상 고정잔업수당은 그대로 지급됩니다.",
+        "두 번째 오해는 '어차피 잔업수당이 이미 급여에 포함되어 있으니, 얼마를 더 일해도 추가로 받을 돈이 없다'고 생각하는 것입니다 — 이는 잘못된 생각입니다. 약정된 시간 상한을 초과하기만 하면 회사는 실제 초과분에 대해 별도로 지급해야 합니다. 만약 회사가 '급여에 이미 잔업수당이 포함되어 있다'는 이유로 약정 시간을 초과하는 무급 야근을 장기적으로 요구한다면, 그 자체가 노동기준법 위반입니다."
+      ]
+    },
+    {
+      "heading": "면접이나 오퍼를 받았을 때 무엇을 물어봐야 할까",
+      "body": [
+        "직접, 정중하게 몇 가지 구체적인 사항을 확인할 수 있습니다: 고정잔업수당이 몇 시간에 해당하는지(20시간과 45시간은 차이가 매우 큽니다), 그 달 실제 야근이 이 시간을 초과할 경우 초과분이 별도로 정산되는지, 정산 방식과 주기는 어떻게 되는지, 그리고 이 고정잔업수당 금액이 채용공고에 적힌 '월급' 총액에 포함된 것인지 별도로 표기된 것인지.",
+        "이런 질문들은 '상대방을 믿지 못하는' 태도가 아닙니다. 일본 직장에서는 급여 구성의 세부사항을 먼저 확인하는 것이 구직자의 정당한 권리이며, 대부분의 정규 회사 인사담당자는 명확하게 답변할 수 있습니다. 만약 상대방이 이 질문에 애매하게 답하거나 구체적인 시간과 정산 규칙을 알려주지 않으려 한다면, 그것 자체가 신중하게 받아들여야 할 신호입니다."
+      ]
+    }
+  ],
+  "takeaways_ko": [
+    "고정잔업수당 = 일정 시간만큼의 잔업수당을 미리 월급에 포함시킨 것으로, 그 자체는 합법적인 제도다",
+    "'반드시 그만큼 야근해야 한다'는 의미가 아니라, 단지 급여 계산 방식일 뿐이다",
+    "약정 시간을 초과한 야근은 회사가 여전히 별도로 지급할 의무가 있으며, '이미 급여에 포함되어 있다'는 말로 뭉뚱그릴 수 없다",
+    "면접에서 시간, 정산 규칙, 월급 총액에 포함되는지 여부를 먼저 확인하는 것은 정상적이고 필요한 질문이다"
+  ],
+  "title_ja": "固定残業代とは何か？面接では何を聞くべきか？",
+  "description_ja": "給与明細で見落とされがちな数字が、実際の手取りと残業時間を左右することがあります。",
+  "intro_ja": "「固定残業代」（「みなし残業代」とも呼ばれます）は、日本の求人情報に非常によく登場するものの、外国人求職者が最も見落としたり誤解したりしやすい給与の仕組みです。制度自体は合法ですが、具体的なルールを理解しないまま入社すると、実際の状況が想定と違うことに後から気づくことになりかねません。",
+  "sections_ja": [
+    {
+      "heading": "固定残業代とは実際どういうものか",
+      "body": [
+        "簡単に言うと、固定残業代とは「一定時間分の残業代」をあらかじめ月給に含めておく仕組みです。その月に実際何時間残業したかにかかわらず、あらかじめ決められた時間の上限を超えない限り、会社はこの固定額をそのまま支払い、別途精算はしません。例えば「月給30万円（うち固定残業代5万円／45時間分を含む）」であれば、この30万円にはすでに45時間分の残業代が含まれているという意味です。",
+        "この制度自体は労働基準法上認められていますが、重要なのは次の2点です：会社は固定残業代が何時間分・いくらに相当するかを明確に示さなければならず（曖昧な総額だけではいけません）、その時間を超えた分については会社に別途支払う義務があります。このどちらかが雇用契約書や就業規則に明記されていなければ、それは不適切な運用にあたります。"
+      ]
+    },
+    {
+      "heading": "誤解しやすいポイント",
+      "body": [
+        "1つ目の誤解は、「固定残業代45時間分」を「毎月45時間残業しなければならない」と理解してしまうことです——実際にはこれは単なる給与の計算方法であり、残業時間を強制するものではありません。残業をしない、または少ない場合でも、理論上は固定残業代はそのまま支払われます。",
+        "2つ目の誤解は、「どうせ残業代はすでに給与に含まれているのだから、いくら残業しても追加でもらえるお金はない」と考えてしまうことです——これは誤りです。約定された時間の上限を超えた分については、会社は実際の超過分について別途支払う義務があります。もし会社が「給与に残業代が含まれている」ことを理由に、約定時間を超える無償残業を継続的に求めるのであれば、それ自体が労働基準法違反にあたります。"
+      ]
+    },
+    {
+      "heading": "面接や内定時に何を聞くべきか",
+      "body": [
+        "次のような具体的な点を、直接かつ丁寧に確認するとよいでしょう：固定残業代は何時間分に相当するか（20時間なのか45時間なのかで大きく違います）、その月の実際の残業がこの時間を超えた場合、超過分は別途精算されるのか、精算方法や周期はどうなっているか、そしてこの固定残業代の金額は求人票に書かれている「月給」の総額に含まれているのか、別立てになっているのか。",
+        "これらの質問は「相手を信用していない」ことを意味するものではありません。日本の職場では、給与構成の詳細を自分から確認することは求職者の正当な権利であり、まともな会社の人事担当者であれば明確に答えられるはずです。この点について曖昧にごまかしたり、具体的な時間や精算ルールを示そうとしない場合は、むしろ注意すべきサインといえます。"
+      ]
+    }
+  ],
+  "takeaways_ja": [
+    "固定残業代＝一定時間分の残業代をあらかじめ月給に含めたもの。それ自体は合法な制度",
+    "「その時間分必ず残業しなければならない」という意味ではなく、単なる給与の計算方法である",
+    "約定時間を超えた残業には会社に別途支払う義務があり、「もう給与に含まれている」の一言では済まされない",
+    "面接で時間数・精算ルール・月給総額に含まれるかどうかを自分から確認するのは、正当かつ必要な質問である"
   ]
 }

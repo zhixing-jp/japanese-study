@@ -40,5 +40,215 @@
     "口头承诺和书面契约不一致时，以书面为准，发现问题及时要求书面澄清",
     "转勤条款、竞业限制这类容易被忽略的条款，往往影响更长远",
     "主动确认细节是求职者的正常权利，不是不信任对方的表现"
+  ],
+  "title_zh-TW": "拿到Offer後，先確認這10件事",
+  "description_zh-TW": "簽字前的最後一次自查，比事後維權容易太多。",
+  "intro_zh-TW": "收到內定通知（offer）是求職過程裡最讓人鬆一口氣的時刻，但也正因為如此，很多人容易在這個階段放鬆警惕，急著簽字確認。雇用契約書上的條款一旦簽署，之後再想調整會困難很多。以下10項，建議在正式簽字前逐一核對清楚。",
+  "sections_zh-TW": [
+    {
+      "heading": "薪資相關（1-4）",
+      "body": [
+        "1. 基本給與固定加班費是否分開寫明，固定加班費對應多少小時——如果雇用契約書上只寫了一個籠統的月給總額，務必要求對方書面說明構成。",
+        "2. 通勤交通費的支付方式和上限——有些公司是全額支付，有些設有月度上限，需要確認自己的通勤成本是否會超出。",
+        "3. 賞與（獎金）的發放條件——是保證發放還是根據公司業績浮動，浮動的話大致參考過去的發放比例是多少。",
+        "4. 昇給（調薪）的週期和評價標準——年薪制還是每年有調薪機會，調薪依據什麼標準評估。"
+      ]
+    },
+    {
+      "heading": "雇用型態相關（5-7）",
+      "body": [
+        "5. 正社員還是契約社員——如果是契約社員，合約期限多長，續約條件是什麼，是否有轉為正社員的路徑和時間節點。",
+        "6. 試用期長度和試用期內的待遇差異——試用期內是否降薪、是否有不同的雇用條件，轉正的具體標準是什麼（很多公司這一條寫得比較模糊，值得主動問清楚）。",
+        "7. 轉勤（異地調動）條款——是否存在被要求調往其他城市或分部工作的可能性，能否拒絕，拒絕是否會影響雇用關係。"
+      ]
+    },
+    {
+      "heading": "其他條款（8-10）",
+      "body": [
+        "8. 有給休假（帶薪年假）的起算和天數——到職多久開始可以使用，第一年大概能有多少天，是否有強制消化的要求。",
+        "9. 離職時的通知義務——契約裡通常會寫明離職需要提前多久告知公司（常見是1-3個月），了解這一條能幫你未來規劃離職時間線。",
+        "10. 競業限制或保密條款——是否有離職後一定期限內不得任職競爭公司的條款，條款範圍是否合理（過度寬泛的競業限制在日本法律上不一定完全有效，但了解條款內容本身很重要）。"
+      ]
+    },
+    {
+      "heading": "如果發現條款和口頭承諾不一致怎麼辦",
+      "body": [
+        "面試或談offer階段口頭提到的條件，和正式雇用契約書上的文字不一致時，以書面文件為準。發現不一致，應該直接、禮貌地向HR提出確認，要求書面澄清或修改，而不是假設「口頭說的應該算數」。這不是不信任對方，而是保護自己的正常做法——正規公司通常都能理解並配合確認。"
+      ]
+    }
+  ],
+  "takeaways_zh-TW": [
+    "簽字前逐項核對薪資構成、雇用型態、休假與離職條款，比事後處理糾紛容易得多",
+    "口頭承諾和書面契約不一致時，以書面為準，發現問題及時要求書面澄清",
+    "轉勤條款、競業限制這類容易被忽略的條款，往往影響更長遠",
+    "主動確認細節是求職者的正常權利，不是不信任對方的表現"
+  ],
+  "title_en": "You Got an Offer — Confirm These 10 Things Before You Sign",
+  "description_en": "One last check before signing, far easier than trying to fix things after the fact.",
+  "intro_en": "Getting an offer is one of the most relieving moments in a job search — and precisely because of that, it's easy to let your guard down and rush to sign. Once you've signed an employment contract, adjusting its terms afterward is much harder. Here are 10 things worth checking carefully before you sign anything official.",
+  "sections_en": [
+    {
+      "heading": "Salary-related (1–4)",
+      "body": [
+        "1. Are base pay and fixed overtime pay listed separately, and how many hours does the fixed overtime pay correspond to? If the contract only shows a lump-sum monthly figure, insist on getting the breakdown in writing.",
+        "2. How is commuting cost reimbursed, and is there a monthly cap? Some companies cover it in full; others cap it monthly — check whether your actual commute cost would exceed that cap.",
+        "3. What are the conditions for bonus payouts — guaranteed, or tied to company performance? If it's performance-linked, get a rough sense of the historical payout ratio.",
+        "4. What's the raise cycle and evaluation criteria — is it a fixed annual-salary structure, or are there annual raise opportunities, and what standard determines a raise?"
+      ]
+    },
+    {
+      "heading": "Employment status-related (5–7)",
+      "body": [
+        "5. Full employee (正社員) or contract employee (契約社員)? If it's a contract position, how long is the term, what are the renewal conditions, and is there a path — and a timeline — to converting to full employee status?",
+        "6. How long is the probation period, and what's different about the terms during it? Is pay lower during probation, are the employment conditions different, and what exactly is the standard for converting to full status? (Many companies leave this vague — it's worth asking directly.)",
+        "7. What does the relocation (転勤) clause say? Is there a possibility of being required to transfer to another city or branch, can you decline, and would declining affect your employment status?"
+      ]
+    },
+    {
+      "heading": "Other clauses (8–10)",
+      "body": [
+        "8. When does paid annual leave start accruing, and how many days do you get? How soon after starting can you use it, roughly how many days in your first year, and is there a requirement to use a minimum amount?",
+        "9. What's the notice requirement for resigning? Contracts typically specify how far in advance you need to notify the company before leaving (commonly 1–3 months) — knowing this helps you plan any future exit timeline.",
+        "10. Is there a non-compete or confidentiality clause? Does it restrict you from joining a competing company for a set period after leaving, and is the scope reasonable? (An overly broad non-compete clause isn't necessarily fully enforceable under Japanese law, but understanding what it says still matters.)"
+      ]
+    },
+    {
+      "heading": "What to do if the written contract doesn't match what was said verbally",
+      "body": [
+        "When conditions mentioned verbally during the interview or offer stage don't match the actual wording in the employment contract, the written document takes precedence. If you spot a discrepancy, raise it directly and politely with HR and ask for written clarification or correction — don't assume the verbal statement will simply hold. This isn't about distrust; it's a normal way of protecting yourself, and a legitimate company will generally understand and work with you to confirm it."
+      ]
+    }
+  ],
+  "takeaways_en": [
+    "Checking salary structure, employment status, leave, and resignation terms item by item before signing is far easier than resolving a dispute afterward",
+    "When a verbal promise and the written contract disagree, the written document wins — raise any discrepancy and ask for written clarification",
+    "Easy-to-overlook clauses like relocation and non-compete terms often have the longest-lasting impact",
+    "Proactively confirming these details is a normal right for job seekers, not a sign of distrust"
+  ],
+  "title_vi": "Nhận được Offer rồi, hãy xác nhận 10 điều này trước khi ký",
+  "description_vi": "Lần tự kiểm tra cuối cùng trước khi ký, dễ dàng hơn rất nhiều so với việc đòi quyền lợi sau này.",
+  "intro_vi": "Nhận được thông báo nội định (offer) là một trong những khoảnh khắc nhẹ nhõm nhất trong quá trình tìm việc, nhưng cũng chính vì vậy mà nhiều người dễ mất cảnh giác ở giai đoạn này, vội vàng ký xác nhận. Một khi các điều khoản trong hợp đồng lao động đã được ký, sau này muốn điều chỉnh sẽ khó khăn hơn nhiều. Dưới đây là 10 điều nên kiểm tra kỹ từng mục trước khi chính thức đặt bút ký.",
+  "sections_vi": [
+    {
+      "heading": "Liên quan đến lương (1-4)",
+      "body": [
+        "1. Lương cơ bản và tiền tăng ca cố định có được ghi tách riêng không, tiền tăng ca cố định tương ứng với bao nhiêu giờ — nếu hợp đồng lao động chỉ ghi một con số tổng mơ hồ, nhất định phải yêu cầu đối phương giải thích rõ cấu thành bằng văn bản.",
+        "2. Cách chi trả phí giao thông đi lại và mức trần — có công ty trả toàn bộ, có công ty đặt mức trần hàng tháng, cần xác nhận chi phí đi lại thực tế của mình có vượt quá hay không.",
+        "3. Điều kiện chi trả thưởng (賞与) — được đảm bảo chi trả hay dao động theo tình hình kinh doanh của công ty, nếu dao động thì tỷ lệ chi trả những năm trước là bao nhiêu.",
+        "4. Chu kỳ tăng lương (昇給) và tiêu chuẩn đánh giá — chế độ lương năm hay có cơ hội tăng lương hàng năm, việc tăng lương dựa trên tiêu chuẩn đánh giá nào."
+      ]
+    },
+    {
+      "heading": "Liên quan đến hình thức tuyển dụng (5-7)",
+      "body": [
+        "5. Nhân viên chính thức (正社員) hay nhân viên hợp đồng (契約社員) — nếu là nhân viên hợp đồng, thời hạn hợp đồng bao lâu, điều kiện gia hạn là gì, có lộ trình và thời điểm chuyển thành nhân viên chính thức hay không.",
+        "6. Thời gian thử việc và sự khác biệt về đãi ngộ trong thời gian thử việc — thời gian thử việc có bị giảm lương không, có điều kiện tuyển dụng khác không, tiêu chuẩn cụ thể để chuyển chính thức là gì (nhiều công ty ghi mục này khá mơ hồ, đáng để chủ động hỏi rõ).",
+        "7. Điều khoản điều chuyển công tác (転勤) — có khả năng bị yêu cầu điều chuyển đến thành phố hoặc chi nhánh khác hay không, có thể từ chối hay không, việc từ chối có ảnh hưởng đến quan hệ lao động hay không."
+      ]
+    },
+    {
+      "heading": "Các điều khoản khác (8-10)",
+      "body": [
+        "8. Cách tính ngày bắt đầu và số ngày nghỉ phép có lương (有給休暇) — bao lâu sau khi vào làm thì được sử dụng, năm đầu tiên khoảng bao nhiêu ngày, có yêu cầu bắt buộc sử dụng hết hay không.",
+        "9. Nghĩa vụ thông báo khi nghỉ việc — hợp đồng thường ghi rõ cần thông báo trước cho công ty bao lâu trước khi nghỉ việc (thường là 1-3 tháng), hiểu rõ điều này giúp bạn lên kế hoạch thời gian nghỉ việc trong tương lai.",
+        "10. Điều khoản hạn chế cạnh tranh hoặc bảo mật — có điều khoản cấm vào làm cho công ty đối thủ trong một khoảng thời gian nhất định sau khi nghỉ việc không, phạm vi điều khoản có hợp lý không (điều khoản hạn chế cạnh tranh quá rộng chưa chắc hoàn toàn có hiệu lực theo luật Nhật Bản, nhưng việc hiểu rõ nội dung điều khoản vẫn rất quan trọng)."
+      ]
+    },
+    {
+      "heading": "Nếu phát hiện điều khoản không khớp với lời hứa miệng thì làm sao",
+      "body": [
+        "Khi điều kiện được nói miệng trong giai đoạn phỏng vấn hoặc đàm phán offer không khớp với văn bản chính thức trong hợp đồng lao động, hãy lấy văn bản làm chuẩn. Khi phát hiện sự không nhất quán, nên trực tiếp và lịch sự đề nghị HR xác nhận, yêu cầu làm rõ hoặc sửa đổi bằng văn bản, thay vì cho rằng \"lời nói miệng chắc là tính\". Đây không phải là không tin tưởng đối phương, mà là cách bảo vệ bản thân bình thường — công ty chính quy thường có thể hiểu và phối hợp xác nhận."
+      ]
+    }
+  ],
+  "takeaways_vi": [
+    "Kiểm tra từng mục về cấu trúc lương, hình thức tuyển dụng, nghỉ phép và điều khoản nghỉ việc trước khi ký dễ dàng hơn nhiều so với xử lý tranh chấp sau này",
+    "Khi lời hứa miệng và hợp đồng văn bản không khớp, lấy văn bản làm chuẩn, phát hiện vấn đề cần yêu cầu làm rõ bằng văn bản kịp thời",
+    "Các điều khoản dễ bị bỏ qua như điều chuyển công tác, hạn chế cạnh tranh thường ảnh hưởng lâu dài hơn",
+    "Chủ động xác nhận chi tiết là quyền bình thường của người xin việc, không phải biểu hiện không tin tưởng đối phương"
+  ],
+  "title_ko": "오퍼를 받았다면, 서명 전에 먼저 확인해야 할 10가지",
+  "description_ko": "서명하기 전 마지막 자체 점검, 나중에 문제를 해결하는 것보다 훨씬 쉽습니다.",
+  "intro_ko": "내정 통지(오퍼)를 받는 것은 구직 과정에서 가장 안도감을 느끼는 순간이지만, 바로 그렇기 때문에 이 단계에서 경계를 늦추고 서둘러 서명하기 쉽습니다. 고용계약서의 조항은 한번 서명하면 나중에 조정하기가 훨씬 어렵습니다. 다음 10가지는 정식 서명 전에 하나씩 꼼꼼히 확인해볼 것을 권합니다.",
+  "sections_ko": [
+    {
+      "heading": "급여 관련 (1-4)",
+      "body": [
+        "1. 기본급과 고정잔업수당이 분리되어 명시되어 있는지, 고정잔업수당이 몇 시간에 해당하는지 — 고용계약서에 두루뭉술한 월급 총액만 적혀 있다면, 반드시 서면으로 구성 내역을 설명해달라고 요구해야 합니다.",
+        "2. 통근 교통비 지급 방식과 상한선 — 전액 지급하는 회사도 있고 월 상한을 두는 회사도 있으니, 본인의 통근 비용이 이를 초과하는지 확인해야 합니다.",
+        "3. 상여금(賞与) 지급 조건 — 보장 지급인지 회사 실적에 따라 변동되는지, 변동제라면 과거 지급 비율을 대략 참고해봅니다.",
+        "4. 승급(昇給)의 주기와 평가 기준 — 연봉제인지 매년 승급 기회가 있는지, 승급은 어떤 기준으로 평가되는지."
+      ]
+    },
+    {
+      "heading": "고용 형태 관련 (5-7)",
+      "body": [
+        "5. 정사원인지 계약직인지 — 계약직이라면 계약 기간은 얼마나 되는지, 갱신 조건은 무엇인지, 정사원으로 전환되는 경로와 시점이 있는지.",
+        "6. 수습 기간의 길이와 수습 기간 중 처우 차이 — 수습 기간 중 급여가 삭감되는지, 다른 고용 조건이 적용되는지, 정규직 전환의 구체적인 기준은 무엇인지(많은 회사가 이 부분을 모호하게 적어두므로, 직접 물어볼 가치가 있습니다).",
+        "7. 전근(転勤) 조항 — 다른 도시나 지점으로 발령될 가능성이 있는지, 거부할 수 있는지, 거부 시 고용 관계에 영향이 있는지."
+      ]
+    },
+    {
+      "heading": "기타 조항 (8-10)",
+      "body": [
+        "8. 유급휴가(有給休暇)의 산정 기준 시점과 일수 — 입사 후 얼마 만에 사용 가능한지, 첫해에 대략 며칠 정도 되는지, 강제 소진 요구가 있는지.",
+        "9. 퇴사 시 통지 의무 — 계약서에는 보통 퇴사 전에 얼마나 미리 회사에 알려야 하는지가 명시되어 있습니다(흔히 1~3개월). 이 조항을 알아두면 향후 퇴사 일정을 계획하는 데 도움이 됩니다.",
+        "10. 경업금지 또는 비밀유지 조항 — 퇴사 후 일정 기간 경쟁사에 입사할 수 없다는 조항이 있는지, 조항의 범위가 합리적인지(지나치게 광범위한 경업금지 조항은 일본 법률상 완전히 유효하지 않을 수도 있지만, 조항 내용 자체를 아는 것은 여전히 중요합니다)."
+      ]
+    },
+    {
+      "heading": "조항과 구두 약속이 일치하지 않는다면",
+      "body": [
+        "면접이나 오퍼 협의 단계에서 구두로 언급된 조건과 정식 고용계약서의 문구가 일치하지 않을 경우, 서면 문서를 기준으로 삼아야 합니다. 불일치를 발견하면 직접, 정중하게 인사담당자에게 확인을 요청하고 서면으로 명확히 하거나 수정해달라고 요구해야지, '구두로 말한 것이 당연히 유효하다'고 가정해서는 안 됩니다. 이는 상대방을 믿지 못해서가 아니라 자신을 보호하는 정상적인 방법이며, 정규 회사라면 대체로 이해하고 확인에 협조합니다."
+      ]
+    }
+  ],
+  "takeaways_ko": [
+    "서명 전에 급여 구성, 고용 형태, 휴가와 퇴사 조항을 항목별로 확인하는 것이 사후에 분쟁을 처리하는 것보다 훨씬 쉽다",
+    "구두 약속과 서면 계약이 일치하지 않을 때는 서면을 기준으로 삼고, 문제를 발견하면 즉시 서면 확인을 요구할 것",
+    "전근 조항, 경업금지 조항처럼 간과되기 쉬운 조항들이 오히려 더 장기적인 영향을 미치는 경우가 많다",
+    "세부사항을 먼저 확인하는 것은 구직자의 정당한 권리이지, 상대방을 믿지 못하는 태도가 아니다"
+  ],
+  "title_ja": "内定をもらったら、サインする前に確認すべき10のこと",
+  "description_ja": "サイン前の最後のセルフチェックは、後からトラブルに対処するよりずっと簡単です。",
+  "intro_ja": "内定通知を受け取るのは転職活動の中で最もほっとする瞬間ですが、だからこそこの段階で気が緩み、急いでサインしてしまいがちです。雇用契約書の条項は一度サインしてしまうと、後から調整するのはずっと難しくなります。以下の10項目は、正式にサインする前に一つずつしっかり確認しておくことをおすすめします。",
+  "sections_ja": [
+    {
+      "heading": "給与関連（1〜4）",
+      "body": [
+        "1. 基本給と固定残業代が分けて明記されているか、固定残業代が何時間分に相当するか——雇用契約書に月給の総額しか書かれていない場合は、必ず内訳を書面で説明してもらいましょう。",
+        "2. 通勤交通費の支払い方法と上限——全額支給の会社もあれば月ごとの上限がある会社もあります。自分の通勤コストが上限を超えないか確認しましょう。",
+        "3. 賞与の支給条件——保証されているのか、会社の業績によって変動するのか。変動制の場合は過去の支給割合をおおよそ参考にしましょう。",
+        "4. 昇給の周期と評価基準——年俸制なのか、毎年昇給のチャンスがあるのか、昇給はどんな基準で評価されるのか。"
+      ]
+    },
+    {
+      "heading": "雇用形態関連（5〜7）",
+      "body": [
+        "5. 正社員か契約社員か——契約社員の場合、契約期間はどのくらいか、更新条件は何か、正社員への転換のルートと時期はあるか。",
+        "6. 試用期間の長さと試用期間中の待遇の違い——試用期間中に減給があるか、雇用条件が異なるか、本採用の具体的な基準は何か（この項目を曖昧に書いている会社が多いので、自分から確認する価値があります）。",
+        "7. 転勤条項——他の都市や拠点への異動を求められる可能性があるか、断れるか、断った場合に雇用関係に影響するか。"
+      ]
+    },
+    {
+      "heading": "その他の条項（8〜10）",
+      "body": [
+        "8. 有給休暇の起算日と日数——入社後どのくらいで使えるようになるか、1年目でおおよそ何日あるか、消化が義務付けられているか。",
+        "9. 退職時の通知義務——契約書には通常、退職前にどのくらい前もって会社に伝える必要があるかが書かれています（多くは1〜3ヶ月）。これを知っておくと、将来の退職スケジュールを計画しやすくなります。",
+        "10. 競業避止義務や秘密保持条項——退職後一定期間、競合他社に入社できないという条項があるか、その範囲は妥当か（過度に広い競業避止条項は日本の法律上必ずしも完全に有効とは限りませんが、条項の内容自体を理解しておくことは重要です）。"
+      ]
+    },
+    {
+      "heading": "条項と口頭での説明が食い違っていたらどうするか",
+      "body": [
+        "面接やオファーの段階で口頭で説明された条件と、正式な雇用契約書の文言が食い違う場合は、書面が優先されます。食い違いに気づいたら、直接かつ丁寧に人事に確認を求め、書面での明確化や修正を依頼しましょう。「口頭で言われたことだから通用するはず」と思い込むのは避けてください。これは相手を信用していないということではなく、自分を守るための普通の行動です。まともな会社であれば、たいてい理解して確認に応じてくれます。"
+      ]
+    }
+  ],
+  "takeaways_ja": [
+    "サイン前に給与構成、雇用形態、休暇・退職条項を一つずつ確認しておくのは、後からトラブルに対処するよりずっと簡単",
+    "口頭での説明と書面の契約が食い違う場合は書面を優先し、問題に気づいたらすぐに書面での明確化を求める",
+    "転勤条項や競業避止条項など見落とされがちな条項ほど、長期的な影響が大きいことが多い",
+    "詳細を自分から確認することは求職者の正当な権利であり、相手を信用していないということではない"
   ]
 }

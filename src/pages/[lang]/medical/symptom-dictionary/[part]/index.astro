@@ -200,6 +200,24 @@ function getDeptLabel(deptId: string, lang: string): string {
   if (!dept) return deptId;
   return (dept as unknown as Record<string, string>)[lang] || dept.en || dept.jp || deptId;
 }
+
+// 分享按钮：文案模板+按钮标签按语言准备，与career多语言文章页使用同一套翻译内容
+const shareTextTemplates: Record<string, string> = {
+  'zh-TW': '這篇講得挺實在：{title}',
+  en: 'This one’s worth a read: {title}',
+  vi: 'Bài này khá thực tế: {title}',
+  ko: '이 글 꿤 유익해요: {title}',
+  ja: 'この記事、実際役に立ちます：{title}'
+};
+const shareLabels: Record<string, Record<string, string>> = {
+  'zh-TW': { line: 'LINE分享', whatsapp: 'WhatsApp分享', wechat: '微信分享（複製連結）', wechatCopied: '連結已複製，去微信裡貼上發送吧' },
+  en: { line: 'Share on LINE', whatsapp: 'Share on WhatsApp', wechat: 'Share on WeChat (copy link)', wechatCopied: 'Link copied — paste it in WeChat' },
+  vi: { line: 'Chia sẻ qua LINE', whatsapp: 'Chia sẻ qua WhatsApp', wechat: 'Chia sẻ qua WeChat (sao chép link)', wechatCopied: 'Đã sao chép link, dán vào WeChat để gửi nhé' },
+  ko: { line: 'LINE로 공유', whatsapp: 'WhatsApp로 공유', wechat: 'WeChat로 공유(링크 복사)', wechatCopied: '링크가 복사되었어요, WeChat에 붙여넣으세요' },
+  ja: { line: 'LINEで共有', whatsapp: 'WhatsAppで共有', wechat: 'WeChatで共有（リンクをコピー）', wechatCopied: 'リンクをコピーしました。WeChatで貼り付けて送信してください' }
+};
+const currentShareLabels = shareLabels[lang] || shareLabels.en;
+const shareText = (shareTextTemplates[lang] || shareTextTemplates.en).replace('{title}', partTitle);
 ---
 
 <Base title={pageTitle} description={pageDesc} medicalCss={true}>
@@ -291,11 +309,25 @@ function getDeptLabel(deptId: string, lang: string): string {
 
     <div id="medDangerTipContainer"></div>
 
+    <div class="guides-share-row" id="shareButtonsMount" aria-label="share"></div>
+
   </div>
 
   <div data-pagefind-body style="display:none">
     {pageTitle} {pageDesc}
   </div>
+
+  <script is:inline define:vars={{
+    shareData: {
+      mountId: 'shareButtonsMount',
+      text: shareText,
+      labels: currentShareLabels,
+      gaEvent: 'medical_page_share_click'
+    }
+  }}>
+    window.ljShareData = shareData;
+  </script>
+  <script is:inline src="/js/share-buttons.js"></script>
 
   <script is:inline src="/js/tts-core.js"></script>
   <script is:inline src="/js/medical-ui.js"></script>

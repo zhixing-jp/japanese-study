@@ -1,0 +1,26 @@
+{
+  "categories": [
+    { "id": "career", "label": "日本就职转职指南" },
+    { "id": "medical", "label": "日本就医指南" }
+  ],
+  "products": [
+    {
+      "id": "s11-interview-pdf",
+      "category": "career",
+      "type": "digital",
+      "title": "外国人在日本转职面试完全指南",
+      "description": "日本面试评价逻辑、高频问题与回答结构、外国人常见误区、回答示例与准备表、面试前中后自查清单。",
+      "price": 1980,
+      "currency": "JPY",
+      "stripePaymentLink": "REPLACE_WITH_STRIPE_PAYMENT_LINK_URL"
+    },
+    {
+      "id": "medical-coordination",
+      "category": "medical",
+      "type": "consult",
+      "title": "医疗协调服务",
+      "description": "语言障碍较大、情况紧急时，可以直接找人帮你——预约陪诊、病历翻译、就医全程协调支持。",
+      "consultUrl": "/medical/service/"
+    }
+  ]
+}
